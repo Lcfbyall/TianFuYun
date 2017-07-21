@@ -7,8 +7,6 @@
 //
 
 #import "TJSBaseRequest+TJSSingleRequestBlock.h"
-#import "TJSHudAlert.h"
-//#import "TJSUnReadMessageApi.h"
 #import "TJSLoginStateUtil.h"
 
 @implementation TJSBaseRequest (TJSSingleRequestBlock)

@@ -660,10 +660,10 @@
 		2C4412481F21D40300C453EF /* SystemAlert */ = {
 			isa = PBXGroup;
 			children = (
-				2C4412491F21D42600C453EF /* TJSAlertController.h */,
-				2C44124A1F21D42600C453EF /* TJSAlertController.m */,
 				2C44124C1F21D54400C453EF /* TJSSystemAlertMaker.h */,
 				2C44124D1F21D54400C453EF /* TJSSystemAlertMaker.m */,
+				2C4412491F21D42600C453EF /* TJSAlertController.h */,
+				2C44124A1F21D42600C453EF /* TJSAlertController.m */,
 			);
 			path = SystemAlert;
 			sourceTree = "<group>";

@@ -7,7 +7,7 @@
 //
 
 #import "TJSAnimatingRequestAccessory.h"
-#import "TJSHudAlert.h"
+
 
 @implementation TJSAnimatingRequestAccessory
 
