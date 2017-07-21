@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Product View Controller-->
+        <!--Empty Data Set Delegate-->
         <scene sceneID="V1H-12-ifK">
             <objects>
                 <viewController storyboardIdentifier="ProductViewController" id="Z4j-Dg-Ias" customClass="ProductViewController" sceneMemberID="viewController">
@@ -18,12 +18,34 @@
                         <viewControllerLayoutGuide type="bottom" id="inC-gx-bpF"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="cya-nr-EQJ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="40" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="rlB-h8-DYk">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Z4j-Dg-Ias" id="7wR-iR-Rpr"/>
+                                    <outlet property="delegate" destination="Z4j-Dg-Ias" id="pxc-CF-iJl"/>
+                                    <outlet property="emptyDataSetDelegate" destination="Z4j-Dg-Ias" id="MFK-AF-ggl"/>
+                                    <outlet property="emptyDataSetSource" destination="Z4j-Dg-Ias" id="2JC-Rd-Hii"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rlB-h8-DYk" firstAttribute="top" secondItem="cya-nr-EQJ" secondAttribute="top" id="58p-H0-AGU"/>
+                            <constraint firstAttribute="trailing" secondItem="rlB-h8-DYk" secondAttribute="trailing" id="OR1-v6-c9e"/>
+                            <constraint firstAttribute="bottom" secondItem="rlB-h8-DYk" secondAttribute="bottom" id="qSf-OD-Y1n"/>
+                            <constraint firstItem="rlB-h8-DYk" firstAttribute="leading" secondItem="cya-nr-EQJ" secondAttribute="leading" id="sOS-RU-IVS"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="daa-mz-i95"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="productListTBView" destination="rlB-h8-DYk" id="iCY-Ry-AlR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zm9-9W-t7l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
