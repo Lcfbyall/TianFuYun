@@ -14,4 +14,8 @@
 // 当前登录名
 @property (nonatomic, copy) NSString *loginName;
 
+
+// token
+@property (nonatomic, copy) NSString *token;
+
 @end

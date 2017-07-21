@@ -43,8 +43,9 @@ forCellReuseIdentifier:(Str(cellClass))];
 #define IMAGE(imageName) [UIImage imageNamed:[NSString stringWithFormat:@"%@",imageName]]
 #define IMAGEOriginal(imageName) [IMAGE(imageName) imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]
 
-//color
 
+
+//color
 #define UIColorFromHEX(rgbValue)	[UIColor colorWithRed:((float)(((rgbValue) & 0xFF0000) >> 16))/255.0 \
 green:((float)(((rgbValue) & 0x00FF00) >> 8))/255.0 \
 blue:((float)((rgbValue) & 0x0000FF))/255.0 \
@@ -73,11 +74,26 @@ alpha:__a]
 //code time
 #define TICK   NSDate *startTime_TICK = [NSDate date]
 #define TOCK   NSLog(@"Time: %f", -[startTime_TICK timeIntervalSinceNow])
+
+
+
 //由角度获取弧度 有弧度获取角度
 #define degreesToRadian(x) (M_PI * (x) / 180.0)
 #define radianToDegrees(radian) (radian * 180.0)/(M_PI)
 //枚举值转字符串
 #define enumToString(value)  @#value
+
+
+//空判断
+#define IS_NIL(_obj)     ((nil == _obj) || [_obj isKindOfClass:[NSNull class]])
+#define STRING_IS_EMPTY(_obj)    (_obj.length == 0)
+#define STRING_IS_WHITHESPACE(_obj) ([[_obj stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]] length] == 0)
+#define STRING_IS_NOTNIL_NOTEMPTY(_obj)   ((!IS_NIL(_obj)) && (!STRING_IS_EMPTY(_obj)))
+#define STRING_IS_NOTNIL_NOTEMPTY_NOTWHITHESPACE(_obj) ((!IS_NIL(_obj)) && (!STRING_IS_EMPTY(_obj)) && (!STRING_IS_WHITHESPACE(_obj)))
+//数组是否为空
+#define ARRAY_IS_EMPTY(array) (array == nil || [array isKindOfClass:[NSNull class]] || array.count == 0)
+//字典是否为空
+#define DICT_IS_EMPTY(dic) (dic == nil || [dic isKindOfClass:[NSNull class]] || dic.allKeys == 0)
 
 
 /********************************************/

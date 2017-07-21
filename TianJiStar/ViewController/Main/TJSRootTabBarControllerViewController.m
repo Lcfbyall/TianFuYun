@@ -47,19 +47,19 @@
     
     TJSBaseNavigationController *productNC  = LOAD_Storyboard(ProductSB, ProductNC);
     productNC.tabBarItem.title              = @"产品";
-    productNC.tabBarItem.image              = IMAGEOriginal(@"");
-    productNC.tabBarItem.selectedImage      = IMAGEOriginal(@"");
+    productNC.tabBarItem.image              = IMAGEOriginal(@"bottomBar-chanpin-nor");
+    productNC.tabBarItem.selectedImage      = IMAGEOriginal(@"bottomBar-chanpin-sel");
     
     
     TJSBaseNavigationController *fileNC     = LOAD_Storyboard(FileSB, FileNC);
     fileNC.tabBarItem.title                 = @"文件";
-    fileNC.tabBarItem.image                 = IMAGEOriginal(@"");
-    fileNC.tabBarItem.selectedImage         = IMAGEOriginal(@"");
+    fileNC.tabBarItem.image                 = IMAGEOriginal(@"bottomBar-wenjian-nor");
+    fileNC.tabBarItem.selectedImage         = IMAGEOriginal(@"bottomBar-wenjian-sel");
 
     TJSBaseNavigationController *mineNC     = LOAD_Storyboard(MineSB,MineNC);
     mineNC.tabBarItem.title                 = @"我的";
-    mineNC.tabBarItem.image                 = IMAGEOriginal(@"");
-    mineNC.tabBarItem.selectedImage         = IMAGEOriginal(@"");
+    mineNC.tabBarItem.image                 = IMAGEOriginal(@"bottomBar-wode-nor");
+    mineNC.tabBarItem.selectedImage         = IMAGEOriginal(@"bottomBar-wode-sel");
     
     
     self.viewControllers = @[productNC,fileNC,mineNC];
@@ -86,14 +86,14 @@
     
     [tabBarItem setTitleTextAttributes:
      @{
-       NSFontAttributeName:[UIFont boldSystemFontOfSize:14.0f],
+       NSFontAttributeName:[UIFont systemFontOfSize:13.0f],
        NSForegroundColorAttributeName:[UIColor blackColor]
        } forState:UIControlStateNormal];
     
     
     [tabBarItem setTitleTextAttributes:
      @{
-       NSFontAttributeName:[UIFont boldSystemFontOfSize:14.0f],
+       NSFontAttributeName:[UIFont systemFontOfSize:13.0f],
        NSForegroundColorAttributeName:[UIColor redColor]
        } forState:UIControlStateSelected];
     

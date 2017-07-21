@@ -11,6 +11,7 @@
 @implementation GVUserDefaults (TJSGlobalProperties)
 
 @dynamic loginName;
+@dynamic token;
 
 #pragma mark - override
 - (NSDictionary *)setupDefaults {
@@ -18,6 +19,7 @@
     return @{
            
              @"loginName": @"",
+             @"token"    : @"",
     
              };
 }
