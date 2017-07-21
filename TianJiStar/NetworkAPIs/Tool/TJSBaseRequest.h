@@ -1,5 +1,5 @@
 //
-//  TJMBaseRequest.h
+//  TJSBaseRequest.h
 //  TianJiStar
 //
 //  Created by 朱鹏 on 17/7/21.
@@ -8,7 +8,7 @@
 
 #import <YTKNetwork/YTKNetwork.h>
 
-@interface TJMBaseRequest : YTKRequest
+@interface TJSBaseRequest : YTKRequest
 
 #pragma mark - init
 

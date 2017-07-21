@@ -1,17 +1,17 @@
 //
-//  TJMBaseRequest.m
+//  TJSBaseRequest.m
 //  TianJiStar
 //
 //  Created by 朱鹏 on 17/7/21.
 //  Copyright © 2017年 TianJiMoney. All rights reserved.
 //
 
-#import "TJMBaseRequest.h"
+#import "TJSBaseRequest.h"
 #import "AFURLResponseSerialization.h"
-#import "TJMAnimatingRequestAccessory.h"
+#import "TJSAnimatingRequestAccessory.h"
 
 
-@implementation TJMBaseRequest {
+@implementation TJSBaseRequest {
     NSDictionary *_parame;
 }
 

@@ -58,10 +58,10 @@
 		2C4412931F21FF9C00C453EF /* TJSDownLoaderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4412921F21FF9C00C453EF /* TJSDownLoaderManager.m */; };
 		2C4412971F22004500C453EF /* TJSThemeService.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4412961F22004500C453EF /* TJSThemeService.m */; };
 		2C4412991F22007D00C453EF /* TJSThemeConfig.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C4412981F22007D00C453EF /* TJSThemeConfig.strings */; };
-		2C4412A51F2201FF00C453EF /* TJMAnimatingRequestAccessory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C44129C1F2201FF00C453EF /* TJMAnimatingRequestAccessory.m */; };
-		2C4412A61F2201FF00C453EF /* TJMBaseRequest+TJMSingleRequestBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C44129E1F2201FF00C453EF /* TJMBaseRequest+TJMSingleRequestBlock.m */; };
-		2C4412A71F2201FF00C453EF /* TJMBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4412A01F2201FF00C453EF /* TJMBaseRequest.m */; };
-		2C4412A81F2201FF00C453EF /* TJMUploadRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4412A21F2201FF00C453EF /* TJMUploadRequest.m */; };
+		2C4412A51F2201FF00C453EF /* TJSAnimatingRequestAccessory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C44129C1F2201FF00C453EF /* TJSAnimatingRequestAccessory.m */; };
+		2C4412A61F2201FF00C453EF /* TJSBaseRequest+TJSSingleRequestBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C44129E1F2201FF00C453EF /* TJSBaseRequest+TJSSingleRequestBlock.m */; };
+		2C4412A71F2201FF00C453EF /* TJSBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4412A01F2201FF00C453EF /* TJSBaseRequest.m */; };
+		2C4412A81F2201FF00C453EF /* TJSUploadRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4412A21F2201FF00C453EF /* TJSUploadRequest.m */; };
 		2C4412A91F2201FF00C453EF /* TJWUrlArgumentsFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4412A41F2201FF00C453EF /* TJWUrlArgumentsFilter.m */; };
 		2C4412AD1F22031600C453EF /* TJSHudAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4412AC1F22031600C453EF /* TJSHudAlert.m */; };
 		2C4412B41F2207CD00C453EF /* TJSLoginStateUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4412B31F2207CD00C453EF /* TJSLoginStateUtil.m */; };
@@ -188,14 +188,14 @@
 		2C4412951F22004500C453EF /* TJSThemeService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSThemeService.h; sourceTree = "<group>"; };
 		2C4412961F22004500C453EF /* TJSThemeService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSThemeService.m; sourceTree = "<group>"; };
 		2C4412981F22007D00C453EF /* TJSThemeConfig.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = TJSThemeConfig.strings; sourceTree = "<group>"; };
-		2C44129B1F2201FF00C453EF /* TJMAnimatingRequestAccessory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJMAnimatingRequestAccessory.h; sourceTree = "<group>"; };
-		2C44129C1F2201FF00C453EF /* TJMAnimatingRequestAccessory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJMAnimatingRequestAccessory.m; sourceTree = "<group>"; };
-		2C44129D1F2201FF00C453EF /* TJMBaseRequest+TJMSingleRequestBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TJMBaseRequest+TJMSingleRequestBlock.h"; sourceTree = "<group>"; };
-		2C44129E1F2201FF00C453EF /* TJMBaseRequest+TJMSingleRequestBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TJMBaseRequest+TJMSingleRequestBlock.m"; sourceTree = "<group>"; };
-		2C44129F1F2201FF00C453EF /* TJMBaseRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJMBaseRequest.h; sourceTree = "<group>"; };
-		2C4412A01F2201FF00C453EF /* TJMBaseRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJMBaseRequest.m; sourceTree = "<group>"; };
-		2C4412A11F2201FF00C453EF /* TJMUploadRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJMUploadRequest.h; sourceTree = "<group>"; };
-		2C4412A21F2201FF00C453EF /* TJMUploadRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJMUploadRequest.m; sourceTree = "<group>"; };
+		2C44129B1F2201FF00C453EF /* TJSAnimatingRequestAccessory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSAnimatingRequestAccessory.h; sourceTree = "<group>"; };
+		2C44129C1F2201FF00C453EF /* TJSAnimatingRequestAccessory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSAnimatingRequestAccessory.m; sourceTree = "<group>"; };
+		2C44129D1F2201FF00C453EF /* TJSBaseRequest+TJSSingleRequestBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TJSBaseRequest+TJSSingleRequestBlock.h"; sourceTree = "<group>"; };
+		2C44129E1F2201FF00C453EF /* TJSBaseRequest+TJSSingleRequestBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TJSBaseRequest+TJSSingleRequestBlock.m"; sourceTree = "<group>"; };
+		2C44129F1F2201FF00C453EF /* TJSBaseRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSBaseRequest.h; sourceTree = "<group>"; };
+		2C4412A01F2201FF00C453EF /* TJSBaseRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSBaseRequest.m; sourceTree = "<group>"; };
+		2C4412A11F2201FF00C453EF /* TJSUploadRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSUploadRequest.h; sourceTree = "<group>"; };
+		2C4412A21F2201FF00C453EF /* TJSUploadRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSUploadRequest.m; sourceTree = "<group>"; };
 		2C4412A31F2201FF00C453EF /* TJWUrlArgumentsFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJWUrlArgumentsFilter.h; sourceTree = "<group>"; };
 		2C4412A41F2201FF00C453EF /* TJWUrlArgumentsFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJWUrlArgumentsFilter.m; sourceTree = "<group>"; };
 		2C4412AB1F22031600C453EF /* TJSHudAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSHudAlert.h; sourceTree = "<group>"; };
@@ -782,14 +782,14 @@
 		2C44129A1F2201FF00C453EF /* Tool */ = {
 			isa = PBXGroup;
 			children = (
-				2C44129B1F2201FF00C453EF /* TJMAnimatingRequestAccessory.h */,
-				2C44129C1F2201FF00C453EF /* TJMAnimatingRequestAccessory.m */,
-				2C44129D1F2201FF00C453EF /* TJMBaseRequest+TJMSingleRequestBlock.h */,
-				2C44129E1F2201FF00C453EF /* TJMBaseRequest+TJMSingleRequestBlock.m */,
-				2C44129F1F2201FF00C453EF /* TJMBaseRequest.h */,
-				2C4412A01F2201FF00C453EF /* TJMBaseRequest.m */,
-				2C4412A11F2201FF00C453EF /* TJMUploadRequest.h */,
-				2C4412A21F2201FF00C453EF /* TJMUploadRequest.m */,
+				2C44129B1F2201FF00C453EF /* TJSAnimatingRequestAccessory.h */,
+				2C44129C1F2201FF00C453EF /* TJSAnimatingRequestAccessory.m */,
+				2C44129D1F2201FF00C453EF /* TJSBaseRequest+TJSSingleRequestBlock.h */,
+				2C44129E1F2201FF00C453EF /* TJSBaseRequest+TJSSingleRequestBlock.m */,
+				2C44129F1F2201FF00C453EF /* TJSBaseRequest.h */,
+				2C4412A01F2201FF00C453EF /* TJSBaseRequest.m */,
+				2C4412A11F2201FF00C453EF /* TJSUploadRequest.h */,
+				2C4412A21F2201FF00C453EF /* TJSUploadRequest.m */,
 				2C4412A31F2201FF00C453EF /* TJWUrlArgumentsFilter.h */,
 				2C4412A41F2201FF00C453EF /* TJWUrlArgumentsFilter.m */,
 			);
@@ -1023,18 +1023,18 @@
 				2C4412231F21A2D000C453EF /* MineViewController.m in Sources */,
 				2C44121B1F219C5600C453EF /* TJSBaseNavigationController.m in Sources */,
 				2C44128F1F21ED2D00C453EF /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
-				2C4412A51F2201FF00C453EF /* TJMAnimatingRequestAccessory.m in Sources */,
+				2C4412A51F2201FF00C453EF /* TJSAnimatingRequestAccessory.m in Sources */,
 				2C44123F1F21D2A600C453EF /* GVUserDefaults+TJSGlobalProperties.m in Sources */,
 				2C4412591F21DDA900C453EF /* UIWindow+Transition.m in Sources */,
 				2C4412031F219A5300C453EF /* UIDevice+CurrentArg.m in Sources */,
-				2C4412A61F2201FF00C453EF /* TJMBaseRequest+TJMSingleRequestBlock.m in Sources */,
+				2C4412A61F2201FF00C453EF /* TJSBaseRequest+TJSSingleRequestBlock.m in Sources */,
 				2C4412471F21D3E300C453EF /* MBProgressHUD.m in Sources */,
 				2C4412AD1F22031600C453EF /* TJSHudAlert.m in Sources */,
 				2C4412021F219A5300C453EF /* UIColor+HEX.m in Sources */,
 				2C4412311F21AA5900C453EF /* AppDelegate.m in Sources */,
 				2C44126A1F21E2DA00C453EF /* UIButton+CountDown.m in Sources */,
 				2C4412701F21E73E00C453EF /* UIButton+CommitStyle.m in Sources */,
-				2C4412A71F2201FF00C453EF /* TJMBaseRequest.m in Sources */,
+				2C4412A71F2201FF00C453EF /* TJSBaseRequest.m in Sources */,
 				2C4412521F21DABC00C453EF /* UIViewController+StackLevel.m in Sources */,
 				2C44126D1F21E64600C453EF /* UIButton+ContentRect.m in Sources */,
 				2C44125D1F21DF3600C453EF /* NSObject+Swizzle.m in Sources */,
@@ -1044,7 +1044,7 @@
 				2C4412201F21A2C400C453EF /* ProductViewController.m in Sources */,
 				2C44124E1F21D54400C453EF /* TJSSystemAlertMaker.m in Sources */,
 				2C4412011F219A5300C453EF /* NSString+StringSize.m in Sources */,
-				2C4412A81F2201FF00C453EF /* TJMUploadRequest.m in Sources */,
+				2C4412A81F2201FF00C453EF /* TJSUploadRequest.m in Sources */,
 				2C4412791F21E83D00C453EF /* UIImage+ColorAtPixel.m in Sources */,
 				2C4412041F219A5300C453EF /* UIImage+FromColor.m in Sources */,
 				2C4412761F21E7F000C453EF /* UIButton+BackgroundColor.m in Sources */,

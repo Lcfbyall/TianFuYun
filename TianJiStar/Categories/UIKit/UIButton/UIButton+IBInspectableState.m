@@ -15,11 +15,11 @@
 #define objc_setObjRETAIN(key,value) objc_setAssociatedObject(self, key, value, OBJC_ASSOCIATION_RETAIN_NONATOMIC)
 #define objc_getObj(key) objc_getAssociatedObject(self, key)
 
-static NSString *const TJMUIButtonKeyPathEnabled     = @"enabled";
-static NSString *const TJMUIButtonKeyPathSelected    = @"selected";
-static NSString *const TJMUIButtonKeyPathHighlighted = @"highlighted";
+static NSString *const TJSUIButtonKeyPathEnabled     = @"enabled";
+static NSString *const TJSUIButtonKeyPathSelected    = @"selected";
+static NSString *const TJSUIButtonKeyPathHighlighted = @"highlighted";
 
-static void * TJMUIButtonStateChangedContext = & TJMUIButtonStateChangedContext;
+static void * TJSUIButtonStateChangedContext = & TJSUIButtonStateChangedContext;
 
 @interface UIButton ()
 
@@ -304,9 +304,9 @@ static void * TJMUIButtonStateChangedContext = & TJMUIButtonStateChangedContext;
     
     if(!self.tjs_isExcuteObserve){
         
-        [self addObserver:self forKeyPath:TJMUIButtonKeyPathEnabled options:NSKeyValueObservingOptionNew context:TJMUIButtonStateChangedContext];
-        [self addObserver:self forKeyPath:TJMUIButtonKeyPathSelected options:NSKeyValueObservingOptionNew context:TJMUIButtonStateChangedContext];
-        [self addObserver:self forKeyPath:TJMUIButtonKeyPathHighlighted options:NSKeyValueObservingOptionNew context:TJMUIButtonStateChangedContext];
+        [self addObserver:self forKeyPath:TJSUIButtonKeyPathEnabled options:NSKeyValueObservingOptionNew context:TJSUIButtonStateChangedContext];
+        [self addObserver:self forKeyPath:TJSUIButtonKeyPathSelected options:NSKeyValueObservingOptionNew context:TJSUIButtonStateChangedContext];
+        [self addObserver:self forKeyPath:TJSUIButtonKeyPathHighlighted options:NSKeyValueObservingOptionNew context:TJSUIButtonStateChangedContext];
         
         self.tjs_isExcuteObserve = 1;
     }
@@ -315,16 +315,16 @@ static void * TJMUIButtonStateChangedContext = & TJMUIButtonStateChangedContext;
     
     if(self.tjs_isExcuteObserve){
         
-        [self removeObserver:self forKeyPath:TJMUIButtonKeyPathEnabled context:TJMUIButtonStateChangedContext];
-        [self removeObserver:self forKeyPath:TJMUIButtonKeyPathSelected context:TJMUIButtonStateChangedContext];
-        [self removeObserver:self forKeyPath:TJMUIButtonKeyPathHighlighted context:TJMUIButtonStateChangedContext];
+        [self removeObserver:self forKeyPath:TJSUIButtonKeyPathEnabled context:TJSUIButtonStateChangedContext];
+        [self removeObserver:self forKeyPath:TJSUIButtonKeyPathSelected context:TJSUIButtonStateChangedContext];
+        [self removeObserver:self forKeyPath:TJSUIButtonKeyPathHighlighted context:TJSUIButtonStateChangedContext];
     }
 }
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context{
     
     if (object == self &&
-        ([keyPath isEqualToString:TJMUIButtonKeyPathEnabled] || [keyPath isEqualToString:TJMUIButtonKeyPathSelected] || [keyPath isEqualToString:TJMUIButtonKeyPathHighlighted])
-        && context==TJMUIButtonStateChangedContext) {
+        ([keyPath isEqualToString:TJSUIButtonKeyPathEnabled] || [keyPath isEqualToString:TJSUIButtonKeyPathSelected] || [keyPath isEqualToString:TJSUIButtonKeyPathHighlighted])
+        && context==TJSUIButtonStateChangedContext) {
         
         
         [self tjs_updateButtonForgroundWhenStateChanged];

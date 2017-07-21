@@ -15,7 +15,7 @@
  
  [window setRootViewControllerWithFadeFromTop:tabBarViewController
  setComplete:^(UIViewController *newRootViewController) {
- TJMStartAdvertViewController *advertView = [[TJMStartAdvertViewController alloc] init];
+ TJSStartAdvertViewController *advertView = [[TJSStartAdvertViewController alloc] init];
  [advertView showView:newRootViewController.view];
  }];
  
@@ -26,7 +26,7 @@
  [keywindow setRootViewController:tabBarViewController
  setComplete:^(UIViewController *newRootViewController){
  
- TJMStartAdvertViewController *advertView = [[TJMStartAdvertViewController alloc] init];
+ TJSStartAdvertViewController *advertView = [[TJSStartAdvertViewController alloc] init];
  [advertView showView:newRootViewController.view];
  
  } transition:transition];
@@ -147,7 +147,7 @@
  BOOL oldState = [UIView areAnimationsEnabled];
  [UIView setAnimationsEnabled:NO];
  keywindow.rootViewController = tabBarViewController;
- TJMStartAdvertViewController *advertView = [[TJMStartAdvertViewController alloc] init];
+ TJSStartAdvertViewController *advertView = [[TJSStartAdvertViewController alloc] init];
  [advertView showView:tabBarViewController.view];
  [UIView setAnimationsEnabled:oldState];
  

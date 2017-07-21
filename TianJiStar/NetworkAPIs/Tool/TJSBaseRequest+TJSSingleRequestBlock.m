@@ -1,28 +1,28 @@
 //
-//  TJMBaseRequest+TJMSingleRequestBlock.m
+//  TJSBaseRequest+TJSSingleRequestBlock.m
 //  TianJiStar
 //
 //  Created by 朱鹏 on 17/7/21.
 //  Copyright © 2017年 TianJiMoney. All rights reserved.
 //
 
-#import "TJMBaseRequest+TJMSingleRequestBlock.h"
+#import "TJSBaseRequest+TJSSingleRequestBlock.h"
 #import "TJSHudAlert.h"
-//#import "TJMUnReadMessageApi.h"
+//#import "TJSUnReadMessageApi.h"
 #import "TJSLoginStateUtil.h"
 
-@implementation TJMBaseRequest (TJMSingleRequestBlock)
+@implementation TJSBaseRequest (TJSSingleRequestBlock)
 
 - (void)request {
     [self requestWithSuccessBlock:nil];
 }
 
-- (void)requestWithSuccessBlock:(TJMRequestSuccessBlock)successBlock {
+- (void)requestWithSuccessBlock:(TJSRequestSuccessBlock)successBlock {
     
     [self requestWithSuccessBlock:successBlock failureBlock:nil];
 }
 
-- (void)requestWithSuccessBlock:(TJMRequestSuccessBlock)successBlock failureBlock:(TJMRequestFailureBlock)failureBlock {
+- (void)requestWithSuccessBlock:(TJSRequestSuccessBlock)successBlock failureBlock:(TJSRequestFailureBlock)failureBlock {
     
     [self startWithCompletionBlockWithSuccess:^(__kindof YTKBaseRequest * _Nonnull request) {
         

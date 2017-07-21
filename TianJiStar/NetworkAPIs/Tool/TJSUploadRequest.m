@@ -1,16 +1,16 @@
 //
-//  TJMUploadRequest.m
+//  TJSUploadRequest.m
 //  TianJiStar
 //
 //  Created by 朱鹏 on 17/7/21.
 //  Copyright © 2017年 TianJiMoney. All rights reserved.
 //
 
-#import "TJMUploadRequest.h"
+#import "TJSUploadRequest.h"
 #import <AFNetworking.h>
-//#import "TJMBaseUrlConfigService.h"
+//#import "TJSBaseUrlConfigService.h"
 
-@implementation TJMUploadRequest
+@implementation TJSUploadRequest
 
 + (NSURLSessionUploadTask * _Nullable)uploadWithFileData:(NSData * _Nullable)fileData
                                                     name:(NSString * _Nonnull)name
@@ -18,8 +18,8 @@
                                                 mimeType:(NSString * _Nonnull)mimeType
                                                   urlStr:(NSString * _Nonnull)urlStr
                                               parameters:(NSDictionary * _Nullable)parameters
-                                                progress:(TJMUploadProgressBlock _Nullable)uploadProgress
-                                       completionHandler:(TJMUploadCompletionHandler _Nullable)handler {
+                                                progress:(TJSUploadProgressBlock _Nullable)uploadProgress
+                                       completionHandler:(TJSUploadCompletionHandler _Nullable)handler {
     
     
     return [self uploadWithFileData:fileData
@@ -40,13 +40,13 @@
                                                 mimeType:(NSString * _Nonnull)mimeType
                                                   urlStr:(NSString * _Nonnull)urlStr
                                               parameters:(NSDictionary * _Nullable)parameters
-                                                progress:(TJMUploadProgressBlock _Nullable)uploadProgress
-                                       completionHandler:(TJMUploadCompletionHandler _Nullable)handler {
+                                                progress:(TJSUploadProgressBlock _Nullable)uploadProgress
+                                       completionHandler:(TJSUploadCompletionHandler _Nullable)handler {
     if (![urlStr hasPrefix:@"/"]) {
         urlStr = [NSString stringWithFormat:@"/%@",urlStr];
     }
     
-    urlStr = @"";//[[TJMBaseUrlConfigService getBaseUrl] stringByAppendingString:urlStr];
+    urlStr = @"";//[[TJSBaseUrlConfigService getBaseUrl] stringByAppendingString:urlStr];
     
     NSMutableURLRequest *request = [[AFHTTPRequestSerializer serializer] multipartFormRequestWithMethod:@"POST" URLString:urlStr parameters:parameters constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
         if (filePath) {

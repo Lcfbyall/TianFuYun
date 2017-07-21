@@ -1,15 +1,15 @@
 //
-//  TJMAnimatingRequestAccessory.m
+//  TJSAnimatingRequestAccessory.m
 //  TianJiStar
 //
 //  Created by 朱鹏 on 17/7/21.
 //  Copyright © 2017年 TianJiMoney. All rights reserved.
 //
 
-#import "TJMAnimatingRequestAccessory.h"
+#import "TJSAnimatingRequestAccessory.h"
 #import "TJSHudAlert.h"
 
-@implementation TJMAnimatingRequestAccessory
+@implementation TJSAnimatingRequestAccessory
 
 - (id)initWithAnimatingView:(UIView *)animatingView animatingText:(NSString *)animatingText {
     self = [super init];
@@ -65,9 +65,9 @@
 
 @implementation YTKBaseRequest (AnimatingAccessory)
 
-- (TJMAnimatingRequestAccessory *)animatingRequestAccessory {
+- (TJSAnimatingRequestAccessory *)animatingRequestAccessory {
     for (id accessory in self.requestAccessories) {
-        if ([accessory isKindOfClass:[TJMAnimatingRequestAccessory class]]){
+        if ([accessory isKindOfClass:[TJSAnimatingRequestAccessory class]]){
             return accessory;
         }
     }
@@ -80,7 +80,7 @@
 
 - (void)setAnimatingView:(UIView *)animatingView {
     if (!self.animatingRequestAccessory) {
-        [self addAccessory:[TJMAnimatingRequestAccessory accessoryWithAnimatingView:animatingView animatingText:nil]];
+        [self addAccessory:[TJSAnimatingRequestAccessory accessoryWithAnimatingView:animatingView animatingText:nil]];
     } else {
         self.animatingRequestAccessory.animatingView = animatingView;
     }
@@ -92,7 +92,7 @@
 
 - (void)setAnimatingText:(NSString *)animatingText {
     if (!self.animatingRequestAccessory) {
-        [self addAccessory:[TJMAnimatingRequestAccessory accessoryWithAnimatingView:nil animatingText:animatingText]];
+        [self addAccessory:[TJSAnimatingRequestAccessory accessoryWithAnimatingView:nil animatingText:animatingText]];
     } else {
         self.animatingRequestAccessory.animatingText = animatingText;
     }
@@ -103,9 +103,9 @@
 
 @implementation YTKBatchRequest (AnimatingAccessory)
 
-- (TJMAnimatingRequestAccessory *)animatingRequestAccessory {
+- (TJSAnimatingRequestAccessory *)animatingRequestAccessory {
     for (id accessory in self.requestAccessories) {
-        if ([accessory isKindOfClass:[TJMAnimatingRequestAccessory class]]){
+        if ([accessory isKindOfClass:[TJSAnimatingRequestAccessory class]]){
             return accessory;
         }
     }
@@ -118,7 +118,7 @@
 
 - (void)setAnimatingView:(UIView *)animatingView {
     if (!self.animatingRequestAccessory) {
-        [self addAccessory:[TJMAnimatingRequestAccessory accessoryWithAnimatingView:animatingView animatingText:nil]];
+        [self addAccessory:[TJSAnimatingRequestAccessory accessoryWithAnimatingView:animatingView animatingText:nil]];
     } else {
         self.animatingRequestAccessory.animatingView = animatingView;
     }
@@ -130,7 +130,7 @@
 
 - (void)setAnimatingText:(NSString *)animatingText {
     if (!self.animatingRequestAccessory) {
-        [self addAccessory:[TJMAnimatingRequestAccessory accessoryWithAnimatingView:nil animatingText:animatingText]];
+        [self addAccessory:[TJSAnimatingRequestAccessory accessoryWithAnimatingView:nil animatingText:animatingText]];
     } else {
         self.animatingRequestAccessory.animatingText = animatingText;
     }
@@ -140,9 +140,9 @@
 
 @implementation YTKChainRequest (AnimatingAccessory)
 
-- (TJMAnimatingRequestAccessory *)animatingRequestAccessory {
+- (TJSAnimatingRequestAccessory *)animatingRequestAccessory {
     for (id accessory in self.requestAccessories) {
-        if ([accessory isKindOfClass:[TJMAnimatingRequestAccessory class]]){
+        if ([accessory isKindOfClass:[TJSAnimatingRequestAccessory class]]){
             return accessory;
         }
     }
@@ -155,7 +155,7 @@
 
 - (void)setAnimatingView:(UIView *)animatingView {
     if (!self.animatingRequestAccessory) {
-        [self addAccessory:[TJMAnimatingRequestAccessory accessoryWithAnimatingView:animatingView animatingText:nil]];
+        [self addAccessory:[TJSAnimatingRequestAccessory accessoryWithAnimatingView:animatingView animatingText:nil]];
     } else {
         self.animatingRequestAccessory.animatingView = animatingView;
     }
@@ -167,7 +167,7 @@
 
 - (void)setAnimatingText:(NSString *)animatingText {
     if (!self.animatingRequestAccessory) {
-        [self addAccessory:[TJMAnimatingRequestAccessory accessoryWithAnimatingView:nil animatingText:animatingText]];
+        [self addAccessory:[TJSAnimatingRequestAccessory accessoryWithAnimatingView:nil animatingText:animatingText]];
     } else {
         self.animatingRequestAccessory.animatingText = animatingText;
     }

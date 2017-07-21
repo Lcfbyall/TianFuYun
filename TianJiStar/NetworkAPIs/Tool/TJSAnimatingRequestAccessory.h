@@ -1,5 +1,5 @@
 //
-//  TJMAnimatingRequestAccessory.h
+//  TJSAnimatingRequestAccessory.h
 //  TianJiStar
 //
 //  Created by 朱鹏 on 17/7/21.
@@ -11,7 +11,7 @@
 #import "YTKBatchRequest.h"
 #import "YTKChainRequest.h"
 
-@interface TJMAnimatingRequestAccessory : NSObject <YTKRequestAccessory>
+@interface TJSAnimatingRequestAccessory : NSObject <YTKRequestAccessory>
 
 @property(nonatomic, weak) UIView *animatingView;
 

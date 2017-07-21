@@ -1,5 +1,5 @@
 //
-//  TJMUploadRequest.h
+//  TJSUploadRequest.h
 //  TianJiStar
 //
 //  Created by 朱鹏 on 17/7/21.
@@ -8,14 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
-static const NSString * _Nonnull kTJMUploadMimeTypeImage = @"image/jpeg";
-static const NSString * _Nonnull kTJMUploadCredenceUrl = @"/app/authentication/upload.g";
+static const NSString * _Nonnull kTJSUploadMimeTypeImage = @"image/jpeg";
+static const NSString * _Nonnull kTJSUploadCredenceUrl = @"/app/authentication/upload.g";
 
-@interface TJMUploadRequest : NSObject
+@interface TJSUploadRequest : NSObject
 
 
-typedef void(^TJMUploadProgressBlock)(NSProgress * _Nonnull uploadProgress);
-typedef void(^TJMUploadCompletionHandler)(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error);
+typedef void(^TJSUploadProgressBlock)(NSProgress * _Nonnull uploadProgress);
+typedef void(^TJSUploadCompletionHandler)(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error);
 
 
 + (NSURLSessionUploadTask * _Nullable)uploadWithFileData:(NSData * _Nullable)fileData
@@ -24,8 +24,8 @@ typedef void(^TJMUploadCompletionHandler)(NSURLResponse * _Nonnull response, id 
                                                 mimeType:(NSString * _Nonnull)mimeType
                                                   urlStr:(NSString * _Nonnull)urlStr
                                               parameters:(NSDictionary * _Nullable)parameters
-                                                progress:(TJMUploadProgressBlock _Nullable)uploadProgress
-                                       completionHandler:(TJMUploadCompletionHandler _Nullable)handler;
+                                                progress:(TJSUploadProgressBlock _Nullable)uploadProgress
+                                       completionHandler:(TJSUploadCompletionHandler _Nullable)handler;
 
 /**
  *  文件上传接口
@@ -49,7 +49,7 @@ typedef void(^TJMUploadCompletionHandler)(NSURLResponse * _Nonnull response, id 
                                                 mimeType:(NSString * _Nonnull)mimeType
                                                   urlStr:(NSString * _Nonnull)urlStr
                                               parameters:(NSDictionary * _Nullable)parameters
-                                                progress:(TJMUploadProgressBlock _Nullable)uploadProgress
-                                       completionHandler:(TJMUploadCompletionHandler _Nullable)handler;
+                                                progress:(TJSUploadProgressBlock _Nullable)uploadProgress
+                                       completionHandler:(TJSUploadCompletionHandler _Nullable)handler;
 
 @end

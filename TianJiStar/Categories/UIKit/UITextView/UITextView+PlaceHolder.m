@@ -9,7 +9,7 @@
 #import "UITextView+PlaceHolder.h"
 #import "NSObject+Swizzle.h"
 
-static void * TJMTextViewTextChangedContext= & TJMTextViewTextChangedContext;
+static void * TJSTextViewTextChangedContext= & TJSTextViewTextChangedContext;
 
 @interface UITextView ()
 
@@ -48,7 +48,7 @@ static void * TJMTextViewTextChangedContext= & TJMTextViewTextChangedContext;
         
         [[NSNotificationCenter defaultCenter] removeObserver:self name:UITextViewTextDidChangeNotification object:self];
         
-        [self removeObserver:self forKeyPath:@"text" context:TJMTextViewTextChangedContext];
+        [self removeObserver:self forKeyPath:@"text" context:TJSTextViewTextChangedContext];
     }
     
     [self place_dealloc];
@@ -123,7 +123,7 @@ static void * TJMTextViewTextChangedContext= & TJMTextViewTextChangedContext;
     
     if (object == self &&
         [keyPath isEqualToString:@"text"]
-        && context==TJMTextViewTextChangedContext) {
+        && context==TJSTextViewTextChangedContext) {
         
         
         [self setNeedsDisplay];
@@ -151,7 +151,7 @@ static void * TJMTextViewTextChangedContext= & TJMTextViewTextChangedContext;
                                                      name:UITextViewTextDidChangeNotification
                                                    object:self];
         
-        [self addObserver:self forKeyPath:@"text" options:NSKeyValueObservingOptionNew context:TJMTextViewTextChangedContext];
+        [self addObserver:self forKeyPath:@"text" options:NSKeyValueObservingOptionNew context:TJSTextViewTextChangedContext];
         
         self.isExcuteNoti = 1;
     }
