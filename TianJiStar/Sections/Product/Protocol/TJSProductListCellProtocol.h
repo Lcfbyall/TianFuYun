@@ -1,13 +1,13 @@
 //
-//  TJSpRroductListCellProtocol.h
+//  TJSPRroductListCellProtocol.h
 //  TianJiStar
 //
 //  Created by 朱鹏 on 17/7/22.
 //  Copyright © 2017年 TianJiMoney. All rights reserved.
 //
 
-#ifndef TJSpRroductListCellProtocol_h
-#define TJSpRroductListCellProtocol_h
+#ifndef TJSProductListCellProtocol_h
+#define TJSProductListCellProtocol_h
 
 
 #import <Foundation/Foundation.h>
@@ -23,6 +23,6 @@
 
 @end
 
-#endif /* TJSpRroductListCellProtocol_h */
+#endif /* TJSProductListCellProtocol_h */
 
 

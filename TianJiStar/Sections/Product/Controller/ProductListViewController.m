@@ -40,6 +40,7 @@
     
     [self setupNav];
     
+    //逻辑配置器安装，在这里把tableView的代理分离出去
     [self setupConfigurator];
     
 }
@@ -70,7 +71,9 @@
 
 - (void)setupConfigurator{
  
+    _configurator = [[TJSProductListConfigurator alloc]init];
     
+    [_configurator setup:self];
 
 }
 

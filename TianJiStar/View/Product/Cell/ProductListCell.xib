@@ -11,14 +11,31 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProductListCell" rowHeight="118" id="HvB-wo-MHD" customClass="ProductListCell">
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="118" id="HvB-wo-MHD" customClass="ProductListCell">
             <rect key="frame" x="0.0" y="0.0" width="375" height="118"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HvB-wo-MHD" id="VOB-TX-OXB">
-                <rect key="frame" x="0.0" y="0.0" width="375" height="117.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="375" height="117"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4lB-mn-mjR">
+                        <rect key="frame" x="16" y="11" width="343" height="24"/>
+                        <color key="backgroundColor" red="1" green="0.26337714109999999" blue="0.20233296440000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="pkL-07-xQm"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="4lB-mn-mjR" firstAttribute="leading" secondItem="VOB-TX-OXB" secondAttribute="leading" constant="16" id="IOO-SY-The"/>
+                    <constraint firstItem="4lB-mn-mjR" firstAttribute="top" secondItem="VOB-TX-OXB" secondAttribute="top" constant="11" id="UDd-hV-q20"/>
+                    <constraint firstAttribute="trailing" secondItem="4lB-mn-mjR" secondAttribute="trailing" constant="16" id="Wpp-Zj-RD4"/>
+                </constraints>
             </tableViewCellContentView>
-            <point key="canvasLocation" x="-142.5" y="-151"/>
+            <point key="canvasLocation" x="-306" y="-227"/>
         </tableViewCell>
     </objects>
 </document>

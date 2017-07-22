@@ -242,7 +242,7 @@
 		2C801BCD1F233F46009F82F7 /* TJSProductListTableAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSProductListTableAdapter.h; sourceTree = "<group>"; };
 		2C801BCE1F233F46009F82F7 /* TJSProductListTableAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSProductListTableAdapter.m; sourceTree = "<group>"; };
 		2C801BD01F233F46009F82F7 /* TJSProductListConfigurateProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSProductListConfigurateProtocol.h; sourceTree = "<group>"; };
-		2C801BD11F233F46009F82F7 /* TJSpRroductListCellProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSpRroductListCellProtocol.h; sourceTree = "<group>"; };
+		2C801BD11F233F46009F82F7 /* TJSProductListCellProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSProductListCellProtocol.h; sourceTree = "<group>"; };
 		2C801BE31F23460C009F82F7 /* TJSProductListPrivateProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TJSProductListPrivateProtocol.h; sourceTree = "<group>"; };
 		2C801BE41F23469B009F82F7 /* TJSProductInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSProductInfoModel.h; sourceTree = "<group>"; };
 		2C801BE51F23469B009F82F7 /* TJSProductInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSProductInfoModel.m; sourceTree = "<group>"; };
@@ -938,7 +938,7 @@
 			children = (
 				2C801BD01F233F46009F82F7 /* TJSProductListConfigurateProtocol.h */,
 				2C801BE31F23460C009F82F7 /* TJSProductListPrivateProtocol.h */,
-				2C801BD11F233F46009F82F7 /* TJSpRroductListCellProtocol.h */,
+				2C801BD11F233F46009F82F7 /* TJSProductListCellProtocol.h */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";

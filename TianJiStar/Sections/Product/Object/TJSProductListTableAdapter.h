@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 #import "TJSProductListConfigurateProtocol.h"
-#import "TJSpRroductListCellProtocol.h"
+#import "TJSProductListCellProtocol.h"
 
 @interface TJSProductListTableAdapter : NSObject<UITableViewDelegate,UITableViewDataSource>
 

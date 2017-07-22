@@ -16,8 +16,6 @@
 
 @implementation TJSProductListInteractorImpl
 
-
-
 #pragma mark - <NIMSessionInteractor>
 
 //数据接口

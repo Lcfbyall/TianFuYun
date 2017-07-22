@@ -8,6 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
+#import "ProductListCell.h"
+
 @interface TJSProductListCellFactory : NSObject
+
+
+- (ProductListCell *)cellInTable:(UITableView*)tableView
+             forProductInfoModel:(TJSProductInfoModel *)model;
 
 @end
