@@ -8,7 +8,10 @@
 
 #import "TJSBaseViewController.h"
 
-@interface ProductViewController : TJSBaseViewController
+#import "TJSProductListConfigurateProtocol.h"
+#import "TJSpRroductListCellProtocol.h"
+
+@interface ProductListViewController : TJSBaseViewController<TJSProductListCellDelegate,TJSProductListInteractorDelegate>
 
 @property (nonatomic, strong,readonly) UITableView *tableView;
 

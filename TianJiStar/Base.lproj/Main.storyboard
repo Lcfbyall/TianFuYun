@@ -29,10 +29,10 @@
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
-        <!--ProductViewController-->
+        <!--ProductListViewController-->
         <scene sceneID="eZI-q6-K4O">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="ProductViewController" storyboardName="Product" referencedIdentifier="ProductViewController" id="Llk-FH-ta2" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardIdentifier="ProductListViewController" storyboardName="Product" referencedIdentifier="ProductListViewController" id="Llk-FH-ta2" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nef-2N-VTL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="862" y="-305"/>

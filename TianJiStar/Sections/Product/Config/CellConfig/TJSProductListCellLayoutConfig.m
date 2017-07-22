@@ -8,6 +8,13 @@
 
 #import "TJSProductListCellLayoutConfig.h"
 
+
+@interface TJSProductListCellLayoutConfig ()
+
+@end
+
+
+
 @implementation TJSProductListCellLayoutConfig
 
 @end

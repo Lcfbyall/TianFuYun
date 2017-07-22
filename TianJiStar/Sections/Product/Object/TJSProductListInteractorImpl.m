@@ -16,4 +16,16 @@
 
 @implementation TJSProductListInteractorImpl
 
+
+
+#pragma mark - <NIMSessionInteractor>
+
+//数据接口
+- (NSArray *)items{
+    
+    id<TJSProductListDataSource> dataSource = self.dataSource;
+
+    return  [dataSource items];
+}
+
 @end

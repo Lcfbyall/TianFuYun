@@ -9,6 +9,10 @@
 #import "ProductVCConfig.h"
 #import <BlocksKit/UIBarButtonItem+BlocksKit.h>
 
+@interface ProductVCConfig ()
+
+@end
+
 @implementation ProductVCConfig
 
 - (NSArray <UIBarButtonItem *> *)tjs_leftBarButtonItems{
@@ -29,7 +33,6 @@
     }];
     
     return [NSArray arrayWithObject:rightItem];
-
 }
 
 - (UIView *)tjs_titleView{

@@ -8,6 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-@interface TJSProductListLayoutImpl : NSObject
+#import "TJSProductListPrivateProtocol.h"
+
+@interface TJSProductListLayoutImpl : NSObject<TJSProductListLayout>
+
+- (instancetype)initWithTableView:(UITableView *)tableView;
+
 
 @end

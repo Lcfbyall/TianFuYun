@@ -26,7 +26,7 @@ static NSString *const FileNC      = @"FileNC";
 static NSString *const MineNC      = @"MineNC";
 
 #pragma mark - VC identifier
-static NSString *const ProductVC   = @"ProductViewController";
+static NSString *const ProductVC   = @"ProductListViewController";
 static NSString *const FileVC      = @"FileViewController";
 static NSString *const MineVC      = @"MineViewController";
 

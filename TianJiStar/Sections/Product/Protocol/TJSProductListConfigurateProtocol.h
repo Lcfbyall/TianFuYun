@@ -10,7 +10,16 @@
 #define TJSProductListConfigurateProtocol_h
 
 
+@protocol TJSProductListInteractorDelegate <NSObject>
+
+@optional
+
+@end
+
+
 @protocol TJSProductListInteractor <NSObject>
+
+@optional
 
 //网络接口
 

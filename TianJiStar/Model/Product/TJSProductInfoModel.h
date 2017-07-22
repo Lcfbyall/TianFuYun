@@ -1,5 +1,5 @@
 //
-//  TJSProductConfigurator.h
+//  TJSProductInfoModel.h
 //  TianJiStar
 //
 //  Created by 朱鹏 on 17/7/22.
@@ -8,10 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@class ProductViewController;
-
-@interface TJSProductConfigurator : NSObject
-
-- (void)setup:(ProductViewController *)vc;
+@interface TJSProductInfoModel : NSObject
 
 @end

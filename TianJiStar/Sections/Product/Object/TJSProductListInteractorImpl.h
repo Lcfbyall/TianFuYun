@@ -8,6 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
-@interface TJSProductListInteractorImpl : NSObject
+#import "TJSProductListConfigurator.h"
+#import "TJSProductListPrivateProtocol.h"
+
+@interface TJSProductListInteractorImpl : NSObject<TJSProductListInteractor,TJSProductListLayoutDelegate>
+
+
+@property(nonatomic,weak) id<TJSProductListInteractorDelegate> delegate;
+
+@property(nonatomic,strong) id<TJSProductListDataSource> dataSource;
+
+@property(nonatomic,strong) id<TJSProductListLayout> layout;
 
 @end

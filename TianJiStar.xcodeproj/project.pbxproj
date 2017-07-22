@@ -69,13 +69,14 @@
 		2C801BD91F233F46009F82F7 /* TJSProductListCellLayoutConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C801BB91F233F46009F82F7 /* TJSProductListCellLayoutConfig.m */; };
 		2C801BDA1F233F46009F82F7 /* ProductVCConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C801BBC1F233F46009F82F7 /* ProductVCConfig.m */; };
 		2C801BDB1F233F46009F82F7 /* Product.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C801BBE1F233F46009F82F7 /* Product.storyboard */; };
-		2C801BDC1F233F46009F82F7 /* ProductViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C801BC01F233F46009F82F7 /* ProductViewController.m */; };
+		2C801BDC1F233F46009F82F7 /* ProductListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C801BC01F233F46009F82F7 /* ProductListViewController.m */; };
 		2C801BDD1F233F46009F82F7 /* TJSProductListCellFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C801BC31F233F46009F82F7 /* TJSProductListCellFactory.m */; };
-		2C801BDE1F233F46009F82F7 /* TJSProductConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C801BC61F233F46009F82F7 /* TJSProductConfigurator.m */; };
+		2C801BDE1F233F46009F82F7 /* TJSProductListConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C801BC61F233F46009F82F7 /* TJSProductListConfigurator.m */; };
 		2C801BDF1F233F46009F82F7 /* TJSProductListDataSourceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C801BC81F233F46009F82F7 /* TJSProductListDataSourceImpl.m */; };
 		2C801BE01F233F46009F82F7 /* TJSProductListInteractorImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C801BCA1F233F46009F82F7 /* TJSProductListInteractorImpl.m */; };
 		2C801BE11F233F46009F82F7 /* TJSProductListLayoutImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C801BCC1F233F46009F82F7 /* TJSProductListLayoutImpl.m */; };
 		2C801BE21F233F46009F82F7 /* TJSProductListTableAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C801BCE1F233F46009F82F7 /* TJSProductListTableAdapter.m */; };
+		2C801BE61F23469B009F82F7 /* TJSProductInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C801BE51F23469B009F82F7 /* TJSProductInfoModel.m */; };
 		D8B489F6D9BA2D941ED245C3 /* libPods-TianJiStar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24C0B56EAE3CA4A62571C4DD /* libPods-TianJiStar.a */; };
 /* End PBXBuildFile section */
 
@@ -226,12 +227,12 @@
 		2C801BBB1F233F46009F82F7 /* ProductVCConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductVCConfig.h; sourceTree = "<group>"; };
 		2C801BBC1F233F46009F82F7 /* ProductVCConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductVCConfig.m; sourceTree = "<group>"; };
 		2C801BBE1F233F46009F82F7 /* Product.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Product.storyboard; sourceTree = "<group>"; };
-		2C801BBF1F233F46009F82F7 /* ProductViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductViewController.h; sourceTree = "<group>"; };
-		2C801BC01F233F46009F82F7 /* ProductViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductViewController.m; sourceTree = "<group>"; };
+		2C801BBF1F233F46009F82F7 /* ProductListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductListViewController.h; sourceTree = "<group>"; };
+		2C801BC01F233F46009F82F7 /* ProductListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductListViewController.m; sourceTree = "<group>"; };
 		2C801BC21F233F46009F82F7 /* TJSProductListCellFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSProductListCellFactory.h; sourceTree = "<group>"; };
 		2C801BC31F233F46009F82F7 /* TJSProductListCellFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSProductListCellFactory.m; sourceTree = "<group>"; };
-		2C801BC51F233F46009F82F7 /* TJSProductConfigurator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSProductConfigurator.h; sourceTree = "<group>"; };
-		2C801BC61F233F46009F82F7 /* TJSProductConfigurator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSProductConfigurator.m; sourceTree = "<group>"; };
+		2C801BC51F233F46009F82F7 /* TJSProductListConfigurator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSProductListConfigurator.h; sourceTree = "<group>"; };
+		2C801BC61F233F46009F82F7 /* TJSProductListConfigurator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSProductListConfigurator.m; sourceTree = "<group>"; };
 		2C801BC71F233F46009F82F7 /* TJSProductListDataSourceImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSProductListDataSourceImpl.h; sourceTree = "<group>"; };
 		2C801BC81F233F46009F82F7 /* TJSProductListDataSourceImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSProductListDataSourceImpl.m; sourceTree = "<group>"; };
 		2C801BC91F233F46009F82F7 /* TJSProductListInteractorImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSProductListInteractorImpl.h; sourceTree = "<group>"; };
@@ -242,6 +243,9 @@
 		2C801BCE1F233F46009F82F7 /* TJSProductListTableAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSProductListTableAdapter.m; sourceTree = "<group>"; };
 		2C801BD01F233F46009F82F7 /* TJSProductListConfigurateProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSProductListConfigurateProtocol.h; sourceTree = "<group>"; };
 		2C801BD11F233F46009F82F7 /* TJSpRroductListCellProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSpRroductListCellProtocol.h; sourceTree = "<group>"; };
+		2C801BE31F23460C009F82F7 /* TJSProductListPrivateProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TJSProductListPrivateProtocol.h; sourceTree = "<group>"; };
+		2C801BE41F23469B009F82F7 /* TJSProductInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSProductInfoModel.h; sourceTree = "<group>"; };
+		2C801BE51F23469B009F82F7 /* TJSProductInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSProductInfoModel.m; sourceTree = "<group>"; };
 		78C8A77EBFE6464B5B247606 /* Pods-TianJiStar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TianJiStar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TianJiStar/Pods-TianJiStar.debug.xcconfig"; sourceTree = "<group>"; };
 		E0DD7EF282716E8411120566 /* Pods-TianJiStar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TianJiStar.release.xcconfig"; path = "Pods/Target Support Files/Pods-TianJiStar/Pods-TianJiStar.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -534,6 +538,8 @@
 			children = (
 				2C801B741F230FC0009F82F7 /* TJSProductInfo.h */,
 				2C801B751F230FC0009F82F7 /* TJSProductInfo.m */,
+				2C801BE41F23469B009F82F7 /* TJSProductInfoModel.h */,
+				2C801BE51F23469B009F82F7 /* TJSProductInfoModel.m */,
 			);
 			path = Product;
 			sourceTree = "<group>";
@@ -814,11 +820,11 @@
 		2C801BA41F233F46009F82F7 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				2C801BA51F233F46009F82F7 /* TJSBaseNavigationController.h */,
-				2C801BA61F233F46009F82F7 /* TJSBaseNavigationController.m */,
 				2C801BA71F233F46009F82F7 /* TJSBaseVCProtocol.h */,
 				2C801BA81F233F46009F82F7 /* TJSBaseViewController.h */,
 				2C801BA91F233F46009F82F7 /* TJSBaseViewController.m */,
+				2C801BA51F233F46009F82F7 /* TJSBaseNavigationController.h */,
+				2C801BA61F233F46009F82F7 /* TJSBaseNavigationController.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -855,8 +861,8 @@
 		2C801BB51F233F46009F82F7 /* Product */ = {
 			isa = PBXGroup;
 			children = (
-				2C801BB61F233F46009F82F7 /* Config */,
 				2C801BBD1F233F46009F82F7 /* Controller */,
+				2C801BB61F233F46009F82F7 /* Config */,
 				2C801BC11F233F46009F82F7 /* Model */,
 				2C801BC41F233F46009F82F7 /* Object */,
 				2C801BCF1F233F46009F82F7 /* Protocol */,
@@ -895,8 +901,8 @@
 			isa = PBXGroup;
 			children = (
 				2C801BBE1F233F46009F82F7 /* Product.storyboard */,
-				2C801BBF1F233F46009F82F7 /* ProductViewController.h */,
-				2C801BC01F233F46009F82F7 /* ProductViewController.m */,
+				2C801BBF1F233F46009F82F7 /* ProductListViewController.h */,
+				2C801BC01F233F46009F82F7 /* ProductListViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -913,12 +919,12 @@
 		2C801BC41F233F46009F82F7 /* Object */ = {
 			isa = PBXGroup;
 			children = (
-				2C801BC51F233F46009F82F7 /* TJSProductConfigurator.h */,
-				2C801BC61F233F46009F82F7 /* TJSProductConfigurator.m */,
-				2C801BC71F233F46009F82F7 /* TJSProductListDataSourceImpl.h */,
-				2C801BC81F233F46009F82F7 /* TJSProductListDataSourceImpl.m */,
+				2C801BC51F233F46009F82F7 /* TJSProductListConfigurator.h */,
+				2C801BC61F233F46009F82F7 /* TJSProductListConfigurator.m */,
 				2C801BC91F233F46009F82F7 /* TJSProductListInteractorImpl.h */,
 				2C801BCA1F233F46009F82F7 /* TJSProductListInteractorImpl.m */,
+				2C801BC71F233F46009F82F7 /* TJSProductListDataSourceImpl.h */,
+				2C801BC81F233F46009F82F7 /* TJSProductListDataSourceImpl.m */,
 				2C801BCB1F233F46009F82F7 /* TJSProductListLayoutImpl.h */,
 				2C801BCC1F233F46009F82F7 /* TJSProductListLayoutImpl.m */,
 				2C801BCD1F233F46009F82F7 /* TJSProductListTableAdapter.h */,
@@ -931,6 +937,7 @@
 			isa = PBXGroup;
 			children = (
 				2C801BD01F233F46009F82F7 /* TJSProductListConfigurateProtocol.h */,
+				2C801BE31F23460C009F82F7 /* TJSProductListPrivateProtocol.h */,
 				2C801BD11F233F46009F82F7 /* TJSpRroductListCellProtocol.h */,
 			);
 			path = Protocol;
@@ -1146,12 +1153,13 @@
 				2C801BDD1F233F46009F82F7 /* TJSProductListCellFactory.m in Sources */,
 				2C4412821F21EA8900C453EF /* UIImage+Retinted.m in Sources */,
 				2C44124B1F21D42600C453EF /* TJSAlertController.m in Sources */,
-				2C801BDC1F233F46009F82F7 /* ProductViewController.m in Sources */,
+				2C801BE61F23469B009F82F7 /* TJSProductInfoModel.m in Sources */,
+				2C801BDC1F233F46009F82F7 /* ProductListViewController.m in Sources */,
 				2C4412731F21E79900C453EF /* UIButton+IBInspectableState.m in Sources */,
 				2C4412061F219A5300C453EF /* UINavigationBar+StyleConfigure.m in Sources */,
 				2C44123C1F21D27700C453EF /* GVUserDefaults.m in Sources */,
 				2C4412931F21FF9C00C453EF /* TJSDownLoaderManager.m in Sources */,
-				2C801BDE1F233F46009F82F7 /* TJSProductConfigurator.m in Sources */,
+				2C801BDE1F233F46009F82F7 /* TJSProductListConfigurator.m in Sources */,
 				2C4412551F21DBBA00C453EF /* UIViewController+RouteParams.m in Sources */,
 				2C801BE01F233F46009F82F7 /* TJSProductListInteractorImpl.m in Sources */,
 				2C44127F1F21E99700C453EF /* UITextView+PlaceHolder.m in Sources */,

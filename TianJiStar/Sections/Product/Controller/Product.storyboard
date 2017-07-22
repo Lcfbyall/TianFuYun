@@ -12,7 +12,7 @@
         <!--Empty Data Set Delegate-->
         <scene sceneID="V1H-12-ifK">
             <objects>
-                <viewController storyboardIdentifier="ProductViewController" id="Z4j-Dg-Ias" customClass="ProductViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProductListViewController" id="Z4j-Dg-Ias" customClass="ProductListViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="N4f-Ja-bAt"/>
                         <viewControllerLayoutGuide type="bottom" id="inC-gx-bpF"/>

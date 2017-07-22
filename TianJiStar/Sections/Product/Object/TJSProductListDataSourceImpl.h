@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface TJSProductListDataSourceImpl : NSObject
+#import "TJSProductListPrivateProtocol.h"
+
+@interface TJSProductListDataSourceImpl : NSObject<TJSProductListDataSource>
 
 @end

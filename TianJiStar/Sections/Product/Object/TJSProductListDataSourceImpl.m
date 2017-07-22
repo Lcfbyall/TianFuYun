@@ -15,4 +15,19 @@
 @end
 @implementation TJSProductListDataSourceImpl
 
+
+
+#pragma mark - <NIMSessionDataSource>
+
+- (NSArray *)items{
+
+    return @[@"",@"",@""];
+}
+
+@end
+
+
+
+@implementation TJSProductListOperateResult
+
 @end

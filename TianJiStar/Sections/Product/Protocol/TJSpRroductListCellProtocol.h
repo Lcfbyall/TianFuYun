@@ -10,17 +10,16 @@
 #define TJSpRroductListCellProtocol_h
 
 
-
 #import <Foundation/Foundation.h>
-
-
 
 @protocol TJSProductListCellDelegate <NSObject>
 
 @optional
 
+- (BOOL)onTapCell:(id)event;
 
-
+- (BOOL)onLongPressCell:(id)message
+                 inView:(UIView *)view;
 
 @end
 
