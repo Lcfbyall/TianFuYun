@@ -75,4 +75,9 @@
     return _vcConfig;
 }
 
+- (UITableView *)tableView{
+  
+    return _productListTBView;
+}
+
 @end

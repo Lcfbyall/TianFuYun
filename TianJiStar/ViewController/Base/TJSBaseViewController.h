@@ -9,8 +9,8 @@
 #import <UIKit/UIKit.h>
 
 #import "UINavigationBar+StyleConfigure.h"
-#import "TJSBaseControllerProtocol.h"
+#import "TJSBaseVCProtocol.h"
 
-@interface TJSBaseViewController : UIViewController <TJSBaseControllerConfig,TJSControllerNavigationConfig>
+@interface TJSBaseViewController : UIViewController <TJSBaseVCConfig,TJSNavigationConfig>
 
 @end

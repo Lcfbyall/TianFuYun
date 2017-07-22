@@ -7,9 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "TJSBaseControllerProtocol.h"
+#import "TJSBaseVCProtocol.h"
 
-@interface ProductVCConfig : NSObject<TJSControllerNavigationConfig>
+@interface ProductVCConfig : NSObject<TJSNavigationConfig>
 
 
 

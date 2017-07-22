@@ -53,7 +53,7 @@
     BOOL isHidden = NO;
     
     if ([viewController isKindOfClass:[TJSBaseViewController class]]&&
-        [viewController conformsToProtocol:@protocol(TJSControllerNavigationConfig)] &&
+        [viewController conformsToProtocol:@protocol(TJSNavigationConfig)] &&
         [viewController respondsToSelector:@selector(tjs_hideNavigationBar)]) {
         
         isHidden = [((TJSBaseViewController *)viewController) tjs_hideNavigationBar];

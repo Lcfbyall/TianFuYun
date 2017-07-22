@@ -1,14 +1,18 @@
 //
-//  TJSBaseControllerProtocol.h
+//  TJSBaseVCProtocol.h
 //  TianJiStar
 //
 //  Created by 朱鹏 on 17/7/21.
 //  Copyright © 2017年 TianJiMoney. All rights reserved.
 //
 
+#ifndef TJSBaseVCProtocol_h
+#define TJSBaseVCProtocol_h
 
-#pragma mark - BaseControllerConfig
-@protocol TJSBaseControllerConfig <NSObject>
+
+
+#pragma mark - BaseVCConfig
+@protocol TJSBaseVCConfig <NSObject>
 
 @optional
 
@@ -21,7 +25,7 @@
 @end
 
 #pragma mark - NavigationConfig
-@protocol TJSControllerNavigationConfig <NSObject>
+@protocol TJSNavigationConfig <NSObject>
 
 @optional
 
@@ -38,5 +42,8 @@
 - (UIView *)tjs_titleView;
 
 @end
+
+#endif /* TJSBaseVCProtocol_h */
+
 
 

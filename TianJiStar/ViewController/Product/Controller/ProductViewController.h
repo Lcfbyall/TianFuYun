@@ -10,4 +10,6 @@
 
 @interface ProductViewController : TJSBaseViewController
 
+@property (nonatomic, strong,readonly) UITableView *tableView;
+
 @end
