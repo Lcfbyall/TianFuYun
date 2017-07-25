@@ -8,12 +8,16 @@
 
 #import "TJSProductListCellFactory.h"
 
+#import "TJSProductListCellLayoutConfig.h"
+
+#import "ProductListCell.h"
+#import "TJSProductInfoModel.h"
+
 
 @interface TJSProductListCellFactory ()
 
 
 @end
-
 
 @implementation TJSProductListCellFactory
 
@@ -32,36 +36,28 @@
     
 }
 
-
-
 - (ProductListCell *)cellInTable:(UITableView *)tableView
              forProductInfoModel:(TJSProductInfoModel *)model{
-
     
-    static NSString *_identifier = @"qqq";
+    id<TJSProductCellLayoutConfig> layoutConfig =[TJSProductListCellLayoutConfig  sharedLayoutConfig];
+    
+    NSString *_identifier = [layoutConfig cellContent:model];
     
     ProductListCell *cell = [tableView dequeueReusableCellWithIdentifier:_identifier];
     
     if (!cell) {
 
         
-        NSString *nibName = NSStringFromClass([ProductListCell class]);
-        UINib    *nib     = [UINib nibWithNibName:nibName bundle:nil];
-        
-        if(nib){
-            
-            [tableView registerNib:nib forCellReuseIdentifier:_identifier];
-        }else{
-        
-            [tableView registerClass:[ProductListCell class] forCellReuseIdentifier:_identifier];
-        }
-        
-        
+        [tableView registerClass:[ProductListCell class] forCellReuseIdentifier:_identifier];
+    
+
         cell = [tableView dequeueReusableCellWithIdentifier:_identifier];
     }
     
-    return cell;
+    [cell tjs_bindDataToCellWithValue:model];
+    
+    
+    return (ProductListCell *)cell;
 }
-
 
 @end

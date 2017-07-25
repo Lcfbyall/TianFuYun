@@ -11,8 +11,6 @@
 #import "TJSProductListConfigurateProtocol.h"
 #import "TJSProductListCellProtocol.h"
 
-@interface ProductListViewController : TJSBaseViewController<TJSProductListCellDelegate,TJSProductListInteractorDelegate>
-
-@property (nonatomic, strong,readonly) UITableView *tableView;
+@interface ProductListViewController : TJSBaseViewController<TJSProductListInteractorDelegate,TJSProductListCellDelegate>
 
 @end

@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-@interface TJSProductListCellLayoutConfig : NSObject
+#import "TJSProductCellConfig.h"
+
+@interface TJSProductListCellLayoutConfig : NSObject<TJSProductCellLayoutConfig>
+
++ (instancetype)sharedLayoutConfig;
 
 @end

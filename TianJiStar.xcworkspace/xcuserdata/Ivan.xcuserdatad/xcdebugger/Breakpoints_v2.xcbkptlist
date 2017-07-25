@@ -9,12 +9,14 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TianJiStar/Sections/Product/Model/TJSProductListCellFactory.h"
-            timestampString = "522419233.185352"
+            filePath = "TianJiStar/View/Product/Cell/ProductListCell.m"
+            timestampString = "522673822.948786"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "3"
-            endingLineNumber = "3">
+            startingLineNumber = "91"
+            endingLineNumber = "91"
+            landmarkName = "-onCatchEvent:"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

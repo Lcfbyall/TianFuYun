@@ -9,6 +9,7 @@
 #ifndef TJSProductListConfigurateProtocol_h
 #define TJSProductListConfigurateProtocol_h
 
+#import "TJSProductInfoModel.h"
 
 @protocol TJSProductListInteractorDelegate <NSObject>
 
@@ -21,24 +22,23 @@
 
 @optional
 
-//网络接口
+//
+- (void)loadProducts:(void (^)(NSArray *products, NSError *error))callback;
+
+- (void)deleteProducts:(NSArray <TJSProductInfoModel *> *)products
+              callback:(void (^)(BOOL success, NSError *error))callback;
+
+- (void)deleteProduct:(TJSProductInfoModel *)product
+             callback:(void (^)(BOOL success, NSError *error))callback;
 
 
-//界面操作接口
 
-
-//数据接口
+//
 - (NSArray *)items;
 
-//排版接口
+- (void)onViewWillAppear;
 
-
-
-//按钮响应接口
-
-
-
-//页面状态同步接口
+- (void)onViewDidDisappear;
 
 
 @end

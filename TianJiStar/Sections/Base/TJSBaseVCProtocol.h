@@ -22,6 +22,8 @@
 //1.2 网络加载
 - (void)tjs_fetchData;
 
+- (UITableView *)tjs_tableView;
+
 @end
 
 #pragma mark - NavigationConfig
@@ -29,21 +31,27 @@
 
 @optional
 
+
 //2.1 是否隐藏导航栏
 - (BOOL)tjs_hideNavigationBar;
 
 //2.2自定义返回按钮事件
 - (void)tjs_unifyPopForMoreEvent;
 
+//2.3
 - (NSArray <UIBarButtonItem *> *)tjs_leftBarButtonItems;
 
 - (NSArray <UIBarButtonItem *> *)tjs_rightBarButtonItems;
 
+//2.4
 - (UIView *)tjs_titleView;
 
 @end
 
+
 #endif /* TJSBaseVCProtocol_h */
+
+
 
 
 

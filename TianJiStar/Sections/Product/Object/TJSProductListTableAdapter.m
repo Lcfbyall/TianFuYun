@@ -9,9 +9,10 @@
 #import "TJSProductListTableAdapter.h"
 
 #import "TJSProductInfoModel.h"
+#import "ProductListCell.h"
 
 #import "TJSProductListCellFactory.h"
-
+#import "TJSProductListCellLayoutConfig.h"
 
 @interface TJSProductListTableAdapter ()
 
@@ -55,11 +56,13 @@
     
     id model = [[self.interactor items] objectAtIndex:indexPath.row];
     
-    cell = [self.cellFactory cellInTable:tableView
+    cell = [(TJSProductListCellFactory *)self.cellFactory 
+                     cellInTable:tableView
                      forProductInfoModel:model];
     
     //cell 的 delegate 给 vc ,self.cellDelegate就是vc
     [(ProductListCell *)cell setDelegate:self.cellDelegate];
+    
     
     return cell;
     
@@ -67,7 +70,15 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
    
-    return 60;
+    CGFloat cellHeight = 0;
+    id modelInArray    = [[self.interactor items] objectAtIndex:indexPath.row];
+    TJSProductInfoModel *model = (TJSProductInfoModel *)modelInArray;
+
+     id<TJSProductCellLayoutConfig> layoutConfig =[TJSProductListCellLayoutConfig  sharedLayoutConfig];
+    
+    cellHeight = [layoutConfig contentSize:model cellWidth:SCREEN_WIDTH].height;
+    
+    return cellHeight;
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{

@@ -27,14 +27,14 @@
 
 - (void)setup:(ProductListViewController *)vc{
 
-    //UITableView *tableView = vc.tableView;
+    UITableView *tableView = vc.tjs_tableView;
     
     
     //1.
     TJSProductListDataSourceImpl *dataSourceImpl =  [[TJSProductListDataSourceImpl alloc]init];
     
     //layout 需要 tableView
-    TJSProductListLayoutImpl     *layoutImpl  =  [[TJSProductListLayoutImpl alloc]init];
+    TJSProductListLayoutImpl     *layoutImpl  =  [[TJSProductListLayoutImpl alloc]initWithTableView:tableView];
     //
     _interactor = [[TJSProductListInteractorImpl alloc]init];
     
@@ -42,6 +42,7 @@
     _interactor.dataSource     = dataSourceImpl;
     _interactor.layout         = layoutImpl;
     
+    [layoutImpl setDelegate:_interactor];
     
     
     //2.
@@ -52,10 +53,18 @@
     
     
     //3.
-    vc.tableView.delegate      = _tableAdapter;
-    vc.tableView.dataSource    = _tableAdapter;
+    vc.tjs_tableView.delegate      = _tableAdapter;
+    vc.tjs_tableView.dataSource    = _tableAdapter;
     
+    
+    //4.
     [vc setInteractor:_interactor];
+    
+    
+    //5.
+    
+    //自动刷新
+    [layoutImpl beginRefresh];
 
 }
 

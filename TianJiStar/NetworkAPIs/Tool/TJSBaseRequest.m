@@ -46,6 +46,9 @@
     return paramDic;
 }
 
+
+
+
 #pragma mark - YTKBaseRequest Override
 
 - (NSTimeInterval)requestTimeoutInterval {
@@ -109,6 +112,9 @@
 - (BOOL)isNeedAlertFailureMessage {
     return YES;
 }
+
+
+
 
 #pragma mark - private method
 

@@ -7,19 +7,20 @@
 //
 
 #import "ProductListViewController.h"
-#import "ProductVCConfig.h"
+#import "ProductListVCConfig.h"
 #import "ProductListCell.h"
 
 #import "TJSProductListConfigurator.h"
 
 @interface ProductListViewController ()
-@property (weak, nonatomic) IBOutlet UITableView *productListTBView;
 
-@property (nonatomic,strong)ProductVCConfig *vcConfig;
+@property (weak, nonatomic)  IBOutlet UITableView *productListTBView;
 
-@property (nonatomic,strong)  TJSProductListConfigurator *configurator;
+@property (nonatomic,strong) ProductListVCConfig *vcConfig;
 
-@property (nonatomic,weak)    id<TJSProductListInteractor> interactor;
+@property (nonatomic,strong) TJSProductListConfigurator *configurator;
+
+@property (nonatomic,weak)   id<TJSProductListInteractor> interactor;
 
 
 @end
@@ -58,9 +59,18 @@
 
 }
 
+- (UITableView *)tjs_tableView{
+    
+    return _productListTBView;
+}
+
+
+#pragma mark - settings
+
 - (void)setupNav{
     
-    _vcConfig = [[ProductVCConfig alloc]init];
+    _vcConfig = [[ProductListVCConfig alloc]init];
+    [_vcConfig setup:self];
     
     self.navigationItem.leftBarButtonItems = [_vcConfig tjs_leftBarButtonItems];
     
@@ -78,10 +88,32 @@
 }
 
 
-#pragma mark - getters && setters
-- (UITableView *)tableView{
-  
-    return _productListTBView;
+
+#pragma mark - TJSProductListCellDelegate
+
+- (BOOL)onTapCell:(TJSProductEvent *)event{
+
+    return YES;
 }
+
+- (BOOL)onLongPressCell:(id)message inView:(UIView *)view{
+
+    return YES;
+}
+
+
+#pragma mark - navigaiton actions
+
+- (void)onTapLeftBarBtnToProductMessage:(id)sender{
+
+
+}
+
+- (void)onTapRightBarBtnToProductSearch:(id)sender{
+
+
+}
+
+
 
 @end

@@ -23,6 +23,7 @@
 // 数据绑定赋值
 - (void)tjs_bindDataToCellWithValue:(id)value;
 // 解决 tableView cell 的分割线左边不到头的问题
+- (BOOL)tjs_checkData;
 - (void)tjs_separatorInsetZero;
 - (void)tjs_separatorInsetZeroWithTableView:(UITableView *)tableView;
 @end

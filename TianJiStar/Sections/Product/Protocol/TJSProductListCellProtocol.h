@@ -11,6 +11,7 @@
 
 
 #import <Foundation/Foundation.h>
+#import "TJSProductEvent.h"
 
 @protocol TJSProductListCellDelegate <NSObject>
 
@@ -21,7 +22,15 @@
 - (BOOL)onLongPressCell:(id)message
                  inView:(UIView *)view;
 
+- (BOOL)onTapLeftEdit:(id)data;
+
+
 @end
+
+
+
+
+
 
 #endif /* TJSProductListCellProtocol_h */
 

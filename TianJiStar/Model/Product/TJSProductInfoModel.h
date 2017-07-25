@@ -8,6 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
+#import "TJSProductInfo.h"
+
 @interface TJSProductInfoModel : NSObject
+
+@property (nonatomic,strong) TJSProductInfo *product;
+
+
+
+- (instancetype)initWithProduct:(TJSProductInfo *)product;
+
 
 @end

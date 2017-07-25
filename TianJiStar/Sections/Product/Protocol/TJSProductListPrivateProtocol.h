@@ -20,7 +20,7 @@
 
 @property (nonatomic,copy) NSArray *indexpaths;
 
-@property (nonatomic,copy) NSArray *productInfoModel;
+@property (nonatomic,copy) NSArray *productInfoModels;
 
 @end
 
@@ -28,15 +28,22 @@
 
 @optional
 
+
+//
+- (void)loadProducts:(void (^)(NSArray *products, NSError *error))callback;
+- (void)deleteProducts:(NSArray <TJSProductInfoModel *> *)products
+             callback:(void (^)(BOOL success, NSError *error))callback;
+
+
+//
+- (TJSProductListOperateResult *)deleteModel:(TJSProductInfoModel *)model;
+- (TJSProductListOperateResult *)deleteModels:(NSArray<TJSProductInfoModel *> *)models;
+
 - (NSArray *)items;
 
-//1. 删除
-- (TJSProductListOperateResult *)deleteProductInfoModel:(TJSProductInfoModel *)model;
-- (NSArray *)deleteModels:(NSRange)range;
 
 
-//2. 更新
-- (TJSProductListOperateResult *)updateProductInfoModel:(TJSProductInfoModel *)model;
+
 
 
 @end
@@ -51,15 +58,14 @@
 @protocol TJSProductListLayout <NSObject>
 
 @optional
-- (void)update:(NSIndexPath *)indexPath;
 
-//- (void)insert:(NSArray *)indexPaths animated:(BOOL)animated;
-
-- (void)remove:(NSArray *)indexPaths;
-
+- (void)remove:(NSArray <NSIndexPath *> *)indexPaths;
 
 - (void)reloadTable;
 
+- (void)beginRefresh;
+
+- (void)endRefresh;
 
 - (void)setDelegate:(id<TJSProductListLayoutDelegate>)delegate;
 

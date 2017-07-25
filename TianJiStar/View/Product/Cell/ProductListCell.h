@@ -8,10 +8,14 @@
 
 #import "TJSBaseTableViewCell.h"
 
-#import "TJSProductInfoModel.h"
 #import "TJSProductListCellProtocol.h"
 
+@class ProductListCellContentView;
+
 @interface ProductListCell : TJSBaseTableViewCell
+
+
+@property (nonatomic, strong) ProductListCellContentView *contentview; //内容区域
 
 @property (nonatomic, weak)   id<TJSProductListCellDelegate> delegate;
 

@@ -6,10 +6,13 @@
 //  Copyright © 2017年 TianJiMoney. All rights reserved.
 //
 
+
+
 #import "TJSBaseRequest.h"
 
 typedef void(^TJSRequestSuccessBlock)(__kindof id _Nullable data);
 typedef void(^TJSRequestFailureBlock)(__kindof NSString* _Nullable msg, NSString* _Nullable code);
+
 
 @interface TJSBaseRequest (TJSSingleRequestBlock)
 

@@ -32,7 +32,7 @@
         _tableView = tableView;
         
         
-        
+        [self setupRefreshControl];
     }
 
     return self;
@@ -52,12 +52,31 @@
     [self.tableView reloadData];
 }
 
+- (void)beginRefresh{
+   
+    [self.tableView.mj_header beginRefreshing];
+}
+
+- (void)endRefresh{
+   
+    [self.tableView.mj_header endRefreshing];
+}
+
+- (void)remove:(NSArray <NSIndexPath *>*)indexPaths{
+  
+    [self.tableView beginUpdates];
+    [self.tableView deleteRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationNone];
+    [self.tableView endUpdates];
+}
+
+
 
 #pragma mark - private 
 
 - (void)setupRefreshControl{
     
     WEAK_SELF(self);
+    
     self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
        
         STRONG_SELF(self);
