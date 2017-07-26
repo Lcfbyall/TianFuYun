@@ -17,11 +17,6 @@
               successCallback:(TJSSuccessCompletionBlock)success
                  failCallback:(TJSFailCompletionBlock)fail{
 
-  
-    //参数:
-    //page
-    //rows
-    //token
     NSMutableDictionary *param = [NSMutableDictionary dictionaryWithDictionary:parameters];
     
     TJSProductListApi *api = [[TJSProductListApi alloc]initWithParame:param];

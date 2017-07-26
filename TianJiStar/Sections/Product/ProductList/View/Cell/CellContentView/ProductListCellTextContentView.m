@@ -11,7 +11,6 @@
 @implementation ProductListCellTextContentView
 
 
-
 #pragma mark -  ProductListCellContentView
 
 - (instancetype)initListCellContentViewWithDefaultSize:(CGSize)size{
@@ -30,22 +29,6 @@
     return self;
 }
 
-- (void)refresh:(TJSProductInfoModel *)data{
-   
-    [super refresh:data];
-    
-    
-    
-
-}
-
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-   
-    [super touchesBegan:touches withEvent:event];
-
-}
-
-
 
 #pragma mark - subViews
 
@@ -55,12 +38,5 @@
 }
 
 
-
-- (void)layoutSubviews{
-    [super layoutSubviews];
-
-    
-    
-}
 
 @end

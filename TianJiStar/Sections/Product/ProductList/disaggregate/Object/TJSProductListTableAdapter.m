@@ -35,7 +35,6 @@
 }
 
 
-
 #pragma mark - UITableViewDelegate && UITableViewDataSource
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -56,9 +55,11 @@
     
     id model = [[self.interactor items] objectAtIndex:indexPath.row];
     
+    
     cell = [(TJSProductListCellFactory *)self.cellFactory 
                      cellInTable:tableView
-                     forProductInfoModel:model];
+             forProductInfoModel:model];
+    
     
     //cell 的 delegate 给 vc ,self.cellDelegate就是vc
     [(ProductListCell *)cell setDelegate:self.cellDelegate];

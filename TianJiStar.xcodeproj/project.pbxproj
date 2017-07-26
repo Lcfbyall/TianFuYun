@@ -56,8 +56,6 @@
 		2C4412A91F2201FF00C453EF /* TJWUrlArgumentsFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4412A41F2201FF00C453EF /* TJWUrlArgumentsFilter.m */; };
 		2C4412AD1F22031600C453EF /* TJSHudAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4412AC1F22031600C453EF /* TJSHudAlert.m */; };
 		2C4412B41F2207CD00C453EF /* TJSLoginStateUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4412B31F2207CD00C453EF /* TJSLoginStateUtil.m */; };
-		2C801B6A1F222171009F82F7 /* ProductListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C801B691F222171009F82F7 /* ProductListCell.m */; };
-		2C801B761F230FC0009F82F7 /* TJSProductInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C801B751F230FC0009F82F7 /* TJSProductInfo.m */; };
 		2C801BD21F233F46009F82F7 /* TJSBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C801BA61F233F46009F82F7 /* TJSBaseNavigationController.m */; };
 		2C801BD31F233F46009F82F7 /* TJSBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C801BA91F233F46009F82F7 /* TJSBaseViewController.m */; };
 		2C801BD41F233F46009F82F7 /* File.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C801BAB1F233F46009F82F7 /* File.storyboard */; };
@@ -65,35 +63,39 @@
 		2C801BD61F233F46009F82F7 /* TJSRootTabBarControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C801BB01F233F46009F82F7 /* TJSRootTabBarControllerViewController.m */; };
 		2C801BD71F233F46009F82F7 /* Mine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C801BB21F233F46009F82F7 /* Mine.storyboard */; };
 		2C801BD81F233F46009F82F7 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C801BB41F233F46009F82F7 /* MineViewController.m */; };
-		2C801BD91F233F46009F82F7 /* TJSProductListCellLayoutConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C801BB91F233F46009F82F7 /* TJSProductListCellLayoutConfig.m */; };
-		2C801BDA1F233F46009F82F7 /* ProductListVCConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C801BBC1F233F46009F82F7 /* ProductListVCConfig.m */; };
-		2C801BDB1F233F46009F82F7 /* Product.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C801BBE1F233F46009F82F7 /* Product.storyboard */; };
-		2C801BDC1F233F46009F82F7 /* ProductListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C801BC01F233F46009F82F7 /* ProductListViewController.m */; };
-		2C801BDD1F233F46009F82F7 /* TJSProductListCellFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C801BC31F233F46009F82F7 /* TJSProductListCellFactory.m */; };
-		2C801BDE1F233F46009F82F7 /* TJSProductListConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C801BC61F233F46009F82F7 /* TJSProductListConfigurator.m */; };
-		2C801BDF1F233F46009F82F7 /* TJSProductListDataSourceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C801BC81F233F46009F82F7 /* TJSProductListDataSourceImpl.m */; };
-		2C801BE01F233F46009F82F7 /* TJSProductListInteractorImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C801BCA1F233F46009F82F7 /* TJSProductListInteractorImpl.m */; };
-		2C801BE11F233F46009F82F7 /* TJSProductListLayoutImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C801BCC1F233F46009F82F7 /* TJSProductListLayoutImpl.m */; };
-		2C801BE21F233F46009F82F7 /* TJSProductListTableAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C801BCE1F233F46009F82F7 /* TJSProductListTableAdapter.m */; };
-		2C801BE61F23469B009F82F7 /* TJSProductInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C801BE51F23469B009F82F7 /* TJSProductInfoModel.m */; };
-		2C801BEE1F258FBD009F82F7 /* TJSBaseProductListContentConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C801BED1F258FBD009F82F7 /* TJSBaseProductListContentConfig.m */; };
-		2C801BF11F259416009F82F7 /* TJSProductListImageContentConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C801BF01F259416009F82F7 /* TJSProductListImageContentConfig.m */; };
-		2C801BF51F259621009F82F7 /* ProductListCellTextContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C801BF41F259621009F82F7 /* ProductListCellTextContentView.m */; };
-		2C801BF81F2596A2009F82F7 /* ProductListCellImageContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C801BF71F2596A2009F82F7 /* ProductListCellImageContentView.m */; };
-		2C801BFB1F259A14009F82F7 /* TJSProductListTextContentConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C801BFA1F259A14009F82F7 /* TJSProductListTextContentConfig.m */; };
-		2C801BFE1F25A489009F82F7 /* ProductListCellContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C801BFD1F25A489009F82F7 /* ProductListCellContentView.m */; };
-		2C801C051F25D1E7009F82F7 /* TJSProductEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C801C041F25D1E7009F82F7 /* TJSProductEvent.m */; };
 		2CAF426F1F26E01E00ABCA5E /* TJSProductListApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF426E1F26E01E00ABCA5E /* TJSProductListApi.m */; };
 		2CAF42731F26E66500ABCA5E /* TJSBaseNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF42721F26E66500ABCA5E /* TJSBaseNetworkTool.m */; };
-		2CAF42761F26E96C00ABCA5E /* ProductListNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF42751F26E96C00ABCA5E /* ProductListNetworkTool.m */; };
 		2CAF427A1F26EAA600ABCA5E /* AppVersionNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF42791F26EAA600ABCA5E /* AppVersionNetworkTool.m */; };
 		2CAF427E1F26EAE300ABCA5E /* TJSAppVersionApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF427D1F26EAE300ABCA5E /* TJSAppVersionApi.m */; };
-		2CAF42821F26F45200ABCA5E /* TJSAppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF42811F26F45200ABCA5E /* TJSAppInfo.m */; };
 		2CAF42851F27261A00ABCA5E /* TJSProductDeleteApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF42841F27261A00ABCA5E /* TJSProductDeleteApi.m */; };
-		2CAF42881F27269800ABCA5E /* ProductDeleteNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF42871F27269800ABCA5E /* ProductDeleteNetworkTool.m */; };
-		2CAF428B1F2763D600ABCA5E /* TJSProductListContentConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF428A1F2763D600ABCA5E /* TJSProductListContentConfig.m */; };
-		2CAF428E1F276F7000ABCA5E /* ProductMessageListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF428D1F276F7000ABCA5E /* ProductMessageListController.m */; };
-		2CAF42911F276F8400ABCA5E /* ProductSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF42901F276F8400ABCA5E /* ProductSearchController.m */; };
+		2CAF42A21F281A3300ABCA5E /* ProductMessageListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF429C1F281A3300ABCA5E /* ProductMessageListController.m */; };
+		2CAF42D31F281B8600ABCA5E /* TJSProductListContentConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF42A81F281B8600ABCA5E /* TJSProductListContentConfig.m */; };
+		2CAF42D41F281B8600ABCA5E /* TJSProductListImageContentConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF42AA1F281B8600ABCA5E /* TJSProductListImageContentConfig.m */; };
+		2CAF42D51F281B8600ABCA5E /* TJSProductListTextContentConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF42AC1F281B8600ABCA5E /* TJSProductListTextContentConfig.m */; };
+		2CAF42D61F281B8600ABCA5E /* TJSBaseProductListContentConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF42AE1F281B8600ABCA5E /* TJSBaseProductListContentConfig.m */; };
+		2CAF42D71F281B8600ABCA5E /* TJSProductListCellLayoutConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF42B01F281B8600ABCA5E /* TJSProductListCellLayoutConfig.m */; };
+		2CAF42D81F281B8600ABCA5E /* ProductListVCConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF42B31F281B8600ABCA5E /* ProductListVCConfig.m */; };
+		2CAF42D91F281B8600ABCA5E /* ProductVCConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF42B51F281B8600ABCA5E /* ProductVCConfig.m */; };
+		2CAF42DA1F281B8600ABCA5E /* Product.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CAF42B71F281B8600ABCA5E /* Product.storyboard */; };
+		2CAF42DB1F281B8600ABCA5E /* ProductListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF42B91F281B8600ABCA5E /* ProductListViewController.m */; };
+		2CAF42DD1F281B8600ABCA5E /* ProductDeleteNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF42BF1F281B8600ABCA5E /* ProductDeleteNetworkTool.m */; };
+		2CAF42DE1F281B8600ABCA5E /* ProductListNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF42C11F281B8600ABCA5E /* ProductListNetworkTool.m */; };
+		2CAF42E71F281B9300ABCA5E /* ProductSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF42E61F281B9300ABCA5E /* ProductSearchController.m */; };
+		2CAF42F51F28273300ABCA5E /* ProductListCellContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF42ED1F28273300ABCA5E /* ProductListCellContentView.m */; };
+		2CAF42F61F28273300ABCA5E /* ProductListCellImageContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF42EF1F28273300ABCA5E /* ProductListCellImageContentView.m */; };
+		2CAF42F71F28273300ABCA5E /* ProductListCellTextContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF42F11F28273300ABCA5E /* ProductListCellTextContentView.m */; };
+		2CAF42F81F28273300ABCA5E /* ProductListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF42F31F28273300ABCA5E /* ProductListCell.m */; };
+		2CAF42F91F28273300ABCA5E /* ProductListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CAF42F41F28273300ABCA5E /* ProductListCell.xib */; };
+		2CAF43061F2828C200ABCA5E /* TJSProductListConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF42FD1F2828C200ABCA5E /* TJSProductListConfigurator.m */; };
+		2CAF43071F2828C200ABCA5E /* TJSProductListDataSourceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF42FF1F2828C200ABCA5E /* TJSProductListDataSourceImpl.m */; };
+		2CAF43081F2828C200ABCA5E /* TJSProductListInteractorImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF43011F2828C200ABCA5E /* TJSProductListInteractorImpl.m */; };
+		2CAF43091F2828C200ABCA5E /* TJSProductListLayoutImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF43031F2828C200ABCA5E /* TJSProductListLayoutImpl.m */; };
+		2CAF430A1F2828C200ABCA5E /* TJSProductListTableAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF43051F2828C200ABCA5E /* TJSProductListTableAdapter.m */; };
+		2CAF430E1F28294E00ABCA5E /* TJSProductListCellFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF430D1F28294E00ABCA5E /* TJSProductListCellFactory.m */; };
+		2CAF43111F2829B300ABCA5E /* TJSAppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF43101F2829B300ABCA5E /* TJSAppInfo.m */; };
+		2CAF43181F2829CF00ABCA5E /* TJSProductEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF43131F2829CF00ABCA5E /* TJSProductEvent.m */; };
+		2CAF43191F2829CF00ABCA5E /* TJSProductInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF43151F2829CF00ABCA5E /* TJSProductInfo.m */; };
+		2CAF431A1F2829CF00ABCA5E /* TJSProductInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF43171F2829CF00ABCA5E /* TJSProductInfoModel.m */; };
 		D8B489F6D9BA2D941ED245C3 /* libPods-TianJiStar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24C0B56EAE3CA4A62571C4DD /* libPods-TianJiStar.a */; };
 /* End PBXBuildFile section */
 
@@ -221,10 +223,6 @@
 		2C4412B21F2207CD00C453EF /* TJSLoginStateUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSLoginStateUtil.h; sourceTree = "<group>"; };
 		2C4412B31F2207CD00C453EF /* TJSLoginStateUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSLoginStateUtil.m; sourceTree = "<group>"; };
 		2C4412B51F2208F700C453EF /* TJSApiParamasKeyDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TJSApiParamasKeyDefine.h; sourceTree = "<group>"; };
-		2C801B681F222171009F82F7 /* ProductListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductListCell.h; sourceTree = "<group>"; };
-		2C801B691F222171009F82F7 /* ProductListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductListCell.m; sourceTree = "<group>"; };
-		2C801B741F230FC0009F82F7 /* TJSProductInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSProductInfo.h; sourceTree = "<group>"; };
-		2C801B751F230FC0009F82F7 /* TJSProductInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSProductInfo.m; sourceTree = "<group>"; };
 		2C801BA51F233F46009F82F7 /* TJSBaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSBaseNavigationController.h; sourceTree = "<group>"; };
 		2C801BA61F233F46009F82F7 /* TJSBaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSBaseNavigationController.m; sourceTree = "<group>"; };
 		2C801BA71F233F46009F82F7 /* TJSBaseVCProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSBaseVCProtocol.h; sourceTree = "<group>"; };
@@ -238,67 +236,74 @@
 		2C801BB21F233F46009F82F7 /* Mine.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Mine.storyboard; sourceTree = "<group>"; };
 		2C801BB31F233F46009F82F7 /* MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
 		2C801BB41F233F46009F82F7 /* MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
-		2C801BB81F233F46009F82F7 /* TJSProductListCellLayoutConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSProductListCellLayoutConfig.h; sourceTree = "<group>"; };
-		2C801BB91F233F46009F82F7 /* TJSProductListCellLayoutConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSProductListCellLayoutConfig.m; sourceTree = "<group>"; };
-		2C801BBB1F233F46009F82F7 /* ProductListVCConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductListVCConfig.h; sourceTree = "<group>"; };
-		2C801BBC1F233F46009F82F7 /* ProductListVCConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductListVCConfig.m; sourceTree = "<group>"; };
-		2C801BBE1F233F46009F82F7 /* Product.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Product.storyboard; sourceTree = "<group>"; };
-		2C801BBF1F233F46009F82F7 /* ProductListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductListViewController.h; sourceTree = "<group>"; };
-		2C801BC01F233F46009F82F7 /* ProductListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductListViewController.m; sourceTree = "<group>"; };
-		2C801BC21F233F46009F82F7 /* TJSProductListCellFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSProductListCellFactory.h; sourceTree = "<group>"; };
-		2C801BC31F233F46009F82F7 /* TJSProductListCellFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSProductListCellFactory.m; sourceTree = "<group>"; };
-		2C801BC51F233F46009F82F7 /* TJSProductListConfigurator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSProductListConfigurator.h; sourceTree = "<group>"; };
-		2C801BC61F233F46009F82F7 /* TJSProductListConfigurator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSProductListConfigurator.m; sourceTree = "<group>"; };
-		2C801BC71F233F46009F82F7 /* TJSProductListDataSourceImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSProductListDataSourceImpl.h; sourceTree = "<group>"; };
-		2C801BC81F233F46009F82F7 /* TJSProductListDataSourceImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSProductListDataSourceImpl.m; sourceTree = "<group>"; };
-		2C801BC91F233F46009F82F7 /* TJSProductListInteractorImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSProductListInteractorImpl.h; sourceTree = "<group>"; };
-		2C801BCA1F233F46009F82F7 /* TJSProductListInteractorImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSProductListInteractorImpl.m; sourceTree = "<group>"; };
-		2C801BCB1F233F46009F82F7 /* TJSProductListLayoutImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSProductListLayoutImpl.h; sourceTree = "<group>"; };
-		2C801BCC1F233F46009F82F7 /* TJSProductListLayoutImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSProductListLayoutImpl.m; sourceTree = "<group>"; };
-		2C801BCD1F233F46009F82F7 /* TJSProductListTableAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSProductListTableAdapter.h; sourceTree = "<group>"; };
-		2C801BCE1F233F46009F82F7 /* TJSProductListTableAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSProductListTableAdapter.m; sourceTree = "<group>"; };
-		2C801BD01F233F46009F82F7 /* TJSProductListConfigurateProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSProductListConfigurateProtocol.h; sourceTree = "<group>"; };
-		2C801BD11F233F46009F82F7 /* TJSProductListCellProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSProductListCellProtocol.h; sourceTree = "<group>"; };
-		2C801BE31F23460C009F82F7 /* TJSProductListPrivateProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TJSProductListPrivateProtocol.h; sourceTree = "<group>"; };
-		2C801BE41F23469B009F82F7 /* TJSProductInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSProductInfoModel.h; sourceTree = "<group>"; };
-		2C801BE51F23469B009F82F7 /* TJSProductInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSProductInfoModel.m; sourceTree = "<group>"; };
-		2C801BEA1F258B21009F82F7 /* TJSProductCellConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TJSProductCellConfig.h; sourceTree = "<group>"; };
-		2C801BEC1F258FBD009F82F7 /* TJSBaseProductListContentConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSBaseProductListContentConfig.h; sourceTree = "<group>"; };
-		2C801BED1F258FBD009F82F7 /* TJSBaseProductListContentConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSBaseProductListContentConfig.m; sourceTree = "<group>"; };
-		2C801BEF1F259416009F82F7 /* TJSProductListImageContentConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSProductListImageContentConfig.h; sourceTree = "<group>"; };
-		2C801BF01F259416009F82F7 /* TJSProductListImageContentConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSProductListImageContentConfig.m; sourceTree = "<group>"; };
-		2C801BF31F259621009F82F7 /* ProductListCellTextContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductListCellTextContentView.h; sourceTree = "<group>"; };
-		2C801BF41F259621009F82F7 /* ProductListCellTextContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductListCellTextContentView.m; sourceTree = "<group>"; };
-		2C801BF61F2596A2009F82F7 /* ProductListCellImageContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductListCellImageContentView.h; sourceTree = "<group>"; };
-		2C801BF71F2596A2009F82F7 /* ProductListCellImageContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductListCellImageContentView.m; sourceTree = "<group>"; };
-		2C801BF91F259A14009F82F7 /* TJSProductListTextContentConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSProductListTextContentConfig.h; sourceTree = "<group>"; };
-		2C801BFA1F259A14009F82F7 /* TJSProductListTextContentConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSProductListTextContentConfig.m; sourceTree = "<group>"; };
-		2C801BFC1F25A489009F82F7 /* ProductListCellContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductListCellContentView.h; sourceTree = "<group>"; };
-		2C801BFD1F25A489009F82F7 /* ProductListCellContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductListCellContentView.m; sourceTree = "<group>"; };
-		2C801C031F25D1E7009F82F7 /* TJSProductEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSProductEvent.h; sourceTree = "<group>"; };
-		2C801C041F25D1E7009F82F7 /* TJSProductEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSProductEvent.m; sourceTree = "<group>"; };
 		2CAF426D1F26E01E00ABCA5E /* TJSProductListApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSProductListApi.h; sourceTree = "<group>"; };
 		2CAF426E1F26E01E00ABCA5E /* TJSProductListApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSProductListApi.m; sourceTree = "<group>"; };
 		2CAF42711F26E66500ABCA5E /* TJSBaseNetworkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSBaseNetworkTool.h; sourceTree = "<group>"; };
 		2CAF42721F26E66500ABCA5E /* TJSBaseNetworkTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSBaseNetworkTool.m; sourceTree = "<group>"; };
-		2CAF42741F26E96C00ABCA5E /* ProductListNetworkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductListNetworkTool.h; sourceTree = "<group>"; };
-		2CAF42751F26E96C00ABCA5E /* ProductListNetworkTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductListNetworkTool.m; sourceTree = "<group>"; };
 		2CAF42781F26EAA600ABCA5E /* AppVersionNetworkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppVersionNetworkTool.h; sourceTree = "<group>"; };
 		2CAF42791F26EAA600ABCA5E /* AppVersionNetworkTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppVersionNetworkTool.m; sourceTree = "<group>"; };
 		2CAF427C1F26EAE300ABCA5E /* TJSAppVersionApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSAppVersionApi.h; sourceTree = "<group>"; };
 		2CAF427D1F26EAE300ABCA5E /* TJSAppVersionApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSAppVersionApi.m; sourceTree = "<group>"; };
-		2CAF42801F26F45200ABCA5E /* TJSAppInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSAppInfo.h; sourceTree = "<group>"; };
-		2CAF42811F26F45200ABCA5E /* TJSAppInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSAppInfo.m; sourceTree = "<group>"; };
 		2CAF42831F27261A00ABCA5E /* TJSProductDeleteApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSProductDeleteApi.h; sourceTree = "<group>"; };
 		2CAF42841F27261A00ABCA5E /* TJSProductDeleteApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSProductDeleteApi.m; sourceTree = "<group>"; };
-		2CAF42861F27269800ABCA5E /* ProductDeleteNetworkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductDeleteNetworkTool.h; sourceTree = "<group>"; };
-		2CAF42871F27269800ABCA5E /* ProductDeleteNetworkTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductDeleteNetworkTool.m; sourceTree = "<group>"; };
-		2CAF42891F2763D600ABCA5E /* TJSProductListContentConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSProductListContentConfig.h; sourceTree = "<group>"; };
-		2CAF428A1F2763D600ABCA5E /* TJSProductListContentConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSProductListContentConfig.m; sourceTree = "<group>"; };
-		2CAF428C1F276F7000ABCA5E /* ProductMessageListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductMessageListController.h; sourceTree = "<group>"; };
-		2CAF428D1F276F7000ABCA5E /* ProductMessageListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductMessageListController.m; sourceTree = "<group>"; };
-		2CAF428F1F276F8400ABCA5E /* ProductSearchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductSearchController.h; sourceTree = "<group>"; };
-		2CAF42901F276F8400ABCA5E /* ProductSearchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductSearchController.m; sourceTree = "<group>"; };
+		2CAF429B1F281A3300ABCA5E /* ProductMessageListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductMessageListController.h; sourceTree = "<group>"; };
+		2CAF429C1F281A3300ABCA5E /* ProductMessageListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductMessageListController.m; sourceTree = "<group>"; };
+		2CAF42A71F281B8600ABCA5E /* TJSProductListContentConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSProductListContentConfig.h; sourceTree = "<group>"; };
+		2CAF42A81F281B8600ABCA5E /* TJSProductListContentConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSProductListContentConfig.m; sourceTree = "<group>"; };
+		2CAF42A91F281B8600ABCA5E /* TJSProductListImageContentConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSProductListImageContentConfig.h; sourceTree = "<group>"; };
+		2CAF42AA1F281B8600ABCA5E /* TJSProductListImageContentConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSProductListImageContentConfig.m; sourceTree = "<group>"; };
+		2CAF42AB1F281B8600ABCA5E /* TJSProductListTextContentConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSProductListTextContentConfig.h; sourceTree = "<group>"; };
+		2CAF42AC1F281B8600ABCA5E /* TJSProductListTextContentConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSProductListTextContentConfig.m; sourceTree = "<group>"; };
+		2CAF42AD1F281B8600ABCA5E /* TJSBaseProductListContentConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSBaseProductListContentConfig.h; sourceTree = "<group>"; };
+		2CAF42AE1F281B8600ABCA5E /* TJSBaseProductListContentConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSBaseProductListContentConfig.m; sourceTree = "<group>"; };
+		2CAF42AF1F281B8600ABCA5E /* TJSProductListCellLayoutConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSProductListCellLayoutConfig.h; sourceTree = "<group>"; };
+		2CAF42B01F281B8600ABCA5E /* TJSProductListCellLayoutConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSProductListCellLayoutConfig.m; sourceTree = "<group>"; };
+		2CAF42B21F281B8600ABCA5E /* ProductListVCConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductListVCConfig.h; sourceTree = "<group>"; };
+		2CAF42B31F281B8600ABCA5E /* ProductListVCConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductListVCConfig.m; sourceTree = "<group>"; };
+		2CAF42B41F281B8600ABCA5E /* ProductVCConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductVCConfig.h; sourceTree = "<group>"; };
+		2CAF42B51F281B8600ABCA5E /* ProductVCConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductVCConfig.m; sourceTree = "<group>"; };
+		2CAF42B71F281B8600ABCA5E /* Product.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Product.storyboard; sourceTree = "<group>"; };
+		2CAF42B81F281B8600ABCA5E /* ProductListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductListViewController.h; sourceTree = "<group>"; };
+		2CAF42B91F281B8600ABCA5E /* ProductListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductListViewController.m; sourceTree = "<group>"; };
+		2CAF42BE1F281B8600ABCA5E /* ProductDeleteNetworkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductDeleteNetworkTool.h; sourceTree = "<group>"; };
+		2CAF42BF1F281B8600ABCA5E /* ProductDeleteNetworkTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductDeleteNetworkTool.m; sourceTree = "<group>"; };
+		2CAF42C01F281B8600ABCA5E /* ProductListNetworkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductListNetworkTool.h; sourceTree = "<group>"; };
+		2CAF42C11F281B8600ABCA5E /* ProductListNetworkTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductListNetworkTool.m; sourceTree = "<group>"; };
+		2CAF42CE1F281B8600ABCA5E /* TJSProductCellConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSProductCellConfig.h; sourceTree = "<group>"; };
+		2CAF42CF1F281B8600ABCA5E /* TJSProductListCellProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSProductListCellProtocol.h; sourceTree = "<group>"; };
+		2CAF42D01F281B8600ABCA5E /* TJSProductListConfigurateProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSProductListConfigurateProtocol.h; sourceTree = "<group>"; };
+		2CAF42D11F281B8600ABCA5E /* TJSProductListPrivateProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSProductListPrivateProtocol.h; sourceTree = "<group>"; };
+		2CAF42E51F281B9300ABCA5E /* ProductSearchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductSearchController.h; sourceTree = "<group>"; };
+		2CAF42E61F281B9300ABCA5E /* ProductSearchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductSearchController.m; sourceTree = "<group>"; };
+		2CAF42EC1F28273300ABCA5E /* ProductListCellContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductListCellContentView.h; sourceTree = "<group>"; };
+		2CAF42ED1F28273300ABCA5E /* ProductListCellContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductListCellContentView.m; sourceTree = "<group>"; };
+		2CAF42EE1F28273300ABCA5E /* ProductListCellImageContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductListCellImageContentView.h; sourceTree = "<group>"; };
+		2CAF42EF1F28273300ABCA5E /* ProductListCellImageContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductListCellImageContentView.m; sourceTree = "<group>"; };
+		2CAF42F01F28273300ABCA5E /* ProductListCellTextContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductListCellTextContentView.h; sourceTree = "<group>"; };
+		2CAF42F11F28273300ABCA5E /* ProductListCellTextContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductListCellTextContentView.m; sourceTree = "<group>"; };
+		2CAF42F21F28273300ABCA5E /* ProductListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductListCell.h; sourceTree = "<group>"; };
+		2CAF42F31F28273300ABCA5E /* ProductListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductListCell.m; sourceTree = "<group>"; };
+		2CAF42F41F28273300ABCA5E /* ProductListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductListCell.xib; sourceTree = "<group>"; };
+		2CAF42FC1F2828C200ABCA5E /* TJSProductListConfigurator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSProductListConfigurator.h; sourceTree = "<group>"; };
+		2CAF42FD1F2828C200ABCA5E /* TJSProductListConfigurator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSProductListConfigurator.m; sourceTree = "<group>"; };
+		2CAF42FE1F2828C200ABCA5E /* TJSProductListDataSourceImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSProductListDataSourceImpl.h; sourceTree = "<group>"; };
+		2CAF42FF1F2828C200ABCA5E /* TJSProductListDataSourceImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSProductListDataSourceImpl.m; sourceTree = "<group>"; };
+		2CAF43001F2828C200ABCA5E /* TJSProductListInteractorImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSProductListInteractorImpl.h; sourceTree = "<group>"; };
+		2CAF43011F2828C200ABCA5E /* TJSProductListInteractorImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSProductListInteractorImpl.m; sourceTree = "<group>"; };
+		2CAF43021F2828C200ABCA5E /* TJSProductListLayoutImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSProductListLayoutImpl.h; sourceTree = "<group>"; };
+		2CAF43031F2828C200ABCA5E /* TJSProductListLayoutImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSProductListLayoutImpl.m; sourceTree = "<group>"; };
+		2CAF43041F2828C200ABCA5E /* TJSProductListTableAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSProductListTableAdapter.h; sourceTree = "<group>"; };
+		2CAF43051F2828C200ABCA5E /* TJSProductListTableAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSProductListTableAdapter.m; sourceTree = "<group>"; };
+		2CAF430C1F28294E00ABCA5E /* TJSProductListCellFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSProductListCellFactory.h; sourceTree = "<group>"; };
+		2CAF430D1F28294E00ABCA5E /* TJSProductListCellFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSProductListCellFactory.m; sourceTree = "<group>"; };
+		2CAF430F1F2829B300ABCA5E /* TJSAppInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSAppInfo.h; sourceTree = "<group>"; };
+		2CAF43101F2829B300ABCA5E /* TJSAppInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSAppInfo.m; sourceTree = "<group>"; };
+		2CAF43121F2829CF00ABCA5E /* TJSProductEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSProductEvent.h; sourceTree = "<group>"; };
+		2CAF43131F2829CF00ABCA5E /* TJSProductEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSProductEvent.m; sourceTree = "<group>"; };
+		2CAF43141F2829CF00ABCA5E /* TJSProductInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSProductInfo.h; sourceTree = "<group>"; };
+		2CAF43151F2829CF00ABCA5E /* TJSProductInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSProductInfo.m; sourceTree = "<group>"; };
+		2CAF43161F2829CF00ABCA5E /* TJSProductInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSProductInfoModel.h; sourceTree = "<group>"; };
+		2CAF43171F2829CF00ABCA5E /* TJSProductInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSProductInfoModel.m; sourceTree = "<group>"; };
 		78C8A77EBFE6464B5B247606 /* Pods-TianJiStar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TianJiStar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TianJiStar/Pods-TianJiStar.debug.xcconfig"; sourceTree = "<group>"; };
 		E0DD7EF282716E8411120566 /* Pods-TianJiStar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TianJiStar.release.xcconfig"; path = "Pods/Target Support Files/Pods-TianJiStar/Pods-TianJiStar.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -357,7 +362,6 @@
 				2C44122D1F21AA5900C453EF /* AppDelegate */,
 				2C801BA31F233F46009F82F7 /* Sections */,
 				2C4411E21F219A5300C453EF /* Categories */,
-				2C4411F91F219A5300C453EF /* Model */,
 				2C4411FA1F219A5300C453EF /* NetworkAPIs */,
 				2C4411FB1F219A5300C453EF /* Resources */,
 				2C4411FD1F219A5300C453EF /* Tools */,
@@ -505,20 +509,10 @@
 			path = "Macro&Const";
 			sourceTree = "<group>";
 		};
-		2C4411F91F219A5300C453EF /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				2CAF427F1F26F41A00ABCA5E /* AppVerison */,
-				2C44120A1F219ACF00C453EF /* File */,
-				2C44120B1F219ACF00C453EF /* Mine */,
-				2C44120C1F219ACF00C453EF /* Product */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		2C4411FA1F219A5300C453EF /* NetworkAPIs */ = {
 			isa = PBXGroup;
 			children = (
+				2CAF42951F28187600ABCA5E /* Message */,
 				2CAF427B1F26EAC900ABCA5E /* AppVersion */,
 				2CAF426A1F26DEDE00ABCA5E /* Product */,
 				2CAF426C1F26DEEF00ABCA5E /* Mine */,
@@ -569,62 +563,10 @@
 		2C4411FF1F219A5300C453EF /* View */ = {
 			isa = PBXGroup;
 			children = (
-				2C801B731F230E7F009F82F7 /* Comman */,
-				2C44120F1F219AE000C453EF /* Product */,
 				2C4412111F219B4400C453EF /* Base */,
-				2C44120D1F219AE000C453EF /* File */,
-				2C44120E1F219AE000C453EF /* Mine */,
+				2C801B731F230E7F009F82F7 /* Comman */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		2C44120A1F219ACF00C453EF /* File */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = File;
-			sourceTree = "<group>";
-		};
-		2C44120B1F219ACF00C453EF /* Mine */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Mine;
-			sourceTree = "<group>";
-		};
-		2C44120C1F219ACF00C453EF /* Product */ = {
-			isa = PBXGroup;
-			children = (
-				2C801C031F25D1E7009F82F7 /* TJSProductEvent.h */,
-				2C801C041F25D1E7009F82F7 /* TJSProductEvent.m */,
-				2C801B741F230FC0009F82F7 /* TJSProductInfo.h */,
-				2C801B751F230FC0009F82F7 /* TJSProductInfo.m */,
-				2C801BE41F23469B009F82F7 /* TJSProductInfoModel.h */,
-				2C801BE51F23469B009F82F7 /* TJSProductInfoModel.m */,
-			);
-			path = Product;
-			sourceTree = "<group>";
-		};
-		2C44120D1F219AE000C453EF /* File */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = File;
-			sourceTree = "<group>";
-		};
-		2C44120E1F219AE000C453EF /* Mine */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Mine;
-			sourceTree = "<group>";
-		};
-		2C44120F1F219AE000C453EF /* Product */ = {
-			isa = PBXGroup;
-			children = (
-				2C801B671F222154009F82F7 /* Cell */,
-			);
-			path = Product;
 			sourceTree = "<group>";
 		};
 		2C4412111F219B4400C453EF /* Base */ = {
@@ -849,16 +791,6 @@
 			path = HudAlert;
 			sourceTree = "<group>";
 		};
-		2C801B671F222154009F82F7 /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				2C801B681F222171009F82F7 /* ProductListCell.h */,
-				2C801B691F222171009F82F7 /* ProductListCell.m */,
-				2C801BF21F2595C7009F82F7 /* CellContentView */,
-			);
-			path = Cell;
-			sourceTree = "<group>";
-		};
 		2C801B731F230E7F009F82F7 /* Comman */ = {
 			isa = PBXGroup;
 			children = (
@@ -869,9 +801,10 @@
 		2C801BA31F233F46009F82F7 /* Sections */ = {
 			isa = PBXGroup;
 			children = (
-				2C801BA41F233F46009F82F7 /* Base */,
-				2CAF42701F26E5E800ABCA5E /* Other */,
 				2C801BAE1F233F46009F82F7 /* Main */,
+				2CAF42701F26E5E800ABCA5E /* Other */,
+				2C801BA41F233F46009F82F7 /* Base */,
+				2CAF42921F28183600ABCA5E /* Message */,
 				2C801BB51F233F46009F82F7 /* Product */,
 				2C801BAA1F233F46009F82F7 /* File */,
 				2C801BB11F233F46009F82F7 /* Mine */,
@@ -925,103 +858,10 @@
 		2C801BB51F233F46009F82F7 /* Product */ = {
 			isa = PBXGroup;
 			children = (
-				2CAF42691F26DDAF00ABCA5E /* NetworkTool */,
-				2C801BE81F258814009F82F7 /* Store */,
-				2C801BBD1F233F46009F82F7 /* Controller */,
-				2C801BC41F233F46009F82F7 /* Object */,
-				2C801BC11F233F46009F82F7 /* Model */,
-				2C801BB61F233F46009F82F7 /* Config */,
-				2C801BCF1F233F46009F82F7 /* Protocol */,
+				2CAF42A31F281B8600ABCA5E /* ProductList */,
+				2CAF42E41F281B9300ABCA5E /* ProductSearch */,
 			);
 			path = Product;
-			sourceTree = "<group>";
-		};
-		2C801BB61F233F46009F82F7 /* Config */ = {
-			isa = PBXGroup;
-			children = (
-				2C801BB71F233F46009F82F7 /* CellConfig */,
-				2C801BBA1F233F46009F82F7 /* VCConfig */,
-			);
-			path = Config;
-			sourceTree = "<group>";
-		};
-		2C801BB71F233F46009F82F7 /* CellConfig */ = {
-			isa = PBXGroup;
-			children = (
-				2C801BB81F233F46009F82F7 /* TJSProductListCellLayoutConfig.h */,
-				2C801BB91F233F46009F82F7 /* TJSProductListCellLayoutConfig.m */,
-				2C801BEC1F258FBD009F82F7 /* TJSBaseProductListContentConfig.h */,
-				2C801BED1F258FBD009F82F7 /* TJSBaseProductListContentConfig.m */,
-				2C801BEB1F258F14009F82F7 /* Content */,
-			);
-			path = CellConfig;
-			sourceTree = "<group>";
-		};
-		2C801BBA1F233F46009F82F7 /* VCConfig */ = {
-			isa = PBXGroup;
-			children = (
-				2C801BBB1F233F46009F82F7 /* ProductListVCConfig.h */,
-				2C801BBC1F233F46009F82F7 /* ProductListVCConfig.m */,
-			);
-			path = VCConfig;
-			sourceTree = "<group>";
-		};
-		2C801BBD1F233F46009F82F7 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				2C801BBE1F233F46009F82F7 /* Product.storyboard */,
-				2C801BBF1F233F46009F82F7 /* ProductListViewController.h */,
-				2C801BC01F233F46009F82F7 /* ProductListViewController.m */,
-				2CAF428C1F276F7000ABCA5E /* ProductMessageListController.h */,
-				2CAF428D1F276F7000ABCA5E /* ProductMessageListController.m */,
-				2CAF428F1F276F8400ABCA5E /* ProductSearchController.h */,
-				2CAF42901F276F8400ABCA5E /* ProductSearchController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		2C801BC11F233F46009F82F7 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				2C801BC21F233F46009F82F7 /* TJSProductListCellFactory.h */,
-				2C801BC31F233F46009F82F7 /* TJSProductListCellFactory.m */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		2C801BC41F233F46009F82F7 /* Object */ = {
-			isa = PBXGroup;
-			children = (
-				2C801BC51F233F46009F82F7 /* TJSProductListConfigurator.h */,
-				2C801BC61F233F46009F82F7 /* TJSProductListConfigurator.m */,
-				2C801BC91F233F46009F82F7 /* TJSProductListInteractorImpl.h */,
-				2C801BCA1F233F46009F82F7 /* TJSProductListInteractorImpl.m */,
-				2C801BC71F233F46009F82F7 /* TJSProductListDataSourceImpl.h */,
-				2C801BC81F233F46009F82F7 /* TJSProductListDataSourceImpl.m */,
-				2C801BCB1F233F46009F82F7 /* TJSProductListLayoutImpl.h */,
-				2C801BCC1F233F46009F82F7 /* TJSProductListLayoutImpl.m */,
-				2C801BCD1F233F46009F82F7 /* TJSProductListTableAdapter.h */,
-				2C801BCE1F233F46009F82F7 /* TJSProductListTableAdapter.m */,
-			);
-			path = Object;
-			sourceTree = "<group>";
-		};
-		2C801BCF1F233F46009F82F7 /* Protocol */ = {
-			isa = PBXGroup;
-			children = (
-				2C801BD01F233F46009F82F7 /* TJSProductListConfigurateProtocol.h */,
-				2C801BE31F23460C009F82F7 /* TJSProductListPrivateProtocol.h */,
-				2C801BD11F233F46009F82F7 /* TJSProductListCellProtocol.h */,
-				2C801BEA1F258B21009F82F7 /* TJSProductCellConfig.h */,
-			);
-			path = Protocol;
-			sourceTree = "<group>";
-		};
-		2C801BE81F258814009F82F7 /* Store */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Store;
 			sourceTree = "<group>";
 		};
 		2C801BE91F25884E009F82F7 /* StoreService */ = {
@@ -1029,43 +869,6 @@
 			children = (
 			);
 			path = StoreService;
-			sourceTree = "<group>";
-		};
-		2C801BEB1F258F14009F82F7 /* Content */ = {
-			isa = PBXGroup;
-			children = (
-				2CAF42891F2763D600ABCA5E /* TJSProductListContentConfig.h */,
-				2CAF428A1F2763D600ABCA5E /* TJSProductListContentConfig.m */,
-				2C801BF91F259A14009F82F7 /* TJSProductListTextContentConfig.h */,
-				2C801BFA1F259A14009F82F7 /* TJSProductListTextContentConfig.m */,
-				2C801BEF1F259416009F82F7 /* TJSProductListImageContentConfig.h */,
-				2C801BF01F259416009F82F7 /* TJSProductListImageContentConfig.m */,
-			);
-			path = Content;
-			sourceTree = "<group>";
-		};
-		2C801BF21F2595C7009F82F7 /* CellContentView */ = {
-			isa = PBXGroup;
-			children = (
-				2C801BFC1F25A489009F82F7 /* ProductListCellContentView.h */,
-				2C801BFD1F25A489009F82F7 /* ProductListCellContentView.m */,
-				2C801BF31F259621009F82F7 /* ProductListCellTextContentView.h */,
-				2C801BF41F259621009F82F7 /* ProductListCellTextContentView.m */,
-				2C801BF61F2596A2009F82F7 /* ProductListCellImageContentView.h */,
-				2C801BF71F2596A2009F82F7 /* ProductListCellImageContentView.m */,
-			);
-			path = CellContentView;
-			sourceTree = "<group>";
-		};
-		2CAF42691F26DDAF00ABCA5E /* NetworkTool */ = {
-			isa = PBXGroup;
-			children = (
-				2CAF42741F26E96C00ABCA5E /* ProductListNetworkTool.h */,
-				2CAF42751F26E96C00ABCA5E /* ProductListNetworkTool.m */,
-				2CAF42861F27269800ABCA5E /* ProductDeleteNetworkTool.h */,
-				2CAF42871F27269800ABCA5E /* ProductDeleteNetworkTool.m */,
-			);
-			path = NetworkTool;
 			sourceTree = "<group>";
 		};
 		2CAF426A1F26DEDE00ABCA5E /* Product */ = {
@@ -1106,6 +909,8 @@
 			children = (
 				2CAF42781F26EAA600ABCA5E /* AppVersionNetworkTool.h */,
 				2CAF42791F26EAA600ABCA5E /* AppVersionNetworkTool.m */,
+				2CAF430F1F2829B300ABCA5E /* TJSAppInfo.h */,
+				2CAF43101F2829B300ABCA5E /* TJSAppInfo.m */,
 			);
 			path = Appversion;
 			sourceTree = "<group>";
@@ -1119,13 +924,257 @@
 			path = AppVersion;
 			sourceTree = "<group>";
 		};
-		2CAF427F1F26F41A00ABCA5E /* AppVerison */ = {
+		2CAF42921F28183600ABCA5E /* Message */ = {
 			isa = PBXGroup;
 			children = (
-				2CAF42801F26F45200ABCA5E /* TJSAppInfo.h */,
-				2CAF42811F26F45200ABCA5E /* TJSAppInfo.m */,
+				2CAF429E1F281A3300ABCA5E /* NetworkTool */,
+				2CAF42A11F281A3300ABCA5E /* Store */,
+				2CAF429A1F281A3300ABCA5E /* Controller */,
+				2CAF430B1F28290700ABCA5E /* Disaggregate */,
+				2CAF429D1F281A3300ABCA5E /* Model */,
+				2CAF42991F281A3300ABCA5E /* Config */,
+				2CAF42A01F281A3300ABCA5E /* Protocol */,
 			);
-			path = AppVerison;
+			path = Message;
+			sourceTree = "<group>";
+		};
+		2CAF42951F28187600ABCA5E /* Message */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		2CAF42991F281A3300ABCA5E /* Config */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		2CAF429A1F281A3300ABCA5E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2CAF429B1F281A3300ABCA5E /* ProductMessageListController.h */,
+				2CAF429C1F281A3300ABCA5E /* ProductMessageListController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2CAF429D1F281A3300ABCA5E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2CAF429E1F281A3300ABCA5E /* NetworkTool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NetworkTool;
+			sourceTree = "<group>";
+		};
+		2CAF42A01F281A3300ABCA5E /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		2CAF42A11F281A3300ABCA5E /* Store */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		2CAF42A31F281B8600ABCA5E /* ProductList */ = {
+			isa = PBXGroup;
+			children = (
+				2CAF42BA1F281B8600ABCA5E /* Model */,
+				2CAF42D21F281B8600ABCA5E /* Store */,
+				2CAF42BD1F281B8600ABCA5E /* NetworkTool */,
+				2CAF42B61F281B8600ABCA5E /* Controller */,
+				2CAF42FA1F2828C200ABCA5E /* Disaggregate */,
+				2CAF42A41F281B8600ABCA5E /* Config */,
+				2CAF42CD1F281B8600ABCA5E /* Protocol */,
+				2CAF42E91F2826D400ABCA5E /* View */,
+			);
+			path = ProductList;
+			sourceTree = "<group>";
+		};
+		2CAF42A41F281B8600ABCA5E /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				2CAF42B11F281B8600ABCA5E /* VCConfig */,
+				2CAF42A51F281B8600ABCA5E /* CellConfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		2CAF42A51F281B8600ABCA5E /* CellConfig */ = {
+			isa = PBXGroup;
+			children = (
+				2CAF430C1F28294E00ABCA5E /* TJSProductListCellFactory.h */,
+				2CAF430D1F28294E00ABCA5E /* TJSProductListCellFactory.m */,
+				2CAF42AF1F281B8600ABCA5E /* TJSProductListCellLayoutConfig.h */,
+				2CAF42B01F281B8600ABCA5E /* TJSProductListCellLayoutConfig.m */,
+				2CAF42AD1F281B8600ABCA5E /* TJSBaseProductListContentConfig.h */,
+				2CAF42AE1F281B8600ABCA5E /* TJSBaseProductListContentConfig.m */,
+				2CAF42A61F281B8600ABCA5E /* Content */,
+			);
+			path = CellConfig;
+			sourceTree = "<group>";
+		};
+		2CAF42A61F281B8600ABCA5E /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				2CAF42A71F281B8600ABCA5E /* TJSProductListContentConfig.h */,
+				2CAF42A81F281B8600ABCA5E /* TJSProductListContentConfig.m */,
+				2CAF42A91F281B8600ABCA5E /* TJSProductListImageContentConfig.h */,
+				2CAF42AA1F281B8600ABCA5E /* TJSProductListImageContentConfig.m */,
+				2CAF42AB1F281B8600ABCA5E /* TJSProductListTextContentConfig.h */,
+				2CAF42AC1F281B8600ABCA5E /* TJSProductListTextContentConfig.m */,
+			);
+			path = Content;
+			sourceTree = "<group>";
+		};
+		2CAF42B11F281B8600ABCA5E /* VCConfig */ = {
+			isa = PBXGroup;
+			children = (
+				2CAF42B21F281B8600ABCA5E /* ProductListVCConfig.h */,
+				2CAF42B31F281B8600ABCA5E /* ProductListVCConfig.m */,
+				2CAF42B41F281B8600ABCA5E /* ProductVCConfig.h */,
+				2CAF42B51F281B8600ABCA5E /* ProductVCConfig.m */,
+			);
+			path = VCConfig;
+			sourceTree = "<group>";
+		};
+		2CAF42B61F281B8600ABCA5E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2CAF42B71F281B8600ABCA5E /* Product.storyboard */,
+				2CAF42B81F281B8600ABCA5E /* ProductListViewController.h */,
+				2CAF42B91F281B8600ABCA5E /* ProductListViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2CAF42BA1F281B8600ABCA5E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2CAF43121F2829CF00ABCA5E /* TJSProductEvent.h */,
+				2CAF43131F2829CF00ABCA5E /* TJSProductEvent.m */,
+				2CAF43141F2829CF00ABCA5E /* TJSProductInfo.h */,
+				2CAF43151F2829CF00ABCA5E /* TJSProductInfo.m */,
+				2CAF43161F2829CF00ABCA5E /* TJSProductInfoModel.h */,
+				2CAF43171F2829CF00ABCA5E /* TJSProductInfoModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2CAF42BD1F281B8600ABCA5E /* NetworkTool */ = {
+			isa = PBXGroup;
+			children = (
+				2CAF42BE1F281B8600ABCA5E /* ProductDeleteNetworkTool.h */,
+				2CAF42BF1F281B8600ABCA5E /* ProductDeleteNetworkTool.m */,
+				2CAF42C01F281B8600ABCA5E /* ProductListNetworkTool.h */,
+				2CAF42C11F281B8600ABCA5E /* ProductListNetworkTool.m */,
+			);
+			path = NetworkTool;
+			sourceTree = "<group>";
+		};
+		2CAF42CD1F281B8600ABCA5E /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				2CAF42CE1F281B8600ABCA5E /* TJSProductCellConfig.h */,
+				2CAF42CF1F281B8600ABCA5E /* TJSProductListCellProtocol.h */,
+				2CAF42D01F281B8600ABCA5E /* TJSProductListConfigurateProtocol.h */,
+				2CAF42D11F281B8600ABCA5E /* TJSProductListPrivateProtocol.h */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		2CAF42D21F281B8600ABCA5E /* Store */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		2CAF42E41F281B9300ABCA5E /* ProductSearch */ = {
+			isa = PBXGroup;
+			children = (
+				2CAF42E51F281B9300ABCA5E /* ProductSearchController.h */,
+				2CAF42E61F281B9300ABCA5E /* ProductSearchController.m */,
+			);
+			path = ProductSearch;
+			sourceTree = "<group>";
+		};
+		2CAF42E91F2826D400ABCA5E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2CAF42EA1F28273300ABCA5E /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2CAF42EA1F28273300ABCA5E /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2CAF42EB1F28273300ABCA5E /* CellContentView */,
+				2CAF42F21F28273300ABCA5E /* ProductListCell.h */,
+				2CAF42F31F28273300ABCA5E /* ProductListCell.m */,
+				2CAF42F41F28273300ABCA5E /* ProductListCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		2CAF42EB1F28273300ABCA5E /* CellContentView */ = {
+			isa = PBXGroup;
+			children = (
+				2CAF42EC1F28273300ABCA5E /* ProductListCellContentView.h */,
+				2CAF42ED1F28273300ABCA5E /* ProductListCellContentView.m */,
+				2CAF42EE1F28273300ABCA5E /* ProductListCellImageContentView.h */,
+				2CAF42EF1F28273300ABCA5E /* ProductListCellImageContentView.m */,
+				2CAF42F01F28273300ABCA5E /* ProductListCellTextContentView.h */,
+				2CAF42F11F28273300ABCA5E /* ProductListCellTextContentView.m */,
+			);
+			path = CellContentView;
+			sourceTree = "<group>";
+		};
+		2CAF42FA1F2828C200ABCA5E /* Disaggregate */ = {
+			isa = PBXGroup;
+			children = (
+				2CAF42FB1F2828C200ABCA5E /* Object */,
+			);
+			name = Disaggregate;
+			path = disaggregate;
+			sourceTree = "<group>";
+		};
+		2CAF42FB1F2828C200ABCA5E /* Object */ = {
+			isa = PBXGroup;
+			children = (
+				2CAF42FC1F2828C200ABCA5E /* TJSProductListConfigurator.h */,
+				2CAF42FD1F2828C200ABCA5E /* TJSProductListConfigurator.m */,
+				2CAF42FE1F2828C200ABCA5E /* TJSProductListDataSourceImpl.h */,
+				2CAF42FF1F2828C200ABCA5E /* TJSProductListDataSourceImpl.m */,
+				2CAF43001F2828C200ABCA5E /* TJSProductListInteractorImpl.h */,
+				2CAF43011F2828C200ABCA5E /* TJSProductListInteractorImpl.m */,
+				2CAF43021F2828C200ABCA5E /* TJSProductListLayoutImpl.h */,
+				2CAF43031F2828C200ABCA5E /* TJSProductListLayoutImpl.m */,
+				2CAF43041F2828C200ABCA5E /* TJSProductListTableAdapter.h */,
+				2CAF43051F2828C200ABCA5E /* TJSProductListTableAdapter.m */,
+			);
+			path = Object;
+			sourceTree = "<group>";
+		};
+		2CAF430B1F28290700ABCA5E /* Disaggregate */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Disaggregate;
 			sourceTree = "<group>";
 		};
 		9E277105A9B5436B9F8117CB /* Frameworks */ = {
@@ -1256,9 +1305,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C4411BE1F21981E00C453EF /* LaunchScreen.storyboard in Resources */,
+				2CAF42F91F28273300ABCA5E /* ProductListCell.xib in Resources */,
 				2C4411BB1F21981E00C453EF /* Assets.xcassets in Resources */,
+				2CAF42DA1F281B8600ABCA5E /* Product.storyboard in Resources */,
 				2C801BD41F233F46009F82F7 /* File.storyboard in Resources */,
-				2C801BDB1F233F46009F82F7 /* Product.storyboard in Resources */,
 				2C4412991F22007D00C453EF /* TJSThemeConfig.strings in Resources */,
 				2C801BD71F233F46009F82F7 /* Mine.storyboard in Resources */,
 				2C4411B91F21981E00C453EF /* Main.storyboard in Resources */,
@@ -1334,83 +1384,84 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C801BDD1F233F46009F82F7 /* TJSProductListCellFactory.m in Sources */,
-				2C801BF51F259621009F82F7 /* ProductListCellTextContentView.m in Sources */,
+				2CAF42D81F281B8600ABCA5E /* ProductListVCConfig.m in Sources */,
 				2C4412821F21EA8900C453EF /* UIImage+Retinted.m in Sources */,
 				2C44124B1F21D42600C453EF /* TJSAlertController.m in Sources */,
-				2C801BE61F23469B009F82F7 /* TJSProductInfoModel.m in Sources */,
-				2CAF42821F26F45200ABCA5E /* TJSAppInfo.m in Sources */,
-				2C801BDC1F233F46009F82F7 /* ProductListViewController.m in Sources */,
 				2C4412731F21E79900C453EF /* UIButton+IBInspectableState.m in Sources */,
 				2C4412061F219A5300C453EF /* UINavigationBar+StyleConfigure.m in Sources */,
 				2C44123C1F21D27700C453EF /* GVUserDefaults.m in Sources */,
+				2CAF42DD1F281B8600ABCA5E /* ProductDeleteNetworkTool.m in Sources */,
+				2CAF42D71F281B8600ABCA5E /* TJSProductListCellLayoutConfig.m in Sources */,
 				2C4412931F21FF9C00C453EF /* TJSDownLoaderManager.m in Sources */,
-				2C801BFE1F25A489009F82F7 /* ProductListCellContentView.m in Sources */,
-				2C801BDE1F233F46009F82F7 /* TJSProductListConfigurator.m in Sources */,
 				2C4412551F21DBBA00C453EF /* UIViewController+RouteParams.m in Sources */,
-				2C801BE01F233F46009F82F7 /* TJSProductListInteractorImpl.m in Sources */,
 				2C44127F1F21E99700C453EF /* UITextView+PlaceHolder.m in Sources */,
 				2C44128F1F21ED2D00C453EF /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
-				2C801BD91F233F46009F82F7 /* TJSProductListCellLayoutConfig.m in Sources */,
+				2CAF431A1F2829CF00ABCA5E /* TJSProductInfoModel.m in Sources */,
 				2C4412A51F2201FF00C453EF /* TJSAnimatingRequestAccessory.m in Sources */,
 				2C44123F1F21D2A600C453EF /* GVUserDefaults+TJSGlobalProperties.m in Sources */,
 				2C4412591F21DDA900C453EF /* UIWindow+Transition.m in Sources */,
 				2C4412031F219A5300C453EF /* UIDevice+CurrentArg.m in Sources */,
 				2C4412A61F2201FF00C453EF /* TJSBaseRequest+TJSSingleRequestBlock.m in Sources */,
+				2CAF42E71F281B9300ABCA5E /* ProductSearchController.m in Sources */,
 				2C4412471F21D3E300C453EF /* MBProgressHUD.m in Sources */,
 				2C801BD61F233F46009F82F7 /* TJSRootTabBarControllerViewController.m in Sources */,
 				2C4412AD1F22031600C453EF /* TJSHudAlert.m in Sources */,
-				2C801BE21F233F46009F82F7 /* TJSProductListTableAdapter.m in Sources */,
-				2C801B6A1F222171009F82F7 /* ProductListCell.m in Sources */,
 				2C4412021F219A5300C453EF /* UIColor+HEX.m in Sources */,
+				2CAF42F71F28273300ABCA5E /* ProductListCellTextContentView.m in Sources */,
 				2C4412311F21AA5900C453EF /* AppDelegate.m in Sources */,
 				2C44126A1F21E2DA00C453EF /* UIButton+CountDown.m in Sources */,
 				2C4412701F21E73E00C453EF /* UIButton+CommitStyle.m in Sources */,
+				2CAF430E1F28294E00ABCA5E /* TJSProductListCellFactory.m in Sources */,
 				2C4412A71F2201FF00C453EF /* TJSBaseRequest.m in Sources */,
-				2C801B761F230FC0009F82F7 /* TJSProductInfo.m in Sources */,
-				2CAF428E1F276F7000ABCA5E /* ProductMessageListController.m in Sources */,
 				2C4412521F21DABC00C453EF /* UIViewController+StackLevel.m in Sources */,
 				2C801BD31F233F46009F82F7 /* TJSBaseViewController.m in Sources */,
 				2C44126D1F21E64600C453EF /* UIButton+ContentRect.m in Sources */,
-				2C801BFB1F259A14009F82F7 /* TJSProductListTextContentConfig.m in Sources */,
 				2C44125D1F21DF3600C453EF /* NSObject+Swizzle.m in Sources */,
 				2CAF42731F26E66500ABCA5E /* TJSBaseNetworkTool.m in Sources */,
 				2C44128B1F21ECA600C453EF /* UITextView+LengthLimited.m in Sources */,
-				2C801BE11F233F46009F82F7 /* TJSProductListLayoutImpl.m in Sources */,
-				2C801C051F25D1E7009F82F7 /* TJSProductEvent.m in Sources */,
-				2C801BDF1F233F46009F82F7 /* TJSProductListDataSourceImpl.m in Sources */,
+				2CAF42DE1F281B8600ABCA5E /* ProductListNetworkTool.m in Sources */,
+				2CAF42D51F281B8600ABCA5E /* TJSProductListTextContentConfig.m in Sources */,
 				2C44124E1F21D54400C453EF /* TJSSystemAlertMaker.m in Sources */,
 				2C4412011F219A5300C453EF /* NSString+StringSize.m in Sources */,
+				2CAF43181F2829CF00ABCA5E /* TJSProductEvent.m in Sources */,
+				2CAF42DB1F281B8600ABCA5E /* ProductListViewController.m in Sources */,
+				2CAF42D31F281B8600ABCA5E /* TJSProductListContentConfig.m in Sources */,
 				2C4412A81F2201FF00C453EF /* TJSUploadRequest.m in Sources */,
 				2C4412791F21E83D00C453EF /* UIImage+ColorAtPixel.m in Sources */,
 				2C4412041F219A5300C453EF /* UIImage+FromColor.m in Sources */,
 				2CAF42851F27261A00ABCA5E /* TJSProductDeleteApi.m in Sources */,
+				2CAF43081F2828C200ABCA5E /* TJSProductListInteractorImpl.m in Sources */,
 				2C4412761F21E7F000C453EF /* UIButton+BackgroundColor.m in Sources */,
-				2CAF428B1F2763D600ABCA5E /* TJSProductListContentConfig.m in Sources */,
 				2C4412B41F2207CD00C453EF /* TJSLoginStateUtil.m in Sources */,
 				2C4412381F21B3DF00C453EF /* UIButton+TouchAreaInsets.m in Sources */,
-				2CAF42911F276F8400ABCA5E /* ProductSearchController.m in Sources */,
 				2C4412051F219A5300C453EF /* UIImage+Resizable.m in Sources */,
 				2C4411AD1F21981E00C453EF /* main.m in Sources */,
-				2C801BEE1F258FBD009F82F7 /* TJSBaseProductListContentConfig.m in Sources */,
+				2CAF43191F2829CF00ABCA5E /* TJSProductInfo.m in Sources */,
+				2CAF43071F2828C200ABCA5E /* TJSProductListDataSourceImpl.m in Sources */,
+				2CAF42F51F28273300ABCA5E /* ProductListCellContentView.m in Sources */,
 				2C4412881F21EB8800C453EF /* UITextField+LengthLimited.m in Sources */,
-				2CAF42881F27269800ABCA5E /* ProductDeleteNetworkTool.m in Sources */,
+				2CAF43111F2829B300ABCA5E /* TJSAppInfo.m in Sources */,
 				2C4412A91F2201FF00C453EF /* TJWUrlArgumentsFilter.m in Sources */,
-				2C801BF11F259416009F82F7 /* TJSProductListImageContentConfig.m in Sources */,
-				2C801BDA1F233F46009F82F7 /* ProductListVCConfig.m in Sources */,
-				2C801BF81F2596A2009F82F7 /* ProductListCellImageContentView.m in Sources */,
+				2CAF42A21F281A3300ABCA5E /* ProductMessageListController.m in Sources */,
 				2C4412671F21E17200C453EF /* NSMutableAttributedString+Formated.m in Sources */,
 				2C4412431F21D36200C453EF /* TJSEnumValueService.m in Sources */,
+				2CAF43091F2828C200ABCA5E /* TJSProductListLayoutImpl.m in Sources */,
 				2C801BD81F233F46009F82F7 /* MineViewController.m in Sources */,
 				2C801BD51F233F46009F82F7 /* FileViewController.m in Sources */,
+				2CAF430A1F2828C200ABCA5E /* TJSProductListTableAdapter.m in Sources */,
 				2CAF426F1F26E01E00ABCA5E /* TJSProductListApi.m in Sources */,
+				2CAF43061F2828C200ABCA5E /* TJSProductListConfigurator.m in Sources */,
 				2C4412341F21B1CD00C453EF /* TJSBaseTableViewCell.m in Sources */,
+				2CAF42D91F281B8600ABCA5E /* ProductVCConfig.m in Sources */,
+				2CAF42D61F281B8600ABCA5E /* TJSBaseProductListContentConfig.m in Sources */,
 				2C44127C1F21E97700C453EF /* UITextField+PlaceHolder.m in Sources */,
+				2CAF42F61F28273300ABCA5E /* ProductListCellImageContentView.m in Sources */,
 				2C801BD21F233F46009F82F7 /* TJSBaseNavigationController.m in Sources */,
+				2CAF42D41F281B8600ABCA5E /* TJSProductListImageContentConfig.m in Sources */,
 				2CAF427A1F26EAA600ABCA5E /* AppVersionNetworkTool.m in Sources */,
 				2C4412851F21EB3100C453EF /* UITextView+EditRect.m in Sources */,
-				2CAF42761F26E96C00ABCA5E /* ProductListNetworkTool.m in Sources */,
 				2C4412971F22004500C453EF /* TJSThemeService.m in Sources */,
+				2CAF42F81F28273300ABCA5E /* ProductListCell.m in Sources */,
 				2CAF427E1F26EAE300ABCA5E /* TJSAppVersionApi.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

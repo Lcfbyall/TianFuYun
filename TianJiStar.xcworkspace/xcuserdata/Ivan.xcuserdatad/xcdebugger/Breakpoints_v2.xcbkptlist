@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TianJiStar/View/Product/Cell/ProductListCell.m"
-            timestampString = "522673822.948786"
+            timestampString = "522723273.45963"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "91"
-            endingLineNumber = "91"
+            startingLineNumber = "99"
+            endingLineNumber = "99"
             landmarkName = "-onCatchEvent:"
             landmarkType = "7">
          </BreakpointContent>

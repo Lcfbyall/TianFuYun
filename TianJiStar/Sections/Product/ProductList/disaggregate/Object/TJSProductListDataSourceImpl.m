@@ -32,8 +32,6 @@
     return self;
 }
 
-
-
 #pragma mark - <NIMSessionDataSource>
 
 - (void)loadProducts:(void (^)(NSArray *products, NSError *error))handler{
@@ -107,11 +105,16 @@
 
 - (NSArray *)items{
     
-    return @[
-             [TJSProductInfoModel new],
-             [TJSProductInfoModel new],
-             [TJSProductInfoModel new]
-             ];
+    if(!_items || !_items.count){
+    
+        _items =  [NSMutableArray arrayWithObjects:
+                   
+                   [TJSProductInfoModel new],
+                   [TJSProductInfoModel new],
+                   [TJSProductInfoModel new], nil];
+    }
+    
+    return _items;
 }
 
 - (TJSProductListOperateResult *)deleteModel:(TJSProductInfoModel *)model{
@@ -183,7 +186,6 @@
     return result;
 
 }
-
 
 
 #pragma mark - private methods
