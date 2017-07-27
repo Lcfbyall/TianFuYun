@@ -34,9 +34,14 @@ static NSString *const ProductVC    = @"ProductListViewController";
 static NSString *const DiscoveryVC  = @"DiscoveryViewController";
 static NSString *const MineVC       = @"MineViewController";
 
+#pragma mark - MessageVC identifier
+static NSString *const MessageKindListVC    = @"MessageKindListController";
+static NSString *const PersonalMessageListVC= @"PersonalMessageController";
+static NSString *const PlatAnnounceListVC   = @"PlatformAnnounceController";
+static NSString *const AllActivityListVC    = @"AllActivityViewController";
 
-static NSString *const ProSearchVC = @"ProductSearchController";
-
+#pragma mark - ProductFilterVC identifier
+static NSString *const ProductFilterVC      = @"ProductFilterController";
 
 
 

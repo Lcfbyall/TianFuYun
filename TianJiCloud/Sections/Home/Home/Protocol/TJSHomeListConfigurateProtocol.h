@@ -1,26 +1,24 @@
 //
-//  TJSProductListConfigurateProtocol.h
+//  TJSHomeListConfigurateProtocol.h
 //  TianJiCloud
 //
-//  Created by 朱鹏 on 17/7/22.
+//  Created by 朱鹏 on 17/7/27.
 //  Copyright © 2017年 TianJiMoney. All rights reserved.
 //
 
-#ifndef TJSProductListConfigurateProtocol_h
-#define TJSProductListConfigurateProtocol_h
+#ifndef TJSHomeListConfigurateProtocol_h
+#define TJSHomeListConfigurateProtocol_h
 
 #import "TJSProductInfoModel.h"
-
-@protocol TJSProductListInteractorDelegate <NSObject>
+@protocol TJSHomeListInteractorDelegate <NSObject>
 
 @optional
-
 
 
 @end
 
 
-@protocol TJSProductListInteractor <NSObject>
+@protocol TJSHomeListInteractor <NSObject>
 
 @optional
 
@@ -33,8 +31,6 @@
 - (void)deleteProduct:(TJSProductInfoModel *)product
              callback:(void (^)(BOOL success, NSError *error))callback;
 
-
-
 //
 - (NSArray *)items;
 
@@ -42,9 +38,10 @@
 
 - (void)onViewDidDisappear;
 
-
 @end
 
 
+#endif /* TJSHomeListConfigurateProtocol_h */
 
-#endif /* TJSProductListConfigurateProtocol_h */
+
+

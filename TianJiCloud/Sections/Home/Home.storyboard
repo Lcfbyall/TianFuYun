@@ -20,9 +20,26 @@
                     <view key="view" contentMode="scaleToFill" id="UNF-6s-Zmg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Uc4-4x-GLf">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Uc4-4x-GLf" firstAttribute="top" secondItem="UNF-6s-Zmg" secondAttribute="top" id="2XM-RR-fE0"/>
+                            <constraint firstItem="Uc4-4x-GLf" firstAttribute="leading" secondItem="UNF-6s-Zmg" secondAttribute="leading" id="JDm-Tv-nFB"/>
+                            <constraint firstAttribute="bottom" secondItem="Uc4-4x-GLf" secondAttribute="bottom" id="OZ8-1x-IFd"/>
+                            <constraint firstAttribute="trailing" secondItem="Uc4-4x-GLf" secondAttribute="trailing" id="Vsh-4C-cGI"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="kdy-U4-AGN"/>
+                    <connections>
+                        <outlet property="productListTBView" destination="Uc4-4x-GLf" id="Wu8-5U-2nN"/>
+                        <segue destination="pQG-DC-wko" kind="show" identifier="HomeVCToMessageVC" id="lGj-g0-1LP"/>
+                        <segue destination="atn-XM-eXr" kind="show" identifier="HomeVCToProductFilterVC" id="Eb1-Ev-sGL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qiT-u5-mNj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -45,6 +62,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I54-Yy-wws" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="188" y="143.47826086956522"/>
+        </scene>
+        <!--MessageKindListController-->
+        <scene sceneID="fGG-29-aRu">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="MessageKindListController" storyboardName="Message" referencedIdentifier="MessageKindListController" id="pQG-DC-wko" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NuK-2N-BSH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2118" y="-7"/>
+        </scene>
+        <!--ProductFilterController-->
+        <scene sceneID="3f6-H7-Tjf">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="ProductFilterController" storyboardName="ProductFilter" referencedIdentifier="ProductFilterController" id="atn-XM-eXr" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L1a-p2-uwZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2118" y="247"/>
         </scene>
     </scenes>
 </document>

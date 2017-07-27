@@ -47,9 +47,9 @@
     
     if (!cell) {
 
-        
-        [tableView registerClass:[ProductListCell class] forCellReuseIdentifier:_identifier];
-    
+        // 目前都是一样的cell,暂用xib
+        //[tableView registerClass:[ProductListCell class] forCellReuseIdentifier:_identifier];
+        [tableView registerNib:[UINib nibWithNibName:NSStringFromClass([ProductListCell class]) bundle:nil] forCellReuseIdentifier:_identifier];
 
         cell = [tableView dequeueReusableCellWithIdentifier:_identifier];
     }

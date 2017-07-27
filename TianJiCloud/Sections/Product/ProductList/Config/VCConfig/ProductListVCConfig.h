@@ -9,7 +9,14 @@
 #import <Foundation/Foundation.h>
 
 #import "TJSBaseVCProtocol.h"
-#import "ProductListViewController.h"
+
+@class ProductListViewController;
+
+@protocol ProductListVCConfig <NSObject>
+
+- (void)onTapRightBarBtnToProductSearch:(id)sender;
+
+@end
 
 
 @interface ProductListVCConfig : NSObject<TJSNavigationConfig>

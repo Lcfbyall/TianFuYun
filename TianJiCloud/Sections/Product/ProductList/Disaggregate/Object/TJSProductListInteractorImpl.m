@@ -29,18 +29,11 @@
 }
 
 
-#pragma mark - setters
-//进入界面开始请求数据
-- (void)setDataSource:(id<TJSProductListDataSource>)dataSource{
- 
-    _dataSource = dataSource;
-
-}
 
 
-#pragma mark - <NIMSessionInteractor>
+#pragma mark - <TJSProductListInteractor>
 
-- (void)loadProducts:(void (^)(NSArray* , NSError*))handler{
+- (void)loadProducts:(void (^)(NSArray* , NSError*))callback{
    
     WEAK_SELF(self);
     //找DataSource拿数据
@@ -49,9 +42,9 @@
         STRONG_SELF(self);
         if (self) {
 
-            if(handler){
+            if(callback){
               
-                handler(products,error);
+                callback(products,error);
             }
         }
     }];
@@ -106,7 +99,7 @@
 }
 
 
-#pragma mark - NIMSessionLayoutDelegate
+#pragma mark - TJSProductListLayoutDelegate
 //下拉刷新
 - (void)onRefresh
 {

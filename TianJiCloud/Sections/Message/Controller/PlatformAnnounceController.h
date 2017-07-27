@@ -1,5 +1,5 @@
 //
-//  HomeViewController.h
+//  PlatformAnnounceController.h
 //  TianJiCloud
 //
 //  Created by 朱鹏 on 17/7/27.
@@ -8,6 +8,6 @@
 
 #import "TJSBaseViewController.h"
 
-@interface HomeViewController : TJSBaseViewController
+@interface PlatformAnnounceController : TJSBaseViewController
 
 @end

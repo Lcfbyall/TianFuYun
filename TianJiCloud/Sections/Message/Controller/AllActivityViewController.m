@@ -1,22 +1,25 @@
 //
-//  HomeViewController.m
+//  AllActivityViewController.m
 //  TianJiCloud
 //
 //  Created by 朱鹏 on 17/7/27.
 //  Copyright © 2017年 TianJiMoney. All rights reserved.
 //
 
-#import "HomeViewController.h"
+#import "AllActivityViewController.h"
 
-@interface HomeViewController ()
+@interface AllActivityViewController ()
 
 @end
 
-@implementation HomeViewController
+@implementation AllActivityViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.title = @"全部活动";
+    
 }
 
 - (void)didReceiveMemoryWarning {

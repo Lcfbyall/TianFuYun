@@ -7,9 +7,8 @@
 //
 
 #import "TJSProductListConfigurator.h"
-
+#import "ProductListViewController.h"
 #import "TJSProductListInteractorImpl.h"
-
 #import "TJSProductListDataSourceImpl.h"
 #import "TJSProductListLayoutImpl.h"
 #import "TJSProductListTableAdapter.h"
@@ -27,7 +26,7 @@
 
 - (void)setup:(ProductListViewController *)vc{
 
-    UITableView *tableView = vc.tjs_tableView;
+    UITableView *tableView = (UITableView *)vc.tjs_listView;
     
     
     //1.
@@ -53,8 +52,8 @@
     
     
     //3.
-    vc.tjs_tableView.delegate      = _tableAdapter;
-    vc.tjs_tableView.dataSource    = _tableAdapter;
+    tableView.delegate      = _tableAdapter;
+    tableView.dataSource    = _tableAdapter;
     
     
     //4.

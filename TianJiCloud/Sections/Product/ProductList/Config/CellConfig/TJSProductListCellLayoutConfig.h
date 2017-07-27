@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-#import "TJSProductCellConfig.h"
+#import "TJSProductCellLayoutProtocol.h"
 
 @interface TJSProductListCellLayoutConfig : NSObject<TJSProductCellLayoutConfig>
 

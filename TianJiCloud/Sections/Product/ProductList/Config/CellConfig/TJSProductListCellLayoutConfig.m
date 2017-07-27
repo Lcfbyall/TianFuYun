@@ -38,7 +38,7 @@
       return [config contentSize:cellWidth product:model.product];
     }
     
-    return CGSizeMake(cellWidth, 60);
+    return CGSizeMake(cellWidth, 120);
 }
 
 - (NSString *)cellContent:(TJSProductInfoModel *)model{

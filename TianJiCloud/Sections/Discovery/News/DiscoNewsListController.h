@@ -1,13 +1,13 @@
 //
-//  ProductSearchController.h
+//  DiscoNewsListController.h
 //  TianJiCloud
 //
-//  Created by 朱鹏 on 17/7/25.
+//  Created by 朱鹏 on 17/7/27.
 //  Copyright © 2017年 TianJiMoney. All rights reserved.
 //
 
 #import "TJSBaseViewController.h"
 
-@interface ProductSearchController : TJSBaseViewController
+@interface DiscoNewsListController : TJSBaseViewController
 
 @end

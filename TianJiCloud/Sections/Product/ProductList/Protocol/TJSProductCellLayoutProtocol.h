@@ -6,8 +6,8 @@
 //  Copyright © 2017年 TianJiMoney. All rights reserved.
 //
 
-#ifndef TJSProductCellConfig_h
-#define TJSProductCellConfig_h
+#ifndef TJSProductCellLayoutProtocol_h
+#define TJSProductCellLayoutProtocol_h
 
 #import <UIKit/UIKit.h>
 
@@ -30,4 +30,4 @@
 @end
 
 
-#endif /* TJSProductCellConfig_h */
+#endif /* TJSProductCellLayoutProtocol_h */

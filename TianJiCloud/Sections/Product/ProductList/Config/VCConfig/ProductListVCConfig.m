@@ -7,6 +7,8 @@
 //
 
 #import "ProductListVCConfig.h"
+#import "ProductListViewController.h"
+
 #import <BlocksKit/UIBarButtonItem+BlocksKit.h>
 
 @interface ProductListVCConfig ()
@@ -33,45 +35,26 @@
     _vc = vc;
     
     
-    
-
 }
-
 
 
 #pragma mark - TJSNavigationConfig
 
-- (NSArray <UIBarButtonItem *> *)tjs_leftBarButtonItems{
-    WEAK_SELF(self);
-    NSString *leftBarBtnImage  = @"header-message";
-    NSString *leftBarBtnSelStr = @"onTapLeftBarBtnToProductMessage:";
-    UIBarButtonItem *leftItem  = [[UIBarButtonItem alloc] bk_initWithImage:IMAGE(leftBarBtnImage) style:UIBarButtonItemStylePlain handler:^(id sender) {
-        STRONG_SELF(self);
-        if(self){
-            SEL leftBarBtnSEL  = NSSelectorFromString(leftBarBtnSelStr);
-            if([_vc respondsToSelector:leftBarBtnSEL]){
-                SuppressPerformSelectorLeakWarning([_vc performSelector:leftBarBtnSEL withObject:sender]);
-            }
-        }
-    }];
-
-    return [NSArray arrayWithObject:leftItem];
-}
-
 - (NSArray <UIBarButtonItem *> *)tjs_rightBarButtonItems{
     WEAK_SELF(self);
-    NSString *rightBarBtnImage  = @"header-search-white";
-    NSString *rightBarBtnSelStr = @"onTapRightBarBtnToProductSearch:";
-    
-    UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] bk_initWithImage:IMAGE(rightBarBtnImage) style:UIBarButtonItemStylePlain handler:^(id sender) {
+    NSString *rightBarBtnImage  = @"screen";
+
+    UIBarButtonItem *rightItem  = [[UIBarButtonItem alloc] bk_initWithImage:IMAGE(rightBarBtnImage) style:UIBarButtonItemStylePlain handler:^(id sender) {
         STRONG_SELF(self);
         if(self){
-            SEL rightBarBtnSEL  = NSSelectorFromString(rightBarBtnSelStr);
-            if([_vc respondsToSelector:rightBarBtnSEL]){
-                SuppressPerformSelectorLeakWarning([_vc performSelector:rightBarBtnSEL withObject:sender]);
+        
+            if([_vc conformsToProtocol:@protocol(ProductListVCConfig)]&&[_vc respondsToSelector:@selector(onTapRightBarBtnToProductSearch:)]){
+                
+                [_vc onTapRightBarBtnToProductSearch:sender];
             }
         }
     }];
+
     return [NSArray arrayWithObject:rightItem];
 }
 

@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-#import "ProductListViewController.h"
+@class ProductListViewController;
 
 @interface TJSProductListConfigurator : NSObject
 

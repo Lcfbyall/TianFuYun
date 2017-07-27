@@ -32,8 +32,9 @@
     return self;
 }
 
-#pragma mark - <NIMSessionDataSource>
+#pragma mark - <TJSProductListDataSource>
 
+//
 - (void)loadProducts:(void (^)(NSArray *products, NSError *error))handler{
     
     WEAK_SELF(self);
@@ -103,6 +104,7 @@
     
 }
 
+//
 - (NSArray *)items{
     
     if(!_items || !_items.count){
@@ -116,6 +118,7 @@
     
     return _items;
 }
+
 
 - (TJSProductListOperateResult *)deleteModel:(TJSProductInfoModel *)model{
 

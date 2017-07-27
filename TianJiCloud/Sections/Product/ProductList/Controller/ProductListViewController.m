@@ -7,7 +7,6 @@
 //
 
 #import "ProductListViewController.h"
-#import "ProductListVCConfig.h"
 #import "ProductListCell.h"
 
 #import "TJSProductListConfigurator.h"
@@ -37,9 +36,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    [self vcConfig];
     
-    [self setupNav];
+    [self setProductConfig];
     
     //逻辑配置器安装，在这里把tableView的代理分离出去
     [self setupConfigurator];
@@ -59,7 +57,7 @@
 
 }
 
-- (UITableView *)tjs_tableView{
+- (UIView *)tjs_listView{
     
     return _productListTBView;
 }
@@ -67,12 +65,10 @@
 
 #pragma mark - settings
 
-- (void)setupNav{
+- (void)setProductConfig{
     
     _vcConfig = [[ProductListVCConfig alloc]init];
     [_vcConfig setup:self];
-    
-    self.navigationItem.leftBarButtonItems = [_vcConfig tjs_leftBarButtonItems];
     
     self.navigationItem.rightBarButtonItems = [_vcConfig tjs_rightBarButtonItems];
     
@@ -102,21 +98,16 @@
 }
 
 
-#pragma mark - navigaiton actions
-
-- (void)onTapLeftBarBtnToProductMessage:(id)sender{
-
-    [self tjs_pushViewController:ProSearchVC
-                     backHandler:^(id  _Nullable obj) {
-        
-        [((UIViewController *)obj).navigationController popViewControllerAnimated:YES];
-    
-    } animated:YES];
-}
+#pragma mark - ProductListVCConfig
 
 - (void)onTapRightBarBtnToProductSearch:(id)sender{
 
-    [self tjs_pushViewController:ProSearchVC animated:YES];
+    [self tjs_pushViewController:ProductFilterVC
+                     backHandler:^(id  _Nullable obj) {
+                         
+                         [((UIViewController *)obj).navigationController popViewControllerAnimated:YES];
+                         
+                     } animated:YES];
 }
 
 

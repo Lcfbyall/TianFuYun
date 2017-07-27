@@ -22,7 +22,7 @@
 //1.2 网络加载
 - (void)tjs_fetchData;
 
-- (UITableView *)tjs_tableView;
+- (UIView *)tjs_listView;
 
 @end
 

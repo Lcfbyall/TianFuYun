@@ -28,12 +28,12 @@
     self.tabBar.translucent  = NO;
     
     //选中后的颜色,tabBarItem.setTitleTextAttributes后无效
-    self.tabBar.tintColor    = [UIColor whiteColor];
+    //self.tabBar.tintColor    = [UIColor whiteColor];
     
     
     [self p_setupViewControllers];
     
-    [self p_setupAttributeForTabBarItem];
+    //[self p_setupAttributeForTabBarItem];
     
 }
 
@@ -55,8 +55,8 @@
                        @"ProductSB":HomeSB,
                        @"ProductNC":HomeNC,
                        @"title"    :@"首页",
-                       @"image"    :@"bottomBar-wenjian-nor",
-                       @"selectedImage":@"bottomBar-wenjian-sel",
+                       @"image"    :@"Home_Tab_nor",
+                       @"selectedImage":@"Home_Tab_sel",
                        },
                        
                     
@@ -64,16 +64,16 @@
                       @"ProductSB":ProductSB,
                       @"ProductNC":ProductNC,
                       @"title"    :@"产品",
-                      @"image"    :@"bottomBar-chanpin-nor",
-                      @"selectedImage":@"bottomBar-chanpin-sel",
+                      @"image"    :@"Product_Tab_nor",
+                      @"selectedImage":@"Product_Tab_sel",
                     },
                     
                     @{
                       @"ProductSB":DiscoverySB,
                       @"ProductNC":DiscoveryNC,
                       @"title"    :@"发现",
-                      @"image"    :@"bottomBar-wenjian-nor",
-                      @"selectedImage":@"bottomBar-wenjian-sel",
+                      @"image"    :@"Discovery_Tab_nor",
+                      @"selectedImage":@"Discovery_Tab_sel",
                     },
                     
                     
@@ -81,8 +81,8 @@
                       @"ProductSB":MineSB,
                       @"ProductNC":MineNC,
                       @"title":@"我的",
-                      @"image":@"bottomBar-wode-nor",
-                      @"selectedImage":@"bottomBar-wode-sel",
+                      @"image":@"Mine_Tab_nor",
+                      @"selectedImage":@"Mine_Tab_sel",
                     },
                 
                  ];

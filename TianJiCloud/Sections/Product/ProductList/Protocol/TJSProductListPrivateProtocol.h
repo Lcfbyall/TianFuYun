@@ -21,30 +21,20 @@
 @property (nonatomic,copy) NSArray *indexpaths;
 
 @property (nonatomic,copy) NSArray *productInfoModels;
-
 @end
 
 @protocol TJSProductListDataSource <NSObject>
 
 @optional
-
-
 //
 - (void)loadProducts:(void (^)(NSArray *products, NSError *error))callback;
 - (void)deleteProducts:(NSArray <TJSProductInfoModel *> *)products
              callback:(void (^)(BOOL success, NSError *error))callback;
-
-
 //
 - (TJSProductListOperateResult *)deleteModel:(TJSProductInfoModel *)model;
 - (TJSProductListOperateResult *)deleteModels:(NSArray<TJSProductInfoModel *> *)models;
 
 - (NSArray *)items;
-
-
-
-
-
 
 @end
 
