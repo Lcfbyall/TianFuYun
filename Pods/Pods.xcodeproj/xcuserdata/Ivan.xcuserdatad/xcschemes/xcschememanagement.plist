@@ -34,7 +34,7 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-TianJiStar.xcscheme</key>
+		<key>Pods-TianJiCloud.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -72,12 +72,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>1F484E910BC6E75DD6CACD720D98AA84</key>
+		<key>2DF19AC633346D5FC5B97CEC61A583BE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>338D97E886AFD830004D913269E6586B</key>
+		<key>476C289DB4AB31D5A76F3E5B5A2AEBBF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>491FBA4FC13DF22A34FE1C25F3F191A0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -87,7 +92,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>57684F3AFDA8851A5BACA0B0B2593374</key>
+		<key>663F3244653A7B0C2E2F5309892636A2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -102,22 +107,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>814A52BB4A28EE865E56CA969C48B091</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>928353533005A4198EBDA5B700D37B64</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9BE18A50E37A83C805F9C993A555548D</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>A40129019E568451F05A05301A3E5800</key>
+		<key>A54577B72A56C1A2E246E7CFB785EF1B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -127,12 +122,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C0799ED2EC3B1467E4A2352134B60E3D</key>
+		<key>ADFB9B1F9F4883E8B4A5F2480618D7DD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D0D0C9D20C43FA94D4C88FBFE2601B8E</key>
+		<key>B6E53D88948F7E48EF376D6356EA7AC4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D76256684F1F9DC5FDC9ADA935C3AF7F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
