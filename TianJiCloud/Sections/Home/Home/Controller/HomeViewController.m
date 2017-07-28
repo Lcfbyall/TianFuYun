@@ -64,6 +64,8 @@
 #pragma mark - <TJSBaseVCConfig>
 - (void)tjs_configBaseView{
     
+    _productListTBView.backgroundColor = ThemeService.weak_color_10;
+    _productListTBView.tableFooterView = [UIView new];
     
 }
 
@@ -86,6 +88,7 @@
 
     [self tjs_pushViewController:ProductFilterVC animated:YES];
 }
+
 
 
 #pragma mark - <TJSProductListCellDelegate>

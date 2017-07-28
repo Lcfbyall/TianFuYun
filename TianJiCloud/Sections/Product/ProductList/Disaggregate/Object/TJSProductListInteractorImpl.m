@@ -109,6 +109,8 @@
         
         STRONG_SELF(self);
         if(self){
+            
+            [self .layout reloadTable];
        
             //结束刷新
             [self.layout endRefresh];

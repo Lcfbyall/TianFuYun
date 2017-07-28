@@ -7,7 +7,7 @@
 //
 
 #import "TJSThemeService.h"
-
+#import "UIColor+HEX.h"
 
 @interface TJSThemeService ()
 
@@ -45,6 +45,14 @@
     return map;
 }
 
+
+
+#pragma mark - Color
+
+- (UIColor *)weak_color_10 {
+    
+    return [UIColor tjs_colorWithHexString:self.colorDict[@"weak_color_10"]];
+}
 
 
 

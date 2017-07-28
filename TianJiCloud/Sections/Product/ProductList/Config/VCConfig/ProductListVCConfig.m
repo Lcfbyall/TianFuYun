@@ -44,7 +44,7 @@
     WEAK_SELF(self);
     NSString *rightBarBtnImage  = @"screen";
 
-    UIBarButtonItem *rightItem  = [[UIBarButtonItem alloc] bk_initWithImage:IMAGE(rightBarBtnImage) style:UIBarButtonItemStylePlain handler:^(id sender) {
+    UIBarButtonItem *rightItem  = [[UIBarButtonItem alloc] bk_initWithImage:IMAGEOriginal(rightBarBtnImage) style:UIBarButtonItemStylePlain handler:^(id sender) {
         STRONG_SELF(self);
         if(self){
         

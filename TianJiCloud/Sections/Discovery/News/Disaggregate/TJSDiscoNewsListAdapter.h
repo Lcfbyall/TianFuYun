@@ -10,12 +10,17 @@
 
 #import "TJSDiscoNewsListConfigurateProtocol.h"
 #import "TJSDiscoNewsListPrivateProtocol.h"
+#import "TJSDiscoNewListCellProtocol.h"
 
 @interface TJSDiscoNewsListAdapter : NSObject<UICollectionViewDataSource,UICollectionViewDelegate>
 
+
+- (instancetype)initWithCollectionView:(UICollectionView *)collectionView;
+
+
 @property (nonatomic,weak) id<TJSDiscoveryNewsListInteractor> interactor;
 
-//@property (nonatomic,weak) id<TJSProductListCellDelegate> cellDelegate;
+@property (nonatomic,weak) id<TJSDiscoNewListCellDelegate> cellDelegate;
 
 
 

@@ -45,7 +45,7 @@
     WEAK_SELF(self);
     NSString *leftBarBtnImage  = @"msg_home";
     
-    UIBarButtonItem *leftItem  = [[UIBarButtonItem alloc] bk_initWithImage:IMAGE(leftBarBtnImage) style:UIBarButtonItemStylePlain handler:^(id sender) {
+    UIBarButtonItem *leftItem  = [[UIBarButtonItem alloc] bk_initWithImage:IMAGEOriginal(leftBarBtnImage) style:UIBarButtonItemStylePlain handler:^(id sender) {
         STRONG_SELF(self);
         if(self){
             if([_vc conformsToProtocol:@protocol(HomeVCConfig)] &&
@@ -62,7 +62,7 @@
 - (NSArray <UIBarButtonItem *> *)tjs_rightBarButtonItems{
     WEAK_SELF(self);
     NSString *rightBarBtnImage  = @"screen";
-    UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] bk_initWithImage:IMAGE(rightBarBtnImage) style:UIBarButtonItemStylePlain handler:^(id sender) {
+    UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] bk_initWithImage:IMAGEOriginal(rightBarBtnImage) style:UIBarButtonItemStylePlain handler:^(id sender) {
         STRONG_SELF(self);
         if(self){
             

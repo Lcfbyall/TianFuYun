@@ -8,7 +8,7 @@
 
 #import "TJSBaseControllerContainer.h"
 
-@interface TJSBaseControllerContainer ()<UIScrollViewDelegate>
+@interface TJSBaseControllerContainer ()
 
 @property (weak, nonatomic) UIScrollView *contentScroll;
 
@@ -20,6 +20,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
  
+    self.automaticallyAdjustsScrollViewInsets = NO;
     
     [self tjs_setupChildViewControllers];
     
@@ -46,8 +47,11 @@
         title.pagingEnabled = YES;
         title.bounces = NO;
         title.showsHorizontalScrollIndicator = NO;
+        
+        
+        title.frame = self.view.bounds;
 
-        title.contentSize = CGSizeMake(self.view.bounds.size.width, self.view.bounds.size.width * self.childViewControllers.count);
+        title.contentSize = CGSizeMake(self.view.bounds.size.width * self.childViewControllers.count,self.view.bounds.size.height);
         
         [self.view addSubview:(_contentScroll = title)];
     }

@@ -1478,6 +1478,7 @@ static const CGFloat MBDefaultDetailsLabelFontSize = 12.f;
 
 - (void)setHighlighted:(BOOL)highlighted {
     [super setHighlighted:highlighted];
+    
     UIColor *baseColor = [self titleColorForState:UIControlStateSelected];
     self.backgroundColor = highlighted ? [baseColor colorWithAlphaComponent:0.1f] : [UIColor clearColor];
 }

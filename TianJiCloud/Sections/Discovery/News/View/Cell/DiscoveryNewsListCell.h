@@ -6,8 +6,15 @@
 //  Copyright © 2017年 TianJiMoney. All rights reserved.
 //
 
-#import "TJSBaseCollectionViewCell.h"
+#import <UIKit/UIKit.h>
 
-@interface DiscoveryNewsListCell : TJSBaseCollectionViewCell
+#import "TJSDiscoNewListCellProtocol.h"
+
+@interface DiscoveryNewsListCell : UICollectionViewCell
+
+
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *aspectForIamge;
+
+@property (nonatomic, weak)   id<TJSDiscoNewListCellDelegate> delegate;
 
 @end

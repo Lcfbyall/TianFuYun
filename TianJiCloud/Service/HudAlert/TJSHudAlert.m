@@ -18,10 +18,12 @@
 #pragma mark - 遮罩加载
 
 + (void)showLoadingView {
+    
     [self showLoadingViewInView:[UIApplication sharedApplication].keyWindow withInfo:nil canTouch:NO];
 }
 
 + (void)showLoadingViewWithInfo:(NSString *)info {
+    
     [self showLoadingViewInView:[UIApplication sharedApplication].keyWindow withInfo:info canTouch:NO];
 }
 
@@ -44,14 +46,17 @@
 #pragma mark - 遮罩加载可点击
 
 + (void)showLoadingViewCanTouch {
+    
     [self showLoadingViewInView:[UIApplication sharedApplication].keyWindow withInfo:nil canTouch:YES];
 }
 
 + (void)showLoadingViewCanTouchWithInfo:(NSString *)info {
+    
     [self showLoadingViewInView:[UIApplication sharedApplication].keyWindow withInfo:info canTouch:YES];
 }
 
 + (void)showLoadingViewCanTouchInView:(UIView *)view {
+    
     [self showLoadingViewInView:view withInfo:nil canTouch:YES];
 }
 
@@ -88,6 +93,7 @@
 }
 
 + (void)dimissLoadingView {
+    
     MBProgressHUD *progressHUD = nil;
     if ([[UIApplication sharedApplication].keyWindow viewWithTag:99999]) {
         progressHUD = [[UIApplication sharedApplication].keyWindow viewWithTag:99999];
@@ -99,6 +105,7 @@
 
 #pragma mark zhupeng add ,个人信息编辑资料，请求后MBProgressHUD显示成功字样，并延迟销毁
 + (void)changeInfo:(NSString *)info{
+    
     MBProgressHUD *progressHUD = nil;
     if ([[UIApplication sharedApplication].keyWindow viewWithTag:99999]) {
         progressHUD = [[UIApplication sharedApplication].keyWindow viewWithTag:99999];
@@ -129,39 +136,54 @@
 #pragma mark - 提示框
 
 + (void)showViewWithSuccessed:(NSString *)success {
+    
     [self loadingViewChangeToResultView:IMAGE(@"success") withInfo:success];
 }
 
 + (void)showViewWithFailed:(NSString *)error {
+    
     [self loadingViewChangeToResultView:IMAGE(@"error") withInfo:error];
 }
 
 + (void)showViewWithInfo:(NSString *)info {
+    
     [self loadingViewChangeToResultView:nil withInfo:info];
 }
 
-+ (void)showViewWithInfo:(NSString *)info dalayTime:(NSTimeInterval)delayTime {
++ (void)showViewWithInfo:(NSString *)info
+               dalayTime:(NSTimeInterval)delayTime {
+    
     [self showViewWithImage:nil withInfo:info dalayTime:delayTime];
 }
 
-+ (void)loadingViewChangeToResultView:(UIImage *)image withInfo:(NSString *)info {
++ (void)loadingViewChangeToResultView:(UIImage *)image
+                             withInfo:(NSString *)info {
+    
     CGFloat delayTime = [self getDelayTimeWithInfo:info];
     [self showViewWithImage:image withInfo:info dalayTime:delayTime];
 }
 
-+ (void)showViewWithImage:(UIImage *)image withInfo:(NSString *)info dalayTime:(NSTimeInterval)delayTime {
++ (void)showViewWithImage:(UIImage *)image
+                 withInfo:(NSString *)info
+                dalayTime:(NSTimeInterval)delayTime {
+    
     [self showViewWithImage:image withInfo:info dalayTime:delayTime view:[UIApplication sharedApplication].keyWindow];
 }
 
-+ (void)showViewWithImage:(UIImage *)image withInfo:(NSString *)info dalayTime:(NSTimeInterval)delayTime view:(UIView *)view {
++ (void)showViewWithImage:(UIImage *)image
+                 withInfo:(NSString *)info
+                dalayTime:(NSTimeInterval)delayTime
+                     view:(UIView *)view {
+    
     MBProgressHUD *progressHUD = [MBProgressHUD showHUDAddedTo:view animated:YES];
     if (image) {
+        
         UIImageView *imageview = [[UIImageView alloc]initWithImage:image];
         progressHUD.customView = imageview;
         progressHUD.mode = MBProgressHUDModeCustomView;
     } else {
         progressHUD.mode = MBProgressHUDModeText;
-        progressHUD.bezelView.backgroundColor = [UIColor blackColor];
+        progressHUD.bezelView.backgroundColor = [UIColor darkGrayColor];
         progressHUD.bezelView.layer.cornerRadius = 22;   // 设计的是全圆角
     }
     progressHUD.margin = 10;
@@ -176,6 +198,7 @@
 
 #pragma mark - 辅助方法
 + (CGFloat)getDelayTimeWithInfo:(NSString *)info {
+    
     CGFloat delayTime = 1.0;
     if (info.length > 25) {
         delayTime = 2.0;

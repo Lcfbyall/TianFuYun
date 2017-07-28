@@ -6,20 +6,65 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="rCG-Aw-JBa" customClass="DiscoveryNewsListCell">
-            <rect key="frame" x="0.0" y="0.0" width="597" height="312"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DiscoveryNewsListCell" id="rCG-Aw-JBa" customClass="DiscoveryNewsListCell">
+            <rect key="frame" x="0.0" y="0.0" width="474" height="246"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="597" height="312"/>
+                <rect key="frame" x="0.0" y="0.0" width="474" height="246"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rMR-OG-fZD">
+                        <rect key="frame" x="0.0" y="0.0" width="474" height="197.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="rMR-OG-fZD" secondAttribute="height" multiplier="12:5" id="HVN-w2-Nr7"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017 - 07 - 24" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wCb-0u-SvQ">
+                        <rect key="frame" x="366" y="207.5" width="100" height="23"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="Qha-xM-dZu"/>
+                            <constraint firstAttribute="height" constant="23" id="jH3-x6-WYq"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="杠杆下的时间管理才是富人的财富管理？" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0EN-ar-Kwp">
+                        <rect key="frame" x="8" y="207.5" width="221" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="zdz-A5-Jvs"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
             </view>
-            <size key="customSize" width="597" height="312"/>
-            <point key="canvasLocation" x="-336" y="-85"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="wCb-0u-SvQ" firstAttribute="top" secondItem="0EN-ar-Kwp" secondAttribute="top" id="59m-8h-bjK"/>
+                <constraint firstItem="wCb-0u-SvQ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="0EN-ar-Kwp" secondAttribute="trailing" constant="30" id="Fhl-gH-CEk"/>
+                <constraint firstAttribute="trailing" secondItem="rMR-OG-fZD" secondAttribute="trailing" id="NK7-4K-ecb"/>
+                <constraint firstItem="rMR-OG-fZD" firstAttribute="top" secondItem="rCG-Aw-JBa" secondAttribute="top" id="Wg4-3X-ISW"/>
+                <constraint firstItem="0EN-ar-Kwp" firstAttribute="leading" secondItem="rCG-Aw-JBa" secondAttribute="leading" constant="8" id="dxk-YO-fOb"/>
+                <constraint firstItem="wCb-0u-SvQ" firstAttribute="top" secondItem="rMR-OG-fZD" secondAttribute="bottom" constant="10" id="ejB-xv-Yoy"/>
+                <constraint firstItem="rMR-OG-fZD" firstAttribute="leading" secondItem="rCG-Aw-JBa" secondAttribute="leading" id="hZG-UO-7g0"/>
+                <constraint firstAttribute="trailing" secondItem="wCb-0u-SvQ" secondAttribute="trailing" constant="8" id="v4a-iJ-qb6"/>
+            </constraints>
+            <size key="customSize" width="474" height="246"/>
+            <connections>
+                <outlet property="aspectForIamge" destination="HVN-w2-Nr7" id="zM9-iE-fJ2"/>
+                <outlet property="newsImage" destination="rMR-OG-fZD" id="5sd-TC-5lA"/>
+                <outlet property="newsTimeL" destination="wCb-0u-SvQ" id="fSj-qk-ZOi"/>
+                <outlet property="newsTitleL" destination="0EN-ar-Kwp" id="eCt-TP-Nio"/>
+            </connections>
+            <point key="canvasLocation" x="-960" y="-315"/>
         </collectionViewCell>
     </objects>
 </document>

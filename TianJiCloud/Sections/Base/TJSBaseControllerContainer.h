@@ -20,6 +20,6 @@
 
 @end
 
-@interface TJSBaseControllerContainer : TJSBaseViewController<TJSBaseControllerContainerProtocol>
+@interface TJSBaseControllerContainer : TJSBaseViewController<TJSBaseControllerContainerProtocol,UIScrollViewDelegate>
 
 @end

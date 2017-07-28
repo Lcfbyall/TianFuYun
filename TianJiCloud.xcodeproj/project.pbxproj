@@ -14,7 +14,6 @@
 		2C431DFE1F29C26700858C12 /* MessageKindListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C431DFA1F29C26700858C12 /* MessageKindListController.m */; };
 		2C431E011F29C28500858C12 /* ProductFilterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C431E001F29C28500858C12 /* ProductFilterController.m */; };
 		2C431E071F29C38F00858C12 /* DiscoveryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C431E061F29C38F00858C12 /* DiscoveryViewController.m */; };
-		2C431E0D1F29C3CF00858C12 /* DiscoRoadShowListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C431E0C1F29C3CF00858C12 /* DiscoRoadShowListController.m */; };
 		2C431E0F1F29C59C00858C12 /* Message.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C431E0E1F29C59C00858C12 /* Message.storyboard */; };
 		2C431E111F29C6B200858C12 /* ProductFilter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C431E101F29C6B200858C12 /* ProductFilter.storyboard */; };
 		2C4411AD1F21981E00C453EF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4411AC1F21981E00C453EF /* main.m */; };
@@ -69,6 +68,7 @@
 		2C801BD31F233F46009F82F7 /* TJSBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C801BA91F233F46009F82F7 /* TJSBaseViewController.m */; };
 		2C801BD61F233F46009F82F7 /* TJSRootTabBarControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C801BB01F233F46009F82F7 /* TJSRootTabBarControllerViewController.m */; };
 		2C801BD71F233F46009F82F7 /* Mine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C801BB21F233F46009F82F7 /* Mine.storyboard */; };
+		2C89AD741F2B5C81005C29AC /* DiscoNewsDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C89AD731F2B5C81005C29AC /* DiscoNewsDetailController.m */; };
 		2C8DE5731F29CE14009B3AE2 /* PersonalMessageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE5721F29CE14009B3AE2 /* PersonalMessageController.m */; };
 		2C8DE5761F29CE51009B3AE2 /* PlatformAnnounceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE5751F29CE51009B3AE2 /* PlatformAnnounceController.m */; };
 		2C8DE5791F29CE76009B3AE2 /* AllActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE5781F29CE76009B3AE2 /* AllActivityViewController.m */; };
@@ -84,14 +84,12 @@
 		2C8DE5A41F29FF89009B3AE2 /* ProductSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE5A31F29FF89009B3AE2 /* ProductSearchController.m */; };
 		2C8DE5A61F29FFBF009B3AE2 /* ProductSearch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C8DE5A51F29FFBF009B3AE2 /* ProductSearch.storyboard */; };
 		2C8DE5A91F2ACA75009B3AE2 /* TJSBaseControllerContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE5A81F2ACA75009B3AE2 /* TJSBaseControllerContainer.m */; };
-		2C8DE5AC1F2AD7A1009B3AE2 /* TJSBaseCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE5AB1F2AD7A1009B3AE2 /* TJSBaseCollectionViewCell.m */; };
 		2C8DE5B31F2AD8A0009B3AE2 /* DiscoveryNewsListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE5B21F2AD8A0009B3AE2 /* DiscoveryNewsListCell.m */; };
 		2C8DE5B61F2AD8B3009B3AE2 /* DiscoveryRoadShowListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE5B51F2AD8B3009B3AE2 /* DiscoveryRoadShowListCell.m */; };
 		2C8DE5B81F2AD8E7009B3AE2 /* DiscoveryNewsListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C8DE5B71F2AD8E7009B3AE2 /* DiscoveryNewsListCell.xib */; };
 		2C8DE5BA1F2ADCFA009B3AE2 /* DiscoveryRoadShowListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C8DE5B91F2ADCFA009B3AE2 /* DiscoveryRoadShowListCell.xib */; };
-		2C8DE5C01F2AE0CA009B3AE2 /* DiscoveryRoadShowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE5BF1F2AE0CA009B3AE2 /* DiscoveryRoadShowLayout.m */; };
 		2C8DE5CC1F2AE3BC009B3AE2 /* DiscoNewsListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE5C31F2AE3BC009B3AE2 /* DiscoNewsListController.m */; };
-		2C8DE5CD1F2AE3BC009B3AE2 /* DiscoveryNewsLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE5C61F2AE3BC009B3AE2 /* DiscoveryNewsLayout.m */; };
+		2C8DE5CD1F2AE3BC009B3AE2 /* DiscoveryNewsCollectLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE5C61F2AE3BC009B3AE2 /* DiscoveryNewsCollectLayout.m */; };
 		2C8DE5D31F2AE66F009B3AE2 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE5D21F2AE66F009B3AE2 /* MineViewController.m */; };
 		2C8DE5EE1F2AE7D0009B3AE2 /* TJSDiscoNewsConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE5ED1F2AE7D0009B3AE2 /* TJSDiscoNewsConfigurator.m */; };
 		2C8DE5F11F2AE82F009B3AE2 /* TJSDiscoNewsInteracotImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE5F01F2AE82F009B3AE2 /* TJSDiscoNewsInteracotImpl.m */; };
@@ -101,6 +99,9 @@
 		2C8DE5FF1F2AEAF6009B3AE2 /* DiscoveryNewsInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE5FE1F2AEAF6009B3AE2 /* DiscoveryNewsInfoModel.m */; };
 		2C8DE6021F2AEB06009B3AE2 /* DiscoveryNewsInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE6011F2AEB06009B3AE2 /* DiscoveryNewsInfo.m */; };
 		2C8DE6051F2AECCD009B3AE2 /* TJSDiscoNewsLayoutImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE6041F2AECCD009B3AE2 /* TJSDiscoNewsLayoutImpl.m */; };
+		2C8DE60C1F2B15F3009B3AE2 /* TJSDiscoNewsListVCConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE60B1F2B15F3009B3AE2 /* TJSDiscoNewsListVCConfig.m */; };
+		2C8DE6171F2B43A8009B3AE2 /* DiscoRoadShowListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE6101F2B43A8009B3AE2 /* DiscoRoadShowListController.m */; };
+		2C8DE6181F2B43A8009B3AE2 /* DiscoveryRoadShowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE6131F2B43A8009B3AE2 /* DiscoveryRoadShowLayout.m */; };
 		2CAF426F1F26E01E00ABCA5E /* TJSProductListApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF426E1F26E01E00ABCA5E /* TJSProductListApi.m */; };
 		2CAF42731F26E66500ABCA5E /* TJSBaseNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF42721F26E66500ABCA5E /* TJSBaseNetworkTool.m */; };
 		2CAF427A1F26EAA600ABCA5E /* AppVersionNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF42791F26EAA600ABCA5E /* AppVersionNetworkTool.m */; };
@@ -166,8 +167,6 @@
 		2C431E001F29C28500858C12 /* ProductFilterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductFilterController.m; sourceTree = "<group>"; };
 		2C431E051F29C38F00858C12 /* DiscoveryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoveryViewController.h; sourceTree = "<group>"; };
 		2C431E061F29C38F00858C12 /* DiscoveryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoveryViewController.m; sourceTree = "<group>"; };
-		2C431E0B1F29C3CF00858C12 /* DiscoRoadShowListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoRoadShowListController.h; sourceTree = "<group>"; };
-		2C431E0C1F29C3CF00858C12 /* DiscoRoadShowListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoRoadShowListController.m; sourceTree = "<group>"; };
 		2C431E0E1F29C59C00858C12 /* Message.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Message.storyboard; sourceTree = "<group>"; };
 		2C431E101F29C6B200858C12 /* ProductFilter.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ProductFilter.storyboard; sourceTree = "<group>"; };
 		2C4411A81F21981E00C453EF /* TianJiCloud.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TianJiCloud.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -281,6 +280,9 @@
 		2C801BAF1F233F46009F82F7 /* TJSRootTabBarControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSRootTabBarControllerViewController.h; sourceTree = "<group>"; };
 		2C801BB01F233F46009F82F7 /* TJSRootTabBarControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSRootTabBarControllerViewController.m; sourceTree = "<group>"; };
 		2C801BB21F233F46009F82F7 /* Mine.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Mine.storyboard; sourceTree = "<group>"; };
+		2C89AD721F2B5C81005C29AC /* DiscoNewsDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoNewsDetailController.h; sourceTree = "<group>"; };
+		2C89AD731F2B5C81005C29AC /* DiscoNewsDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoNewsDetailController.m; sourceTree = "<group>"; };
+		2C89AD751F2B5D8E005C29AC /* TJSDiscoNewListCellProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TJSDiscoNewListCellProtocol.h; sourceTree = "<group>"; };
 		2C8DE5711F29CE14009B3AE2 /* PersonalMessageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalMessageController.h; sourceTree = "<group>"; };
 		2C8DE5721F29CE14009B3AE2 /* PersonalMessageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalMessageController.m; sourceTree = "<group>"; };
 		2C8DE5741F29CE51009B3AE2 /* PlatformAnnounceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlatformAnnounceController.h; sourceTree = "<group>"; };
@@ -311,20 +313,16 @@
 		2C8DE5A51F29FFBF009B3AE2 /* ProductSearch.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ProductSearch.storyboard; sourceTree = "<group>"; };
 		2C8DE5A71F2ACA75009B3AE2 /* TJSBaseControllerContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSBaseControllerContainer.h; sourceTree = "<group>"; };
 		2C8DE5A81F2ACA75009B3AE2 /* TJSBaseControllerContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSBaseControllerContainer.m; sourceTree = "<group>"; };
-		2C8DE5AA1F2AD7A1009B3AE2 /* TJSBaseCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSBaseCollectionViewCell.h; sourceTree = "<group>"; };
-		2C8DE5AB1F2AD7A1009B3AE2 /* TJSBaseCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSBaseCollectionViewCell.m; sourceTree = "<group>"; };
 		2C8DE5B11F2AD8A0009B3AE2 /* DiscoveryNewsListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoveryNewsListCell.h; sourceTree = "<group>"; };
 		2C8DE5B21F2AD8A0009B3AE2 /* DiscoveryNewsListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoveryNewsListCell.m; sourceTree = "<group>"; };
 		2C8DE5B41F2AD8B3009B3AE2 /* DiscoveryRoadShowListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoveryRoadShowListCell.h; sourceTree = "<group>"; };
 		2C8DE5B51F2AD8B3009B3AE2 /* DiscoveryRoadShowListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoveryRoadShowListCell.m; sourceTree = "<group>"; };
 		2C8DE5B71F2AD8E7009B3AE2 /* DiscoveryNewsListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DiscoveryNewsListCell.xib; sourceTree = "<group>"; };
 		2C8DE5B91F2ADCFA009B3AE2 /* DiscoveryRoadShowListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DiscoveryRoadShowListCell.xib; sourceTree = "<group>"; };
-		2C8DE5BE1F2AE0CA009B3AE2 /* DiscoveryRoadShowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoveryRoadShowLayout.h; sourceTree = "<group>"; };
-		2C8DE5BF1F2AE0CA009B3AE2 /* DiscoveryRoadShowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoveryRoadShowLayout.m; sourceTree = "<group>"; };
 		2C8DE5C21F2AE3BC009B3AE2 /* DiscoNewsListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoNewsListController.h; sourceTree = "<group>"; };
 		2C8DE5C31F2AE3BC009B3AE2 /* DiscoNewsListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoNewsListController.m; sourceTree = "<group>"; };
-		2C8DE5C51F2AE3BC009B3AE2 /* DiscoveryNewsLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoveryNewsLayout.h; sourceTree = "<group>"; };
-		2C8DE5C61F2AE3BC009B3AE2 /* DiscoveryNewsLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoveryNewsLayout.m; sourceTree = "<group>"; };
+		2C8DE5C51F2AE3BC009B3AE2 /* DiscoveryNewsCollectLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoveryNewsCollectLayout.h; sourceTree = "<group>"; };
+		2C8DE5C61F2AE3BC009B3AE2 /* DiscoveryNewsCollectLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoveryNewsCollectLayout.m; sourceTree = "<group>"; };
 		2C8DE5D11F2AE66F009B3AE2 /* MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
 		2C8DE5D21F2AE66F009B3AE2 /* MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
 		2C8DE5EC1F2AE7D0009B3AE2 /* TJSDiscoNewsConfigurator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSDiscoNewsConfigurator.h; sourceTree = "<group>"; };
@@ -345,6 +343,12 @@
 		2C8DE6041F2AECCD009B3AE2 /* TJSDiscoNewsLayoutImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSDiscoNewsLayoutImpl.m; sourceTree = "<group>"; };
 		2C8DE6071F2B10F8009B3AE2 /* TJSDiscoNewsListConfigurateProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TJSDiscoNewsListConfigurateProtocol.h; sourceTree = "<group>"; };
 		2C8DE6081F2B11A0009B3AE2 /* TJSDiscoNewsListPrivateProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TJSDiscoNewsListPrivateProtocol.h; sourceTree = "<group>"; };
+		2C8DE60A1F2B15F3009B3AE2 /* TJSDiscoNewsListVCConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSDiscoNewsListVCConfig.h; sourceTree = "<group>"; };
+		2C8DE60B1F2B15F3009B3AE2 /* TJSDiscoNewsListVCConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSDiscoNewsListVCConfig.m; sourceTree = "<group>"; };
+		2C8DE60F1F2B43A8009B3AE2 /* DiscoRoadShowListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoRoadShowListController.h; sourceTree = "<group>"; };
+		2C8DE6101F2B43A8009B3AE2 /* DiscoRoadShowListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoRoadShowListController.m; sourceTree = "<group>"; };
+		2C8DE6121F2B43A8009B3AE2 /* DiscoveryRoadShowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoveryRoadShowLayout.h; sourceTree = "<group>"; };
+		2C8DE6131F2B43A8009B3AE2 /* DiscoveryRoadShowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoveryRoadShowLayout.m; sourceTree = "<group>"; };
 		2CAF426D1F26E01E00ABCA5E /* TJSProductListApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSProductListApi.h; sourceTree = "<group>"; };
 		2CAF426E1F26E01E00ABCA5E /* TJSProductListApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSProductListApi.m; sourceTree = "<group>"; };
 		2CAF42711F26E66500ABCA5E /* TJSBaseNetworkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSBaseNetworkTool.h; sourceTree = "<group>"; };
@@ -463,11 +467,11 @@
 		2C431DE31F299A9600858C12 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				2C431DE81F299A9600858C12 /* Controller */,
 				2C8DE57B1F29D41F009B3AE2 /* Model */,
 				2C8DE57A1F29D406009B3AE2 /* Disaggregate */,
 				2C431DE41F299A9600858C12 /* Config */,
 				2C8DE5851F29DA8E009B3AE2 /* Protocol */,
-				2C431DE81F299A9600858C12 /* Controller */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -559,10 +563,11 @@
 		2C431E021F29C35A00858C12 /* News */ = {
 			isa = PBXGroup;
 			children = (
+				2C8DE5C11F2AE3BC009B3AE2 /* Controller */,
+				2C8DE6091F2B15C0009B3AE2 /* Config */,
 				2C8DE6061F2B0FA7009B3AE2 /* Protocol */,
 				2C8DE5FC1F2AEAC9009B3AE2 /* Model */,
 				2C8DE5F51F2AE99D009B3AE2 /* NetworkTool */,
-				2C8DE5C11F2AE3BC009B3AE2 /* Controller */,
 				2C8DE5C41F2AE3BC009B3AE2 /* Disaggregate */,
 				2C8DE5AD1F2AD82E009B3AE2 /* View */,
 			);
@@ -572,10 +577,12 @@
 		2C431E031F29C35A00858C12 /* Roadshow */ = {
 			isa = PBXGroup;
 			children = (
-				2C431E0B1F29C3CF00858C12 /* DiscoRoadShowListController.h */,
-				2C431E0C1F29C3CF00858C12 /* DiscoRoadShowListController.m */,
-				2C8DE5BE1F2AE0CA009B3AE2 /* DiscoveryRoadShowLayout.h */,
-				2C8DE5BF1F2AE0CA009B3AE2 /* DiscoveryRoadShowLayout.m */,
+				2C8DE60E1F2B43A8009B3AE2 /* Controller */,
+				2C8DE60D1F2B43A8009B3AE2 /* Config */,
+				2C8DE6111F2B43A8009B3AE2 /* Disaggregate */,
+				2C8DE6141F2B43A8009B3AE2 /* Model */,
+				2C8DE6151F2B43A8009B3AE2 /* NetworkTool */,
+				2C8DE6161F2B43A8009B3AE2 /* Protocol */,
 				2C8DE5AE1F2AD839009B3AE2 /* View */,
 			);
 			path = Roadshow;
@@ -1240,6 +1247,8 @@
 			children = (
 				2C8DE5C21F2AE3BC009B3AE2 /* DiscoNewsListController.h */,
 				2C8DE5C31F2AE3BC009B3AE2 /* DiscoNewsListController.m */,
+				2C89AD721F2B5C81005C29AC /* DiscoNewsDetailController.h */,
+				2C89AD731F2B5C81005C29AC /* DiscoNewsDetailController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1247,8 +1256,8 @@
 		2C8DE5C41F2AE3BC009B3AE2 /* Disaggregate */ = {
 			isa = PBXGroup;
 			children = (
-				2C8DE5C51F2AE3BC009B3AE2 /* DiscoveryNewsLayout.h */,
-				2C8DE5C61F2AE3BC009B3AE2 /* DiscoveryNewsLayout.m */,
+				2C8DE5C51F2AE3BC009B3AE2 /* DiscoveryNewsCollectLayout.h */,
+				2C8DE5C61F2AE3BC009B3AE2 /* DiscoveryNewsCollectLayout.m */,
 				2C8DE5EC1F2AE7D0009B3AE2 /* TJSDiscoNewsConfigurator.h */,
 				2C8DE5ED1F2AE7D0009B3AE2 /* TJSDiscoNewsConfigurator.m */,
 				2C8DE5EF1F2AE82F009B3AE2 /* TJSDiscoNewsInteracotImpl.h */,
@@ -1381,6 +1390,62 @@
 			children = (
 				2C8DE6071F2B10F8009B3AE2 /* TJSDiscoNewsListConfigurateProtocol.h */,
 				2C8DE6081F2B11A0009B3AE2 /* TJSDiscoNewsListPrivateProtocol.h */,
+				2C89AD751F2B5D8E005C29AC /* TJSDiscoNewListCellProtocol.h */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		2C8DE6091F2B15C0009B3AE2 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				2C8DE60A1F2B15F3009B3AE2 /* TJSDiscoNewsListVCConfig.h */,
+				2C8DE60B1F2B15F3009B3AE2 /* TJSDiscoNewsListVCConfig.m */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		2C8DE60D1F2B43A8009B3AE2 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		2C8DE60E1F2B43A8009B3AE2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2C8DE60F1F2B43A8009B3AE2 /* DiscoRoadShowListController.h */,
+				2C8DE6101F2B43A8009B3AE2 /* DiscoRoadShowListController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2C8DE6111F2B43A8009B3AE2 /* Disaggregate */ = {
+			isa = PBXGroup;
+			children = (
+				2C8DE6121F2B43A8009B3AE2 /* DiscoveryRoadShowLayout.h */,
+				2C8DE6131F2B43A8009B3AE2 /* DiscoveryRoadShowLayout.m */,
+			);
+			path = Disaggregate;
+			sourceTree = "<group>";
+		};
+		2C8DE6141F2B43A8009B3AE2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2C8DE6151F2B43A8009B3AE2 /* NetworkTool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NetworkTool;
+			sourceTree = "<group>";
+		};
+		2C8DE6161F2B43A8009B3AE2 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -1448,10 +1513,10 @@
 		2CAF42A31F281B8600ABCA5E /* ProductList */ = {
 			isa = PBXGroup;
 			children = (
+				2CAF42B61F281B8600ABCA5E /* Controller */,
 				2CAF42BA1F281B8600ABCA5E /* Model */,
 				2CAF42D21F281B8600ABCA5E /* Store */,
 				2CAF42BD1F281B8600ABCA5E /* NetworkTool */,
-				2CAF42B61F281B8600ABCA5E /* Controller */,
 				2CAF42FA1F2828C200ABCA5E /* Disaggregate */,
 				2CAF42A41F281B8600ABCA5E /* Config */,
 				2CAF42CD1F281B8600ABCA5E /* Protocol */,
@@ -1541,10 +1606,10 @@
 		2CAF42CD1F281B8600ABCA5E /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
-				2CAF42CE1F281B8600ABCA5E /* TJSProductCellLayoutProtocol.h */,
-				2CAF42CF1F281B8600ABCA5E /* TJSProductListCellProtocol.h */,
 				2CAF42D01F281B8600ABCA5E /* TJSProductListConfigurateProtocol.h */,
 				2CAF42D11F281B8600ABCA5E /* TJSProductListPrivateProtocol.h */,
+				2CAF42CE1F281B8600ABCA5E /* TJSProductCellLayoutProtocol.h */,
+				2CAF42CF1F281B8600ABCA5E /* TJSProductListCellProtocol.h */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -1619,8 +1684,6 @@
 			children = (
 				2CAF431C1F282D9900ABCA5E /* TJSBaseTableViewCell.h */,
 				2CAF431D1F282D9900ABCA5E /* TJSBaseTableViewCell.m */,
-				2C8DE5AA1F2AD7A1009B3AE2 /* TJSBaseCollectionViewCell.h */,
-				2C8DE5AB1F2AD7A1009B3AE2 /* TJSBaseCollectionViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1848,6 +1911,7 @@
 				2C44123C1F21D27700C453EF /* GVUserDefaults.m in Sources */,
 				2CAF42DD1F281B8600ABCA5E /* ProductDeleteNetworkTool.m in Sources */,
 				2C431E071F29C38F00858C12 /* DiscoveryViewController.m in Sources */,
+				2C89AD741F2B5C81005C29AC /* DiscoNewsDetailController.m in Sources */,
 				2C8DE5A91F2ACA75009B3AE2 /* TJSBaseControllerContainer.m in Sources */,
 				2C8DE5B61F2AD8B3009B3AE2 /* DiscoveryRoadShowListCell.m in Sources */,
 				2CAF42D71F281B8600ABCA5E /* TJSProductListCellLayoutConfig.m in Sources */,
@@ -1867,6 +1931,7 @@
 				2C4412591F21DDA900C453EF /* UIWindow+Transition.m in Sources */,
 				2C431DEB1F299A9600858C12 /* HomeVCConfig.m in Sources */,
 				2C4412031F219A5300C453EF /* UIDevice+CurrentArg.m in Sources */,
+				2C8DE6171F2B43A8009B3AE2 /* DiscoRoadShowListController.m in Sources */,
 				2C4412A61F2201FF00C453EF /* TJSBaseRequest+TJSSingleRequestBlock.m in Sources */,
 				2C4412471F21D3E300C453EF /* MBProgressHUD.m in Sources */,
 				2C801BD61F233F46009F82F7 /* TJSRootTabBarControllerViewController.m in Sources */,
@@ -1898,14 +1963,12 @@
 				2C431DFE1F29C26700858C12 /* MessageKindListController.m in Sources */,
 				2C44124E1F21D54400C453EF /* TJSSystemAlertMaker.m in Sources */,
 				2C4412011F219A5300C453EF /* NSString+StringSize.m in Sources */,
-				2C431E0D1F29C3CF00858C12 /* DiscoRoadShowListController.m in Sources */,
 				2C8DE5761F29CE51009B3AE2 /* PlatformAnnounceController.m in Sources */,
 				2CAF43181F2829CF00ABCA5E /* TJSProductEvent.m in Sources */,
 				2CAF42DB1F281B8600ABCA5E /* ProductListViewController.m in Sources */,
 				2CAF42D31F281B8600ABCA5E /* TJSProductListContentConfig.m in Sources */,
 				2C4412A81F2201FF00C453EF /* TJSUploadRequest.m in Sources */,
 				2C4412791F21E83D00C453EF /* UIImage+ColorAtPixel.m in Sources */,
-				2C8DE5C01F2AE0CA009B3AE2 /* DiscoveryRoadShowLayout.m in Sources */,
 				2C4412041F219A5300C453EF /* UIImage+FromColor.m in Sources */,
 				2CAF42851F27261A00ABCA5E /* TJSProductDeleteApi.m in Sources */,
 				2CAF43081F2828C200ABCA5E /* TJSProductListInteractorImpl.m in Sources */,
@@ -1918,19 +1981,19 @@
 				2CAF43191F2829CF00ABCA5E /* TJSProductInfo.m in Sources */,
 				2CAF43071F2828C200ABCA5E /* TJSProductListDataSourceImpl.m in Sources */,
 				2CAF42F51F28273300ABCA5E /* ProductListCellContentView.m in Sources */,
+				2C8DE60C1F2B15F3009B3AE2 /* TJSDiscoNewsListVCConfig.m in Sources */,
 				2C4412881F21EB8800C453EF /* UITextField+LengthLimited.m in Sources */,
 				2CAF43111F2829B300ABCA5E /* TJSAppInfo.m in Sources */,
 				2C8DE5841F29D509009B3AE2 /* TJSHomeListInteractorImpl.m in Sources */,
 				2C4412A91F2201FF00C453EF /* TJWUrlArgumentsFilter.m in Sources */,
 				2C8DE5B31F2AD8A0009B3AE2 /* DiscoveryNewsListCell.m in Sources */,
-				2C8DE5AC1F2AD7A1009B3AE2 /* TJSBaseCollectionViewCell.m in Sources */,
 				2C4412671F21E17200C453EF /* NSMutableAttributedString+Formated.m in Sources */,
 				2C8DE58A1F29E066009B3AE2 /* TJSHomeListLayoutImpl.m in Sources */,
 				2C4412431F21D36200C453EF /* TJSEnumValueService.m in Sources */,
 				2CAF43091F2828C200ABCA5E /* TJSProductListLayoutImpl.m in Sources */,
 				2CAF430A1F2828C200ABCA5E /* TJSProductListTableAdapter.m in Sources */,
 				2C8DE5EE1F2AE7D0009B3AE2 /* TJSDiscoNewsConfigurator.m in Sources */,
-				2C8DE5CD1F2AE3BC009B3AE2 /* DiscoveryNewsLayout.m in Sources */,
+				2C8DE5CD1F2AE3BC009B3AE2 /* DiscoveryNewsCollectLayout.m in Sources */,
 				2C8DE5F41F2AE849009B3AE2 /* TJSDiscoNewsListAdapter.m in Sources */,
 				2CAF426F1F26E01E00ABCA5E /* TJSProductListApi.m in Sources */,
 				2C8DE5CC1F2AE3BC009B3AE2 /* DiscoNewsListController.m in Sources */,
@@ -1940,6 +2003,7 @@
 				2CAF42F61F28273300ABCA5E /* ProductListCellImageContentView.m in Sources */,
 				2C801BD21F233F46009F82F7 /* TJSBaseNavigationController.m in Sources */,
 				2CAF42D41F281B8600ABCA5E /* TJSProductListImageContentConfig.m in Sources */,
+				2C8DE6181F2B43A8009B3AE2 /* DiscoveryRoadShowLayout.m in Sources */,
 				2CAF427A1F26EAA600ABCA5E /* AppVersionNetworkTool.m in Sources */,
 				2C4412851F21EB3100C453EF /* UITextView+EditRect.m in Sources */,
 				2C8DE6051F2AECCD009B3AE2 /* TJSDiscoNewsLayoutImpl.m in Sources */,

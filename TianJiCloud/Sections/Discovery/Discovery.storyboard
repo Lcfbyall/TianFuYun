@@ -46,7 +46,6 @@
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="dAg-ju-zy7">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Z5G-gv-98C">
                                     <size key="itemSize" width="50" height="50"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -56,7 +55,6 @@
                                 <cells/>
                             </collectionView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="dAg-ju-zy7" secondAttribute="bottom" id="2DY-hR-ITE"/>
                             <constraint firstItem="dAg-ju-zy7" firstAttribute="leading" secondItem="dAx-gQ-GtY" secondAttribute="leading" id="Fbl-Zs-9u7"/>
@@ -66,11 +64,30 @@
                     </view>
                     <connections>
                         <outlet property="newsCollectionView" destination="dAg-ju-zy7" id="v32-qd-3dG"/>
+                        <segue destination="XN5-Fx-Fmf" kind="show" identifier="DiscoNewsListToNewsDetail" id="PPM-06-EcK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dqF-M2-2b7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2536.8000000000002" y="-118.29085457271366"/>
+        </scene>
+        <!--Disco News Detail Controller-->
+        <scene sceneID="i9w-Dv-q6g">
+            <objects>
+                <viewController storyboardIdentifier="DiscoNewsDetailController" id="XN5-Fx-Fmf" customClass="DiscoNewsDetailController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iBf-Ia-ANS"/>
+                        <viewControllerLayoutGuide type="bottom" id="Az4-as-abi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xSt-r9-8d1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cop-IG-LBQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3284" y="-117"/>
         </scene>
         <!--Disco Road Show List Controller-->
         <scene sceneID="qwi-zU-SUm">

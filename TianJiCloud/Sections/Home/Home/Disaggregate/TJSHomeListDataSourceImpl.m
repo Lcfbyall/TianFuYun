@@ -66,7 +66,15 @@
                    
                    [TJSProductInfoModel new],
                    [TJSProductInfoModel new],
-                   [TJSProductInfoModel new], nil];
+                   [TJSProductInfoModel new],
+                   [TJSProductInfoModel new],
+                   [TJSProductInfoModel new],
+                   [TJSProductInfoModel new],
+                   [TJSProductInfoModel new],
+                   [TJSProductInfoModel new],
+                   [TJSProductInfoModel new],
+                   
+                   nil];
     }
     
     return _items;

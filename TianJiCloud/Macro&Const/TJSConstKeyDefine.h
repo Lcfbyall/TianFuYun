@@ -52,8 +52,11 @@ static NSString *const ProductSearchVC      = @"ProductSearchController";
 
 #pragma mark - DiscoveryVC identifier
 
-static NSString *const DiscoryNewsListVC = @"DiscoNewsListController";
+static NSString *const DiscoryNewsListVC    = @"DiscoNewsListController";
+static NSString *const DiscoryNewsDetailVC  = @"DiscoNewsDetailController";
+
 static NSString *const DiscoryRoadShowListVC = @"DiscoRoadShowListController";
+
 
 
 

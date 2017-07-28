@@ -20,6 +20,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    [self tjs_configBaseView];
+    
     self.navigationController.delegate = self;
 }
 
@@ -49,14 +51,20 @@
 }
 
 
-#pragma mark - TJSViewControllerHideNavigationBarDelegate
+#pragma mark - <BaseVCConfig>
+- (void)tjs_configBaseView{
+
+
+}
+
+#pragma mark - <TJSViewControllerHideNavigationBarDelegate>
 - (BOOL)tjs_hideNavigationBar{
     
     return NO;
 }
 
 
-#pragma mark - UINavigationControllerDelegate
+#pragma mark - <UINavigationControllerDelegate>
 
 - (void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated{
     

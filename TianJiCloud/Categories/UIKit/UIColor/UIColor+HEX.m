@@ -23,6 +23,7 @@
     return [self colorWithRed:r green:g blue:b alpha:alpha];
 }
 
+//
 + (UIColor *)tjs_colorWithHex:(UInt32)hex andAlpha:(CGFloat)alpha{
     return [UIColor colorWithRed:((hex >> 16) & 0xFF)/255.0
                            green:((hex >> 8) & 0xFF)/255.0

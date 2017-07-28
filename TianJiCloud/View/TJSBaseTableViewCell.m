@@ -97,7 +97,7 @@ static NSString *_identifier = nil;
     if (!cell) {
         
         NSString *nibName = NSStringFromClass([self class]);
-        UINib    *nib     = [UINib nibWithNibName:nibName bundle:nil];
+        UINib    *nib     = [UINib nibWithNibName:nibName bundle:[NSBundle mainBundle]];
         
         [tableView registerNib:nib forCellReuseIdentifier:_identifier];
         

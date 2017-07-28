@@ -9,7 +9,13 @@
 #import <UIKit/UIKit.h>
 
 
+@protocol DiscoveryRoadShowLayout <NSObject>
 
+@required
+
+
+
+@end
 
 
 @interface DiscoveryRoadShowLayout : UICollectionViewLayout

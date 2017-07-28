@@ -51,10 +51,11 @@
 
 
 #pragma mark - <TJSBaseVCConfig>
+
 - (void)tjs_configBaseView{
 
-
-
+    _productListTBView.backgroundColor = ThemeService.weak_color_10;
+    _productListTBView.tableFooterView = [UIView new];
 }
 
 - (UIView *)tjs_listView{
@@ -85,10 +86,17 @@
 
 
 
-#pragma mark - TJSProductListCellDelegate
+#pragma mark - <TJSProductListCellDelegate>
 
-- (BOOL)onTapCell:(TJSProductEvent *)event{
-
+- (BOOL)onTapCell:(id)event{
+    
+    [self tjs_pushViewController:ProductDetailVC params:@{} backHandler:^(id  _Nullable obj) {
+        
+        [((UIViewController *)obj).navigationController popViewControllerAnimated:YES];
+        
+    } animated:YES];
+    
+    
     return YES;
 }
 

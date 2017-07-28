@@ -17,7 +17,7 @@
  */
 - (void)setupStyleBasic{
     
-    [self setupStyleBasicWithBarTintColor:[UIColor redColor]];
+    [self setupStyleBasicWithBarTintColor:[UIColor whiteColor]];
     
 }
 
@@ -39,7 +39,9 @@
 
     NSDictionary *titleTextAttributes =
   
-      @{NSForegroundColorAttributeName:titleColor,
+      @{
+        
+        NSForegroundColorAttributeName:titleColor,
         NSFontAttributeName:titleFont
         
         };
@@ -50,6 +52,7 @@
     self.barTintColor = barTintColor;
     //
     self.tintColor    = tintColor;
+    
     // 透明度
     self.translucent  = translucent;
     

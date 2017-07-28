@@ -35,7 +35,7 @@
 #pragma mark - <TJSProductListDataSource>
 
 //
-- (void)loadProducts:(void (^)(NSArray *products, NSError *error))handler{
+- (void)loadProducts:(void (^)(NSArray *products, NSError *error))callback{
     
     WEAK_SELF(self);
     
@@ -62,9 +62,9 @@
             NSArray *products = @[];
             NSError *error    = nil;;
            
-            if(handler){
+            if(callback){
                 
-                handler(products,error);
+                callback(products,error);
             }
         }
                        
@@ -113,7 +113,14 @@
                    
                    [TJSProductInfoModel new],
                    [TJSProductInfoModel new],
-                   [TJSProductInfoModel new], nil];
+                   [TJSProductInfoModel new],
+                   [TJSProductInfoModel new],
+                   [TJSProductInfoModel new],
+                   [TJSProductInfoModel new],
+                   [TJSProductInfoModel new],
+                   [TJSProductInfoModel new],
+                   [TJSProductInfoModel new],
+                   nil];
     }
     
     return _items;

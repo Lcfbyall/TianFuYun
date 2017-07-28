@@ -41,12 +41,13 @@ forCellReuseIdentifier:(Str(cellClass))];
 #define LOAD_Storyboard(name,identifier) [[UIStoryboard storyboardWithName:name bundle:nil] instantiateViewControllerWithIdentifier:identifier]
 //获取图片资源
 #define IMAGE(imageName) [UIImage imageNamed:[NSString stringWithFormat:@"%@",imageName]]
+
 #define IMAGEOriginal(imageName) [IMAGE(imageName) imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]
 
 
 
 //4. color
-#define UIColorFromHEX(rgbValue)	[UIColor colorWithRed:((float)(((rgbValue) & 0xFF0000) >> 16))/255.0 \
+#define UIColorFromHEX(rgbHexValue)	[UIColor colorWithRed:((float)(((rgbValue) & 0xFF0000) >> 16))/255.0 \
 green:((float)(((rgbValue) & 0x00FF00) >> 8))/255.0 \
 blue:((float)((rgbValue) & 0x0000FF))/255.0 \
 alpha:1.0]

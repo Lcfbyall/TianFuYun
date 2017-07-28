@@ -40,7 +40,7 @@
     if (self.childViewControllers.count > 0) {
         
         WEAK_SELF(self);
-        UIBarButtonItem *leftItem = [[UIBarButtonItem alloc] bk_initWithImage:IMAGE(@"header-back") style:UIBarButtonItemStylePlain handler:^(id sender) {
+        UIBarButtonItem *leftItem = [[UIBarButtonItem alloc] bk_initWithImage:IMAGEOriginal(@"back_arrow") style:UIBarButtonItemStylePlain handler:^(id sender) {
             
             STRONG_SELF(self);
             TJSBaseViewController *vc = [self.viewControllers lastObject];

@@ -277,7 +277,7 @@ initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(NSString * _Nu
 
 - (void)createLeftBarButtonItem {
     
-    UIBarButtonItem *backItem = [[UIBarButtonItem alloc] initWithImage:IMAGE(@"header-back") style:UIBarButtonItemStylePlain target:self action:@selector(clickBackToRecordViewController:)];
+    UIBarButtonItem *backItem = [[UIBarButtonItem alloc] initWithImage:IMAGEOriginal(@"header-back") style:UIBarButtonItemStylePlain target:self action:@selector(clickBackToRecordViewController:)];
     self.navigationItem.leftBarButtonItem = backItem;
 }
 

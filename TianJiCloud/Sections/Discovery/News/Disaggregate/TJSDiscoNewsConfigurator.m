@@ -45,12 +45,12 @@
     
     
     //2.
-    _tableAdapter = [[TJSDiscoNewsListAdapter alloc]init];
+    _tableAdapter = [[TJSDiscoNewsListAdapter alloc]initWithCollectionView:collectionView];
     
     _tableAdapter.interactor   = _interactor;
-    //_tableAdapter.cellDelegate = vc;
+    _tableAdapter.cellDelegate = vc;
     
-    
+
     //3.
     collectionView.delegate      = _tableAdapter;
     collectionView.dataSource    = _tableAdapter;
@@ -61,7 +61,6 @@
     
     
     //5.
-    
     //自动刷新
     [layoutImpl beginRefresh];
 }

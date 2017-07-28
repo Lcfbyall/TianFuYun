@@ -17,6 +17,10 @@
 + (instancetype)sharedInstance;
 
 
+// 页面最底层背景
+- (UIColor *)weak_color_10; /**< efeff4 */
+
+
 
 
 #pragma mark - Font

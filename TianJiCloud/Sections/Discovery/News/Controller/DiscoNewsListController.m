@@ -8,13 +8,13 @@
 
 #import "DiscoNewsListController.h"
 
-#import "DiscoveryNewsLayout.h"
+#import "DiscoveryNewsCollectLayout.h"
 #import "DiscoveryNewsListCell.h"
 
 #import "TJSDiscoNewsConfigurator.h"
 #import "TJSDiscoNewsInteracotImpl.h"
 
-@interface DiscoNewsListController ()<DiscoveryNewsLayout>
+@interface DiscoNewsListController ()
 
 @property (nonatomic,strong) TJSDiscoNewsConfigurator *configurator;
 
@@ -46,6 +46,8 @@
 #pragma mark - settings
 
 - (void)setVCConfig{
+    
+    
    
 }
 
@@ -58,12 +60,12 @@
 }
 
 
-
-
 #pragma mark - <TJSBaseVCConfig>
 
 - (void)tjs_configBaseView{
     
+
+    _newsCollectionView.backgroundColor = ThemeService.weak_color_10;
     
     
 }
@@ -73,6 +75,26 @@
     return _newsCollectionView;
 }
 
+
+#pragma mark - <TJSDiscoNewListCellDelegate>
+
+- (BOOL)onTapCell:(id)event{
+
+    
+    [self tjs_pushViewController:DiscoryNewsDetailVC backHandler:^(id  _Nullable obj) {
+        
+        [((UIViewController *)obj).navigationController popViewControllerAnimated:YES];
+        
+    } animated:YES];
+
+    return YES;
+}
+
+- (BOOL)onLongPressCell:(id)product inView:(UIView *)view{
+ 
+    
+    return YES;
+}
 
 
 
