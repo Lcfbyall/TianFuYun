@@ -49,25 +49,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ur9-AL-Fbw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2946.4000000000001" y="610.34482758620697"/>
+            <point key="canvasLocation" x="3885.5999999999999" y="610.34482758620697"/>
         </scene>
         <!--Base Navigation Controller-->
-        <scene sceneID="2iV-Tb-r6O">
+        <scene sceneID="SpR-ny-6eU">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Gew-Wk-pZ0" customClass="TJSBaseNavigationController" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="ProductFilterNC" automaticallyAdjustsScrollViewInsets="NO" id="ScD-nS-alJ" customClass="TJSBaseNavigationController" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7pK-eb-xNH">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="sgz-2O-CZh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="Dov-lS-0ro" kind="relationship" relationship="rootViewController" id="3Vs-kL-kom"/>
+                        <segue destination="Dov-lS-0ro" kind="relationship" relationship="rootViewController" id="NOq-6v-ZDE"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="517-Ui-1rj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Fr-qq-Gj2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2007.2" y="610.34482758620697"/>
+            <point key="canvasLocation" x="2946.4000000000001" y="610.34482758620697"/>
         </scene>
     </scenes>
 </document>

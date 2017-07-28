@@ -11,7 +11,7 @@
 #import <WebKit/WebKit.h>
 @class TJSWeakScriptMessageHandler;
 
-@protocol TJSBaseWebProtocol <NSObject>
+@protocol TJSBaseWebControllerProtocol <NSObject>
 
 @property (strong, nonatomic,readonly) WKWebView *tjs_wkWebView;
 
@@ -31,6 +31,6 @@
 
 
 
-@interface TJSBaseWebViewController : TJSBaseViewController <WKUIDelegate,WKNavigationDelegate,WKScriptMessageHandler,TJSBaseWebProtocol>
+@interface TJSBaseWebViewController : TJSBaseViewController <WKUIDelegate,WKNavigationDelegate,WKScriptMessageHandler,TJSBaseWebControllerProtocol>
 
 @end

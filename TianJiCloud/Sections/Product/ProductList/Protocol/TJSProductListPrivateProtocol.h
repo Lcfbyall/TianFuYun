@@ -59,7 +59,6 @@
 
 - (void)setDelegate:(id<TJSProductListLayoutDelegate>)delegate;
 
-
 @end
 
 

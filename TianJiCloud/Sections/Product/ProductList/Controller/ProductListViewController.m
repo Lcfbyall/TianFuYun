@@ -50,7 +50,7 @@
 }
 
 
-#pragma mark - TJSBaseVCConfig
+#pragma mark - <TJSBaseVCConfig>
 - (void)tjs_configBaseView{
 
 
@@ -105,9 +105,9 @@
     [self tjs_pushViewController:ProductFilterVC
                      backHandler:^(id  _Nullable obj) {
                          
-                         [((UIViewController *)obj).navigationController popViewControllerAnimated:YES];
-                         
-                     } animated:YES];
+         [((UIViewController *)obj).navigationController popViewControllerAnimated:YES];
+         
+     } animated:YES];
 }
 
 

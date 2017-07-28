@@ -23,10 +23,72 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="CnQ-Eh-cAX"/>
+                    <connections>
+                        <segue destination="ccb-Lo-slx" kind="show" identifier="ContainerToNews" id="XPt-nK-LD6"/>
+                        <segue destination="kzT-oZ-pkx" kind="show" identifier="ContainerToVideos" id="mtB-Vq-NXA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uNB-eN-0vn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1580" y="97.601199400299862"/>
+        </scene>
+        <!--Disco News List Controller-->
+        <scene sceneID="PlH-Gl-fuo">
+            <objects>
+                <viewController storyboardIdentifier="DiscoNewsListController" id="ccb-Lo-slx" customClass="DiscoNewsListController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JZE-Ys-bzH"/>
+                        <viewControllerLayoutGuide type="bottom" id="htP-lL-4il"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dAx-gQ-GtY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="dAg-ju-zy7">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Z5G-gv-98C">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="dAg-ju-zy7" secondAttribute="bottom" id="2DY-hR-ITE"/>
+                            <constraint firstItem="dAg-ju-zy7" firstAttribute="leading" secondItem="dAx-gQ-GtY" secondAttribute="leading" id="Fbl-Zs-9u7"/>
+                            <constraint firstAttribute="trailing" secondItem="dAg-ju-zy7" secondAttribute="trailing" id="SXO-NE-RkK"/>
+                            <constraint firstItem="dAg-ju-zy7" firstAttribute="top" secondItem="dAx-gQ-GtY" secondAttribute="top" id="qSt-C9-6dy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="newsCollectionView" destination="dAg-ju-zy7" id="v32-qd-3dG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dqF-M2-2b7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2536.8000000000002" y="-118.29085457271366"/>
+        </scene>
+        <!--Disco Road Show List Controller-->
+        <scene sceneID="qwi-zU-SUm">
+            <objects>
+                <viewController storyboardIdentifier="DiscoRoadShowListController" id="kzT-oZ-pkx" customClass="DiscoRoadShowListController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3f0-bD-5EO"/>
+                        <viewControllerLayoutGuide type="bottom" id="X5J-A6-R5S"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9cx-FC-Afa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qDc-ip-wJN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2558" y="623"/>
         </scene>
         <!--Base Navigation Controller-->
         <scene sceneID="Obq-Jl-q8q">

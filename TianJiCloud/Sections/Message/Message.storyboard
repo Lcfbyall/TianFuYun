@@ -103,7 +103,7 @@
         <!--Base Navigation Controller-->
         <scene sceneID="rWA-QB-CVg">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3H9-c2-4ny" customClass="TJSBaseNavigationController" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="MessageNC" automaticallyAdjustsScrollViewInsets="NO" id="3H9-c2-4ny" customClass="TJSBaseNavigationController" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="bRJ-eg-O6a">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>

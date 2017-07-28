@@ -1,18 +1,18 @@
 //
-//  DiscoNewsListController.m
+//  TJSProductDetailController.m
 //  TianJiCloud
 //
 //  Created by 朱鹏 on 17/7/27.
 //  Copyright © 2017年 TianJiMoney. All rights reserved.
 //
 
-#import "DiscoNewsListController.h"
+#import "TJSProductDetailController.h"
 
-@interface DiscoNewsListController ()
+@interface TJSProductDetailController ()
 
 @end
 
-@implementation DiscoNewsListController
+@implementation TJSProductDetailController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

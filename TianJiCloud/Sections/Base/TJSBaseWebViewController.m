@@ -38,7 +38,7 @@
 }
 
 
-#pragma mark - <TJSBaseWebProtocol>
+#pragma mark - <TJSBaseWebControllerProtocol>
 
 - (WKWebView *)tjs_wkWebView{
   

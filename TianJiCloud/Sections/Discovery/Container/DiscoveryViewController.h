@@ -6,8 +6,9 @@
 //  Copyright © 2017年 TianJiMoney. All rights reserved.
 //
 
-#import "TJSBaseViewController.h"
+#import "TJSBaseControllerContainer.h"
 
-@interface DiscoveryViewController : TJSBaseViewController
+
+@interface DiscoveryViewController : TJSBaseControllerContainer
 
 @end

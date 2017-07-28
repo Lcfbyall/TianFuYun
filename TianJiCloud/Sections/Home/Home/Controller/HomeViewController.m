@@ -36,21 +36,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-
-
-#pragma mark - TJSBaseVCConfig
-- (void)tjs_configBaseView{
-    
-    
-    
-}
-
-- (UIView *)tjs_listView{
-    
-    return _productListTBView;
-}
-
-
 #pragma mark - settings
 
 - (void)setHomeConfig{
@@ -76,7 +61,20 @@
 }
 
 
-#pragma mark - HomeVCConfig
+#pragma mark - <TJSBaseVCConfig>
+- (void)tjs_configBaseView{
+    
+    
+}
+
+- (UIView *)tjs_listView{
+    
+    return _productListTBView;
+}
+
+
+
+#pragma mark - <HomeVCConfig>
 
 - (void)onTapLeftBarBtnToMessageKindList:(id)sender{
 
@@ -89,5 +87,19 @@
     [self tjs_pushViewController:ProductFilterVC animated:YES];
 }
 
+
+#pragma mark - <TJSProductListCellDelegate>
+
+- (BOOL)onTapCell:(id)event{
+  
+    [self tjs_pushViewController:ProductDetailVC params:@{} backHandler:^(id  _Nullable obj) {
+        
+        [((UIViewController *)obj).navigationController popViewControllerAnimated:YES];
+      
+    } animated:YES];
+
+    
+    return YES;
+}
 
 @end

@@ -8,6 +8,8 @@
 
 #import "TJSBaseViewController.h"
 
-@interface DiscoNewsListController : TJSBaseViewController
+#import "TJSDiscoNewsListConfigurateProtocol.h"
+
+@interface DiscoNewsListController : TJSBaseViewController<TJSDiscoveryNewsListInteractorDelegate>
 
 @end

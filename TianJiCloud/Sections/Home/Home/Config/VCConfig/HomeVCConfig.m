@@ -43,7 +43,7 @@
 
 - (NSArray <UIBarButtonItem *> *)tjs_leftBarButtonItems{
     WEAK_SELF(self);
-    NSString *leftBarBtnImage  = @"msg";
+    NSString *leftBarBtnImage  = @"msg_home";
     
     UIBarButtonItem *leftItem  = [[UIBarButtonItem alloc] bk_initWithImage:IMAGE(leftBarBtnImage) style:UIBarButtonItemStylePlain handler:^(id sender) {
         STRONG_SELF(self);

@@ -14,7 +14,6 @@
 		2C431DFE1F29C26700858C12 /* MessageKindListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C431DFA1F29C26700858C12 /* MessageKindListController.m */; };
 		2C431E011F29C28500858C12 /* ProductFilterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C431E001F29C28500858C12 /* ProductFilterController.m */; };
 		2C431E071F29C38F00858C12 /* DiscoveryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C431E061F29C38F00858C12 /* DiscoveryViewController.m */; };
-		2C431E0A1F29C3AD00858C12 /* DiscoNewsListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C431E091F29C3AD00858C12 /* DiscoNewsListController.m */; };
 		2C431E0D1F29C3CF00858C12 /* DiscoRoadShowListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C431E0C1F29C3CF00858C12 /* DiscoRoadShowListController.m */; };
 		2C431E0F1F29C59C00858C12 /* Message.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C431E0E1F29C59C00858C12 /* Message.storyboard */; };
 		2C431E111F29C6B200858C12 /* ProductFilter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C431E101F29C6B200858C12 /* ProductFilter.storyboard */; };
@@ -70,7 +69,6 @@
 		2C801BD31F233F46009F82F7 /* TJSBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C801BA91F233F46009F82F7 /* TJSBaseViewController.m */; };
 		2C801BD61F233F46009F82F7 /* TJSRootTabBarControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C801BB01F233F46009F82F7 /* TJSRootTabBarControllerViewController.m */; };
 		2C801BD71F233F46009F82F7 /* Mine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C801BB21F233F46009F82F7 /* Mine.storyboard */; };
-		2C801BD81F233F46009F82F7 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C801BB41F233F46009F82F7 /* MineViewController.m */; };
 		2C8DE5731F29CE14009B3AE2 /* PersonalMessageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE5721F29CE14009B3AE2 /* PersonalMessageController.m */; };
 		2C8DE5761F29CE51009B3AE2 /* PlatformAnnounceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE5751F29CE51009B3AE2 /* PlatformAnnounceController.m */; };
 		2C8DE5791F29CE76009B3AE2 /* AllActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE5781F29CE76009B3AE2 /* AllActivityViewController.m */; };
@@ -81,6 +79,28 @@
 		2C8DE58D1F29E081009B3AE2 /* TJSHomeListDataSourceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE58C1F29E081009B3AE2 /* TJSHomeListDataSourceImpl.m */; };
 		2C8DE5911F29F4AF009B3AE2 /* TJSBaseWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE5901F29F4AF009B3AE2 /* TJSBaseWebViewController.m */; };
 		2C8DE5941F29F5FF009B3AE2 /* TJSWeakScriptMessageHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE5931F29F5FF009B3AE2 /* TJSWeakScriptMessageHandler.m */; };
+		2C8DE59C1F29FC51009B3AE2 /* TJSProductDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE59B1F29FC51009B3AE2 /* TJSProductDetailController.m */; };
+		2C8DE59E1F29FE80009B3AE2 /* Product.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C8DE59D1F29FE80009B3AE2 /* Product.storyboard */; };
+		2C8DE5A41F29FF89009B3AE2 /* ProductSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE5A31F29FF89009B3AE2 /* ProductSearchController.m */; };
+		2C8DE5A61F29FFBF009B3AE2 /* ProductSearch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C8DE5A51F29FFBF009B3AE2 /* ProductSearch.storyboard */; };
+		2C8DE5A91F2ACA75009B3AE2 /* TJSBaseControllerContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE5A81F2ACA75009B3AE2 /* TJSBaseControllerContainer.m */; };
+		2C8DE5AC1F2AD7A1009B3AE2 /* TJSBaseCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE5AB1F2AD7A1009B3AE2 /* TJSBaseCollectionViewCell.m */; };
+		2C8DE5B31F2AD8A0009B3AE2 /* DiscoveryNewsListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE5B21F2AD8A0009B3AE2 /* DiscoveryNewsListCell.m */; };
+		2C8DE5B61F2AD8B3009B3AE2 /* DiscoveryRoadShowListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE5B51F2AD8B3009B3AE2 /* DiscoveryRoadShowListCell.m */; };
+		2C8DE5B81F2AD8E7009B3AE2 /* DiscoveryNewsListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C8DE5B71F2AD8E7009B3AE2 /* DiscoveryNewsListCell.xib */; };
+		2C8DE5BA1F2ADCFA009B3AE2 /* DiscoveryRoadShowListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C8DE5B91F2ADCFA009B3AE2 /* DiscoveryRoadShowListCell.xib */; };
+		2C8DE5C01F2AE0CA009B3AE2 /* DiscoveryRoadShowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE5BF1F2AE0CA009B3AE2 /* DiscoveryRoadShowLayout.m */; };
+		2C8DE5CC1F2AE3BC009B3AE2 /* DiscoNewsListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE5C31F2AE3BC009B3AE2 /* DiscoNewsListController.m */; };
+		2C8DE5CD1F2AE3BC009B3AE2 /* DiscoveryNewsLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE5C61F2AE3BC009B3AE2 /* DiscoveryNewsLayout.m */; };
+		2C8DE5D31F2AE66F009B3AE2 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE5D21F2AE66F009B3AE2 /* MineViewController.m */; };
+		2C8DE5EE1F2AE7D0009B3AE2 /* TJSDiscoNewsConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE5ED1F2AE7D0009B3AE2 /* TJSDiscoNewsConfigurator.m */; };
+		2C8DE5F11F2AE82F009B3AE2 /* TJSDiscoNewsInteracotImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE5F01F2AE82F009B3AE2 /* TJSDiscoNewsInteracotImpl.m */; };
+		2C8DE5F41F2AE849009B3AE2 /* TJSDiscoNewsListAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE5F31F2AE849009B3AE2 /* TJSDiscoNewsListAdapter.m */; };
+		2C8DE5F81F2AE9D0009B3AE2 /* DiscoveryNewsNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE5F71F2AE9D0009B3AE2 /* DiscoveryNewsNetworkTool.m */; };
+		2C8DE5FB1F2AEA59009B3AE2 /* TJSDiscoNewsDataSorceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE5FA1F2AEA59009B3AE2 /* TJSDiscoNewsDataSorceImpl.m */; };
+		2C8DE5FF1F2AEAF6009B3AE2 /* DiscoveryNewsInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE5FE1F2AEAF6009B3AE2 /* DiscoveryNewsInfoModel.m */; };
+		2C8DE6021F2AEB06009B3AE2 /* DiscoveryNewsInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE6011F2AEB06009B3AE2 /* DiscoveryNewsInfo.m */; };
+		2C8DE6051F2AECCD009B3AE2 /* TJSDiscoNewsLayoutImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE6041F2AECCD009B3AE2 /* TJSDiscoNewsLayoutImpl.m */; };
 		2CAF426F1F26E01E00ABCA5E /* TJSProductListApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF426E1F26E01E00ABCA5E /* TJSProductListApi.m */; };
 		2CAF42731F26E66500ABCA5E /* TJSBaseNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF42721F26E66500ABCA5E /* TJSBaseNetworkTool.m */; };
 		2CAF427A1F26EAA600ABCA5E /* AppVersionNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF42791F26EAA600ABCA5E /* AppVersionNetworkTool.m */; };
@@ -92,7 +112,6 @@
 		2CAF42D61F281B8600ABCA5E /* TJSBaseProductListContentConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF42AE1F281B8600ABCA5E /* TJSBaseProductListContentConfig.m */; };
 		2CAF42D71F281B8600ABCA5E /* TJSProductListCellLayoutConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF42B01F281B8600ABCA5E /* TJSProductListCellLayoutConfig.m */; };
 		2CAF42D81F281B8600ABCA5E /* ProductListVCConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF42B31F281B8600ABCA5E /* ProductListVCConfig.m */; };
-		2CAF42DA1F281B8600ABCA5E /* Product.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CAF42B71F281B8600ABCA5E /* Product.storyboard */; };
 		2CAF42DB1F281B8600ABCA5E /* ProductListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF42B91F281B8600ABCA5E /* ProductListViewController.m */; };
 		2CAF42DD1F281B8600ABCA5E /* ProductDeleteNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF42BF1F281B8600ABCA5E /* ProductDeleteNetworkTool.m */; };
 		2CAF42DE1F281B8600ABCA5E /* ProductListNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF42C11F281B8600ABCA5E /* ProductListNetworkTool.m */; };
@@ -147,8 +166,6 @@
 		2C431E001F29C28500858C12 /* ProductFilterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductFilterController.m; sourceTree = "<group>"; };
 		2C431E051F29C38F00858C12 /* DiscoveryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoveryViewController.h; sourceTree = "<group>"; };
 		2C431E061F29C38F00858C12 /* DiscoveryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoveryViewController.m; sourceTree = "<group>"; };
-		2C431E081F29C3AD00858C12 /* DiscoNewsListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoNewsListController.h; sourceTree = "<group>"; };
-		2C431E091F29C3AD00858C12 /* DiscoNewsListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoNewsListController.m; sourceTree = "<group>"; };
 		2C431E0B1F29C3CF00858C12 /* DiscoRoadShowListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoRoadShowListController.h; sourceTree = "<group>"; };
 		2C431E0C1F29C3CF00858C12 /* DiscoRoadShowListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoRoadShowListController.m; sourceTree = "<group>"; };
 		2C431E0E1F29C59C00858C12 /* Message.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Message.storyboard; sourceTree = "<group>"; };
@@ -264,8 +281,6 @@
 		2C801BAF1F233F46009F82F7 /* TJSRootTabBarControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSRootTabBarControllerViewController.h; sourceTree = "<group>"; };
 		2C801BB01F233F46009F82F7 /* TJSRootTabBarControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSRootTabBarControllerViewController.m; sourceTree = "<group>"; };
 		2C801BB21F233F46009F82F7 /* Mine.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Mine.storyboard; sourceTree = "<group>"; };
-		2C801BB31F233F46009F82F7 /* MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
-		2C801BB41F233F46009F82F7 /* MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
 		2C8DE5711F29CE14009B3AE2 /* PersonalMessageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalMessageController.h; sourceTree = "<group>"; };
 		2C8DE5721F29CE14009B3AE2 /* PersonalMessageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalMessageController.m; sourceTree = "<group>"; };
 		2C8DE5741F29CE51009B3AE2 /* PlatformAnnounceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlatformAnnounceController.h; sourceTree = "<group>"; };
@@ -288,6 +303,48 @@
 		2C8DE5901F29F4AF009B3AE2 /* TJSBaseWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSBaseWebViewController.m; sourceTree = "<group>"; };
 		2C8DE5921F29F5FF009B3AE2 /* TJSWeakScriptMessageHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSWeakScriptMessageHandler.h; sourceTree = "<group>"; };
 		2C8DE5931F29F5FF009B3AE2 /* TJSWeakScriptMessageHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSWeakScriptMessageHandler.m; sourceTree = "<group>"; };
+		2C8DE59A1F29FC51009B3AE2 /* TJSProductDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSProductDetailController.h; sourceTree = "<group>"; };
+		2C8DE59B1F29FC51009B3AE2 /* TJSProductDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSProductDetailController.m; sourceTree = "<group>"; };
+		2C8DE59D1F29FE80009B3AE2 /* Product.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Product.storyboard; path = ProductList/Product.storyboard; sourceTree = "<group>"; };
+		2C8DE5A21F29FF89009B3AE2 /* ProductSearchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductSearchController.h; sourceTree = "<group>"; };
+		2C8DE5A31F29FF89009B3AE2 /* ProductSearchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductSearchController.m; sourceTree = "<group>"; };
+		2C8DE5A51F29FFBF009B3AE2 /* ProductSearch.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ProductSearch.storyboard; sourceTree = "<group>"; };
+		2C8DE5A71F2ACA75009B3AE2 /* TJSBaseControllerContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSBaseControllerContainer.h; sourceTree = "<group>"; };
+		2C8DE5A81F2ACA75009B3AE2 /* TJSBaseControllerContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSBaseControllerContainer.m; sourceTree = "<group>"; };
+		2C8DE5AA1F2AD7A1009B3AE2 /* TJSBaseCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSBaseCollectionViewCell.h; sourceTree = "<group>"; };
+		2C8DE5AB1F2AD7A1009B3AE2 /* TJSBaseCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSBaseCollectionViewCell.m; sourceTree = "<group>"; };
+		2C8DE5B11F2AD8A0009B3AE2 /* DiscoveryNewsListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoveryNewsListCell.h; sourceTree = "<group>"; };
+		2C8DE5B21F2AD8A0009B3AE2 /* DiscoveryNewsListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoveryNewsListCell.m; sourceTree = "<group>"; };
+		2C8DE5B41F2AD8B3009B3AE2 /* DiscoveryRoadShowListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoveryRoadShowListCell.h; sourceTree = "<group>"; };
+		2C8DE5B51F2AD8B3009B3AE2 /* DiscoveryRoadShowListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoveryRoadShowListCell.m; sourceTree = "<group>"; };
+		2C8DE5B71F2AD8E7009B3AE2 /* DiscoveryNewsListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DiscoveryNewsListCell.xib; sourceTree = "<group>"; };
+		2C8DE5B91F2ADCFA009B3AE2 /* DiscoveryRoadShowListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DiscoveryRoadShowListCell.xib; sourceTree = "<group>"; };
+		2C8DE5BE1F2AE0CA009B3AE2 /* DiscoveryRoadShowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoveryRoadShowLayout.h; sourceTree = "<group>"; };
+		2C8DE5BF1F2AE0CA009B3AE2 /* DiscoveryRoadShowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoveryRoadShowLayout.m; sourceTree = "<group>"; };
+		2C8DE5C21F2AE3BC009B3AE2 /* DiscoNewsListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoNewsListController.h; sourceTree = "<group>"; };
+		2C8DE5C31F2AE3BC009B3AE2 /* DiscoNewsListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoNewsListController.m; sourceTree = "<group>"; };
+		2C8DE5C51F2AE3BC009B3AE2 /* DiscoveryNewsLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoveryNewsLayout.h; sourceTree = "<group>"; };
+		2C8DE5C61F2AE3BC009B3AE2 /* DiscoveryNewsLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoveryNewsLayout.m; sourceTree = "<group>"; };
+		2C8DE5D11F2AE66F009B3AE2 /* MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
+		2C8DE5D21F2AE66F009B3AE2 /* MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
+		2C8DE5EC1F2AE7D0009B3AE2 /* TJSDiscoNewsConfigurator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSDiscoNewsConfigurator.h; sourceTree = "<group>"; };
+		2C8DE5ED1F2AE7D0009B3AE2 /* TJSDiscoNewsConfigurator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSDiscoNewsConfigurator.m; sourceTree = "<group>"; };
+		2C8DE5EF1F2AE82F009B3AE2 /* TJSDiscoNewsInteracotImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSDiscoNewsInteracotImpl.h; sourceTree = "<group>"; };
+		2C8DE5F01F2AE82F009B3AE2 /* TJSDiscoNewsInteracotImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSDiscoNewsInteracotImpl.m; sourceTree = "<group>"; };
+		2C8DE5F21F2AE849009B3AE2 /* TJSDiscoNewsListAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSDiscoNewsListAdapter.h; sourceTree = "<group>"; };
+		2C8DE5F31F2AE849009B3AE2 /* TJSDiscoNewsListAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSDiscoNewsListAdapter.m; sourceTree = "<group>"; };
+		2C8DE5F61F2AE9D0009B3AE2 /* DiscoveryNewsNetworkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoveryNewsNetworkTool.h; sourceTree = "<group>"; };
+		2C8DE5F71F2AE9D0009B3AE2 /* DiscoveryNewsNetworkTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoveryNewsNetworkTool.m; sourceTree = "<group>"; };
+		2C8DE5F91F2AEA59009B3AE2 /* TJSDiscoNewsDataSorceImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSDiscoNewsDataSorceImpl.h; sourceTree = "<group>"; };
+		2C8DE5FA1F2AEA59009B3AE2 /* TJSDiscoNewsDataSorceImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSDiscoNewsDataSorceImpl.m; sourceTree = "<group>"; };
+		2C8DE5FD1F2AEAF6009B3AE2 /* DiscoveryNewsInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoveryNewsInfoModel.h; sourceTree = "<group>"; };
+		2C8DE5FE1F2AEAF6009B3AE2 /* DiscoveryNewsInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoveryNewsInfoModel.m; sourceTree = "<group>"; };
+		2C8DE6001F2AEB06009B3AE2 /* DiscoveryNewsInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoveryNewsInfo.h; sourceTree = "<group>"; };
+		2C8DE6011F2AEB06009B3AE2 /* DiscoveryNewsInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoveryNewsInfo.m; sourceTree = "<group>"; };
+		2C8DE6031F2AECCD009B3AE2 /* TJSDiscoNewsLayoutImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSDiscoNewsLayoutImpl.h; sourceTree = "<group>"; };
+		2C8DE6041F2AECCD009B3AE2 /* TJSDiscoNewsLayoutImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSDiscoNewsLayoutImpl.m; sourceTree = "<group>"; };
+		2C8DE6071F2B10F8009B3AE2 /* TJSDiscoNewsListConfigurateProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TJSDiscoNewsListConfigurateProtocol.h; sourceTree = "<group>"; };
+		2C8DE6081F2B11A0009B3AE2 /* TJSDiscoNewsListPrivateProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TJSDiscoNewsListPrivateProtocol.h; sourceTree = "<group>"; };
 		2CAF426D1F26E01E00ABCA5E /* TJSProductListApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSProductListApi.h; sourceTree = "<group>"; };
 		2CAF426E1F26E01E00ABCA5E /* TJSProductListApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSProductListApi.m; sourceTree = "<group>"; };
 		2CAF42711F26E66500ABCA5E /* TJSBaseNetworkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSBaseNetworkTool.h; sourceTree = "<group>"; };
@@ -310,7 +367,6 @@
 		2CAF42B01F281B8600ABCA5E /* TJSProductListCellLayoutConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSProductListCellLayoutConfig.m; sourceTree = "<group>"; };
 		2CAF42B21F281B8600ABCA5E /* ProductListVCConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductListVCConfig.h; sourceTree = "<group>"; };
 		2CAF42B31F281B8600ABCA5E /* ProductListVCConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductListVCConfig.m; sourceTree = "<group>"; };
-		2CAF42B71F281B8600ABCA5E /* Product.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Product.storyboard; sourceTree = "<group>"; };
 		2CAF42B81F281B8600ABCA5E /* ProductListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductListViewController.h; sourceTree = "<group>"; };
 		2CAF42B91F281B8600ABCA5E /* ProductListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductListViewController.m; sourceTree = "<group>"; };
 		2CAF42BE1F281B8600ABCA5E /* ProductDeleteNetworkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductDeleteNetworkTool.h; sourceTree = "<group>"; };
@@ -503,8 +559,12 @@
 		2C431E021F29C35A00858C12 /* News */ = {
 			isa = PBXGroup;
 			children = (
-				2C431E081F29C3AD00858C12 /* DiscoNewsListController.h */,
-				2C431E091F29C3AD00858C12 /* DiscoNewsListController.m */,
+				2C8DE6061F2B0FA7009B3AE2 /* Protocol */,
+				2C8DE5FC1F2AEAC9009B3AE2 /* Model */,
+				2C8DE5F51F2AE99D009B3AE2 /* NetworkTool */,
+				2C8DE5C11F2AE3BC009B3AE2 /* Controller */,
+				2C8DE5C41F2AE3BC009B3AE2 /* Disaggregate */,
+				2C8DE5AD1F2AD82E009B3AE2 /* View */,
 			);
 			path = News;
 			sourceTree = "<group>";
@@ -514,6 +574,9 @@
 			children = (
 				2C431E0B1F29C3CF00858C12 /* DiscoRoadShowListController.h */,
 				2C431E0C1F29C3CF00858C12 /* DiscoRoadShowListController.m */,
+				2C8DE5BE1F2AE0CA009B3AE2 /* DiscoveryRoadShowLayout.h */,
+				2C8DE5BF1F2AE0CA009B3AE2 /* DiscoveryRoadShowLayout.m */,
+				2C8DE5AE1F2AD839009B3AE2 /* View */,
 			);
 			path = Roadshow;
 			sourceTree = "<group>";
@@ -975,8 +1038,9 @@
 				2C801BAE1F233F46009F82F7 /* Main */,
 				2C1BFEB21F29773700665A71 /* Home */,
 				2C431DF61F29C26700858C12 /* Message */,
-				2C431DFB1F29C26700858C12 /* ProductFilter */,
 				2C801BB51F233F46009F82F7 /* Product */,
+				2C431DFB1F29C26700858C12 /* ProductFilter */,
+				2C8DE59F1F29FF4C009B3AE2 /* ProductSearch */,
 				2C1BFEB41F29773E00665A71 /* Discovery */,
 				2C801BB11F233F46009F82F7 /* Mine */,
 				2CAF42701F26E5E800ABCA5E /* Other */,
@@ -994,6 +1058,8 @@
 				2C801BA61F233F46009F82F7 /* TJSBaseNavigationController.m */,
 				2C8DE58F1F29F4AF009B3AE2 /* TJSBaseWebViewController.h */,
 				2C8DE5901F29F4AF009B3AE2 /* TJSBaseWebViewController.m */,
+				2C8DE5A71F2ACA75009B3AE2 /* TJSBaseControllerContainer.h */,
+				2C8DE5A81F2ACA75009B3AE2 /* TJSBaseControllerContainer.m */,
 				2C8DE5921F29F5FF009B3AE2 /* TJSWeakScriptMessageHandler.h */,
 				2C8DE5931F29F5FF009B3AE2 /* TJSWeakScriptMessageHandler.m */,
 				2CAF42711F26E66500ABCA5E /* TJSBaseNetworkTool.h */,
@@ -1015,8 +1081,19 @@
 			isa = PBXGroup;
 			children = (
 				2C801BB21F233F46009F82F7 /* Mine.storyboard */,
-				2C801BB31F233F46009F82F7 /* MineViewController.h */,
-				2C801BB41F233F46009F82F7 /* MineViewController.m */,
+				2C8DE5D01F2AE66F009B3AE2 /* Mine */,
+				2C8DE5E01F2AE729009B3AE2 /* AboutMe */,
+				2C8DE5E11F2AE729009B3AE2 /* Bankcard */,
+				2C8DE5E21F2AE729009B3AE2 /* CapitalRecord */,
+				2C8DE5E31F2AE729009B3AE2 /* ContractApply */,
+				2C8DE5E41F2AE729009B3AE2 /* CumulativeInvest */,
+				2C8DE5E51F2AE729009B3AE2 /* Fav */,
+				2C8DE5E61F2AE729009B3AE2 /* Feedback */,
+				2C8DE5E71F2AE729009B3AE2 /* Order */,
+				2C8DE5E81F2AE729009B3AE2 /* Reward */,
+				2C8DE5E91F2AE729009B3AE2 /* Settings */,
+				2C8DE5EA1F2AE729009B3AE2 /* UseAgreement */,
+				2C8DE5EB1F2AE729009B3AE2 /* WithdrawDeposit */,
 			);
 			path = Mine;
 			sourceTree = "<group>";
@@ -1024,8 +1101,9 @@
 		2C801BB51F233F46009F82F7 /* Product */ = {
 			isa = PBXGroup;
 			children = (
-				2C8DE5971F29FA50009B3AE2 /* ProductDetail */,
+				2C8DE59D1F29FE80009B3AE2 /* Product.storyboard */,
 				2CAF42A31F281B8600ABCA5E /* ProductList */,
+				2C8DE5971F29FA50009B3AE2 /* ProductDetail */,
 			);
 			path = Product;
 			sourceTree = "<group>";
@@ -1089,8 +1167,222 @@
 		2C8DE5991F29FA75009B3AE2 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				2C8DE59A1F29FC51009B3AE2 /* TJSProductDetailController.h */,
+				2C8DE59B1F29FC51009B3AE2 /* TJSProductDetailController.m */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		2C8DE59F1F29FF4C009B3AE2 /* ProductSearch */ = {
+			isa = PBXGroup;
+			children = (
+				2C8DE5A51F29FFBF009B3AE2 /* ProductSearch.storyboard */,
+				2C8DE5A01F29FF4C009B3AE2 /* Config */,
+				2C8DE5A11F29FF4C009B3AE2 /* Controller */,
+			);
+			path = ProductSearch;
+			sourceTree = "<group>";
+		};
+		2C8DE5A01F29FF4C009B3AE2 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		2C8DE5A11F29FF4C009B3AE2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2C8DE5A21F29FF89009B3AE2 /* ProductSearchController.h */,
+				2C8DE5A31F29FF89009B3AE2 /* ProductSearchController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2C8DE5AD1F2AD82E009B3AE2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2C8DE5B01F2AD85F009B3AE2 /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2C8DE5AE1F2AD839009B3AE2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2C8DE5AF1F2AD84A009B3AE2 /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2C8DE5AF1F2AD84A009B3AE2 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2C8DE5B41F2AD8B3009B3AE2 /* DiscoveryRoadShowListCell.h */,
+				2C8DE5B51F2AD8B3009B3AE2 /* DiscoveryRoadShowListCell.m */,
+				2C8DE5B91F2ADCFA009B3AE2 /* DiscoveryRoadShowListCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		2C8DE5B01F2AD85F009B3AE2 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2C8DE5B11F2AD8A0009B3AE2 /* DiscoveryNewsListCell.h */,
+				2C8DE5B21F2AD8A0009B3AE2 /* DiscoveryNewsListCell.m */,
+				2C8DE5B71F2AD8E7009B3AE2 /* DiscoveryNewsListCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		2C8DE5C11F2AE3BC009B3AE2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2C8DE5C21F2AE3BC009B3AE2 /* DiscoNewsListController.h */,
+				2C8DE5C31F2AE3BC009B3AE2 /* DiscoNewsListController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2C8DE5C41F2AE3BC009B3AE2 /* Disaggregate */ = {
+			isa = PBXGroup;
+			children = (
+				2C8DE5C51F2AE3BC009B3AE2 /* DiscoveryNewsLayout.h */,
+				2C8DE5C61F2AE3BC009B3AE2 /* DiscoveryNewsLayout.m */,
+				2C8DE5EC1F2AE7D0009B3AE2 /* TJSDiscoNewsConfigurator.h */,
+				2C8DE5ED1F2AE7D0009B3AE2 /* TJSDiscoNewsConfigurator.m */,
+				2C8DE5EF1F2AE82F009B3AE2 /* TJSDiscoNewsInteracotImpl.h */,
+				2C8DE5F01F2AE82F009B3AE2 /* TJSDiscoNewsInteracotImpl.m */,
+				2C8DE5F91F2AEA59009B3AE2 /* TJSDiscoNewsDataSorceImpl.h */,
+				2C8DE5FA1F2AEA59009B3AE2 /* TJSDiscoNewsDataSorceImpl.m */,
+				2C8DE6031F2AECCD009B3AE2 /* TJSDiscoNewsLayoutImpl.h */,
+				2C8DE6041F2AECCD009B3AE2 /* TJSDiscoNewsLayoutImpl.m */,
+				2C8DE5F21F2AE849009B3AE2 /* TJSDiscoNewsListAdapter.h */,
+				2C8DE5F31F2AE849009B3AE2 /* TJSDiscoNewsListAdapter.m */,
+			);
+			path = Disaggregate;
+			sourceTree = "<group>";
+		};
+		2C8DE5D01F2AE66F009B3AE2 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				2C8DE5D11F2AE66F009B3AE2 /* MineViewController.h */,
+				2C8DE5D21F2AE66F009B3AE2 /* MineViewController.m */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		2C8DE5E01F2AE729009B3AE2 /* AboutMe */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AboutMe;
+			sourceTree = "<group>";
+		};
+		2C8DE5E11F2AE729009B3AE2 /* Bankcard */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Bankcard;
+			sourceTree = "<group>";
+		};
+		2C8DE5E21F2AE729009B3AE2 /* CapitalRecord */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CapitalRecord;
+			sourceTree = "<group>";
+		};
+		2C8DE5E31F2AE729009B3AE2 /* ContractApply */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ContractApply;
+			sourceTree = "<group>";
+		};
+		2C8DE5E41F2AE729009B3AE2 /* CumulativeInvest */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CumulativeInvest;
+			sourceTree = "<group>";
+		};
+		2C8DE5E51F2AE729009B3AE2 /* Fav */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fav;
+			sourceTree = "<group>";
+		};
+		2C8DE5E61F2AE729009B3AE2 /* Feedback */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Feedback;
+			sourceTree = "<group>";
+		};
+		2C8DE5E71F2AE729009B3AE2 /* Order */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Order;
+			sourceTree = "<group>";
+		};
+		2C8DE5E81F2AE729009B3AE2 /* Reward */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Reward;
+			sourceTree = "<group>";
+		};
+		2C8DE5E91F2AE729009B3AE2 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		2C8DE5EA1F2AE729009B3AE2 /* UseAgreement */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseAgreement;
+			sourceTree = "<group>";
+		};
+		2C8DE5EB1F2AE729009B3AE2 /* WithdrawDeposit */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = WithdrawDeposit;
+			sourceTree = "<group>";
+		};
+		2C8DE5F51F2AE99D009B3AE2 /* NetworkTool */ = {
+			isa = PBXGroup;
+			children = (
+				2C8DE5F61F2AE9D0009B3AE2 /* DiscoveryNewsNetworkTool.h */,
+				2C8DE5F71F2AE9D0009B3AE2 /* DiscoveryNewsNetworkTool.m */,
+			);
+			path = NetworkTool;
+			sourceTree = "<group>";
+		};
+		2C8DE5FC1F2AEAC9009B3AE2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2C8DE5FD1F2AEAF6009B3AE2 /* DiscoveryNewsInfoModel.h */,
+				2C8DE5FE1F2AEAF6009B3AE2 /* DiscoveryNewsInfoModel.m */,
+				2C8DE6001F2AEB06009B3AE2 /* DiscoveryNewsInfo.h */,
+				2C8DE6011F2AEB06009B3AE2 /* DiscoveryNewsInfo.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2C8DE6061F2B0FA7009B3AE2 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				2C8DE6071F2B10F8009B3AE2 /* TJSDiscoNewsListConfigurateProtocol.h */,
+				2C8DE6081F2B11A0009B3AE2 /* TJSDiscoNewsListPrivateProtocol.h */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 		2CAF426A1F26DEDE00ABCA5E /* Product */ = {
@@ -1216,7 +1508,6 @@
 		2CAF42B61F281B8600ABCA5E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				2CAF42B71F281B8600ABCA5E /* Product.storyboard */,
 				2CAF42B81F281B8600ABCA5E /* ProductListViewController.h */,
 				2CAF42B91F281B8600ABCA5E /* ProductListViewController.m */,
 			);
@@ -1328,6 +1619,8 @@
 			children = (
 				2CAF431C1F282D9900ABCA5E /* TJSBaseTableViewCell.h */,
 				2CAF431D1F282D9900ABCA5E /* TJSBaseTableViewCell.m */,
+				2C8DE5AA1F2AD7A1009B3AE2 /* TJSBaseCollectionViewCell.h */,
+				2C8DE5AB1F2AD7A1009B3AE2 /* TJSBaseCollectionViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1464,10 +1757,13 @@
 				2C431E111F29C6B200858C12 /* ProductFilter.storyboard in Resources */,
 				2C431E0F1F29C59C00858C12 /* Message.storyboard in Resources */,
 				2C1BFEBF1F2978C500665A71 /* Discovery.storyboard in Resources */,
+				2C8DE59E1F29FE80009B3AE2 /* Product.storyboard in Resources */,
+				2C8DE5A61F29FFBF009B3AE2 /* ProductSearch.storyboard in Resources */,
+				2C8DE5BA1F2ADCFA009B3AE2 /* DiscoveryRoadShowListCell.xib in Resources */,
 				2C4411BB1F21981E00C453EF /* Assets.xcassets in Resources */,
-				2CAF42DA1F281B8600ABCA5E /* Product.storyboard in Resources */,
 				2C4412991F22007D00C453EF /* TJSThemeConfig.strings in Resources */,
 				2C801BD71F233F46009F82F7 /* Mine.storyboard in Resources */,
+				2C8DE5B81F2AD8E7009B3AE2 /* DiscoveryNewsListCell.xib in Resources */,
 				2C4411B91F21981E00C453EF /* Main.storyboard in Resources */,
 				2C1BFEBD1F29779100665A71 /* Home.storyboard in Resources */,
 			);
@@ -1552,7 +1848,10 @@
 				2C44123C1F21D27700C453EF /* GVUserDefaults.m in Sources */,
 				2CAF42DD1F281B8600ABCA5E /* ProductDeleteNetworkTool.m in Sources */,
 				2C431E071F29C38F00858C12 /* DiscoveryViewController.m in Sources */,
+				2C8DE5A91F2ACA75009B3AE2 /* TJSBaseControllerContainer.m in Sources */,
+				2C8DE5B61F2AD8B3009B3AE2 /* DiscoveryRoadShowListCell.m in Sources */,
 				2CAF42D71F281B8600ABCA5E /* TJSProductListCellLayoutConfig.m in Sources */,
+				2C8DE5D31F2AE66F009B3AE2 /* MineViewController.m in Sources */,
 				2CAF43211F28398E00ABCA5E /* UIView+Frame.m in Sources */,
 				2C8DE5791F29CE76009B3AE2 /* AllActivityViewController.m in Sources */,
 				2C8DE5731F29CE14009B3AE2 /* PersonalMessageController.m in Sources */,
@@ -1562,6 +1861,7 @@
 				2C44127F1F21E99700C453EF /* UITextView+PlaceHolder.m in Sources */,
 				2C44128F1F21ED2D00C453EF /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				2CAF431A1F2829CF00ABCA5E /* TJSProductInfoModel.m in Sources */,
+				2C8DE59C1F29FC51009B3AE2 /* TJSProductDetailController.m in Sources */,
 				2C4412A51F2201FF00C453EF /* TJSAnimatingRequestAccessory.m in Sources */,
 				2C44123F1F21D2A600C453EF /* GVUserDefaults+TJSGlobalProperties.m in Sources */,
 				2C4412591F21DDA900C453EF /* UIWindow+Transition.m in Sources */,
@@ -1577,6 +1877,7 @@
 				2CAF42F71F28273300ABCA5E /* ProductListCellTextContentView.m in Sources */,
 				2C4412311F21AA5900C453EF /* AppDelegate.m in Sources */,
 				2C44126A1F21E2DA00C453EF /* UIButton+CountDown.m in Sources */,
+				2C8DE6021F2AEB06009B3AE2 /* DiscoveryNewsInfo.m in Sources */,
 				2C4412701F21E73E00C453EF /* UIButton+CommitStyle.m in Sources */,
 				2CAF430E1F28294E00ABCA5E /* TJSProductListCellFactory.m in Sources */,
 				2C4412A71F2201FF00C453EF /* TJSBaseRequest.m in Sources */,
@@ -1584,10 +1885,14 @@
 				2C8DE57E1F29D484009B3AE2 /* TJSHomeListConfigurator.m in Sources */,
 				2C801BD31F233F46009F82F7 /* TJSBaseViewController.m in Sources */,
 				2C44126D1F21E64600C453EF /* UIButton+ContentRect.m in Sources */,
+				2C8DE5A41F29FF89009B3AE2 /* ProductSearchController.m in Sources */,
+				2C8DE5F81F2AE9D0009B3AE2 /* DiscoveryNewsNetworkTool.m in Sources */,
 				2C44125D1F21DF3600C453EF /* NSObject+Swizzle.m in Sources */,
 				2C8DE5911F29F4AF009B3AE2 /* TJSBaseWebViewController.m in Sources */,
 				2CAF42731F26E66500ABCA5E /* TJSBaseNetworkTool.m in Sources */,
+				2C8DE5F11F2AE82F009B3AE2 /* TJSDiscoNewsInteracotImpl.m in Sources */,
 				2C44128B1F21ECA600C453EF /* UITextView+LengthLimited.m in Sources */,
+				2C8DE5FF1F2AEAF6009B3AE2 /* DiscoveryNewsInfoModel.m in Sources */,
 				2CAF42DE1F281B8600ABCA5E /* ProductListNetworkTool.m in Sources */,
 				2CAF42D51F281B8600ABCA5E /* TJSProductListTextContentConfig.m in Sources */,
 				2C431DFE1F29C26700858C12 /* MessageKindListController.m in Sources */,
@@ -1600,12 +1905,13 @@
 				2CAF42D31F281B8600ABCA5E /* TJSProductListContentConfig.m in Sources */,
 				2C4412A81F2201FF00C453EF /* TJSUploadRequest.m in Sources */,
 				2C4412791F21E83D00C453EF /* UIImage+ColorAtPixel.m in Sources */,
+				2C8DE5C01F2AE0CA009B3AE2 /* DiscoveryRoadShowLayout.m in Sources */,
 				2C4412041F219A5300C453EF /* UIImage+FromColor.m in Sources */,
 				2CAF42851F27261A00ABCA5E /* TJSProductDeleteApi.m in Sources */,
 				2CAF43081F2828C200ABCA5E /* TJSProductListInteractorImpl.m in Sources */,
 				2C4412761F21E7F000C453EF /* UIButton+BackgroundColor.m in Sources */,
+				2C8DE5FB1F2AEA59009B3AE2 /* TJSDiscoNewsDataSorceImpl.m in Sources */,
 				2C4412B41F2207CD00C453EF /* TJSLoginStateUtil.m in Sources */,
-				2C431E0A1F29C3AD00858C12 /* DiscoNewsListController.m in Sources */,
 				2C4412381F21B3DF00C453EF /* UIButton+TouchAreaInsets.m in Sources */,
 				2C4412051F219A5300C453EF /* UIImage+Resizable.m in Sources */,
 				2C4411AD1F21981E00C453EF /* main.m in Sources */,
@@ -1616,13 +1922,18 @@
 				2CAF43111F2829B300ABCA5E /* TJSAppInfo.m in Sources */,
 				2C8DE5841F29D509009B3AE2 /* TJSHomeListInteractorImpl.m in Sources */,
 				2C4412A91F2201FF00C453EF /* TJWUrlArgumentsFilter.m in Sources */,
+				2C8DE5B31F2AD8A0009B3AE2 /* DiscoveryNewsListCell.m in Sources */,
+				2C8DE5AC1F2AD7A1009B3AE2 /* TJSBaseCollectionViewCell.m in Sources */,
 				2C4412671F21E17200C453EF /* NSMutableAttributedString+Formated.m in Sources */,
 				2C8DE58A1F29E066009B3AE2 /* TJSHomeListLayoutImpl.m in Sources */,
 				2C4412431F21D36200C453EF /* TJSEnumValueService.m in Sources */,
 				2CAF43091F2828C200ABCA5E /* TJSProductListLayoutImpl.m in Sources */,
-				2C801BD81F233F46009F82F7 /* MineViewController.m in Sources */,
 				2CAF430A1F2828C200ABCA5E /* TJSProductListTableAdapter.m in Sources */,
+				2C8DE5EE1F2AE7D0009B3AE2 /* TJSDiscoNewsConfigurator.m in Sources */,
+				2C8DE5CD1F2AE3BC009B3AE2 /* DiscoveryNewsLayout.m in Sources */,
+				2C8DE5F41F2AE849009B3AE2 /* TJSDiscoNewsListAdapter.m in Sources */,
 				2CAF426F1F26E01E00ABCA5E /* TJSProductListApi.m in Sources */,
+				2C8DE5CC1F2AE3BC009B3AE2 /* DiscoNewsListController.m in Sources */,
 				2CAF43061F2828C200ABCA5E /* TJSProductListConfigurator.m in Sources */,
 				2CAF42D61F281B8600ABCA5E /* TJSBaseProductListContentConfig.m in Sources */,
 				2C44127C1F21E97700C453EF /* UITextField+PlaceHolder.m in Sources */,
@@ -1631,6 +1942,7 @@
 				2CAF42D41F281B8600ABCA5E /* TJSProductListImageContentConfig.m in Sources */,
 				2CAF427A1F26EAA600ABCA5E /* AppVersionNetworkTool.m in Sources */,
 				2C4412851F21EB3100C453EF /* UITextView+EditRect.m in Sources */,
+				2C8DE6051F2AECCD009B3AE2 /* TJSDiscoNewsLayoutImpl.m in Sources */,
 				2C4412971F22004500C453EF /* TJSThemeService.m in Sources */,
 				2CAF431E1F282D9900ABCA5E /* TJSBaseTableViewCell.m in Sources */,
 				2CAF42F81F28273300ABCA5E /* ProductListCell.m in Sources */,
