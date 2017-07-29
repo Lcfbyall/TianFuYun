@@ -16,3 +16,9 @@
 @property (nonatomic,copy) void(^backHandler)(id obj);
 
 @end
+
+
+FOUNDATION_EXPORT NSString * const HideNavigationBarKey;
+FOUNDATION_EXPORT NSString * const HideBackBarButtonItemKey;
+
+

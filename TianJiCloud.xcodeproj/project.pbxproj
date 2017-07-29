@@ -70,6 +70,8 @@
 		2C801BD71F233F46009F82F7 /* Mine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C801BB21F233F46009F82F7 /* Mine.storyboard */; };
 		2C89AD741F2B5C81005C29AC /* DiscoNewsDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C89AD731F2B5C81005C29AC /* DiscoNewsDetailController.m */; };
 		2C89AD791F2C5155005C29AC /* UISearchBar+TJSBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C89AD781F2C5155005C29AC /* UISearchBar+TJSBlock.m */; };
+		2C89AD801F2C7E39005C29AC /* ProductSearchVCConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C89AD7F1F2C7E39005C29AC /* ProductSearchVCConfig.m */; };
+		2C89AD841F2C91DE005C29AC /* UIColor+TJSiOS7Colors.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C89AD831F2C91DE005C29AC /* UIColor+TJSiOS7Colors.m */; };
 		2C8DE5731F29CE14009B3AE2 /* PersonalMessageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE5721F29CE14009B3AE2 /* PersonalMessageController.m */; };
 		2C8DE5761F29CE51009B3AE2 /* PlatformAnnounceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE5751F29CE51009B3AE2 /* PlatformAnnounceController.m */; };
 		2C8DE5791F29CE76009B3AE2 /* AllActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE5781F29CE76009B3AE2 /* AllActivityViewController.m */; };
@@ -288,6 +290,11 @@
 		2C89AD781F2C5155005C29AC /* UISearchBar+TJSBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISearchBar+TJSBlock.m"; sourceTree = "<group>"; };
 		2C89AD7A1F2C7C2B005C29AC /* TJSProductListVCProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TJSProductListVCProtocol.h; sourceTree = "<group>"; };
 		2C89AD7B1F2C7C81005C29AC /* TJSHomeListVCProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TJSHomeListVCProtocol.h; sourceTree = "<group>"; };
+		2C89AD7E1F2C7E39005C29AC /* ProductSearchVCConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductSearchVCConfig.h; sourceTree = "<group>"; };
+		2C89AD7F1F2C7E39005C29AC /* ProductSearchVCConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductSearchVCConfig.m; sourceTree = "<group>"; };
+		2C89AD811F2C7EF6005C29AC /* TJSProductSearchVCProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TJSProductSearchVCProtocol.h; sourceTree = "<group>"; };
+		2C89AD821F2C91DE005C29AC /* UIColor+TJSiOS7Colors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+TJSiOS7Colors.h"; sourceTree = "<group>"; };
+		2C89AD831F2C91DE005C29AC /* UIColor+TJSiOS7Colors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+TJSiOS7Colors.m"; sourceTree = "<group>"; };
 		2C8DE5711F29CE14009B3AE2 /* PersonalMessageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalMessageController.h; sourceTree = "<group>"; };
 		2C8DE5721F29CE14009B3AE2 /* PersonalMessageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalMessageController.m; sourceTree = "<group>"; };
 		2C8DE5741F29CE51009B3AE2 /* PlatformAnnounceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlatformAnnounceController.h; sourceTree = "<group>"; };
@@ -727,6 +734,8 @@
 			children = (
 				2C4411E91F219A5300C453EF /* UIColor+HEX.h */,
 				2C4411EA1F219A5300C453EF /* UIColor+HEX.m */,
+				2C89AD821F2C91DE005C29AC /* UIColor+TJSiOS7Colors.h */,
+				2C89AD831F2C91DE005C29AC /* UIColor+TJSiOS7Colors.m */,
 			);
 			path = UIColor;
 			sourceTree = "<group>";
@@ -1137,6 +1146,21 @@
 			path = UISearchBar;
 			sourceTree = "<group>";
 		};
+		2C89AD7C1F2C7DF3005C29AC /* Protovol */ = {
+			isa = PBXGroup;
+			children = (
+				2C89AD811F2C7EF6005C29AC /* TJSProductSearchVCProtocol.h */,
+			);
+			path = Protovol;
+			sourceTree = "<group>";
+		};
+		2C89AD7D1F2C7DF8005C29AC /* Disaggregate */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Disaggregate;
+			sourceTree = "<group>";
+		};
 		2C8DE57A1F29D406009B3AE2 /* Disaggregate */ = {
 			isa = PBXGroup;
 			children = (
@@ -1200,8 +1224,10 @@
 			isa = PBXGroup;
 			children = (
 				2C8DE5A51F29FFBF009B3AE2 /* ProductSearch.storyboard */,
-				2C8DE5A01F29FF4C009B3AE2 /* Config */,
 				2C8DE5A11F29FF4C009B3AE2 /* Controller */,
+				2C89AD7D1F2C7DF8005C29AC /* Disaggregate */,
+				2C89AD7C1F2C7DF3005C29AC /* Protovol */,
+				2C8DE5A01F29FF4C009B3AE2 /* Config */,
 			);
 			path = ProductSearch;
 			sourceTree = "<group>";
@@ -1209,6 +1235,8 @@
 		2C8DE5A01F29FF4C009B3AE2 /* Config */ = {
 			isa = PBXGroup;
 			children = (
+				2C89AD7E1F2C7E39005C29AC /* ProductSearchVCConfig.h */,
+				2C89AD7F1F2C7E39005C29AC /* ProductSearchVCConfig.m */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -1932,6 +1960,7 @@
 				2C89AD741F2B5C81005C29AC /* DiscoNewsDetailController.m in Sources */,
 				2C8DE5A91F2ACA75009B3AE2 /* TJSBaseControllerContainer.m in Sources */,
 				2C8DE5B61F2AD8B3009B3AE2 /* DiscoveryRoadShowListCell.m in Sources */,
+				2C89AD841F2C91DE005C29AC /* UIColor+TJSiOS7Colors.m in Sources */,
 				2CAF42D71F281B8600ABCA5E /* TJSProductListCellLayoutConfig.m in Sources */,
 				2C8DE5D31F2AE66F009B3AE2 /* MineViewController.m in Sources */,
 				2CAF43211F28398E00ABCA5E /* UIView+Frame.m in Sources */,
@@ -1958,6 +1987,7 @@
 				2C431DEC1F299A9600858C12 /* HomeViewController.m in Sources */,
 				2C4412021F219A5300C453EF /* UIColor+HEX.m in Sources */,
 				2CAF42F71F28273300ABCA5E /* ProductListCellTextContentView.m in Sources */,
+				2C89AD801F2C7E39005C29AC /* ProductSearchVCConfig.m in Sources */,
 				2C4412311F21AA5900C453EF /* AppDelegate.m in Sources */,
 				2C44126A1F21E2DA00C453EF /* UIButton+CountDown.m in Sources */,
 				2C8DE6021F2AEB06009B3AE2 /* DiscoveryNewsInfo.m in Sources */,

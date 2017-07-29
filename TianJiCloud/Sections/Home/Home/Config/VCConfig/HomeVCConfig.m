@@ -41,9 +41,10 @@
 }
 
 
-#pragma mark - TJSNavigationConfig
+#pragma mark - <TJSNavigationConfig>
 
 - (NSArray <UIBarButtonItem *> *)tjs_leftBarButtonItems{
+    
     WEAK_SELF(self);
     NSString *leftBarBtnImage  = @"msg_home";
     
@@ -58,12 +59,16 @@
         }
     }];
     
-  
+    NSArray *leftBarButtonItems = _vc.navigationItem.leftBarButtonItems?:[NSArray array];
     
-    return [NSArray arrayWithObject:leftItem];
+    NSMutableArray *mutable = [leftBarButtonItems mutableCopy];
+    [mutable addObject:leftItem];
+    
+    return [mutable copy];
 }
 
 - (NSArray <UIBarButtonItem *> *)tjs_rightBarButtonItems{
+    
     WEAK_SELF(self);
     NSString *rightBarBtnImage  = @"screen";
     UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] bk_initWithImage:IMAGEOriginal(rightBarBtnImage) style:UIBarButtonItemStylePlain handler:^(id sender) {
@@ -77,7 +82,12 @@
             }
         }
     }];
-    return [NSArray arrayWithObject:rightItem];
+    
+    NSArray *rightBarButtonItems = _vc.navigationItem.rightBarButtonItems?:[NSArray array];
+    NSMutableArray *mutable = [rightBarButtonItems mutableCopy];
+    [mutable addObject:rightItem];
+    
+    return [mutable copy];
 }
 
 - (UIView *)tjs_titleView{

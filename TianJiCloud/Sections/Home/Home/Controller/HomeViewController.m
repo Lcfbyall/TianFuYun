@@ -86,7 +86,6 @@
     [self tjs_pushViewController:MessageKindListVC animated:YES];
 }
 
-
 - (void)onTapRightBarBtnToProductFilter:(id)sender{
 
     [self tjs_pushViewController:ProductFilterVC animated:YES];
@@ -94,7 +93,13 @@
 
 - (void)onTapSearchBarToProductSearch:(id)sender{
     
-    [self tjs_pushViewController:ProductSearchVC animated:YES];
+    [self tjs_pushViewController:ProductSearchVC
+                          params:@{HideBackBarButtonItemKey:@YES}
+                     backHandler:^(id  _Nullable obj) {
+                         
+         [((UIViewController *)obj).navigationController popViewControllerAnimated:YES];
+         
+     } animated:YES];
 }
 
 
@@ -102,11 +107,9 @@
 
 - (BOOL)onTapCell:(id)event{
   
-    [self tjs_pushViewController:ProductDetailVC params:@{} backHandler:^(id  _Nullable obj) {
-        
-        [((UIViewController *)obj).navigationController popViewControllerAnimated:YES];
-      
-    } animated:YES];
+    [self tjs_pushViewController:ProductDetailVC
+                          params:@{}
+                        animated:YES];
 
     
     return YES;

@@ -56,6 +56,7 @@
     TJSBaseViewController *vc = (TJSBaseViewController *)[[UIStoryboard storyboardWithName:MainSB bundle:nil] instantiateViewControllerWithIdentifier:viewController];
     
     if(params){
+        
         vc.params = params;
     }
     

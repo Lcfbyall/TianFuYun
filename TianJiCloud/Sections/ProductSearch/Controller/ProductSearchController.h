@@ -8,6 +8,8 @@
 
 #import "TJSBaseViewController.h"
 
-@interface ProductSearchController : TJSBaseViewController
+#import "TJSProductSearchVCProtocol.h"
+
+@interface ProductSearchController : TJSBaseViewController<ProductSearchVCConfig>
 
 @end

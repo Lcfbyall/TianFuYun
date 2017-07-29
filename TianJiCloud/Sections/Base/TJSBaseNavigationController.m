@@ -39,6 +39,10 @@
   
     if (self.childViewControllers.count > 0) {
         
+       TJSBaseViewController *nextVC = (TJSBaseViewController *)viewController;
+       if([nextVC conformsToProtocol:@protocol(TJSNavigationConfig)] &&
+          ![nextVC tjs_hideBackBarButtonItem]){
+
         WEAK_SELF(self);
         UIBarButtonItem *leftItem = [[UIBarButtonItem alloc] bk_initWithImage:IMAGEOriginal(@"back_arrow") style:UIBarButtonItemStylePlain handler:^(id sender) {
             
@@ -47,16 +51,21 @@
             
             if([vc conformsToProtocol:@protocol(TJSNavigationConfig)] &&
                [vc respondsToSelector:@selector(tjs_unifyPopForMoreEvent)]
-               ){
+               && vc.backHandler){
             
                 [vc tjs_unifyPopForMoreEvent];
                 
             }else{
+                
                 [vc.navigationController popViewControllerAnimated:YES];
             }
         }];
-        
         viewController.navigationItem.leftBarButtonItem = leftItem;
+           
+       }else{
+       
+           viewController.navigationItem.leftBarButtonItem = nil;
+       }
     }
     
     [super pushViewController:viewController animated:animated];

@@ -7,8 +7,11 @@
 //
 
 #import "ProductSearchController.h"
+#import "ProductSearchVCConfig.h"
 
 @interface ProductSearchController ()
+
+@property (nonatomic,strong) ProductSearchVCConfig *searchConfig;
 
 @end
 
@@ -17,6 +20,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    [self setSearchConfig];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,14 +30,24 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+#pragma mark - settings
+
+- (void)setSearchConfig{
+    
+    ProductSearchVCConfig *searchConfig = [[ProductSearchVCConfig alloc]init];
+    [searchConfig setup:self];
+
+    self.navigationItem.rightBarButtonItems = [searchConfig tjs_rightBarButtonItems];
+    
+    self.navigationItem.titleView = [searchConfig tjs_titleView];
+    
+    _searchConfig = searchConfig;
 }
-*/
+
+
+#pragma mark - <ProductSearchVCConfig>
+
+
 
 @end

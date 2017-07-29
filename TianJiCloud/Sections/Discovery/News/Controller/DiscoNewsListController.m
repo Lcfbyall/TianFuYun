@@ -80,8 +80,8 @@
 
 - (BOOL)onTapCell:(id)event{
 
-    
-    [self tjs_pushViewController:DiscoryNewsDetailVC backHandler:^(id  _Nullable obj) {
+    [self tjs_pushViewController:DiscoryNewsDetailVC
+                     backHandler:^(id  _Nullable obj) {
         
         [((UIViewController *)obj).navigationController popViewControllerAnimated:YES];
         

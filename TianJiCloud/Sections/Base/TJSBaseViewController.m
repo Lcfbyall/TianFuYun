@@ -8,6 +8,10 @@
 
 #import "TJSBaseViewController.h"
 
+
+NSString * const HideNavigationBarKey     = @"HideNavigationBarKey";
+NSString * const HideBackBarButtonItemKey = @"HideBackBarButtonItemKey";
+
 @interface TJSBaseViewController ()<UINavigationControllerDelegate>
 
 @end
@@ -60,7 +64,21 @@
 #pragma mark - <TJSNavigationConfig>
 - (BOOL)tjs_hideNavigationBar{
     
-    return NO;
+    BOOL hide = self.params[HideNavigationBarKey];
+    
+    return hide;
+}
+
+- (BOOL)tjs_hideBackBarButtonItem{
+
+    BOOL hide = self.params[HideBackBarButtonItemKey];
+    
+    return hide;
+}
+
+- (void)tjs_unifyPopForMoreEvent{
+
+    if(self.backHandler)self.backHandler(self);
 }
 
 

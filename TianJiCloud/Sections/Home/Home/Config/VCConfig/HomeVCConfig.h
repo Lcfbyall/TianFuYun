@@ -13,7 +13,6 @@
 
 @class HomeViewController;
 
-
 @interface HomeVCConfig : NSObject<TJSNavigationConfig>
 
 - (void)setup:(HomeViewController *)vc;

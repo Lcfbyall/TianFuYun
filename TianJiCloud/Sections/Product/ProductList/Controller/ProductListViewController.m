@@ -91,11 +91,9 @@
 
 - (BOOL)onTapCell:(id)event{
     
-    [self tjs_pushViewController:ProductDetailVC params:@{} backHandler:^(id  _Nullable obj) {
-        
-        [((UIViewController *)obj).navigationController popViewControllerAnimated:YES];
-        
-    } animated:YES];
+    [self tjs_pushViewController:ProductDetailVC
+                          params:@{}
+                        animated:YES];
     
     
     return YES;
@@ -112,16 +110,14 @@
 - (void)onTapRightBarBtnToProductSearch:(id)sender{
 
     [self tjs_pushViewController:ProductFilterVC
-                     backHandler:^(id  _Nullable obj) {
-                         
-         [((UIViewController *)obj).navigationController popViewControllerAnimated:YES];
-         
-     } animated:YES];
+                          params:@{}
+                        animated:YES];
 }
 
 - (void)onTapSearchBarToProductSearch:(id)sender{
    
     [self tjs_pushViewController:ProductSearchVC
+                          params:@{HideBackBarButtonItemKey:@YES}
                      backHandler:^(id  _Nullable obj) {
                          
          [((UIViewController *)obj).navigationController popViewControllerAnimated:YES];
