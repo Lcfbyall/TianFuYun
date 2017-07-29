@@ -12,12 +12,6 @@
 
 @class ProductListViewController;
 
-@protocol ProductListVCConfig <NSObject>
-
-- (void)onTapRightBarBtnToProductSearch:(id)sender;
-
-@end
-
 
 @interface ProductListVCConfig : NSObject<TJSNavigationConfig>
 

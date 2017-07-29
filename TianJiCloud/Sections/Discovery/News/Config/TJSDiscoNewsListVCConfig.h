@@ -12,6 +12,10 @@
 
 @class DiscoNewsListController;
 
+
+
+
+
 @interface TJSDiscoNewsListVCConfig : NSObject<TJSNavigationConfig>
 
 - (void)setup:(DiscoNewsListController *)vc;

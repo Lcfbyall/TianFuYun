@@ -51,17 +51,19 @@
 }
 
 
-#pragma mark - <BaseVCConfig>
+#pragma mark - <TJSBaseVCConfig>
 - (void)tjs_configBaseView{
 
 
 }
 
-#pragma mark - <TJSViewControllerHideNavigationBarDelegate>
+#pragma mark - <TJSNavigationConfig>
 - (BOOL)tjs_hideNavigationBar{
     
     return NO;
 }
+
+
 
 
 #pragma mark - <UINavigationControllerDelegate>

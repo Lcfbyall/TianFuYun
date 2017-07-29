@@ -69,6 +69,7 @@
 		2C801BD61F233F46009F82F7 /* TJSRootTabBarControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C801BB01F233F46009F82F7 /* TJSRootTabBarControllerViewController.m */; };
 		2C801BD71F233F46009F82F7 /* Mine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C801BB21F233F46009F82F7 /* Mine.storyboard */; };
 		2C89AD741F2B5C81005C29AC /* DiscoNewsDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C89AD731F2B5C81005C29AC /* DiscoNewsDetailController.m */; };
+		2C89AD791F2C5155005C29AC /* UISearchBar+TJSBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C89AD781F2C5155005C29AC /* UISearchBar+TJSBlock.m */; };
 		2C8DE5731F29CE14009B3AE2 /* PersonalMessageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE5721F29CE14009B3AE2 /* PersonalMessageController.m */; };
 		2C8DE5761F29CE51009B3AE2 /* PlatformAnnounceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE5751F29CE51009B3AE2 /* PlatformAnnounceController.m */; };
 		2C8DE5791F29CE76009B3AE2 /* AllActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE5781F29CE76009B3AE2 /* AllActivityViewController.m */; };
@@ -283,6 +284,10 @@
 		2C89AD721F2B5C81005C29AC /* DiscoNewsDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoNewsDetailController.h; sourceTree = "<group>"; };
 		2C89AD731F2B5C81005C29AC /* DiscoNewsDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoNewsDetailController.m; sourceTree = "<group>"; };
 		2C89AD751F2B5D8E005C29AC /* TJSDiscoNewListCellProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TJSDiscoNewListCellProtocol.h; sourceTree = "<group>"; };
+		2C89AD771F2C5155005C29AC /* UISearchBar+TJSBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISearchBar+TJSBlock.h"; sourceTree = "<group>"; };
+		2C89AD781F2C5155005C29AC /* UISearchBar+TJSBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISearchBar+TJSBlock.m"; sourceTree = "<group>"; };
+		2C89AD7A1F2C7C2B005C29AC /* TJSProductListVCProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TJSProductListVCProtocol.h; sourceTree = "<group>"; };
+		2C89AD7B1F2C7C81005C29AC /* TJSHomeListVCProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TJSHomeListVCProtocol.h; sourceTree = "<group>"; };
 		2C8DE5711F29CE14009B3AE2 /* PersonalMessageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalMessageController.h; sourceTree = "<group>"; };
 		2C8DE5721F29CE14009B3AE2 /* PersonalMessageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalMessageController.m; sourceTree = "<group>"; };
 		2C8DE5741F29CE51009B3AE2 /* PlatformAnnounceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlatformAnnounceController.h; sourceTree = "<group>"; };
@@ -699,6 +704,7 @@
 		2C4411E71F219A5300C453EF /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				2C89AD761F2C5136005C29AC /* UISearchBar */,
 				2C4411F31F219A5300C453EF /* UINavigationBar */,
 				2C44124F1F21D9A900C453EF /* UIViewController */,
 				2C44128C1F21ED1200C453EF /* UINavigationController */,
@@ -1122,6 +1128,15 @@
 			path = StoreService;
 			sourceTree = "<group>";
 		};
+		2C89AD761F2C5136005C29AC /* UISearchBar */ = {
+			isa = PBXGroup;
+			children = (
+				2C89AD771F2C5155005C29AC /* UISearchBar+TJSBlock.h */,
+				2C89AD781F2C5155005C29AC /* UISearchBar+TJSBlock.m */,
+			);
+			path = UISearchBar;
+			sourceTree = "<group>";
+		};
 		2C8DE57A1F29D406009B3AE2 /* Disaggregate */ = {
 			isa = PBXGroup;
 			children = (
@@ -1149,6 +1164,7 @@
 		2C8DE5851F29DA8E009B3AE2 /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
+				2C89AD7B1F2C7C81005C29AC /* TJSHomeListVCProtocol.h */,
 				2C8DE5861F29DAC5009B3AE2 /* TJSHomeListConfigurateProtocol.h */,
 				2C8DE5871F29DCE9009B3AE2 /* TJSHomeListPrivateProtocol.h */,
 			);
@@ -1606,6 +1622,7 @@
 		2CAF42CD1F281B8600ABCA5E /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
+				2C89AD7A1F2C7C2B005C29AC /* TJSProductListVCProtocol.h */,
 				2CAF42D01F281B8600ABCA5E /* TJSProductListConfigurateProtocol.h */,
 				2CAF42D11F281B8600ABCA5E /* TJSProductListPrivateProtocol.h */,
 				2CAF42CE1F281B8600ABCA5E /* TJSProductCellLayoutProtocol.h */,
@@ -1908,6 +1925,7 @@
 				2C4412731F21E79900C453EF /* UIButton+IBInspectableState.m in Sources */,
 				2C4412061F219A5300C453EF /* UINavigationBar+StyleConfigure.m in Sources */,
 				2C8DE58D1F29E081009B3AE2 /* TJSHomeListDataSourceImpl.m in Sources */,
+				2C89AD791F2C5155005C29AC /* UISearchBar+TJSBlock.m in Sources */,
 				2C44123C1F21D27700C453EF /* GVUserDefaults.m in Sources */,
 				2CAF42DD1F281B8600ABCA5E /* ProductDeleteNetworkTool.m in Sources */,
 				2C431E071F29C38F00858C12 /* DiscoveryViewController.m in Sources */,

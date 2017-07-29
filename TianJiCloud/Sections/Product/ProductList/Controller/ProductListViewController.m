@@ -7,8 +7,9 @@
 //
 
 #import "ProductListViewController.h"
-#import "ProductListCell.h"
 
+
+#import "ProductListVCConfig.h"
 #import "TJSProductListConfigurator.h"
 
 @interface ProductListViewController ()
@@ -118,6 +119,15 @@
      } animated:YES];
 }
 
+- (void)onTapSearchBarToProductSearch:(id)sender{
+   
+    [self tjs_pushViewController:ProductSearchVC
+                     backHandler:^(id  _Nullable obj) {
+                         
+         [((UIViewController *)obj).navigationController popViewControllerAnimated:YES];
+         
+     } animated:YES];
+}
 
 
 @end

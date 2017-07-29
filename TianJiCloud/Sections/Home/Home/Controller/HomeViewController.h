@@ -8,7 +8,8 @@
 
 #import "TJSBaseViewController.h"
 
-#import "HomeVCConfig.h"
+
+#import "TJSHomeListVCProtocol.h"
 #import "TJSHomeListConfigurateProtocol.h"
 #import "TJSProductListCellProtocol.h"
 

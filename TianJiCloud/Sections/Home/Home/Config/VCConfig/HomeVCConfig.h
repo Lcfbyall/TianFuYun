@@ -10,16 +10,8 @@
 
 #import "TJSBaseVCProtocol.h"
 
+
 @class HomeViewController;
-
-
-@protocol HomeVCConfig <NSObject>
-
-- (void)onTapLeftBarBtnToMessageKindList:(id)sender;
-
-- (void)onTapRightBarBtnToProductFilter:(id)sender;
-
-@end
 
 
 @interface HomeVCConfig : NSObject<TJSNavigationConfig>

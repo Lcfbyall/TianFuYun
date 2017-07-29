@@ -7,6 +7,8 @@
 //
 
 #import "HomeViewController.h"
+
+#import "HomeVCConfig.h"
 #import "TJSHomeListConfigurator.h"
 
 @interface HomeViewController ()
@@ -62,6 +64,7 @@
 
 
 #pragma mark - <TJSBaseVCConfig>
+
 - (void)tjs_configBaseView{
     
     _productListTBView.backgroundColor = ThemeService.weak_color_10;
@@ -89,6 +92,10 @@
     [self tjs_pushViewController:ProductFilterVC animated:YES];
 }
 
+- (void)onTapSearchBarToProductSearch:(id)sender{
+    
+    [self tjs_pushViewController:ProductSearchVC animated:YES];
+}
 
 
 #pragma mark - <TJSProductListCellDelegate>

@@ -10,7 +10,8 @@
 
 #import "TJSProductListConfigurateProtocol.h"
 #import "TJSProductListCellProtocol.h"
-#import "ProductListVCConfig.h"
+#import "TJSProductListVCProtocol.h"
+
 
 @interface ProductListViewController : TJSBaseViewController<TJSProductListInteractorDelegate,TJSProductListCellDelegate,ProductListVCConfig>
 

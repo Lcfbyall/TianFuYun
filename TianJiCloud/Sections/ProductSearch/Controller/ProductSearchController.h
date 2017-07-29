@@ -6,8 +6,8 @@
 //  Copyright © 2017年 TianJiMoney. All rights reserved.
 //
 
-#import "TJSBaseWebViewController.h"
+#import "TJSBaseViewController.h"
 
-@interface ProductSearchController : TJSBaseWebViewController
+@interface ProductSearchController : TJSBaseViewController
 
 @end
