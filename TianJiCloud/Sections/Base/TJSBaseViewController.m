@@ -16,6 +16,7 @@ NSString * const HideBackBarButtonItemKey = @"HideBackBarButtonItemKey";
 
 @end
 
+
 @implementation TJSBaseViewController
 
 #pragma mark - UIViewController
@@ -53,6 +54,8 @@ NSString * const HideBackBarButtonItemKey = @"HideBackBarButtonItemKey";
   
     return NO;
 }
+
+
 
 
 #pragma mark - <TJSBaseVCConfig>

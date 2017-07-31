@@ -32,6 +32,7 @@ static const void *UISearchBarDelegateKey = &UISearchBarDelegateKey;
 @implementation UISearchBar (TJSBlock)
 
 
+
 #pragma mark UITextField Delegate methods
 
 // return NO to not become first responder
@@ -237,9 +238,8 @@ static const void *UISearchBarDelegateKey = &UISearchBarDelegateKey;
 
 
 #pragma mark control method
-/*
- Setting itself as delegate if no other delegate has been set. This ensures the UISearchBar will use blocks if no delegate is set.
- */
+//Setting itself as delegate if no other delegate has been set. This ensures the UISearchBar will use blocks if no delegate is set.
+ 
 
 - (void)setDelegateIfNoDelegateSet
 {
@@ -399,7 +399,6 @@ return objc_getAssociatedObject(self, _cmd);
     
     objc_setAssociatedObject(self, @selector(selectedScopeButtonIndexDidChange), selectedScopeButtonIndexDidChange, OBJC_ASSOCIATION_COPY);
 }
-
 
 
 

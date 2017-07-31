@@ -122,7 +122,7 @@
                          
          [((UIViewController *)obj).navigationController popViewControllerAnimated:YES];
          
-     } animated:YES];
+     } animated:NO];
 }
 
 

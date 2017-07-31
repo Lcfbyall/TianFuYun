@@ -87,6 +87,7 @@
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
     
+   
     
 }
 
@@ -96,6 +97,7 @@
     
     ProductListCell *cell =  [tableView cellForRowAtIndexPath:indexPath];
     TJSProductInfoModel *model = [[self.interactor items] objectAtIndex:indexPath.row];
+    
     [cell.delegate onTapCell:model];
 }
 

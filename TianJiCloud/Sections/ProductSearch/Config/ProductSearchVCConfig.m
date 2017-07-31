@@ -60,23 +60,22 @@
 - (UIView *)tjs_titleView{
     
     UIView *bgView = [UIView new];
+    UIColor *bgColor = ThemeService.weak_color_10;
     CGRect frame   =  CGRectMake(0, 0, SCREEN_WIDTH-120, 35);
     bgView.frame   = frame;
-    bgView.backgroundColor     = _vc.navigationController.navigationBar.barTintColor;
+    bgView.backgroundColor     = bgColor;
     bgView.layer.cornerRadius  = frame.size.height/2.0;
     bgView.layer.masksToBounds = YES;
-    [bgView.layer setBorderWidth:1];
-    [bgView.layer setBorderColor:ThemeService.weak_color_10.CGColor];
-    
+ 
     
     UISearchBar *searchBar     = [[UISearchBar alloc] init];
     searchBar.placeholder      = @"请输入您想查找的产品";
     searchBar.frame            = bgView.bounds;;
-    searchBar.backgroundColor  = ThemeService.weak_color_10;
-    //searchBar.tintColor      = [UIColor redColor];
-    searchBar.barTintColor     = ThemeService.weak_color_10;
+    searchBar.backgroundColor  = bgColor;
+    searchBar.tintColor      = [UIColor iOS7darkBlueColor];
+    searchBar.barTintColor     = bgColor;
     
-    [searchBar setSearchFieldBackgroundImage:[UIImage imageWithColor:ThemeService.weak_color_10] forState:UIControlStateNormal];
+    [searchBar setSearchFieldBackgroundImage:[UIImage imageWithColor:bgColor size:searchBar.bounds.size] forState:UIControlStateNormal];
     
     [bgView addSubview:searchBar];
     
@@ -86,6 +85,13 @@
    
         
     };
+    
+    searchBar.searchBarTextDidEndEditing = ^(UISearchBar *searchBar){
+        
+        NSLog(@"哈哈");
+        
+    };
+
     
     return bgView;
 }

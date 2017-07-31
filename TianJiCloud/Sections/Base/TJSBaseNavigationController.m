@@ -60,6 +60,7 @@
                 [vc.navigationController popViewControllerAnimated:YES];
             }
         }];
+           
         viewController.navigationItem.leftBarButtonItem = leftItem;
            
        }else{
@@ -67,6 +68,8 @@
            viewController.navigationItem.leftBarButtonItem = nil;
        }
     }
+    
+    
     
     [super pushViewController:viewController animated:animated];
 }
