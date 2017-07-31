@@ -8,9 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
+#import "MineHomeCellInfo.h"
+
 @interface MineHomeCellInfoModel : NSObject
 
-@property (nonatomic,strong) Class cellClass;
+- (void)configItems;
 
+@property(nonatomic,strong,readonly)NSMutableArray *items;
 
 @end

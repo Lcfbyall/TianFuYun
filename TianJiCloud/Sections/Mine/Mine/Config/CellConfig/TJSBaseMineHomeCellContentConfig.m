@@ -59,9 +59,9 @@
 
 - (id<TJSMineHomeCellContentConfig>)configBy:(id)model
 {
-    if([model isKindOfClass:[MineHomeCellInfoModel class]]){
+    if([model isKindOfClass:[MineHomeCellInfo class]]){
       
-        MineHomeCellInfoModel *cellModel = (MineHomeCellInfoModel *)model;
+        MineHomeCellInfo *cellModel = (MineHomeCellInfo *)model;
         NSString *cellClass = NSStringFromClass(cellModel.cellClass);
        id<TJSMineHomeCellContentConfig>config = [_dict objectForKey:cellClass];
     

@@ -13,6 +13,7 @@
 @interface TJSMineHomeDataSourceImpl ()
 
 @property (nonatomic, strong) NSMutableArray *items;
+@property (nonatomic, strong) MineHomeCellInfoModel *model;
 
 @end
 
@@ -25,39 +26,22 @@
     if(self){
         
         _items = [NSMutableArray array];
+        
+        _model = [MineHomeCellInfoModel new];
+        
+        [_model configItems];
+        
+        _items = _model.items;
     }
     
     return self;
 }
 
-
 #pragma mark - <TJSMineHomeDataSource>
 
 - (NSArray *)items{
     
-    MineHomeCellInfoModel *balance = [MineHomeCellInfoModel new];
-    balance.cellClass = NSClassFromString(@"MineHomeBalanceCell");
-    MineHomeCellInfoModel *order = [MineHomeCellInfoModel new];
-    order.cellClass = NSClassFromString(@"MineHomeOrderCell");
-    MineHomeCellInfoModel *invest = [MineHomeCellInfoModel new];
-    invest.cellClass = NSClassFromString(@"MineHomeInvestCell");
-    NSArray *first  = @[balance];
-    NSArray *second = @[order];
-    NSArray *third  = @[invest];
-    NSArray *fourth = @[
-                        [MineHomeCellInfoModel new],
-                        [MineHomeCellInfoModel new],
-                        [MineHomeCellInfoModel new],
-                        [MineHomeCellInfoModel new],
-                        [MineHomeCellInfoModel new],
-                        [MineHomeCellInfoModel new],
-                        [MineHomeCellInfoModel new],
-                      ];
-    [fourth enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        MineHomeCellInfoModel *model = (MineHomeCellInfoModel *)obj;
-        model.cellClass = NSClassFromString(@"MineHomeDefaultCell");
-    }];
-    return [NSArray arrayWithObjects:first,second,third,fourth, nil];
+    return _items;
 }
 
 

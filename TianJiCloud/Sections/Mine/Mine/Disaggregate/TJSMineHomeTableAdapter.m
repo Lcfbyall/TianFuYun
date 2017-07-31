@@ -111,6 +111,8 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
   
+    if(section==1) return 1;
+    
     return 10;
 }
 

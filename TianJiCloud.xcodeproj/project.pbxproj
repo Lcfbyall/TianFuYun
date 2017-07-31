@@ -76,6 +76,17 @@
 		2C4412A91F2201FF00C453EF /* TJWUrlArgumentsFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4412A41F2201FF00C453EF /* TJWUrlArgumentsFilter.m */; };
 		2C4412AD1F22031600C453EF /* TJSHudAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4412AC1F22031600C453EF /* TJSHudAlert.m */; };
 		2C4412B41F2207CD00C453EF /* TJSLoginStateUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4412B31F2207CD00C453EF /* TJSLoginStateUtil.m */; };
+		2C7A344B1F2F61C1004DD566 /* WithDarwDeposit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C7A344A1F2F61C1004DD566 /* WithDarwDeposit.storyboard */; };
+		2C7A344D1F2F633C004DD566 /* CumulateInvest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C7A344C1F2F633C004DD566 /* CumulateInvest.storyboard */; };
+		2C7A344F1F2F63BE004DD566 /* CapitalRecord.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C7A344E1F2F63BD004DD566 /* CapitalRecord.storyboard */; };
+		2C7A34511F2F64DA004DD566 /* BankCardManager.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C7A34501F2F64DA004DD566 /* BankCardManager.storyboard */; };
+		2C7A34531F2F6590004DD566 /* MyReward.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C7A34521F2F6590004DD566 /* MyReward.storyboard */; };
+		2C7A34551F2F66AF004DD566 /* Collection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C7A34541F2F66AF004DD566 /* Collection.storyboard */; };
+		2C7A34571F2F673D004DD566 /* ContractApply.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C7A34561F2F673D004DD566 /* ContractApply.storyboard */; };
+		2C7A34591F2F685B004DD566 /* UseAgreement.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C7A34581F2F685B004DD566 /* UseAgreement.storyboard */; };
+		2C7A345B1F2F68E6004DD566 /* Feedback.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C7A345A1F2F68E6004DD566 /* Feedback.storyboard */; };
+		2C7A345D1F2F69CF004DD566 /* AboutMe.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C7A345C1F2F69CF004DD566 /* AboutMe.storyboard */; };
+		2C7A34601F2F80F7004DD566 /* MineHomeCellInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7A345F1F2F80F7004DD566 /* MineHomeCellInfo.m */; };
 		2C801BD21F233F46009F82F7 /* TJSBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C801BA61F233F46009F82F7 /* TJSBaseNavigationController.m */; };
 		2C801BD31F233F46009F82F7 /* TJSBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C801BA91F233F46009F82F7 /* TJSBaseViewController.m */; };
 		2C801BD61F233F46009F82F7 /* TJSRootTabBarControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C801BB01F233F46009F82F7 /* TJSRootTabBarControllerViewController.m */; };
@@ -379,6 +390,18 @@
 		2C4412B21F2207CD00C453EF /* TJSLoginStateUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSLoginStateUtil.h; sourceTree = "<group>"; };
 		2C4412B31F2207CD00C453EF /* TJSLoginStateUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSLoginStateUtil.m; sourceTree = "<group>"; };
 		2C4412B51F2208F700C453EF /* TJSApiParamasKeyDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TJSApiParamasKeyDefine.h; sourceTree = "<group>"; };
+		2C7A344A1F2F61C1004DD566 /* WithDarwDeposit.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WithDarwDeposit.storyboard; sourceTree = "<group>"; };
+		2C7A344C1F2F633C004DD566 /* CumulateInvest.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CumulateInvest.storyboard; sourceTree = "<group>"; };
+		2C7A344E1F2F63BD004DD566 /* CapitalRecord.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CapitalRecord.storyboard; sourceTree = "<group>"; };
+		2C7A34501F2F64DA004DD566 /* BankCardManager.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BankCardManager.storyboard; sourceTree = "<group>"; };
+		2C7A34521F2F6590004DD566 /* MyReward.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MyReward.storyboard; sourceTree = "<group>"; };
+		2C7A34541F2F66AF004DD566 /* Collection.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Collection.storyboard; sourceTree = "<group>"; };
+		2C7A34561F2F673D004DD566 /* ContractApply.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ContractApply.storyboard; sourceTree = "<group>"; };
+		2C7A34581F2F685B004DD566 /* UseAgreement.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UseAgreement.storyboard; sourceTree = "<group>"; };
+		2C7A345A1F2F68E6004DD566 /* Feedback.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Feedback.storyboard; sourceTree = "<group>"; };
+		2C7A345C1F2F69CF004DD566 /* AboutMe.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AboutMe.storyboard; sourceTree = "<group>"; };
+		2C7A345E1F2F80F7004DD566 /* MineHomeCellInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineHomeCellInfo.h; sourceTree = "<group>"; };
+		2C7A345F1F2F80F7004DD566 /* MineHomeCellInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineHomeCellInfo.m; sourceTree = "<group>"; };
 		2C801BA51F233F46009F82F7 /* TJSBaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSBaseNavigationController.h; sourceTree = "<group>"; };
 		2C801BA61F233F46009F82F7 /* TJSBaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSBaseNavigationController.m; sourceTree = "<group>"; };
 		2C801BA71F233F46009F82F7 /* TJSBaseVCProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSBaseVCProtocol.h; sourceTree = "<group>"; };
@@ -1863,6 +1886,8 @@
 		2C85E3B11F2F267500ADD360 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2C7A345E1F2F80F7004DD566 /* MineHomeCellInfo.h */,
+				2C7A345F1F2F80F7004DD566 /* MineHomeCellInfo.m */,
 				2C85E3B21F2F269D00ADD360 /* MineHomeCellInfoModel.h */,
 				2C85E3B31F2F269D00ADD360 /* MineHomeCellInfoModel.m */,
 			);
@@ -2068,6 +2093,7 @@
 		2C8DE5E01F2AE729009B3AE2 /* AboutMe */ = {
 			isa = PBXGroup;
 			children = (
+				2C7A345C1F2F69CF004DD566 /* AboutMe.storyboard */,
 				2C85E34B1F2ECC1200ADD360 /* AboutMeViewController.h */,
 				2C85E34C1F2ECC1200ADD360 /* AboutMeViewController.m */,
 			);
@@ -2077,6 +2103,7 @@
 		2C8DE5E11F2AE729009B3AE2 /* Bankcard */ = {
 			isa = PBXGroup;
 			children = (
+				2C7A34501F2F64DA004DD566 /* BankCardManager.storyboard */,
 				2C85E3511F2ECCC800ADD360 /* BackCardManagerController.h */,
 				2C85E3521F2ECCC800ADD360 /* BackCardManagerController.m */,
 			);
@@ -2086,6 +2113,7 @@
 		2C8DE5E21F2AE729009B3AE2 /* CapitalRecord */ = {
 			isa = PBXGroup;
 			children = (
+				2C7A344E1F2F63BD004DD566 /* CapitalRecord.storyboard */,
 				2C85E3551F2ECD4800ADD360 /* Container */,
 				2C85E3541F2ECD4800ADD360 /* recordList */,
 			);
@@ -2095,6 +2123,7 @@
 		2C8DE5E31F2AE729009B3AE2 /* ContractApply */ = {
 			isa = PBXGroup;
 			children = (
+				2C7A34561F2F673D004DD566 /* ContractApply.storyboard */,
 				2C85E3391F2ECAEB00ADD360 /* ContractApplyController.h */,
 				2C85E33A1F2ECAEB00ADD360 /* ContractApplyController.m */,
 			);
@@ -2104,6 +2133,7 @@
 		2C8DE5E41F2AE729009B3AE2 /* CumulativeInvest */ = {
 			isa = PBXGroup;
 			children = (
+				2C7A344C1F2F633C004DD566 /* CumulateInvest.storyboard */,
 				2C85E35C1F2ECE2400ADD360 /* CumulativeInvestController.h */,
 				2C85E35D1F2ECE2400ADD360 /* CumulativeInvestController.m */,
 			);
@@ -2113,6 +2143,7 @@
 		2C8DE5E51F2AE729009B3AE2 /* Fav */ = {
 			isa = PBXGroup;
 			children = (
+				2C7A34541F2F66AF004DD566 /* Collection.storyboard */,
 				2C85E3361F2ECA6A00ADD360 /* MyFavViewController.h */,
 				2C85E3371F2ECA6A00ADD360 /* MyFavViewController.m */,
 			);
@@ -2122,6 +2153,7 @@
 		2C8DE5E61F2AE729009B3AE2 /* Feedback */ = {
 			isa = PBXGroup;
 			children = (
+				2C7A345A1F2F68E6004DD566 /* Feedback.storyboard */,
 				2C85E3411F2ECB6100ADD360 /* Container */,
 				2C85E3401F2ECB6100ADD360 /* Feedback */,
 				2C85E33F1F2ECB6100ADD360 /* History */,
@@ -2142,6 +2174,7 @@
 		2C8DE5E81F2AE729009B3AE2 /* Reward */ = {
 			isa = PBXGroup;
 			children = (
+				2C7A34521F2F6590004DD566 /* MyReward.storyboard */,
 				2C85E34E1F2ECCA300ADD360 /* RewardViewController.h */,
 				2C85E34F1F2ECCA300ADD360 /* RewardViewController.m */,
 			);
@@ -2166,6 +2199,7 @@
 		2C8DE5EA1F2AE729009B3AE2 /* UseAgreement */ = {
 			isa = PBXGroup;
 			children = (
+				2C7A34581F2F685B004DD566 /* UseAgreement.storyboard */,
 				2C85E33C1F2ECB1300ADD360 /* UseAgreementController.h */,
 				2C85E33D1F2ECB1300ADD360 /* UseAgreementController.m */,
 			);
@@ -2175,6 +2209,7 @@
 		2C8DE5EB1F2AE729009B3AE2 /* WithdrawDeposit */ = {
 			isa = PBXGroup;
 			children = (
+				2C7A344A1F2F61C1004DD566 /* WithDarwDeposit.storyboard */,
 				2C85E35F1F2ECE7300ADD360 /* WithdrawDepositController.h */,
 				2C85E3601F2ECE7300ADD360 /* WithdrawDepositController.m */,
 				2C85E3621F2ECE9400ADD360 /* WithdrawDepositRecord.h */,
@@ -2636,26 +2671,36 @@
 			files = (
 				2C85E3331F2EC6E500ADD360 /* Oder.storyboard in Resources */,
 				2C300F7C1F2F32BF00DD440E /* Settings.storyboard in Resources */,
+				2C7A34511F2F64DA004DD566 /* BankCardManager.storyboard in Resources */,
 				2C4411BE1F21981E00C453EF /* LaunchScreen.storyboard in Resources */,
 				2CAF42F91F28273300ABCA5E /* ProductListCell.xib in Resources */,
 				2C431E111F29C6B200858C12 /* ProductFilter.storyboard in Resources */,
 				2C431E0F1F29C59C00858C12 /* Message.storyboard in Resources */,
+				2C7A34591F2F685B004DD566 /* UseAgreement.storyboard in Resources */,
 				2C300F8D1F2F3D4700DD440E /* Profile.storyboard in Resources */,
+				2C7A34531F2F6590004DD566 /* MyReward.storyboard in Resources */,
 				2C300F931F2F3E9F00DD440E /* GestureSet.storyboard in Resources */,
 				2C1BFEBF1F2978C500665A71 /* Discovery.storyboard in Resources */,
+				2C7A344D1F2F633C004DD566 /* CumulateInvest.storyboard in Resources */,
 				2C8DE59E1F29FE80009B3AE2 /* Product.storyboard in Resources */,
 				2C8DE5A61F29FFBF009B3AE2 /* ProductSearch.storyboard in Resources */,
 				2C300F971F2F3F9F00DD440E /* ProfessionAuthen.storyboard in Resources */,
+				2C7A344F1F2F63BE004DD566 /* CapitalRecord.storyboard in Resources */,
 				2C8DE5BA1F2ADCFA009B3AE2 /* DiscoveryRoadShowListCell.xib in Resources */,
 				2C4411BB1F21981E00C453EF /* Assets.xcassets in Resources */,
 				2C4412991F22007D00C453EF /* TJSThemeConfig.strings in Resources */,
+				2C7A345B1F2F68E6004DD566 /* Feedback.storyboard in Resources */,
 				2C300F951F2F3F1200DD440E /* FindWithDrawCode.storyboard in Resources */,
+				2C7A345D1F2F69CF004DD566 /* AboutMe.storyboard in Resources */,
+				2C7A344B1F2F61C1004DD566 /* WithDarwDeposit.storyboard in Resources */,
 				2C801BD71F233F46009F82F7 /* Mine.storyboard in Resources */,
 				2C8DE5B81F2AD8E7009B3AE2 /* DiscoveryNewsListCell.xib in Resources */,
 				2C300F911F2F3E1000DD440E /* MLoginCode.storyboard in Resources */,
+				2C7A34551F2F66AF004DD566 /* Collection.storyboard in Resources */,
 				2C85E3291F2EC22300ADD360 /* ZLPhotoLib.bundle in Resources */,
 				2C4411B91F21981E00C453EF /* Main.storyboard in Resources */,
 				2C1BFEBD1F29779100665A71 /* Home.storyboard in Resources */,
+				2C7A34571F2F673D004DD566 /* ContractApply.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2739,6 +2784,7 @@
 				2C85E31D1F2EC22300ADD360 /* ZLPhotoPickerDatas.m in Sources */,
 				2C85E3121F2EC22300ADD360 /* ZLCameraView.m in Sources */,
 				2C4412061F219A5300C453EF /* UINavigationBar+StyleConfigure.m in Sources */,
+				2C7A34601F2F80F7004DD566 /* MineHomeCellInfo.m in Sources */,
 				2C85E3731F2EDB1000ADD360 /* TJSBaseControllerConfig.m in Sources */,
 				2C8DE58D1F29E081009B3AE2 /* TJSHomeListDataSourceImpl.m in Sources */,
 				2C89AD791F2C5155005C29AC /* UISearchBar+TJSBlock.m in Sources */,

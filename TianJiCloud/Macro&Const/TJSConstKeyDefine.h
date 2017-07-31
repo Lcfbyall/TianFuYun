@@ -53,18 +53,67 @@ static NSString *const ProductSearchVC      = @"ProductSearchController";
 #pragma mark - DiscoveryVC identifier
 
 static NSString *const DiscoryNewsListVC    = @"DiscoNewsListController";
+
 static NSString *const DiscoryNewsDetailVC  = @"DiscoNewsDetailController";
 
 static NSString *const DiscoryRoadShowListVC = @"DiscoRoadShowListController";
-
 
 #pragma mark - Setting identifier
 
 static NSString *const SettingListVC = @"MineSettingViewController";
 
+#pragma mark - WithdrawDeposit identifier
 
+static NSString *const WithdrawDepositVC = @"WithdrawDepositController";
 
+static NSString *const WithdrawDepositRecordVC = @"WithdrawDepositRecord";
 
+#pragma mark - Order identifier 
+
+static NSString *const MyOrderContainerVC = @"MyOrderContainerController";
+
+static NSString *const MyOrderListVC = @"MyOrderListViewController";
+
+#pragma mark - CumulativeInvest identifier
+
+static NSString *const CumulativeInvestVC = @"CumulativeInvestController";
+
+#pragma mark - CapitalRecordContainer identifier
+
+static NSString *const CapitalRecordContainerVC = @"CapitalRecordContainer";
+static NSString *const CapitalRecordListVC      = @"CapitalRecordListController";
+
+#pragma mark - BankCardManager identifier
+
+static NSString *const BankCardManagerVC = @"BackCardManagerController";
+
+#pragma mark - Reward identifier
+
+static NSString *const RewardListVC  = @"RewardViewController";
+
+#pragma mark - MyFavarite identifier
+
+static NSString *const MyFavariteVC = @"MyFavViewController";
+
+#pragma mark - ContractApply identifier 
+
+static NSString *const ContractApplyVC = @"ContractApplyController";
+
+#pragma mark - UseAgreement identifier 
+
+static NSString *const UseAgreementVC = @"UseAgreementController";
+
+#pragma mark - Feedback identifier
+
+static NSString *const FeedbackContainerVC = @"FeedbackContainerController";
+
+static NSString *const FeedbackVC = @"FeedbackViewController";
+
+static NSString *const FeedbackHistoryVC = @"FeedbackHistoryController";
+
+#pragma mark - AboutMeVC identifier
+
+static NSString *const AboutMeVC = @"AboutMeViewController";
 
 
 

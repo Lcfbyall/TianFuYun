@@ -9,10 +9,12 @@
 #import "TJSBaseTableViewCell.h"
 
 #import "TJSMineHomeCellProtocol.h"
+#import "MineHomeCellInfoModel.h"
 
 @interface MineHomeBaseTableCell : TJSBaseTableViewCell
 
 @property (nonatomic, weak)   id<TJSMineHomeCellDelegate> delegate;
 
+@property (nonatomic,strong) MineHomeCellInfo *cellInfo;
 
 @end

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="nE4-ff-wG1">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="nE4-ff-wG1">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -39,6 +39,16 @@
                         <outlet property="mineTableView" destination="6if-f7-fqe" id="9nB-6M-x50"/>
                         <segue destination="tdg-mW-QGh" kind="show" identifier="MineVCToMyOrderVC" id="mj5-Dw-2ey"/>
                         <segue destination="mYY-YE-QnO" kind="show" identifier="MineHomeVCToSettingVC" id="dHc-Xt-t1W"/>
+                        <segue destination="gsK-oG-wdB" kind="show" identifier="MineVCToWithDrawDepositVC" id="opj-yJ-3Rl"/>
+                        <segue destination="5Qm-8g-AHy" kind="show" identifier="MineVCToCumylateInvestVC" id="DY9-2o-zSO"/>
+                        <segue destination="VFM-j5-YYE" kind="show" identifier="MineVCToCapitalRecordVC" id="edp-Cr-mPZ"/>
+                        <segue destination="HW2-IN-ObI" kind="show" identifier="MineVCToBankCardManagerVC" id="UrS-br-xbh"/>
+                        <segue destination="UbU-X6-7QC" kind="show" identifier="MineVCToRewardVC" id="aAL-ej-lQr"/>
+                        <segue destination="DZb-dE-MUH" kind="show" identifier="MineVCToFavoriteVC" id="O4W-ww-KIc"/>
+                        <segue destination="cuz-0o-0gY" kind="show" identifier="MineVCToContractApplyVC" id="Osv-fW-azj"/>
+                        <segue destination="kV1-n8-bxH" kind="show" identifier="MineVCToUseAgreementVC" id="F8H-Mw-hDh"/>
+                        <segue destination="JoY-hK-AGv" kind="show" identifier="MineVCToFeedbackContainerVC" id="X76-FK-ozp"/>
+                        <segue destination="8G5-4C-C6Y" kind="show" identifier="MineVCToAboutMeVC" id="ONu-jS-Zvj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gXC-4q-h6f" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -69,7 +79,7 @@
                 <viewControllerPlaceholder storyboardIdentifier="MyOrderContainerController" storyboardName="Oder" referencedIdentifier="MyOrderContainerController" id="tdg-mW-QGh" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XMH-L1-dcf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2711" y="-44"/>
+            <point key="canvasLocation" x="2704" y="-43"/>
         </scene>
         <!--MineSettingViewController-->
         <scene sceneID="cZK-8O-ynK">
@@ -77,7 +87,87 @@
                 <viewControllerPlaceholder storyboardIdentifier="MineSettingViewController" storyboardName="Settings" referencedIdentifier="MineSettingViewController" id="mYY-YE-QnO" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IOo-th-Igt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2651" y="488"/>
+            <point key="canvasLocation" x="2690" y="-146"/>
+        </scene>
+        <!--WithdrawDepositController-->
+        <scene sceneID="LLd-76-pC6">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="WithdrawDepositController" storyboardName="WithDarwDeposit" referencedIdentifier="WithdrawDepositController" id="gsK-oG-wdB" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XDD-KA-8wL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2699" y="-94"/>
+        </scene>
+        <!--CumulativeInvestController-->
+        <scene sceneID="WRq-NY-Z4x">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="CumulativeInvestController" storyboardName="CumulateInvest" referencedIdentifier="CumulativeInvestController" id="5Qm-8g-AHy" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jIh-qJ-TsH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2698" y="22"/>
+        </scene>
+        <!--CapitalRecordContainer-->
+        <scene sceneID="AOt-QM-T3z">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="CapitalRecordContainer" storyboardName="CapitalRecord" referencedIdentifier="CapitalRecordContainer" id="VFM-j5-YYE" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gn8-Qr-bGE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2681" y="79"/>
+        </scene>
+        <!--BackCardManagerController-->
+        <scene sceneID="7IM-3o-WWH">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="BackCardManagerController" storyboardName="BankCardManager" referencedIdentifier="BackCardManagerController" id="HW2-IN-ObI" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mLG-wn-Y2O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2698" y="141"/>
+        </scene>
+        <!--RewardViewController-->
+        <scene sceneID="dh3-Ms-jzp">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="RewardViewController" storyboardName="MyReward" referencedIdentifier="RewardViewController" id="UbU-X6-7QC" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1TY-f6-1bd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2667" y="210"/>
+        </scene>
+        <!--MyFavViewController-->
+        <scene sceneID="YWH-5d-5hD">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="MyFavViewController" storyboardName="Collection" referencedIdentifier="MyFavViewController" id="DZb-dE-MUH" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vAl-sM-ZoB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2660" y="277"/>
+        </scene>
+        <!--ContractApplyController-->
+        <scene sceneID="620-pq-B4k">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="ContractApplyController" storyboardName="ContractApply" referencedIdentifier="ContractApplyController" id="cuz-0o-0gY" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RLc-kE-k3k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2684" y="348"/>
+        </scene>
+        <!--UseAgreementController-->
+        <scene sceneID="FtC-WC-zhH">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="UseAgreementController" storyboardName="UseAgreement" referencedIdentifier="UseAgreementController" id="kV1-n8-bxH" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="79D-fj-e5p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2678" y="410"/>
+        </scene>
+        <!--FeedbackContainerController-->
+        <scene sceneID="9jJ-3u-7ZR">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="FeedbackContainerController" storyboardName="Feedback" referencedIdentifier="FeedbackContainerController" id="JoY-hK-AGv" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lbd-B5-dho" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2985" y="590"/>
+        </scene>
+        <!--AboutMeViewController-->
+        <scene sceneID="Dbr-bm-JsF">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="AboutMeViewController" storyboardName="AboutMe" referencedIdentifier="AboutMeViewController" id="8G5-4C-C6Y" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mY6-JE-wNb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3012" y="745"/>
         </scene>
     </scenes>
 </document>

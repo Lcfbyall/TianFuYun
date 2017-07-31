@@ -47,5 +47,9 @@
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>
+	<key>NSCameraUsageDescription</key>
+	<string>长富云想使用您的摄像头</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>长富云想使用您的相册</string>
 </dict>
 </plist>
