@@ -1,19 +1,18 @@
 //
-//  MineSettingViewController.m
+//  GesturePasswordController.m
 //  TianJiCloud
 //
 //  Created by 朱鹏 on 2017/7/31.
 //  Copyright © 2017年 TianJiMoney. All rights reserved.
 //
 
-#import "MineSettingViewController.h"
+#import "GesturePasswordController.h"
 
-@interface MineSettingViewController ()
-@property (weak, nonatomic) IBOutlet UITableView *settingTableView;
+@interface GesturePasswordController ()
 
 @end
 
-@implementation MineSettingViewController
+@implementation GesturePasswordController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

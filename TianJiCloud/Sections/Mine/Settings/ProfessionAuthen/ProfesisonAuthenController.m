@@ -1,19 +1,18 @@
 //
-//  MineSettingViewController.m
+//  ProfesisonAuthenController.m
 //  TianJiCloud
 //
 //  Created by 朱鹏 on 2017/7/31.
 //  Copyright © 2017年 TianJiMoney. All rights reserved.
 //
 
-#import "MineSettingViewController.h"
+#import "ProfesisonAuthenController.h"
 
-@interface MineSettingViewController ()
-@property (weak, nonatomic) IBOutlet UITableView *settingTableView;
+@interface ProfesisonAuthenController ()
 
 @end
 
-@implementation MineSettingViewController
+@implementation ProfesisonAuthenController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

@@ -1,19 +1,18 @@
 //
-//  MineSettingViewController.m
+//  ModifyLogPasswordController.m
 //  TianJiCloud
 //
 //  Created by 朱鹏 on 2017/7/31.
 //  Copyright © 2017年 TianJiMoney. All rights reserved.
 //
 
-#import "MineSettingViewController.h"
+#import "ModifyLogPasswordController.h"
 
-@interface MineSettingViewController ()
-@property (weak, nonatomic) IBOutlet UITableView *settingTableView;
+@interface ModifyLogPasswordController ()
 
 @end
 
-@implementation MineSettingViewController
+@implementation ModifyLogPasswordController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

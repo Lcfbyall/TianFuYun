@@ -20,13 +20,33 @@
                     <view key="view" contentMode="scaleToFill" id="LvN-5G-nk6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6v7-vI-a0V">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="6v7-vI-a0V" secondAttribute="trailing" id="VBI-hq-WKq"/>
+                            <constraint firstAttribute="bottom" secondItem="6v7-vI-a0V" secondAttribute="bottom" id="XZN-cG-hlw"/>
+                            <constraint firstItem="6v7-vI-a0V" firstAttribute="top" secondItem="LvN-5G-nk6" secondAttribute="top" id="dGg-jx-anJ"/>
+                            <constraint firstItem="6v7-vI-a0V" firstAttribute="leading" secondItem="LvN-5G-nk6" secondAttribute="leading" id="oNK-Ja-Nmo"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="8XL-jx-l6F"/>
+                    <connections>
+                        <outlet property="settingTableView" destination="6v7-vI-a0V" id="Qv0-hM-SR4"/>
+                        <segue destination="cdh-pQ-lNh" kind="show" identifier="SettingVCToProfileVC" id="3bG-sg-pgk"/>
+                        <segue destination="c1V-oD-wQL" kind="show" identifier="SettingVCToModifyLoginPasswordVC" id="NAA-Xi-UXG"/>
+                        <segue destination="cxU-6C-kvc" kind="show" identifier="SettingVCToGestureVC" id="izZ-o5-gxC"/>
+                        <segue destination="KIR-bj-PD9" kind="show" identifier="SettingVCToFindWithDrawCodeVC" id="ukM-iP-1cS"/>
+                        <segue destination="URB-OT-rhN" kind="show" identifier="SettingVCToProfessionAuthenVC" id="Ols-Fs-eRv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EoB-IY-jHo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="943.20000000000005" y="5.8470764617691158"/>
+            <point key="canvasLocation" x="830" y="-36"/>
         </scene>
         <!--Base Navigation Controller-->
         <scene sceneID="hvj-CS-XOA">
@@ -44,7 +64,47 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PIn-Jp-xKx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4" y="5.8470764617691158"/>
+            <point key="canvasLocation" x="10" y="-36"/>
+        </scene>
+        <!--ProfileViewController-->
+        <scene sceneID="1yv-c1-Ygs">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="ProfileViewController" storyboardName="Profile" referencedIdentifier="ProfileViewController" id="cdh-pQ-lNh" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sfn-7s-JYO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1646" y="-363"/>
+        </scene>
+        <!--ModifyLogPasswordController-->
+        <scene sceneID="MsN-r4-2zQ">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="ModifyLogPasswordController" storyboardName="MLoginCode" referencedIdentifier="ModifyLogPasswordController" id="c1V-oD-wQL" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mWL-E2-4XL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1688" y="-241"/>
+        </scene>
+        <!--GesturePasswordController-->
+        <scene sceneID="SrM-zQ-n99">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="GesturePasswordController" storyboardName="GestureSet" referencedIdentifier="GesturePasswordController" id="cxU-6C-kvc" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="et2-iD-hUj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1675" y="-122"/>
+        </scene>
+        <!--FindWithDrawPasswordController-->
+        <scene sceneID="5Pe-QY-GGq">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="FindWithDrawPasswordController" storyboardName="FindWithDrawCode" referencedIdentifier="FindWithDrawPasswordController" id="KIR-bj-PD9" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hQX-wQ-KXv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1705" y="4"/>
+        </scene>
+        <!--ProfesisonAuthenController-->
+        <scene sceneID="7Rq-go-c6D">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="ProfesisonAuthenController" storyboardName="ProfessionAuthen" referencedIdentifier="ProfesisonAuthenController" id="URB-OT-rhN" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="upY-O0-0Zc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1774" y="468"/>
         </scene>
     </scenes>
 </document>

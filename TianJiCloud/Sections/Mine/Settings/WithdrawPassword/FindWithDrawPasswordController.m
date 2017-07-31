@@ -1,19 +1,18 @@
 //
-//  MineSettingViewController.m
+//  FindWithDrawPasswordController.m
 //  TianJiCloud
 //
 //  Created by 朱鹏 on 2017/7/31.
 //  Copyright © 2017年 TianJiMoney. All rights reserved.
 //
 
-#import "MineSettingViewController.h"
+#import "FindWithDrawPasswordController.h"
 
-@interface MineSettingViewController ()
-@property (weak, nonatomic) IBOutlet UITableView *settingTableView;
+@interface FindWithDrawPasswordController ()
 
 @end
 
-@implementation MineSettingViewController
+@implementation FindWithDrawPasswordController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
