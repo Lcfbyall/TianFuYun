@@ -17,6 +17,7 @@
 @property (nonatomic,strong) TJSHomeListConfigurator *configurator;
 @property (nonatomic,strong) id<TJSHomeListInteractor> interactor;
 
+
 @property (weak, nonatomic) IBOutlet UITableView *productListTBView;
 
 

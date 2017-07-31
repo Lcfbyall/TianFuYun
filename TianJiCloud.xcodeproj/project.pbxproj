@@ -120,6 +120,8 @@
 		2C85E35E1F2ECE2400ADD360 /* CumulativeInvestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E35D1F2ECE2400ADD360 /* CumulativeInvestController.m */; };
 		2C85E3611F2ECE7300ADD360 /* WithdrawDepositController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E3601F2ECE7300ADD360 /* WithdrawDepositController.m */; };
 		2C85E3641F2ECE9400ADD360 /* WithdrawDepositRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E3631F2ECE9400ADD360 /* WithdrawDepositRecord.m */; };
+		2C85E3701F2ED87A00ADD360 /* MineHomeVCConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E36F1F2ED87A00ADD360 /* MineHomeVCConfig.m */; };
+		2C85E3731F2EDB1000ADD360 /* TJSBaseControllerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E3721F2EDB1000ADD360 /* TJSBaseControllerConfig.m */; };
 		2C89AD741F2B5C81005C29AC /* DiscoNewsDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C89AD731F2B5C81005C29AC /* DiscoNewsDetailController.m */; };
 		2C89AD791F2C5155005C29AC /* UISearchBar+TJSBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C89AD781F2C5155005C29AC /* UISearchBar+TJSBlock.m */; };
 		2C89AD801F2C7E39005C29AC /* ProductSearchVCConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C89AD7F1F2C7E39005C29AC /* ProductSearchVCConfig.m */; };
@@ -188,7 +190,7 @@
 		2CAF43191F2829CF00ABCA5E /* TJSProductInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF43151F2829CF00ABCA5E /* TJSProductInfo.m */; };
 		2CAF431A1F2829CF00ABCA5E /* TJSProductInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF43171F2829CF00ABCA5E /* TJSProductInfoModel.m */; };
 		2CAF431E1F282D9900ABCA5E /* TJSBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF431D1F282D9900ABCA5E /* TJSBaseTableViewCell.m */; };
-		2CAF43211F28398E00ABCA5E /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF43201F28398E00ABCA5E /* UIView+Frame.m */; };
+		2CAF43211F28398E00ABCA5E /* UIView+TJSFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF43201F28398E00ABCA5E /* UIView+TJSFrame.m */; };
 		D8B489F6D9BA2D941ED245C3 /* libPods-TianJiCloud.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24C0B56EAE3CA4A62571C4DD /* libPods-TianJiCloud.a */; };
 /* End PBXBuildFile section */
 
@@ -441,6 +443,11 @@
 		2C85E3601F2ECE7300ADD360 /* WithdrawDepositController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WithdrawDepositController.m; sourceTree = "<group>"; };
 		2C85E3621F2ECE9400ADD360 /* WithdrawDepositRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WithdrawDepositRecord.h; sourceTree = "<group>"; };
 		2C85E3631F2ECE9400ADD360 /* WithdrawDepositRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WithdrawDepositRecord.m; sourceTree = "<group>"; };
+		2C85E36E1F2ED87A00ADD360 /* MineHomeVCConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineHomeVCConfig.h; sourceTree = "<group>"; };
+		2C85E36F1F2ED87A00ADD360 /* MineHomeVCConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineHomeVCConfig.m; sourceTree = "<group>"; };
+		2C85E3711F2EDB1000ADD360 /* TJSBaseControllerConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSBaseControllerConfig.h; sourceTree = "<group>"; };
+		2C85E3721F2EDB1000ADD360 /* TJSBaseControllerConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSBaseControllerConfig.m; sourceTree = "<group>"; };
+		2C85E3741F2EDBDE00ADD360 /* TJSMineHomeVCProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TJSMineHomeVCProtocol.h; sourceTree = "<group>"; };
 		2C89AD721F2B5C81005C29AC /* DiscoNewsDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoNewsDetailController.h; sourceTree = "<group>"; };
 		2C89AD731F2B5C81005C29AC /* DiscoNewsDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoNewsDetailController.m; sourceTree = "<group>"; };
 		2C89AD751F2B5D8E005C29AC /* TJSDiscoNewListCellProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TJSDiscoNewListCellProtocol.h; sourceTree = "<group>"; };
@@ -584,8 +591,8 @@
 		2CAF43171F2829CF00ABCA5E /* TJSProductInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSProductInfoModel.m; sourceTree = "<group>"; };
 		2CAF431C1F282D9900ABCA5E /* TJSBaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSBaseTableViewCell.h; sourceTree = "<group>"; };
 		2CAF431D1F282D9900ABCA5E /* TJSBaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSBaseTableViewCell.m; sourceTree = "<group>"; };
-		2CAF431F1F28398E00ABCA5E /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
-		2CAF43201F28398E00ABCA5E /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		2CAF431F1F28398E00ABCA5E /* UIView+TJSFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TJSFrame.h"; sourceTree = "<group>"; };
+		2CAF43201F28398E00ABCA5E /* UIView+TJSFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TJSFrame.m"; sourceTree = "<group>"; };
 		78C8A77EBFE6464B5B247606 /* Pods-TianJiCloud.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TianJiCloud.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TianJiCloud/Pods-TianJiCloud.debug.xcconfig"; sourceTree = "<group>"; };
 		E0DD7EF282716E8411120566 /* Pods-TianJiCloud.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TianJiCloud.release.xcconfig"; path = "Pods/Target Support Files/Pods-TianJiCloud/Pods-TianJiCloud.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -1133,8 +1140,8 @@
 		2C4412611F21E08E00C453EF /* UIView */ = {
 			isa = PBXGroup;
 			children = (
-				2CAF431F1F28398E00ABCA5E /* UIView+Frame.h */,
-				2CAF43201F28398E00ABCA5E /* UIView+Frame.m */,
+				2CAF431F1F28398E00ABCA5E /* UIView+TJSFrame.h */,
+				2CAF43201F28398E00ABCA5E /* UIView+TJSFrame.m */,
 				2C89AD881F2C9FE5005C29AC /* UIView+ViewController.h */,
 				2C89AD891F2C9FE5005C29AC /* UIView+ViewController.m */,
 			);
@@ -1251,6 +1258,8 @@
 				2C8DE5931F29F5FF009B3AE2 /* TJSWeakScriptMessageHandler.m */,
 				2CAF42711F26E66500ABCA5E /* TJSBaseNetworkTool.h */,
 				2CAF42721F26E66500ABCA5E /* TJSBaseNetworkTool.m */,
+				2C85E3711F2EDB1000ADD360 /* TJSBaseControllerConfig.h */,
+				2C85E3721F2EDB1000ADD360 /* TJSBaseControllerConfig.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -1323,6 +1332,8 @@
 		2C85E2A91F2EBDFE00ADD360 /* VCConfig */ = {
 			isa = PBXGroup;
 			children = (
+				2C85E36E1F2ED87A00ADD360 /* MineHomeVCConfig.h */,
+				2C85E36F1F2ED87A00ADD360 /* MineHomeVCConfig.m */,
 			);
 			path = VCConfig;
 			sourceTree = "<group>";
@@ -1353,6 +1364,7 @@
 		2C85E2AF1F2EBDFE00ADD360 /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
+				2C85E3741F2EDBDE00ADD360 /* TJSMineHomeVCProtocol.h */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -2538,12 +2550,14 @@
 				2CAF42D81F281B8600ABCA5E /* ProductListVCConfig.m in Sources */,
 				2C4412821F21EA8900C453EF /* UIImage+Retinted.m in Sources */,
 				2C431E011F29C28500858C12 /* ProductFilterController.m in Sources */,
+				2C85E3701F2ED87A00ADD360 /* MineHomeVCConfig.m in Sources */,
 				2C44124B1F21D42600C453EF /* TJSAlertController.m in Sources */,
 				2C4412731F21E79900C453EF /* UIButton+IBInspectableState.m in Sources */,
 				2C85E3261F2EC22300ADD360 /* ZLPhotoPickerFooterCollectionReusableView.m in Sources */,
 				2C85E31D1F2EC22300ADD360 /* ZLPhotoPickerDatas.m in Sources */,
 				2C85E3121F2EC22300ADD360 /* ZLCameraView.m in Sources */,
 				2C4412061F219A5300C453EF /* UINavigationBar+StyleConfigure.m in Sources */,
+				2C85E3731F2EDB1000ADD360 /* TJSBaseControllerConfig.m in Sources */,
 				2C8DE58D1F29E081009B3AE2 /* TJSHomeListDataSourceImpl.m in Sources */,
 				2C89AD791F2C5155005C29AC /* UISearchBar+TJSBlock.m in Sources */,
 				2C85E3281F2EC22300ADD360 /* ZLPhotoPickerImageView.m in Sources */,
@@ -2560,7 +2574,7 @@
 				2C89AD841F2C91DE005C29AC /* UIColor+TJSiOS7Colors.m in Sources */,
 				2CAF42D71F281B8600ABCA5E /* TJSProductListCellLayoutConfig.m in Sources */,
 				2C85E30D1F2EC22300ADD360 /* YZFlowLayout.m in Sources */,
-				2CAF43211F28398E00ABCA5E /* UIView+Frame.m in Sources */,
+				2CAF43211F28398E00ABCA5E /* UIView+TJSFrame.m in Sources */,
 				2C8DE5791F29CE76009B3AE2 /* AllActivityViewController.m in Sources */,
 				2C8DE5731F29CE14009B3AE2 /* PersonalMessageController.m in Sources */,
 				2C85E30E1F2EC22300ADD360 /* UIImage+ZLPhotoLib.m in Sources */,

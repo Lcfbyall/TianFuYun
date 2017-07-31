@@ -6,14 +6,14 @@
 //  Copyright © 2017年 TianJiMoney. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "TJSBaseControllerConfig.h"
 
 #import "TJSBaseVCProtocol.h"
 
 @class ProductListViewController;
 
 
-@interface ProductListVCConfig : NSObject<TJSNavigationConfig>
+@interface ProductListVCConfig : TJSBaseControllerConfig<TJSNavigationConfig>
 
 - (void)setup:(ProductListViewController *)vc;
 

@@ -1,116 +1,116 @@
 //
-//  UIView+Frame.m
+//  UIView+TJSFrame.m
 //  TianJiCloud
 //
 //  Created by 朱鹏 on 17/7/26.
 //  Copyright © 2017年 TianJiMoney. All rights reserved.
 //
 
-#import "UIView+Frame.h"
+#import "UIView+TJSFrame.h"
 
-@implementation UIView (Frame)
+@implementation UIView (TJSFrame)
 
 
 /*
  *  坐标处理
  */
 // Retrieve and set the origin
-- (CGPoint)origin
+- (CGPoint)tjs_origin
 {
     return self.frame.origin;
 }
-- (void)setOrigin:(CGPoint)aPoint
+- (void)setTjs_origin:(CGPoint)aPoint
 {
     CGRect newframe = self.frame;
     newframe.origin = aPoint;
     self.frame = newframe;
 }
 // Retrieve and set the size
-- (CGSize)size
+- (CGSize)tjs_size
 {
     return self.frame.size;
 }
-- (void)setSize:(CGSize)aSize
+- (void)setTjs_size:(CGSize)aSize
 {
     CGRect newframe = self.frame;
     newframe.size = aSize;
     self.frame = newframe;
 }
 // Query other frame locations
-- (CGPoint)bottomRight
+- (CGPoint)tjs_bottomRight
 {
     CGFloat x = self.frame.origin.x + self.frame.size.width;
     CGFloat y = self.frame.origin.y + self.frame.size.height;
     return CGPointMake(x, y);
 }
-- (CGPoint) bottomLeft
+- (CGPoint) tjs_bottomLeft
 {
     CGFloat x = self.frame.origin.x;
     CGFloat y = self.frame.origin.y + self.frame.size.height;
     return CGPointMake(x, y);
 }
-- (CGPoint) topRight
+- (CGPoint) tjs_topRight
 {
     CGFloat x = self.frame.origin.x + self.frame.size.width;
     CGFloat y = self.frame.origin.y;
     return CGPointMake(x, y);
 }
 // Retrieve and set height, width, top, bottom, left, right
-- (CGFloat) height
+- (CGFloat) tjs_height
 {
     return self.frame.size.height;
 }
-- (void)setHeight:(CGFloat)newheight
+- (void)setTjs_height:(CGFloat)newheight
 {
     CGRect newframe      = self.frame;
     newframe.size.height = newheight;
     self.frame           = newframe;
 }
-- (CGFloat)width
+- (CGFloat)tjs_width
 {
     return self.frame.size.width;
 }
-- (void)setWidth:(CGFloat)newwidth
+- (void)setTjs_width:(CGFloat)newwidth
 {
     CGRect newframe     = self.frame;
     newframe.size.width = newwidth;
     self.frame          = newframe;
 }
-- (CGFloat)top
+- (CGFloat)tjs_top
 {
     return self.frame.origin.y;
 }
-- (void)setTop:(CGFloat)newtop
+- (void)setTjs_top:(CGFloat)newtop
 {
     CGRect newframe   = self.frame;
     newframe.origin.y = newtop;
     self.frame        = newframe;
 }
-- (CGFloat)left
+- (CGFloat)tjs_left
 {
     return self.frame.origin.x;
 }
-- (void)setLeft:(CGFloat)newleft
+- (void)setTjs_left:(CGFloat)newleft
 {
     CGRect newframe   = self.frame;
     newframe.origin.x = newleft;
     self.frame        = newframe;
 }
-- (CGFloat)bottom
+- (CGFloat)tjs_bottom
 {
     return self.frame.origin.y + self.frame.size.height;
 }
-- (void)setBottom:(CGFloat)newbottom
+- (void)setTjs_bottom:(CGFloat)newbottom
 {
     CGRect newframe   = self.frame;
     newframe.origin.y = newbottom - self.frame.size.height;
     self.frame        = newframe;
 }
-- (CGFloat)right
+- (CGFloat)tjs_right
 {
     return self.frame.origin.x + self.frame.size.width;
 }
-- (void)setRight:(CGFloat)newright
+- (void)setTjs_right:(CGFloat)newright
 {
     CGFloat delta      = newright - (self.frame.origin.x + self.frame.size.width);
     CGRect newframe    = self.frame;

@@ -1,13 +1,13 @@
 //
-//  CapitalRecordController.h
+//  TJSBaseControllerConfig.h
 //  TianJiCloud
 //
 //  Created by 朱鹏 on 2017/7/31.
 //  Copyright © 2017年 TianJiMoney. All rights reserved.
 //
 
-#import "YZDisplayViewController.h"
+#import <Foundation/Foundation.h>
 
-@interface CapitalRecordContainer : YZDisplayViewController
+@interface TJSBaseControllerConfig : NSObject
 
 @end

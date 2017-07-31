@@ -64,7 +64,7 @@
     
     if(![willShowVC isViewLoaded])
     {
-        willShowVC.view.frame = CGRectMake(offsetX,0, scrollView.width,scrollView.height - (self.tabBarController?(49+64):0));
+        willShowVC.view.frame = CGRectMake(offsetX,0, scrollView.tjs_width,scrollView.tjs_height - (self.tabBarController?(49+64):0));
         
         [self.tjs_contentScroll addSubview:willShowVC.view];
     }

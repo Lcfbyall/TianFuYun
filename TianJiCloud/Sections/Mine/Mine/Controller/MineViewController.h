@@ -8,6 +8,9 @@
 
 #import "TJSBaseViewController.h"
 
-@interface MineViewController : TJSBaseViewController
+#import "TJSMineHomeVCProtocol.h"
+
+
+@interface MineViewController : TJSBaseViewController<MineHomeVCConfig>
 
 @end

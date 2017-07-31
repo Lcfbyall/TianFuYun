@@ -6,17 +6,14 @@
 //  Copyright © 2017年 TianJiMoney. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "TJSBaseControllerConfig.h"
 
 #import "TJSBaseVCProtocol.h"
 
 @class DiscoNewsListController;
 
 
-
-
-
-@interface TJSDiscoNewsListVCConfig : NSObject<TJSNavigationConfig>
+@interface TJSDiscoNewsListVCConfig : TJSBaseControllerConfig<TJSNavigationConfig>
 
 - (void)setup:(DiscoNewsListController *)vc;
 

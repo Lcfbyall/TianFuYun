@@ -87,7 +87,7 @@
     
     if(![willShowVC isViewLoaded])
     {
-        willShowVC.view.frame = CGRectMake(offsetX,0, scrollView.width, scrollView.height);
+        willShowVC.view.frame = CGRectMake(offsetX,0, scrollView.tjs_width, scrollView.tjs_height);
         
         [self.contentScroll addSubview:willShowVC.view];
     }

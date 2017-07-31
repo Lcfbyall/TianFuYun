@@ -34,7 +34,7 @@
 /** 3. category **/
 #import "UIViewController+StackLevel.h"
 #import "UIViewController+RouteParams.h"
-#import "UIView+Frame.h"
+#import "UIView+TJSFrame.h"
 #import "UIView+ViewController.h"
 #import "UIColor+TJSiOS7Colors.h"
 
