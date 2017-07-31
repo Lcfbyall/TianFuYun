@@ -9,7 +9,7 @@
 #import "MineHomeVCConfig.h"
 
 #import "MineViewController.h"
-
+#import "UIImage+Resizeable.h"
 #import <BlocksKit/UIBarButtonItem+BlocksKit.h>
 
 
@@ -36,8 +36,7 @@
 
 - (void)setup:(MineViewController *)vc{
 
-
-    
+    _vc = vc;
 }
 
 
@@ -46,29 +45,24 @@
 - (NSArray <UIBarButtonItem *> *)tjs_leftBarButtonItems{
     
     //user_setup
-    
     WEAK_SELF(self);
     NSString *leftBarBtnImage  = @"avatar";
-    
-    UIBarButtonItem *leftItem  = [[UIBarButtonItem alloc] bk_initWithImage:IMAGEOriginal(leftBarBtnImage) style:UIBarButtonItemStylePlain handler:^(id sender) {
+    UIImage *img = [[[UIImage imageNamed:leftBarBtnImage] tjs_drawInSize:CGSizeMake(30, 30)] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    UIBarButtonItem *leftItem  = [[UIBarButtonItem alloc] bk_initWithImage:img style:UIBarButtonItemStylePlain handler:^(id sender) {
         STRONG_SELF(self);
         if(self){
-            
             
             if([self.vc conformsToProtocol:@protocol(MineHomeVCConfig)] &&
                [self.vc respondsToSelector:@selector(onTapLeftBarBtnToSettingList:)]){
                 
                 [self.vc onTapLeftBarBtnToSettingList:sender];
             }
-            
         }
     }];
     
     NSArray *leftBarButtonItems = _vc.navigationItem.leftBarButtonItems?:[NSArray array];
-    
     NSMutableArray *mutable = [leftBarButtonItems mutableCopy];
     [mutable addObject:leftItem];
-    
     return [mutable copy];
 }
 
@@ -77,8 +71,9 @@
     //show_money  显示金额
     //hide_money  隐藏金额
     WEAK_SELF(self);
-    NSString *rightBarBtnImage  = @"hide_money";
-    UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] bk_initWithImage:IMAGEOriginal(rightBarBtnImage) style:UIBarButtonItemStylePlain handler:^(id sender) {
+    NSString *rightBarBtnImage  = @"avatar";
+    UIImage *img = [[[UIImage imageNamed:rightBarBtnImage] tjs_drawInSize:CGSizeMake(30, 30)] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] bk_initWithImage:img style:UIBarButtonItemStylePlain handler:^(id sender) {
         STRONG_SELF(self);
         if(self){
             
@@ -93,7 +88,6 @@
     NSArray *rightBarButtonItems = _vc.navigationItem.rightBarButtonItems?:[NSArray array];
     NSMutableArray *mutable = [rightBarButtonItems mutableCopy];
     [mutable addObject:rightItem];
-    
     return [mutable copy];
 }
 

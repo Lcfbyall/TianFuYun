@@ -44,7 +44,6 @@
 }
 
 
-
 #pragma mark - <TJSProductListLayout>
 
 - (void)reloadTable{

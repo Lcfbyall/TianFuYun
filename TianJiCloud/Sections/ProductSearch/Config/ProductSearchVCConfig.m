@@ -75,7 +75,7 @@
     searchBar.tintColor      = [UIColor iOS7darkBlueColor];
     searchBar.barTintColor     = bgColor;
     
-    [searchBar setSearchFieldBackgroundImage:[UIImage imageWithColor:bgColor size:searchBar.bounds.size] forState:UIControlStateNormal];
+    [searchBar setSearchFieldBackgroundImage:[UIImage tjs_imageWithColor:bgColor size:searchBar.bounds.size] forState:UIControlStateNormal];
     
     [bgView addSubview:searchBar];
     

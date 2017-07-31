@@ -9,14 +9,13 @@
 #import "MineViewController.h"
 
 #import "MineHomeVCConfig.h"
-//#import "TJSHomeListConfigurator.h"
+#import "TJSMineHomeConfigurator.h"
 
 @interface MineViewController ()
 
-@property (nonatomic,strong) MineHomeVCConfig *homeConfig;
-//@property (nonatomic,strong) TJSHomeListConfigurator *configurator;
-//@property (nonatomic,strong) id<TJSHomeListInteractor> interactor;
-
+@property (nonatomic,strong) MineHomeVCConfig *minehomeConfig;
+@property (nonatomic,strong) TJSMineHomeConfigurator *configurator;
+@property (nonatomic,strong) id<TJSMineHomeInteractor> interactor;
 
 @property (weak, nonatomic) IBOutlet UITableView *mineTableView;
 
@@ -47,14 +46,23 @@
 
 - (void)setHomeConfig{
 
+    MineHomeVCConfig *minehomeConfig = [[MineHomeVCConfig alloc]init];
+    
+    [minehomeConfig setup:self];
+    
+    self.navigationItem.leftBarButtonItems = [minehomeConfig tjs_leftBarButtonItems];
+    
+    self.navigationItem.rightBarButtonItems = [minehomeConfig tjs_rightBarButtonItems];
+    
+    _minehomeConfig = minehomeConfig;
 }
 
 - (void)setupConfigurator{
 
-
+    _configurator = [[TJSMineHomeConfigurator alloc]init];
+    
+    [_configurator setup:self];
 }
-
-
 
 
 #pragma mark - <TJSBaseVCConfig>
@@ -77,7 +85,7 @@
 
 - (void)onTapLeftBarBtnToSettingList:(id)sender{
    
-    
+    [self tjs_pushViewController:SettingListVC animated:YES];
 }
 
 - (void)onTapRightBarBtnToHideSum:(id)sender{

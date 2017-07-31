@@ -10,13 +10,13 @@
 
 @implementation UIImage (FromColor)
 
-+ (UIImage *)imageWithColor:(UIColor *)color{
++ (UIImage *)tjs_imageWithColor:(UIColor *)color{
     
-    return [UIImage imageWithColor:color size:CGSizeMake(1.0f, 1.0f)];
+    return [UIImage tjs_imageWithColor:color size:CGSizeMake(1.0f, 1.0f)];
 }
 
 
-+ (UIImage *)imageWithColor:(UIColor *)color
++ (UIImage *)tjs_imageWithColor:(UIColor *)color
                        size:(CGSize)size{
     
     

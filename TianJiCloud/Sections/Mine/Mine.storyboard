@@ -38,6 +38,7 @@
                     <connections>
                         <outlet property="mineTableView" destination="6if-f7-fqe" id="9nB-6M-x50"/>
                         <segue destination="tdg-mW-QGh" kind="show" identifier="MineVCToMyOrderVC" id="mj5-Dw-2ey"/>
+                        <segue destination="mYY-YE-QnO" kind="show" identifier="MineHomeVCToSettingVC" id="dHc-Xt-t1W"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gXC-4q-h6f" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -69,6 +70,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XMH-L1-dcf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2711" y="-44"/>
+        </scene>
+        <!--MineSettingViewController-->
+        <scene sceneID="cZK-8O-ynK">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="MineSettingViewController" storyboardName="Settings" referencedIdentifier="MineSettingViewController" id="mYY-YE-QnO" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IOo-th-Igt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2651" y="488"/>
         </scene>
     </scenes>
 </document>

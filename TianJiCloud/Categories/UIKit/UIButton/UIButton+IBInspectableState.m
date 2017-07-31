@@ -200,7 +200,7 @@ static void * TJSUIButtonStateChangedContext = & TJSUIButtonStateChangedContext;
 - (UIColor *)tjs_backGroundColorForState:(UIControlState)state {
     
     UIImage *backGroundImage= [self backgroundImageForState:state];
-    return [backGroundImage colorAtPixel:CGPointZero];
+    return [backGroundImage tjs_colorAtPixel:CGPointZero];
 }
 - (void)tjs_setTitleColor:(UIColor *)titleColor
                  forState:(UIControlState)state {

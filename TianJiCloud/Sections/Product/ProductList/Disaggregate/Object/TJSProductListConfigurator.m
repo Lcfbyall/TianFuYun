@@ -8,6 +8,7 @@
 
 #import "TJSProductListConfigurator.h"
 #import "ProductListViewController.h"
+
 #import "TJSProductListInteractorImpl.h"
 #import "TJSProductListDataSourceImpl.h"
 #import "TJSProductListLayoutImpl.h"

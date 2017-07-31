@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		2C1BFEBD1F29779100665A71 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C1BFEBC1F29779100665A71 /* Home.storyboard */; };
 		2C1BFEBF1F2978C500665A71 /* Discovery.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C1BFEBE1F2978C500665A71 /* Discovery.storyboard */; };
+		2C300F7A1F2F327E00DD440E /* MineSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C300F791F2F327E00DD440E /* MineSettingViewController.m */; };
+		2C300F7C1F2F32BF00DD440E /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C300F7B1F2F32BF00DD440E /* Settings.storyboard */; };
 		2C431DEB1F299A9600858C12 /* HomeVCConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C431DE71F299A9600858C12 /* HomeVCConfig.m */; };
 		2C431DEC1F299A9600858C12 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C431DEA1F299A9600858C12 /* HomeViewController.m */; };
 		2C431DFE1F29C26700858C12 /* MessageKindListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C431DFA1F29C26700858C12 /* MessageKindListController.m */; };
@@ -26,7 +28,7 @@
 		2C4412021F219A5300C453EF /* UIColor+HEX.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4411EA1F219A5300C453EF /* UIColor+HEX.m */; };
 		2C4412031F219A5300C453EF /* UIDevice+CurrentArg.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4411ED1F219A5300C453EF /* UIDevice+CurrentArg.m */; };
 		2C4412041F219A5300C453EF /* UIImage+FromColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4411F01F219A5300C453EF /* UIImage+FromColor.m */; };
-		2C4412051F219A5300C453EF /* UIImage+Resizable.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4411F21F219A5300C453EF /* UIImage+Resizable.m */; };
+		2C4412051F219A5300C453EF /* UIImage+Stretchable.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4411F21F219A5300C453EF /* UIImage+Stretchable.m */; };
 		2C4412061F219A5300C453EF /* UINavigationBar+StyleConfigure.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4411F51F219A5300C453EF /* UINavigationBar+StyleConfigure.m */; };
 		2C4412311F21AA5900C453EF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C44122F1F21AA5900C453EF /* AppDelegate.m */; };
 		2C4412381F21B3DF00C453EF /* UIButton+TouchAreaInsets.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4412371F21B3DF00C453EF /* UIButton+TouchAreaInsets.m */; };
@@ -122,6 +124,25 @@
 		2C85E3641F2ECE9400ADD360 /* WithdrawDepositRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E3631F2ECE9400ADD360 /* WithdrawDepositRecord.m */; };
 		2C85E3701F2ED87A00ADD360 /* MineHomeVCConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E36F1F2ED87A00ADD360 /* MineHomeVCConfig.m */; };
 		2C85E3731F2EDB1000ADD360 /* TJSBaseControllerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E3721F2EDB1000ADD360 /* TJSBaseControllerConfig.m */; };
+		2C85E3771F2F02A200ADD360 /* TJSMineHomeConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E3761F2F02A200ADD360 /* TJSMineHomeConfigurator.m */; };
+		2C85E37A1F2F02B800ADD360 /* TJSMineHomeInteractorImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E3791F2F02B800ADD360 /* TJSMineHomeInteractorImpl.m */; };
+		2C85E37D1F2F031600ADD360 /* TJSMineHomeTableAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E37C1F2F031600ADD360 /* TJSMineHomeTableAdapter.m */; };
+		2C85E3831F2F042A00ADD360 /* TJSMineHomeDataSourceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E3821F2F042A00ADD360 /* TJSMineHomeDataSourceImpl.m */; };
+		2C85E3861F2F044600ADD360 /* TJSMineHomeLayoutImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E3851F2F044600ADD360 /* TJSMineHomeLayoutImpl.m */; };
+		2C85E3891F2F09D100ADD360 /* TJSMineHomeCellFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E3881F2F09D100ADD360 /* TJSMineHomeCellFactory.m */; };
+		2C85E38C1F2F09F100ADD360 /* TJSMineHomeCellLayoutConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E38B1F2F09F100ADD360 /* TJSMineHomeCellLayoutConfig.m */; };
+		2C85E3931F2F0B6500ADD360 /* TJSBaseMineHomeCellContentConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E3921F2F0B6500ADD360 /* TJSBaseMineHomeCellContentConfig.m */; };
+		2C85E3971F2F155700ADD360 /* MineHomeBaseTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E3961F2F155700ADD360 /* MineHomeBaseTableCell.m */; };
+		2C85E39B1F2F1A3100ADD360 /* TJSMineHomeOrderCellContentConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E39A1F2F1A3100ADD360 /* TJSMineHomeOrderCellContentConfig.m */; };
+		2C85E39E1F2F1A5800ADD360 /* TJSMineHomeInvestCellContentConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E39D1F2F1A5800ADD360 /* TJSMineHomeInvestCellContentConfig.m */; };
+		2C85E3A11F2F1ACC00ADD360 /* TJSMineHomeBalanceCellContentConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E3A01F2F1ACC00ADD360 /* TJSMineHomeBalanceCellContentConfig.m */; };
+		2C85E3A41F2F1AF900ADD360 /* TJSMineHomeDefaultCellContentConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E3A31F2F1AF900ADD360 /* TJSMineHomeDefaultCellContentConfig.m */; };
+		2C85E3A71F2F1BEB00ADD360 /* MineHomeDefaultCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E3A61F2F1BEB00ADD360 /* MineHomeDefaultCell.m */; };
+		2C85E3AA1F2F1C0000ADD360 /* MineHomeOrderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E3A91F2F1C0000ADD360 /* MineHomeOrderCell.m */; };
+		2C85E3AD1F2F1C1D00ADD360 /* MineHomeInvestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E3AC1F2F1C1D00ADD360 /* MineHomeInvestCell.m */; };
+		2C85E3B01F2F1C2B00ADD360 /* MineHomeBalanceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E3AF1F2F1C2B00ADD360 /* MineHomeBalanceCell.m */; };
+		2C85E3B41F2F269D00ADD360 /* MineHomeCellInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E3B31F2F269D00ADD360 /* MineHomeCellInfoModel.m */; };
+		2C85E3B71F2F302900ADD360 /* UIImage+Resizeable.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E3B61F2F302900ADD360 /* UIImage+Resizeable.m */; };
 		2C89AD741F2B5C81005C29AC /* DiscoNewsDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C89AD731F2B5C81005C29AC /* DiscoNewsDetailController.m */; };
 		2C89AD791F2C5155005C29AC /* UISearchBar+TJSBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C89AD781F2C5155005C29AC /* UISearchBar+TJSBlock.m */; };
 		2C89AD801F2C7E39005C29AC /* ProductSearchVCConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C89AD7F1F2C7E39005C29AC /* ProductSearchVCConfig.m */; };
@@ -215,6 +236,9 @@
 		24C0B56EAE3CA4A62571C4DD /* libPods-TianJiCloud.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TianJiCloud.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C1BFEBC1F29779100665A71 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		2C1BFEBE1F2978C500665A71 /* Discovery.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Discovery.storyboard; sourceTree = "<group>"; };
+		2C300F781F2F327E00DD440E /* MineSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineSettingViewController.h; sourceTree = "<group>"; };
+		2C300F791F2F327E00DD440E /* MineSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineSettingViewController.m; sourceTree = "<group>"; };
+		2C300F7B1F2F32BF00DD440E /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		2C431DE61F299A9600858C12 /* HomeVCConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeVCConfig.h; sourceTree = "<group>"; };
 		2C431DE71F299A9600858C12 /* HomeVCConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeVCConfig.m; sourceTree = "<group>"; };
 		2C431DE91F299A9600858C12 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
@@ -248,8 +272,8 @@
 		2C4411ED1F219A5300C453EF /* UIDevice+CurrentArg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+CurrentArg.m"; sourceTree = "<group>"; };
 		2C4411EF1F219A5300C453EF /* UIImage+FromColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+FromColor.h"; sourceTree = "<group>"; };
 		2C4411F01F219A5300C453EF /* UIImage+FromColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FromColor.m"; sourceTree = "<group>"; };
-		2C4411F11F219A5300C453EF /* UIImage+Resizable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resizable.h"; sourceTree = "<group>"; };
-		2C4411F21F219A5300C453EF /* UIImage+Resizable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resizable.m"; sourceTree = "<group>"; };
+		2C4411F11F219A5300C453EF /* UIImage+Stretchable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Stretchable.h"; sourceTree = "<group>"; };
+		2C4411F21F219A5300C453EF /* UIImage+Stretchable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Stretchable.m"; sourceTree = "<group>"; };
 		2C4411F41F219A5300C453EF /* UINavigationBar+StyleConfigure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+StyleConfigure.h"; sourceTree = "<group>"; };
 		2C4411F51F219A5300C453EF /* UINavigationBar+StyleConfigure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+StyleConfigure.m"; sourceTree = "<group>"; };
 		2C4411F71F219A5300C453EF /* TJSConstKeyDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSConstKeyDefine.h; sourceTree = "<group>"; };
@@ -448,6 +472,48 @@
 		2C85E3711F2EDB1000ADD360 /* TJSBaseControllerConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSBaseControllerConfig.h; sourceTree = "<group>"; };
 		2C85E3721F2EDB1000ADD360 /* TJSBaseControllerConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSBaseControllerConfig.m; sourceTree = "<group>"; };
 		2C85E3741F2EDBDE00ADD360 /* TJSMineHomeVCProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TJSMineHomeVCProtocol.h; sourceTree = "<group>"; };
+		2C85E3751F2F02A200ADD360 /* TJSMineHomeConfigurator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSMineHomeConfigurator.h; sourceTree = "<group>"; };
+		2C85E3761F2F02A200ADD360 /* TJSMineHomeConfigurator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSMineHomeConfigurator.m; sourceTree = "<group>"; };
+		2C85E3781F2F02B800ADD360 /* TJSMineHomeInteractorImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSMineHomeInteractorImpl.h; sourceTree = "<group>"; };
+		2C85E3791F2F02B800ADD360 /* TJSMineHomeInteractorImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSMineHomeInteractorImpl.m; sourceTree = "<group>"; };
+		2C85E37B1F2F031600ADD360 /* TJSMineHomeTableAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSMineHomeTableAdapter.h; sourceTree = "<group>"; };
+		2C85E37C1F2F031600ADD360 /* TJSMineHomeTableAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSMineHomeTableAdapter.m; sourceTree = "<group>"; };
+		2C85E37E1F2F03A300ADD360 /* TJSMineHomeCellProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TJSMineHomeCellProtocol.h; sourceTree = "<group>"; };
+		2C85E37F1F2F03D100ADD360 /* TJSMineHomeConfigurateProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TJSMineHomeConfigurateProtocol.h; sourceTree = "<group>"; };
+		2C85E3801F2F03EB00ADD360 /* TJSMineHomePrivateProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TJSMineHomePrivateProtocol.h; sourceTree = "<group>"; };
+		2C85E3811F2F042A00ADD360 /* TJSMineHomeDataSourceImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSMineHomeDataSourceImpl.h; sourceTree = "<group>"; };
+		2C85E3821F2F042A00ADD360 /* TJSMineHomeDataSourceImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSMineHomeDataSourceImpl.m; sourceTree = "<group>"; };
+		2C85E3841F2F044600ADD360 /* TJSMineHomeLayoutImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSMineHomeLayoutImpl.h; sourceTree = "<group>"; };
+		2C85E3851F2F044600ADD360 /* TJSMineHomeLayoutImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSMineHomeLayoutImpl.m; sourceTree = "<group>"; };
+		2C85E3871F2F09D100ADD360 /* TJSMineHomeCellFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSMineHomeCellFactory.h; sourceTree = "<group>"; };
+		2C85E3881F2F09D100ADD360 /* TJSMineHomeCellFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSMineHomeCellFactory.m; sourceTree = "<group>"; };
+		2C85E38A1F2F09F100ADD360 /* TJSMineHomeCellLayoutConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSMineHomeCellLayoutConfig.h; sourceTree = "<group>"; };
+		2C85E38B1F2F09F100ADD360 /* TJSMineHomeCellLayoutConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSMineHomeCellLayoutConfig.m; sourceTree = "<group>"; };
+		2C85E3901F2F0A7400ADD360 /* TJSMineHomeCellLayoutProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TJSMineHomeCellLayoutProtocol.h; sourceTree = "<group>"; };
+		2C85E3911F2F0B6500ADD360 /* TJSBaseMineHomeCellContentConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSBaseMineHomeCellContentConfig.h; sourceTree = "<group>"; };
+		2C85E3921F2F0B6500ADD360 /* TJSBaseMineHomeCellContentConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSBaseMineHomeCellContentConfig.m; sourceTree = "<group>"; };
+		2C85E3951F2F155700ADD360 /* MineHomeBaseTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineHomeBaseTableCell.h; sourceTree = "<group>"; };
+		2C85E3961F2F155700ADD360 /* MineHomeBaseTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineHomeBaseTableCell.m; sourceTree = "<group>"; };
+		2C85E3991F2F1A3100ADD360 /* TJSMineHomeOrderCellContentConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSMineHomeOrderCellContentConfig.h; sourceTree = "<group>"; };
+		2C85E39A1F2F1A3100ADD360 /* TJSMineHomeOrderCellContentConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSMineHomeOrderCellContentConfig.m; sourceTree = "<group>"; };
+		2C85E39C1F2F1A5800ADD360 /* TJSMineHomeInvestCellContentConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSMineHomeInvestCellContentConfig.h; sourceTree = "<group>"; };
+		2C85E39D1F2F1A5800ADD360 /* TJSMineHomeInvestCellContentConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSMineHomeInvestCellContentConfig.m; sourceTree = "<group>"; };
+		2C85E39F1F2F1ACC00ADD360 /* TJSMineHomeBalanceCellContentConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSMineHomeBalanceCellContentConfig.h; sourceTree = "<group>"; };
+		2C85E3A01F2F1ACC00ADD360 /* TJSMineHomeBalanceCellContentConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSMineHomeBalanceCellContentConfig.m; sourceTree = "<group>"; };
+		2C85E3A21F2F1AF900ADD360 /* TJSMineHomeDefaultCellContentConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSMineHomeDefaultCellContentConfig.h; sourceTree = "<group>"; };
+		2C85E3A31F2F1AF900ADD360 /* TJSMineHomeDefaultCellContentConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSMineHomeDefaultCellContentConfig.m; sourceTree = "<group>"; };
+		2C85E3A51F2F1BEB00ADD360 /* MineHomeDefaultCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineHomeDefaultCell.h; sourceTree = "<group>"; };
+		2C85E3A61F2F1BEB00ADD360 /* MineHomeDefaultCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineHomeDefaultCell.m; sourceTree = "<group>"; };
+		2C85E3A81F2F1C0000ADD360 /* MineHomeOrderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineHomeOrderCell.h; sourceTree = "<group>"; };
+		2C85E3A91F2F1C0000ADD360 /* MineHomeOrderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineHomeOrderCell.m; sourceTree = "<group>"; };
+		2C85E3AB1F2F1C1D00ADD360 /* MineHomeInvestCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineHomeInvestCell.h; sourceTree = "<group>"; };
+		2C85E3AC1F2F1C1D00ADD360 /* MineHomeInvestCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineHomeInvestCell.m; sourceTree = "<group>"; };
+		2C85E3AE1F2F1C2A00ADD360 /* MineHomeBalanceCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineHomeBalanceCell.h; sourceTree = "<group>"; };
+		2C85E3AF1F2F1C2B00ADD360 /* MineHomeBalanceCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineHomeBalanceCell.m; sourceTree = "<group>"; };
+		2C85E3B21F2F269D00ADD360 /* MineHomeCellInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineHomeCellInfoModel.h; sourceTree = "<group>"; };
+		2C85E3B31F2F269D00ADD360 /* MineHomeCellInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineHomeCellInfoModel.m; sourceTree = "<group>"; };
+		2C85E3B51F2F302900ADD360 /* UIImage+Resizeable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resizeable.h"; sourceTree = "<group>"; };
+		2C85E3B61F2F302900ADD360 /* UIImage+Resizeable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resizeable.m"; sourceTree = "<group>"; };
 		2C89AD721F2B5C81005C29AC /* DiscoNewsDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoNewsDetailController.h; sourceTree = "<group>"; };
 		2C89AD731F2B5C81005C29AC /* DiscoNewsDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoNewsDetailController.m; sourceTree = "<group>"; };
 		2C89AD751F2B5D8E005C29AC /* TJSDiscoNewListCellProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TJSDiscoNewListCellProtocol.h; sourceTree = "<group>"; };
@@ -921,12 +987,14 @@
 			children = (
 				2C4411EF1F219A5300C453EF /* UIImage+FromColor.h */,
 				2C4411F01F219A5300C453EF /* UIImage+FromColor.m */,
-				2C4411F11F219A5300C453EF /* UIImage+Resizable.h */,
-				2C4411F21F219A5300C453EF /* UIImage+Resizable.m */,
+				2C4411F11F219A5300C453EF /* UIImage+Stretchable.h */,
+				2C4411F21F219A5300C453EF /* UIImage+Stretchable.m */,
 				2C4412771F21E83D00C453EF /* UIImage+ColorAtPixel.h */,
 				2C4412781F21E83D00C453EF /* UIImage+ColorAtPixel.m */,
 				2C4412801F21EA8900C453EF /* UIImage+Retinted.h */,
 				2C4412811F21EA8900C453EF /* UIImage+Retinted.m */,
+				2C85E3B51F2F302900ADD360 /* UIImage+Resizeable.h */,
+				2C85E3B61F2F302900ADD360 /* UIImage+Resizeable.m */,
 			);
 			path = UIImage;
 			sourceTree = "<group>";
@@ -1325,6 +1393,13 @@
 		2C85E2A81F2EBDFE00ADD360 /* CellConfig */ = {
 			isa = PBXGroup;
 			children = (
+				2C85E3871F2F09D100ADD360 /* TJSMineHomeCellFactory.h */,
+				2C85E3881F2F09D100ADD360 /* TJSMineHomeCellFactory.m */,
+				2C85E38A1F2F09F100ADD360 /* TJSMineHomeCellLayoutConfig.h */,
+				2C85E38B1F2F09F100ADD360 /* TJSMineHomeCellLayoutConfig.m */,
+				2C85E3911F2F0B6500ADD360 /* TJSBaseMineHomeCellContentConfig.h */,
+				2C85E3921F2F0B6500ADD360 /* TJSBaseMineHomeCellContentConfig.m */,
+				2C85E3981F2F19B500ADD360 /* CellsConfig */,
 			);
 			path = CellConfig;
 			sourceTree = "<group>";
@@ -1350,6 +1425,16 @@
 		2C85E2AD1F2EBDFE00ADD360 /* Disaggregate */ = {
 			isa = PBXGroup;
 			children = (
+				2C85E3751F2F02A200ADD360 /* TJSMineHomeConfigurator.h */,
+				2C85E3761F2F02A200ADD360 /* TJSMineHomeConfigurator.m */,
+				2C85E3781F2F02B800ADD360 /* TJSMineHomeInteractorImpl.h */,
+				2C85E3791F2F02B800ADD360 /* TJSMineHomeInteractorImpl.m */,
+				2C85E3811F2F042A00ADD360 /* TJSMineHomeDataSourceImpl.h */,
+				2C85E3821F2F042A00ADD360 /* TJSMineHomeDataSourceImpl.m */,
+				2C85E3841F2F044600ADD360 /* TJSMineHomeLayoutImpl.h */,
+				2C85E3851F2F044600ADD360 /* TJSMineHomeLayoutImpl.m */,
+				2C85E37B1F2F031600ADD360 /* TJSMineHomeTableAdapter.h */,
+				2C85E37C1F2F031600ADD360 /* TJSMineHomeTableAdapter.m */,
 			);
 			path = Disaggregate;
 			sourceTree = "<group>";
@@ -1365,6 +1450,10 @@
 			isa = PBXGroup;
 			children = (
 				2C85E3741F2EDBDE00ADD360 /* TJSMineHomeVCProtocol.h */,
+				2C85E37F1F2F03D100ADD360 /* TJSMineHomeConfigurateProtocol.h */,
+				2C85E3801F2F03EB00ADD360 /* TJSMineHomePrivateProtocol.h */,
+				2C85E37E1F2F03A300ADD360 /* TJSMineHomeCellProtocol.h */,
+				2C85E3901F2F0A7400ADD360 /* TJSMineHomeCellLayoutProtocol.h */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -1379,6 +1468,7 @@
 		2C85E2B11F2EBDFE00ADD360 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2C85E3941F2F153400ADD360 /* Cell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1678,6 +1768,8 @@
 		2C85E36B1F2ECF3700ADD360 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				2C300F781F2F327E00DD440E /* MineSettingViewController.h */,
+				2C300F791F2F327E00DD440E /* MineSettingViewController.m */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -1694,6 +1786,47 @@
 			children = (
 			);
 			path = GesturePassword;
+			sourceTree = "<group>";
+		};
+		2C85E3941F2F153400ADD360 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2C85E3951F2F155700ADD360 /* MineHomeBaseTableCell.h */,
+				2C85E3961F2F155700ADD360 /* MineHomeBaseTableCell.m */,
+				2C85E3AE1F2F1C2A00ADD360 /* MineHomeBalanceCell.h */,
+				2C85E3AF1F2F1C2B00ADD360 /* MineHomeBalanceCell.m */,
+				2C85E3A81F2F1C0000ADD360 /* MineHomeOrderCell.h */,
+				2C85E3A91F2F1C0000ADD360 /* MineHomeOrderCell.m */,
+				2C85E3AB1F2F1C1D00ADD360 /* MineHomeInvestCell.h */,
+				2C85E3AC1F2F1C1D00ADD360 /* MineHomeInvestCell.m */,
+				2C85E3A51F2F1BEB00ADD360 /* MineHomeDefaultCell.h */,
+				2C85E3A61F2F1BEB00ADD360 /* MineHomeDefaultCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		2C85E3981F2F19B500ADD360 /* CellsConfig */ = {
+			isa = PBXGroup;
+			children = (
+				2C85E39F1F2F1ACC00ADD360 /* TJSMineHomeBalanceCellContentConfig.h */,
+				2C85E3A01F2F1ACC00ADD360 /* TJSMineHomeBalanceCellContentConfig.m */,
+				2C85E3991F2F1A3100ADD360 /* TJSMineHomeOrderCellContentConfig.h */,
+				2C85E39A1F2F1A3100ADD360 /* TJSMineHomeOrderCellContentConfig.m */,
+				2C85E39C1F2F1A5800ADD360 /* TJSMineHomeInvestCellContentConfig.h */,
+				2C85E39D1F2F1A5800ADD360 /* TJSMineHomeInvestCellContentConfig.m */,
+				2C85E3A21F2F1AF900ADD360 /* TJSMineHomeDefaultCellContentConfig.h */,
+				2C85E3A31F2F1AF900ADD360 /* TJSMineHomeDefaultCellContentConfig.m */,
+			);
+			path = CellsConfig;
+			sourceTree = "<group>";
+		};
+		2C85E3B11F2F267500ADD360 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2C85E3B21F2F269D00ADD360 /* MineHomeCellInfoModel.h */,
+				2C85E3B31F2F269D00ADD360 /* MineHomeCellInfoModel.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		2C89AD761F2C5136005C29AC /* UISearchBar */ = {
@@ -1881,11 +2014,12 @@
 			isa = PBXGroup;
 			children = (
 				2C85E2AA1F2EBDFE00ADD360 /* Controller */,
+				2C85E2B01F2EBDFE00ADD360 /* Store */,
+				2C85E2AE1F2EBDFE00ADD360 /* NetworkTool */,
+				2C85E3B11F2F267500ADD360 /* Model */,
 				2C85E2A71F2EBDFE00ADD360 /* Config */,
 				2C85E2AD1F2EBDFE00ADD360 /* Disaggregate */,
-				2C85E2AE1F2EBDFE00ADD360 /* NetworkTool */,
 				2C85E2AF1F2EBDFE00ADD360 /* Protocol */,
-				2C85E2B01F2EBDFE00ADD360 /* Store */,
 				2C85E2B11F2EBDFE00ADD360 /* View */,
 			);
 			path = Mine;
@@ -1977,6 +2111,7 @@
 		2C8DE5E91F2AE729009B3AE2 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				2C300F7B1F2F32BF00DD440E /* Settings.storyboard */,
 				2C85E36B1F2ECF3700ADD360 /* Settings */,
 				2C85E3661F2ECF3700ADD360 /* UploadIcon */,
 				2C85E36A1F2ECF3700ADD360 /* Profile */,
@@ -2252,8 +2387,8 @@
 				2C89AD7A1F2C7C2B005C29AC /* TJSProductListVCProtocol.h */,
 				2CAF42D01F281B8600ABCA5E /* TJSProductListConfigurateProtocol.h */,
 				2CAF42D11F281B8600ABCA5E /* TJSProductListPrivateProtocol.h */,
-				2CAF42CE1F281B8600ABCA5E /* TJSProductCellLayoutProtocol.h */,
 				2CAF42CF1F281B8600ABCA5E /* TJSProductListCellProtocol.h */,
+				2CAF42CE1F281B8600ABCA5E /* TJSProductCellLayoutProtocol.h */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -2460,6 +2595,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C85E3331F2EC6E500ADD360 /* Oder.storyboard in Resources */,
+				2C300F7C1F2F32BF00DD440E /* Settings.storyboard in Resources */,
 				2C4411BE1F21981E00C453EF /* LaunchScreen.storyboard in Resources */,
 				2CAF42F91F28273300ABCA5E /* ProductListCell.xib in Resources */,
 				2C431E111F29C6B200858C12 /* ProductFilter.storyboard in Resources */,
@@ -2548,6 +2684,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CAF42D81F281B8600ABCA5E /* ProductListVCConfig.m in Sources */,
+				2C85E3B41F2F269D00ADD360 /* MineHomeCellInfoModel.m in Sources */,
 				2C4412821F21EA8900C453EF /* UIImage+Retinted.m in Sources */,
 				2C431E011F29C28500858C12 /* ProductFilterController.m in Sources */,
 				2C85E3701F2ED87A00ADD360 /* MineHomeVCConfig.m in Sources */,
@@ -2569,6 +2706,7 @@
 				2C85E3241F2EC22300ADD360 /* ZLPhotoPickerCollectionView.m in Sources */,
 				2C89AD741F2B5C81005C29AC /* DiscoNewsDetailController.m in Sources */,
 				2C8DE5A91F2ACA75009B3AE2 /* TJSBaseControllerContainer.m in Sources */,
+				2C85E3AD1F2F1C1D00ADD360 /* MineHomeInvestCell.m in Sources */,
 				2C8DE5B61F2AD8B3009B3AE2 /* DiscoveryRoadShowListCell.m in Sources */,
 				2C85E31F1F2EC22300ADD360 /* UIViewController+Alert.m in Sources */,
 				2C89AD841F2C91DE005C29AC /* UIColor+TJSiOS7Colors.m in Sources */,
@@ -2589,10 +2727,13 @@
 				2C4412A51F2201FF00C453EF /* TJSAnimatingRequestAccessory.m in Sources */,
 				2C44123F1F21D2A600C453EF /* GVUserDefaults+TJSGlobalProperties.m in Sources */,
 				2C4412591F21DDA900C453EF /* UIWindow+Transition.m in Sources */,
+				2C85E3891F2F09D100ADD360 /* TJSMineHomeCellFactory.m in Sources */,
+				2C85E3AA1F2F1C0000ADD360 /* MineHomeOrderCell.m in Sources */,
 				2C431DEB1F299A9600858C12 /* HomeVCConfig.m in Sources */,
 				2C4412031F219A5300C453EF /* UIDevice+CurrentArg.m in Sources */,
 				2C8DE6171F2B43A8009B3AE2 /* DiscoRoadShowListController.m in Sources */,
 				2C85E30F1F2EC22300ADD360 /* UIView+ZLExtension.m in Sources */,
+				2C85E3861F2F044600ADD360 /* TJSMineHomeLayoutImpl.m in Sources */,
 				2C85E35B1F2ECDF900ADD360 /* CapitalRecordListController.m in Sources */,
 				2C85E2B21F2EBDFE00ADD360 /* MineViewController.m in Sources */,
 				2C4412A61F2201FF00C453EF /* TJSBaseRequest+TJSSingleRequestBlock.m in Sources */,
@@ -2602,6 +2743,7 @@
 				2C8DE5811F29D4F7009B3AE2 /* TJSHomeListTableAdapter.m in Sources */,
 				2C431DEC1F299A9600858C12 /* HomeViewController.m in Sources */,
 				2C4412021F219A5300C453EF /* UIColor+HEX.m in Sources */,
+				2C85E3771F2F02A200ADD360 /* TJSMineHomeConfigurator.m in Sources */,
 				2C85E3611F2ECE7300ADD360 /* WithdrawDepositController.m in Sources */,
 				2C85E3171F2EC22300ADD360 /* ZLPhotoPickerBrowserViewController.m in Sources */,
 				2CAF42F71F28273300ABCA5E /* ProductListCellTextContentView.m in Sources */,
@@ -2630,8 +2772,10 @@
 				2CAF42731F26E66500ABCA5E /* TJSBaseNetworkTool.m in Sources */,
 				2C8DE5F11F2AE82F009B3AE2 /* TJSDiscoNewsInteracotImpl.m in Sources */,
 				2C44128B1F21ECA600C453EF /* UITextView+LengthLimited.m in Sources */,
+				2C85E3931F2F0B6500ADD360 /* TJSBaseMineHomeCellContentConfig.m in Sources */,
 				2C8DE5FF1F2AEAF6009B3AE2 /* DiscoveryNewsInfoModel.m in Sources */,
 				2CAF42DE1F281B8600ABCA5E /* ProductListNetworkTool.m in Sources */,
+				2C85E37A1F2F02B800ADD360 /* TJSMineHomeInteractorImpl.m in Sources */,
 				2CAF42D51F281B8600ABCA5E /* TJSProductListTextContentConfig.m in Sources */,
 				2C431DFE1F29C26700858C12 /* MessageKindListController.m in Sources */,
 				2C85E3091F2EC22300ADD360 /* DALabeledCircularProgressView.m in Sources */,
@@ -2639,14 +2783,20 @@
 				2C44124E1F21D54400C453EF /* TJSSystemAlertMaker.m in Sources */,
 				2C85E3111F2EC22300ADD360 /* ZLCameraImageView.m in Sources */,
 				2C85E3271F2EC22300ADD360 /* ZLPhotoPickerGroupTableViewCell.m in Sources */,
+				2C85E3A41F2F1AF900ADD360 /* TJSMineHomeDefaultCellContentConfig.m in Sources */,
 				2C85E3231F2EC22300ADD360 /* ZLPhotoPickerViewController.m in Sources */,
+				2C85E3A71F2F1BEB00ADD360 /* MineHomeDefaultCell.m in Sources */,
 				2C4412011F219A5300C453EF /* NSString+StringSize.m in Sources */,
+				2C85E3831F2F042A00ADD360 /* TJSMineHomeDataSourceImpl.m in Sources */,
 				2C8DE5761F29CE51009B3AE2 /* PlatformAnnounceController.m in Sources */,
 				2CAF43181F2829CF00ABCA5E /* TJSProductEvent.m in Sources */,
+				2C85E3B01F2F1C2B00ADD360 /* MineHomeBalanceCell.m in Sources */,
 				2CAF42DB1F281B8600ABCA5E /* ProductListViewController.m in Sources */,
 				2CAF42D31F281B8600ABCA5E /* TJSProductListContentConfig.m in Sources */,
 				2C4412A81F2201FF00C453EF /* TJSUploadRequest.m in Sources */,
 				2C4412791F21E83D00C453EF /* UIImage+ColorAtPixel.m in Sources */,
+				2C85E3971F2F155700ADD360 /* MineHomeBaseTableCell.m in Sources */,
+				2C85E38C1F2F09F100ADD360 /* TJSMineHomeCellLayoutConfig.m in Sources */,
 				2C4412041F219A5300C453EF /* UIImage+FromColor.m in Sources */,
 				2CAF42851F27261A00ABCA5E /* TJSProductDeleteApi.m in Sources */,
 				2CAF43081F2828C200ABCA5E /* TJSProductListInteractorImpl.m in Sources */,
@@ -2655,13 +2805,14 @@
 				2C8DE5FB1F2AEA59009B3AE2 /* TJSDiscoNewsDataSorceImpl.m in Sources */,
 				2C85E3311F2EC63100ADD360 /* MyOrderListViewController.m in Sources */,
 				2C85E3081F2EC22300ADD360 /* DACircularProgressView.m in Sources */,
+				2C300F7A1F2F327E00DD440E /* MineSettingViewController.m in Sources */,
 				2C4412B41F2207CD00C453EF /* TJSLoginStateUtil.m in Sources */,
 				2C85E3191F2EC22300ADD360 /* ZLPhotoPickerBrowserPhotoScrollView.m in Sources */,
 				2C85E3221F2EC22300ADD360 /* ZLPhotoPickerGroupViewController.m in Sources */,
 				2C85E3381F2ECA6A00ADD360 /* MyFavViewController.m in Sources */,
 				2C85E30A1F2EC22300ADD360 /* UIView+Frame.m in Sources */,
 				2C4412381F21B3DF00C453EF /* UIButton+TouchAreaInsets.m in Sources */,
-				2C4412051F219A5300C453EF /* UIImage+Resizable.m in Sources */,
+				2C4412051F219A5300C453EF /* UIImage+Stretchable.m in Sources */,
 				2C85E3101F2EC22300ADD360 /* ZLCamera.m in Sources */,
 				2C4411AD1F21981E00C453EF /* main.m in Sources */,
 				2C85E3131F2EC22300ADD360 /* ZLCameraViewController.m in Sources */,
@@ -2677,10 +2828,12 @@
 				2CAF43111F2829B300ABCA5E /* TJSAppInfo.m in Sources */,
 				2C8DE5841F29D509009B3AE2 /* TJSHomeListInteractorImpl.m in Sources */,
 				2C85E31E1F2EC22300ADD360 /* ZLPhotoPickerGroup.m in Sources */,
+				2C85E39E1F2F1A5800ADD360 /* TJSMineHomeInvestCellContentConfig.m in Sources */,
 				2C89AD8A1F2C9FE5005C29AC /* UIView+ViewController.m in Sources */,
 				2C4412A91F2201FF00C453EF /* TJWUrlArgumentsFilter.m in Sources */,
 				2C85E3151F2EC22300ADD360 /* ZLPhotoRect.m in Sources */,
 				2C8DE5B31F2AD8A0009B3AE2 /* DiscoveryNewsListCell.m in Sources */,
+				2C85E37D1F2F031600ADD360 /* TJSMineHomeTableAdapter.m in Sources */,
 				2C85E31C1F2EC22300ADD360 /* ZLPhotoAssets.m in Sources */,
 				2C4412671F21E17200C453EF /* NSMutableAttributedString+Formated.m in Sources */,
 				2C8DE58A1F29E066009B3AE2 /* TJSHomeListLayoutImpl.m in Sources */,
@@ -2693,9 +2846,11 @@
 				2C85E3201F2EC22300ADD360 /* ZLNavigationController.m in Sources */,
 				2C85E3441F2ECBC900ADD360 /* FeedbackContainerController.m in Sources */,
 				2CAF426F1F26E01E00ABCA5E /* TJSProductListApi.m in Sources */,
+				2C85E3B71F2F302900ADD360 /* UIImage+Resizeable.m in Sources */,
 				2C8DE5CC1F2AE3BC009B3AE2 /* DiscoNewsListController.m in Sources */,
 				2C85E3181F2EC22300ADD360 /* ZLPhotoPickerBrowserPhotoImageView.m in Sources */,
 				2CAF43061F2828C200ABCA5E /* TJSProductListConfigurator.m in Sources */,
+				2C85E39B1F2F1A3100ADD360 /* TJSMineHomeOrderCellContentConfig.m in Sources */,
 				2CAF42D61F281B8600ABCA5E /* TJSBaseProductListContentConfig.m in Sources */,
 				2C85E31A1F2EC22300ADD360 /* ZLPhotoPickerBrowserPhotoView.m in Sources */,
 				2C44127C1F21E97700C453EF /* UITextField+PlaceHolder.m in Sources */,
@@ -2708,6 +2863,7 @@
 				2C4412851F21EB3100C453EF /* UITextView+EditRect.m in Sources */,
 				2C85E33E1F2ECB1300ADD360 /* UseAgreementController.m in Sources */,
 				2C8DE6051F2AECCD009B3AE2 /* TJSDiscoNewsLayoutImpl.m in Sources */,
+				2C85E3A11F2F1ACC00ADD360 /* TJSMineHomeBalanceCellContentConfig.m in Sources */,
 				2C4412971F22004500C453EF /* TJSThemeService.m in Sources */,
 				2CAF431E1F282D9900ABCA5E /* TJSBaseTableViewCell.m in Sources */,
 				2C85E34A1F2ECBF500ADD360 /* FeedbackHistoryController.m in Sources */,

@@ -58,6 +58,12 @@ static NSString *const DiscoryNewsDetailVC  = @"DiscoNewsDetailController";
 static NSString *const DiscoryRoadShowListVC = @"DiscoRoadShowListController";
 
 
+#pragma mark - Setting identifier
+
+static NSString *const SettingListVC = @"MineSettingViewController";
+
+
+
 
 
 

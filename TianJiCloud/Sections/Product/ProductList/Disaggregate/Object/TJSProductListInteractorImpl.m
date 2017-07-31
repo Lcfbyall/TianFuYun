@@ -11,7 +11,6 @@
 @interface TJSProductListInteractorImpl ()
 
 
-
 @end
 
 @implementation TJSProductListInteractorImpl
@@ -27,8 +26,6 @@
 
     return self;
 }
-
-
 
 
 #pragma mark - <TJSProductListInteractor>

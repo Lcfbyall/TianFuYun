@@ -13,7 +13,6 @@
 
 @interface TJSProductListInteractorImpl : NSObject<TJSProductListInteractor,TJSProductListLayoutDelegate>
 
-
 @property(nonatomic,weak) id<TJSProductListInteractorDelegate> delegate;
 
 @property(nonatomic,strong) id<TJSProductListDataSource> dataSource;

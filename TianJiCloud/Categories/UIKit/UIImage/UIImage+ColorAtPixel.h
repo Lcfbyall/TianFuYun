@@ -11,7 +11,7 @@
 @interface UIImage (ColorAtPixel)
 
 //取图片某一像素点的颜色
-- (UIColor *)colorAtPixel:(CGPoint)point;
+- (UIColor *)tjs_colorAtPixel:(CGPoint)point;
 
 
 @end

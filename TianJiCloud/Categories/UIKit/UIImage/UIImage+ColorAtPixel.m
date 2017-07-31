@@ -11,7 +11,7 @@
 @implementation UIImage (ColorAtPixel)
 
 //取图片某一像素点的颜色
-- (UIColor *)colorAtPixel:(CGPoint)point{
+- (UIColor *)tjs_colorAtPixel:(CGPoint)point{
     
     if (!CGRectContainsPoint(CGRectMake(0.0f, 0.0f, self.size.width, self.size.height), point))
     {

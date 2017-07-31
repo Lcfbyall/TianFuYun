@@ -28,9 +28,13 @@
     return instance;
 }
 
+
+
+#pragma mark - <TJSProductCellLayoutConfig>
+
 - (CGSize)contentSize:(TJSProductInfoModel *)model cellWidth:(CGFloat)cellWidth{
     
-    id<TJSProductListContentConfig>config =
+    id<TJSProductListContentConfig> config =
      [[TJSProductListContentConfigFactory sharedFacotry] configBy:model.product];
     
     if(config){

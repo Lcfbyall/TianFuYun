@@ -10,9 +10,9 @@
 
 @interface UIImage (FromColor)
 
-+ (UIImage *)imageWithColor:(UIColor *)color;
++ (UIImage *)tjs_imageWithColor:(UIColor *)color;
 
-+ (UIImage *)imageWithColor:(UIColor *)color
++ (UIImage *)tjs_imageWithColor:(UIColor *)color
                        size:(CGSize)size;
 
 @end

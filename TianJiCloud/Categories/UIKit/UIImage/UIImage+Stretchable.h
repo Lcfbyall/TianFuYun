@@ -1,5 +1,5 @@
 //
-//  UIImage+Resizable.h
+//  UIImage+Stretchable.h
 //  TianJiCloud
 //
 //  Created by 朱鹏 on 2017/7/21.
@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIImage (Resizable)
+@interface UIImage (Stretchable)
 
-+ (UIImage *)resizableImage:(NSString *)name;
++ (UIImage *)tjs_stretchableImage:(NSString *)name;
+
 
 @end
