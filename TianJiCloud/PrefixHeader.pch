@@ -15,6 +15,7 @@
 
 
 /** 1. Macro **/
+
 #import "TJSToolMacroDefine.h"
 #import "TJSConstKeyDefine.h"
 #import "TJSConstKeyForNetworkDefine.h"
@@ -23,7 +24,10 @@
 #import "TJSConstKeyForRouteParamsDefine.h"
 #import "TJSApiParamasKeyDefine.h"
 
+
+
 /** 2. Service **/
+
 #import "TJSHudAlert.h"
 #import "TJSSystemAlertMaker.h"
 #import "TJSThemeService.h"
@@ -32,11 +36,27 @@
 
 
 /** 3. category **/
+
 #import "UIViewController+StackLevel.h"
 #import "UIViewController+RouteParams.h"
 #import "UIView+TJSFrame.h"
 #import "UIView+ViewController.h"
+#import "UIImage+FromColor.h"
+#import "UIImage+Resizeable.h"
+#import "UISearchBar+TJSBlock.h"
 #import "UIColor+TJSiOS7Colors.h"
 
 
+/** 4. vender **/
+
+#import <MJRefresh.h>
+#import <Masonry.h>
+#import <BlocksKit/UIBarButtonItem+BlocksKit.h>
+
+
+
+
 #endif /* PrefixHeader_pch */
+
+
+

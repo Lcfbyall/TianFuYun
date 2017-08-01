@@ -7,7 +7,6 @@
 //
 
 #import "TJSMineHomeLayoutImpl.h"
-#import <MJRefresh.h>
 
 @interface TJSMineHomeLayoutImpl ()
 

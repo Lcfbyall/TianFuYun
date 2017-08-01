@@ -9,9 +9,6 @@
 #import "ProductSearchVCConfig.h"
 #import "ProductSearchController.h"
 
-#import "UIImage+FromColor.h"
-#import "UISearchBar+TJSBlock.h"
-#import <BlocksKit/UIBarButtonItem+BlocksKit.h>
 
 @interface ProductSearchVCConfig ()
 

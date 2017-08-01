@@ -17,7 +17,8 @@
 {
     UIViewController *currentViewController = [self tjs_topMostController];
     
-    while ([currentViewController isKindOfClass:[UINavigationController class]] && [(UINavigationController*)currentViewController topViewController])
+    while ([currentViewController isKindOfClass:[UINavigationController class]] &&
+           [(UINavigationController*)currentViewController topViewController])
     {
         
         currentViewController = [(UINavigationController*)currentViewController topViewController];

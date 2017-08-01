@@ -10,7 +10,6 @@
 
 #import "MineViewController.h"
 #import "UIImage+Resizeable.h"
-#import <BlocksKit/UIBarButtonItem+BlocksKit.h>
 
 
 @interface MineHomeVCConfig ()

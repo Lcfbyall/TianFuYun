@@ -9,10 +9,6 @@
 #import "ProductListVCConfig.h"
 #import "ProductListViewController.h"
 
-#import "UIImage+FromColor.h"
-#import "UISearchBar+TJSBlock.h"
-#import <BlocksKit/UIBarButtonItem+BlocksKit.h>
-
 @interface ProductListVCConfig ()<UISearchBarDelegate>
 
 @property (nonatomic,weak) ProductListViewController *vc;

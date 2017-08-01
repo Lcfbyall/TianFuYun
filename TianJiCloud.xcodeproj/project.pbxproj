@@ -170,6 +170,14 @@
 		2C89AD841F2C91DE005C29AC /* UIColor+TJSiOS7Colors.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C89AD831F2C91DE005C29AC /* UIColor+TJSiOS7Colors.m */; };
 		2C89AD871F2C9A90005C29AC /* UISearchBar+CommanStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C89AD861F2C9A90005C29AC /* UISearchBar+CommanStyle.m */; };
 		2C89AD8A1F2C9FE5005C29AC /* UIView+ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C89AD891F2C9FE5005C29AC /* UIView+ViewController.m */; };
+		2C8BB7791F30238800E2D75F /* HomeHeaderContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8BB7781F30238800E2D75F /* HomeHeaderContainer.m */; };
+		2C8BB77F1F302EE800E2D75F /* HomeFooterContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8BB77E1F302EE800E2D75F /* HomeFooterContainer.m */; };
+		2C8BB7821F30616700E2D75F /* HomeFooterCollectionLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8BB7811F30616700E2D75F /* HomeFooterCollectionLayout.m */; };
+		2C8BB7851F30617900E2D75F /* HomeHeaderCollectionLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8BB7841F30617900E2D75F /* HomeHeaderCollectionLayout.m */; };
+		2C8BB7891F30666500E2D75F /* HomeHeaderCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8BB7871F30666500E2D75F /* HomeHeaderCollectionCell.m */; };
+		2C8BB78A1F30666500E2D75F /* HomeHeaderCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C8BB7881F30666500E2D75F /* HomeHeaderCollectionCell.xib */; };
+		2C8BB78E1F30667D00E2D75F /* HomeFooterCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8BB78C1F30667D00E2D75F /* HomeFooterCollectionCell.m */; };
+		2C8BB78F1F30667D00E2D75F /* HomeFooterCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C8BB78D1F30667D00E2D75F /* HomeFooterCollectionCell.xib */; };
 		2C8DE5731F29CE14009B3AE2 /* PersonalMessageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE5721F29CE14009B3AE2 /* PersonalMessageController.m */; };
 		2C8DE5761F29CE51009B3AE2 /* PlatformAnnounceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE5751F29CE51009B3AE2 /* PlatformAnnounceController.m */; };
 		2C8DE5791F29CE76009B3AE2 /* AllActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE5781F29CE76009B3AE2 /* AllActivityViewController.m */; };
@@ -578,6 +586,20 @@
 		2C89AD861F2C9A90005C29AC /* UISearchBar+CommanStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISearchBar+CommanStyle.m"; sourceTree = "<group>"; };
 		2C89AD881F2C9FE5005C29AC /* UIView+ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ViewController.h"; sourceTree = "<group>"; };
 		2C89AD891F2C9FE5005C29AC /* UIView+ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ViewController.m"; sourceTree = "<group>"; };
+		2C8BB7771F30238800E2D75F /* HomeHeaderContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeHeaderContainer.h; sourceTree = "<group>"; };
+		2C8BB7781F30238800E2D75F /* HomeHeaderContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeHeaderContainer.m; sourceTree = "<group>"; };
+		2C8BB77D1F302EE800E2D75F /* HomeFooterContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeFooterContainer.h; sourceTree = "<group>"; };
+		2C8BB77E1F302EE800E2D75F /* HomeFooterContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeFooterContainer.m; sourceTree = "<group>"; };
+		2C8BB7801F30616700E2D75F /* HomeFooterCollectionLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeFooterCollectionLayout.h; sourceTree = "<group>"; };
+		2C8BB7811F30616700E2D75F /* HomeFooterCollectionLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeFooterCollectionLayout.m; sourceTree = "<group>"; };
+		2C8BB7831F30617900E2D75F /* HomeHeaderCollectionLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeHeaderCollectionLayout.h; sourceTree = "<group>"; };
+		2C8BB7841F30617900E2D75F /* HomeHeaderCollectionLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeHeaderCollectionLayout.m; sourceTree = "<group>"; };
+		2C8BB7861F30666500E2D75F /* HomeHeaderCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeHeaderCollectionCell.h; sourceTree = "<group>"; };
+		2C8BB7871F30666500E2D75F /* HomeHeaderCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeHeaderCollectionCell.m; sourceTree = "<group>"; };
+		2C8BB7881F30666500E2D75F /* HomeHeaderCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeHeaderCollectionCell.xib; sourceTree = "<group>"; };
+		2C8BB78B1F30667D00E2D75F /* HomeFooterCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeFooterCollectionCell.h; sourceTree = "<group>"; };
+		2C8BB78C1F30667D00E2D75F /* HomeFooterCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeFooterCollectionCell.m; sourceTree = "<group>"; };
+		2C8BB78D1F30667D00E2D75F /* HomeFooterCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeFooterCollectionCell.xib; sourceTree = "<group>"; };
 		2C8DE5711F29CE14009B3AE2 /* PersonalMessageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalMessageController.h; sourceTree = "<group>"; };
 		2C8DE5721F29CE14009B3AE2 /* PersonalMessageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalMessageController.m; sourceTree = "<group>"; };
 		2C8DE5741F29CE51009B3AE2 /* PlatformAnnounceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlatformAnnounceController.h; sourceTree = "<group>"; };
@@ -765,6 +787,7 @@
 				2C8DE57A1F29D406009B3AE2 /* Disaggregate */,
 				2C431DE41F299A9600858C12 /* Config */,
 				2C8DE5851F29DA8E009B3AE2 /* Protocol */,
+				2C8BB7761F30236F00E2D75F /* View */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -993,8 +1016,8 @@
 			isa = PBXGroup;
 			children = (
 				2C89AD761F2C5136005C29AC /* UISearchBar */,
-				2C4411F31F219A5300C453EF /* UINavigationBar */,
 				2C44124F1F21D9A900C453EF /* UIViewController */,
+				2C4411F31F219A5300C453EF /* UINavigationBar */,
 				2C44128C1F21ED1200C453EF /* UINavigationController */,
 				2C4412631F21E0C600C453EF /* UIBarButtonItem */,
 				2C4412621F21E0AA00C453EF /* UILabel */,
@@ -1920,6 +1943,27 @@
 			path = Disaggregate;
 			sourceTree = "<group>";
 		};
+		2C8BB7761F30236F00E2D75F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2C8BB7771F30238800E2D75F /* HomeHeaderContainer.h */,
+				2C8BB7781F30238800E2D75F /* HomeHeaderContainer.m */,
+				2C8BB7831F30617900E2D75F /* HomeHeaderCollectionLayout.h */,
+				2C8BB7841F30617900E2D75F /* HomeHeaderCollectionLayout.m */,
+				2C8BB7861F30666500E2D75F /* HomeHeaderCollectionCell.h */,
+				2C8BB7871F30666500E2D75F /* HomeHeaderCollectionCell.m */,
+				2C8BB7881F30666500E2D75F /* HomeHeaderCollectionCell.xib */,
+				2C8BB77D1F302EE800E2D75F /* HomeFooterContainer.h */,
+				2C8BB77E1F302EE800E2D75F /* HomeFooterContainer.m */,
+				2C8BB78B1F30667D00E2D75F /* HomeFooterCollectionCell.h */,
+				2C8BB78C1F30667D00E2D75F /* HomeFooterCollectionCell.m */,
+				2C8BB78D1F30667D00E2D75F /* HomeFooterCollectionCell.xib */,
+				2C8BB7801F30616700E2D75F /* HomeFooterCollectionLayout.h */,
+				2C8BB7811F30616700E2D75F /* HomeFooterCollectionLayout.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		2C8DE57A1F29D406009B3AE2 /* Disaggregate */ = {
 			isa = PBXGroup;
 			children = (
@@ -2669,12 +2713,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C8BB78A1F30666500E2D75F /* HomeHeaderCollectionCell.xib in Resources */,
 				2C85E3331F2EC6E500ADD360 /* Oder.storyboard in Resources */,
 				2C300F7C1F2F32BF00DD440E /* Settings.storyboard in Resources */,
 				2C7A34511F2F64DA004DD566 /* BankCardManager.storyboard in Resources */,
 				2C4411BE1F21981E00C453EF /* LaunchScreen.storyboard in Resources */,
 				2CAF42F91F28273300ABCA5E /* ProductListCell.xib in Resources */,
 				2C431E111F29C6B200858C12 /* ProductFilter.storyboard in Resources */,
+				2C8BB78F1F30667D00E2D75F /* HomeFooterCollectionCell.xib in Resources */,
 				2C431E0F1F29C59C00858C12 /* Message.storyboard in Resources */,
 				2C7A34591F2F685B004DD566 /* UseAgreement.storyboard in Resources */,
 				2C300F8D1F2F3D4700DD440E /* Profile.storyboard in Resources */,
@@ -2788,6 +2834,7 @@
 				2C85E3731F2EDB1000ADD360 /* TJSBaseControllerConfig.m in Sources */,
 				2C8DE58D1F29E081009B3AE2 /* TJSHomeListDataSourceImpl.m in Sources */,
 				2C89AD791F2C5155005C29AC /* UISearchBar+TJSBlock.m in Sources */,
+				2C8BB7851F30617900E2D75F /* HomeHeaderCollectionLayout.m in Sources */,
 				2C85E3281F2EC22300ADD360 /* ZLPhotoPickerImageView.m in Sources */,
 				2C44123C1F21D27700C453EF /* GVUserDefaults.m in Sources */,
 				2CAF42DD1F281B8600ABCA5E /* ProductDeleteNetworkTool.m in Sources */,
@@ -2904,6 +2951,7 @@
 				2C85E3191F2EC22300ADD360 /* ZLPhotoPickerBrowserPhotoScrollView.m in Sources */,
 				2C85E3221F2EC22300ADD360 /* ZLPhotoPickerGroupViewController.m in Sources */,
 				2C85E3381F2ECA6A00ADD360 /* MyFavViewController.m in Sources */,
+				2C8BB7791F30238800E2D75F /* HomeHeaderContainer.m in Sources */,
 				2C85E30A1F2EC22300ADD360 /* UIView+Frame.m in Sources */,
 				2C4412381F21B3DF00C453EF /* UIButton+TouchAreaInsets.m in Sources */,
 				2C4412051F219A5300C453EF /* UIImage+Stretchable.m in Sources */,
@@ -2930,6 +2978,7 @@
 				2C85E37D1F2F031600ADD360 /* TJSMineHomeTableAdapter.m in Sources */,
 				2C85E31C1F2EC22300ADD360 /* ZLPhotoAssets.m in Sources */,
 				2C4412671F21E17200C453EF /* NSMutableAttributedString+Formated.m in Sources */,
+				2C8BB7891F30666500E2D75F /* HomeHeaderCollectionCell.m in Sources */,
 				2C8DE58A1F29E066009B3AE2 /* TJSHomeListLayoutImpl.m in Sources */,
 				2C4412431F21D36200C453EF /* TJSEnumValueService.m in Sources */,
 				2CAF43091F2828C200ABCA5E /* TJSProductListLayoutImpl.m in Sources */,
@@ -2937,6 +2986,7 @@
 				2CAF430A1F2828C200ABCA5E /* TJSProductListTableAdapter.m in Sources */,
 				2C8DE5EE1F2AE7D0009B3AE2 /* TJSDiscoNewsConfigurator.m in Sources */,
 				2C8DE5CD1F2AE3BC009B3AE2 /* DiscoveryNewsCollectLayout.m in Sources */,
+				2C8BB78E1F30667D00E2D75F /* HomeFooterCollectionCell.m in Sources */,
 				2C8DE5F41F2AE849009B3AE2 /* TJSDiscoNewsListAdapter.m in Sources */,
 				2C85E3201F2EC22300ADD360 /* ZLNavigationController.m in Sources */,
 				2C85E3441F2ECBC900ADD360 /* FeedbackContainerController.m in Sources */,
@@ -2958,8 +3008,10 @@
 				2CAF427A1F26EAA600ABCA5E /* AppVersionNetworkTool.m in Sources */,
 				2C4412851F21EB3100C453EF /* UITextView+EditRect.m in Sources */,
 				2C85E33E1F2ECB1300ADD360 /* UseAgreementController.m in Sources */,
+				2C8BB77F1F302EE800E2D75F /* HomeFooterContainer.m in Sources */,
 				2C8DE6051F2AECCD009B3AE2 /* TJSDiscoNewsLayoutImpl.m in Sources */,
 				2C85E3A11F2F1ACC00ADD360 /* TJSMineHomeBalanceCellContentConfig.m in Sources */,
+				2C8BB7821F30616700E2D75F /* HomeFooterCollectionLayout.m in Sources */,
 				2C4412971F22004500C453EF /* TJSThemeService.m in Sources */,
 				2CAF431E1F282D9900ABCA5E /* TJSBaseTableViewCell.m in Sources */,
 				2C85E34A1F2ECBF500ADD360 /* FeedbackHistoryController.m in Sources */,

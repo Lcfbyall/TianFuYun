@@ -8,7 +8,6 @@
 
 #import "TJSHomeListLayoutImpl.h"
 
-#import <MJRefresh.h>
 
 @interface TJSHomeListLayoutImpl ()
 

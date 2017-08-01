@@ -49,7 +49,7 @@
     
     
     //2.
-    _tableAdapter = [[TJSHomeListTableAdapter alloc]init];
+    _tableAdapter = [[TJSHomeListTableAdapter alloc]initWithTableView:tableView];
     _tableAdapter.interactor   = _interactor;
     _tableAdapter.cellDelegate = vc;
     

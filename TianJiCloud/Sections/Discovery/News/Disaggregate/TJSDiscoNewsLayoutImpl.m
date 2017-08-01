@@ -8,7 +8,6 @@
 
 #import "TJSDiscoNewsLayoutImpl.h"
 
-#import <MJRefresh.h>
 
 @interface TJSDiscoNewsLayoutImpl ()
 

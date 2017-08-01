@@ -1,21 +1,21 @@
 //
-//  DiscoveryNewsCollectLayout.m
+//  HomeHeaderCollectionLayout.m
 //  TianJiCloud
 //
-//  Created by 朱鹏 on 17/7/28.
+//  Created by 朱鹏 on 2017/8/1.
 //  Copyright © 2017年 TianJiMoney. All rights reserved.
 //
 
-#import "DiscoveryNewsCollectLayout.h"
+#import "HomeHeaderCollectionLayout.h"
 
-@interface DiscoveryNewsCollectLayout ()
+@interface HomeHeaderCollectionLayout ()
 
 @property (strong, nonatomic) NSMutableArray *layoutInfo;
 
+
 @end
 
-
-@implementation DiscoveryNewsCollectLayout
+@implementation HomeHeaderCollectionLayout
 
 #pragma mark - UICollectionViewLayout
 
@@ -24,6 +24,8 @@
     [super prepareLayout];
     
     self.layoutInfo = [NSMutableArray array];
+    
+    
     
     NSIndexPath *indexPath;
     
@@ -68,25 +70,8 @@
     
     if(layoutAttribute.representedElementCategory == UICollectionElementCategoryCell)
     {
-        if(indexPath.section == 0){
-
-            CGSize size         = [self.delegate collectionView:self.collectionView layout:self sizeForItemAtIndexPath:indexPath];
-            
-            UIEdgeInsets insets = [self.delegate collectionView:self.collectionView layout:self InsetsForItemAtIndexPath:indexPath];
-            
-            if(indexPath.item == 0 ){
-                
-                layoutAttribute.frame = CGRectMake(insets.left, insets.top, size.width, size.height);
-            
-            }else{
-                
-                UICollectionViewLayoutAttributes *lastAttribute = [self layoutAttributesForItemAtIndexPath:[NSIndexPath indexPathForItem:indexPath.item-1 inSection:indexPath.section]];
-            
-                
-                layoutAttribute.frame = CGRectMake(insets.left, lastAttribute.frame.origin.y + lastAttribute.frame.size.height + insets.top, size.width, size.height);
-                
-            }
-        }
+        
+        
     }
     
     return layoutAttribute;
@@ -105,5 +90,6 @@
     
     return CGSizeMake(self.collectionView.frame.size.width, maxHeight);
 }
+
 
 @end

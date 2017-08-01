@@ -1,21 +1,23 @@
 //
-//  DiscoveryNewsCollectLayout.m
+//  HomeFooterCollectionLayout.m
 //  TianJiCloud
 //
-//  Created by 朱鹏 on 17/7/28.
+//  Created by 朱鹏 on 2017/8/1.
 //  Copyright © 2017年 TianJiMoney. All rights reserved.
 //
 
-#import "DiscoveryNewsCollectLayout.h"
+#import "HomeFooterCollectionLayout.h"
 
-@interface DiscoveryNewsCollectLayout ()
+
+@interface HomeFooterCollectionLayout ()
 
 @property (strong, nonatomic) NSMutableArray *layoutInfo;
+
 
 @end
 
 
-@implementation DiscoveryNewsCollectLayout
+@implementation HomeFooterCollectionLayout
 
 #pragma mark - UICollectionViewLayout
 
@@ -25,6 +27,7 @@
     
     self.layoutInfo = [NSMutableArray array];
     
+
     NSIndexPath *indexPath;
     
     NSInteger numSections = [self.collectionView numberOfSections];
@@ -68,22 +71,30 @@
     
     if(layoutAttribute.representedElementCategory == UICollectionElementCategoryCell)
     {
+    
         if(indexPath.section == 0){
-
-            CGSize size         = [self.delegate collectionView:self.collectionView layout:self sizeForItemAtIndexPath:indexPath];
+        
             
-            UIEdgeInsets insets = [self.delegate collectionView:self.collectionView layout:self InsetsForItemAtIndexPath:indexPath];
+            CGSize size  = [self.delegate collectionView:self.collectionView layout:self sizeForItemAtIndexPath:indexPath];
             
-            if(indexPath.item == 0 ){
+            if(indexPath.item == 0){
+            
+                layoutAttribute.frame = CGRectMake(self.insets.left, self.insets.top, size.width, size.height);
                 
-                layoutAttribute.frame = CGRectMake(insets.left, insets.top, size.width, size.height);
-            
             }else{
-                
-                UICollectionViewLayoutAttributes *lastAttribute = [self layoutAttributesForItemAtIndexPath:[NSIndexPath indexPathForItem:indexPath.item-1 inSection:indexPath.section]];
             
+                UICollectionViewLayoutAttributes *lastAttribute = [self layoutAttributesForItemAtIndexPath:[NSIndexPath indexPathForItem:indexPath.item-1 inSection:indexPath.section]];
                 
-                layoutAttribute.frame = CGRectMake(insets.left, lastAttribute.frame.origin.y + lastAttribute.frame.size.height + insets.top, size.width, size.height);
+                layoutAttribute.frame =
+                
+                CGRectMake(
+                           lastAttribute.frame.origin.x + self.insets.top,
+                                                   
+                           lastAttribute.frame.origin.y,
+                           
+                           size.width,
+                           
+                           size.height);
                 
             }
         }
@@ -99,11 +110,14 @@
 
 - (CGSize)collectionViewContentSize{
     
-    CGFloat maxHeight = 0;
-    UICollectionViewLayoutAttributes *attributes = [self.layoutInfo lastObject];
-    maxHeight = attributes.frame.origin.y + attributes.frame.size.height + 15;
+    CGFloat maxWidth = 0;
     
-    return CGSizeMake(self.collectionView.frame.size.width, maxHeight);
+    UICollectionViewLayoutAttributes *attributes = [self.layoutInfo lastObject];
+    
+    maxWidth = attributes.frame.origin.x + attributes.frame.size.width + self.insets.right;
+    
+    return CGSizeMake(maxWidth, self.collectionView.frame.size.width);
 }
+
 
 @end

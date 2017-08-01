@@ -118,7 +118,6 @@
     }];
     
     self.viewControllers = controllersArr;
-    
 }
 
 

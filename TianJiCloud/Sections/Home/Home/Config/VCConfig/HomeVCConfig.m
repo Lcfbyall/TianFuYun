@@ -10,9 +10,6 @@
 #import "HomeVCConfig.h"
 #import "HomeViewController.h"
 
-#import "UIImage+FromColor.h"
-#import "UISearchBar+TJSBlock.h"
-#import <BlocksKit/UIBarButtonItem+BlocksKit.h>
 
 @interface HomeVCConfig ()
 

@@ -85,7 +85,7 @@
 
 - (void)onTapLeftBarBtnToSettingList:(id)sender{
    
-    [self tjs_pushViewController:SettingListVC animated:YES];
+    [UIViewController tjs_pushViewController:SettingListVC animated:YES];
 }
 
 - (void)onTapRightBarBtnToHideSum:(id)sender{

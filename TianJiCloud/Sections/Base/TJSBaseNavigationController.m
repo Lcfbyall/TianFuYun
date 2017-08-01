@@ -8,7 +8,6 @@
 
 #import "TJSBaseNavigationController.h"
 #import "TJSBaseViewController.h"
-#import <BlocksKit/UIBarButtonItem+BlocksKit.h>
 
 @interface TJSBaseNavigationController ()<UIGestureRecognizerDelegate>
 

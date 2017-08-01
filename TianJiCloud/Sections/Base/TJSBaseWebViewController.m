@@ -9,8 +9,6 @@
 #import "TJSBaseWebViewController.h"
 #import "TJSWeakScriptMessageHandler.h"
 
-#import <MJRefresh.h>
-#import <Masonry.h>
 
 
 @interface TJSBaseWebViewController ()

@@ -55,18 +55,14 @@
     
     id model = [[self.interactor items] objectAtIndex:indexPath.row];
     
-    
     cell = [((TJSProductListCellFactory *)self.cellFactory)
                      cellInTable:tableView
              forProductInfoModel:model];
     
-    
     //cell 的 delegate 给 vc ,self.cellDelegate就是vc
     [(ProductListCell *)cell setDelegate:self.cellDelegate];
     
-    
     return cell;
-    
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -98,8 +94,6 @@
         
         [cell.delegate onTapCell:model];
     }
-
 }
-
 
 @end

@@ -84,17 +84,17 @@
 
 - (void)onTapLeftBarBtnToMessageKindList:(id)sender{
 
-    [self tjs_pushViewController:MessageKindListVC animated:YES];
+    [UIViewController tjs_pushViewController:MessageKindListVC animated:YES];
 }
 
 - (void)onTapRightBarBtnToProductFilter:(id)sender{
 
-    [self tjs_pushViewController:ProductFilterVC animated:YES];
+    [UIViewController tjs_pushViewController:ProductFilterVC animated:YES];
 }
 
 - (void)onTapSearchBarToProductSearch:(id)sender{
     
-    [self tjs_pushViewController:ProductSearchVC
+    [UIViewController tjs_pushViewController:ProductSearchVC
                           params:@{HideBackBarButtonItemKey:@YES}
                      backHandler:^(id  _Nullable obj) {
                          
@@ -108,7 +108,7 @@
 
 - (BOOL)onTapCell:(id)event{
   
-    [self tjs_pushViewController:ProductDetailVC
+    [UIViewController tjs_pushViewController:ProductDetailVC
                           params:@{}
                         animated:YES];
 

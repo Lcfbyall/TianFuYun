@@ -17,5 +17,6 @@
 
 @property (nonatomic,weak) id<TJSProductListCellDelegate> cellDelegate;
 
+- (instancetype)initWithTableView:(UITableView *)tableView;
 
 @end

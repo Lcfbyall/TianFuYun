@@ -8,9 +8,11 @@
 
 #import "TJSHomeListTableAdapter.h"
 
+#import "HomeHeaderContainer.h"
+#import "HomeFooterContainer.h"
+
 #import "TJSProductInfoModel.h"
 #import "ProductListCell.h"
-
 
 //cell的配置就是产品的，不再是home的了
 #import "TJSProductListCellFactory.h"
@@ -20,20 +22,35 @@
 
 @property (nonatomic,strong) TJSProductListCellFactory *cellFactory;
 
-@end
+@property (nonatomic,weak)  UITableView *tableView;
+@property (nonatomic,strong)HomeHeaderContainer *headerContainer;
+@property (nonatomic,strong)HomeFooterContainer *footerContainer;
 
+@end
 
 @implementation TJSHomeListTableAdapter
 
-- (instancetype)init{
+
+- (instancetype)initWithTableView:(UITableView *)tableView{
     
     self = [super init];
     if(self){
       
         _cellFactory = [[TJSProductListCellFactory alloc]init];
         
+        _tableView   = tableView;
+        
+        [self setupTableView];
     }
     return self;
+}
+
+- (void)setupTableView{
+  
+    _headerContainer = [HomeHeaderContainer headerContainer];
+    _footerContainer = [HomeFooterContainer footerContainer];
+    _tableView.tableHeaderView = _headerContainer;
+    _tableView.tableFooterView = _footerContainer;
 }
 
 
@@ -57,18 +74,14 @@
     
     id model = [[self.interactor items] objectAtIndex:indexPath.row];
     
-    
     cell = [((TJSProductListCellFactory *)self.cellFactory)
             cellInTable:tableView
             forProductInfoModel:model];
     
-    
     //cell 的 delegate 给 vc ,self.cellDelegate就是vc
     [(ProductListCell *)cell setDelegate:self.cellDelegate];
     
-    
     return cell;
-    
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -81,14 +94,13 @@
     
     cellHeight = [layoutConfig contentSize:model cellWidth:SCREEN_WIDTH].height;
     
-    
     return cellHeight;
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
     
    
-    
+
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -102,6 +114,26 @@
         
         [cell.delegate onTapCell:model];
     }
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
+
+    return [UITableViewHeaderFooterView new];
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section{
+
+    return [UITableViewHeaderFooterView new];
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+
+    return 1;
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
+
+    return 1;
 }
 
 

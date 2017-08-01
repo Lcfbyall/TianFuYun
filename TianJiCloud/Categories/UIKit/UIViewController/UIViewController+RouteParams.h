@@ -12,18 +12,18 @@
 
 @property (nonatomic, strong) NSDictionary *_Nullable params;
 
-- (void)tjs_pushViewController:(NSString *_Nullable)viewController
++ (void)tjs_pushViewController:(NSString *_Nullable)viewController
                       animated:(BOOL)animated;
 
-- (void)tjs_pushViewController:(NSString *_Nullable)viewController
++ (void)tjs_pushViewController:(NSString *_Nullable)viewController
                         params:(NSDictionary *_Nullable)params
                       animated:(BOOL)animated;
 
-- (void)tjs_pushViewController:(NSString *_Nullable)viewController
++ (void)tjs_pushViewController:(NSString *_Nullable)viewController
                     backHandler:(void (^ _Nullable)(id _Nullable obj))backHandler
                       animated:(BOOL)animated;
 
-- (void)tjs_pushViewController:(NSString *_Nullable)viewController
++ (void)tjs_pushViewController:(NSString *_Nullable)viewController
                         params:(NSDictionary *_Nullable)params
                     backHandler:(void (^ _Nullable)(id _Nullable obj))backHandler
                       animated:(BOOL)animated;

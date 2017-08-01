@@ -8,7 +8,6 @@
 
 #import "TJSProductListLayoutImpl.h"
 
-#import <MJRefresh.h>
 
 @interface TJSProductListLayoutImpl (){
 
