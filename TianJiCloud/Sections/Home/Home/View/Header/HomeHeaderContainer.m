@@ -15,11 +15,14 @@
 #import "HomeWebClickItem.h"
 #import "HomeProductClickItem.h"
 
-static CGFloat const Margin = 10;
+#import "NSObject+vk_msgSend.h"
+
+
+static NSInteger const Sections = 20;
+static CGFloat   const Margin   = 10;
 #define containerHeight  (SCREEN_WIDTH * 378/414.0)
 
 static NSInteger const column = 4;
-
 static NSString *identifier = @"HomeHeaderCollectionCell";
 
 @interface HomeHeaderContainer ()<UICollectionViewDataSource,UICollectionViewDelegate,HomeHeaderCollectionLayoutDelegate>
@@ -34,6 +37,34 @@ static NSString *identifier = @"HomeHeaderCollectionCell";
 
 @implementation HomeHeaderContainer
 
+
+#pragma mark - UIView(UIViewHierarchy)
+
+- (void)didMoveToSuperview{
+
+    
+    NSInteger itemRow = Sections/2 * self.webItems.count;
+    
+    NSIndexPath *indexPath = [NSIndexPath indexPathForItem:itemRow inSection:0];
+    
+    [self p_scrollToItemAtIndexPath:indexPath];
+}
+
+- (void)didMoveToWindow{
+
+}
+
+- (void)didAddSubview:(UIView *)subview{
+
+
+
+}
+
+
+
+
+
+
 + (instancetype)headerContainer{
   
     HomeHeaderContainer *container = [[HomeHeaderContainer alloc]init];
@@ -44,9 +75,9 @@ static NSString *identifier = @"HomeHeaderCollectionCell";
     
     container.productItems    = [HomeHeaderConfig productItems];
     
-    [container addCollectionview];
+    [container p_addCollectionview];
     
-    [container addProductItems];
+    [container p_addProductItems];
     
     return container;
 }
@@ -54,7 +85,7 @@ static NSString *identifier = @"HomeHeaderCollectionCell";
 
 #pragma mark - addSubViews
 
-- (void)addCollectionview{
+- (void)p_addCollectionview{
 
     self.collectionView = ({
         
@@ -87,9 +118,10 @@ static NSString *identifier = @"HomeHeaderCollectionCell";
     
         collectionView;
     });
+
 }
 
-- (void)addProductItems{
+- (void)p_addProductItems{
   
     WEAK_SELF(self);
     [self.productItems enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
@@ -118,6 +150,9 @@ static NSString *identifier = @"HomeHeaderCollectionCell";
         
         [btn addBlockForControlEvents:UIControlEventTouchUpInside block:^(id  _Nonnull sender) {
             
+            //
+            
+            
             
         }];
         
@@ -126,6 +161,13 @@ static NSString *identifier = @"HomeHeaderCollectionCell";
         [self addSubview:btn];
     }];
 }
+
+- (void)p_scrollToItemAtIndexPath:(NSIndexPath *)indexPath{
+
+   [self.collectionView vk_callSelector:@selector(scrollToItemAtIndexPath:atScrollPosition:animated:) error:nil,indexPath,UICollectionViewScrollPositionCenteredHorizontally,NO];
+}
+
+
 
 #pragma mark - <UICollectionViewDataSource>
 
@@ -136,7 +178,7 @@ static NSString *identifier = @"HomeHeaderCollectionCell";
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
     
-    return self.webItems.count;
+    return self.webItems.count * Sections;
 }
 
 - (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
@@ -144,7 +186,7 @@ static NSString *identifier = @"HomeHeaderCollectionCell";
     
     HomeHeaderCollectionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:identifier forIndexPath:indexPath];
     
-    [cell tjs_bindDataToCellWithValue:(HomeWebClickItem *)self.webItems[indexPath.item]];
+    [cell tjs_bindDataToCellWithValue:(HomeWebClickItem *)self.webItems[indexPath.item%self.webItems.count]];
     
     return cell;
 }
@@ -156,7 +198,7 @@ static NSString *identifier = @"HomeHeaderCollectionCell";
 
     [collectionView deselectItemAtIndexPath:indexPath animated:YES];
     
-    NSString *targetVC = ((HomeWebClickItem *)self.webItems[indexPath.item]).target;
+    NSString *targetVC = ((HomeWebClickItem *)self.webItems[indexPath.item % self.webItems.count]).target;
     
     [UIViewController tjs_pushViewController:targetVC params:@{} animated:YES];
     
@@ -233,7 +275,7 @@ static NSString *identifier = @"HomeHeaderCollectionCell";
      }else{
      
         //根据位置决定停止在哪个item
-         [_collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:1 inSection:0] atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally animated:YES];
+         //[_collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:1 inSection:0] atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally animated:YES];
      
      }
 
@@ -257,7 +299,7 @@ static NSString *identifier = @"HomeHeaderCollectionCell";
 
     NSLog(@"5.已经结束减速");
     
-    [_collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:1 inSection:0] atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally animated:YES];
+    //[_collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:1 inSection:0] atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally animated:YES];
 }
 
  
