@@ -36,9 +36,10 @@ static NSString *identifier = @"HomeFooterCollectionCell";
     
     container.backgroundColor = ThemeService.weak_color_10;
     
+    container.items = [HomeFooterConfig items];
+    
     [container addCollectionview];
     
-    container.items = [HomeFooterConfig items];
     
     return container;
 }

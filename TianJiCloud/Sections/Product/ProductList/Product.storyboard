@@ -1,14 +1,36 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="bEc-ci-Vlp">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Product Container Controller-->
+        <scene sceneID="sgs-hf-qjb">
+            <objects>
+                <viewController storyboardIdentifier="ProductContainerController" id="L2v-Hs-3bf" customClass="ProductContainerController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xwi-3c-qKB"/>
+                        <viewControllerLayoutGuide type="bottom" id="jb3-y2-491"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fdb-1W-g0d">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Z8K-Ba-Zu8"/>
+                    <connections>
+                        <segue destination="Z4j-Dg-Ias" kind="show" identifier="ProductContainerToProductListVC" id="Cnr-Sa-wrD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l7n-07-fGz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2687.1999999999998" y="-0.44977511244377816"/>
+        </scene>
         <!--Product List View Controller-->
         <scene sceneID="V1H-12-ifK">
             <objects>
@@ -43,7 +65,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zm9-9W-t7l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1889" y="40"/>
+            <point key="canvasLocation" x="3431.1999999999998" y="-0.44977511244377816"/>
         </scene>
         <!--Product Detail Controller-->
         <scene sceneID="M6y-Pm-dox">
@@ -61,25 +83,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eo8-oV-6el" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2791" y="39"/>
+            <point key="canvasLocation" x="4204" y="-0.44977511244377816"/>
         </scene>
         <!--Base Navigation Controller-->
-        <scene sceneID="gBq-0L-U0k">
+        <scene sceneID="lJx-7l-JSt">
             <objects>
-                <navigationController storyboardIdentifier="ProductNC" automaticallyAdjustsScrollViewInsets="NO" id="bEc-ci-Vlp" customClass="TJSBaseNavigationController" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="ProductNC" automaticallyAdjustsScrollViewInsets="NO" id="Uhu-wv-llE" customClass="TJSBaseNavigationController" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gUv-gL-C8W">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mEQ-Xq-JJe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="Z4j-Dg-Ias" kind="relationship" relationship="rootViewController" id="rYW-Ne-DPn"/>
+                        <segue destination="L2v-Hs-3bf" kind="relationship" relationship="rootViewController" id="y9j-Wp-H3G"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4E3-XN-ioC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4DZ-6W-Nse" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="821.60000000000002" y="-20.239880059970016"/>
+            <point key="canvasLocation" x="1748" y="-0.44977511244377816"/>
         </scene>
     </scenes>
 </document>

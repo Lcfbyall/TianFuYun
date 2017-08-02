@@ -7,11 +7,11 @@
 //
 
 #import "ProductListVCConfig.h"
-#import "ProductListViewController.h"
+#import "ProductContainerController.h"
 
 @interface ProductListVCConfig ()<UISearchBarDelegate>
 
-@property (nonatomic,weak) ProductListViewController *vc;
+@property (nonatomic,weak) ProductContainerController *vc;
 
 @end
 
@@ -28,7 +28,7 @@
     return self;
 }
 
-- (void)setup:(ProductListViewController *)vc{
+- (void)setup:(ProductContainerController *)vc{
    
     _vc = vc;
     

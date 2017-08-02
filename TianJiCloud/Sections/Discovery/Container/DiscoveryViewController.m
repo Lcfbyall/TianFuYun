@@ -33,10 +33,10 @@
 
 - (void)tjs_setupChildViewControllers{
   
-    UIViewController *news  = LOAD_Storyboard(MainSB, DiscoryNewsListVC);
+    UIViewController *news  = LOAD_Storyboard(DiscoverySB, DiscoryNewsListVC);
     [self addChildViewController:news];
     
-    UIViewController *shows = LOAD_Storyboard(MainSB, DiscoryRoadShowListVC);
+    UIViewController *shows = LOAD_Storyboard(DiscoverySB, DiscoryRoadShowListVC);
     [self addChildViewController:shows];
 }
 

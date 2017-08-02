@@ -19,20 +19,21 @@
     riskControl.subTitle = @"";
     riskControl.imgUrl   = @"risk_protect";
     riskControl.target   = @"HomeFooterWebController";
-    
+    riskControl.pushAllowed = YES;
     
     HomeWebClickItem  *onlineSettlement = [HomeWebClickItem new];
     onlineSettlement.title    = @"线上结佣\n国内首家线上佣金结算平台";
     onlineSettlement.subTitle = @"";
     onlineSettlement.imgUrl   = @"online_commsion";
     onlineSettlement.target   = @"HomeFooterWebController";
-    
+    onlineSettlement.pushAllowed = YES;
     
     HomeWebClickItem  *platBackground   = [HomeWebClickItem new];
     platBackground.title    = @"风控保障\n三重认证确保资金安全";
     platBackground.subTitle = @"";
     platBackground.imgUrl   = @"platform";
     platBackground.target   = @"HomeFooterWebController";
+    platBackground.pushAllowed = YES;
     
     return @[riskControl,onlineSettlement,platBackground];
 }

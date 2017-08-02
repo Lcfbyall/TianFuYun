@@ -8,11 +8,11 @@
 
 #import "TJSBaseViewController.h"
 
-#import "TJSProductListVCProtocol.h"
+
 #import "TJSProductListConfigurateProtocol.h"
 #import "TJSProductListCellProtocol.h"
 
 
-@interface ProductListViewController : TJSBaseViewController<TJSProductListInteractorDelegate,TJSProductListCellDelegate,ProductListVCConfig>
+@interface ProductListViewController : TJSBaseViewController<TJSProductListInteractorDelegate,TJSProductListCellDelegate>
 
 @end

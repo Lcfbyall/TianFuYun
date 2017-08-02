@@ -24,4 +24,9 @@
 
 @property (nonatomic,weak) id<HomeHeaderCollectionLayoutDelegate> delegate;
 
+@property (nonatomic,assign) UIEdgeInsets insets;
+
+@property (nonatomic,assign) CGFloat interMargin;
+
+
 @end

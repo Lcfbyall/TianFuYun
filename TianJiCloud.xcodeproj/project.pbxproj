@@ -187,6 +187,8 @@
 		2C8BB7BD1F315D2800E2D75F /* HomeHeaderWeb.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C8BB7BC1F315D2800E2D75F /* HomeHeaderWeb.storyboard */; };
 		2C8BB7BF1F315DD000E2D75F /* HomeFooterWeb.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C8BB7BE1F315DD000E2D75F /* HomeFooterWeb.storyboard */; };
 		2C8BB7C21F3167CC00E2D75F /* TJSBaseCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8BB7C11F3167CC00E2D75F /* TJSBaseCollectionViewCell.m */; };
+		2C8BB7C51F31AEF600E2D75F /* UIButton+ImageTitleEdgeInset.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8BB7C41F31AEF600E2D75F /* UIButton+ImageTitleEdgeInset.m */; };
+		2C8BB7C91F31BB9F00E2D75F /* ProductContainerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8BB7C81F31BB9F00E2D75F /* ProductContainerController.m */; };
 		2C8DE5731F29CE14009B3AE2 /* PersonalMessageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE5721F29CE14009B3AE2 /* PersonalMessageController.m */; };
 		2C8DE5761F29CE51009B3AE2 /* PlatformAnnounceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE5751F29CE51009B3AE2 /* PlatformAnnounceController.m */; };
 		2C8DE5791F29CE76009B3AE2 /* AllActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE5781F29CE76009B3AE2 /* AllActivityViewController.m */; };
@@ -625,6 +627,10 @@
 		2C8BB7BE1F315DD000E2D75F /* HomeFooterWeb.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HomeFooterWeb.storyboard; sourceTree = "<group>"; };
 		2C8BB7C01F3167CC00E2D75F /* TJSBaseCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSBaseCollectionViewCell.h; sourceTree = "<group>"; };
 		2C8BB7C11F3167CC00E2D75F /* TJSBaseCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSBaseCollectionViewCell.m; sourceTree = "<group>"; };
+		2C8BB7C31F31AEF600E2D75F /* UIButton+ImageTitleEdgeInset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+ImageTitleEdgeInset.h"; sourceTree = "<group>"; };
+		2C8BB7C41F31AEF600E2D75F /* UIButton+ImageTitleEdgeInset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ImageTitleEdgeInset.m"; sourceTree = "<group>"; };
+		2C8BB7C71F31BB9F00E2D75F /* ProductContainerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductContainerController.h; sourceTree = "<group>"; };
+		2C8BB7C81F31BB9F00E2D75F /* ProductContainerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductContainerController.m; sourceTree = "<group>"; };
 		2C8DE5711F29CE14009B3AE2 /* PersonalMessageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalMessageController.h; sourceTree = "<group>"; };
 		2C8DE5721F29CE14009B3AE2 /* PersonalMessageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalMessageController.m; sourceTree = "<group>"; };
 		2C8DE5741F29CE51009B3AE2 /* PlatformAnnounceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlatformAnnounceController.h; sourceTree = "<group>"; };
@@ -1212,6 +1218,8 @@
 				2C4412721F21E79900C453EF /* UIButton+IBInspectableState.m */,
 				2C4412741F21E7F000C453EF /* UIButton+BackgroundColor.h */,
 				2C4412751F21E7F000C453EF /* UIButton+BackgroundColor.m */,
+				2C8BB7C31F31AEF600E2D75F /* UIButton+ImageTitleEdgeInset.h */,
+				2C8BB7C41F31AEF600E2D75F /* UIButton+ImageTitleEdgeInset.m */,
 			);
 			path = UIButton;
 			sourceTree = "<group>";
@@ -1472,6 +1480,7 @@
 			isa = PBXGroup;
 			children = (
 				2C8DE59D1F29FE80009B3AE2 /* Product.storyboard */,
+				2C8BB7C61F31BB3A00E2D75F /* Container */,
 				2CAF42A31F281B8600ABCA5E /* ProductList */,
 				2C8DE5971F29FA50009B3AE2 /* ProductDetail */,
 			);
@@ -1591,13 +1600,13 @@
 		2C85E2B81F2EC22300ADD360 /* YZDisplayViewController */ = {
 			isa = PBXGroup;
 			children = (
+				2C85E2BF1F2EC22300ADD360 /* YZDisplayViewHeader.h */,
+				2C85E2BD1F2EC22300ADD360 /* YZDisplayViewController.h */,
+				2C85E2BE1F2EC22300ADD360 /* YZDisplayViewController.m */,
 				2C85E2B91F2EC22300ADD360 /* UIView+Frame.h */,
 				2C85E2BA1F2EC22300ADD360 /* UIView+Frame.m */,
 				2C85E2BB1F2EC22300ADD360 /* YZDisplayTitleLabel.h */,
 				2C85E2BC1F2EC22300ADD360 /* YZDisplayTitleLabel.m */,
-				2C85E2BD1F2EC22300ADD360 /* YZDisplayViewController.h */,
-				2C85E2BE1F2EC22300ADD360 /* YZDisplayViewController.m */,
-				2C85E2BF1F2EC22300ADD360 /* YZDisplayViewHeader.h */,
 				2C85E2C01F2EC22300ADD360 /* YZFlowLayout.h */,
 				2C85E2C11F2EC22300ADD360 /* YZFlowLayout.m */,
 			);
@@ -2002,13 +2011,13 @@
 		2C8BB7981F30859C00E2D75F /* Header */ = {
 			isa = PBXGroup;
 			children = (
+				2C8BB79E1F30859C00E2D75F /* HomeHeaderContainer.h */,
+				2C8BB79F1F30859C00E2D75F /* HomeHeaderContainer.m */,
 				2C8BB7991F30859C00E2D75F /* HomeHeaderCollectionCell.h */,
 				2C8BB79A1F30859C00E2D75F /* HomeHeaderCollectionCell.m */,
 				2C8BB79B1F30859C00E2D75F /* HomeHeaderCollectionCell.xib */,
 				2C8BB79C1F30859C00E2D75F /* HomeHeaderCollectionLayout.h */,
 				2C8BB79D1F30859C00E2D75F /* HomeHeaderCollectionLayout.m */,
-				2C8BB79E1F30859C00E2D75F /* HomeHeaderContainer.h */,
-				2C8BB79F1F30859C00E2D75F /* HomeHeaderContainer.m */,
 			);
 			path = Header;
 			sourceTree = "<group>";
@@ -2029,6 +2038,16 @@
 				2C8BB7B11F3088D600E2D75F /* HomeHeaderConfig.m */,
 			);
 			path = HeaderConfig;
+			sourceTree = "<group>";
+		};
+		2C8BB7C61F31BB3A00E2D75F /* Container */ = {
+			isa = PBXGroup;
+			children = (
+				2C8BB7C71F31BB9F00E2D75F /* ProductContainerController.h */,
+				2C8BB7C81F31BB9F00E2D75F /* ProductContainerController.m */,
+			);
+			name = Container;
+			path = ProductList/Container;
 			sourceTree = "<group>";
 		};
 		2C8DE57A1F29D406009B3AE2 /* Disaggregate */ = {
@@ -2935,6 +2954,7 @@
 				2C8DE5731F29CE14009B3AE2 /* PersonalMessageController.m in Sources */,
 				2C85E30E1F2EC22300ADD360 /* UIImage+ZLPhotoLib.m in Sources */,
 				2C4412931F21FF9C00C453EF /* TJSDownLoaderManager.m in Sources */,
+				2C8BB7C51F31AEF600E2D75F /* UIButton+ImageTitleEdgeInset.m in Sources */,
 				2C8DE5941F29F5FF009B3AE2 /* TJSWeakScriptMessageHandler.m in Sources */,
 				2C4412551F21DBBA00C453EF /* UIViewController+RouteParams.m in Sources */,
 				2C85E3211F2EC22300ADD360 /* ZLPhotoPickerAssetsViewController.m in Sources */,
@@ -2980,6 +3000,7 @@
 				2C8BB7AF1F3087BA00E2D75F /* HomeProductClickItem.m in Sources */,
 				2CAF430E1F28294E00ABCA5E /* TJSProductListCellFactory.m in Sources */,
 				2C4412A71F2201FF00C453EF /* TJSBaseRequest.m in Sources */,
+				2C8BB7C91F31BB9F00E2D75F /* ProductContainerController.m in Sources */,
 				2C4412521F21DABC00C453EF /* UIViewController+StackLevel.m in Sources */,
 				2C8DE57E1F29D484009B3AE2 /* TJSHomeListConfigurator.m in Sources */,
 				2C801BD31F233F46009F82F7 /* TJSBaseViewController.m in Sources */,

@@ -8,11 +8,43 @@
 
 #import "HomeHeaderCollectionCell.h"
 
+#import "HomeWebClickItem.h"
+
+@interface HomeHeaderCollectionCell ()
+
+@property (weak, nonatomic) IBOutlet UIButton *contentBtn;
+
+@end
+
 @implementation HomeHeaderCollectionCell
+
 
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
+    
+    
+    self.contentBtn.titleLabel.numberOfLines = 0;
+    
+    self.contentBtn.userInteractionEnabled = NO;
+    
+    self.contentBtn.titleLabel.textAlignment = NSTextAlignmentCenter;
+    
+}
+
+
+
+#pragma mark - <TJSCollectionViewCellProtocol>
+
+- (void)tjs_bindDataToCellWithValue:(id)value{
+
+    HomeWebClickItem *item = (HomeWebClickItem *)value;
+    
+    
+    [self.contentBtn setBackgroundImage:IMAGE(item.imgUrl) forState:UIControlStateNormal];
+    
+    [self.contentBtn setTitle:item.title forState:UIControlStateNormal];
+
 }
 
 @end

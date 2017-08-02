@@ -18,5 +18,6 @@
 
 @property (nonatomic,strong) NSString *target;
 
+@property (nonatomic,assign) BOOL pushAllowed;
 
 @end

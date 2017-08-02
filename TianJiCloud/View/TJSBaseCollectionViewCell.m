@@ -10,4 +10,16 @@
 
 @implementation TJSBaseCollectionViewCell
 
+
+
+#pragma mark - <TJSCollectionViewCellProtocol>
+
+- (void)tjs_bindDataToCellWithValue:(id)value{
+
+
+
+}
+
+
+
 @end

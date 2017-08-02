@@ -71,7 +71,32 @@
     if(layoutAttribute.representedElementCategory == UICollectionElementCategoryCell)
     {
         
-        
+        if(indexPath.section == 0){
+            
+            
+            CGSize size  = [self.delegate collectionView:self.collectionView layout:self sizeForItemAtIndexPath:indexPath];
+            
+            if(indexPath.item == 0){
+                
+                layoutAttribute.frame = CGRectMake(self.insets.left, self.insets.top, size.width, size.height);
+                
+            }else{
+                
+                UICollectionViewLayoutAttributes *lastAttribute = [self layoutAttributesForItemAtIndexPath:[NSIndexPath indexPathForItem:indexPath.item-1 inSection:indexPath.section]];
+                
+                layoutAttribute.frame =
+                
+                CGRectMake(
+                           lastAttribute.frame.origin.x + lastAttribute.frame.size.width + self.interMargin,
+                           
+                           lastAttribute.frame.origin.y,
+                           
+                           size.width,
+                           
+                           size.height);
+                
+            }
+        }
     }
     
     return layoutAttribute;
@@ -84,11 +109,13 @@
 
 - (CGSize)collectionViewContentSize{
     
-    CGFloat maxHeight = 0;
-    UICollectionViewLayoutAttributes *attributes = [self.layoutInfo lastObject];
-    maxHeight = attributes.frame.origin.y + attributes.frame.size.height + 15;
+    CGFloat maxWidth = 0;
     
-    return CGSizeMake(self.collectionView.frame.size.width, maxHeight);
+    UICollectionViewLayoutAttributes *attributes = [self.layoutInfo lastObject];
+    
+    maxWidth = attributes.frame.origin.x + attributes.frame.size.width + self.insets.right;
+    
+    return CGSizeMake(maxWidth, self.collectionView.frame.size.height);
 }
 
 

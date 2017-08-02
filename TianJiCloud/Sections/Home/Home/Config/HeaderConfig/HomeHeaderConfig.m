@@ -21,20 +21,21 @@
     first.subTitle = @"";
     first.imgUrl   = @"about_risk_4";
     first.target   = @"HomeHeaderWebController";
-    
+    first.pushAllowed = NO;
     
     HomeWebClickItem  *second = [HomeWebClickItem new];
     second.title    = @"";
     second.subTitle = @"";
     second.imgUrl   = @"about_risk_4";
     second.target   = @"HomeHeaderWebController";
-    
+    second.pushAllowed = NO;
     
     HomeWebClickItem  *third  = [HomeWebClickItem new];
     third.title    = @"";
     third.subTitle = @"";
     third.imgUrl   = @"about_risk_4";
     third.target   = @"HomeHeaderWebController";
+    third.pushAllowed = NO;
     
     return @[first,second,third];
 }
@@ -46,6 +47,7 @@
     HomeProductClickItem *recent = [HomeProductClickItem new];
     recent.title           = @"最新";
     recent.img             = @"new";
+   
     
     HomeProductClickItem *hot = [HomeProductClickItem new];
     hot.title              = @"最热";

@@ -30,7 +30,7 @@ static NSString *const MineNC      = @"MineNC";
 
 #pragma mark - VC identifier
 static NSString *const HomeVC       = @"HomeViewController";
-static NSString *const ProductVC    = @"ProductListViewController";
+static NSString *const ProductVC    = @"ProductContainerController";
 static NSString *const DiscoveryVC  = @"DiscoveryViewController";
 static NSString *const MineVC       = @"MineViewController";
 
@@ -45,6 +45,7 @@ static NSString *const AllActivityListVC    = @"AllActivityViewController";
 static NSString *const ProductFilterVC      = @"ProductFilterController";
 
 #pragma mark - ProductDetailVC identifier
+static NSString *const ProductListVC        = @"ProductListViewController";
 static NSString *const ProductDetailVC      = @"TJSProductDetailController";
 
 #pragma mark - ProductSearchVC identifier

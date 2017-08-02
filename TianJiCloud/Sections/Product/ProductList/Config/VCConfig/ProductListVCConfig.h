@@ -10,11 +10,11 @@
 
 #import "TJSBaseVCProtocol.h"
 
-@class ProductListViewController;
+@class ProductContainerController;
 
 
 @interface ProductListVCConfig : TJSBaseControllerConfig<TJSNavigationConfig>
 
-- (void)setup:(ProductListViewController *)vc;
+- (void)setup:(ProductContainerController *)vc;
 
 @end

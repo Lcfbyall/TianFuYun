@@ -14,7 +14,5 @@
 
 @property (nonatomic,copy)   NSString *img;
 
-@property (nonatomic,strong) Class    target;
-
 
 @end
