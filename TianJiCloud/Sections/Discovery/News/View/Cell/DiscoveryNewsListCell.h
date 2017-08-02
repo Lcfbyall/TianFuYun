@@ -6,11 +6,11 @@
 //  Copyright © 2017年 TianJiMoney. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "TJSBaseCollectionViewCell.h"
 
 #import "TJSDiscoNewListCellProtocol.h"
 
-@interface DiscoveryNewsListCell : UICollectionViewCell
+@interface DiscoveryNewsListCell : TJSBaseCollectionViewCell
 
 
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *aspectForIamge;

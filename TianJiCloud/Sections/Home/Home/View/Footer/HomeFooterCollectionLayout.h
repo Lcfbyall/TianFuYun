@@ -29,4 +29,6 @@
 
 @property (nonatomic,assign) UIEdgeInsets insets;
 
+@property (nonatomic,assign) CGFloat interMargin;
+
 @end

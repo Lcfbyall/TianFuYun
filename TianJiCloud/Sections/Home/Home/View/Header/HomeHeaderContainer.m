@@ -20,6 +20,8 @@ static NSString *identifier = @"HomeHeaderCollectionCell";
 
 @property (nonatomic,strong) UICollectionView *collectionView;
 
+@property (nonatomic,strong) NSMutableArray *productItems;
+
 @end
 
 @implementation HomeHeaderContainer
@@ -40,7 +42,7 @@ static NSString *identifier = @"HomeHeaderCollectionCell";
 + (instancetype)headerContainer{
   
     HomeHeaderContainer *container = [[HomeHeaderContainer alloc]init];
-    container.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_WIDTH * 378/414.0 + Margin * 2);
+    container.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_WIDTH * 378/414.0 + Margin);
     container.backgroundColor = [UIColor redColor];
     
     return container;
@@ -48,14 +50,14 @@ static NSString *identifier = @"HomeHeaderCollectionCell";
 }
 
 
+#pragma mark - addSubViews
+
 - (void)addCollectionview{
 
     self.collectionView = ({
         
         
         HomeHeaderCollectionLayout *layout =  [[HomeHeaderCollectionLayout alloc]init];
-        
-        
 
         UICollectionView  *collectionView = [[UICollectionView alloc]initWithFrame:CGRectZero collectionViewLayout:layout];
         collectionView.dataSource = self;
@@ -71,7 +73,7 @@ static NSString *identifier = @"HomeHeaderCollectionCell";
         
         [collectionView mas_makeConstraints:^(MASConstraintMaker *make) {
             
-            make.edges.mas_equalTo(UIEdgeInsetsMake(10, 0, 10, 0));
+            make.edges.mas_equalTo(UIEdgeInsetsMake(10, 0, 10 + (SCREEN_WIDTH * 378/414.0)/2.0 , 0));
         }];
         
     
@@ -81,7 +83,21 @@ static NSString *identifier = @"HomeHeaderCollectionCell";
 
 }
 
+- (void)addProductItems{
 
+    self.productItems = ({
+    
+       
+        NSMutableArray *items = [NSMutableArray array];
+    
+        
+        
+        
+        
+        items;
+    
+    });
+}
 
 
 #pragma mark - <UICollectionViewDataSource>

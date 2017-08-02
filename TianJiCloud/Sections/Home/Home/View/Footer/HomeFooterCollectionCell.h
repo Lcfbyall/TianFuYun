@@ -6,8 +6,10 @@
 //  Copyright © 2017年 TianJiMoney. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "TJSBaseCollectionViewCell.h"
 
-@interface HomeFooterCollectionCell : UICollectionViewCell
+@interface HomeFooterCollectionCell : TJSBaseCollectionViewCell
+
+
 
 @end

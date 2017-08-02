@@ -10,7 +10,8 @@
 
 #import "HomeFooterCollectionLayout.h"
 #import "HomeFooterCollectionCell.h"
-
+#import "HomeFooterConfig.h"
+#import "HomeWebClickItem.h"
 
 static CGFloat const Margin = 10;
 static CGFloat const CollectHeight = 115;
@@ -21,21 +22,11 @@ static NSString *identifier = @"HomeFooterCollectionCell";
 
 @property (nonatomic,strong) UICollectionView *collectionView;
 
+@property (nonatomic,strong) NSArray *items;
+
 @end
 
 @implementation HomeFooterContainer
-
-- (instancetype)initWithFrame:(CGRect)frame{
-    
-    self = [super initWithFrame:frame];
-    if(self){
-        
-         [self addCollectionview];
-    }
-    
-    return self;
-}
-
 
 + (instancetype)footerContainer{
  
@@ -43,7 +34,11 @@ static NSString *identifier = @"HomeFooterCollectionCell";
     
     container.frame = CGRectMake(0, 0, SCREEN_WIDTH, CollectHeight + Margin * 2);
     
-    container.backgroundColor = [UIColor greenColor];
+    container.backgroundColor = ThemeService.weak_color_10;
+    
+    [container addCollectionview];
+    
+    container.items = [HomeFooterConfig items];
     
     return container;
 }
@@ -55,12 +50,15 @@ static NSString *identifier = @"HomeFooterCollectionCell";
         HomeFooterCollectionLayout *layout =  [[HomeFooterCollectionLayout alloc]init];
         
         layout.delegate = self;
+        layout.interMargin = 10;
         layout.insets   = UIEdgeInsetsMake(Margin, Margin, Margin, Margin);
         
         UICollectionView  *collectionView = [[UICollectionView alloc]initWithFrame:CGRectZero collectionViewLayout:layout];
-        
-        collectionView.dataSource = self;
-        collectionView.delegate = self;
+        collectionView.backgroundColor    = [UIColor whiteColor];
+        collectionView.dataSource         = self;
+        collectionView.delegate           = self;
+        collectionView.showsHorizontalScrollIndicator= NO;
+        collectionView.showsVerticalScrollIndicator  = NO;
         
         
         NSString *nibName = NSStringFromClass([HomeFooterCollectionCell class]);
@@ -74,7 +72,6 @@ static NSString *identifier = @"HomeFooterCollectionCell";
             
             make.edges.mas_equalTo(UIEdgeInsetsMake(Margin, 0, Margin, 0));
         }];
-        
         
         collectionView;
     });
@@ -90,14 +87,14 @@ static NSString *identifier = @"HomeFooterCollectionCell";
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
 
-    return 3;
+    return self.items.count;
 }
 
 - (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
 
-
     HomeFooterCollectionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:identifier forIndexPath:indexPath];
     
+    [cell tjs_bindDataToCellWithValue:(HomeWebClickItem*)self.items[indexPath.item]];
     
     return cell;
 }
@@ -109,7 +106,9 @@ static NSString *identifier = @"HomeFooterCollectionCell";
 
     [collectionView deselectItemAtIndexPath:indexPath animated:YES];
     
+    NSString *targetVC = ((HomeWebClickItem *)self.items[indexPath.item]).target;
     
+    [UIViewController tjs_pushViewController:targetVC params:@{} animated:YES];
 
 }
 
@@ -123,7 +122,5 @@ static NSString *identifier = @"HomeFooterCollectionCell";
     return CGSizeMake(175, 95);
 
 }
-
-
 
 @end

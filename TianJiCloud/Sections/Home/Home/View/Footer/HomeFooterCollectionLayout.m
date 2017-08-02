@@ -88,7 +88,7 @@
                 layoutAttribute.frame =
                 
                 CGRectMake(
-                           lastAttribute.frame.origin.x + self.insets.top,
+                           lastAttribute.frame.origin.x + lastAttribute.frame.size.width + self.interMargin,
                                                    
                            lastAttribute.frame.origin.y,
                            
@@ -116,7 +116,7 @@
     
     maxWidth = attributes.frame.origin.x + attributes.frame.size.width + self.insets.right;
     
-    return CGSizeMake(maxWidth, self.collectionView.frame.size.width);
+    return CGSizeMake(maxWidth, self.collectionView.frame.size.height);
 }
 
 

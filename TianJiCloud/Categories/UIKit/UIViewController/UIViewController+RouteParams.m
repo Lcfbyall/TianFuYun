@@ -55,6 +55,15 @@
                     backHandler:(void (^ _Nullable)(id _Nullable obj))backHandler
                       animated:(BOOL)animated{
 
+    Class vcClass = NSClassFromString(viewController);
+    
+    assert(vcClass);
+    
+    if(vcClass == nil){
+    
+        return;
+    }
+    
     TJSBaseViewController *vc = (TJSBaseViewController *)[[UIStoryboard storyboardWithName:MainSB bundle:nil] instantiateViewControllerWithIdentifier:viewController];
     
     if(params){

@@ -6,8 +6,8 @@
 //  Copyright © 2017年 TianJiMoney. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "TJSBaseCollectionViewCell.h"
 
-@interface DiscoveryRoadShowListCell : UICollectionViewCell
+@interface DiscoveryRoadShowListCell : TJSBaseCollectionViewCell
 
 @end

@@ -40,6 +40,8 @@
                         <segue destination="pQG-DC-wko" kind="show" identifier="HomeVCToMessageVC" id="lGj-g0-1LP"/>
                         <segue destination="atn-XM-eXr" kind="show" identifier="HomeVCToProductFilterVC" id="Eb1-Ev-sGL"/>
                         <segue destination="hXO-RU-esD" kind="show" identifier="HomeVCToProductSearchVC" id="M0R-b6-VFb"/>
+                        <segue destination="0WH-fh-Pg3" kind="show" identifier="HomeVCToHeaderWebVC" id="eIv-ux-aDO"/>
+                        <segue destination="h6d-ei-hDD" kind="show" identifier="HomeVCToFooterWebVC" id="Jfg-NL-wco"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qiT-u5-mNj" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -87,6 +89,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BKD-Y2-2HB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2096" y="202"/>
+        </scene>
+        <!--HomeHeaderWebController-->
+        <scene sceneID="4ed-O5-BL1">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="HomeHeaderWebController" storyboardName="HomeHeaderWeb" referencedIdentifier="HomeHeaderWebController" id="0WH-fh-Pg3" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x1Z-kJ-h8k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2108" y="289"/>
+        </scene>
+        <!--HomeFooterWebController-->
+        <scene sceneID="h2h-a0-tK8">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="HomeFooterWebController" storyboardName="HomeFooterWeb" referencedIdentifier="HomeFooterWebController" id="h6d-ei-hDD" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IUW-Id-h6C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2100" y="692"/>
         </scene>
     </scenes>
 </document>
