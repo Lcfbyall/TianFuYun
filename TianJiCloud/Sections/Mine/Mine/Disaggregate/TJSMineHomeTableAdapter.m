@@ -9,30 +9,57 @@
 #import "TJSMineHomeTableAdapter.h"
 
 #import "MineHomeBaseTableCell.h"
+#import "MineHomeHeaderContainer.h"
+
+
 #import "TJSMineHomeCellFactory.h"
 #import "TJSMineHomeCellLayoutConfig.h"
+
+static NSString *const headerFooterIdentifier = @"MineHomeHeaderFooterIdentifier";
 
 @interface TJSMineHomeTableAdapter ()
 
 @property (nonatomic,strong) TJSMineHomeCellFactory *cellFactory;
+
+@property (nonatomic,weak)  UITableView *tableView;
+
+@property (nonatomic,strong)MineHomeHeaderContainer *headerContainer;
 
 @end
 
 
 @implementation TJSMineHomeTableAdapter
 
-- (instancetype)init{
+
+- (instancetype)initWithTableView:(UITableView *)tableView{
     
     self = [super init];
     if(self){
         
         _cellFactory = [[TJSMineHomeCellFactory alloc]init];
         
+        _tableView   = tableView;
+        
+        [self setupTableView];
     }
     return self;
 }
 
-#pragma mark - UITableViewDelegate && UITableViewDataSource
+
+#pragma mark - Private
+
+- (void)setupTableView{
+
+    _headerContainer = [MineHomeHeaderContainer headerContainer];
+
+    _tableView.tableHeaderView = _headerContainer;
+    
+    //
+    [_tableView registerClass:[UITableViewHeaderFooterView class] forHeaderFooterViewReuseIdentifier:headerFooterIdentifier];
+}
+
+
+#pragma mark - <UITableViewDataSource>
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
@@ -63,6 +90,9 @@
     return cell;
 }
 
+
+#pragma mark - <UITableViewDelegate>
+
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     CGFloat cellHeight = 0;
@@ -73,11 +103,6 @@
     cellHeight = [layoutConfig contentSize:modelInArray cellWidth:SCREEN_WIDTH].height;
     
     return cellHeight;
-}
-
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
-    
-    
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -96,24 +121,49 @@
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
   
-    return [UITableViewHeaderFooterView new];
+    return [tableView dequeueReusableHeaderFooterViewWithIdentifier:headerFooterIdentifier];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
   
-    return 1;
+    if(section ==0) return 1;
+    
+    return 10;
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section{
   
-    return [UITableViewHeaderFooterView new];
+    return [tableView dequeueReusableHeaderFooterViewWithIdentifier:headerFooterIdentifier];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
   
-    if(section==1) return 1;
+    return 0;
+}
+
+
+#pragma mark - <UITableViewDataSourcePrefetching>
+
+
+
+#pragma mark - <UIScrollViewDelegate>
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
+ 
+    [scrollView.tjs_viewController.view endEditing:YES];
+
+    UIColor * color = [UIColor colorWithRed:0/255.0 green:175/255.0 blue:240/255.0 alpha:1];
+    CGFloat offsetY = scrollView.contentOffset.y;
     
-    return 10;
+    if (offsetY > 50) {
+        
+        CGFloat alpha = MIN(1, 1 - ((50 + 64 - offsetY) / 64));
+        
+        //[scrollView.tjs_viewController.navigationController.navigationBar lt_setBackgroundColor:[color colorWithAlphaComponent:alpha]];
+    } else {
+        
+        //[scrollView.tjs_viewController.navigationController.navigationBar lt_setBackgroundColor:[color colorWithAlphaComponent:0]];
+    }
 }
 
 

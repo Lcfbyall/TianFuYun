@@ -10,7 +10,6 @@
 
 #import "TJSBaseVCProtocol.h"
 
-
 @class HomeViewController;
 
 @interface HomeVCConfig : TJSBaseControllerConfig<TJSNavigationConfig>

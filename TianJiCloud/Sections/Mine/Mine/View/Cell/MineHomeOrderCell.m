@@ -8,14 +8,29 @@
 
 #import "MineHomeOrderCell.h"
 
+@interface MineHomeOrderCell ()
+
+@property (nonatomic,strong) UIScrollView *scrollView;
+
+
+
+@end
+
 @implementation MineHomeOrderCell
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
+ 
+    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
+    
+    if(self){
+    
+        
+        
+    }
+
+    return self;
 }
-*/
+
+
 
 @end

@@ -21,6 +21,15 @@
     
 }
 
+- (void)setupStyleBasicTranslucent{
+
+    [self setupStyleWithTitleColor:[UIColor blackColor]
+                         titleFont:[UIFont systemFontOfSize:16.0f]
+                      barTintColor:[UIColor whiteColor]
+                         tintColor:[UIColor whiteColor]
+                       translucent:YES];
+}
+
 - (void)setupStyleBasicWithBarTintColor:(UIColor *)barTintColor{
   
     [self setupStyleWithTitleColor:[UIColor blackColor]
@@ -28,6 +37,17 @@
                       barTintColor:barTintColor
                          tintColor:[UIColor whiteColor]
                        translucent:NO];
+}
+
+
+- (void)setupStyleBasicTranslucentWithBarTintColor:(UIColor *)barTintColor{
+
+    
+    [self setupStyleWithTitleColor:[UIColor blackColor]
+                         titleFont:[UIFont systemFontOfSize:16.0f]
+                      barTintColor:barTintColor
+                         tintColor:[UIColor whiteColor]
+                       translucent:YES];
 }
 
 - (void)setupStyleWithTitleColor:(UIColor *)titleColor
@@ -102,5 +122,28 @@
     self.layer.shadowOpacity = 1.f;
 }
 
+
+-(void)changeNavigationBarBackgroundColor{
+    
+    if ([self respondsToSelector:@selector(setBackgroundImage:forBarMetrics:)]){
+        
+        NSArray *subviews =self.subviews;
+        for (id viewObj in subviews) {
+            
+            
+            NSString *classStr = [NSString stringWithUTF8String:object_getClassName(viewObj)];
+            
+            if ([classStr isEqualToString:@"UIView"]) {
+                
+                UIImageView *imageView=(UIImageView *)viewObj;
+                [self sendSubviewToBack:imageView];
+            }
+            
+        }
+        
+        
+        
+    }
+}
 
 @end

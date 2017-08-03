@@ -8,7 +8,9 @@
 
 #import "TJSBaseControllerContainer.h"
 
+#import "TJSDiscoveryVCProtocol.h"
 
-@interface DiscoveryViewController : TJSBaseControllerContainer
+@interface DiscoveryViewController : TJSBaseControllerContainer<DiscoveryVCConfig>
+
 
 @end

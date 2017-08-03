@@ -24,7 +24,9 @@
 @property (nonatomic,strong) TJSProductListCellFactory *cellFactory;
 
 @property (nonatomic,weak)  UITableView *tableView;
+
 @property (nonatomic,strong)HomeHeaderContainer *headerContainer;
+
 @property (nonatomic,strong)HomeFooterContainer *footerContainer;
 
 @end

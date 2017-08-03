@@ -13,4 +13,7 @@
 void tjs_swizzleInstanceMethod(Class cls,
                            SEL originalSelector,
                            SEL swizzledSelector);
+
++ (NSArray *)allSubclasses;
+
 @end

@@ -25,39 +25,39 @@
   
     [super awakeFromNib];
     
-    
-    
     [self setSubViews];
-    
-    
 }
-
-/*
-- (void)setHighlighted:(BOOL)highlighted{
-    [super setHighlighted:highlighted];
-    
-    self.userInteractionEnabled = NO;
-    [UIView animateWithDuration:0.5 animations:^{
-        self.contentView.backgroundColor = [UIColor lightGrayColor];
-    } completion:^(BOOL finished) {
-        [UIView animateWithDuration:0.5 animations:^{
-            self.contentView.backgroundColor = [UIColor whiteColor];
-        } completion:^(BOOL finished) {
-            self.userInteractionEnabled = YES;
-        }];
-    }];
-}
- */
 
 - (void)setSubViews{
   
     _newsImage.image = IMAGE(@"about_commsion_3");
 
     self.selectedBackgroundView = [UIView new];
-    self.selectedBackgroundView.backgroundColor = [UIColor redColor]; //[UIColor groupTableViewBackgroundColor];
+    self.selectedBackgroundView.backgroundColor = [UIColor groupTableViewBackgroundColor];
 }
 
 
+/*
+ - (void)setHighlighted:(BOOL)highlighted{
+     [super setHighlighted:highlighted];
+     
+     self.userInteractionEnabled = NO;
+     [UIView animateWithDuration:0.5 animations:^{
+ 
+         self.contentView.backgroundColor = [UIColor lightGrayColor];
+     } completion:^(BOOL finished) {
+ 
+         [UIView animateWithDuration:0.5 animations:^{
+ 
+         self.contentView.backgroundColor = [UIColor whiteColor];
+ 
+    } completion:^(BOOL finished) {
+     
+         self.userInteractionEnabled = YES;
+         }];
+     }];
+ }
+ */
 
 
 @end

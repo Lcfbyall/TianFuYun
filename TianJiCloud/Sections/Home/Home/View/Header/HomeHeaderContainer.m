@@ -59,6 +59,9 @@ static NSString *identifier = @"HomeHeaderCollectionCell";
 
 }
 
+
+#pragma mark -
+
 + (instancetype)headerContainer{
   
     HomeHeaderContainer *container = [[HomeHeaderContainer alloc]init];

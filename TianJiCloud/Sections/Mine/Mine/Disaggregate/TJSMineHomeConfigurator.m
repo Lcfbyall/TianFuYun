@@ -47,7 +47,7 @@
     
     
     //2.
-    _tableAdapter = [[TJSMineHomeTableAdapter alloc]init];
+    _tableAdapter = [[TJSMineHomeTableAdapter alloc]initWithTableView:tableView];
     
     _tableAdapter.interactor   = _interactor;
     _tableAdapter.cellDelegate = vc;

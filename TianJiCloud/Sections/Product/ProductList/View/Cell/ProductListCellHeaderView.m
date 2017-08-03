@@ -11,11 +11,13 @@
 @interface ProductListCellHeaderView ()
 
 
-
 @end
+
 
 @implementation ProductListCellHeaderView
 
+
+#pragma mark - UITableViewHeaderFooterView
 
 - (instancetype)initWithReuseIdentifier:(NSString *)reuseIdentifier{
   
@@ -66,4 +68,9 @@
     
 }
 
+
+
 @end
+
+
+

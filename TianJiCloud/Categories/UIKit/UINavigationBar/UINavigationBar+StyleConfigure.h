@@ -16,7 +16,13 @@
  */
 - (void)setupStyleBasic;
 
+- (void)setupStyleBasicTranslucent;
+
 - (void)setupStyleBasicWithBarTintColor:(UIColor *)barTintColor;
+
+- (void)setupStyleBasicTranslucentWithBarTintColor:(UIColor *)barTintColor;
+
+
 
 - (void)setupStyleWithTitleColor:(UIColor *)titleColor
                        titleFont:(UIFont *)titleFont

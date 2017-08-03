@@ -18,5 +18,7 @@
 
 @property (nonatomic,weak) id<TJSMineHomeCellDelegate> cellDelegate;
 
+- (instancetype)initWithTableView:(UITableView *)tableView;
+
 
 @end

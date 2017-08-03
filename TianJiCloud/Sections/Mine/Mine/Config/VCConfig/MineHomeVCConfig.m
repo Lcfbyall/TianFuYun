@@ -21,6 +21,8 @@
 
 @implementation MineHomeVCConfig
 
+#pragma mark - 
+
 - (instancetype)init{
     
     self = [super init];
@@ -33,9 +35,27 @@
 }
 
 
+#pragma mark - controller settings
+
 - (void)setup:(MineViewController *)vc{
 
     _vc = vc;
+    
+    [self setfullScreen];
+}
+
+- (void)setfullScreen{
+  
+    //需要全屏
+    //self.edgesForExtendedLayout = UIRectEdgeAll;
+    //优先级高于edgesForExtendedLayout
+    self.vc.navigationController.navigationBar.translucent = NO;
+    //automaticallyAdjusts优先级高于translucent
+    self.vc.automaticallyAdjustsScrollViewInsets = NO;
+    
+    //一定全屏
+    //如果状态栏是不透明的，view将不会延伸到状态栏，除非将该属性的值设置为YES。
+    //self.extendedLayoutIncludesOpaqueBars = YES;
 }
 
 

@@ -14,5 +14,6 @@
 
 - (void)setup:(DiscoNewsListController *)vc;
 
+
 @end
 

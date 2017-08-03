@@ -22,6 +22,8 @@
 // https://github.com/forkingdog/FDFullscreenPopGesture
 #import <UIKit/UIKit.h>
 
+
+
 /// "UINavigation+FDFullscreenPopGesture" extends UINavigationController's swipe-
 /// to-pop behavior in iOS 7+ by supporting fullscreen pan gesture. Instead of
 /// screen edge, you can now swipe from any place on the screen and the onboard
@@ -60,3 +62,11 @@
 @property (nonatomic, assign) CGFloat fd_interactivePopMaxAllowedInitialDistanceToLeftEdge;
 
 @end
+
+
+
+
+
+
+
+
