@@ -32,16 +32,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TianJiCloud/Sections/Home/Home/View/Header/HomeHeaderContainer.m"
-            timestampString = "523366175.853065"
+            timestampString = "523366604.82688"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "211"
-            endingLineNumber = "211"
-            landmarkName = "-collectionView:layout:sizeForItemAtIndexPath:"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "-didMoveToSuperview"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -52,12 +52,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TianJiCloud/Sections/Home/Home/View/Header/HomeHeaderContainer.m"
-            timestampString = "523366177.955342"
+            timestampString = "523366647.04637"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "196"
-            endingLineNumber = "196"
-            landmarkName = "-collectionView:didSelectItemAtIndexPath:"
+            startingLineNumber = "163"
+            endingLineNumber = "163"
+            landmarkName = "-p_scrollToItemAtIndexPath:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

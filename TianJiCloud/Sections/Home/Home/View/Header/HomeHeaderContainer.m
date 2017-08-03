@@ -42,7 +42,6 @@ static NSString *identifier = @"HomeHeaderCollectionCell";
 
 - (void)didMoveToSuperview{
 
-    
     NSInteger itemRow = Sections/2 * self.webItems.count;
     
     NSIndexPath *indexPath = [NSIndexPath indexPathForItem:itemRow inSection:0];
@@ -59,9 +58,6 @@ static NSString *identifier = @"HomeHeaderCollectionCell";
 
 
 }
-
-
-
 
 
 
@@ -227,10 +223,10 @@ static NSString *identifier = @"HomeHeaderCollectionCell";
    3. 已经停止拖动，也就是手指已经放开
    4. 将要开始减速，
    5. 已经结束减速，
-*／
+**／
 
  
- /**
+ /*
 
   拖动一段时时间，放开手指
  
