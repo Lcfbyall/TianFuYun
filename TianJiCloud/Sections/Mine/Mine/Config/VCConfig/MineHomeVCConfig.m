@@ -21,7 +21,7 @@
 
 @implementation MineHomeVCConfig
 
-#pragma mark - 
+#pragma mark -
 
 - (instancetype)init{
     
@@ -55,7 +55,7 @@
     
     //一定全屏
     //如果状态栏是不透明的，view将不会延伸到状态栏，除非将该属性的值设置为YES。
-    //self.extendedLayoutIncludesOpaqueBars = YES;
+    self.vc.extendedLayoutIncludesOpaqueBars = YES;
 }
 
 
