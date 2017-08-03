@@ -35,6 +35,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="9FH-Yq-8kt"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
                     <connections>
                         <outlet property="mineTableView" destination="6if-f7-fqe" id="9nB-6M-x50"/>
                         <segue destination="tdg-mW-QGh" kind="show" identifier="MineVCToMyOrderVC" id="mj5-Dw-2ey"/>
@@ -53,7 +56,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gXC-4q-h6f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1759.2" y="141.67916041979012"/>
+            <point key="canvasLocation" x="2082" y="101"/>
         </scene>
         <!--Base Navigation Controller-->
         <scene sceneID="70E-Gj-giH">

@@ -96,6 +96,7 @@
     [self setBackgroundImage:[[UIImage alloc] init]
               forBarPosition:UIBarPositionAny
                   barMetrics:UIBarMetricsDefault];
+    
     [self setShadowImage:[UIImage tjs_imageWithColor:color size:CGSizeMake(1.f, 0.5f)]];
     
 }
@@ -109,6 +110,7 @@
     [self setBackgroundImage:[UIImage tjs_imageWithColor:[UIColor clearColor]]
               forBarPosition:UIBarPositionAny
                   barMetrics:UIBarMetricsDefault];
+    
     [self setShadowImage:[UIImage new]];
 }
 
