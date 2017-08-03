@@ -110,9 +110,10 @@
 
     [bgView addSubview:searchBar];
     
-    WEAK_SELF(self);
-    searchBar.searchBarTextDidBeginEditing = ^(UISearchBar *searchBar){
     
+    WEAK_SELF(self);
+    searchBar.searchBarShouldBeginEditing = ^BOOL(UISearchBar *searchBar) {
+        
         STRONG_SELF(self);
         if([self.vc conformsToProtocol:@protocol(HomeVCConfig)] &&
            [self.vc respondsToSelector:@selector(onTapSearchBarToProductSearch:)]){
@@ -120,14 +121,16 @@
             [self.vc onTapSearchBarToProductSearch:searchBar];
         }
     
-        [searchBar resignFirstResponder];
+        return NO;
     };
     
-    searchBar.searchBarTextDidEndEditing = ^(UISearchBar *searchBar){
     
-        NSLog(@"哈哈");
-       [searchBar resignFirstResponder];
+    searchBar.searchBarTextDidBeginEditing = ^(UISearchBar *searchBar){
+    
+
+        [self.vc.navigationController.navigationBar endEditing:YES];
     };
+    
 
     return bgView;
 }

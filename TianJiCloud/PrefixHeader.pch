@@ -40,7 +40,7 @@
 #import "UIViewController+StackLevel.h"
 #import "UIViewController+RouteParams.h"
 #import "UIView+TJSFrame.h"
-#import "UIView+ViewController.h"
+#import "UIView+TJSViewController.h"
 #import "UIImage+FromColor.h"
 #import "UIImage+Resizeable.h"
 #import "UISearchBar+TJSBlock.h"
@@ -52,6 +52,7 @@
 #import <MJRefresh.h>
 #import <Masonry.h>
 #import <BlocksKit/UIBarButtonItem+BlocksKit.h>
+
 #import "UIControl+YYAdd.h"
 
 

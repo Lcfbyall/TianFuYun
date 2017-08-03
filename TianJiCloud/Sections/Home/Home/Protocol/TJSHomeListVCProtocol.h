@@ -9,6 +9,7 @@
 #ifndef TJSHomeListVCProtocol_h
 #define TJSHomeListVCProtocol_h
 
+
 @protocol HomeVCConfig <NSObject>
 
 - (void)onTapLeftBarBtnToMessageKindList:(id)sender;

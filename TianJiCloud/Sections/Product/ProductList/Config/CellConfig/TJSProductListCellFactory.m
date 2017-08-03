@@ -11,6 +11,7 @@
 #import "TJSProductListCellLayoutConfig.h"
 
 #import "ProductListCell.h"
+#import "ProductListCellHeaderView.h"
 #import "TJSProductInfoModel.h"
 
 
@@ -36,6 +37,9 @@
     
 }
 
+
+#pragma mark - make cell
+
 - (ProductListCell *)cellInTable:(UITableView *)tableView
              forProductInfoModel:(TJSProductInfoModel *)model{
     
@@ -58,6 +62,25 @@
     
     
     return (ProductListCell *)cell;
+}
+
+
+#pragma mark - make headerFooterView
+
+- (ProductListCellHeaderView *)headerFooterViewIntable:(UITableView *)tableView forSection:(NSInteger)section{
+
+    static NSString *const idendifier = @"ProductListCellHeaderView";
+    
+    ProductListCellHeaderView *header = [tableView dequeueReusableHeaderFooterViewWithIdentifier:idendifier];
+    
+    if(!header){
+    
+        [tableView registerClass:[ProductListCellHeaderView class] forHeaderFooterViewReuseIdentifier:idendifier];
+        
+        header = [tableView dequeueReusableHeaderFooterViewWithIdentifier:idendifier];
+    }
+    
+    return header;
 }
 
 @end

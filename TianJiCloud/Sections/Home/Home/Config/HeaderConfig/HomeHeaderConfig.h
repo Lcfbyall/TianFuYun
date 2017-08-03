@@ -10,11 +10,10 @@
 
 @interface HomeHeaderConfig : NSObject
 
-
 + (NSArray *)webItems;
 
++ (NSArray *)productHomeItems;
 
 + (NSArray *)productItems;
-
 
 @end

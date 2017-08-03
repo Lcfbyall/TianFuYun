@@ -10,10 +10,9 @@
 #define TJSProductSearchVCProtocol_h
 
 
+
 @protocol ProductSearchVCConfig <NSObject>
 
-
-//- (void)onTapSearchBarToProductSearch:(id)sender;
 
 @end
 

@@ -1,21 +1,21 @@
 //
-//  TJSRootTabBarControllerViewController.m
+//  TJSRootTabBarController.m
 //  TianJiCloud
 //
 //  Created by 朱鹏 on 17/7/21.
 //  Copyright © 2017年 TianJiMoney. All rights reserved.
 //
 
-#import "TJSRootTabBarControllerViewController.h"
+#import "TJSRootTabBarController.h"
 #import "TJSBaseNavigationController.h"
 
-@interface TJSRootTabBarControllerViewController ()<UITabBarControllerDelegate>
+@interface TJSRootTabBarController ()<UITabBarControllerDelegate>
 
 @property (nonatomic,strong) NSArray *configArr;
 
 @end
 
-@implementation TJSRootTabBarControllerViewController
+@implementation TJSRootTabBarController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

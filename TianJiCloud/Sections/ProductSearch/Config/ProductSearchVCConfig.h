@@ -17,5 +17,6 @@
 
 - (void)setup:(ProductSearchController *)vc;
 
+- (void)viewDidAppear;
 
 @end

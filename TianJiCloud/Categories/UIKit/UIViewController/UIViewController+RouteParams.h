@@ -10,8 +10,14 @@
 
 @interface UIViewController (RouteParams)
 
+#pragma mark - params
+
 @property (nonatomic, strong) NSDictionary *_Nullable params;
 
+
+
+#pragma mark - pushViewController
+
 + (void)tjs_pushViewController:(NSString *_Nullable)viewController
                       animated:(BOOL)animated;
 
@@ -27,5 +33,13 @@
                         params:(NSDictionary *_Nullable)params
                     backHandler:(void (^ _Nullable)(id _Nullable obj))backHandler
                       animated:(BOOL)animated;
+
+
+#pragma mark - rootTabBar select
+
++ (void)tjs_rootTabBarToProductWithParams:(NSDictionary *_Nullable)params;
+
++ (void)tjs_rootTabBarToSelectedIndex:(NSUInteger)index;
+
 
 @end

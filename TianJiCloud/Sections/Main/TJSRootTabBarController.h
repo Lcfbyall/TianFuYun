@@ -1,5 +1,5 @@
 //
-//  TJSRootTabBarControllerViewController.h
+//  TJSRootTabBarController.h
 //  TianJiCloud
 //
 //  Created by 朱鹏 on 17/7/21.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TJSRootTabBarControllerViewController : UITabBarController
+@interface TJSRootTabBarController : UITabBarController
 
 @end

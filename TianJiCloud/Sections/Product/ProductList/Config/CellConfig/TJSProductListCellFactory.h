@@ -9,11 +9,14 @@
 #import <Foundation/Foundation.h>
 
 @class ProductListCell;
+@class ProductListCellHeaderView;
 @class TJSProductInfoModel;
 
 @interface TJSProductListCellFactory : NSObject
 
 - (ProductListCell *)cellInTable:(UITableView*)tableView
              forProductInfoModel:(TJSProductInfoModel *)model;
+
+- (ProductListCellHeaderView *)headerFooterViewIntable:(UITableView *)tableView forSection:(NSInteger)section;
 
 @end

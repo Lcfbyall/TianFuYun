@@ -59,8 +59,6 @@ static NSString *identifier = @"HomeHeaderCollectionCell";
 
 }
 
-
-
 + (instancetype)headerContainer{
   
     HomeHeaderContainer *container = [[HomeHeaderContainer alloc]init];
@@ -69,7 +67,7 @@ static NSString *identifier = @"HomeHeaderCollectionCell";
     
     container.webItems        = [HomeHeaderConfig webItems];
     
-    container.productItems    = [HomeHeaderConfig productItems];
+    container.productItems    = [HomeHeaderConfig productHomeItems];
     
     [container p_addCollectionview];
     
@@ -114,7 +112,6 @@ static NSString *identifier = @"HomeHeaderCollectionCell";
     
         collectionView;
     });
-
 }
 
 - (void)p_addProductItems{
@@ -124,31 +121,27 @@ static NSString *identifier = @"HomeHeaderCollectionCell";
        
         STRONG_SELF(self);
         HomeProductClickItem *item = self.productItems[idx];
-        
         CGFloat itemW = self.bounds.size.width/(CGFloat)column;
         CGFloat itemH = (self.bounds.size.height - Margin)/2.0/((CGFloat)self.productItems.count/column);
         CGFloat X     = idx % column * itemW;
         CGFloat Y     = idx / column * itemH + (self.bounds.size.height - Margin)/2.0;
-        
         UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-        btn.frame = CGRectMake(X, Y, itemW, itemH);
+        btn.frame     = CGRectMake(X, Y, itemW, itemH);
         btn.titleLabel.textAlignment = NSTextAlignmentCenter;
-        btn.backgroundColor          = [UIColor whiteColor];
+        btn.backgroundColor = [UIColor whiteColor];
         btn.titleLabel.font = [UIFont systemFontOfSize:14.0f];
         //btn.backgroundColor = idx %2? [UIColor redColor]:[UIColor greenColor];
         //btn.titleLabel.backgroundColor = [UIColor whiteColor];
         //btn.imageView.backgroundColor  = [UIColor blueColor];
-        
         [btn setImage:IMAGE(item.img) forState:UIControlStateNormal];
         [btn setTitle:item.title forState:UIControlStateNormal];
         [btn setTitleColor:[UIColor darkTextColor] forState:UIControlStateNormal];
 
-        
         [btn addBlockForControlEvents:UIControlEventTouchUpInside block:^(id  _Nonnull sender) {
             
             //
             
-            
+            [UIViewController tjs_rootTabBarToProductWithParams:@{@"selectedIndex":@(idx)}];
             
         }];
         
@@ -179,7 +172,6 @@ static NSString *identifier = @"HomeHeaderCollectionCell";
 
 - (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     
-    
     HomeHeaderCollectionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:identifier forIndexPath:indexPath];
     
     [cell tjs_bindDataToCellWithValue:(HomeWebClickItem *)self.webItems[indexPath.item%self.webItems.count]];
@@ -197,7 +189,6 @@ static NSString *identifier = @"HomeHeaderCollectionCell";
     NSString *targetVC = ((HomeWebClickItem *)self.webItems[indexPath.item % self.webItems.count]).target;
     
     [UIViewController tjs_pushViewController:targetVC params:@{} animated:YES];
-    
 }
 
 

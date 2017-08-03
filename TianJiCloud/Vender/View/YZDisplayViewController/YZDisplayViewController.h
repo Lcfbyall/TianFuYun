@@ -34,7 +34,7 @@ typedef enum : NSUInteger {
 /**
     根据角标，选中对应的控制器
  */
-@property (nonatomic, assign) NSInteger selectIndex;
+@property (nonatomic, assign) NSUInteger selectIndex;
 
 
 

@@ -814,7 +814,7 @@ static NSString * const ID = @"CONTENTCELL";
 }
 
 #pragma mark - 标题点击处理
-- (void)setSelectIndex:(NSInteger)selectIndex
+- (void)setSelectIndex:(NSUInteger)selectIndex
 {
     _selectIndex = selectIndex;
     

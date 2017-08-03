@@ -30,6 +30,12 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    
+    [_searchConfig viewDidAppear];
+}
+
 
 #pragma mark - settings
 
@@ -41,13 +47,13 @@
     self.navigationItem.rightBarButtonItems = [searchConfig tjs_rightBarButtonItems];
     
     self.navigationItem.titleView = [searchConfig tjs_titleView];
+
     
     _searchConfig = searchConfig;
 }
 
 
 #pragma mark - <ProductSearchVCConfig>
-
 
 
 @end

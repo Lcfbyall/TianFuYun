@@ -10,9 +10,13 @@
 #import "ProductListViewController.h"
 #import "ProductListVCConfig.h"
 
+#import "HomeHeaderConfig.h"
+#import "HomeProductClickItem.h"
+
 @interface ProductContainerController ()
 
 @property (nonatomic,strong) ProductListVCConfig *vcConfig;
+
 
 
 @end
@@ -44,22 +48,29 @@
     }];
     
   
-    NSArray *listNameArray =
-      @[
-          @"最新",@"最热",@"精选",@"信托产品",
-          @"资管机计划",@"债权基金",@"股权基金",@"证券基金"
-      ];
-    
-    
+    NSArray *listNameArray = [HomeHeaderConfig productItems];
+
     [listNameArray enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         
         ProductListViewController *vc = LOAD_Storyboard(ProductSB, ProductListVC);
-        vc.title = obj;
+        
+        HomeProductClickItem *item = (HomeProductClickItem *)obj;
+        
+        vc.title = item.title;
         
         [self addChildViewController:vc];
         
     }];
+}
 
+
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    
+    if(self.params[@"selectedIndex"])
+    {
+        self.selectIndex = [self.params[@"selectedIndex"] unsignedIntegerValue];
+    }
 }
 
 

@@ -88,7 +88,7 @@
 		2C7A34601F2F80F7004DD566 /* MineHomeCellInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7A345F1F2F80F7004DD566 /* MineHomeCellInfo.m */; };
 		2C801BD21F233F46009F82F7 /* TJSBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C801BA61F233F46009F82F7 /* TJSBaseNavigationController.m */; };
 		2C801BD31F233F46009F82F7 /* TJSBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C801BA91F233F46009F82F7 /* TJSBaseViewController.m */; };
-		2C801BD61F233F46009F82F7 /* TJSRootTabBarControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C801BB01F233F46009F82F7 /* TJSRootTabBarControllerViewController.m */; };
+		2C801BD61F233F46009F82F7 /* TJSRootTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C801BB01F233F46009F82F7 /* TJSRootTabBarController.m */; };
 		2C801BD71F233F46009F82F7 /* Mine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C801BB21F233F46009F82F7 /* Mine.storyboard */; };
 		2C859CE01F31EB2E00B86575 /* DACircularProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C859C8A1F31EB2E00B86575 /* DACircularProgressView.m */; };
 		2C859CE11F31EB2E00B86575 /* DALabeledCircularProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C859C8C1F31EB2E00B86575 /* DALabeledCircularProgressView.m */; };
@@ -170,7 +170,7 @@
 		2C89AD801F2C7E39005C29AC /* ProductSearchVCConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C89AD7F1F2C7E39005C29AC /* ProductSearchVCConfig.m */; };
 		2C89AD841F2C91DE005C29AC /* UIColor+TJSiOS7Colors.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C89AD831F2C91DE005C29AC /* UIColor+TJSiOS7Colors.m */; };
 		2C89AD871F2C9A90005C29AC /* UISearchBar+CommanStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C89AD861F2C9A90005C29AC /* UISearchBar+CommanStyle.m */; };
-		2C89AD8A1F2C9FE5005C29AC /* UIView+ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C89AD891F2C9FE5005C29AC /* UIView+ViewController.m */; };
+		2C89AD8A1F2C9FE5005C29AC /* UIView+TJSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C89AD891F2C9FE5005C29AC /* UIView+TJSViewController.m */; };
 		2C8BB7A01F30859C00E2D75F /* HomeFooterCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8BB7921F30859C00E2D75F /* HomeFooterCollectionCell.m */; };
 		2C8BB7A11F30859C00E2D75F /* HomeFooterCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C8BB7931F30859C00E2D75F /* HomeFooterCollectionCell.xib */; };
 		2C8BB7A21F30859C00E2D75F /* HomeFooterCollectionLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8BB7951F30859C00E2D75F /* HomeFooterCollectionLayout.m */; };
@@ -253,6 +253,8 @@
 		2CAF431A1F2829CF00ABCA5E /* TJSProductInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF43171F2829CF00ABCA5E /* TJSProductInfoModel.m */; };
 		2CAF431E1F282D9900ABCA5E /* TJSBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF431D1F282D9900ABCA5E /* TJSBaseTableViewCell.m */; };
 		2CAF43211F28398E00ABCA5E /* UIView+TJSFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF43201F28398E00ABCA5E /* UIView+TJSFrame.m */; };
+		2CCBE45D1F32CB61006C4018 /* ProductListCellHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCBE45C1F32CB61006C4018 /* ProductListCellHeaderView.m */; };
+		2CCBE4601F32CFCB006C4018 /* TJSBaseTableHeaderFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCBE45F1F32CFCB006C4018 /* TJSBaseTableHeaderFooterView.m */; };
 		D8B489F6D9BA2D941ED245C3 /* libPods-TianJiCloud.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24C0B56EAE3CA4A62571C4DD /* libPods-TianJiCloud.a */; };
 /* End PBXBuildFile section */
 
@@ -425,8 +427,8 @@
 		2C801BA71F233F46009F82F7 /* TJSBaseVCProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSBaseVCProtocol.h; sourceTree = "<group>"; };
 		2C801BA81F233F46009F82F7 /* TJSBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSBaseViewController.h; sourceTree = "<group>"; };
 		2C801BA91F233F46009F82F7 /* TJSBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSBaseViewController.m; sourceTree = "<group>"; };
-		2C801BAF1F233F46009F82F7 /* TJSRootTabBarControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSRootTabBarControllerViewController.h; sourceTree = "<group>"; };
-		2C801BB01F233F46009F82F7 /* TJSRootTabBarControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSRootTabBarControllerViewController.m; sourceTree = "<group>"; };
+		2C801BAF1F233F46009F82F7 /* TJSRootTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSRootTabBarController.h; sourceTree = "<group>"; };
+		2C801BB01F233F46009F82F7 /* TJSRootTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSRootTabBarController.m; sourceTree = "<group>"; };
 		2C801BB21F233F46009F82F7 /* Mine.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Mine.storyboard; sourceTree = "<group>"; };
 		2C859C891F31EB2E00B86575 /* DACircularProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DACircularProgressView.h; sourceTree = "<group>"; };
 		2C859C8A1F31EB2E00B86575 /* DACircularProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DACircularProgressView.m; sourceTree = "<group>"; };
@@ -599,8 +601,8 @@
 		2C89AD831F2C91DE005C29AC /* UIColor+TJSiOS7Colors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+TJSiOS7Colors.m"; sourceTree = "<group>"; };
 		2C89AD851F2C9A90005C29AC /* UISearchBar+CommanStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISearchBar+CommanStyle.h"; sourceTree = "<group>"; };
 		2C89AD861F2C9A90005C29AC /* UISearchBar+CommanStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISearchBar+CommanStyle.m"; sourceTree = "<group>"; };
-		2C89AD881F2C9FE5005C29AC /* UIView+ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ViewController.h"; sourceTree = "<group>"; };
-		2C89AD891F2C9FE5005C29AC /* UIView+ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ViewController.m"; sourceTree = "<group>"; };
+		2C89AD881F2C9FE5005C29AC /* UIView+TJSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TJSViewController.h"; sourceTree = "<group>"; };
+		2C89AD891F2C9FE5005C29AC /* UIView+TJSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TJSViewController.m"; sourceTree = "<group>"; };
 		2C8BB7911F30859C00E2D75F /* HomeFooterCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeFooterCollectionCell.h; sourceTree = "<group>"; };
 		2C8BB7921F30859C00E2D75F /* HomeFooterCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeFooterCollectionCell.m; sourceTree = "<group>"; };
 		2C8BB7931F30859C00E2D75F /* HomeFooterCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeFooterCollectionCell.xib; sourceTree = "<group>"; };
@@ -764,6 +766,10 @@
 		2CAF431D1F282D9900ABCA5E /* TJSBaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSBaseTableViewCell.m; sourceTree = "<group>"; };
 		2CAF431F1F28398E00ABCA5E /* UIView+TJSFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TJSFrame.h"; sourceTree = "<group>"; };
 		2CAF43201F28398E00ABCA5E /* UIView+TJSFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TJSFrame.m"; sourceTree = "<group>"; };
+		2CCBE45B1F32CB61006C4018 /* ProductListCellHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductListCellHeaderView.h; sourceTree = "<group>"; };
+		2CCBE45C1F32CB61006C4018 /* ProductListCellHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductListCellHeaderView.m; sourceTree = "<group>"; };
+		2CCBE45E1F32CFCB006C4018 /* TJSBaseTableHeaderFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSBaseTableHeaderFooterView.h; sourceTree = "<group>"; };
+		2CCBE45F1F32CFCB006C4018 /* TJSBaseTableHeaderFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSBaseTableHeaderFooterView.m; sourceTree = "<group>"; };
 		78C8A77EBFE6464B5B247606 /* Pods-TianJiCloud.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TianJiCloud.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TianJiCloud/Pods-TianJiCloud.debug.xcconfig"; sourceTree = "<group>"; };
 		E0DD7EF282716E8411120566 /* Pods-TianJiCloud.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TianJiCloud.release.xcconfig"; path = "Pods/Target Support Files/Pods-TianJiCloud/Pods-TianJiCloud.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -832,9 +838,9 @@
 		2C431DE41F299A9600858C12 /* Config */ = {
 			isa = PBXGroup;
 			children = (
+				2C431DE51F299A9600858C12 /* VCConfig */,
 				2C8BB7A91F30868B00E2D75F /* HeaderConfig */,
 				2C8BB7A81F30868B00E2D75F /* FooterConfig */,
-				2C431DE51F299A9600858C12 /* VCConfig */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -1316,8 +1322,8 @@
 			children = (
 				2CAF431F1F28398E00ABCA5E /* UIView+TJSFrame.h */,
 				2CAF43201F28398E00ABCA5E /* UIView+TJSFrame.m */,
-				2C89AD881F2C9FE5005C29AC /* UIView+ViewController.h */,
-				2C89AD891F2C9FE5005C29AC /* UIView+ViewController.m */,
+				2C89AD881F2C9FE5005C29AC /* UIView+TJSViewController.h */,
+				2C89AD891F2C9FE5005C29AC /* UIView+TJSViewController.m */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -1441,8 +1447,8 @@
 		2C801BAE1F233F46009F82F7 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				2C801BAF1F233F46009F82F7 /* TJSRootTabBarControllerViewController.h */,
-				2C801BB01F233F46009F82F7 /* TJSRootTabBarControllerViewController.m */,
+				2C801BAF1F233F46009F82F7 /* TJSRootTabBarController.h */,
+				2C801BB01F233F46009F82F7 /* TJSRootTabBarController.m */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -2663,6 +2669,8 @@
 				2CAF42F21F28273300ABCA5E /* ProductListCell.h */,
 				2CAF42F31F28273300ABCA5E /* ProductListCell.m */,
 				2CAF42F41F28273300ABCA5E /* ProductListCell.xib */,
+				2CCBE45B1F32CB61006C4018 /* ProductListCellHeaderView.h */,
+				2CCBE45C1F32CB61006C4018 /* ProductListCellHeaderView.m */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -2713,6 +2721,8 @@
 				2CAF431D1F282D9900ABCA5E /* TJSBaseTableViewCell.m */,
 				2C8BB7C01F3167CC00E2D75F /* TJSBaseCollectionViewCell.h */,
 				2C8BB7C11F3167CC00E2D75F /* TJSBaseCollectionViewCell.m */,
+				2CCBE45E1F32CFCB006C4018 /* TJSBaseTableHeaderFooterView.h */,
+				2CCBE45F1F32CFCB006C4018 /* TJSBaseTableHeaderFooterView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -3018,7 +3028,7 @@
 				2C85E35B1F2ECDF900ADD360 /* CapitalRecordListController.m in Sources */,
 				2C85E2B21F2EBDFE00ADD360 /* MineViewController.m in Sources */,
 				2C4412A61F2201FF00C453EF /* TJSBaseRequest+TJSSingleRequestBlock.m in Sources */,
-				2C801BD61F233F46009F82F7 /* TJSRootTabBarControllerViewController.m in Sources */,
+				2C801BD61F233F46009F82F7 /* TJSRootTabBarController.m in Sources */,
 				2C4412AD1F22031600C453EF /* TJSHudAlert.m in Sources */,
 				2C8DE5811F29D4F7009B3AE2 /* TJSHomeListTableAdapter.m in Sources */,
 				2C431DEC1F299A9600858C12 /* HomeViewController.m in Sources */,
@@ -3066,6 +3076,7 @@
 				2C859CF71F31EB2E00B86575 /* ZLPhotoPickerGroup.m in Sources */,
 				2C85E3A41F2F1AF900ADD360 /* TJSMineHomeDefaultCellContentConfig.m in Sources */,
 				2C85E3A71F2F1BEB00ADD360 /* MineHomeDefaultCell.m in Sources */,
+				2CCBE4601F32CFCB006C4018 /* TJSBaseTableHeaderFooterView.m in Sources */,
 				2C4412011F219A5300C453EF /* NSString+StringSize.m in Sources */,
 				2C85E3831F2F042A00ADD360 /* TJSMineHomeDataSourceImpl.m in Sources */,
 				2C859D091F31EB6B00B86575 /* NSObject+vk_msgSend.m in Sources */,
@@ -3110,8 +3121,9 @@
 				2C85E3471F2ECBE200ADD360 /* FeedbackViewController.m in Sources */,
 				2CAF43111F2829B300ABCA5E /* TJSAppInfo.m in Sources */,
 				2C8DE5841F29D509009B3AE2 /* TJSHomeListInteractorImpl.m in Sources */,
+				2CCBE45D1F32CB61006C4018 /* ProductListCellHeaderView.m in Sources */,
 				2C85E39E1F2F1A5800ADD360 /* TJSMineHomeInvestCellContentConfig.m in Sources */,
-				2C89AD8A1F2C9FE5005C29AC /* UIView+ViewController.m in Sources */,
+				2C89AD8A1F2C9FE5005C29AC /* UIView+TJSViewController.m in Sources */,
 				2C4412A91F2201FF00C453EF /* TJWUrlArgumentsFilter.m in Sources */,
 				2C859CFF1F31EB2E00B86575 /* ZLPhotoPickerFooterCollectionReusableView.m in Sources */,
 				2C8DE5B31F2AD8A0009B3AE2 /* DiscoveryNewsListCell.m in Sources */,

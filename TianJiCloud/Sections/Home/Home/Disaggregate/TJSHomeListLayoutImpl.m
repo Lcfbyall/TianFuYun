@@ -49,7 +49,7 @@
 
 - (void)beginRefresh{
     
-   // [self.tableView.mj_header beginRefreshing];
+   [self.tableView.mj_header beginRefreshing];
 }
 
 - (void)endRefresh{

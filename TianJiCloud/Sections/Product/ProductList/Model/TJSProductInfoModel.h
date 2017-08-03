@@ -15,7 +15,6 @@
 @property (nonatomic,strong) TJSProductInfo *product;
 
 
-
 - (instancetype)initWithProduct:(TJSProductInfo *)product;
 
 

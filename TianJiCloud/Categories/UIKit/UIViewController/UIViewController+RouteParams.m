@@ -9,10 +9,16 @@
 #import "UIViewController+RouteParams.h"
 #import <objc/runtime.h>
 
+#import "TJSRootTabBarController.h"
+#import "TJSBaseNavigationController.h"
 #import "TJSBaseViewController.h"
+
 #import "UIViewController+StackLevel.h"
 
 @implementation UIViewController (RouteParams)
+
+
+#pragma mark - params
 
 - (void)setParams:(NSDictionary *)params {
     
@@ -22,6 +28,9 @@
 - (NSDictionary *)params {
     return objc_getAssociatedObject(self, _cmd);
 }
+
+
+#pragma mark - pushViewController
 
 + (void)tjs_pushViewController:(NSString *_Nullable)viewController
                       animated:(BOOL)animated{
@@ -97,6 +106,30 @@
     
     
     [[currentViewController navigationController] pushViewController:vc animated:animated];
+}
+
+
+
+#pragma mark - rootTabBar select
+
++ (void)tjs_rootTabBarToProductWithParams:(NSDictionary *)params{
+    
+    TJSRootTabBarController *appRootVC = (TJSRootTabBarController *)[UIApplication sharedApplication].keyWindow.rootViewController;
+    
+    appRootVC.selectedIndex = 1;
+    
+    TJSBaseNavigationController *navi = [appRootVC selectedViewController];
+    
+    TJSBaseViewController *naviRootVC = (TJSBaseViewController *)[[navi viewControllers] firstObject];
+    naviRootVC.params = params;
+    
+}
+
++ (void)tjs_rootTabBarToSelectedIndex:(NSUInteger)index{
+
+    TJSRootTabBarController *appRootVC = (TJSRootTabBarController *)[UIApplication sharedApplication].keyWindow.rootViewController;
+    
+    appRootVC.selectedIndex = index;
 }
 
 @end

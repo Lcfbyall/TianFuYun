@@ -84,7 +84,7 @@
     [bgView addSubview:searchBar];
     
     WEAK_SELF(self);
-    searchBar.searchBarTextDidBeginEditing = ^(UISearchBar *searchBar){
+    searchBar.searchBarShouldBeginEditing = ^(UISearchBar *searchBar){
         
         STRONG_SELF(self);
         if([self.vc conformsToProtocol:@protocol(ProductListVCConfig)] &&
@@ -93,7 +93,17 @@
             [self.vc onTapSearchBarToProductSearch:searchBar];
         }
         
+        
+        return NO;
+        
     };
+    
+    searchBar.searchBarTextDidBeginEditing = ^(UISearchBar *searchBar){
+        
+        
+        [self.vc.navigationController.navigationBar endEditing:YES];
+    };
+    
     
     searchBar.searchBarTextDidEndEditing = ^(UISearchBar *searchBar){
         

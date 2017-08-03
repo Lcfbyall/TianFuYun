@@ -13,6 +13,7 @@
 
 #import "TJSProductInfoModel.h"
 #import "ProductListCell.h"
+#import "ProductListCellHeaderView.h"
 
 //cell的配置就是产品的，不再是home的了
 #import "TJSProductListCellFactory.h"
@@ -99,8 +100,7 @@
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
     
-   
-
+    [scrollView.tjs_viewController.navigationController.navigationBar endEditing:YES];
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -117,25 +117,32 @@
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
+    
+    //按理说应该弄一个headerFooterFactory,先暂时不弄了。
+    //暂时先在TJSProductListCellFactory里返回，虽然这是不合理的。
+    
+    ProductListCellHeaderView *header = [_cellFactory headerFooterViewIntable:tableView forSection:section];
 
-    return [UITableViewHeaderFooterView new];
+    [header tjs_bindDataToCellWithValue:@"精选产品"];
+    
+    return header;
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section{
-
-    return [UITableViewHeaderFooterView new];
+    
+    return [_cellFactory headerFooterViewIntable:tableView forSection:section];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
 
-    return 1;
+    //按理说应该弄一个headerFooterLayoutConfig,先暂时不弄了。
+    
+    return 60;
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
 
     return 1;
 }
-
-
 
 @end
