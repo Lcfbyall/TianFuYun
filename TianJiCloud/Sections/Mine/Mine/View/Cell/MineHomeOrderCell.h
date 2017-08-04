@@ -19,4 +19,6 @@
 
 @interface MineHomeOrderCell : MineHomeBaseTableCell
 
+
+
 @end

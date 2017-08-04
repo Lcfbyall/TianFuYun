@@ -15,7 +15,7 @@
 
 - (CGSize)contentSize:(CGFloat)cellWidth model:(id)model{
 
-    return CGSizeMake(cellWidth, 44);
+    return CGSizeMake(cellWidth, 50);
 }
 
 - (NSString *)cellContent:(id)model{

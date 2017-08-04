@@ -19,19 +19,24 @@
 @implementation MineHomeOrderCell
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
- 
+    
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     
     if(self){
-    
-        
         
     }
-
+    
     return self;
 }
 
 
+#pragma mark - <TJSTableViewCellProtocol>
+
+- (void)tjs_bindDataToCellWithValue:(id)value{
+    
+    [super tjs_bindDataToCellWithValue:value];
+    
+}
 
 
 

@@ -87,6 +87,8 @@ static NSString *const headerFooterIdentifier = @"MineHomeHeaderFooterIdentifier
     //cell 的 delegate 给 vc ,self.cellDelegate就是vc
     [(MineHomeBaseTableCell *)cell setDelegate:self.cellDelegate];
     
+    [cell tjs_bindDataToCellWithValue:model];
+    
     return cell;
 }
 
