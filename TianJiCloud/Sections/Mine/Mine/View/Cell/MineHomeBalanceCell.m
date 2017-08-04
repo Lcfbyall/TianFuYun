@@ -10,7 +10,7 @@
 
 @interface MineHomeBalanceCell ()
 
-
+@property (nonatomic,strong) UIButton *withdarwBtn;
 
 @end
 
@@ -21,10 +21,45 @@
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     
     if(self){
+
+
+        [self p_addSubView];
         
     }
     
     return self;
+}
+
+
+- (void)p_addSubView{
+
+    self.withdarwBtn = ({
+        UIColor *tintcolor = [UIColor iOS7darkBlueColor];
+        CGFloat cornerRadius = 15;
+        UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+        button.layer.masksToBounds = YES;
+        button.layer.cornerRadius  = cornerRadius;
+        button.layer.borderColor   = tintcolor.CGColor;
+        button.layer.borderWidth   = 1;
+        button.titleLabel.font = [UIFont systemFontOfSize:15.0f];
+        [button setTitle:@"提现" forState:UIControlStateNormal];
+        [button setTitleColor:tintcolor forState:UIControlStateNormal];
+        [button setTitleColor:ThemeService.origin_color_00 forState:UIControlStateHighlighted];
+        [button setBackgroundColor:[UIColor iOS7darkBlueColor] forState:UIControlStateHighlighted];
+        [button addBlockForControlEvents:UIControlEventTouchUpInside block:^(id  _Nonnull sender) {
+            if(self.cellInfo.itemOperation)self.cellInfo.itemOperation(nil, nil);
+        }];
+        [self.contentView addSubview:button];
+        [button mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.width.mas_equalTo(100);
+            make.height.mas_equalTo(cornerRadius*2);
+            //make.trailing.mas_equalTo(-15);
+            make.right.mas_equalTo(-15);
+            //make.centerYWithinMargins.mas_equalTo(0);
+            make.centerY.mas_equalTo(0);
+        }];
+        button;
+    });
 }
 
 
@@ -42,5 +77,9 @@
     
     
 }
+
+
+
+
 
 @end

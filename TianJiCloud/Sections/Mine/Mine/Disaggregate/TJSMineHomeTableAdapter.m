@@ -79,7 +79,7 @@ static NSString *const headerFooterIdentifier = @"MineHomeHeaderFooterIdentifier
   
    MineHomeBaseTableCell *cell = nil;
     
-   id model    = [[self.interactor items] objectAtIndex:indexPath.section][indexPath.row];
+   MineHomeCellInfo * model    = [[self.interactor items] objectAtIndex:indexPath.section][indexPath.row];
     
     cell = [((TJSMineHomeCellFactory *)self.cellFactory)
             cellInTable:tableView forMineInfoModel:model];
@@ -110,15 +110,17 @@ static NSString *const headerFooterIdentifier = @"MineHomeHeaderFooterIdentifier
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
 
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    
+
     MineHomeBaseTableCell *cell =  [tableView cellForRowAtIndexPath:indexPath];
-    id modelInArray    = [[self.interactor items] objectAtIndex:indexPath.section][indexPath.row];
-    
     if([cell.delegate conformsToProtocol:@protocol(TJSMineHomeCellDelegate)] && [cell.delegate respondsToSelector:@selector(onTapCell:)]){
     
-        [cell.delegate onTapCell:modelInArray];
+        [cell.delegate onTapCell:cell.cellInfo];
     }
 
+    if(cell.cellInfo.cellOperation){
+
+        cell.cellInfo.cellOperation(nil, nil);
+    }
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{

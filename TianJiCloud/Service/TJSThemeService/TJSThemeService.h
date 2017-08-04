@@ -16,6 +16,15 @@
 
 + (instancetype)sharedInstance;
 
+//白色
+
+- (UIColor *)origin_color_00;
+
+//黑色
+
+- (UIColor *)origin_color_01;
+
+
 //主色：白色
 - (UIColor *)main_color_00;
 
