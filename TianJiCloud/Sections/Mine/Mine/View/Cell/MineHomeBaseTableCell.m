@@ -8,6 +8,12 @@
 
 #import "MineHomeBaseTableCell.h"
 
+@interface MineHomeBaseTableCell ()
+
+
+
+@end
+
 @implementation MineHomeBaseTableCell
 
 

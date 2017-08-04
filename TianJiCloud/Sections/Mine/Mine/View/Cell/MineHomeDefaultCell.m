@@ -8,14 +8,12 @@
 
 #import "MineHomeDefaultCell.h"
 
+@interface MineHomeDefaultCell ()
+
+@end
+
 @implementation MineHomeDefaultCell
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
-}
-*/
+
 
 @end

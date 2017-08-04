@@ -1,20 +1,22 @@
 //
-//  HomeHeaderCollectionLayout.m
+//  MineHomeHeaderCollectionLayout.m
 //  TianJiCloud
 //
-//  Created by 朱鹏 on 2017/8/1.
+//  Created by 朱鹏 on 2017/8/4.
 //  Copyright © 2017年 TianJiMoney. All rights reserved.
 //
 
-#import "HomeHeaderCollectionLayout.h"
+#import "MineHomeHeaderCollectionLayout.h"
 
-@interface HomeHeaderCollectionLayout ()
+@interface MineHomeHeaderCollectionLayout ()
 
 @property (strong, nonatomic) NSMutableArray *layoutInfo;
 
+
 @end
 
-@implementation HomeHeaderCollectionLayout
+@implementation MineHomeHeaderCollectionLayout
+
 
 #pragma mark - UICollectionViewLayout
 

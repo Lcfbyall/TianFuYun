@@ -18,12 +18,11 @@
 #import "NSObject+vk_msgSend.h"
 
 
+#define containerHeight  (SCREEN_WIDTH * 378/414.0)
 static NSInteger const Sections = 20;
 static CGFloat   const Margin   = 10;
-#define containerHeight  (SCREEN_WIDTH * 378/414.0)
-
-static NSInteger const column = 4;
-static NSString *identifier = @"HomeHeaderCollectionCell";
+static NSInteger const column   = 4;
+static NSString *identifier     = @"HomeHeaderCollectionCell";
 
 @interface HomeHeaderContainer ()<UICollectionViewDataSource,UICollectionViewDelegate,HomeHeaderCollectionLayoutDelegate>
 
@@ -86,13 +85,11 @@ static NSString *identifier = @"HomeHeaderCollectionCell";
 
     self.collectionView = ({
         
-        
         HomeHeaderCollectionLayout *layout =  [[HomeHeaderCollectionLayout alloc]init];
         layout.delegate = self;
         layout.interMargin = 10;
         layout.insets   = UIEdgeInsetsMake(Margin, Margin, Margin, Margin);
         
-
         UICollectionView  *collectionView = [[UICollectionView alloc]initWithFrame:CGRectZero collectionViewLayout:layout];
         collectionView.backgroundColor = [UIColor whiteColor];
         collectionView.dataSource = self;
@@ -153,6 +150,9 @@ static NSString *identifier = @"HomeHeaderCollectionCell";
         [self addSubview:btn];
     }];
 }
+
+
+#pragma mark - Private
 
 - (void)p_scrollToItemAtIndexPath:(NSIndexPath *)indexPath{
 
