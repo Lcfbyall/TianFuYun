@@ -8,6 +8,13 @@
 
 #import "MineHomeCellInfo.h"
 
+@interface MineHomeCellInfo ()
+
+
+@end
+
 @implementation MineHomeCellInfo
+
+
 
 @end

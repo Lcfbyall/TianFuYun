@@ -41,13 +41,17 @@
 
     _vc = vc;
     
-    _vc.params = @{NavigationBarTranslucentKey:@(YES)};
+    _vc.params = @{
+                   NavigationBarTranslucentKey:@(YES),
+                   NavigationBarBarTintColor:  [UIColor clearColor]
+                   
+                   };
 }
 
 - (void)setfullScreen{
     
     
-    [self.vc.navigationController.navigationBar setupStyleBasicTranslucentWithBarTintColor:[UIColor whiteColor]];
+    [self.vc.navigationController.navigationBar setupStyleBasicTranslucentWithBarTintColor:[UIColor clearColor]];
     
   
     //需要全屏

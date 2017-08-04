@@ -20,6 +20,8 @@
 
 FOUNDATION_EXPORT NSString * const HideNavigationBarKey;
 FOUNDATION_EXPORT NSString * const NavigationBarTranslucentKey;
+FOUNDATION_EXPORT NSString * const NavigationBarBarTintColor;
+FOUNDATION_EXPORT NSString * const NavigationBarTintColor;
 FOUNDATION_EXPORT NSString * const HideBackBarButtonItemKey;
 
 

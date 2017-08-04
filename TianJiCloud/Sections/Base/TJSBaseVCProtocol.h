@@ -36,6 +36,10 @@
 
 - (BOOL)tjs_translucentNavigationBar;
 
+- (UIColor *)tjs_navigationBarBarTintColor;
+
+- (UIColor *)tjs_navigationBarTintColor;
+
 - (BOOL)tjs_hideBackBarButtonItem;
 
 //2.自定义返回按钮事件

@@ -16,8 +16,8 @@
 
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *moneyTopConstraint;
 
-
 @end
+
 
 @implementation MineHeaderCollectionCell
 

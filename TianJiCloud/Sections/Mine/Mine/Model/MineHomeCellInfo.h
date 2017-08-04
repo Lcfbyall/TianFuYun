@@ -7,16 +7,22 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "MineHomeCellItem.h"
+
 
 @interface MineHomeCellInfo : NSObject
 
 @property (nonatomic,strong) Class    cellClass;
 
-@property (nonatomic,copy)   NSString *image;
-
 @property (nonatomic,copy)   NSString *title;
 
+@property (nonatomic,copy)   NSString *image;
+
 @property (nonatomic,copy)   NSString *detailTitle;
+
+@property (nonatomic,strong) NSArray  <MineHomeCellItem *> *cellItems;
+
+@property (nonatomic,assign) UITableViewCellAccessoryType accessoryType;
 
 @property (nonatomic,copy)   NSString *target;
 

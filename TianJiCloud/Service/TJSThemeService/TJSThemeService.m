@@ -49,6 +49,11 @@
 
 #pragma mark - Color
 
+- (UIColor *)main_color_00{
+
+  return [UIColor tjs_colorWithHexString:self.colorDict[@"main_color_00"]];
+}
+
 - (UIColor *)weak_color_10 {
     
     return [UIColor tjs_colorWithHexString:self.colorDict[@"weak_color_10"]];

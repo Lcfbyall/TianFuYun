@@ -6,8 +6,9 @@
 //  Copyright © 2017年 TianJiMoney. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "MineHomeCellItem.h"
 
-@interface MineHomeCellIvestItem : NSObject
+@interface MineHomeCellIvestItem : MineHomeCellItem
+
 
 @end

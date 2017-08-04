@@ -16,6 +16,8 @@
 
 + (instancetype)sharedInstance;
 
+//主色：白色
+- (UIColor *)main_color_00;
 
 // 页面最底层背景
 - (UIColor *)weak_color_10; /**< efeff4 */

@@ -9,33 +9,50 @@
 #import "UINavigationBar+StyleConfigure.h"
 #import "UIImage+FromColor.h"
 
+static UIColor *TitleColor   = nil;
+static UIFont  *TitleFont    = nil;
+static UIColor *BarTintColor = nil;
+static UIColor *TintColor    = nil;
+
+@interface UINavigationBar ()
+
+
+@end
+
 @implementation UINavigationBar (StyleConfigure)
 
++ (void)initialize{
+  
+    TitleColor   =  [UIColor blackColor];
+    TitleFont    =  [UIFont systemFontOfSize:16.0f];
+    BarTintColor =  ThemeService.main_color_00;
+    TintColor    =  ThemeService.main_color_00;
+}
 
 /**
  项目默认效果
  */
 - (void)setupStyleBasic{
     
-    [self setupStyleBasicWithBarTintColor:[UIColor whiteColor]];
+    [self setupStyleBasicWithBarTintColor:ThemeService.main_color_00];
     
 }
 
 - (void)setupStyleBasicTranslucent{
 
-    [self setupStyleWithTitleColor:[UIColor blackColor]
-                         titleFont:[UIFont systemFontOfSize:16.0f]
-                      barTintColor:[UIColor greenColor]
-                         tintColor:[UIColor whiteColor]
+    [self setupStyleWithTitleColor:TitleColor
+                         titleFont:TitleFont
+                      barTintColor:BarTintColor
+                         tintColor:TintColor
                        translucent:YES];
 }
 
 - (void)setupStyleBasicWithBarTintColor:(UIColor *)barTintColor{
   
-    [self setupStyleWithTitleColor:[UIColor blackColor]
-                         titleFont:[UIFont systemFontOfSize:16.0f]
+    [self setupStyleWithTitleColor:TitleColor
+                         titleFont:TitleFont
                       barTintColor:barTintColor
-                         tintColor:[UIColor whiteColor]
+                         tintColor:TintColor
                        translucent:NO];
 }
 
@@ -43,10 +60,10 @@
 - (void)setupStyleBasicTranslucentWithBarTintColor:(UIColor *)barTintColor{
 
     
-    [self setupStyleWithTitleColor:[UIColor blackColor]
-                         titleFont:[UIFont systemFontOfSize:16.0f]
+    [self setupStyleWithTitleColor:TitleColor
+                         titleFont:TitleFont
                       barTintColor:barTintColor
-                         tintColor:[UIColor whiteColor]
+                         tintColor:TintColor
                        translucent:YES];
 }
 
