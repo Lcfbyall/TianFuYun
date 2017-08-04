@@ -25,7 +25,7 @@
 
     [self setupStyleWithTitleColor:[UIColor blackColor]
                          titleFont:[UIFont systemFontOfSize:16.0f]
-                      barTintColor:[UIColor whiteColor]
+                      barTintColor:[UIColor greenColor]
                          tintColor:[UIColor whiteColor]
                        translucent:YES];
 }
@@ -49,6 +49,8 @@
                          tintColor:[UIColor whiteColor]
                        translucent:YES];
 }
+
+/////
 
 - (void)setupStyleWithTitleColor:(UIColor *)titleColor
                        titleFont:(UIFont *)titleFont

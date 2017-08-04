@@ -34,6 +34,8 @@
 //1.是否隐藏导航栏
 - (BOOL)tjs_hideNavigationBar;
 
+- (BOOL)tjs_translucentNavigationBar;
+
 - (BOOL)tjs_hideBackBarButtonItem;
 
 //2.自定义返回按钮事件

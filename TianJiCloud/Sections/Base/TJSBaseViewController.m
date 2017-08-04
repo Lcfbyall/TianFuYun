@@ -10,6 +10,7 @@
 
 
 NSString * const HideNavigationBarKey     = @"HideNavigationBarKey";
+NSString * const NavigationBarTranslucentKey = @"NavigationBarTranslucentKey";
 NSString * const HideBackBarButtonItemKey = @"HideBackBarButtonItemKey";
 
 @interface TJSBaseViewController ()<UINavigationControllerDelegate>
@@ -72,6 +73,13 @@ NSString * const HideBackBarButtonItemKey = @"HideBackBarButtonItemKey";
     return hide;
 }
 
+- (BOOL)tjs_translucentNavigationBar{
+  
+    BOOL translucent = self.params[NavigationBarTranslucentKey];
+    
+    return translucent;
+}
+
 - (BOOL)tjs_hideBackBarButtonItem{
 
     BOOL hide = self.params[HideBackBarButtonItemKey];
@@ -101,6 +109,21 @@ NSString * const HideBackBarButtonItemKey = @"HideBackBarButtonItemKey";
     }
     
     [self.navigationController setNavigationBarHidden:isHidden animated:YES];
+    
+    
+    if(!isHidden){
+    
+        BOOL translucent = NO;
+        
+        if ([viewController isKindOfClass:[TJSBaseViewController class]]&&
+            [viewController conformsToProtocol:@protocol(TJSNavigationConfig)] &&
+            [viewController respondsToSelector:@selector(tjs_translucentNavigationBar)]) {
+            
+            translucent = [((TJSBaseViewController *)viewController) tjs_translucentNavigationBar];
+        }
+        
+        self.navigationController.navigationBar.translucent = translucent;
+    }
 }
 
 - (void)navigationController:(UINavigationController *)navigationController didShowViewController:(UIViewController *)viewController animated:(BOOL)animated{

@@ -152,6 +152,7 @@ static NSString *const headerFooterIdentifier = @"MineHomeHeaderFooterIdentifier
  
     [scrollView.tjs_viewController.view endEditing:YES];
 
+    /*
     UIColor * color = [UIColor colorWithRed:0/255.0 green:175/255.0 blue:240/255.0 alpha:1];
     CGFloat offsetY = scrollView.contentOffset.y;
     
@@ -164,6 +165,7 @@ static NSString *const headerFooterIdentifier = @"MineHomeHeaderFooterIdentifier
         
         //[scrollView.tjs_viewController.navigationController.navigationBar lt_setBackgroundColor:[color colorWithAlphaComponent:0]];
     }
+     */
 }
 
 

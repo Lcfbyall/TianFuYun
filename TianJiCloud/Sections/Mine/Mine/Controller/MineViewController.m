@@ -34,10 +34,6 @@
 }
 
 - (void)viewWillAppear:(BOOL)animated{
-  
-    [super viewWillAppear:animated];
-    
-    [self.navigationController.navigationBar setupStyleBasicTranslucent];
     
     [self.minehomeConfig setfullScreen];
 }
@@ -95,7 +91,9 @@
 
 - (void)onTapLeftBarBtnToSettingList:(id)sender{
    
-    [UIViewController tjs_pushViewController:SettingListVC animated:YES];
+    [UIViewController tjs_pushViewController:SettingListVC
+                                      params:@{}
+                                    animated:YES];
 }
 
 - (void)onTapRightBarBtnToHideSum:(id)sender{

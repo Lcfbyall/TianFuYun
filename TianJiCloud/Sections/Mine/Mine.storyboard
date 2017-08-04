@@ -35,9 +35,6 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="9FH-Yq-8kt"/>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="375" height="667"/>
                     <connections>
                         <outlet property="mineTableView" destination="6if-f7-fqe" id="9nB-6M-x50"/>
                         <segue destination="tdg-mW-QGh" kind="show" identifier="MineVCToMyOrderVC" id="mj5-Dw-2ey"/>
