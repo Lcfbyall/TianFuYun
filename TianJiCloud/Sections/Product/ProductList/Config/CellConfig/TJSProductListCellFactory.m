@@ -57,9 +57,7 @@
 
         cell = [tableView dequeueReusableCellWithIdentifier:_identifier];
     }
-    
-    [cell tjs_bindDataToCellWithValue:model];
-    
+
     
     return (ProductListCell *)cell;
 }

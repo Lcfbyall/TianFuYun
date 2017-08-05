@@ -20,7 +20,6 @@
     id<TJSMineHomeCellLayoutConfig> layoutConfig =[TJSMineHomeCellLayoutConfig sharedLayoutConfig];
     
     NSString *_identifier = [layoutConfig cellContent:model];
-    
     MineHomeBaseTableCell *cell = [tableView dequeueReusableCellWithIdentifier:_identifier];
     
     if (!cell) {
@@ -38,10 +37,6 @@
         
         cell = [tableView dequeueReusableCellWithIdentifier:_identifier];
     }
-    
-    
-    [cell tjs_bindDataToCellWithValue:model];
-    
     
     return (MineHomeBaseTableCell *)cell;
 

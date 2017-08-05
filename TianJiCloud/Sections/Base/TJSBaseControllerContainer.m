@@ -59,6 +59,7 @@
 }
 
 
+
 #pragma mark - TJSBaseControllerContainerProtocol
 
 - (UIScrollView *)tjs_contentScroll{
@@ -66,6 +67,10 @@
        return _contentScroll;
 }
 
+- (void)tjs_setupChildViewControllers{
+
+
+}
 
 
 #pragma mark - UIScrollViewDelegate

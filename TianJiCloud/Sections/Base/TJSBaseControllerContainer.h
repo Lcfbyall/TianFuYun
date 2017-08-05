@@ -10,7 +10,7 @@
 
 @protocol TJSBaseControllerContainerProtocol <NSObject>
 
-@optional
+@required
 
 - (UIScrollView *)tjs_contentScroll;
 

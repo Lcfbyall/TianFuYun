@@ -17,6 +17,8 @@
 - (BOOL)onTapCellInvestItem:(NSInteger)index;
 
 @end
+
+
 @interface MineHomeInvestCell : MineHomeBaseTableCell
 
 @end

@@ -77,6 +77,8 @@ static NSString *identifier = @"DiscoveryNewsListCell";
     
     //cell 的 delegate 给 vc ,self.cellDelegate就是vc
     [(DiscoveryNewsListCell *)cell setDelegate:self.cellDelegate];
+
+    [cell tjs_bindDataToCellWithValue:nil];
     
     return cell;
 }

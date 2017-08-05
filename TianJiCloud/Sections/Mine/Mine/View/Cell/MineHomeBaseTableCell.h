@@ -8,6 +8,7 @@
 
 #import "TJSBaseTableViewCell.h"
 #import "TJSMineHomeCellProtocol.h"
+
 #import "MineHomeCellInfoModel.h"
 
 @interface MineHomeBaseTableCell : TJSBaseTableViewCell

@@ -79,15 +79,15 @@ static NSString *const headerFooterIdentifier = @"MineHomeHeaderFooterIdentifier
   
    MineHomeBaseTableCell *cell = nil;
     
-   MineHomeCellInfo * model    = [[self.interactor items] objectAtIndex:indexPath.section][indexPath.row];
+   MineHomeCellInfo * info = [[self.interactor items] objectAtIndex:indexPath.section][indexPath.row];
     
     cell = [((TJSMineHomeCellFactory *)self.cellFactory)
-            cellInTable:tableView forMineInfoModel:model];
+            cellInTable:tableView forMineInfoModel:info];
     
     //cell 的 delegate 给 vc ,self.cellDelegate就是vc
     [(MineHomeBaseTableCell *)cell setDelegate:self.cellDelegate];
     
-    [cell tjs_bindDataToCellWithValue:model];
+    [cell tjs_bindDataToCellWithValue:info];
     
     return cell;
 }

@@ -51,7 +51,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
   
-    UITableViewCell *cell = nil;
+    TJSBaseTableViewCell *cell = nil;
     
     id model = [[self.interactor items] objectAtIndex:indexPath.row];
     
@@ -61,6 +61,8 @@
     
     //cell 的 delegate 给 vc ,self.cellDelegate就是vc
     [(ProductListCell *)cell setDelegate:self.cellDelegate];
+
+    [cell tjs_bindDataToCellWithValue:model];
     
     return cell;
 }

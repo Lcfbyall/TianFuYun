@@ -118,9 +118,8 @@ static NSString *identifier     = @"HomeHeaderCollectionCell";
   
     WEAK_SELF(self);
     [self.productItems enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-       
         STRONG_SELF(self);
-        HomeProductClickItem *item = self.productItems[idx];
+        HomeProductClickItem *item = (HomeProductClickItem *)obj;
         CGFloat itemW = self.bounds.size.width/(CGFloat)column;
         CGFloat itemH = (self.bounds.size.height - Margin)/2.0/((CGFloat)self.productItems.count/column);
         CGFloat X     = idx % column * itemW;
@@ -138,15 +137,9 @@ static NSString *identifier     = @"HomeHeaderCollectionCell";
         [btn setTitleColor:[UIColor darkTextColor] forState:UIControlStateNormal];
 
         [btn addBlockForControlEvents:UIControlEventTouchUpInside block:^(id  _Nonnull sender) {
-            
-            //
-            
             [UIViewController tjs_rootTabBarToProductWithParams:@{@"selectedIndex":@(idx)}];
-            
         }];
-        
         [btn tjs_imageTitleVerticalAlignmentWithSpace:10];
-        
         [self addSubview:btn];
     }];
 }
@@ -217,12 +210,8 @@ static NSString *identifier     = @"HomeHeaderCollectionCell";
    3. 已经停止拖动，也就是手指已经放开
    4. 将要开始减速，
    5. 已经结束减速，
-**／
 
- 
- /*
-
-  拖动一段时时间，放开手指
+  拖动一段时时间，放开手指:
  
   1. 将要开始拖动，
   2. 将要停止拖动，也就是手指将要放开

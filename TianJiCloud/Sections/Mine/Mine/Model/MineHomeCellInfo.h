@@ -24,15 +24,17 @@
 
 @property (nonatomic,assign) UITableViewCellAccessoryType accessoryType;
 
+@property (nonatomic,assign) UITableViewCellSelectionStyle selectionStyle;
+
 @property (nonatomic,copy)   NSString *target;
 
 @property (nonatomic,strong) NSDictionary *targetParams;
-
 
 @property (nonatomic,copy) void (^cellOperation)(id obj1,id obj2);
 
 @property (nonatomic,copy) void (^itemOperation)(id obj1,id obj2);
 
-
-
 @end
+
+
+
