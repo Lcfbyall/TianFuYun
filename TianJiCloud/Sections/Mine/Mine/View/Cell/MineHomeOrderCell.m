@@ -41,7 +41,7 @@ static CGFloat const ItemWitem = 80;
 
         UIScrollView *scroll = [[UIScrollView alloc]init];
         scroll.showsHorizontalScrollIndicator=NO;
-        scroll.backgroundColor = [UIColor redColor];
+        //scroll.backgroundColor = [UIColor redColor];
         [self.contentView addSubview:scroll];
         scroll;
     });
@@ -95,7 +95,7 @@ static CGFloat const ItemWitem = 80;
         //btn.imageView.backgroundColor  = [UIColor blueColor];
         [btn setImage:IMAGE(item.img) forState:UIControlStateNormal];
         [btn setTitle:item.title forState:UIControlStateNormal];
-        [btn setTitleColor:[UIColor darkTextColor] forState:UIControlStateNormal];
+        [btn setTitleColor:[UIColor darkGrayColor] forState:UIControlStateNormal];
         [btn addBlockForControlEvents:UIControlEventTouchUpInside block:^(id  _Nonnull sender) {
             if(item.itemOperation)item.itemOperation(nil, nil);
         }];
