@@ -70,10 +70,7 @@
     [super tjs_bindDataToCellWithValue:value];
     
     self.detailTextLabel.text = nil;
-    
-    //添加一个按钮
-    
-    
+ 
     
     
 }

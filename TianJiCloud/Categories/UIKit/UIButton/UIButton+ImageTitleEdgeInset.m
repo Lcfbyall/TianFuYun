@@ -58,8 +58,8 @@
     
     CGRect contentRect = [self contentRectForBounds:self.bounds];
     
-    CGRect titleRect   = [self titleRectForContentRect:contentRect];
-    CGRect imageRect   = [self imageRectForContentRect:contentRect];
+    //CGRect titleRect   = [self titleRectForContentRect:contentRect];
+    //CGRect imageRect   = [self imageRectForContentRect:contentRect];
     
     CGSize titleSize   = [self titleRectForContentRect:contentRect].size;
     CGSize imageSize   = [self imageRectForContentRect:contentRect].size;

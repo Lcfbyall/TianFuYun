@@ -7,19 +7,53 @@
 //
 
 #import "MineHomeCellInfoModel.h"
+#import "UIApplication+TJSAppVersion.h"
 
+
+//
+static NSString *const Balance_AccoutLeft = @"账户余额:";
+static NSString *const Balance_WithDraw   = @"提现";
+static NSString *const Balance_cell  = @"MineHomeBalanceCell";
+
+
+//
+static NSString *const AllOrder_MyOrder = @"我的订单";
+static NSString *const AllOrder_AllOrder= @"全部订单";
+static NSString *const AllOrder_cell = @"MineHomeDefaultCell";
+//
+static NSString *const Order_cell = @"MineHomeOrderCell";
+#define orderStatus  @[@"预约中",@"待报单",@"审核中",@"待结算",@"已结算",@"失败"]
+#define orderImgs @[@"appointment",@"alloc_wait",@"check_wait",@"comm_wait",@"comm_suc",@"comm_fail"]
+
+
+//
+static NSString *const Invest_cell = @"MineHomeInvestCell";
+#define investTypes @[@"累计投资",@"资金记录",@"银行卡管理",@"专属经理"]
+#define investImgs  @[@"total_invest",@"money_record",@"bank_card_new",@"manager"]
+
+
+//
+static NSString *const Default_cell = @"MineHomeDefaultCell";
+#define fourthTitles  @[@"我的奖励",@"我的收藏",@"合同申请",@"使用协议",@"用户反馈",@"关于我们",@"当前版本"]
+#define fourthImages  @[@"my_reward",@"my_collection",@"apply_trading",@"use_protocol",@"feedback",@"about_us",@"version"]
+
+
+
+@interface MineHomeCellInfoModel ()
+
+@end
 
 @implementation MineHomeCellInfoModel
 
-- (void)configItems{
 
+- (void)configItems{
 
     //第一组
     MineHomeCellInfo *balance = [MineHomeCellInfo new];
-    balance.cellClass     = NSClassFromString(@"MineHomeBalanceCell");
-    balance.title         = @"账户余额";
+    balance.cellClass     = NSClassFromString(Balance_cell);
+    balance.title         = [NSString stringWithFormat:@"%@   %@",Balance_AccoutLeft,@"0.0元"];
     balance.image         = nil;
-    balance.detailTitle   = @"提现";
+    balance.detailTitle   = Balance_WithDraw;
     balance.cellItems     = nil;
     balance.accessoryType = UITableViewCellAccessoryNone;
     balance.selectionStyle= UITableViewCellSelectionStyleNone;
@@ -34,10 +68,10 @@
 
     //第二组
     MineHomeCellInfo *allOrder = [MineHomeCellInfo new];
-    allOrder.cellClass     = NSClassFromString(@"MineHomeDefaultCell");
-    allOrder.title         = @"我的订单";
+    allOrder.cellClass     = NSClassFromString(AllOrder_cell);
+    allOrder.title         = AllOrder_MyOrder;
     allOrder.image         = nil;
-    allOrder.detailTitle   = @"全部订单";
+    allOrder.detailTitle   = AllOrder_AllOrder;
     allOrder.cellItems     = nil;
     allOrder.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     allOrder.selectionStyle= UITableViewCellSelectionStyleDefault;
@@ -51,7 +85,7 @@
     };
     allOrder.itemOperation = NULL;
     MineHomeCellInfo *order   = [MineHomeCellInfo new];
-    order.cellClass   = NSClassFromString(@"MineHomeOrderCell");
+    order.cellClass   = NSClassFromString(Order_cell);
     order.title         = nil;
     order.image         = nil;
     order.detailTitle   = nil;
@@ -62,8 +96,7 @@
     order.cellOperation = NULL;
     order.itemOperation = NULL;
     order.cellItems     = ({
-      NSArray *orderStatus = @[@"预约中",@"待报单",@"审核中",@"待结算",@"已结算",@"失败"];
-      NSArray *orderImgs = @[@"appointment",@"alloc_wait",@"check_wait",@"comm_wait",@"comm_suc",@"comm_fail"];
+    
       NSArray *cellBtnItems =
       @[[MineHomeCellItem new],
          [MineHomeCellItem new],
@@ -91,7 +124,7 @@
 
     //第三组
     MineHomeCellInfo *invest  = [MineHomeCellInfo new];
-    invest.cellClass  = NSClassFromString(@"MineHomeInvestCell");
+    invest.cellClass  = NSClassFromString(Invest_cell);
     invest.title         = nil;
     invest.image         = nil;
     invest.detailTitle   = nil;
@@ -102,8 +135,7 @@
     invest.cellOperation = NULL;
     invest.itemOperation = NULL;
     invest.cellItems     = ({
-        NSArray *investTypes = @[@"累计投资",@"资金记录",@"银行卡管理",@"专属经理"];
-        NSArray *investImgs  = @[@"total_invest",@"money_record",@"bank_card_new",@"manager"];
+        
         NSArray *targets = @[CumulativeInvestVC,
                              CapitalRecordContainerVC,
                              BankCardManagerVC,
@@ -152,20 +184,6 @@
                          [MineHomeCellInfo new],
                          [MineHomeCellInfo new],
                          [MineHomeCellInfo new],];
-    NSArray *fourthTitles = @[@"我的奖励",
-                              @"我的收藏",
-                              @"合同申请",
-                              @"使用协议",
-                              @"用户反馈",
-                              @"关于我们",
-                              @"当前版本"];
-    NSArray *fourthImages = @[@"my_reward",
-                              @"my_collection",
-                              @"apply_trading",
-                              @"use_protocol",
-                              @"feedback",
-                              @"about_us",
-                              @"version"];
     NSArray *fourthTargets= @[RewardListVC,
                               MyFavariteVC,
                               ContractApplyVC,
@@ -175,18 +193,21 @@
     
     [fourth enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         MineHomeCellInfo *info = (MineHomeCellInfo *)obj;
-        info.cellClass = NSClassFromString(@"MineHomeDefaultCell");
+        info.cellClass = NSClassFromString(Default_cell);
         info.title = [fourthTitles objectAtIndex:idx];
         info.image = [fourthImages objectAtIndex:idx];
         info.target= [fourthTargets objectAtIndex:idx];
         info.selectionStyle= UITableViewCellSelectionStyleDefault;
         WEAK_SELF(info);
         if(idx==fourthTitles.count-1){
-            info.detailTitle = @"V1.0.0";
+            
+            NSString *appverison = [UIApplication tjs_appverison];
+            
+            info.detailTitle = [NSString stringWithFormat:@"V%@",appverison];
             info.accessoryType = UITableViewCellAccessoryNone;
             info.cellOperation = NULL;
         }else{
-            info.detailTitle = @"";
+            info.detailTitle = nil;
             info.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
             info.cellOperation = ^(id obj1, id obj2) {
                 STRONG_SELF(info);

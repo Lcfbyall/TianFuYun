@@ -30,37 +30,7 @@
     
     [self setProductConfig];
     
-    
-    self.isfullScreen = NO;
-    
-    [self setUpContentViewFrame:^(UIView *contentView) {
-        
-        contentView.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT-64-49);
-    }];
-    
-    
-    [self setUpTitleEffect:^(UIColor *__autoreleasing *titleScrollViewColor, UIColor *__autoreleasing *norColor, UIColor *__autoreleasing *selColor, UIFont *__autoreleasing *titleFont, CGFloat *titleHeight, CGFloat *titleWidth) {
-        
-        *norColor = [UIColor darkTextColor];
-        *selColor = [UIColor iOS7darkBlueColor];
-        //*titleWidth = SCREEN_WIDTH/4.0;
-        *titleHeight = 51.0;
-    }];
-    
-  
-    NSArray *listNameArray = [HomeHeaderConfig productItems];
-
-    [listNameArray enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        
-        ProductListViewController *vc = LOAD_Storyboard(ProductSB, ProductListVC);
-        
-        HomeProductClickItem *item = (HomeProductClickItem *)obj;
-        
-        vc.title = item.title;
-        
-        [self addChildViewController:vc];
-        
-    }];
+    [self p_setupChildViewControllers];
 }
 
 
@@ -93,6 +63,42 @@
     self.navigationItem.rightBarButtonItems = [_vcConfig tjs_rightBarButtonItems];
     
     self.navigationItem.titleView = [_vcConfig tjs_titleView];
+}
+
+
+#pragma mark - setup ChildViewControllers
+- (void)p_setupChildViewControllers{
+ 
+    self.isfullScreen = NO;
+    
+    [self setUpContentViewFrame:^(UIView *contentView) {
+        
+        contentView.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT-64-49);
+    }];
+    
+    
+    [self setUpTitleEffect:^(UIColor *__autoreleasing *titleScrollViewColor, UIColor *__autoreleasing *norColor, UIColor *__autoreleasing *selColor, UIFont *__autoreleasing *titleFont, CGFloat *titleHeight, CGFloat *titleWidth) {
+        
+        *norColor = [UIColor darkTextColor];
+        *selColor = [UIColor iOS7darkBlueColor];
+        //*titleWidth = SCREEN_WIDTH/4.0;
+        *titleHeight = 51.0;
+    }];
+    
+    
+    NSArray *listNameArray = [HomeHeaderConfig productItems];
+    
+    [listNameArray enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        
+        ProductListViewController *vc = LOAD_Storyboard(ProductSB, ProductListVC);
+        
+        HomeProductClickItem *item = (HomeProductClickItem *)obj;
+        
+        vc.title = item.title;
+        
+        [self addChildViewController:vc];
+        
+    }];
 }
 
 

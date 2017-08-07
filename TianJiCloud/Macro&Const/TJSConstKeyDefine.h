@@ -72,7 +72,6 @@ static NSString *const WithdrawDepositRecordVC = @"WithdrawDepositRecord";
 #pragma mark - Order identifier 
 
 static NSString *const MyOrderContainerVC = @"MyOrderContainerController";
-
 static NSString *const MyOrderListVC = @"MyOrderListViewController";
 
 #pragma mark - CumulativeInvest identifier
