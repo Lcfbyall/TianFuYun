@@ -19,7 +19,7 @@
  */
 #define CURR_LANG       ([[NSLocale preferredLanguages] objectAtIndex:0])
 #define LOCAL_COMPONENT [NSLocale componentsFromLocaleIdentifier:[NSLocale currentLocale].localeIdentifier]
-- (NSString*)getPreferredLanguage
+- (NSString*)tjs_getPreferredLanguage
 {
     NSString *languageCode = [LOCAL_COMPONENT objectForKey:@"kCFLocaleLanguageCodeKey"];
     NSString *regionCode   = [LOCAL_COMPONENT objectForKey:@"kCFLocaleScriptCodeKey"];
@@ -34,7 +34,7 @@
         return languageCode;
 }
 
-- (NSString *)phoneModel{
+- (NSString *)tjs_phoneModel{
   
     int mib[2];
     size_t len;
@@ -111,7 +111,7 @@
  *   isSimulator
  *
  */
-- (BOOL)isSimulator
+- (BOOL)tjs_isSimulator
 {
     size_t size;
     sysctlbyname("hw.machine", NULL, &size, NULL, 0);

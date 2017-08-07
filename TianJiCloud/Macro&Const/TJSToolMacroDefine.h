@@ -47,9 +47,9 @@ forCellReuseIdentifier:(Str(cellClass))];
 
 
 //4. color
-#define UIColorFromHEX(rgbHexValue)	[UIColor colorWithRed:((float)(((rgbValue) & 0xFF0000) >> 16))/255.0 \
-green:((float)(((rgbValue) & 0x00FF00) >> 8))/255.0 \
-blue:((float)((rgbValue) & 0x0000FF))/255.0 \
+#define UIColorFromHEX(rgbHexValue) [UIColor colorWithRed:((float)(((rgbHexValue) & 0xFF0000) >> 16))/255.0 \
+green:((float)(((rgbHexValue) & 0x00FF00) >> 8))/255.0 \
+blue:((float)((rgbHexValue) & 0x0000FF))/255.0 \
 alpha:1.0]
 
 #define RGB(__r, __g, __b)  [UIColor colorWithRed:(1.0*(__r)/255)\

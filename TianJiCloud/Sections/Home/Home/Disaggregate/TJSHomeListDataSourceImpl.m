@@ -83,9 +83,9 @@
 
 #pragma mark - private methods
 
+@end
 
-
-
-
+@implementation TJSHomeListOperateResult
 
 @end
+

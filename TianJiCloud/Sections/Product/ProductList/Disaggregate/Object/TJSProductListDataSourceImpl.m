@@ -18,6 +18,7 @@
 @property (nonatomic, strong) NSMutableArray *items;
 
 @end
+
 @implementation TJSProductListDataSourceImpl
 
 

@@ -14,20 +14,20 @@
  *  获得当前设备语言
  *
  */
-- (NSString*)getPreferredLanguage;
+- (NSString*)tjs_getPreferredLanguage;
 
 
 /**
  *   iPhone 7 Plus
  *
  */
-- (NSString *)phoneModel;
+- (NSString *)tjs_phoneModel;
 
 /*
  *   isSimulator
  *
  */
-- (BOOL)isSimulator;
+- (BOOL)tjs_isSimulator;
 
 
 @end

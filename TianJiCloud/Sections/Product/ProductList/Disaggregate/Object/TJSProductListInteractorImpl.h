@@ -8,7 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-#import "TJSProductListConfigurator.h"
+//#import "TJSProductListConfigurator.h"
+
 #import "TJSProductListPrivateProtocol.h"
 
 @interface TJSProductListInteractorImpl : NSObject<TJSProductListInteractor,TJSProductListLayoutDelegate>

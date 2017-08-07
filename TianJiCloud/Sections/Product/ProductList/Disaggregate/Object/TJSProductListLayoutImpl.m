@@ -9,11 +9,8 @@
 #import "TJSProductListLayoutImpl.h"
 
 
-@interface TJSProductListLayoutImpl (){
+@interface TJSProductListLayoutImpl ()
 
-
-
-}
 
 @property (nonatomic,strong)  UITableView *tableView;
 

@@ -30,10 +30,6 @@
 @end
 
 
-
-
-
-
 #endif /* TJSProductListCellProtocol_h */
 
 

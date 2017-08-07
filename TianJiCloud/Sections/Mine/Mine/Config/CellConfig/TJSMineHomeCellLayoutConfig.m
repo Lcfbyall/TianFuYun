@@ -39,7 +39,7 @@
         return [config contentSize:width model:model];
     }
     
-    return CGSizeMake(width, 50);;
+    return CGSizeMake(width, 50);
 }
 
 

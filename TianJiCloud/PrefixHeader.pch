@@ -34,8 +34,12 @@
 #import "GVUserDefaults.h"
 #import "GVUserDefaults+TJSGlobalProperties.h"
 
+/** 3. Util **/
 
-/** 3. category **/
+#import "TJSAlertHandleUtil.h"
+
+
+/** 4. category **/
 
 #import "UIViewController+StackLevel.h"
 #import "UIViewController+RouteParams.h"
@@ -49,12 +53,11 @@
 #import "UIButton+BackgroundColor.h"
 
 
-/** 4. vender **/
+/** 5. vender **/
 
 #import <MJRefresh.h>
 #import <Masonry.h>
 #import <BlocksKit/UIBarButtonItem+BlocksKit.h>
-
 #import "UIControl+YYAdd.h"
 
 

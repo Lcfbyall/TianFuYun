@@ -43,6 +43,15 @@ static NSString *_identifier = nil;
     
 }
 
+
+
+#pragma mark - <TJSTableViewCellProtocol>
+
+- (void)tjs_bindDataToCellWithValue:(id)value{
+
+
+}
+
 - (void)TJS_separatorInsetZero {
     
     self.separatorInset = UIEdgeInsetsZero;
@@ -75,8 +84,6 @@ static NSString *_identifier = nil;
 #endif
 }
 
-
-
 + (instancetype)tjs_makeCellForAllocTableView:(UITableView *)tableView {
 
     
@@ -106,11 +113,7 @@ static NSString *_identifier = nil;
     return cell;
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-    
-    // Configure the view for the selected state
-}
+
 
 
 

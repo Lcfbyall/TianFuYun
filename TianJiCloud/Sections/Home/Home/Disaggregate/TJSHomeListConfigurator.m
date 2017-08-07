@@ -68,7 +68,7 @@
     
     //自动刷新
     [layoutImpl beginRefresh];
-    
+
 }
 
 
