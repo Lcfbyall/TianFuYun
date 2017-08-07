@@ -154,7 +154,6 @@
 		2C85E2B21F2EBDFE00ADD360 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E2AC1F2EBDFE00ADD360 /* MineViewController.m */; };
 		2C85E32E1F2EC60700ADD360 /* MyOrderContainerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E32D1F2EC60700ADD360 /* MyOrderContainerController.m */; };
 		2C85E3331F2EC6E500ADD360 /* Oder.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C85E3321F2EC6E500ADD360 /* Oder.storyboard */; };
-		2C85E3381F2ECA6A00ADD360 /* MyFavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E3371F2ECA6A00ADD360 /* MyFavViewController.m */; };
 		2C85E33B1F2ECAEB00ADD360 /* ContractApplyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E33A1F2ECAEB00ADD360 /* ContractApplyController.m */; };
 		2C85E33E1F2ECB1300ADD360 /* UseAgreementController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E33D1F2ECB1300ADD360 /* UseAgreementController.m */; };
 		2C85E3441F2ECBC900ADD360 /* FeedbackContainerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E3431F2ECBC900ADD360 /* FeedbackContainerController.m */; };
@@ -292,6 +291,8 @@
 		2CCBE4A41F344A98006C4018 /* MineHomeCellItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCBE49E1F344A98006C4018 /* MineHomeCellItem.m */; };
 		2CCBE4A51F344A98006C4018 /* MineHomeCellIvestItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCBE4A01F344A98006C4018 /* MineHomeCellIvestItem.m */; };
 		2CCBE4A61F344A98006C4018 /* MineHomeCellOrderItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCBE4A21F344A98006C4018 /* MineHomeCellOrderItem.m */; };
+		A2FE0A891F38B47000E678E5 /* MyFavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2FE0A831F38B47000E678E5 /* MyFavViewController.m */; };
+		A2FE0A8C1F38B4B400E678E5 /* MyFavVCConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = A2FE0A8B1F38B4B400E678E5 /* MyFavVCConfig.m */; };
 		D8B489F6D9BA2D941ED245C3 /* libPods-TianJiCloud.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24C0B56EAE3CA4A62571C4DD /* libPods-TianJiCloud.a */; };
 /* End PBXBuildFile section */
 
@@ -605,8 +606,6 @@
 		2C85E32C1F2EC60700ADD360 /* MyOrderContainerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyOrderContainerController.h; sourceTree = "<group>"; };
 		2C85E32D1F2EC60700ADD360 /* MyOrderContainerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyOrderContainerController.m; sourceTree = "<group>"; };
 		2C85E3321F2EC6E500ADD360 /* Oder.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Oder.storyboard; sourceTree = "<group>"; };
-		2C85E3361F2ECA6A00ADD360 /* MyFavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyFavViewController.h; sourceTree = "<group>"; };
-		2C85E3371F2ECA6A00ADD360 /* MyFavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyFavViewController.m; sourceTree = "<group>"; };
 		2C85E3391F2ECAEB00ADD360 /* ContractApplyController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContractApplyController.h; sourceTree = "<group>"; };
 		2C85E33A1F2ECAEB00ADD360 /* ContractApplyController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContractApplyController.m; sourceTree = "<group>"; };
 		2C85E33C1F2ECB1300ADD360 /* UseAgreementController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UseAgreementController.h; sourceTree = "<group>"; };
@@ -890,6 +889,10 @@
 		2CCBE4A11F344A98006C4018 /* MineHomeCellOrderItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineHomeCellOrderItem.h; sourceTree = "<group>"; };
 		2CCBE4A21F344A98006C4018 /* MineHomeCellOrderItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineHomeCellOrderItem.m; sourceTree = "<group>"; };
 		78C8A77EBFE6464B5B247606 /* Pods-TianJiCloud.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TianJiCloud.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TianJiCloud/Pods-TianJiCloud.debug.xcconfig"; sourceTree = "<group>"; };
+		A2FE0A821F38B47000E678E5 /* MyFavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyFavViewController.h; sourceTree = "<group>"; };
+		A2FE0A831F38B47000E678E5 /* MyFavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyFavViewController.m; sourceTree = "<group>"; };
+		A2FE0A8A1F38B4B400E678E5 /* MyFavVCConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyFavVCConfig.h; sourceTree = "<group>"; };
+		A2FE0A8B1F38B4B400E678E5 /* MyFavVCConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyFavVCConfig.m; sourceTree = "<group>"; };
 		E0DD7EF282716E8411120566 /* Pods-TianJiCloud.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TianJiCloud.release.xcconfig"; path = "Pods/Target Support Files/Pods-TianJiCloud/Pods-TianJiCloud.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -2631,8 +2634,13 @@
 			isa = PBXGroup;
 			children = (
 				2C7A34541F2F66AF004DD566 /* Collection.storyboard */,
-				2C85E3361F2ECA6A00ADD360 /* MyFavViewController.h */,
-				2C85E3371F2ECA6A00ADD360 /* MyFavViewController.m */,
+				A2FE0A811F38B47000E678E5 /* Controller */,
+				A2FE0A801F38B47000E678E5 /* Config */,
+				A2FE0A841F38B47000E678E5 /* Disaggregate */,
+				A2FE0A851F38B47000E678E5 /* Model */,
+				A2FE0A861F38B47000E678E5 /* NetworkTool */,
+				A2FE0A871F38B47000E678E5 /* Protocol */,
+				A2FE0A881F38B47000E678E5 /* Store */,
 			);
 			path = Fav;
 			sourceTree = "<group>";
@@ -3120,6 +3128,59 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A2FE0A801F38B47000E678E5 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				A2FE0A8A1F38B4B400E678E5 /* MyFavVCConfig.h */,
+				A2FE0A8B1F38B4B400E678E5 /* MyFavVCConfig.m */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		A2FE0A811F38B47000E678E5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A2FE0A821F38B47000E678E5 /* MyFavViewController.h */,
+				A2FE0A831F38B47000E678E5 /* MyFavViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A2FE0A841F38B47000E678E5 /* Disaggregate */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Disaggregate;
+			sourceTree = "<group>";
+		};
+		A2FE0A851F38B47000E678E5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A2FE0A861F38B47000E678E5 /* NetworkTool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NetworkTool;
+			sourceTree = "<group>";
+		};
+		A2FE0A871F38B47000E678E5 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		A2FE0A881F38B47000E678E5 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
 		A64DA1D4E6EBCD9E92A79C59 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -3358,6 +3419,7 @@
 				2C44124B1F21D42600C453EF /* TJSAlertController.m in Sources */,
 				2C859CF31F31EB2E00B86575 /* ZLPhotoPickerBrowserPhotoView.m in Sources */,
 				2CCBE4651F330572006C4018 /* DiscoveryViewController.m in Sources */,
+				A2FE0A891F38B47000E678E5 /* MyFavViewController.m in Sources */,
 				2CCBE4961F3421F1006C4018 /* TJSPageControl.m in Sources */,
 				2C859CED1F31EB2E00B86575 /* ZLPhotoPickerBrowserPhoto.m in Sources */,
 				2C4412731F21E79900C453EF /* UIButton+IBInspectableState.m in Sources */,
@@ -3368,6 +3430,7 @@
 				2C8DE58D1F29E081009B3AE2 /* TJSHomeListDataSourceImpl.m in Sources */,
 				2C859CEE1F31EB2E00B86575 /* ZLPhotoRect.m in Sources */,
 				2C4C1C2D1F386DF400002166 /* TJSAlertHandleUtil.m in Sources */,
+				A2FE0A8C1F38B4B400E678E5 /* MyFavVCConfig.m in Sources */,
 				2C89AD791F2C5155005C29AC /* UISearchBar+TJSBlock.m in Sources */,
 				2C859CF11F31EB2E00B86575 /* ZLPhotoPickerBrowserPhotoImageView.m in Sources */,
 				2C44123C1F21D27700C453EF /* GVUserDefaults.m in Sources */,
@@ -3512,7 +3575,6 @@
 				2C300F7A1F2F327E00DD440E /* MineSettingViewController.m in Sources */,
 				2CCBE4A61F344A98006C4018 /* MineHomeCellOrderItem.m in Sources */,
 				2C4412B41F2207CD00C453EF /* TJSLoginStateUtil.m in Sources */,
-				2C85E3381F2ECA6A00ADD360 /* MyFavViewController.m in Sources */,
 				2C4412381F21B3DF00C453EF /* UIButton+TouchAreaInsets.m in Sources */,
 				2C859CF91F31EB2E00B86575 /* ZLNavigationController.m in Sources */,
 				2C4412051F219A5300C453EF /* UIImage+Stretchable.m in Sources */,
