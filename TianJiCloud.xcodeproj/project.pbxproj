@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C02DF8F1F39CA44000410E1 /* MyFavNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C02DF8E1F39CA44000410E1 /* MyFavNetworkTool.m */; };
+		2C02DF971F39CC41000410E1 /* MyFavListConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C02DF961F39CC41000410E1 /* MyFavListConfigurator.m */; };
 		2C1BFEBD1F29779100665A71 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C1BFEBC1F29779100665A71 /* Home.storyboard */; };
 		2C1BFEBF1F2978C500665A71 /* Discovery.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C1BFEBE1F2978C500665A71 /* Discovery.storyboard */; };
 		2C300F7A1F2F327E00DD440E /* MineSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C300F791F2F327E00DD440E /* MineSettingViewController.m */; };
@@ -342,6 +344,12 @@
 
 /* Begin PBXFileReference section */
 		24C0B56EAE3CA4A62571C4DD /* libPods-TianJiCloud.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TianJiCloud.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C02DF8D1F39CA44000410E1 /* MyFavNetworkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyFavNetworkTool.h; path = TianJiCloud/Sections/Mine/Reward/History/MyFavNetworkTool.h; sourceTree = SOURCE_ROOT; };
+		2C02DF8E1F39CA44000410E1 /* MyFavNetworkTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyFavNetworkTool.m; path = TianJiCloud/Sections/Mine/Reward/History/MyFavNetworkTool.m; sourceTree = SOURCE_ROOT; };
+		2C02DF931F39CADB000410E1 /* MyFavListConfigurateProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MyFavListConfigurateProtocol.h; path = TianJiCloud/Sections/Mine/Reward/History/MyFavListConfigurateProtocol.h; sourceTree = SOURCE_ROOT; };
+		2C02DF941F39CAF6000410E1 /* MyFavListPrivateProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MyFavListPrivateProtocol.h; path = TianJiCloud/Sections/Mine/Reward/History/MyFavListPrivateProtocol.h; sourceTree = SOURCE_ROOT; };
+		2C02DF951F39CC41000410E1 /* MyFavListConfigurator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyFavListConfigurator.h; path = TianJiCloud/Sections/Mine/Reward/History/MyFavListConfigurator.h; sourceTree = SOURCE_ROOT; };
+		2C02DF961F39CC41000410E1 /* MyFavListConfigurator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyFavListConfigurator.m; path = TianJiCloud/Sections/Mine/Reward/History/MyFavListConfigurator.m; sourceTree = SOURCE_ROOT; };
 		2C1BFEBC1F29779100665A71 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		2C1BFEBE1F2978C500665A71 /* Discovery.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Discovery.storyboard; sourceTree = "<group>"; };
 		2C300F781F2F327E00DD440E /* MineSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineSettingViewController.h; sourceTree = "<group>"; };
@@ -3077,7 +3085,6 @@
 				A2FE0A811F38B47000E678E5 /* Controller */,
 				A2FE0A801F38B47000E678E5 /* Config */,
 				A2FE0A841F38B47000E678E5 /* Disaggregate */,
-				A2FE0A851F38B47000E678E5 /* Model */,
 				A2FE0A861F38B47000E678E5 /* NetworkTool */,
 				A2FE0A871F38B47000E678E5 /* Protocol */,
 				A2FE0A881F38B47000E678E5 /* Store */,
@@ -3580,20 +3587,17 @@
 		A2FE0A841F38B47000E678E5 /* Disaggregate */ = {
 			isa = PBXGroup;
 			children = (
+				2C02DF951F39CC41000410E1 /* MyFavListConfigurator.h */,
+				2C02DF961F39CC41000410E1 /* MyFavListConfigurator.m */,
 			);
 			path = Disaggregate;
-			sourceTree = "<group>";
-		};
-		A2FE0A851F38B47000E678E5 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		A2FE0A861F38B47000E678E5 /* NetworkTool */ = {
 			isa = PBXGroup;
 			children = (
+				2C02DF8D1F39CA44000410E1 /* MyFavNetworkTool.h */,
+				2C02DF8E1F39CA44000410E1 /* MyFavNetworkTool.m */,
 			);
 			path = NetworkTool;
 			sourceTree = "<group>";
@@ -3601,6 +3605,8 @@
 		A2FE0A871F38B47000E678E5 /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
+				2C02DF931F39CADB000410E1 /* MyFavListConfigurateProtocol.h */,
+				2C02DF941F39CAF6000410E1 /* MyFavListPrivateProtocol.h */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -3921,6 +3927,7 @@
 				2C85E3AA1F2F1C0000ADD360 /* MineHomeOrderCell.m in Sources */,
 				2C4C1C011F38476900002166 /* MyOrderInfo.m in Sources */,
 				2C431DEB1F299A9600858C12 /* HomeVCConfig.m in Sources */,
+				2C02DF8F1F39CA44000410E1 /* MyFavNetworkTool.m in Sources */,
 				2C859CFB1F31EB2E00B86575 /* ZLPhotoPickerGroupViewController.m in Sources */,
 				2C859CE61F31EB2E00B86575 /* YZFlowLayout.m in Sources */,
 				2C4412031F219A5300C453EF /* UIDevice+CurrentArg.m in Sources */,
@@ -4017,6 +4024,7 @@
 				2CCBE4A31F344A98006C4018 /* MineHomeCellDefaultItem.m in Sources */,
 				2C4C1BD81F381AF300002166 /* MineHomeCellBalanceItem.m in Sources */,
 				2C8DE5FB1F2AEA59009B3AE2 /* TJSDiscoNewsDataSorceImpl.m in Sources */,
+				2C02DF971F39CC41000410E1 /* MyFavListConfigurator.m in Sources */,
 				2C300F7A1F2F327E00DD440E /* MineSettingViewController.m in Sources */,
 				2CCBE4A61F344A98006C4018 /* MineHomeCellOrderItem.m in Sources */,
 				2C4412B41F2207CD00C453EF /* TJSLoginStateUtil.m in Sources */,

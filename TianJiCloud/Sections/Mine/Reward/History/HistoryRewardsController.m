@@ -17,6 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.title = @"历史奖励";
+    
 }
 
 - (void)didReceiveMemoryWarning {
