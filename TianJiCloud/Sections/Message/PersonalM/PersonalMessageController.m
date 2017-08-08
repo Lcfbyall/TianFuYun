@@ -1,23 +1,28 @@
 //
-//  RewardViewController.m
+//  PersonalMessageController.m
 //  TianJiCloud
 //
-//  Created by 朱鹏 on 2017/7/31.
+//  Created by 朱鹏 on 17/7/27.
 //  Copyright © 2017年 TianJiMoney. All rights reserved.
 //
 
-#import "RewardViewController.h"
+#import "PersonalMessageController.h"
 
-@interface RewardViewController ()
+@interface PersonalMessageController ()
+
+@property (weak, nonatomic) IBOutlet UITableView *messagelist;
 
 @end
 
-@implementation RewardViewController
+@implementation PersonalMessageController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.title = @"我的奖励";
+    
+    self.title = @"个人消息";
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {

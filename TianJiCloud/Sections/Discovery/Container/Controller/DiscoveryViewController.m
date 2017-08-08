@@ -48,7 +48,6 @@
 }
 
 
-
 #pragma mark - <DiscoveryVCConfig>
 
 - (void)onTapSegmental:(id)sender{

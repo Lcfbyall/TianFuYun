@@ -68,7 +68,7 @@
 
 - (void)tjs_configBaseView{
     
-    _productListTBView.backgroundColor = ThemeService.weak_color_10;
+    _productListTBView.backgroundColor = ThemeService.weak_color_00;
     _productListTBView.tableFooterView = [UIView new];
     
 }

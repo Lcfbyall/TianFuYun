@@ -1,24 +1,27 @@
 //
-//  AllActivityViewController.m
+//  PlatformAnnounceController.m
 //  TianJiCloud
 //
 //  Created by 朱鹏 on 17/7/27.
 //  Copyright © 2017年 TianJiMoney. All rights reserved.
 //
 
-#import "AllActivityViewController.h"
+#import "PlatformAnnounceController.h"
 
-@interface AllActivityViewController ()
+@interface PlatformAnnounceController ()
+
+@property (weak, nonatomic) IBOutlet UITableView *announcelist;
+
 
 @end
 
-@implementation AllActivityViewController
+@implementation PlatformAnnounceController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.title = @"全部活动";
+    self.title = @"平台公告";
     
 }
 

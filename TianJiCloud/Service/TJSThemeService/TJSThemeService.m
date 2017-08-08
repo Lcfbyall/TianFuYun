@@ -64,9 +64,65 @@
   return [UIColor tjs_colorWithHexString:self.colorDict[@"main_color_00"]];
 }
 
-- (UIColor *)weak_color_10 {
+- (UIColor *)main_color_01{
+
+  return [UIColor tjs_colorWithHexString:self.colorDict[@"main_color_01"]];
+}
+
+- (UIColor *)main_color_02{
+ 
+    return [UIColor tjs_colorWithHexString:self.colorDict[@"main_color_02"]];
+}
+
+
+//文字
+- (UIColor *)text_color_00{
+   return [UIColor tjs_colorWithHexString:self.colorDict[@"text_color_00"]];
+}
+- (UIColor *)text_color_01{
+   return [UIColor tjs_colorWithHexString:self.colorDict[@"text_color_01"]];
+}
+- (UIColor *)text_color_02{
+   return [UIColor tjs_colorWithHexString:self.colorDict[@"text_color_02"]];
+}
+
+- (UIColor *)text_color_03{
+
+  return [UIColor tjs_colorWithHexString:self.colorDict[@"text_color_03"]];
+}
+
+//按钮
+// 提交按钮
+// 按钮正常时的背景颜色
+- (UIColor *)btn_color_00{
+   return [UIColor tjs_colorWithHexString:self.colorDict[@"btn_color_00"]];
+}
+// 按钮高亮时的背景颜色
+- (UIColor *)btn_color_01{
+  return [UIColor tjs_colorWithHexString:self.colorDict[@"btn_color_01"]];
+}
+// 按钮禁用背景颜色
+- (UIColor *)btn_color_02{
+  return [UIColor tjs_colorWithHexString:self.colorDict[@"btn_color_02"]];
+}
+// 按钮正常文字颜色
+- (UIColor *)btn_color_03{
+  return [UIColor tjs_colorWithHexString:self.colorDict[@"btn_color_03"]];
+}
+// 按钮高亮文字颜色
+- (UIColor *)btn_color_04{
+  return [UIColor tjs_colorWithHexString:self.colorDict[@"btn_color_04"]];
+}
+// 按钮禁用文字颜色
+- (UIColor *)btn_color_05{
+  return [UIColor tjs_colorWithHexString:self.colorDict[@"btn_color_05"]];
+}
+
+
+//
+- (UIColor *)weak_color_00 {
     
-    return [UIColor tjs_colorWithHexString:self.colorDict[@"weak_color_10"]];
+    return [UIColor tjs_colorWithHexString:self.colorDict[@"weak_color_00"]];
 }
 
 

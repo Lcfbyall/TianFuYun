@@ -189,7 +189,7 @@
     progressHUD.margin = 10;
     progressHUD.label.text = info;
     progressHUD.label.numberOfLines = 0;
-    //progressHUD.label.textColor = ThemeService.origin_color_00;
+    progressHUD.label.textColor = ThemeService.origin_color_00;
     progressHUD.label.font = [ThemeService pingFangSCRegularWithSize:17.0];
     progressHUD.removeFromSuperViewOnHide = YES;
     [progressHUD hideAnimated:YES afterDelay:delayTime];

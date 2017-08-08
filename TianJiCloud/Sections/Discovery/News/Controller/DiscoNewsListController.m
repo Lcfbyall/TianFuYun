@@ -64,7 +64,7 @@
 
 - (void)tjs_configBaseView{
     
-    _newsCollectionView.backgroundColor = ThemeService.weak_color_10;
+    _newsCollectionView.backgroundColor = ThemeService.weak_color_00;
 
 }
 

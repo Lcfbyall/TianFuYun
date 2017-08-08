@@ -51,7 +51,7 @@
 #import "UIColor+TJSiOS7Colors.h"
 #import "UIButton+ImageTitleEdgeInset.h"
 #import "UIButton+BackgroundColor.h"
-
+#import "UIButton+IBInspectableState.h"
 
 /** 5. vender **/
 
@@ -59,7 +59,7 @@
 #import <Masonry.h>
 #import <BlocksKit/UIBarButtonItem+BlocksKit.h>
 #import "UIControl+YYAdd.h"
-
+#import "UIColor+YYAdd.h"
 
 
 #endif /* PrefixHeader_pch */

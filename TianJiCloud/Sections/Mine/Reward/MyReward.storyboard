@@ -20,13 +20,49 @@
                     <view key="view" contentMode="scaleToFill" id="EX0-cC-hQ0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DLn-2P-yxK">
+                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="wXt-7s-BA0"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="DLn-2P-yxK" firstAttribute="leading" secondItem="EX0-cC-hQ0" secondAttribute="leading" id="95U-Lt-znx"/>
+                            <constraint firstAttribute="trailing" secondItem="DLn-2P-yxK" secondAttribute="trailing" id="EtI-HE-Znp"/>
+                            <constraint firstAttribute="bottom" secondItem="DLn-2P-yxK" secondAttribute="bottom" id="bSK-5s-Ixe"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Iml-6y-A1U"/>
+                    <connections>
+                        <outlet property="historyBtn" destination="DLn-2P-yxK" id="u1P-hZ-7bo"/>
+                        <segue destination="h4q-Gc-QQJ" kind="show" identifier="RewardToHistoryRewardsVC" id="SFh-j4-uYg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZZv-EK-hkA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3551.1999999999998" y="506.89655172413796"/>
+        </scene>
+        <!--History Rewards Controller-->
+        <scene sceneID="DzV-6D-UGQ">
+            <objects>
+                <viewController storyboardIdentifier="HistoryRewardsController" id="h4q-Gc-QQJ" customClass="HistoryRewardsController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="e7R-Zr-Nkr"/>
+                        <viewControllerLayoutGuide type="bottom" id="L2j-lh-QHR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VmW-Kl-jiY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uDe-jA-qeO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4367" y="507"/>
         </scene>
         <!--Base Navigation Controller-->
         <scene sceneID="y0I-8K-tgz">

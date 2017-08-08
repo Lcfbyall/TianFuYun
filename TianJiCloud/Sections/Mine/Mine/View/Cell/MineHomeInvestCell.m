@@ -67,14 +67,11 @@ static CGFloat const Margin = 10;
         CGFloat Y     = idx / column * itemH;
         btn.frame     = CGRectMake(X, Y, itemW, itemH);
         btn.titleLabel.textAlignment = NSTextAlignmentLeft;
-        btn.backgroundColor = [UIColor whiteColor];
+        btn.backgroundColor = ThemeService.main_color_00;
         btn.titleLabel.font = [UIFont systemFontOfSize:14.0f];
-        //btn.backgroundColor = idx %2? [UIColor redColor]:[UIColor greenColor];
-        //btn.titleLabel.backgroundColor = [UIColor whiteColor];
-        //btn.imageView.backgroundColor  = [UIColor blueColor];
         [btn setImage:IMAGE(item.img) forState:UIControlStateNormal];
         [btn setTitle:item.title forState:UIControlStateNormal];
-        [btn setTitleColor:[UIColor darkTextColor] forState:UIControlStateNormal];
+        [btn setTitleColor:ThemeService.text_color_01 forState:UIControlStateNormal];
         [btn addBlockForControlEvents:UIControlEventTouchUpInside block:^(id  _Nonnull sender) {
             if(item.itemOperation)item.itemOperation(nil, nil);
         }];

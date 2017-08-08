@@ -7,8 +7,11 @@
 //
 
 #import "MyOrderListVCConfig.h"
+#import "MyOrderListViewController.h"
 
 @interface MyOrderListVCConfig ()
+
+@property (nonatomic,weak)MyOrderListViewController *vc;
 
 @end
 

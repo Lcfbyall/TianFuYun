@@ -35,7 +35,7 @@ static NSString *identifier = @"MineHeaderCollectionCell";
     MineHomeHeaderContainer *container = [[MineHomeHeaderContainer alloc]init];
     
     container.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_WIDTH/1.75);
-    container.backgroundColor = [UIColor redColor];//ThemeService.weak_color_10;
+    container.backgroundColor = ThemeService.weak_color_00;
    
     [container p_addSubViews];
 

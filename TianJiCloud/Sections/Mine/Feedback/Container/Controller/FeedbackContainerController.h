@@ -8,6 +8,8 @@
 
 #import "TJSBaseControllerContainer.h"
 
-@interface FeedbackContainerController : TJSBaseControllerContainer
+#import "FeedBackContainerProtocol.h"
+
+@interface FeedbackContainerController : TJSBaseControllerContainer<FeedBackContainerConfig>
 
 @end

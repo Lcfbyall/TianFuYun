@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -23,10 +24,97 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="LXp-Z1-Oeo"/>
+                    <connections>
+                        <segue destination="l2W-xd-XE1" kind="show" identifier="ContainerToFeedbackVC" id="b9B-In-6UY"/>
+                        <segue destination="0Ng-sT-eYt" kind="show" identifier="ContainerToHistoryVC" id="gUD-Wa-ReA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oLW-PQ-b4n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3556" y="680.5097451274363"/>
+        </scene>
+        <!--Feedback View Controller-->
+        <scene sceneID="fvt-e6-feK">
+            <objects>
+                <viewController storyboardIdentifier="FeedbackViewController" id="l2W-xd-XE1" customClass="FeedbackViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ave-AH-1tb"/>
+                        <viewControllerLayoutGuide type="bottom" id="izb-0H-TQk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Sff-eb-E5Y">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Fqr-gg-eEy">
+                                <rect key="frame" x="16" y="16" width="343" height="255"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Fqr-gg-eEy" secondAttribute="height" multiplier="1135:845" id="402-Np-SjM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7I5-0c-ONw">
+                                <rect key="frame" x="16" y="296" width="343" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="M7m-ib-y0I"/>
+                                </constraints>
+                                <state key="normal" title="反馈问题">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Fqr-gg-eEy" firstAttribute="leading" secondItem="Sff-eb-E5Y" secondAttribute="leading" constant="16" id="7jo-ys-FRn"/>
+                            <constraint firstItem="7I5-0c-ONw" firstAttribute="top" secondItem="Fqr-gg-eEy" secondAttribute="bottom" constant="25" id="UQd-PA-LE2"/>
+                            <constraint firstItem="7I5-0c-ONw" firstAttribute="leading" secondItem="Fqr-gg-eEy" secondAttribute="leading" id="Vk2-ka-oG9"/>
+                            <constraint firstItem="Fqr-gg-eEy" firstAttribute="top" secondItem="Sff-eb-E5Y" secondAttribute="top" constant="16" id="Xd0-e5-Mkc"/>
+                            <constraint firstAttribute="trailing" secondItem="Fqr-gg-eEy" secondAttribute="trailing" constant="16" id="j7d-iV-gcD"/>
+                            <constraint firstItem="7I5-0c-ONw" firstAttribute="trailing" secondItem="Fqr-gg-eEy" secondAttribute="trailing" id="vhB-Rr-g8p"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="commitBtn" destination="7I5-0c-ONw" id="F8q-E2-KXW"/>
+                        <outlet property="textView" destination="Fqr-gg-eEy" id="hDY-33-DQx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cep-yH-b9Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4312.8000000000002" y="409.7451274362819"/>
+        </scene>
+        <!--Feedback History Controller-->
+        <scene sceneID="s0I-zg-JKX">
+            <objects>
+                <viewController storyboardIdentifier="FeedbackHistoryController" id="0Ng-sT-eYt" customClass="FeedbackHistoryController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Srb-vK-nU4"/>
+                        <viewControllerLayoutGuide type="bottom" id="LUu-uq-yQT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TNd-1r-fVi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1Ym-26-T8u">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="1Ym-26-T8u" secondAttribute="bottom" id="205-uz-4qr"/>
+                            <constraint firstAttribute="trailing" secondItem="1Ym-26-T8u" secondAttribute="trailing" id="6m9-Uy-2IP"/>
+                            <constraint firstItem="1Ym-26-T8u" firstAttribute="top" secondItem="TNd-1r-fVi" secondAttribute="top" id="I2C-Ei-mkE"/>
+                            <constraint firstItem="1Ym-26-T8u" firstAttribute="leading" secondItem="TNd-1r-fVi" secondAttribute="leading" id="TNR-Yn-gXO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="historyList" destination="1Ym-26-T8u" id="4Md-0g-2CT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Qd-oV-LXV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4312.8000000000002" y="1077.2113943028487"/>
         </scene>
         <!--Base Navigation Controller-->
         <scene sceneID="BPd-fF-jc4">

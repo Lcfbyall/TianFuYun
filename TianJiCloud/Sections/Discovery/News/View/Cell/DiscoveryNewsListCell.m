@@ -33,7 +33,7 @@
     _newsImage.image = IMAGE(@"about_commsion_3");
 
     self.selectedBackgroundView = [UIView new];
-    self.selectedBackgroundView.backgroundColor = [UIColor groupTableViewBackgroundColor];
+    self.selectedBackgroundView.backgroundColor = ThemeService.weak_color_00; 
 }
 
 
@@ -44,12 +44,12 @@
      self.userInteractionEnabled = NO;
      [UIView animateWithDuration:0.5 animations:^{
  
-         self.contentView.backgroundColor = [UIColor lightGrayColor];
+         self.contentView.backgroundColor =
      } completion:^(BOOL finished) {
  
          [UIView animateWithDuration:0.5 animations:^{
  
-         self.contentView.backgroundColor = [UIColor whiteColor];
+         self.contentView.backgroundColor = 
  
     } completion:^(BOOL finished) {
      

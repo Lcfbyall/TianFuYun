@@ -64,7 +64,7 @@
 
 - (void)tjs_configBaseView{
 
-    _orderList.backgroundColor = ThemeService.weak_color_10;
+    _orderList.backgroundColor = ThemeService.weak_color_00;
     _orderList.tableFooterView = [UIView new];
 }
 

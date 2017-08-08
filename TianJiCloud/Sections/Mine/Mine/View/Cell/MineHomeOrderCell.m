@@ -41,7 +41,6 @@ static CGFloat const ItemWitem = 80;
 
         UIScrollView *scroll = [[UIScrollView alloc]init];
         scroll.showsHorizontalScrollIndicator=NO;
-        //scroll.backgroundColor = [UIColor redColor];
         [self.contentView addSubview:scroll];
         scroll;
     });
@@ -88,14 +87,10 @@ static CGFloat const ItemWitem = 80;
         CGFloat Y     = 0;
         btn.frame     = CGRectMake(X, Y, itemW, itemH);
         btn.titleLabel.textAlignment = NSTextAlignmentCenter;
-        //btn.backgroundColor = [UIColor whiteColor];
         btn.titleLabel.font = [UIFont systemFontOfSize:14.0f];
-        //btn.backgroundColor = idx %2? [UIColor redColor]:[UIColor greenColor];
-        //btn.titleLabel.backgroundColor = [UIColor whiteColor];
-        //btn.imageView.backgroundColor  = [UIColor blueColor];
         [btn setImage:IMAGE(item.img) forState:UIControlStateNormal];
         [btn setTitle:item.title forState:UIControlStateNormal];
-        [btn setTitleColor:[UIColor darkGrayColor] forState:UIControlStateNormal];
+        [btn setTitleColor:ThemeService.text_color_01 forState:UIControlStateNormal];
         [btn addBlockForControlEvents:UIControlEventTouchUpInside block:^(id  _Nonnull sender) {
             if(item.itemOperation)item.itemOperation(nil, nil);
         }];

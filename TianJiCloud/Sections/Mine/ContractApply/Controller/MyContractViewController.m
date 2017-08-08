@@ -1,25 +1,26 @@
 //
-//  PersonalMessageController.m
+//  MyContractViewController.m
 //  TianJiCloud
 //
-//  Created by 朱鹏 on 17/7/27.
+//  Created by 朱鹏 on 2017/8/8.
 //  Copyright © 2017年 TianJiMoney. All rights reserved.
 //
 
-#import "PersonalMessageController.h"
+#import "MyContractViewController.h"
 
-@interface PersonalMessageController ()
+@interface MyContractViewController ()
+
+@property (weak, nonatomic) IBOutlet UITableView *contractlist;
+
 
 @end
 
-@implementation PersonalMessageController
+@implementation MyContractViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    self.title = @"个人消息";
-    
+    self.title = @"我的合同";
     
 }
 

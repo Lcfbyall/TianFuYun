@@ -28,7 +28,7 @@
     self.tabBar.translucent  = YES;
     
     //选中后的颜色,tabBarItem.setTitleTextAttributes后无效
-    //self.tabBar.tintColor    = [UIColor whiteColor];
+    //self.tabBar.tintColor = ;
     
     
     [self p_setupViewControllers];
@@ -142,14 +142,14 @@
     [tabBarItem setTitleTextAttributes:
      @{
        NSFontAttributeName:[UIFont systemFontOfSize:13.0f],
-       NSForegroundColorAttributeName:[UIColor blackColor]
+       NSForegroundColorAttributeName:ThemeService.text_color_02
        } forState:UIControlStateNormal];
     
     
     [tabBarItem setTitleTextAttributes:
      @{
        NSFontAttributeName:[UIFont systemFontOfSize:13.0f],
-       NSForegroundColorAttributeName:[UIColor redColor]
+       NSForegroundColorAttributeName:ThemeService.main_color_02
        } forState:UIControlStateSelected];
     
 }

@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Contract Apply Controller-->
+        <!--My Contract View Controller-->
         <scene sceneID="Jz8-2U-KXx">
             <objects>
-                <viewController storyboardIdentifier="ContractApplyController" id="3cA-Sp-dV6" customClass="ContractApplyController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MyContractViewController" id="3cA-Sp-dV6" customClass="MyContractViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="F5m-1a-t7F"/>
                         <viewControllerLayoutGuide type="bottom" id="v0r-FQ-QGw"/>
@@ -20,13 +20,68 @@
                     <view key="view" contentMode="scaleToFill" id="e5M-2C-efw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BPU-Mj-bd3">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="BPU-Mj-bd3" secondAttribute="bottom" id="Oih-wS-ECa"/>
+                            <constraint firstItem="BPU-Mj-bd3" firstAttribute="top" secondItem="e5M-2C-efw" secondAttribute="top" id="XLR-zj-rEC"/>
+                            <constraint firstAttribute="trailing" secondItem="BPU-Mj-bd3" secondAttribute="trailing" id="aUf-DD-r1N"/>
+                            <constraint firstItem="BPU-Mj-bd3" firstAttribute="leading" secondItem="e5M-2C-efw" secondAttribute="leading" id="zjZ-di-7cC"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="27U-C4-ZgV"/>
+                    <connections>
+                        <outlet property="contractlist" destination="BPU-Mj-bd3" id="VMM-1D-O1d"/>
+                        <segue destination="mpr-pE-WxS" kind="show" identifier="MyContractToApplyVC" id="fRg-DR-493"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HbO-f4-5u1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3776.8000000000002" y="456.52173913043481"/>
+        </scene>
+        <!--Contract Apply Controller-->
+        <scene sceneID="SNa-Wj-MwI">
+            <objects>
+                <viewController storyboardIdentifier="ContractApplyController" id="mpr-pE-WxS" customClass="ContractApplyController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wIO-xL-Qg9"/>
+                        <viewControllerLayoutGuide type="bottom" id="9NN-Oe-ubQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IYa-Ko-tO2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="nTA-8X-Tsh" kind="show" identifier="ApplyToAddAdressVC" id="XPT-6S-P8C"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UIc-f1-ghV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4489" y="457"/>
+        </scene>
+        <!--Add Adress View Controller-->
+        <scene sceneID="U5q-fJ-BA3">
+            <objects>
+                <viewController storyboardIdentifier="AddAdressViewController" id="nTA-8X-Tsh" customClass="AddAdressViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Mqk-1f-Evt"/>
+                        <viewControllerLayoutGuide type="bottom" id="rWc-4V-vgr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FJv-7d-Rca">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lzx-1h-cTg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5337" y="457"/>
         </scene>
         <!--Base Navigation Controller-->
         <scene sceneID="qT5-XA-wEK">

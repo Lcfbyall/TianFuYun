@@ -34,7 +34,7 @@
 - (void)p_addSubView{
 
     self.withdarwBtn = ({
-        UIColor *tintcolor = [UIColor iOS7darkBlueColor];
+        UIColor *tintcolor = ThemeService.main_color_02;
         CGFloat cornerRadius = 15;
         UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
         button.layer.masksToBounds = YES;
@@ -45,7 +45,7 @@
         [button setTitle:@"提现" forState:UIControlStateNormal];
         [button setTitleColor:tintcolor forState:UIControlStateNormal];
         [button setTitleColor:ThemeService.origin_color_00 forState:UIControlStateHighlighted];
-        [button setBackgroundColor:[UIColor iOS7darkBlueColor] forState:UIControlStateHighlighted];
+        [button setBackgroundColor:ThemeService.main_color_02 forState:UIControlStateHighlighted];
         [button addBlockForControlEvents:UIControlEventTouchUpInside block:^(id  _Nonnull sender) {
             if(self.cellInfo.itemOperation)self.cellInfo.itemOperation(nil, nil);
         }];

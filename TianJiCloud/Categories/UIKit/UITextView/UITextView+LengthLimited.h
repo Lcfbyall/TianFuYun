@@ -10,4 +10,16 @@
 
 @interface UITextView (LengthLimited)
 
+@property (nonatomic,assign) NSInteger tjs_minLimitNums;
+
+@property (nonatomic,assign) NSInteger tjs_maxLimitNums;
+
+
+- (BOOL)tjs_shouldChangeTextInRange:(NSRange)range
+                    replacementText:(NSString *)text
+                       maxLimitNums:(NSInteger)maxLimitNums;
+
+- (void)tjs_didChangeMaxLimitNums:(NSInteger)maxLimitNums;
+
+
 @end

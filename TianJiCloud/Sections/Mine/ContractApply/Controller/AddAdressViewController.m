@@ -1,18 +1,18 @@
 //
-//  FeedbackViewController.m
+//  AddAdressViewController.m
 //  TianJiCloud
 //
-//  Created by 朱鹏 on 2017/7/31.
+//  Created by 朱鹏 on 2017/8/8.
 //  Copyright © 2017年 TianJiMoney. All rights reserved.
 //
 
-#import "FeedbackViewController.h"
+#import "AddAdressViewController.h"
 
-@interface FeedbackViewController ()
+@interface AddAdressViewController ()
 
 @end
 
-@implementation FeedbackViewController
+@implementation AddAdressViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

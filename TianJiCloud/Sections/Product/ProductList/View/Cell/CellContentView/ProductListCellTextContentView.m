@@ -21,9 +21,7 @@
     
         [self setupSubViews];
         
-        
-        self.backgroundColor= [UIColor redColor];
-    
+        self.backgroundColor= ThemeService.main_color_00;
     }
 
     return self;

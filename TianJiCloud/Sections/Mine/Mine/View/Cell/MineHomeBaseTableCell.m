@@ -21,9 +21,9 @@
     if(self){
 
         self.textLabel.font = [UIFont systemFontOfSize:16.0f];
-        self.textLabel.textColor = [UIColor darkTextColor];
+        self.textLabel.textColor = ThemeService.text_color_01;
         self.detailTextLabel.font = [UIFont systemFontOfSize:13.0f];
-        self.detailTextLabel.textColor = [UIColor darkGrayColor];
+        self.detailTextLabel.textColor = ThemeService.text_color_01;
     }
     
     return self;

@@ -9,7 +9,7 @@
 #import "TJSMobileCallUtil.h"
 
 
-static NSString *const kCustomerServiceTel = @"";
+static NSString *const kCustomerServiceTel = @"18611111112";
 
 
 @implementation TJSMobileCallUtil

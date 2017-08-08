@@ -79,8 +79,8 @@
     
     [self setUpTitleEffect:^(UIColor *__autoreleasing *titleScrollViewColor, UIColor *__autoreleasing *norColor, UIColor *__autoreleasing *selColor, UIFont *__autoreleasing *titleFont, CGFloat *titleHeight, CGFloat *titleWidth) {
         
-        *norColor = [UIColor darkTextColor];
-        *selColor = [UIColor iOS7darkBlueColor];
+        *norColor = ThemeService.text_color_01;
+        *selColor = ThemeService.main_color_02;
         //*titleWidth = SCREEN_WIDTH/4.0;
         *titleHeight = 51.0;
     }];

@@ -90,7 +90,7 @@
 - (UIView *)tjs_titleView{
     
     UIView *bgView = [UIView new];
-    UIColor *bgColor = ThemeService.weak_color_10;
+    UIColor *bgColor = ThemeService.weak_color_00;
     CGRect frame   =  CGRectMake(0, 0, SCREEN_WIDTH-120, 35);
     bgView.frame   = frame;
     bgView.backgroundColor     = bgColor;
@@ -103,7 +103,7 @@
     searchBar.frame            = bgView.bounds;
     
     searchBar.backgroundColor  = bgColor;
-    searchBar.tintColor        = [UIColor iOS7darkBlueColor];
+    searchBar.tintColor        = ThemeService.main_color_02;
     searchBar.barTintColor     = bgColor;
     
     [searchBar setSearchFieldBackgroundImage:[UIImage tjs_imageWithColor:bgColor size:searchBar.bounds.size] forState:UIControlStateNormal];

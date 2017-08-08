@@ -25,22 +25,19 @@ static void * TJSTextViewTextChangedContext= & TJSTextViewTextChangedContext;
 
 + (void)load
 {
-
-    
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^
                   {
                       
-                      tjs_swizzleInstanceMethod([self class],
-                                            @selector(drawRect:),
-                                            @selector(place_drawRect:));
-                      
-                      tjs_swizzleInstanceMethod([self class],
-                                            NSSelectorFromString(@"dealloc"),
-                                            @selector(place_dealloc));
-                  });
+      tjs_swizzleInstanceMethod([self class],
+                            @selector(drawRect:),
+                            @selector(place_drawRect:));
+      
+      tjs_swizzleInstanceMethod([self class],
+                            NSSelectorFromString(@"dealloc"),
+                            @selector(place_dealloc));
+    });
 }
-
 
 - (void)place_dealloc
 {
@@ -63,38 +60,31 @@ static void * TJSTextViewTextChangedContext= & TJSTextViewTextChangedContext;
     BOOL isZero = UIEdgeInsetsEqualToEdgeInsets(self.tjs_placeContainerInset, UIEdgeInsetsZero);
     UIEdgeInsets placeInsets = isZero?self.textContainerInset:self.tjs_placeContainerInset;
     
-    if([self.text length] == 0 && self.tjs_placeholder)
-    {
+    if([self.text length] == 0 && self.tjs_placeholder){
         
         CGRect InsetRect =  UIEdgeInsetsInsetRect(rect, placeInsets);
         CGRect placeHolderRect = InsetRect;
-        
         [placeColor set];
-        
-        if (NSFoundationVersionNumber > NSFoundationVersionNumber_iOS_6_0)
-        {
+        if (NSFoundationVersionNumber > NSFoundationVersionNumber_iOS_6_0){
             
             NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
             paragraphStyle.lineBreakMode = NSLineBreakByWordWrapping;
             paragraphStyle.alignment = self.textAlignment;
             paragraphStyle.paragraphSpacing   = 2;
             paragraphStyle.firstLineHeadIndent= 7;
-            //            paragraphStyle.headIndent=2;
-            //            paragraphStyle.paragraphSpacingBefore=2;
-            //            paragraphStyle.defaultTabInterval=2;
+            //paragraphStyle.headIndent=2;
+            //paragraphStyle.paragraphSpacingBefore=2;
+            //paragraphStyle.defaultTabInterval=2;
             
             [self.tjs_placeholder drawInRect:placeHolderRect
                               withAttributes:
              
-             @{ NSFontAttributeName :            placeFont,
-                NSForegroundColorAttributeName:  placeColor,
-                NSParagraphStyleAttributeName :   paragraphStyle
-                }
-             ];
-        }
-        
-        else
-        {
+                 @{ NSFontAttributeName :           placeFont,
+                    NSForegroundColorAttributeName: placeColor,
+                    NSParagraphStyleAttributeName : paragraphStyle
+                 }];
+            
+        }else{
             
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored"-Wdeprecated-declarations"
@@ -107,17 +97,22 @@ static void * TJSTextViewTextChangedContext= & TJSTextViewTextChangedContext;
             
 #pragma clang diagnostic pop
         }
+        
     }
     
     
     [self place_drawRect:rect];
 }
+
+
 #pragma mark - UITextViewTextDidChangeNotification
 #pragma mark - 监听键盘输入text改变通知
 - (void)didReceiveTextDidChangeNotification:(NSNotification *)notification
 {
     [self setNeedsDisplay];
 }
+
+
 #pragma mark - KVO  监听手动设置text
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context{
     
@@ -129,11 +124,13 @@ static void * TJSTextViewTextChangedContext= & TJSTextViewTextChangedContext;
         [self setNeedsDisplay];
         
     } else {
+        
         // Make sure to call the superclass's implementation in the else block in case it is also implementing KVO
         [super observeValueForKeyPath:keyPath ofObject:object change:change context:context];
     }
     
 }
+
 
 #pragma mark - setters && getters
 - (void)setTjs_placeholder:(NSString *)tjs_placeholder
@@ -159,10 +156,12 @@ static void * TJSTextViewTextChangedContext= & TJSTextViewTextChangedContext;
     [self setNeedsDisplay];
     
 }
+
 - (NSString *)tjs_placeholder
 {
     return objc_getAssociatedObject(self, _cmd);
 }
+
 - (void)setTjs_placeholderColor:(UIColor *)tjs_placeholderColor
 {
     objc_setAssociatedObject(self,
@@ -172,10 +171,12 @@ static void * TJSTextViewTextChangedContext= & TJSTextViewTextChangedContext;
     
     [self setNeedsDisplay];
 }
+
 - (UIColor *)tjs_placeholderColor
 {
     return objc_getAssociatedObject(self, _cmd);
 }
+
 - (void)setTjs_placeholderFont:(UIFont *)tjs_placeholderFont
 {
     objc_setAssociatedObject(self,
@@ -185,6 +186,7 @@ static void * TJSTextViewTextChangedContext= & TJSTextViewTextChangedContext;
     
     [self setNeedsDisplay];
 }
+
 - (UIFont *)tjs_placeholderFont
 {
     return objc_getAssociatedObject(self, _cmd);
@@ -209,6 +211,7 @@ static void * TJSTextViewTextChangedContext= & TJSTextViewTextChangedContext;
 {
     objc_setAssociatedObject(self, @selector(isExcuteNoti), @(isExcuteNoti), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
+
 - (BOOL)isExcuteNoti
 {
     
@@ -216,7 +219,6 @@ static void * TJSTextViewTextChangedContext= & TJSTextViewTextChangedContext;
     return [objc_getAssociatedObject(self, _cmd) boolValue];
 }
 
-
-
-
 @end
+
+

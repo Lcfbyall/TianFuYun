@@ -65,7 +65,7 @@ static NSString *identifier     = @"HomeHeaderCollectionCell";
   
     HomeHeaderContainer *container = [[HomeHeaderContainer alloc]init];
     container.frame = CGRectMake(0, 0, SCREEN_WIDTH, containerHeight + Margin);
-    container.backgroundColor = ThemeService.weak_color_10;
+    container.backgroundColor = ThemeService.weak_color_00;
     
     container.webItems        = [HomeHeaderConfig webItems];
     
@@ -91,7 +91,7 @@ static NSString *identifier     = @"HomeHeaderCollectionCell";
         layout.insets   = UIEdgeInsetsMake(Margin, Margin, Margin, Margin);
         
         UICollectionView  *collectionView = [[UICollectionView alloc]initWithFrame:CGRectZero collectionViewLayout:layout];
-        collectionView.backgroundColor = [UIColor whiteColor];
+        collectionView.backgroundColor = ThemeService.main_color_00;
         collectionView.dataSource = self;
         collectionView.delegate   = self;
         //collectionView.pagingEnabled = YES;
@@ -127,14 +127,11 @@ static NSString *identifier     = @"HomeHeaderCollectionCell";
         UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
         btn.frame     = CGRectMake(X, Y, itemW, itemH);
         btn.titleLabel.textAlignment = NSTextAlignmentCenter;
-        btn.backgroundColor = [UIColor whiteColor];
+        btn.backgroundColor = ThemeService.main_color_00;
         btn.titleLabel.font = [UIFont systemFontOfSize:14.0f];
-        //btn.backgroundColor = idx %2? [UIColor redColor]:[UIColor greenColor];
-        //btn.titleLabel.backgroundColor = [UIColor whiteColor];
-        //btn.imageView.backgroundColor  = [UIColor blueColor];
         [btn setImage:IMAGE(item.img) forState:UIControlStateNormal];
         [btn setTitle:item.title forState:UIControlStateNormal];
-        [btn setTitleColor:[UIColor darkTextColor] forState:UIControlStateNormal];
+        [btn setTitleColor:ThemeService.text_color_01 forState:UIControlStateNormal];
 
         [btn addBlockForControlEvents:UIControlEventTouchUpInside block:^(id  _Nonnull sender) {
             [UIViewController tjs_rootTabBarToProductWithParams:@{@"selectedIndex":@(idx)}];

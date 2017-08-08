@@ -28,7 +28,7 @@
     self.contentView.backgroundColor = [UIColor clearColor];
     
     self.titleL.font = [UIFont systemFontOfSize:14.0f];
-    self.titleL.textColor = [UIColor whiteColor];
+    self.titleL.textColor = ThemeService.main_color_00;
     
     self.moneyL.font = [UIFont boldSystemFontOfSize:20.0f];
     self.moneyL.textColor = [UIColor yellowColor];

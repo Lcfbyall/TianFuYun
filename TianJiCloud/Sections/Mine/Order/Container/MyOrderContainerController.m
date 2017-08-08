@@ -52,8 +52,8 @@
      
      [self setUpTitleEffect:^(UIColor *__autoreleasing *titleScrollViewColor, UIColor *__autoreleasing *norColor, UIColor *__autoreleasing *selColor, UIFont *__autoreleasing *titleFont, CGFloat *titleHeight, CGFloat *titleWidth) {
      
-         *norColor = [UIColor darkTextColor];
-         *selColor = [UIColor iOS7darkBlueColor];
+         *norColor = ThemeService.text_color_01;
+         *selColor = ThemeService.main_color_01;
          //titleFont =
          *titleWidth = 80;
          *titleHeight = 50.0;
@@ -63,7 +63,7 @@
     [self setUpUnderLineEffect:^(BOOL *isUnderLineDelayScroll, CGFloat *underLineH, UIColor *__autoreleasing *underLineColor, BOOL *isUnderLineEqualTitleWidth) {
         
         *underLineH = 1.0;
-        *underLineColor = [UIColor iOS7darkBlueColor];
+        *underLineColor = ThemeService.main_color_01;
         *isUnderLineEqualTitleWidth = YES;
         
     }];

@@ -66,7 +66,7 @@
     }];
     
     [rightItem setTitleTextAttributes:
-     @{NSForegroundColorAttributeName:[UIColor iOS7darkBlueColor],
+     @{NSForegroundColorAttributeName:ThemeService.main_color_02,
           NSFontAttributeName :[UIFont systemFontOfSize:16.0]
           } forState:UIControlStateNormal];
     NSArray *rightBarButtonItems = _vc.navigationItem.rightBarButtonItems?:[NSArray array];
@@ -79,7 +79,7 @@
 - (UIView *)tjs_titleView{
     
     UIView *bgView = [UIView new];
-    UIColor *bgColor = ThemeService.weak_color_10;
+    UIColor *bgColor = ThemeService.weak_color_00;
     CGRect frame   =  CGRectMake(0, 0, SCREEN_WIDTH-120, 35);
     bgView.frame   = frame;
     bgView.backgroundColor     = bgColor;
@@ -90,7 +90,7 @@
     searchBar.placeholder      = @"请输入您想查找的产品";
     searchBar.frame            = bgView.bounds;;
     searchBar.backgroundColor  = bgColor;
-    searchBar.tintColor        = [UIColor iOS7darkBlueColor];
+    searchBar.tintColor        = ThemeService.main_color_02;
     searchBar.barTintColor     = bgColor;
     [searchBar setSearchFieldBackgroundImage:[UIImage tjs_imageWithColor:bgColor size:searchBar.bounds.size] forState:UIControlStateNormal];
     

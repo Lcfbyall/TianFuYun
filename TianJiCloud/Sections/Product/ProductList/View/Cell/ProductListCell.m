@@ -20,6 +20,11 @@
 
 @property (nonatomic,strong) TJSProductInfoModel *model;
 
+
+
+
+
+
 @property (nonatomic,strong) UILabel  *productNameL;
 
 @property (nonatomic,strong) UILabel  *productStateL;
@@ -116,14 +121,14 @@
     _productNameL.backgroundColor = [UIColor clearColor];
     _productNameL.opaque = YES;
     _productNameL.font   = [UIFont systemFontOfSize:14.0];
-    [_productNameL setTextColor:[UIColor darkGrayColor]];
+    [_productNameL setTextColor:ThemeService.text_color_01];
     [self.contentView addSubview:_productNameL];
     
     _productStateL = [[UILabel alloc] init];
     _productStateL.backgroundColor = [UIColor clearColor];
     _productStateL.opaque = YES;
     _productStateL.font   = [UIFont systemFontOfSize:14.0];
-    [_productStateL setTextColor:[UIColor darkGrayColor]];
+    [_productStateL setTextColor:ThemeService.text_color_01];
     [self.contentView addSubview:_productStateL];
     
 
@@ -131,7 +136,7 @@
     _productThresholdL.backgroundColor = [UIColor clearColor];
     _productThresholdL.opaque = YES;
     _productThresholdL.font   = [UIFont systemFontOfSize:14.0];
-    [_productThresholdL setTextColor:[UIColor darkGrayColor]];
+    [_productThresholdL setTextColor:ThemeService.text_color_01];
     [self.contentView addSubview:_productThresholdL];
     
     

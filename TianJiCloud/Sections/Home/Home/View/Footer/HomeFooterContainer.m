@@ -34,7 +34,7 @@ static NSString *identifier = @"HomeFooterCollectionCell";
     
     container.frame = CGRectMake(0, 0, SCREEN_WIDTH, CollectHeight + Margin * 2);
     
-    container.backgroundColor = ThemeService.weak_color_10;
+    container.backgroundColor = ThemeService.weak_color_00;
     
     container.items = [HomeFooterConfig items];
     
@@ -55,7 +55,7 @@ static NSString *identifier = @"HomeFooterCollectionCell";
         layout.insets   = UIEdgeInsetsMake(Margin, Margin, Margin, Margin);
         
         UICollectionView  *collectionView = [[UICollectionView alloc]initWithFrame:CGRectZero collectionViewLayout:layout];
-        collectionView.backgroundColor    = [UIColor whiteColor];
+        collectionView.backgroundColor    = ThemeService.main_color_00;
         collectionView.dataSource         = self;
         collectionView.delegate           = self;
         collectionView.showsHorizontalScrollIndicator= NO;

@@ -1,23 +1,22 @@
 //
-//  FeedbackContainerController.m
+//  HistoryRewardsController.m
 //  TianJiCloud
 //
-//  Created by 朱鹏 on 2017/7/31.
+//  Created by 朱鹏 on 2017/8/8.
 //  Copyright © 2017年 TianJiMoney. All rights reserved.
 //
 
-#import "FeedbackContainerController.h"
+#import "HistoryRewardsController.h"
 
-@interface FeedbackContainerController ()
+@interface HistoryRewardsController ()
 
 @end
 
-@implementation FeedbackContainerController
+@implementation HistoryRewardsController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.title = @"用户反馈";
 }
 
 - (void)didReceiveMemoryWarning {

@@ -32,13 +32,9 @@
 - (UIView *)tjs_titleView{
 
     UISegmentedControl *segment = [[UISegmentedControl alloc]initWithItems:@[@"新闻资讯",@"路演视频"]];
-    
-    //segment.frame = CGRectMake(<#CGFloat x#>, <#CGFloat y#>, <#CGFloat width#>, <#CGFloat height#>)
-
     segment.selectedSegmentIndex = 0;
     segment.apportionsSegmentWidthsByContent = YES;
-    segment.tintColor = [UIColor iOS7darkBlueColor];
-    
+    segment.tintColor = ThemeService.main_color_02;
     [segment addBlockForControlEvents:UIControlEventValueChanged
                                 block:^(id  _Nonnull sender) {
         

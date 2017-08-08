@@ -186,7 +186,7 @@ static NSString *const Default_cell = @"MineHomeDefaultCell";
                          [MineHomeCellInfo new],];
     NSArray *fourthTargets= @[RewardListVC,
                               MyFavariteVC,
-                              ContractApplyVC,
+                              MyContractVC,
                               UseAgreementVC,
                               FeedbackContainerVC,
                               AboutMeVC,@""];

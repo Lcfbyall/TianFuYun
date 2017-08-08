@@ -150,8 +150,7 @@ static UIColor *TintColor    = nil;
         
         NSArray *subviews =self.subviews;
         for (id viewObj in subviews) {
-            
-            
+        
             NSString *classStr = [NSString stringWithUTF8String:object_getClassName(viewObj)];
             
             if ([classStr isEqualToString:@"UIView"]) {
@@ -161,9 +160,6 @@ static UIColor *TintColor    = nil;
             }
             
         }
-        
-        
-        
     }
 }
 

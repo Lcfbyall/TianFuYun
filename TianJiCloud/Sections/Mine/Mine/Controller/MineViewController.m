@@ -75,7 +75,7 @@
 
 - (void)tjs_configBaseView{
     
-    _mineTableView.backgroundColor = ThemeService.weak_color_10;
+    _mineTableView.backgroundColor = ThemeService.weak_color_00;
     _mineTableView.tableFooterView = [UIView new];
     
 }

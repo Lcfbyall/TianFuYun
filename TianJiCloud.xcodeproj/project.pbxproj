@@ -23,7 +23,6 @@
 		2C300F971F2F3F9F00DD440E /* ProfessionAuthen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C300F961F2F3F9F00DD440E /* ProfessionAuthen.storyboard */; };
 		2C431DEB1F299A9600858C12 /* HomeVCConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C431DE71F299A9600858C12 /* HomeVCConfig.m */; };
 		2C431DEC1F299A9600858C12 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C431DEA1F299A9600858C12 /* HomeViewController.m */; };
-		2C431DFE1F29C26700858C12 /* MessageKindListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C431DFA1F29C26700858C12 /* MessageKindListController.m */; };
 		2C431E011F29C28500858C12 /* ProductFilterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C431E001F29C28500858C12 /* ProductFilterController.m */; };
 		2C431E0F1F29C59C00858C12 /* Message.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C431E0E1F29C59C00858C12 /* Message.storyboard */; };
 		2C431E111F29C6B200858C12 /* ProductFilter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C431E101F29C6B200858C12 /* ProductFilter.storyboard */; };
@@ -111,6 +110,11 @@
 		2C4C1C9E1F39493400002166 /* PNLineChartData.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C1C9A1F39493400002166 /* PNLineChartData.m */; };
 		2C4C1C9F1F39493400002166 /* PNLineChartDataItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C1C9C1F39493400002166 /* PNLineChartDataItem.m */; };
 		2C4C1CA21F39497900002166 /* TJSInvestPieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C1CA11F39497900002166 /* TJSInvestPieChart.m */; };
+		2C4C1CA81F394BDC00002166 /* FeedbackContainerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C1CA61F394BDC00002166 /* FeedbackContainerController.m */; };
+		2C4C1CAF1F394E9500002166 /* FeedBackContainerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C1CAE1F394E9500002166 /* FeedBackContainerConfig.m */; };
+		2C4C1CB51F3956C300002166 /* FeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C1CB41F3956C300002166 /* FeedbackViewController.m */; };
+		2C4C1CB91F39570400002166 /* FeedbackHistoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C1CB81F39570400002166 /* FeedbackHistoryController.m */; };
+		2C4C1CBE1F3958C900002166 /* FeedBackVCConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C1CBD1F3958C900002166 /* FeedBackVCConfig.m */; };
 		2C7A344B1F2F61C1004DD566 /* WithDarwDeposit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C7A344A1F2F61C1004DD566 /* WithDarwDeposit.storyboard */; };
 		2C7A344D1F2F633C004DD566 /* CumulateInvest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C7A344C1F2F633C004DD566 /* CumulateInvest.storyboard */; };
 		2C7A344F1F2F63BE004DD566 /* CapitalRecord.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C7A344E1F2F63BD004DD566 /* CapitalRecord.storyboard */; };
@@ -126,6 +130,27 @@
 		2C801BD31F233F46009F82F7 /* TJSBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C801BA91F233F46009F82F7 /* TJSBaseViewController.m */; };
 		2C801BD61F233F46009F82F7 /* TJSRootTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C801BB01F233F46009F82F7 /* TJSRootTabBarController.m */; };
 		2C801BD71F233F46009F82F7 /* Mine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C801BB21F233F46009F82F7 /* Mine.storyboard */; };
+		2C83C6E21F39AD85004034CA /* FeedbackCommitApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C83C6E11F39AD85004034CA /* FeedbackCommitApi.m */; };
+		2C83C6E51F39AE2F004034CA /* FeedbackCommitNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C83C6E41F39AE2F004034CA /* FeedbackCommitNetworkTool.m */; };
+		2C83C6EF1F39B299004034CA /* ContractApplyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C83C6EE1F39B299004034CA /* ContractApplyController.m */; };
+		2C83C6F31F39B354004034CA /* MyContractViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C83C6F21F39B354004034CA /* MyContractViewController.m */; };
+		2C83C6F61F39B529004034CA /* AddAdressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C83C6F51F39B529004034CA /* AddAdressViewController.m */; };
+		2C83C6F91F39B6C2004034CA /* TJSBaseStoreTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C83C6F81F39B6C2004034CA /* TJSBaseStoreTool.m */; };
+		2C83C6FC1F39B6FE004034CA /* MyContractListStoreTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C83C6FB1F39B6FE004034CA /* MyContractListStoreTool.m */; };
+		2C83C6FF1F39B755004034CA /* MyFavListStoreTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C83C6FE1F39B755004034CA /* MyFavListStoreTool.m */; };
+		2C83C7021F39B79C004034CA /* TJSStoreManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C83C7011F39B79C004034CA /* TJSStoreManager.m */; };
+		2C83C7051F39B80A004034CA /* ProductListStoreTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C83C7041F39B80A004034CA /* ProductListStoreTool.m */; };
+		2C83C70A1F39B85B004034CA /* NewsListStoreTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C83C7091F39B85B004034CA /* NewsListStoreTool.m */; };
+		2C83C70D1F39B871004034CA /* RoadShowListStoreTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C83C70C1F39B871004034CA /* RoadShowListStoreTool.m */; };
+		2C83C71C1F39B9C9004034CA /* AllActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C83C7101F39B9C9004034CA /* AllActivityViewController.m */; };
+		2C83C71D1F39B9C9004034CA /* MessageKindListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C83C7151F39B9C9004034CA /* MessageKindListController.m */; };
+		2C83C71E1F39B9C9004034CA /* PersonalMessageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C83C7181F39B9C9004034CA /* PersonalMessageController.m */; };
+		2C83C71F1F39B9C9004034CA /* PlatformAnnounceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C83C71B1F39B9C9004034CA /* PlatformAnnounceController.m */; };
+		2C83C7221F39BA14004034CA /* PlatformAnnounceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C83C7211F39BA14004034CA /* PlatformAnnounceCell.m */; };
+		2C83C7251F39BA30004034CA /* PersonalMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C83C7241F39BA30004034CA /* PersonalMessageCell.m */; };
+		2C83C7281F39BA4C004034CA /* AllActivityTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C83C7271F39BA4C004034CA /* AllActivityTableCell.m */; };
+		2C83C72C1F39BB46004034CA /* HistoryRewardsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C83C72B1F39BB46004034CA /* HistoryRewardsController.m */; };
+		2C83C7301F39BD27004034CA /* RewardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C83C72F1F39BD27004034CA /* RewardViewController.m */; };
 		2C859CE01F31EB2E00B86575 /* DACircularProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C859C8A1F31EB2E00B86575 /* DACircularProgressView.m */; };
 		2C859CE11F31EB2E00B86575 /* DALabeledCircularProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C859C8C1F31EB2E00B86575 /* DALabeledCircularProgressView.m */; };
 		2C859CE21F31EB2E00B86575 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C859C8F1F31EB2E00B86575 /* MBProgressHUD.m */; };
@@ -165,13 +190,8 @@
 		2C85E2B21F2EBDFE00ADD360 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E2AC1F2EBDFE00ADD360 /* MineViewController.m */; };
 		2C85E32E1F2EC60700ADD360 /* MyOrderContainerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E32D1F2EC60700ADD360 /* MyOrderContainerController.m */; };
 		2C85E3331F2EC6E500ADD360 /* Oder.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C85E3321F2EC6E500ADD360 /* Oder.storyboard */; };
-		2C85E33B1F2ECAEB00ADD360 /* ContractApplyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E33A1F2ECAEB00ADD360 /* ContractApplyController.m */; };
 		2C85E33E1F2ECB1300ADD360 /* UseAgreementController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E33D1F2ECB1300ADD360 /* UseAgreementController.m */; };
-		2C85E3441F2ECBC900ADD360 /* FeedbackContainerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E3431F2ECBC900ADD360 /* FeedbackContainerController.m */; };
-		2C85E3471F2ECBE200ADD360 /* FeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E3461F2ECBE200ADD360 /* FeedbackViewController.m */; };
-		2C85E34A1F2ECBF500ADD360 /* FeedbackHistoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E3491F2ECBF500ADD360 /* FeedbackHistoryController.m */; };
 		2C85E34D1F2ECC1200ADD360 /* AboutMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E34C1F2ECC1200ADD360 /* AboutMeViewController.m */; };
-		2C85E3501F2ECCA300ADD360 /* RewardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E34F1F2ECCA300ADD360 /* RewardViewController.m */; };
 		2C85E3531F2ECCC800ADD360 /* BackCardManagerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E3521F2ECCC800ADD360 /* BackCardManagerController.m */; };
 		2C85E3581F2ECDA200ADD360 /* CapitalRecordContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E3571F2ECDA200ADD360 /* CapitalRecordContainer.m */; };
 		2C85E35B1F2ECDF900ADD360 /* CapitalRecordListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E35A1F2ECDF900ADD360 /* CapitalRecordListController.m */; };
@@ -222,9 +242,6 @@
 		2C8BB7BF1F315DD000E2D75F /* HomeFooterWeb.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C8BB7BE1F315DD000E2D75F /* HomeFooterWeb.storyboard */; };
 		2C8BB7C51F31AEF600E2D75F /* UIButton+ImageTitleEdgeInset.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8BB7C41F31AEF600E2D75F /* UIButton+ImageTitleEdgeInset.m */; };
 		2C8BB7C91F31BB9F00E2D75F /* ProductContainerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8BB7C81F31BB9F00E2D75F /* ProductContainerController.m */; };
-		2C8DE5731F29CE14009B3AE2 /* PersonalMessageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE5721F29CE14009B3AE2 /* PersonalMessageController.m */; };
-		2C8DE5761F29CE51009B3AE2 /* PlatformAnnounceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE5751F29CE51009B3AE2 /* PlatformAnnounceController.m */; };
-		2C8DE5791F29CE76009B3AE2 /* AllActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE5781F29CE76009B3AE2 /* AllActivityViewController.m */; };
 		2C8DE57E1F29D484009B3AE2 /* TJSHomeListConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE57D1F29D484009B3AE2 /* TJSHomeListConfigurator.m */; };
 		2C8DE5811F29D4F7009B3AE2 /* TJSHomeListTableAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE5801F29D4F7009B3AE2 /* TJSHomeListTableAdapter.m */; };
 		2C8DE5841F29D509009B3AE2 /* TJSHomeListInteractorImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE5831F29D509009B3AE2 /* TJSHomeListInteractorImpl.m */; };
@@ -349,8 +366,6 @@
 		2C431DE71F299A9600858C12 /* HomeVCConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeVCConfig.m; sourceTree = "<group>"; };
 		2C431DE91F299A9600858C12 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		2C431DEA1F299A9600858C12 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
-		2C431DF91F29C26700858C12 /* MessageKindListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageKindListController.h; sourceTree = "<group>"; };
-		2C431DFA1F29C26700858C12 /* MessageKindListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageKindListController.m; sourceTree = "<group>"; };
 		2C431DFF1F29C28500858C12 /* ProductFilterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductFilterController.h; sourceTree = "<group>"; };
 		2C431E001F29C28500858C12 /* ProductFilterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductFilterController.m; sourceTree = "<group>"; };
 		2C431E0E1F29C59C00858C12 /* Message.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Message.storyboard; sourceTree = "<group>"; };
@@ -540,6 +555,19 @@
 		2C4C1C9C1F39493400002166 /* PNLineChartDataItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNLineChartDataItem.m; sourceTree = "<group>"; };
 		2C4C1CA01F39497900002166 /* TJSInvestPieChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSInvestPieChart.h; sourceTree = "<group>"; };
 		2C4C1CA11F39497900002166 /* TJSInvestPieChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSInvestPieChart.m; sourceTree = "<group>"; };
+		2C4C1CA51F394BDC00002166 /* FeedbackContainerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedbackContainerController.h; sourceTree = "<group>"; };
+		2C4C1CA61F394BDC00002166 /* FeedbackContainerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedbackContainerController.m; sourceTree = "<group>"; };
+		2C4C1CAC1F394C9000002166 /* FeedBackContainerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeedBackContainerProtocol.h; sourceTree = "<group>"; };
+		2C4C1CAD1F394E9500002166 /* FeedBackContainerConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedBackContainerConfig.h; sourceTree = "<group>"; };
+		2C4C1CAE1F394E9500002166 /* FeedBackContainerConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedBackContainerConfig.m; sourceTree = "<group>"; };
+		2C4C1CB31F3956C300002166 /* FeedbackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedbackViewController.h; sourceTree = "<group>"; };
+		2C4C1CB41F3956C300002166 /* FeedbackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedbackViewController.m; sourceTree = "<group>"; };
+		2C4C1CB71F39570400002166 /* FeedbackHistoryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedbackHistoryController.h; sourceTree = "<group>"; };
+		2C4C1CB81F39570400002166 /* FeedbackHistoryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedbackHistoryController.m; sourceTree = "<group>"; };
+		2C4C1CBC1F3958C900002166 /* FeedBackVCConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedBackVCConfig.h; sourceTree = "<group>"; };
+		2C4C1CBD1F3958C900002166 /* FeedBackVCConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedBackVCConfig.m; sourceTree = "<group>"; };
+		2C4C1CBF1F3958F400002166 /* FeedBackVCProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeedBackVCProtocol.h; sourceTree = "<group>"; };
+		2C4C1CC01F39A15A00002166 /* FeedBackVCInteractorProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeedBackVCInteractorProtocol.h; sourceTree = "<group>"; };
 		2C7A344A1F2F61C1004DD566 /* WithDarwDeposit.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WithDarwDeposit.storyboard; sourceTree = "<group>"; };
 		2C7A344C1F2F633C004DD566 /* CumulateInvest.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CumulateInvest.storyboard; sourceTree = "<group>"; };
 		2C7A344E1F2F63BD004DD566 /* CapitalRecord.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CapitalRecord.storyboard; sourceTree = "<group>"; };
@@ -560,6 +588,48 @@
 		2C801BAF1F233F46009F82F7 /* TJSRootTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSRootTabBarController.h; sourceTree = "<group>"; };
 		2C801BB01F233F46009F82F7 /* TJSRootTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSRootTabBarController.m; sourceTree = "<group>"; };
 		2C801BB21F233F46009F82F7 /* Mine.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Mine.storyboard; sourceTree = "<group>"; };
+		2C83C6E01F39AD85004034CA /* FeedbackCommitApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedbackCommitApi.h; sourceTree = "<group>"; };
+		2C83C6E11F39AD85004034CA /* FeedbackCommitApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedbackCommitApi.m; sourceTree = "<group>"; };
+		2C83C6E31F39AE2F004034CA /* FeedbackCommitNetworkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedbackCommitNetworkTool.h; sourceTree = "<group>"; };
+		2C83C6E41F39AE2F004034CA /* FeedbackCommitNetworkTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedbackCommitNetworkTool.m; sourceTree = "<group>"; };
+		2C83C6ED1F39B299004034CA /* ContractApplyController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContractApplyController.h; sourceTree = "<group>"; };
+		2C83C6EE1F39B299004034CA /* ContractApplyController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContractApplyController.m; sourceTree = "<group>"; };
+		2C83C6F11F39B354004034CA /* MyContractViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyContractViewController.h; sourceTree = "<group>"; };
+		2C83C6F21F39B354004034CA /* MyContractViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyContractViewController.m; sourceTree = "<group>"; };
+		2C83C6F41F39B529004034CA /* AddAdressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddAdressViewController.h; sourceTree = "<group>"; };
+		2C83C6F51F39B529004034CA /* AddAdressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddAdressViewController.m; sourceTree = "<group>"; };
+		2C83C6F71F39B6C2004034CA /* TJSBaseStoreTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSBaseStoreTool.h; sourceTree = "<group>"; };
+		2C83C6F81F39B6C2004034CA /* TJSBaseStoreTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSBaseStoreTool.m; sourceTree = "<group>"; };
+		2C83C6FA1F39B6FE004034CA /* MyContractListStoreTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyContractListStoreTool.h; sourceTree = "<group>"; };
+		2C83C6FB1F39B6FE004034CA /* MyContractListStoreTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyContractListStoreTool.m; sourceTree = "<group>"; };
+		2C83C6FD1F39B755004034CA /* MyFavListStoreTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyFavListStoreTool.h; path = TianJiCloud/Sections/Mine/ContractApply/Store/MyFavListStoreTool.h; sourceTree = SOURCE_ROOT; };
+		2C83C6FE1F39B755004034CA /* MyFavListStoreTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyFavListStoreTool.m; path = TianJiCloud/Sections/Mine/ContractApply/Store/MyFavListStoreTool.m; sourceTree = SOURCE_ROOT; };
+		2C83C7001F39B79C004034CA /* TJSStoreManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSStoreManager.h; sourceTree = "<group>"; };
+		2C83C7011F39B79C004034CA /* TJSStoreManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSStoreManager.m; sourceTree = "<group>"; };
+		2C83C7031F39B80A004034CA /* ProductListStoreTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductListStoreTool.h; sourceTree = "<group>"; };
+		2C83C7041F39B80A004034CA /* ProductListStoreTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductListStoreTool.m; sourceTree = "<group>"; };
+		2C83C7081F39B85B004034CA /* NewsListStoreTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsListStoreTool.h; sourceTree = "<group>"; };
+		2C83C7091F39B85B004034CA /* NewsListStoreTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsListStoreTool.m; sourceTree = "<group>"; };
+		2C83C70B1F39B871004034CA /* RoadShowListStoreTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoadShowListStoreTool.h; sourceTree = "<group>"; };
+		2C83C70C1F39B871004034CA /* RoadShowListStoreTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoadShowListStoreTool.m; sourceTree = "<group>"; };
+		2C83C70F1F39B9C9004034CA /* AllActivityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllActivityViewController.h; sourceTree = "<group>"; };
+		2C83C7101F39B9C9004034CA /* AllActivityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllActivityViewController.m; sourceTree = "<group>"; };
+		2C83C7141F39B9C9004034CA /* MessageKindListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageKindListController.h; sourceTree = "<group>"; };
+		2C83C7151F39B9C9004034CA /* MessageKindListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageKindListController.m; sourceTree = "<group>"; };
+		2C83C7171F39B9C9004034CA /* PersonalMessageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalMessageController.h; sourceTree = "<group>"; };
+		2C83C7181F39B9C9004034CA /* PersonalMessageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalMessageController.m; sourceTree = "<group>"; };
+		2C83C71A1F39B9C9004034CA /* PlatformAnnounceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlatformAnnounceController.h; sourceTree = "<group>"; };
+		2C83C71B1F39B9C9004034CA /* PlatformAnnounceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlatformAnnounceController.m; sourceTree = "<group>"; };
+		2C83C7201F39BA14004034CA /* PlatformAnnounceCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlatformAnnounceCell.h; sourceTree = "<group>"; };
+		2C83C7211F39BA14004034CA /* PlatformAnnounceCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlatformAnnounceCell.m; sourceTree = "<group>"; };
+		2C83C7231F39BA30004034CA /* PersonalMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalMessageCell.h; sourceTree = "<group>"; };
+		2C83C7241F39BA30004034CA /* PersonalMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalMessageCell.m; sourceTree = "<group>"; };
+		2C83C7261F39BA4C004034CA /* AllActivityTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllActivityTableCell.h; sourceTree = "<group>"; };
+		2C83C7271F39BA4C004034CA /* AllActivityTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllActivityTableCell.m; sourceTree = "<group>"; };
+		2C83C72A1F39BB46004034CA /* HistoryRewardsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryRewardsController.h; sourceTree = "<group>"; };
+		2C83C72B1F39BB46004034CA /* HistoryRewardsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryRewardsController.m; sourceTree = "<group>"; };
+		2C83C72E1F39BD27004034CA /* RewardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RewardViewController.h; sourceTree = "<group>"; };
+		2C83C72F1F39BD27004034CA /* RewardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RewardViewController.m; sourceTree = "<group>"; };
 		2C859C891F31EB2E00B86575 /* DACircularProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DACircularProgressView.h; sourceTree = "<group>"; };
 		2C859C8A1F31EB2E00B86575 /* DACircularProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DACircularProgressView.m; sourceTree = "<group>"; };
 		2C859C8B1F31EB2E00B86575 /* DALabeledCircularProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DALabeledCircularProgressView.h; sourceTree = "<group>"; };
@@ -640,20 +710,10 @@
 		2C85E32C1F2EC60700ADD360 /* MyOrderContainerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyOrderContainerController.h; sourceTree = "<group>"; };
 		2C85E32D1F2EC60700ADD360 /* MyOrderContainerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyOrderContainerController.m; sourceTree = "<group>"; };
 		2C85E3321F2EC6E500ADD360 /* Oder.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Oder.storyboard; sourceTree = "<group>"; };
-		2C85E3391F2ECAEB00ADD360 /* ContractApplyController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContractApplyController.h; sourceTree = "<group>"; };
-		2C85E33A1F2ECAEB00ADD360 /* ContractApplyController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContractApplyController.m; sourceTree = "<group>"; };
 		2C85E33C1F2ECB1300ADD360 /* UseAgreementController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UseAgreementController.h; sourceTree = "<group>"; };
 		2C85E33D1F2ECB1300ADD360 /* UseAgreementController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UseAgreementController.m; sourceTree = "<group>"; };
-		2C85E3421F2ECBC900ADD360 /* FeedbackContainerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedbackContainerController.h; sourceTree = "<group>"; };
-		2C85E3431F2ECBC900ADD360 /* FeedbackContainerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedbackContainerController.m; sourceTree = "<group>"; };
-		2C85E3451F2ECBE200ADD360 /* FeedbackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedbackViewController.h; sourceTree = "<group>"; };
-		2C85E3461F2ECBE200ADD360 /* FeedbackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedbackViewController.m; sourceTree = "<group>"; };
-		2C85E3481F2ECBF500ADD360 /* FeedbackHistoryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedbackHistoryController.h; sourceTree = "<group>"; };
-		2C85E3491F2ECBF500ADD360 /* FeedbackHistoryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedbackHistoryController.m; sourceTree = "<group>"; };
 		2C85E34B1F2ECC1200ADD360 /* AboutMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutMeViewController.h; sourceTree = "<group>"; };
 		2C85E34C1F2ECC1200ADD360 /* AboutMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutMeViewController.m; sourceTree = "<group>"; };
-		2C85E34E1F2ECCA300ADD360 /* RewardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RewardViewController.h; sourceTree = "<group>"; };
-		2C85E34F1F2ECCA300ADD360 /* RewardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RewardViewController.m; sourceTree = "<group>"; };
 		2C85E3511F2ECCC800ADD360 /* BackCardManagerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackCardManagerController.h; sourceTree = "<group>"; };
 		2C85E3521F2ECCC800ADD360 /* BackCardManagerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackCardManagerController.m; sourceTree = "<group>"; };
 		2C85E3561F2ECDA200ADD360 /* CapitalRecordContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CapitalRecordContainer.h; sourceTree = "<group>"; };
@@ -759,12 +819,6 @@
 		2C8BB7C41F31AEF600E2D75F /* UIButton+ImageTitleEdgeInset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ImageTitleEdgeInset.m"; sourceTree = "<group>"; };
 		2C8BB7C71F31BB9F00E2D75F /* ProductContainerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductContainerController.h; sourceTree = "<group>"; };
 		2C8BB7C81F31BB9F00E2D75F /* ProductContainerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductContainerController.m; sourceTree = "<group>"; };
-		2C8DE5711F29CE14009B3AE2 /* PersonalMessageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalMessageController.h; sourceTree = "<group>"; };
-		2C8DE5721F29CE14009B3AE2 /* PersonalMessageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalMessageController.m; sourceTree = "<group>"; };
-		2C8DE5741F29CE51009B3AE2 /* PlatformAnnounceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlatformAnnounceController.h; sourceTree = "<group>"; };
-		2C8DE5751F29CE51009B3AE2 /* PlatformAnnounceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlatformAnnounceController.m; sourceTree = "<group>"; };
-		2C8DE5771F29CE76009B3AE2 /* AllActivityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllActivityViewController.h; sourceTree = "<group>"; };
-		2C8DE5781F29CE76009B3AE2 /* AllActivityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllActivityViewController.m; sourceTree = "<group>"; };
 		2C8DE57C1F29D484009B3AE2 /* TJSHomeListConfigurator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSHomeListConfigurator.h; sourceTree = "<group>"; };
 		2C8DE57D1F29D484009B3AE2 /* TJSHomeListConfigurator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSHomeListConfigurator.m; sourceTree = "<group>"; };
 		2C8DE57F1F29D4F7009B3AE2 /* TJSHomeListTableAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSHomeListTableAdapter.h; sourceTree = "<group>"; };
@@ -1025,32 +1079,12 @@
 			isa = PBXGroup;
 			children = (
 				2C431E0E1F29C59C00858C12 /* Message.storyboard */,
-				2C431DF71F29C26700858C12 /* Config */,
-				2C431DF81F29C26700858C12 /* Controller */,
+				2C83C7111F39B9C9004034CA /* Kinds */,
+				2C83C7161F39B9C9004034CA /* PersonalM */,
+				2C83C7191F39B9C9004034CA /* PlatformA */,
+				2C83C70E1F39B9C9004034CA /* AllActivity */,
 			);
 			path = Message;
-			sourceTree = "<group>";
-		};
-		2C431DF71F29C26700858C12 /* Config */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Config;
-			sourceTree = "<group>";
-		};
-		2C431DF81F29C26700858C12 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				2C431DF91F29C26700858C12 /* MessageKindListController.h */,
-				2C431DFA1F29C26700858C12 /* MessageKindListController.m */,
-				2C8DE5711F29CE14009B3AE2 /* PersonalMessageController.h */,
-				2C8DE5721F29CE14009B3AE2 /* PersonalMessageController.m */,
-				2C8DE5741F29CE51009B3AE2 /* PlatformAnnounceController.h */,
-				2C8DE5751F29CE51009B3AE2 /* PlatformAnnounceController.m */,
-				2C8DE5771F29CE76009B3AE2 /* AllActivityViewController.h */,
-				2C8DE5781F29CE76009B3AE2 /* AllActivityViewController.m */,
-			);
-			path = Controller;
 			sourceTree = "<group>";
 		};
 		2C431DFB1F29C26700858C12 /* ProductFilter */ = {
@@ -1089,6 +1123,7 @@
 		2C431E021F29C35A00858C12 /* News */ = {
 			isa = PBXGroup;
 			children = (
+				2C83C7061F39B831004034CA /* Store */,
 				2C8DE5C11F2AE3BC009B3AE2 /* Controller */,
 				2C8DE6091F2B15C0009B3AE2 /* Config */,
 				2C8DE6061F2B0FA7009B3AE2 /* Protocol */,
@@ -1103,6 +1138,7 @@
 		2C431E031F29C35A00858C12 /* Roadshow */ = {
 			isa = PBXGroup;
 			children = (
+				2C83C7071F39B83F004034CA /* Store */,
 				2C8DE60E1F2B43A8009B3AE2 /* Controller */,
 				2C8DE60D1F2B43A8009B3AE2 /* Config */,
 				2C8DE6111F2B43A8009B3AE2 /* Disaggregate */,
@@ -1117,8 +1153,8 @@
 		2C431E041F29C38F00858C12 /* Container */ = {
 			isa = PBXGroup;
 			children = (
-				2CCBE4691F330DFA006C4018 /* Protocol */,
 				2CCBE4621F330554006C4018 /* Controller */,
+				2CCBE4691F330DFA006C4018 /* Protocol */,
 				2CCBE4611F33054A006C4018 /* Config */,
 			);
 			path = Container;
@@ -1310,11 +1346,9 @@
 		2C4411FA1F219A5300C453EF /* NetworkAPIs */ = {
 			isa = PBXGroup;
 			children = (
-				2CAF42951F28187600ABCA5E /* Message */,
 				2CAF427B1F26EAC900ABCA5E /* AppVersion */,
 				2CAF426A1F26DEDE00ABCA5E /* Product */,
 				2CAF426C1F26DEEF00ABCA5E /* Mine */,
-				2CAF426B1F26DEEA00ABCA5E /* File */,
 				2C44129A1F2201FF00C453EF /* Tool */,
 			);
 			path = NetworkAPIs;
@@ -1839,6 +1873,82 @@
 			path = PNLineChart;
 			sourceTree = "<group>";
 		};
+		2C4C1CA31F394BDC00002166 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				2C4C1CAD1F394E9500002166 /* FeedBackContainerConfig.h */,
+				2C4C1CAE1F394E9500002166 /* FeedBackContainerConfig.m */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		2C4C1CA41F394BDC00002166 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2C4C1CA51F394BDC00002166 /* FeedbackContainerController.h */,
+				2C4C1CA61F394BDC00002166 /* FeedbackContainerController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2C4C1CA71F394BDC00002166 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				2C4C1CAC1F394C9000002166 /* FeedBackContainerProtocol.h */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		2C4C1CB01F3956C300002166 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				2C4C1CBF1F3958F400002166 /* FeedBackVCProtocol.h */,
+				2C4C1CC01F39A15A00002166 /* FeedBackVCInteractorProtocol.h */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		2C4C1CB11F3956C300002166 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				2C4C1CBC1F3958C900002166 /* FeedBackVCConfig.h */,
+				2C4C1CBD1F3958C900002166 /* FeedBackVCConfig.m */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		2C4C1CB21F3956C300002166 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2C4C1CB31F3956C300002166 /* FeedbackViewController.h */,
+				2C4C1CB41F3956C300002166 /* FeedbackViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2C4C1CB61F39570400002166 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2C4C1CB71F39570400002166 /* FeedbackHistoryController.h */,
+				2C4C1CB81F39570400002166 /* FeedbackHistoryController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2C4C1CBA1F39571F00002166 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		2C4C1CBB1F39572500002166 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
 		2C801BA31F233F46009F82F7 /* Sections */ = {
 			isa = PBXGroup;
 			children = (
@@ -1872,6 +1982,8 @@
 				2C8DE5931F29F5FF009B3AE2 /* TJSWeakScriptMessageHandler.m */,
 				2CAF42711F26E66500ABCA5E /* TJSBaseNetworkTool.h */,
 				2CAF42721F26E66500ABCA5E /* TJSBaseNetworkTool.m */,
+				2C83C6F71F39B6C2004034CA /* TJSBaseStoreTool.h */,
+				2C83C6F81F39B6C2004034CA /* TJSBaseStoreTool.m */,
 				2C85E3711F2EDB1000ADD360 /* TJSBaseControllerConfig.h */,
 				2C85E3721F2EDB1000ADD360 /* TJSBaseControllerConfig.m */,
 			);
@@ -1924,8 +2036,186 @@
 		2C801BE91F25884E009F82F7 /* StoreService */ = {
 			isa = PBXGroup;
 			children = (
+				2C83C7001F39B79C004034CA /* TJSStoreManager.h */,
+				2C83C7011F39B79C004034CA /* TJSStoreManager.m */,
 			);
 			path = StoreService;
+			sourceTree = "<group>";
+		};
+		2C83C6DB1F39ACAC004034CA /* NetworkTool */ = {
+			isa = PBXGroup;
+			children = (
+				2C83C6E31F39AE2F004034CA /* FeedbackCommitNetworkTool.h */,
+				2C83C6E41F39AE2F004034CA /* FeedbackCommitNetworkTool.m */,
+			);
+			path = NetworkTool;
+			sourceTree = "<group>";
+		};
+		2C83C6DC1F39AD2D004034CA /* FeedBack */ = {
+			isa = PBXGroup;
+			children = (
+				2C83C6E01F39AD85004034CA /* FeedbackCommitApi.h */,
+				2C83C6E11F39AD85004034CA /* FeedbackCommitApi.m */,
+			);
+			path = FeedBack;
+			sourceTree = "<group>";
+		};
+		2C83C6E61F39B299004034CA /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				2C83C6FA1F39B6FE004034CA /* MyContractListStoreTool.h */,
+				2C83C6FB1F39B6FE004034CA /* MyContractListStoreTool.m */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		2C83C6E71F39B299004034CA /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2C83C6E81F39B299004034CA /* Config */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		2C83C6E91F39B299004034CA /* NetworkTool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NetworkTool;
+			sourceTree = "<group>";
+		};
+		2C83C6EA1F39B299004034CA /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		2C83C6EB1F39B299004034CA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2C83C6EC1F39B299004034CA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2C83C6F11F39B354004034CA /* MyContractViewController.h */,
+				2C83C6F21F39B354004034CA /* MyContractViewController.m */,
+				2C83C6ED1F39B299004034CA /* ContractApplyController.h */,
+				2C83C6EE1F39B299004034CA /* ContractApplyController.m */,
+				2C83C6F41F39B529004034CA /* AddAdressViewController.h */,
+				2C83C6F51F39B529004034CA /* AddAdressViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2C83C6F01F39B2B4004034CA /* Disaggregate */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Disaggregate;
+			sourceTree = "<group>";
+		};
+		2C83C7061F39B831004034CA /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				2C83C7081F39B85B004034CA /* NewsListStoreTool.h */,
+				2C83C7091F39B85B004034CA /* NewsListStoreTool.m */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		2C83C7071F39B83F004034CA /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				2C83C70B1F39B871004034CA /* RoadShowListStoreTool.h */,
+				2C83C70C1F39B871004034CA /* RoadShowListStoreTool.m */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		2C83C70E1F39B9C9004034CA /* AllActivity */ = {
+			isa = PBXGroup;
+			children = (
+				2C83C70F1F39B9C9004034CA /* AllActivityViewController.h */,
+				2C83C7101F39B9C9004034CA /* AllActivityViewController.m */,
+				2C83C7261F39BA4C004034CA /* AllActivityTableCell.h */,
+				2C83C7271F39BA4C004034CA /* AllActivityTableCell.m */,
+			);
+			path = AllActivity;
+			sourceTree = "<group>";
+		};
+		2C83C7111F39B9C9004034CA /* Kinds */ = {
+			isa = PBXGroup;
+			children = (
+				2C83C7131F39B9C9004034CA /* Controller */,
+				2C83C7121F39B9C9004034CA /* Config */,
+			);
+			path = Kinds;
+			sourceTree = "<group>";
+		};
+		2C83C7121F39B9C9004034CA /* Config */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		2C83C7131F39B9C9004034CA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2C83C7141F39B9C9004034CA /* MessageKindListController.h */,
+				2C83C7151F39B9C9004034CA /* MessageKindListController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2C83C7161F39B9C9004034CA /* PersonalM */ = {
+			isa = PBXGroup;
+			children = (
+				2C83C7171F39B9C9004034CA /* PersonalMessageController.h */,
+				2C83C7181F39B9C9004034CA /* PersonalMessageController.m */,
+				2C83C7231F39BA30004034CA /* PersonalMessageCell.h */,
+				2C83C7241F39BA30004034CA /* PersonalMessageCell.m */,
+			);
+			path = PersonalM;
+			sourceTree = "<group>";
+		};
+		2C83C7191F39B9C9004034CA /* PlatformA */ = {
+			isa = PBXGroup;
+			children = (
+				2C83C71A1F39B9C9004034CA /* PlatformAnnounceController.h */,
+				2C83C71B1F39B9C9004034CA /* PlatformAnnounceController.m */,
+				2C83C7201F39BA14004034CA /* PlatformAnnounceCell.h */,
+				2C83C7211F39BA14004034CA /* PlatformAnnounceCell.m */,
+			);
+			path = PlatformA;
+			sourceTree = "<group>";
+		};
+		2C83C7291F39BB2B004034CA /* History */ = {
+			isa = PBXGroup;
+			children = (
+				2C83C72A1F39BB46004034CA /* HistoryRewardsController.h */,
+				2C83C72B1F39BB46004034CA /* HistoryRewardsController.m */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		2C83C72D1F39BD27004034CA /* Reward */ = {
+			isa = PBXGroup;
+			children = (
+				2C83C72E1F39BD27004034CA /* RewardViewController.h */,
+				2C83C72F1F39BD27004034CA /* RewardViewController.m */,
+			);
+			path = Reward;
 			sourceTree = "<group>";
 		};
 		2C859C871F31EB2E00B86575 /* View */ = {
@@ -2297,8 +2587,9 @@
 		2C85E33F1F2ECB6100ADD360 /* History */ = {
 			isa = PBXGroup;
 			children = (
-				2C85E3481F2ECBF500ADD360 /* FeedbackHistoryController.h */,
-				2C85E3491F2ECBF500ADD360 /* FeedbackHistoryController.m */,
+				2C4C1CB61F39570400002166 /* Controller */,
+				2C4C1CBB1F39572500002166 /* Protocol */,
+				2C4C1CBA1F39571F00002166 /* Config */,
 			);
 			path = History;
 			sourceTree = "<group>";
@@ -2306,8 +2597,10 @@
 		2C85E3401F2ECB6100ADD360 /* Feedback */ = {
 			isa = PBXGroup;
 			children = (
-				2C85E3451F2ECBE200ADD360 /* FeedbackViewController.h */,
-				2C85E3461F2ECBE200ADD360 /* FeedbackViewController.m */,
+				2C4C1CB21F3956C300002166 /* Controller */,
+				2C83C6DB1F39ACAC004034CA /* NetworkTool */,
+				2C4C1CB11F3956C300002166 /* Config */,
+				2C4C1CB01F3956C300002166 /* Protocol */,
 			);
 			path = Feedback;
 			sourceTree = "<group>";
@@ -2315,8 +2608,9 @@
 		2C85E3411F2ECB6100ADD360 /* Container */ = {
 			isa = PBXGroup;
 			children = (
-				2C85E3421F2ECBC900ADD360 /* FeedbackContainerController.h */,
-				2C85E3431F2ECBC900ADD360 /* FeedbackContainerController.m */,
+				2C4C1CA41F394BDC00002166 /* Controller */,
+				2C4C1CA31F394BDC00002166 /* Config */,
+				2C4C1CA71F394BDC00002166 /* Protocol */,
 			);
 			path = Container;
 			sourceTree = "<group>";
@@ -2748,8 +3042,14 @@
 			isa = PBXGroup;
 			children = (
 				2C7A34561F2F673D004DD566 /* ContractApply.storyboard */,
-				2C85E3391F2ECAEB00ADD360 /* ContractApplyController.h */,
-				2C85E33A1F2ECAEB00ADD360 /* ContractApplyController.m */,
+				2C83C6F01F39B2B4004034CA /* Disaggregate */,
+				2C83C6EC1F39B299004034CA /* Controller */,
+				2C83C6E61F39B299004034CA /* Store */,
+				2C83C6E71F39B299004034CA /* View */,
+				2C83C6E81F39B299004034CA /* Config */,
+				2C83C6E91F39B299004034CA /* NetworkTool */,
+				2C83C6EA1F39B299004034CA /* Protocol */,
+				2C83C6EB1F39B299004034CA /* Model */,
 			);
 			path = ContractApply;
 			sourceTree = "<group>";
@@ -2810,8 +3110,8 @@
 			isa = PBXGroup;
 			children = (
 				2C7A34521F2F6590004DD566 /* MyReward.storyboard */,
-				2C85E34E1F2ECCA300ADD360 /* RewardViewController.h */,
-				2C85E34F1F2ECCA300ADD360 /* RewardViewController.m */,
+				2C83C72D1F39BD27004034CA /* Reward */,
+				2C83C7291F39BB2B004034CA /* History */,
 			);
 			path = Reward;
 			sourceTree = "<group>";
@@ -2951,16 +3251,10 @@
 			path = Product;
 			sourceTree = "<group>";
 		};
-		2CAF426B1F26DEEA00ABCA5E /* File */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = File;
-			sourceTree = "<group>";
-		};
 		2CAF426C1F26DEEF00ABCA5E /* Mine */ = {
 			isa = PBXGroup;
 			children = (
+				2C83C6DC1F39AD2D004034CA /* FeedBack */,
 			);
 			path = Mine;
 			sourceTree = "<group>";
@@ -2991,13 +3285,6 @@
 				2CAF427D1F26EAE300ABCA5E /* TJSAppVersionApi.m */,
 			);
 			path = AppVersion;
-			sourceTree = "<group>";
-		};
-		2CAF42951F28187600ABCA5E /* Message */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Message;
 			sourceTree = "<group>";
 		};
 		2CAF42A31F281B8600ABCA5E /* ProductList */ = {
@@ -3108,6 +3395,8 @@
 		2CAF42D21F281B8600ABCA5E /* Store */ = {
 			isa = PBXGroup;
 			children = (
+				2C83C7031F39B80A004034CA /* ProductListStoreTool.h */,
+				2C83C7041F39B80A004034CA /* ProductListStoreTool.m */,
 			);
 			path = Store;
 			sourceTree = "<group>";
@@ -3319,6 +3608,8 @@
 		A2FE0A881F38B47000E678E5 /* Store */ = {
 			isa = PBXGroup;
 			children = (
+				2C83C6FD1F39B755004034CA /* MyFavListStoreTool.h */,
+				2C83C6FE1F39B755004034CA /* MyFavListStoreTool.m */,
 			);
 			path = Store;
 			sourceTree = "<group>";
@@ -3555,6 +3846,7 @@
 				2CAF42D81F281B8600ABCA5E /* ProductListVCConfig.m in Sources */,
 				2C85E3B41F2F269D00ADD360 /* MineHomeCellInfoModel.m in Sources */,
 				2C859CE51F31EB2E00B86575 /* YZDisplayViewController.m in Sources */,
+				2C83C7281F39BA4C004034CA /* AllActivityTableCell.m in Sources */,
 				2C859CF81F31EB2E00B86575 /* UIViewController+Alert.m in Sources */,
 				2C4412821F21EA8900C453EF /* UIImage+Retinted.m in Sources */,
 				2C431E011F29C28500858C12 /* ProductFilterController.m in Sources */,
@@ -3580,6 +3872,7 @@
 				2C44123C1F21D27700C453EF /* GVUserDefaults.m in Sources */,
 				2CAF42DD1F281B8600ABCA5E /* ProductDeleteNetworkTool.m in Sources */,
 				2C4C1BD11F380DFE00002166 /* MyOrderListViewController.m in Sources */,
+				2C83C71F1F39B9C9004034CA /* PlatformAnnounceController.m in Sources */,
 				2C4C1C1F1F38531F00002166 /* TJSMyOrderListCellLayoutConfig.m in Sources */,
 				2C859CE21F31EB2E00B86575 /* MBProgressHUD.m in Sources */,
 				2C85E34D1F2ECC1200ADD360 /* AboutMeViewController.m in Sources */,
@@ -3589,8 +3882,10 @@
 				2CCBE4831F3415F2006C4018 /* MineHomeHeaderCollectionLayout.m in Sources */,
 				2C859CEB1F31EB2E00B86575 /* ZLCameraView.m in Sources */,
 				2C859CE01F31EB2E00B86575 /* DACircularProgressView.m in Sources */,
+				2C83C6E21F39AD85004034CA /* FeedbackCommitApi.m in Sources */,
 				2C859CE31F31EB2E00B86575 /* UIView+Frame.m in Sources */,
 				2C89AD741F2B5C81005C29AC /* DiscoNewsDetailController.m in Sources */,
+				2C83C7221F39BA14004034CA /* PlatformAnnounceCell.m in Sources */,
 				2C8BB7AC1F30878A00E2D75F /* HomeWebClickItem.m in Sources */,
 				2C8DE5A91F2ACA75009B3AE2 /* TJSBaseControllerContainer.m in Sources */,
 				2C85E3AD1F2F1C1D00ADD360 /* MineHomeInvestCell.m in Sources */,
@@ -3601,9 +3896,7 @@
 				2CAF42D71F281B8600ABCA5E /* TJSProductListCellLayoutConfig.m in Sources */,
 				2C300F8B1F2F3CB100DD440E /* ProfesisonAuthenController.m in Sources */,
 				2CAF43211F28398E00ABCA5E /* UIView+TJSFrame.m in Sources */,
-				2C8DE5791F29CE76009B3AE2 /* AllActivityViewController.m in Sources */,
 				2CCBE4861F3417A5006C4018 /* MineHeaderCollectionCell.m in Sources */,
-				2C8DE5731F29CE14009B3AE2 /* PersonalMessageController.m in Sources */,
 				2C4412931F21FF9C00C453EF /* TJSDownLoaderManager.m in Sources */,
 				2C8BB7C51F31AEF600E2D75F /* UIButton+ImageTitleEdgeInset.m in Sources */,
 				2C8DE5941F29F5FF009B3AE2 /* TJSWeakScriptMessageHandler.m in Sources */,
@@ -3621,7 +3914,9 @@
 				2C4C1C3A1F393FDC00002166 /* CumulativeInvestController.m in Sources */,
 				2C4412591F21DDA900C453EF /* UIWindow+Transition.m in Sources */,
 				2C4C1C071F3847C200002166 /* MyOrderListVCConfig.m in Sources */,
+				2C83C7021F39B79C004034CA /* TJSStoreManager.m in Sources */,
 				2C85E3891F2F09D100ADD360 /* TJSMineHomeCellFactory.m in Sources */,
+				2C83C7051F39B80A004034CA /* ProductListStoreTool.m in Sources */,
 				2C859CFE1F31EB2E00B86575 /* ZLPhotoPickerCollectionViewCell.m in Sources */,
 				2C85E3AA1F2F1C0000ADD360 /* MineHomeOrderCell.m in Sources */,
 				2C4C1C011F38476900002166 /* MyOrderInfo.m in Sources */,
@@ -3640,6 +3935,7 @@
 				2C8DE5811F29D4F7009B3AE2 /* TJSHomeListTableAdapter.m in Sources */,
 				2C431DEC1F299A9600858C12 /* HomeViewController.m in Sources */,
 				2C4412021F219A5300C453EF /* UIColor+HEX.m in Sources */,
+				2C83C7301F39BD27004034CA /* RewardViewController.m in Sources */,
 				2C85E3771F2F02A200ADD360 /* TJSMineHomeConfigurator.m in Sources */,
 				2C859CFA1F31EB2E00B86575 /* ZLPhotoPickerAssetsViewController.m in Sources */,
 				2C85E3611F2ECE7300ADD360 /* WithdrawDepositController.m in Sources */,
@@ -3667,6 +3963,8 @@
 				2C8DE5A41F29FF89009B3AE2 /* ProductSearchController.m in Sources */,
 				2C8DE5F81F2AE9D0009B3AE2 /* DiscoveryNewsNetworkTool.m in Sources */,
 				2C44125D1F21DF3600C453EF /* NSObject+Swizzle.m in Sources */,
+				2C4C1CBE1F3958C900002166 /* FeedBackVCConfig.m in Sources */,
+				2C83C6F31F39B354004034CA /* MyContractViewController.m in Sources */,
 				2C4C1C161F384A5600002166 /* TJSMyOrderListTableAdapter.m in Sources */,
 				2C8DE5911F29F4AF009B3AE2 /* TJSBaseWebViewController.m in Sources */,
 				2CAF42731F26E66500ABCA5E /* TJSBaseNetworkTool.m in Sources */,
@@ -3676,6 +3974,7 @@
 				2C85E3931F2F0B6500ADD360 /* TJSBaseMineHomeCellContentConfig.m in Sources */,
 				2C8DE5FF1F2AEAF6009B3AE2 /* DiscoveryNewsInfoModel.m in Sources */,
 				2CAF42DE1F281B8600ABCA5E /* ProductListNetworkTool.m in Sources */,
+				2C4C1CB91F39570400002166 /* FeedbackHistoryController.m in Sources */,
 				2C4C1BF51F3844FE00002166 /* TJSProductFilterDataSourceImpl.m in Sources */,
 				2C859CF61F31EB2E00B86575 /* ZLPhotoPickerDatas.m in Sources */,
 				2C4C1C301F386E3B00002166 /* TJSMobileCallUtil.m in Sources */,
@@ -3684,7 +3983,6 @@
 				2C859CE41F31EB2E00B86575 /* YZDisplayTitleLabel.m in Sources */,
 				2CAF42D51F281B8600ABCA5E /* TJSProductListTextContentConfig.m in Sources */,
 				2CCBE4921F34207C006C4018 /* TJSBaseTableHeaderFooterView.m in Sources */,
-				2C431DFE1F29C26700858C12 /* MessageKindListController.m in Sources */,
 				2C300F851F2F3C7E00DD440E /* GesturePasswordController.m in Sources */,
 				2C44124E1F21D54400C453EF /* TJSSystemAlertMaker.m in Sources */,
 				2C859CF71F31EB2E00B86575 /* ZLPhotoPickerGroup.m in Sources */,
@@ -3695,11 +3993,11 @@
 				2C859D091F31EB6B00B86575 /* NSObject+vk_msgSend.m in Sources */,
 				2C859CE81F31EB2E00B86575 /* UIView+ZLExtension.m in Sources */,
 				2C300F821F2F3C5F00DD440E /* ModifyLogPasswordController.m in Sources */,
-				2C8DE5761F29CE51009B3AE2 /* PlatformAnnounceController.m in Sources */,
 				2CAF43181F2829CF00ABCA5E /* TJSProductEvent.m in Sources */,
 				2C859CF51F31EB2E00B86575 /* ZLPhotoAssets.m in Sources */,
 				2C85E3B01F2F1C2B00ADD360 /* MineHomeBalanceCell.m in Sources */,
 				2C859CEC1F31EB2E00B86575 /* ZLCameraViewController.m in Sources */,
+				2C83C7251F39BA30004034CA /* PersonalMessageCell.m in Sources */,
 				2C859CF01F31EB2E00B86575 /* ZLPhotoPickerBrowserViewController.m in Sources */,
 				2CAF42DB1F281B8600ABCA5E /* ProductListViewController.m in Sources */,
 				2CAF42D31F281B8600ABCA5E /* TJSProductListContentConfig.m in Sources */,
@@ -3715,29 +4013,34 @@
 				2C8BB7BB1F315CB500E2D75F /* HomeFooterWebController.m in Sources */,
 				2CAF43081F2828C200ABCA5E /* TJSProductListInteractorImpl.m in Sources */,
 				2C4412761F21E7F000C453EF /* UIButton+BackgroundColor.m in Sources */,
+				2C83C6F61F39B529004034CA /* AddAdressViewController.m in Sources */,
 				2CCBE4A31F344A98006C4018 /* MineHomeCellDefaultItem.m in Sources */,
 				2C4C1BD81F381AF300002166 /* MineHomeCellBalanceItem.m in Sources */,
 				2C8DE5FB1F2AEA59009B3AE2 /* TJSDiscoNewsDataSorceImpl.m in Sources */,
 				2C300F7A1F2F327E00DD440E /* MineSettingViewController.m in Sources */,
 				2CCBE4A61F344A98006C4018 /* MineHomeCellOrderItem.m in Sources */,
 				2C4412B41F2207CD00C453EF /* TJSLoginStateUtil.m in Sources */,
+				2C83C6FF1F39B755004034CA /* MyFavListStoreTool.m in Sources */,
+				2C83C71C1F39B9C9004034CA /* AllActivityViewController.m in Sources */,
 				2C4412381F21B3DF00C453EF /* UIButton+TouchAreaInsets.m in Sources */,
 				2C859CF91F31EB2E00B86575 /* ZLNavigationController.m in Sources */,
 				2C4412051F219A5300C453EF /* UIImage+Stretchable.m in Sources */,
 				2C4411AD1F21981E00C453EF /* main.m in Sources */,
 				2CCBE4681F330597006C4018 /* DiscoveryVCConfig.m in Sources */,
 				2C4C1BFB1F38453000002166 /* TJSProductFilterCollAdapter.m in Sources */,
+				2C83C6E51F39AE2F004034CA /* FeedbackCommitNetworkTool.m in Sources */,
 				2CAF43191F2829CF00ABCA5E /* TJSProductInfo.m in Sources */,
+				2C83C70D1F39B871004034CA /* RoadShowListStoreTool.m in Sources */,
 				2C859CF21F31EB2E00B86575 /* ZLPhotoPickerBrowserPhotoScrollView.m in Sources */,
+				2C4C1CAF1F394E9500002166 /* FeedBackContainerConfig.m in Sources */,
 				2CAF43071F2828C200ABCA5E /* TJSProductListDataSourceImpl.m in Sources */,
 				2C859D001F31EB2E00B86575 /* ZLPhotoPickerGroupTableViewCell.m in Sources */,
 				2C4C1C881F3948E100002166 /* PNPieChart.m in Sources */,
 				2CAF42F51F28273300ABCA5E /* ProductListCellContentView.m in Sources */,
 				2C8DE60C1F2B15F3009B3AE2 /* TJSDiscoNewsListVCConfig.m in Sources */,
+				2C83C72C1F39BB46004034CA /* HistoryRewardsController.m in Sources */,
 				2C85E3581F2ECDA200ADD360 /* CapitalRecordContainer.m in Sources */,
 				2C4412881F21EB8800C453EF /* UITextField+LengthLimited.m in Sources */,
-				2C85E33B1F2ECAEB00ADD360 /* ContractApplyController.m in Sources */,
-				2C85E3471F2ECBE200ADD360 /* FeedbackViewController.m in Sources */,
 				2CAF43111F2829B300ABCA5E /* TJSAppInfo.m in Sources */,
 				2C4C1BFE1F3846F600002166 /* MyOrderListTableCell.m in Sources */,
 				2C4C1BE91F38418200002166 /* ProducFilterVCConfig.m in Sources */,
@@ -3754,9 +4057,12 @@
 				2C4C1BD51F38143B00002166 /* UIApplication+TJSAppVersion.m in Sources */,
 				2C4412671F21E17200C453EF /* NSMutableAttributedString+Formated.m in Sources */,
 				2C8DE58A1F29E066009B3AE2 /* TJSHomeListLayoutImpl.m in Sources */,
+				2C83C71D1F39B9C9004034CA /* MessageKindListController.m in Sources */,
+				2C4C1CB51F3956C300002166 /* FeedbackViewController.m in Sources */,
 				2C4412431F21D36200C453EF /* TJSEnumValueService.m in Sources */,
 				2CAF43091F2828C200ABCA5E /* TJSProductListLayoutImpl.m in Sources */,
 				2C300F881F2F3C9900DD440E /* FindWithDrawPasswordController.m in Sources */,
+				2C83C6F91F39B6C2004034CA /* TJSBaseStoreTool.m in Sources */,
 				2CAF430A1F2828C200ABCA5E /* TJSProductListTableAdapter.m in Sources */,
 				2C8DE5EE1F2AE7D0009B3AE2 /* TJSDiscoNewsConfigurator.m in Sources */,
 				2C859CE11F31EB2E00B86575 /* DALabeledCircularProgressView.m in Sources */,
@@ -3764,16 +4070,19 @@
 				2C8DE5CD1F2AE3BC009B3AE2 /* DiscoveryNewsCollectLayout.m in Sources */,
 				2C8DE5F41F2AE849009B3AE2 /* TJSDiscoNewsListAdapter.m in Sources */,
 				2CCBE4A51F344A98006C4018 /* MineHomeCellIvestItem.m in Sources */,
-				2C85E3441F2ECBC900ADD360 /* FeedbackContainerController.m in Sources */,
 				2C300F7F1F2F3C3C00DD440E /* ProfileViewController.m in Sources */,
+				2C83C6FC1F39B6FE004034CA /* MyContractListStoreTool.m in Sources */,
+				2C83C70A1F39B85B004034CA /* NewsListStoreTool.m in Sources */,
 				2C4C1C9D1F39493400002166 /* PNLineChart.m in Sources */,
 				2C4C1C1C1F3852F300002166 /* TJSMyOrderListCellFactory.m in Sources */,
 				2CAF426F1F26E01E00ABCA5E /* TJSProductListApi.m in Sources */,
+				2C4C1CA81F394BDC00002166 /* FeedbackContainerController.m in Sources */,
 				2C85E3B71F2F302900ADD360 /* UIImage+Resizeable.m in Sources */,
 				2C8DE5CC1F2AE3BC009B3AE2 /* DiscoNewsListController.m in Sources */,
 				2C4C1CA21F39497900002166 /* TJSInvestPieChart.m in Sources */,
 				2CAF43061F2828C200ABCA5E /* TJSProductListConfigurator.m in Sources */,
 				2C4C1C951F3948E800002166 /* PNGenericChart.m in Sources */,
+				2C83C71E1F39B9C9004034CA /* PersonalMessageController.m in Sources */,
 				2C85E39B1F2F1A3100ADD360 /* TJSMineHomeOrderCellContentConfig.m in Sources */,
 				2C8BB7A21F30859C00E2D75F /* HomeFooterCollectionLayout.m in Sources */,
 				2CAF42D61F281B8600ABCA5E /* TJSBaseProductListContentConfig.m in Sources */,
@@ -3785,7 +4094,6 @@
 				2C801BD21F233F46009F82F7 /* TJSBaseNavigationController.m in Sources */,
 				2CAF42D41F281B8600ABCA5E /* TJSProductListImageContentConfig.m in Sources */,
 				2C4C1C261F38568D00002166 /* TJSMyOrderListCellContentConfig.m in Sources */,
-				2C85E3501F2ECCA300ADD360 /* RewardViewController.m in Sources */,
 				2C859CF41F31EB2E00B86575 /* ZLPhotoPickerCustomToolBarView.m in Sources */,
 				2C8BB7A41F30859C00E2D75F /* HomeHeaderCollectionCell.m in Sources */,
 				2C8DE6181F2B43A8009B3AE2 /* DiscoveryRoadShowLayout.m in Sources */,
@@ -3804,8 +4112,8 @@
 				2C859CE91F31EB2E00B86575 /* ZLCamera.m in Sources */,
 				2C4412971F22004500C453EF /* TJSThemeService.m in Sources */,
 				2C859CE71F31EB2E00B86575 /* UIImage+ZLPhotoLib.m in Sources */,
-				2C85E34A1F2ECBF500ADD360 /* FeedbackHistoryController.m in Sources */,
 				2CAF42F81F28273300ABCA5E /* ProductListCell.m in Sources */,
+				2C83C6EF1F39B299004034CA /* ContractApplyController.m in Sources */,
 				2C4C1C221F38535A00002166 /* TJSMyBaseOrderListCellContentConfig.m in Sources */,
 				2CAF427E1F26EAE300ABCA5E /* TJSAppVersionApi.m in Sources */,
 			);

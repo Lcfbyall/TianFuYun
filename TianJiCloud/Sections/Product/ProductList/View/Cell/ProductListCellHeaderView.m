@@ -52,9 +52,9 @@
 
 - (void)p_setupSubViews{
   
-    self.contentView.backgroundColor = [UIColor whiteColor];
+    self.contentView.backgroundColor = ThemeService.main_color_00;
     self.textLabel.font = [UIFont systemFontOfSize:16.0f];
-    self.textLabel.textColor = [UIColor darkTextColor];
+    self.textLabel.textColor = ThemeService.text_color_01;
     
 }
 

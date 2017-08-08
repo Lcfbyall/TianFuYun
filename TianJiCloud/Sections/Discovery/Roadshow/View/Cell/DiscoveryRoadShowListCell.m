@@ -34,7 +34,7 @@
     _videoImage.image = IMAGE(@"about_risk_3");
     
     self.selectedBackgroundView = [UIView new];
-    self.selectedBackgroundView.backgroundColor = [UIColor groupTableViewBackgroundColor];
+    self.selectedBackgroundView.backgroundColor = ThemeService.weak_color_00;
 }
 
 @end
