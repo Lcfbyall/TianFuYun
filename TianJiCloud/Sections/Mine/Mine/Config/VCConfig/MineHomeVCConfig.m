@@ -74,7 +74,7 @@
     //设置
     UITableView *mineTable = (UITableView *)self.vc.tjs_listView;
     BOOL translucent = self.vc.tabBarController.tabBar.translucent;
-    mineTable.contentInset = UIEdgeInsetsMake(mineTable.contentInset.top, 0, translucent?49:0, 0);
+    mineTable.contentInset = UIEdgeInsetsMake(mineTable.contentInset.top, mineTable.contentInset.left, translucent?49:0, mineTable.contentInset.right);
 
 }
 

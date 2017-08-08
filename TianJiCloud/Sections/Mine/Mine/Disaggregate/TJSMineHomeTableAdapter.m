@@ -140,7 +140,7 @@ static NSString *const headerFooterIdentifier = @"MineHomeHeaderFooterIdentifier
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
   
-    if(section ==0) return 1;
+    if(section ==0) return 0;
     
     return 10;
 }
@@ -152,7 +152,7 @@ static NSString *const headerFooterIdentifier = @"MineHomeHeaderFooterIdentifier
 
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
   
-    return 1;
+    return 0;
 }
 
 
@@ -167,30 +167,34 @@ static NSString *const headerFooterIdentifier = @"MineHomeHeaderFooterIdentifier
     [scrollView.tjs_viewController.view endEditing:YES];
 
     if(scrollView.contentOffset.y < -_headerHeight){
-
         CGRect frame = _headerContainer.frame;
         //frame.origin.x =
         frame.origin.y = scrollView.contentOffset.y;
         //frame.size.width =
         frame.size.height = -scrollView.contentOffset.y;
-
         _headerContainer.frame = frame;
     }
 
-    /*
+
     if (scrollView == self.tableView)
     {
         CGFloat sectionHeaderHeight = 10;;
-        if (scrollView.contentOffset.y<=sectionHeaderHeight&&scrollView.contentOffset.y>=0) {
+        if(scrollView.contentOffset.y <= (sectionHeaderHeight-_headerHeight) &&
+           scrollView.contentOffset.y >= -_headerHeight) {
 
-            scrollView.contentInset = UIEdgeInsetsMake(-scrollView.contentOffset.y, 0, 0, 0);
+            scrollView.contentInset = UIEdgeInsetsMake(-scrollView.contentOffset.y, scrollView.contentInset.left, scrollView.contentInset.bottom,scrollView.contentInset.right);
 
-        } else if (scrollView.contentOffset.y>=sectionHeaderHeight) {
 
-            scrollView.contentInset = UIEdgeInsetsMake(-sectionHeaderHeight, 0, 0, 0);
+        } else if (scrollView.contentOffset.y > (sectionHeaderHeight-_headerHeight)) {
+
+            scrollView.contentInset = UIEdgeInsetsMake(-sectionHeaderHeight+_headerHeight, scrollView.contentInset.left, scrollView.contentInset.bottom, scrollView.contentInset.right);
+        }else{
+
+
         }
     }
-     */
+
+
 
 
 
