@@ -10,4 +10,16 @@
 
 @interface TJSPageControl : UIView
 
+@property (nonatomic) NSInteger numberOfPages;
+@property (nonatomic) NSInteger currentPage;
+//deafult is 5
+@property (nonatomic) CGFloat indicatorMargin;
+//deafult is 10  15
+@property (nonatomic) CGFloat indicatorDiameter;
+@property (nonatomic) CGFloat currentindicatorDiameter;
+
+@property (nonatomic, strong) UIImage *pageIndicatorImage;
+@property (nonatomic, strong) UIImage *currentPageIndicatorImage;
+
+
 @end
