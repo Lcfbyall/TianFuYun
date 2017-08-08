@@ -1,5 +1,5 @@
 //
-//  MyFavListConfigurator.h
+//  MyFavListInteractorImpl.h
 //  TianJiCloud
 //
 //  Created by 朱鹏 on 2017/8/8.
@@ -8,10 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@class MyFavViewController;
-
-@interface MyFavListConfigurator : NSObject
-
-- (void)setup:(MyFavViewController *)vc;
+@interface MyFavListInteractorImpl : NSObject
 
 @end

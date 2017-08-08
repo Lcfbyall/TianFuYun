@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		2C02DF8F1F39CA44000410E1 /* MyFavNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C02DF8E1F39CA44000410E1 /* MyFavNetworkTool.m */; };
 		2C02DF971F39CC41000410E1 /* MyFavListConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C02DF961F39CC41000410E1 /* MyFavListConfigurator.m */; };
+		2C02DF9A1F39D4E7000410E1 /* MyFavListInteractorImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C02DF991F39D4E7000410E1 /* MyFavListInteractorImpl.m */; };
+		2C02DF9D1F39D4FA000410E1 /* MyFavListDataSourceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C02DF9C1F39D4FA000410E1 /* MyFavListDataSourceImpl.m */; };
+		2C02DFA01F39D513000410E1 /* MyFavListLayoutImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C02DF9F1F39D513000410E1 /* MyFavListLayoutImpl.m */; };
+		2C02DFA31F39D527000410E1 /* MyFavListTableAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C02DFA21F39D527000410E1 /* MyFavListTableAdapter.m */; };
 		2C1BFEBD1F29779100665A71 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C1BFEBC1F29779100665A71 /* Home.storyboard */; };
 		2C1BFEBF1F2978C500665A71 /* Discovery.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C1BFEBE1F2978C500665A71 /* Discovery.storyboard */; };
 		2C300F7A1F2F327E00DD440E /* MineSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C300F791F2F327E00DD440E /* MineSettingViewController.m */; };
@@ -350,6 +354,14 @@
 		2C02DF941F39CAF6000410E1 /* MyFavListPrivateProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MyFavListPrivateProtocol.h; path = TianJiCloud/Sections/Mine/Reward/History/MyFavListPrivateProtocol.h; sourceTree = SOURCE_ROOT; };
 		2C02DF951F39CC41000410E1 /* MyFavListConfigurator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyFavListConfigurator.h; path = TianJiCloud/Sections/Mine/Reward/History/MyFavListConfigurator.h; sourceTree = SOURCE_ROOT; };
 		2C02DF961F39CC41000410E1 /* MyFavListConfigurator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyFavListConfigurator.m; path = TianJiCloud/Sections/Mine/Reward/History/MyFavListConfigurator.m; sourceTree = SOURCE_ROOT; };
+		2C02DF981F39D4E7000410E1 /* MyFavListInteractorImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyFavListInteractorImpl.h; path = TianJiCloud/Sections/Mine/Reward/History/MyFavListInteractorImpl.h; sourceTree = SOURCE_ROOT; };
+		2C02DF991F39D4E7000410E1 /* MyFavListInteractorImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyFavListInteractorImpl.m; path = TianJiCloud/Sections/Mine/Reward/History/MyFavListInteractorImpl.m; sourceTree = SOURCE_ROOT; };
+		2C02DF9B1F39D4FA000410E1 /* MyFavListDataSourceImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyFavListDataSourceImpl.h; path = TianJiCloud/Sections/Mine/Reward/History/MyFavListDataSourceImpl.h; sourceTree = SOURCE_ROOT; };
+		2C02DF9C1F39D4FA000410E1 /* MyFavListDataSourceImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyFavListDataSourceImpl.m; path = TianJiCloud/Sections/Mine/Reward/History/MyFavListDataSourceImpl.m; sourceTree = SOURCE_ROOT; };
+		2C02DF9E1F39D513000410E1 /* MyFavListLayoutImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyFavListLayoutImpl.h; path = TianJiCloud/Sections/Mine/Reward/History/MyFavListLayoutImpl.h; sourceTree = SOURCE_ROOT; };
+		2C02DF9F1F39D513000410E1 /* MyFavListLayoutImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyFavListLayoutImpl.m; path = TianJiCloud/Sections/Mine/Reward/History/MyFavListLayoutImpl.m; sourceTree = SOURCE_ROOT; };
+		2C02DFA11F39D527000410E1 /* MyFavListTableAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyFavListTableAdapter.h; path = TianJiCloud/Sections/Mine/Reward/History/MyFavListTableAdapter.h; sourceTree = SOURCE_ROOT; };
+		2C02DFA21F39D527000410E1 /* MyFavListTableAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyFavListTableAdapter.m; path = TianJiCloud/Sections/Mine/Reward/History/MyFavListTableAdapter.m; sourceTree = SOURCE_ROOT; };
 		2C1BFEBC1F29779100665A71 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		2C1BFEBE1F2978C500665A71 /* Discovery.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Discovery.storyboard; sourceTree = "<group>"; };
 		2C300F781F2F327E00DD440E /* MineSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineSettingViewController.h; sourceTree = "<group>"; };
@@ -3589,6 +3601,14 @@
 			children = (
 				2C02DF951F39CC41000410E1 /* MyFavListConfigurator.h */,
 				2C02DF961F39CC41000410E1 /* MyFavListConfigurator.m */,
+				2C02DF981F39D4E7000410E1 /* MyFavListInteractorImpl.h */,
+				2C02DF991F39D4E7000410E1 /* MyFavListInteractorImpl.m */,
+				2C02DF9B1F39D4FA000410E1 /* MyFavListDataSourceImpl.h */,
+				2C02DF9C1F39D4FA000410E1 /* MyFavListDataSourceImpl.m */,
+				2C02DF9E1F39D513000410E1 /* MyFavListLayoutImpl.h */,
+				2C02DF9F1F39D513000410E1 /* MyFavListLayoutImpl.m */,
+				2C02DFA11F39D527000410E1 /* MyFavListTableAdapter.h */,
+				2C02DFA21F39D527000410E1 /* MyFavListTableAdapter.m */,
 			);
 			path = Disaggregate;
 			sourceTree = "<group>";
@@ -3938,6 +3958,7 @@
 				2C4412A61F2201FF00C453EF /* TJSBaseRequest+TJSSingleRequestBlock.m in Sources */,
 				2C801BD61F233F46009F82F7 /* TJSRootTabBarController.m in Sources */,
 				2C4C1BF21F3844D300002166 /* TJSProductFilterInteractorImpl.m in Sources */,
+				2C02DF9D1F39D4FA000410E1 /* MyFavListDataSourceImpl.m in Sources */,
 				2C4412AD1F22031600C453EF /* TJSHudAlert.m in Sources */,
 				2C8DE5811F29D4F7009B3AE2 /* TJSHomeListTableAdapter.m in Sources */,
 				2C431DEC1F299A9600858C12 /* HomeViewController.m in Sources */,
@@ -3950,6 +3971,7 @@
 				2C859D011F31EB2E00B86575 /* ZLPhotoPickerImageView.m in Sources */,
 				2C89AD801F2C7E39005C29AC /* ProductSearchVCConfig.m in Sources */,
 				2C4412311F21AA5900C453EF /* AppDelegate.m in Sources */,
+				2C02DFA01F39D513000410E1 /* MyFavListLayoutImpl.m in Sources */,
 				2C44126A1F21E2DA00C453EF /* UIButton+CountDown.m in Sources */,
 				2C85E3531F2ECCC800ADD360 /* BackCardManagerController.m in Sources */,
 				2C85E32E1F2EC60700ADD360 /* MyOrderContainerController.m in Sources */,
@@ -4056,6 +4078,7 @@
 				2CCBE45D1F32CB61006C4018 /* ProductListCellHeaderView.m in Sources */,
 				2C85E39E1F2F1A5800ADD360 /* TJSMineHomeInvestCellContentConfig.m in Sources */,
 				2C89AD8A1F2C9FE5005C29AC /* UIView+TJSViewController.m in Sources */,
+				2C02DFA31F39D527000410E1 /* MyFavListTableAdapter.m in Sources */,
 				2C4412A91F2201FF00C453EF /* TJWUrlArgumentsFilter.m in Sources */,
 				2C859CFF1F31EB2E00B86575 /* ZLPhotoPickerFooterCollectionReusableView.m in Sources */,
 				2C8DE5B31F2AD8A0009B3AE2 /* DiscoveryNewsListCell.m in Sources */,
@@ -4080,6 +4103,7 @@
 				2CCBE4A51F344A98006C4018 /* MineHomeCellIvestItem.m in Sources */,
 				2C300F7F1F2F3C3C00DD440E /* ProfileViewController.m in Sources */,
 				2C83C6FC1F39B6FE004034CA /* MyContractListStoreTool.m in Sources */,
+				2C02DF9A1F39D4E7000410E1 /* MyFavListInteractorImpl.m in Sources */,
 				2C83C70A1F39B85B004034CA /* NewsListStoreTool.m in Sources */,
 				2C4C1C9D1F39493400002166 /* PNLineChart.m in Sources */,
 				2C4C1C1C1F3852F300002166 /* TJSMyOrderListCellFactory.m in Sources */,

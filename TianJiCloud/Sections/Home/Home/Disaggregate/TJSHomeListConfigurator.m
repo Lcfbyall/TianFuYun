@@ -8,6 +8,7 @@
 
 #import "TJSHomeListConfigurator.h"
 #import "HomeViewController.h"
+
 #import "TJSHomeListInteractorImpl.h"
 #import "TJSHomeListDataSourceImpl.h"
 #import "TJSHomeListLayoutImpl.h"
@@ -31,8 +32,6 @@
     UITableView *tableView = (UITableView *)vc.tjs_listView;
     
     //1.
-    
-
     TJSHomeListDataSourceImpl *dataSourceImpl =  [[TJSHomeListDataSourceImpl alloc]init];
     
     //layout 需要 tableView
@@ -50,6 +49,7 @@
     
     //2.
     _tableAdapter = [[TJSHomeListTableAdapter alloc]initWithTableView:tableView];
+    
     _tableAdapter.interactor   = _interactor;
     _tableAdapter.cellDelegate = vc;
     

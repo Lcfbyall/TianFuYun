@@ -25,12 +25,17 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.title = @"我的收藏";
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+    
+    
 }
+
 
 #pragma mark - settings
 
