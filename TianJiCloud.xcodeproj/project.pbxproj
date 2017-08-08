@@ -136,7 +136,7 @@
 		2C801BD31F233F46009F82F7 /* TJSBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C801BA91F233F46009F82F7 /* TJSBaseViewController.m */; };
 		2C801BD61F233F46009F82F7 /* TJSRootTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C801BB01F233F46009F82F7 /* TJSRootTabBarController.m */; };
 		2C801BD71F233F46009F82F7 /* Mine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C801BB21F233F46009F82F7 /* Mine.storyboard */; };
-		2C83C6E21F39AD85004034CA /* FeedbackCommitApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C83C6E11F39AD85004034CA /* FeedbackCommitApi.m */; };
+		2C83C6E21F39AD85004034CA /* FeedBackCommitApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C83C6E11F39AD85004034CA /* FeedBackCommitApi.m */; };
 		2C83C6E51F39AE2F004034CA /* FeedbackCommitNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C83C6E41F39AE2F004034CA /* FeedbackCommitNetworkTool.m */; };
 		2C83C6EF1F39B299004034CA /* ContractApplyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C83C6EE1F39B299004034CA /* ContractApplyController.m */; };
 		2C83C6F31F39B354004034CA /* MyContractViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C83C6F21F39B354004034CA /* MyContractViewController.m */; };
@@ -616,8 +616,8 @@
 		2C801BAF1F233F46009F82F7 /* TJSRootTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSRootTabBarController.h; sourceTree = "<group>"; };
 		2C801BB01F233F46009F82F7 /* TJSRootTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSRootTabBarController.m; sourceTree = "<group>"; };
 		2C801BB21F233F46009F82F7 /* Mine.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Mine.storyboard; sourceTree = "<group>"; };
-		2C83C6E01F39AD85004034CA /* FeedbackCommitApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedbackCommitApi.h; sourceTree = "<group>"; };
-		2C83C6E11F39AD85004034CA /* FeedbackCommitApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedbackCommitApi.m; sourceTree = "<group>"; };
+		2C83C6E01F39AD85004034CA /* FeedBackCommitApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedBackCommitApi.h; sourceTree = "<group>"; };
+		2C83C6E11F39AD85004034CA /* FeedBackCommitApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedBackCommitApi.m; sourceTree = "<group>"; };
 		2C83C6E31F39AE2F004034CA /* FeedbackCommitNetworkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedbackCommitNetworkTool.h; sourceTree = "<group>"; };
 		2C83C6E41F39AE2F004034CA /* FeedbackCommitNetworkTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedbackCommitNetworkTool.m; sourceTree = "<group>"; };
 		2C83C6ED1F39B299004034CA /* ContractApplyController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContractApplyController.h; sourceTree = "<group>"; };
@@ -2101,8 +2101,8 @@
 		2C83C6DC1F39AD2D004034CA /* FeedBack */ = {
 			isa = PBXGroup;
 			children = (
-				2C83C6E01F39AD85004034CA /* FeedbackCommitApi.h */,
-				2C83C6E11F39AD85004034CA /* FeedbackCommitApi.m */,
+				2C83C6E01F39AD85004034CA /* FeedBackCommitApi.h */,
+				2C83C6E11F39AD85004034CA /* FeedBackCommitApi.m */,
 			);
 			path = FeedBack;
 			sourceTree = "<group>";
@@ -4014,7 +4014,7 @@
 				2CCBE4831F3415F2006C4018 /* MineHomeHeaderCollectionLayout.m in Sources */,
 				2C859CEB1F31EB2E00B86575 /* ZLCameraView.m in Sources */,
 				2C859CE01F31EB2E00B86575 /* DACircularProgressView.m in Sources */,
-				2C83C6E21F39AD85004034CA /* FeedbackCommitApi.m in Sources */,
+				2C83C6E21F39AD85004034CA /* FeedBackCommitApi.m in Sources */,
 				2C859CE31F31EB2E00B86575 /* UIView+Frame.m in Sources */,
 				2C89AD741F2B5C81005C29AC /* DiscoNewsDetailController.m in Sources */,
 				2C83C7221F39BA14004034CA /* PlatformAnnounceCell.m in Sources */,
@@ -4412,6 +4412,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = G4MUNEEJKB;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/TianJiCloud/PrefixHeader.pch";
 				INFOPLIST_FILE = TianJiCloud/Info.plist;
@@ -4419,6 +4420,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = TianJiMoney.TianJiCloud;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -4428,6 +4430,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = G4MUNEEJKB;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/TianJiCloud/PrefixHeader.pch";
 				INFOPLIST_FILE = TianJiCloud/Info.plist;
@@ -4435,6 +4438,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = TianJiMoney.TianJiCloud;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};

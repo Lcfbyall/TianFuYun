@@ -16,7 +16,10 @@
 
 static NSString *const headerFooterIdentifier = @"MineHomeHeaderFooterIdentifier";
 
-@interface TJSMineHomeTableAdapter ()
+@interface TJSMineHomeTableAdapter (){
+
+    CGFloat _headerHeight;
+}
 
 @property (nonatomic,strong) TJSMineHomeCellFactory *cellFactory;
 
@@ -49,12 +52,19 @@ static NSString *const headerFooterIdentifier = @"MineHomeHeaderFooterIdentifier
 
 - (void)setupTableView{
 
-    _headerContainer = [MineHomeHeaderContainer headerContainer];
-
-    _tableView.tableHeaderView = _headerContainer;
-    
     //
     [_tableView registerClass:[UITableViewHeaderFooterView class] forHeaderFooterViewReuseIdentifier:headerFooterIdentifier];
+
+    //
+    _headerContainer = [MineHomeHeaderContainer headerContainer];
+    //_tableView.tableHeaderView = _headerContainer;
+    _headerContainer.tjs_origin = CGPointMake(0, -_headerContainer.tjs_height);
+    _headerHeight = _headerContainer.tjs_height;
+    _headerContainer.contentMode = UIViewContentModeScaleAspectFill;
+
+    _tableView.contentInset = UIEdgeInsetsMake(_headerHeight, 0, 0, 0);
+    [_tableView addSubview:_headerContainer];
+
 }
 
 
@@ -142,7 +152,7 @@ static NSString *const headerFooterIdentifier = @"MineHomeHeaderFooterIdentifier
 
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
   
-    return 0;
+    return 1;
 }
 
 
@@ -156,21 +166,48 @@ static NSString *const headerFooterIdentifier = @"MineHomeHeaderFooterIdentifier
  
     [scrollView.tjs_viewController.view endEditing:YES];
 
+    if(scrollView.contentOffset.y < -_headerHeight){
+
+        CGRect frame = _headerContainer.frame;
+        //frame.origin.x =
+        frame.origin.y = scrollView.contentOffset.y;
+        //frame.size.width =
+        frame.size.height = -scrollView.contentOffset.y;
+
+        _headerContainer.frame = frame;
+    }
+
     /*
-    UIColor * color = [UIColor colorWithRed:0/255.0 green:175/255.0 blue:240/255.0 alpha:1];
-     
-    CGFloat offsetY = scrollView.contentOffset.y;
-    
-    if (offsetY > 50) {
-        
-        CGFloat alpha = MIN(1, 1 - ((50 + 64 - offsetY) / 64));
-        
-        //[scrollView.tjs_viewController.navigationController.navigationBar lt_setBackgroundColor:[color colorWithAlphaComponent:alpha]];
-    } else {
-        
-        //[scrollView.tjs_viewController.navigationController.navigationBar lt_setBackgroundColor:[color colorWithAlphaComponent:0]];
+    if (scrollView == self.tableView)
+    {
+        CGFloat sectionHeaderHeight = 10;;
+        if (scrollView.contentOffset.y<=sectionHeaderHeight&&scrollView.contentOffset.y>=0) {
+
+            scrollView.contentInset = UIEdgeInsetsMake(-scrollView.contentOffset.y, 0, 0, 0);
+
+        } else if (scrollView.contentOffset.y>=sectionHeaderHeight) {
+
+            scrollView.contentInset = UIEdgeInsetsMake(-sectionHeaderHeight, 0, 0, 0);
+        }
     }
      */
+
+
+
+    UIColor * color = UIColorFromHEX(0x007cf4);
+    CGFloat offset = scrollView.contentOffset.y;
+    if (offset > -_headerHeight) {
+        
+        CGFloat alpha = MIN(1,fabs(offset+_headerHeight) / 64.0);
+
+        scrollView.tjs_viewController.navigationController.navigationBar.barTintColor = [UIColor redColor];
+
+
+    } else {
+        
+        scrollView.tjs_viewController.navigationController.navigationBar.barTintColor = [color colorWithAlphaComponent:1];
+    }
+
 }
 
 

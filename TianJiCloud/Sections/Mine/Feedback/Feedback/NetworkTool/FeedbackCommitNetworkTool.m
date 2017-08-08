@@ -8,7 +8,7 @@
 
 #import "FeedbackCommitNetworkTool.h"
 
-#import "FeedbackCommitApi.h"
+#import "FeedBackCommitApi.h"
 
 
 @implementation FeedbackCommitNetworkTool
@@ -16,7 +16,7 @@
 + (void)requestWithParameters:(id)parameters successCallback:(TJSSuccessCompletionBlock)success failCallback:(TJSFailCompletionBlock)fail{
 
     NSMutableDictionary *param = [NSMutableDictionary dictionaryWithDictionary:parameters];
-    FeedbackCommitApi *api = [[FeedbackCommitApi alloc]initWithParame:param];
+    FeedBackCommitApi *api = [[FeedBackCommitApi alloc]initWithParame:param];
     api.needLoading = YES;
     [api requestWithSuccessBlock:^(__kindof id  _Nullable data) {
         

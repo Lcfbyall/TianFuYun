@@ -1,5 +1,5 @@
 //
-//  FeedbackCommitApi.h
+//  FeedBackCommitApi.h
 //  TianJiCloud
 //
 //  Created by 朱鹏 on 2017/8/8.
@@ -8,6 +8,6 @@
 
 #import "TJSBaseRequest.h"
 
-@interface FeedbackCommitApi : TJSBaseRequest
+@interface FeedBackCommitApi : TJSBaseRequest
 
 @end

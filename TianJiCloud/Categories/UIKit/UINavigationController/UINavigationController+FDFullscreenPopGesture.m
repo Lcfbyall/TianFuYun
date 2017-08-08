@@ -105,6 +105,7 @@ typedef void (^_FDViewControllerWillAppearInjectBlock)(UIViewController *viewCon
     });
 }
 
+
 - (void)fd_viewWillAppear:(BOOL)animated
 {
     // Forward to primary implementation.
@@ -160,6 +161,7 @@ typedef void (^_FDViewControllerWillAppearInjectBlock)(UIViewController *viewCon
         }
     });
 }
+
 
 - (void)fd_pushViewController:(UIViewController *)viewController animated:(BOOL)animated
 {

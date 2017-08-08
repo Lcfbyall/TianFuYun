@@ -43,17 +43,16 @@
     
     _vc.params = @{
                    NavigationBarTranslucentKey:@(YES),
-                   NavigationBarBarTintColor:  [UIColor clearColor]
+                   NavigationBarBarTintColor:  [UIColor redColor]
                    
                    };
 }
 
+
+//viewWillAppear -> willShowViewController
 - (void)setfullScreen{
     
-    
-    [self.vc.navigationController.navigationBar setupStyleBasicTranslucentWithBarTintColor:[UIColor clearColor]];
-    
-  
+
     //需要全屏
     //1.self.edgesForExtendedLayout = UIRectEdgeAll;
     
@@ -73,9 +72,9 @@
     
     
     //设置
-    
+    UITableView *mineTable = (UITableView *)self.vc.tjs_listView;
     BOOL translucent = self.vc.tabBarController.tabBar.translucent;
-    ((UITableView *)self.vc.tjs_listView).contentInset = UIEdgeInsetsMake(0, 0, translucent?49:0, 0);
+    mineTable.contentInset = UIEdgeInsetsMake(mineTable.contentInset.top, 0, translucent?49:0, 0);
 
 }
 

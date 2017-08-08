@@ -33,12 +33,7 @@ NSString * const HideBackBarButtonItemKey = @"HideBackBarButtonItemKey";
     self.navigationController.delegate = self;
 }
 
-- (void)viewWillAppear:(BOOL)animated{
-    
-    [super viewWillAppear:animated];
-    
-    [self.navigationController.navigationBar setupStyleBasic];
-}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -114,7 +109,12 @@ NSString * const HideBackBarButtonItemKey = @"HideBackBarButtonItemKey";
 #pragma mark - <UINavigationControllerDelegate>
 
 - (void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated{
-    
+
+
+    [self.navigationController.navigationBar setupStyleBasic];
+
+
+    //0.
     BOOL isHidden = NO;
     
     if ([viewController isKindOfClass:[TJSBaseViewController class]]&&
@@ -122,11 +122,11 @@ NSString * const HideBackBarButtonItemKey = @"HideBackBarButtonItemKey";
         [viewController respondsToSelector:@selector(tjs_hideNavigationBar)]) {
         
         isHidden = [((TJSBaseViewController *)viewController) tjs_hideNavigationBar];
+        [self.navigationController setNavigationBarHidden:isHidden animated:YES];
+        
     }
-    
-    [self.navigationController setNavigationBarHidden:isHidden animated:YES];
-    
-    
+
+
     if(!isHidden){
     
         //1.translucent
@@ -137,11 +137,9 @@ NSString * const HideBackBarButtonItemKey = @"HideBackBarButtonItemKey";
             [viewController respondsToSelector:@selector(tjs_translucentNavigationBar)]) {
             
             translucent = [((TJSBaseViewController *)viewController) tjs_translucentNavigationBar];
+            self.navigationController.navigationBar.translucent = translucent;
         }
-        
-        self.navigationController.navigationBar.translucent = translucent;
-        
-        
+
         //2.barTintColor
         UIColor *barTintColor = nil;
         if ([viewController isKindOfClass:[TJSBaseViewController class]]&&
@@ -149,10 +147,11 @@ NSString * const HideBackBarButtonItemKey = @"HideBackBarButtonItemKey";
             [viewController respondsToSelector:@selector(tjs_navigationBarBarTintColor)]) {
         
             barTintColor = [((TJSBaseViewController *)viewController) tjs_navigationBarBarTintColor];
+            self.navigationController.navigationBar.barTintColor = barTintColor;
+            
         }
-        
-        self.navigationController.navigationBar.barTintColor = barTintColor;
-        
+
+
         //3.tintColor
         UIColor *tintColor = nil;
         if ([viewController isKindOfClass:[TJSBaseViewController class]]&&
@@ -160,10 +159,9 @@ NSString * const HideBackBarButtonItemKey = @"HideBackBarButtonItemKey";
             [viewController respondsToSelector:@selector(tjs_navigationBarTintColor)]) {
             
             tintColor = [((TJSBaseViewController *)viewController) tjs_navigationBarTintColor];
+            self.navigationController.navigationBar.tintColor = tintColor;
         }
-        
-        self.navigationController.navigationBar.tintColor = tintColor;
-        
+
     }
 }
 
