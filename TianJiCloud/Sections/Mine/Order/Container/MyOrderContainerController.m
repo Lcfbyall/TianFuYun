@@ -19,9 +19,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.title = @"我的订单";
-    
-    
-    [self p_setupChildViewControllers];
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -29,19 +27,11 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)viewWillAppear:(BOOL)animated{
-    [super viewWillAppear:animated];
- 
-    if(self.params[@"selectedIndex"])
-    {
-        self.selectIndex = [self.params[@"selectedIndex"] unsignedIntegerValue];
-    }
-}
 
+#pragma mark - <TJSBaseDisplayContainerProtocol>
 
-#pragma mark - setup ChildViewControllers
-- (void)p_setupChildViewControllers{
-     
+- (void)tjs_setupChildViewControllers{
+
      self.isfullScreen = NO;
      
      [self setUpContentViewFrame:^(UIView *contentView) {

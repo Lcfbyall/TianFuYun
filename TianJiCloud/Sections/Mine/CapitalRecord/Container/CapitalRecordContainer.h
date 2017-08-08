@@ -6,8 +6,8 @@
 //  Copyright © 2017年 TianJiMoney. All rights reserved.
 //
 
-#import "YZDisplayViewController.h"
+#import "TJSBaseDisplayContainer.h"
 
-@interface CapitalRecordContainer : YZDisplayViewController
+@interface CapitalRecordContainer : TJSBaseDisplayContainer
 
 @end

@@ -200,7 +200,6 @@
 		2C85E34D1F2ECC1200ADD360 /* AboutMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E34C1F2ECC1200ADD360 /* AboutMeViewController.m */; };
 		2C85E3531F2ECCC800ADD360 /* BackCardManagerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E3521F2ECCC800ADD360 /* BackCardManagerController.m */; };
 		2C85E3581F2ECDA200ADD360 /* CapitalRecordContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E3571F2ECDA200ADD360 /* CapitalRecordContainer.m */; };
-		2C85E35B1F2ECDF900ADD360 /* CapitalRecordListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E35A1F2ECDF900ADD360 /* CapitalRecordListController.m */; };
 		2C85E3611F2ECE7300ADD360 /* WithdrawDepositController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E3601F2ECE7300ADD360 /* WithdrawDepositController.m */; };
 		2C85E3641F2ECE9400ADD360 /* WithdrawDepositRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E3631F2ECE9400ADD360 /* WithdrawDepositRecord.m */; };
 		2C85E3701F2ED87A00ADD360 /* MineHomeVCConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E36F1F2ED87A00ADD360 /* MineHomeVCConfig.m */; };
@@ -324,6 +323,15 @@
 		2CCBE4A41F344A98006C4018 /* MineHomeCellItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCBE49E1F344A98006C4018 /* MineHomeCellItem.m */; };
 		2CCBE4A51F344A98006C4018 /* MineHomeCellIvestItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCBE4A01F344A98006C4018 /* MineHomeCellIvestItem.m */; };
 		2CCBE4A61F344A98006C4018 /* MineHomeCellOrderItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCBE4A21F344A98006C4018 /* MineHomeCellOrderItem.m */; };
+		A292B2611F39F7DD0086E03E /* CapitalRecordListController.m in Sources */ = {isa = PBXBuildFile; fileRef = A292B2601F39F7DD0086E03E /* CapitalRecordListController.m */; };
+		A292B2641F39F81D0086E03E /* CapitalRecordConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = A292B2631F39F81D0086E03E /* CapitalRecordConfigurator.m */; };
+		A292B2671F39F8390086E03E /* CapitalRecordListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A292B2661F39F8390086E03E /* CapitalRecordListCell.m */; };
+		A292B26A1F39F8470086E03E /* CapitalRecordInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = A292B2691F39F8470086E03E /* CapitalRecordInfo.m */; };
+		A292B26D1F39F8570086E03E /* CapitalRecordInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A292B26C1F39F8570086E03E /* CapitalRecordInfoModel.m */; };
+		A292B2701F39F88F0086E03E /* CapitalRecordNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = A292B26F1F39F88F0086E03E /* CapitalRecordNetworkTool.m */; };
+		A292B2731F39F8AB0086E03E /* CapitalRecordStoreTool.m in Sources */ = {isa = PBXBuildFile; fileRef = A292B2721F39F8AB0086E03E /* CapitalRecordStoreTool.m */; };
+		A292B2771F39F92D0086E03E /* CapitalRecordVCConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = A292B2761F39F92D0086E03E /* CapitalRecordVCConfig.m */; };
+		A292B27A1F39FBC10086E03E /* TJSBaseDisplayContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = A292B2791F39FBC10086E03E /* TJSBaseDisplayContainer.m */; };
 		A2FE0A891F38B47000E678E5 /* MyFavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2FE0A831F38B47000E678E5 /* MyFavViewController.m */; };
 		A2FE0A8C1F38B4B400E678E5 /* MyFavVCConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = A2FE0A8B1F38B4B400E678E5 /* MyFavVCConfig.m */; };
 		D8B489F6D9BA2D941ED245C3 /* libPods-TianJiCloud.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24C0B56EAE3CA4A62571C4DD /* libPods-TianJiCloud.a */; };
@@ -738,8 +746,6 @@
 		2C85E3521F2ECCC800ADD360 /* BackCardManagerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackCardManagerController.m; sourceTree = "<group>"; };
 		2C85E3561F2ECDA200ADD360 /* CapitalRecordContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CapitalRecordContainer.h; sourceTree = "<group>"; };
 		2C85E3571F2ECDA200ADD360 /* CapitalRecordContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CapitalRecordContainer.m; sourceTree = "<group>"; };
-		2C85E3591F2ECDF900ADD360 /* CapitalRecordListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CapitalRecordListController.h; sourceTree = "<group>"; };
-		2C85E35A1F2ECDF900ADD360 /* CapitalRecordListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CapitalRecordListController.m; sourceTree = "<group>"; };
 		2C85E35F1F2ECE7300ADD360 /* WithdrawDepositController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WithdrawDepositController.h; sourceTree = "<group>"; };
 		2C85E3601F2ECE7300ADD360 /* WithdrawDepositController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WithdrawDepositController.m; sourceTree = "<group>"; };
 		2C85E3621F2ECE9400ADD360 /* WithdrawDepositRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WithdrawDepositRecord.h; sourceTree = "<group>"; };
@@ -995,6 +1001,25 @@
 		2CCBE4A11F344A98006C4018 /* MineHomeCellOrderItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineHomeCellOrderItem.h; sourceTree = "<group>"; };
 		2CCBE4A21F344A98006C4018 /* MineHomeCellOrderItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineHomeCellOrderItem.m; sourceTree = "<group>"; };
 		78C8A77EBFE6464B5B247606 /* Pods-TianJiCloud.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TianJiCloud.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TianJiCloud/Pods-TianJiCloud.debug.xcconfig"; sourceTree = "<group>"; };
+		A292B25F1F39F7DD0086E03E /* CapitalRecordListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CapitalRecordListController.h; sourceTree = "<group>"; };
+		A292B2601F39F7DD0086E03E /* CapitalRecordListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CapitalRecordListController.m; sourceTree = "<group>"; };
+		A292B2621F39F81D0086E03E /* CapitalRecordConfigurator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CapitalRecordConfigurator.h; sourceTree = "<group>"; };
+		A292B2631F39F81D0086E03E /* CapitalRecordConfigurator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CapitalRecordConfigurator.m; sourceTree = "<group>"; };
+		A292B2651F39F8390086E03E /* CapitalRecordListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CapitalRecordListCell.h; sourceTree = "<group>"; };
+		A292B2661F39F8390086E03E /* CapitalRecordListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CapitalRecordListCell.m; sourceTree = "<group>"; };
+		A292B2681F39F8470086E03E /* CapitalRecordInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CapitalRecordInfo.h; sourceTree = "<group>"; };
+		A292B2691F39F8470086E03E /* CapitalRecordInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CapitalRecordInfo.m; sourceTree = "<group>"; };
+		A292B26B1F39F8570086E03E /* CapitalRecordInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CapitalRecordInfoModel.h; sourceTree = "<group>"; };
+		A292B26C1F39F8570086E03E /* CapitalRecordInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CapitalRecordInfoModel.m; sourceTree = "<group>"; };
+		A292B26E1F39F88F0086E03E /* CapitalRecordNetworkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CapitalRecordNetworkTool.h; sourceTree = "<group>"; };
+		A292B26F1F39F88F0086E03E /* CapitalRecordNetworkTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CapitalRecordNetworkTool.m; sourceTree = "<group>"; };
+		A292B2711F39F8AB0086E03E /* CapitalRecordStoreTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CapitalRecordStoreTool.h; sourceTree = "<group>"; };
+		A292B2721F39F8AB0086E03E /* CapitalRecordStoreTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CapitalRecordStoreTool.m; sourceTree = "<group>"; };
+		A292B2741F39F9020086E03E /* CapitalRecordConfigurateProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CapitalRecordConfigurateProtocol.h; sourceTree = "<group>"; };
+		A292B2751F39F92D0086E03E /* CapitalRecordVCConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CapitalRecordVCConfig.h; sourceTree = "<group>"; };
+		A292B2761F39F92D0086E03E /* CapitalRecordVCConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CapitalRecordVCConfig.m; sourceTree = "<group>"; };
+		A292B2781F39FBC10086E03E /* TJSBaseDisplayContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSBaseDisplayContainer.h; sourceTree = "<group>"; };
+		A292B2791F39FBC10086E03E /* TJSBaseDisplayContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSBaseDisplayContainer.m; sourceTree = "<group>"; };
 		A2FE0A821F38B47000E678E5 /* MyFavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyFavViewController.h; sourceTree = "<group>"; };
 		A2FE0A831F38B47000E678E5 /* MyFavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyFavViewController.m; sourceTree = "<group>"; };
 		A2FE0A8A1F38B4B400E678E5 /* MyFavVCConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyFavVCConfig.h; sourceTree = "<group>"; };
@@ -1998,6 +2023,8 @@
 				2C8DE5901F29F4AF009B3AE2 /* TJSBaseWebViewController.m */,
 				2C8DE5A71F2ACA75009B3AE2 /* TJSBaseControllerContainer.h */,
 				2C8DE5A81F2ACA75009B3AE2 /* TJSBaseControllerContainer.m */,
+				A292B2781F39FBC10086E03E /* TJSBaseDisplayContainer.h */,
+				A292B2791F39FBC10086E03E /* TJSBaseDisplayContainer.m */,
 				2C8DE5921F29F5FF009B3AE2 /* TJSWeakScriptMessageHandler.h */,
 				2C8DE5931F29F5FF009B3AE2 /* TJSWeakScriptMessageHandler.m */,
 				2CAF42711F26E66500ABCA5E /* TJSBaseNetworkTool.h */,
@@ -2638,8 +2665,14 @@
 		2C85E3541F2ECD4800ADD360 /* recordList */ = {
 			isa = PBXGroup;
 			children = (
-				2C85E3591F2ECDF900ADD360 /* CapitalRecordListController.h */,
-				2C85E35A1F2ECDF900ADD360 /* CapitalRecordListController.m */,
+				A292B25E1F39F7DD0086E03E /* Controller */,
+				A292B2571F39F7DD0086E03E /* Protocol */,
+				A292B2581F39F7DD0086E03E /* Config */,
+				A292B2591F39F7DD0086E03E /* Store */,
+				A292B25A1F39F7DD0086E03E /* Disaggregate */,
+				A292B25B1F39F7DD0086E03E /* NetworkTool */,
+				A292B25C1F39F7DD0086E03E /* View */,
+				A292B25D1F39F7DD0086E03E /* Model */,
 			);
 			path = recordList;
 			sourceTree = "<group>";
@@ -3578,6 +3611,79 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A292B2571F39F7DD0086E03E /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				A292B2741F39F9020086E03E /* CapitalRecordConfigurateProtocol.h */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		A292B2581F39F7DD0086E03E /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				A292B2751F39F92D0086E03E /* CapitalRecordVCConfig.h */,
+				A292B2761F39F92D0086E03E /* CapitalRecordVCConfig.m */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		A292B2591F39F7DD0086E03E /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				A292B2711F39F8AB0086E03E /* CapitalRecordStoreTool.h */,
+				A292B2721F39F8AB0086E03E /* CapitalRecordStoreTool.m */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		A292B25A1F39F7DD0086E03E /* Disaggregate */ = {
+			isa = PBXGroup;
+			children = (
+				A292B2621F39F81D0086E03E /* CapitalRecordConfigurator.h */,
+				A292B2631F39F81D0086E03E /* CapitalRecordConfigurator.m */,
+			);
+			path = Disaggregate;
+			sourceTree = "<group>";
+		};
+		A292B25B1F39F7DD0086E03E /* NetworkTool */ = {
+			isa = PBXGroup;
+			children = (
+				A292B26E1F39F88F0086E03E /* CapitalRecordNetworkTool.h */,
+				A292B26F1F39F88F0086E03E /* CapitalRecordNetworkTool.m */,
+			);
+			path = NetworkTool;
+			sourceTree = "<group>";
+		};
+		A292B25C1F39F7DD0086E03E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A292B2651F39F8390086E03E /* CapitalRecordListCell.h */,
+				A292B2661F39F8390086E03E /* CapitalRecordListCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A292B25D1F39F7DD0086E03E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A292B2681F39F8470086E03E /* CapitalRecordInfo.h */,
+				A292B2691F39F8470086E03E /* CapitalRecordInfo.m */,
+				A292B26B1F39F8570086E03E /* CapitalRecordInfoModel.h */,
+				A292B26C1F39F8570086E03E /* CapitalRecordInfoModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A292B25E1F39F7DD0086E03E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A292B25F1F39F7DD0086E03E /* CapitalRecordListController.h */,
+				A292B2601F39F7DD0086E03E /* CapitalRecordListController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		A2FE0A801F38B47000E678E5 /* Config */ = {
 			isa = PBXGroup;
 			children = (
@@ -3953,12 +4059,13 @@
 				2C4412031F219A5300C453EF /* UIDevice+CurrentArg.m in Sources */,
 				2C8DE6171F2B43A8009B3AE2 /* DiscoRoadShowListController.m in Sources */,
 				2C85E3861F2F044600ADD360 /* TJSMineHomeLayoutImpl.m in Sources */,
-				2C85E35B1F2ECDF900ADD360 /* CapitalRecordListController.m in Sources */,
+				A292B2611F39F7DD0086E03E /* CapitalRecordListController.m in Sources */,
 				2C85E2B21F2EBDFE00ADD360 /* MineViewController.m in Sources */,
 				2C4412A61F2201FF00C453EF /* TJSBaseRequest+TJSSingleRequestBlock.m in Sources */,
 				2C801BD61F233F46009F82F7 /* TJSRootTabBarController.m in Sources */,
 				2C4C1BF21F3844D300002166 /* TJSProductFilterInteractorImpl.m in Sources */,
 				2C02DF9D1F39D4FA000410E1 /* MyFavListDataSourceImpl.m in Sources */,
+				A292B2701F39F88F0086E03E /* CapitalRecordNetworkTool.m in Sources */,
 				2C4412AD1F22031600C453EF /* TJSHudAlert.m in Sources */,
 				2C8DE5811F29D4F7009B3AE2 /* TJSHomeListTableAdapter.m in Sources */,
 				2C431DEC1F299A9600858C12 /* HomeViewController.m in Sources */,
@@ -4043,6 +4150,7 @@
 				2CAF43081F2828C200ABCA5E /* TJSProductListInteractorImpl.m in Sources */,
 				2C4412761F21E7F000C453EF /* UIButton+BackgroundColor.m in Sources */,
 				2C83C6F61F39B529004034CA /* AddAdressViewController.m in Sources */,
+				A292B2641F39F81D0086E03E /* CapitalRecordConfigurator.m in Sources */,
 				2CCBE4A31F344A98006C4018 /* MineHomeCellDefaultItem.m in Sources */,
 				2C4C1BD81F381AF300002166 /* MineHomeCellBalanceItem.m in Sources */,
 				2C8DE5FB1F2AEA59009B3AE2 /* TJSDiscoNewsDataSorceImpl.m in Sources */,
@@ -4051,6 +4159,7 @@
 				2CCBE4A61F344A98006C4018 /* MineHomeCellOrderItem.m in Sources */,
 				2C4412B41F2207CD00C453EF /* TJSLoginStateUtil.m in Sources */,
 				2C83C6FF1F39B755004034CA /* MyFavListStoreTool.m in Sources */,
+				A292B27A1F39FBC10086E03E /* TJSBaseDisplayContainer.m in Sources */,
 				2C83C71C1F39B9C9004034CA /* AllActivityViewController.m in Sources */,
 				2C4412381F21B3DF00C453EF /* UIButton+TouchAreaInsets.m in Sources */,
 				2C859CF91F31EB2E00B86575 /* ZLNavigationController.m in Sources */,
@@ -4064,6 +4173,7 @@
 				2C859CF21F31EB2E00B86575 /* ZLPhotoPickerBrowserPhotoScrollView.m in Sources */,
 				2C4C1CAF1F394E9500002166 /* FeedBackContainerConfig.m in Sources */,
 				2CAF43071F2828C200ABCA5E /* TJSProductListDataSourceImpl.m in Sources */,
+				A292B26A1F39F8470086E03E /* CapitalRecordInfo.m in Sources */,
 				2C859D001F31EB2E00B86575 /* ZLPhotoPickerGroupTableViewCell.m in Sources */,
 				2C4C1C881F3948E100002166 /* PNPieChart.m in Sources */,
 				2CAF42F51F28273300ABCA5E /* ProductListCellContentView.m in Sources */,
@@ -4077,6 +4187,7 @@
 				2C8DE5841F29D509009B3AE2 /* TJSHomeListInteractorImpl.m in Sources */,
 				2CCBE45D1F32CB61006C4018 /* ProductListCellHeaderView.m in Sources */,
 				2C85E39E1F2F1A5800ADD360 /* TJSMineHomeInvestCellContentConfig.m in Sources */,
+				A292B2771F39F92D0086E03E /* CapitalRecordVCConfig.m in Sources */,
 				2C89AD8A1F2C9FE5005C29AC /* UIView+TJSViewController.m in Sources */,
 				2C02DFA31F39D527000410E1 /* MyFavListTableAdapter.m in Sources */,
 				2C4412A91F2201FF00C453EF /* TJWUrlArgumentsFilter.m in Sources */,
@@ -4094,6 +4205,7 @@
 				2CAF43091F2828C200ABCA5E /* TJSProductListLayoutImpl.m in Sources */,
 				2C300F881F2F3C9900DD440E /* FindWithDrawPasswordController.m in Sources */,
 				2C83C6F91F39B6C2004034CA /* TJSBaseStoreTool.m in Sources */,
+				A292B2731F39F8AB0086E03E /* CapitalRecordStoreTool.m in Sources */,
 				2CAF430A1F2828C200ABCA5E /* TJSProductListTableAdapter.m in Sources */,
 				2C8DE5EE1F2AE7D0009B3AE2 /* TJSDiscoNewsConfigurator.m in Sources */,
 				2C859CE11F31EB2E00B86575 /* DALabeledCircularProgressView.m in Sources */,
@@ -4115,6 +4227,7 @@
 				2CAF43061F2828C200ABCA5E /* TJSProductListConfigurator.m in Sources */,
 				2C4C1C951F3948E800002166 /* PNGenericChart.m in Sources */,
 				2C83C71E1F39B9C9004034CA /* PersonalMessageController.m in Sources */,
+				A292B26D1F39F8570086E03E /* CapitalRecordInfoModel.m in Sources */,
 				2C85E39B1F2F1A3100ADD360 /* TJSMineHomeOrderCellContentConfig.m in Sources */,
 				2C8BB7A21F30859C00E2D75F /* HomeFooterCollectionLayout.m in Sources */,
 				2CAF42D61F281B8600ABCA5E /* TJSBaseProductListContentConfig.m in Sources */,
@@ -4122,6 +4235,7 @@
 				2C4C1C101F384A3B00002166 /* TJSMyOrderListDataSourceImpl.m in Sources */,
 				2C44127C1F21E97700C453EF /* UITextField+PlaceHolder.m in Sources */,
 				2CAF42F61F28273300ABCA5E /* ProductListCellImageContentView.m in Sources */,
+				A292B2671F39F8390086E03E /* CapitalRecordListCell.m in Sources */,
 				2C4C1C9E1F39493400002166 /* PNLineChartData.m in Sources */,
 				2C801BD21F233F46009F82F7 /* TJSBaseNavigationController.m in Sources */,
 				2CAF42D41F281B8600ABCA5E /* TJSProductListImageContentConfig.m in Sources */,

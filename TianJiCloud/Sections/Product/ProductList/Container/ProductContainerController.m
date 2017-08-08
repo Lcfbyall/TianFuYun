@@ -29,18 +29,6 @@
     // Do any additional setup after loading the view.
     
     [self setProductConfig];
-    
-    [self p_setupChildViewControllers];
-}
-
-
-- (void)viewDidAppear:(BOOL)animated{
-    [super viewDidAppear:animated];
-    
-    if(self.params[@"selectedIndex"])
-    {
-        self.selectIndex = [self.params[@"selectedIndex"] unsignedIntegerValue];
-    }
 }
 
 
@@ -66,9 +54,10 @@
 }
 
 
-#pragma mark - setup ChildViewControllers
-- (void)p_setupChildViewControllers{
- 
+#pragma mark - <TJSBaseDisplayContainerProtocol>
+
+- (void)tjs_setupChildViewControllers{
+
     self.isfullScreen = NO;
     
     [self setUpContentViewFrame:^(UIView *contentView) {

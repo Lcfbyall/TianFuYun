@@ -6,10 +6,10 @@
 //  Copyright © 2017年 TianJiMoney. All rights reserved.
 //
 
-#import "YZDisplayViewController.h"
+#import "TJSBaseDisplayContainer.h"
 
 #import "TJSProductListVCProtocol.h"
 
-@interface ProductContainerController : YZDisplayViewController<ProductListVCConfig>
+@interface ProductContainerController : TJSBaseDisplayContainer<ProductListVCConfig>
 
 @end

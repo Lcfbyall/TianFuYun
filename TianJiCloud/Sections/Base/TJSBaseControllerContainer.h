@@ -16,9 +16,9 @@
 
 - (void)tjs_setupChildViewControllers;
 
-
-
 @end
+
+
 
 @interface TJSBaseControllerContainer : TJSBaseViewController<TJSBaseControllerContainerProtocol,UIScrollViewDelegate>
 

@@ -6,8 +6,8 @@
 //  Copyright © 2017年 TianJiMoney. All rights reserved.
 //
 
-#import "YZDisplayViewController.h"
+#import "TJSBaseDisplayContainer.h"
 
-@interface MyOrderContainerController : YZDisplayViewController
+@interface MyOrderContainerController : TJSBaseDisplayContainer
 
 @end

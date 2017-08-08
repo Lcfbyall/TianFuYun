@@ -20,8 +20,6 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.title = @"资金记录";
-    
-    [self p_setupChildViewControllers];
 
 }
 
@@ -31,18 +29,10 @@
 }
 
 
-- (void)viewWillAppear:(BOOL)animated{
-    [super viewWillAppear:animated];
-    
-    if(self.params[@"selectedIndex"])
-    {
-        self.selectIndex = [self.params[@"selectedIndex"] unsignedIntegerValue];
-    }
-}
 
+#pragma mark - <TJSBaseDisplayContainerProtocol>
 
-#pragma mark - setup ChildViewControllers
-- (void)p_setupChildViewControllers{
+- (void)tjs_setupChildViewControllers{
     
     self.isfullScreen = NO;
     
