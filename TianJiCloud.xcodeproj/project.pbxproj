@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C027D041F3B3075001D7EB6 /* FeedBackCommitApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C027D031F3B3075001D7EB6 /* FeedBackCommitApi.m */; };
 		2C02DF8F1F39CA44000410E1 /* MyFavNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C02DF8E1F39CA44000410E1 /* MyFavNetworkTool.m */; };
 		2C02DF971F39CC41000410E1 /* MyFavListConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C02DF961F39CC41000410E1 /* MyFavListConfigurator.m */; };
 		2C02DF9A1F39D4E7000410E1 /* MyFavListInteractorImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C02DF991F39D4E7000410E1 /* MyFavListInteractorImpl.m */; };
@@ -128,7 +129,6 @@
 		2C801BD31F233F46009F82F7 /* TJSBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C801BA91F233F46009F82F7 /* TJSBaseViewController.m */; };
 		2C801BD61F233F46009F82F7 /* TJSRootTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C801BB01F233F46009F82F7 /* TJSRootTabBarController.m */; };
 		2C801BD71F233F46009F82F7 /* Mine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C801BB21F233F46009F82F7 /* Mine.storyboard */; };
-		2C83C6E21F39AD85004034CA /* FeedBackCommitApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C83C6E11F39AD85004034CA /* FeedBackCommitApi.m */; };
 		2C83C6E51F39AE2F004034CA /* FeedbackCommitNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C83C6E41F39AE2F004034CA /* FeedbackCommitNetworkTool.m */; };
 		2C83C6EF1F39B299004034CA /* ContractApplyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C83C6EE1F39B299004034CA /* ContractApplyController.m */; };
 		2C83C6F31F39B354004034CA /* MyContractViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C83C6F21F39B354004034CA /* MyContractViewController.m */; };
@@ -365,6 +365,9 @@
 
 /* Begin PBXFileReference section */
 		24C0B56EAE3CA4A62571C4DD /* libPods-TianJiCloud.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TianJiCloud.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C027D021F3B3075001D7EB6 /* FeedBackCommitApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedBackCommitApi.h; sourceTree = "<group>"; };
+		2C027D031F3B3075001D7EB6 /* FeedBackCommitApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedBackCommitApi.m; sourceTree = "<group>"; };
+		2C027D051F3B30A5001D7EB6 /* ProductFilterResultProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductFilterResultProtocol.h; sourceTree = "<group>"; };
 		2C02DF8D1F39CA44000410E1 /* MyFavNetworkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyFavNetworkTool.h; path = TianJiCloud/Sections/Mine/Reward/History/MyFavNetworkTool.h; sourceTree = SOURCE_ROOT; };
 		2C02DF8E1F39CA44000410E1 /* MyFavNetworkTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyFavNetworkTool.m; path = TianJiCloud/Sections/Mine/Reward/History/MyFavNetworkTool.m; sourceTree = SOURCE_ROOT; };
 		2C02DF931F39CADB000410E1 /* MyFavListConfigurateProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MyFavListConfigurateProtocol.h; path = TianJiCloud/Sections/Mine/Reward/History/MyFavListConfigurateProtocol.h; sourceTree = SOURCE_ROOT; };
@@ -606,8 +609,6 @@
 		2C801BAF1F233F46009F82F7 /* TJSRootTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSRootTabBarController.h; sourceTree = "<group>"; };
 		2C801BB01F233F46009F82F7 /* TJSRootTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSRootTabBarController.m; sourceTree = "<group>"; };
 		2C801BB21F233F46009F82F7 /* Mine.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Mine.storyboard; sourceTree = "<group>"; };
-		2C83C6E01F39AD85004034CA /* FeedBackCommitApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedBackCommitApi.h; sourceTree = "<group>"; };
-		2C83C6E11F39AD85004034CA /* FeedBackCommitApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedBackCommitApi.m; sourceTree = "<group>"; };
 		2C83C6E31F39AE2F004034CA /* FeedbackCommitNetworkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedbackCommitNetworkTool.h; sourceTree = "<group>"; };
 		2C83C6E41F39AE2F004034CA /* FeedbackCommitNetworkTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedbackCommitNetworkTool.m; sourceTree = "<group>"; };
 		2C83C6ED1F39B299004034CA /* ContractApplyController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContractApplyController.h; sourceTree = "<group>"; };
@@ -1017,7 +1018,6 @@
 		2CCC85BE1F3AEF2C0009FC1C /* FilterResultVCConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterResultVCConfig.m; sourceTree = "<group>"; };
 		2CCC85C01F3AEF4D0009FC1C /* ProductFilterResultCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductFilterResultCell.h; sourceTree = "<group>"; };
 		2CCC85C11F3AEF4D0009FC1C /* ProductFilterResultCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductFilterResultCell.m; sourceTree = "<group>"; };
-		2CCC85C51F3AF32A0009FC1C /* ProductFilterResultProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ProductFilterResultProtocol.h; path = TianJiCloud/Sections/ProductFilter/ProductFilterResultProtocol.h; sourceTree = SOURCE_ROOT; };
 		2CCC85C61F3AF5A20009FC1C /* ProductFilterItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductFilterItem.h; sourceTree = "<group>"; };
 		2CCC85C71F3AF5A20009FC1C /* ProductFilterItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductFilterItem.m; sourceTree = "<group>"; };
 		2CCC85C91F3AF5B50009FC1C /* ProductFilterItemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductFilterItemModel.h; sourceTree = "<group>"; };
@@ -2057,8 +2057,8 @@
 		2C83C6DC1F39AD2D004034CA /* FeedBack */ = {
 			isa = PBXGroup;
 			children = (
-				2C83C6E01F39AD85004034CA /* FeedBackCommitApi.h */,
-				2C83C6E11F39AD85004034CA /* FeedBackCommitApi.m */,
+				2C027D021F3B3075001D7EB6 /* FeedBackCommitApi.h */,
+				2C027D031F3B3075001D7EB6 /* FeedBackCommitApi.m */,
 			);
 			path = FeedBack;
 			sourceTree = "<group>";
@@ -3711,7 +3711,7 @@
 		2CCC85C41F3AEFEB0009FC1C /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
-				2CCC85C51F3AF32A0009FC1C /* ProductFilterResultProtocol.h */,
+				2C027D051F3B30A5001D7EB6 /* ProductFilterResultProtocol.h */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -4144,7 +4144,6 @@
 				2CCBE4831F3415F2006C4018 /* MineHomeHeaderCollectionLayout.m in Sources */,
 				2C859CEB1F31EB2E00B86575 /* ZLCameraView.m in Sources */,
 				2C859CE01F31EB2E00B86575 /* DACircularProgressView.m in Sources */,
-				2C83C6E21F39AD85004034CA /* FeedBackCommitApi.m in Sources */,
 				2C859CE31F31EB2E00B86575 /* UIView+Frame.m in Sources */,
 				2C89AD741F2B5C81005C29AC /* DiscoNewsDetailController.m in Sources */,
 				2C83C7221F39BA14004034CA /* PlatformAnnounceCell.m in Sources */,
@@ -4193,6 +4192,7 @@
 				2C85E3861F2F044600ADD360 /* TJSMineHomeLayoutImpl.m in Sources */,
 				A292B2611F39F7DD0086E03E /* CapitalRecordListController.m in Sources */,
 				2C85E2B21F2EBDFE00ADD360 /* MineViewController.m in Sources */,
+				2C027D041F3B3075001D7EB6 /* FeedBackCommitApi.m in Sources */,
 				2CCC85D01F3B0B650009FC1C /* ProductFilterCollectionCell.m in Sources */,
 				2C4412A61F2201FF00C453EF /* TJSBaseRequest+TJSSingleRequestBlock.m in Sources */,
 				2C801BD61F233F46009F82F7 /* TJSRootTabBarController.m in Sources */,
