@@ -10,8 +10,11 @@
 #define ProductFilterProtocol_h
 
 
-@protocol ProductFilterVCConfig <NSObject>
+@protocol ProductFilterConfig <NSObject>
 
+- (void)resetBtnConfig:(UIButton *)btn;
+
+- (void)sureBtnConfig:(UIButton *)btn;
 
 
 @end

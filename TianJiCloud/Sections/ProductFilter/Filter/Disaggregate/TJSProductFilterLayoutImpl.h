@@ -8,6 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-@interface TJSProductFilterLayoutImpl : NSObject
+#import "ProductFilterPrivateProtocol.h"
+
+
+@interface TJSProductFilterLayoutImpl : NSObject<ProductFilterLayout>
+
+- (instancetype)initWithCollectionView:(UICollectionView *)collectionView;
 
 @end

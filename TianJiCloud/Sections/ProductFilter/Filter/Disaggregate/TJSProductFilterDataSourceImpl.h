@@ -8,6 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-@interface TJSProductFilterDataSourceImpl : NSObject
+#import "ProductFilterPrivateProtocol.h"
+
+
+@interface TJSProductFilterDataSourceImpl : NSObject<ProductFilterDataSource>
+
+
 
 @end

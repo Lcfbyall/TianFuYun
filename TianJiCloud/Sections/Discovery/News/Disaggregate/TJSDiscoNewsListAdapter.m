@@ -71,14 +71,14 @@ static NSString *identifier = @"DiscoveryNewsListCell";
 
 - (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     
-    //DiscoveryNewsInfoModel *model = [[self.interactor items] objectAtIndex:indexPath.item];
+    DiscoveryNewsInfoModel *model = [[self.interactor items] objectAtIndex:indexPath.item];
     
     DiscoveryNewsListCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:identifier forIndexPath:indexPath];
     
     //cell 的 delegate 给 vc ,self.cellDelegate就是vc
     [(DiscoveryNewsListCell *)cell setDelegate:self.cellDelegate];
 
-    [cell tjs_bindDataToCellWithValue:nil];
+    [cell tjs_bindDataToCellWithValue:model];
     
     return cell;
 }

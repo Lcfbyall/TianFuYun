@@ -49,8 +49,6 @@
 
 - (void)setInteractor:(id<TJSDiscoveryNewsListInteractor>) interactor;
 
-- (void)setTableDelegate:(id<UITableViewDelegate, UITableViewDataSource>) tableDelegate;
-
 @end
 
 

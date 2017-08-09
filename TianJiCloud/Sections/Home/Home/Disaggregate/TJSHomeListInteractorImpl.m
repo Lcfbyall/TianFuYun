@@ -14,18 +14,6 @@
 @end
 @implementation TJSHomeListInteractorImpl
 
-- (instancetype)init{
-    
-    self = [super init];
-    if(self){
-        
-        
-        
-    }
-    
-    return self;
-}
-
 
 #pragma mark - <TJSHomeListInteractor>
 

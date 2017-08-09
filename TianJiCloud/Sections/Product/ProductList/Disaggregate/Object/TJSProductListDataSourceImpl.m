@@ -9,7 +9,6 @@
 #import "TJSProductListDataSourceImpl.h"
 #import "TJSProductInfoModel.h"
 
-
 #import "ProductListNetworkTool.h"
 #import "ProductDeleteNetworkTool.h"
 
@@ -197,6 +196,8 @@
     return result;
 
 }
+
+
 
 
 #pragma mark - private methods

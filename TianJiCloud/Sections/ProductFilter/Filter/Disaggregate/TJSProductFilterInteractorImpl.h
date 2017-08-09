@@ -8,6 +8,17 @@
 
 #import <Foundation/Foundation.h>
 
-@interface TJSProductFilterInteractorImpl : NSObject
+#import "TJSProductFilterConfigurateProtocol.h"
+#import "ProductFilterPrivateProtocol.h"
+
+
+@interface TJSProductFilterInteractorImpl : NSObject<TJSProductFilterInteractor,ProductFilterLayoutDelegate>
+
+@property(nonatomic,weak) id<TJSProductFilterInteractorDelegate> delegate;
+
+@property(nonatomic,strong) id<ProductFilterDataSource> dataSource;
+
+@property(nonatomic,strong) id<ProductFilterLayout> layout;
+
 
 @end

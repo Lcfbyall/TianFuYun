@@ -34,13 +34,9 @@
                             </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A1N-P4-8Mq">
                                 <rect key="frame" x="0.0" y="612" width="187.5" height="55"/>
-                                <color key="backgroundColor" red="0.39166038800000003" green="1" blue="0.1913847554" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="重置"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OLa-zT-4LL">
                                 <rect key="frame" x="187.5" y="612" width="187.5" height="55"/>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="确定"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -63,12 +59,14 @@
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="filterCollectionView" destination="lqx-2P-VYZ" id="fqd-9f-Pep"/>
+                        <outlet property="resetBtn" destination="A1N-P4-8Mq" id="xTK-lA-wEd"/>
+                        <outlet property="sureBtn" destination="OLa-zT-4LL" id="HiZ-LZ-27N"/>
                         <segue destination="nqi-bq-aM6" kind="show" identifier="FilterToResutVC" id="PVu-bh-yzw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ur9-AL-Fbw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3885.5999999999999" y="610.34482758620697"/>
+            <point key="canvasLocation" x="3644" y="610"/>
         </scene>
         <!--Product Filter Result Controller-->
         <scene sceneID="A9o-np-ukj">
@@ -86,7 +84,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="90k-Ag-UoH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4657" y="610"/>
+            <point key="canvasLocation" x="4364" y="610"/>
         </scene>
         <!--Base Navigation Controller-->
         <scene sceneID="SpR-ny-6eU">

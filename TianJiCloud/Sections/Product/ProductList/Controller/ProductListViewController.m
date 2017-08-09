@@ -16,7 +16,7 @@
 
 @property (nonatomic,strong) TJSProductListConfigurator *configurator;
 
-@property (nonatomic,weak)   id<TJSProductListInteractor> interactor;
+@property (nonatomic,weak) id<TJSProductListInteractor> interactor;
 
 
 @end

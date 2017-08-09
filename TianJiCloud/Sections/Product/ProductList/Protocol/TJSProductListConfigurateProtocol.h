@@ -32,7 +32,6 @@
 - (void)deleteProduct:(TJSProductInfoModel *)product
              callback:(void (^)(BOOL success, NSError *error))callback;
 
-
 //
 - (NSArray *)items;
 

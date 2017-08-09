@@ -15,13 +15,13 @@
 @optional
 
 
-
 @end
 
+@protocol TJSProductFilterInteractor
 
-@protocol TJSProductListInteractor
+@required
 
-
+- (NSArray *)items;
 
 @end
 

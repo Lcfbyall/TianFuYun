@@ -10,4 +10,24 @@
 
 @implementation TJSProductFilterInteractorImpl
 
+
+#pragma mark - <TJSProductFilterInteractor>
+
+- (NSArray *)items{
+  
+    return self.dataSource.items;
+}
+
+
+#pragma mark - <ProductFilterLayoutDelegate>
+
+- (void)onRefresh{
+  
+    [self.layout reloadCollect];
+    
+    //结束刷新
+    [self.layout endRefresh];
+}
+
+
 @end

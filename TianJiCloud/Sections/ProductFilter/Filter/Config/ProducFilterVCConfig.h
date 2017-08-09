@@ -7,7 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ProductFilterProtocol.h"
 
-@interface ProducFilterVCConfig : NSObject
+@class ProductFilterController;
+
+@interface ProducFilterVCConfig : NSObject<ProductFilterConfig>
+
+- (void)setup:(ProductFilterController *)vc;
+
 
 @end

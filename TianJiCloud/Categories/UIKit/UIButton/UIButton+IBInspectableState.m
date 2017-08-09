@@ -80,6 +80,8 @@ static void * TJSUIButtonStateChangedContext = & TJSUIButtonStateChangedContext;
 }
 - (void)setTjs_backGroundColorNormal:(UIColor *)tjs_backGroundColorNormal{
     
+    self.backgroundColor = tjs_backGroundColorNormal;
+    
     [self tjs_setBackGroundColor:tjs_backGroundColorNormal forState:UIControlStateNormal];
 }
 - (UIColor *)tjs_backGroundColorDisabled {

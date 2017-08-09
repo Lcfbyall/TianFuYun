@@ -18,7 +18,7 @@
 
 @property (nonatomic,strong) TJSDiscoNewsConfigurator *configurator;
 
-@property (nonatomic,weak)   id<TJSDiscoveryNewsListInteractor> interactor;
+@property (nonatomic,weak) id<TJSDiscoveryNewsListInteractor> interactor;
 
 @property (weak, nonatomic) IBOutlet UICollectionView *newsCollectionView;
 

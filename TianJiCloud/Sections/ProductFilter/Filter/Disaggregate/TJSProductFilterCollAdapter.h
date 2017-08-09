@@ -8,10 +8,17 @@
 
 #import <Foundation/Foundation.h>
 
+#import "TJSProductFilterConfigurateProtocol.h"
+#import "TJSProductFilterCellProtocol.h"
 
-@interface TJSProductFilterCollAdapter : NSObject
 
+@interface TJSProductFilterCollAdapter : NSObject<UICollectionViewDataSource,UICollectionViewDelegate>
 
+@property (nonatomic,weak) id<TJSProductFilterInteractor> interactor;
 
+@property (nonatomic,weak) id<TJSProductFilterCellDelegate> cellDelegate;
+
+- (instancetype)initWithCollectionView:(UICollectionView *)collectionView;
+    
 
 @end

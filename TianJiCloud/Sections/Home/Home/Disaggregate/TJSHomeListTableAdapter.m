@@ -57,7 +57,7 @@
 }
 
 
-#pragma mark - UITableViewDelegate && UITableViewDataSource
+#pragma mark - <UITableViewDelegate>
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
@@ -88,6 +88,9 @@
     
     return cell;
 }
+
+
+#pragma mark - <UITableViewDataSource>
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     

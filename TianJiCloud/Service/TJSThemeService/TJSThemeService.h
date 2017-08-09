@@ -23,7 +23,7 @@
 
 //主色：白色
 - (UIColor *)main_color_00;
-- (UIColor *)main_color_01;
+- (UIColor *)main_color_01;  //橙色
 - (UIColor *)main_color_02;
 
 

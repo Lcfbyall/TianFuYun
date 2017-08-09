@@ -24,10 +24,7 @@
     
     self.layoutInfo = [NSMutableArray array];
     
-    
-    
     NSIndexPath *indexPath;
-    
     NSInteger numSections = [self.collectionView numberOfSections];
     for(NSInteger section = 0; section < numSections; section++) {
         

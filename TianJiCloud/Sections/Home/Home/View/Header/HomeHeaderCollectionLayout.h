@@ -20,6 +20,7 @@
 
 @end
 
+
 @interface HomeHeaderCollectionLayout : UICollectionViewLayout
 
 @property (nonatomic,weak) id<HomeHeaderCollectionLayoutDelegate> delegate;
