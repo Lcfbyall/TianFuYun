@@ -107,7 +107,7 @@
          
             NSDictionary *configDic  = (NSDictionary *)obj;
             
-            TJSBaseNavigationController *naviVC  = LOAD_Storyboard(configDic[@"ProductSB"], configDic[@"ProductNC"]);
+            TJSBaseNavigationController *naviVC  = (TJSBaseNavigationController *)LOAD_Storyboard(configDic[@"ProductSB"], configDic[@"ProductNC"]);
             
             naviVC.tabBarItem.title              = configDic[@"title"];
             naviVC.tabBarItem.image              = IMAGEOriginal(configDic[@"image"]);

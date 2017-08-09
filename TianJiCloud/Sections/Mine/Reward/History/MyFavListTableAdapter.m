@@ -12,6 +12,7 @@
 
 @end
 
+
 @implementation MyFavListTableAdapter
 
 - (instancetype)initWithTableView:(UITableView *)tableView{
@@ -26,4 +27,43 @@
     
 }
 
+
+
+#pragma mark - <UITableViewDataSource>
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+  
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+ 
+    return 5;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+  
+    return [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"alloc"];
+    
+}
+
+
+#pragma mark - <UITableViewDelegate>
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+   
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    
+    
+}
+
+
+
+
+
+
 @end
+
+
+

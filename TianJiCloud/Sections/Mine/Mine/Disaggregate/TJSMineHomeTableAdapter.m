@@ -61,10 +61,11 @@ static NSString *const headerFooterIdentifier = @"MineHomeHeaderFooterIdentifier
     _headerContainer.tjs_origin = CGPointMake(0, -_headerContainer.tjs_height);
     _headerHeight = _headerContainer.tjs_height;
     _headerContainer.contentMode = UIViewContentModeScaleAspectFill;
-
     _tableView.contentInset = UIEdgeInsetsMake(_headerHeight, 0, 0, 0);
     [_tableView addSubview:_headerContainer];
 
+    _tableView.tableHeaderView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 0, CGFLOAT_MIN)];
+  
 }
 
 
@@ -135,26 +136,36 @@ static NSString *const headerFooterIdentifier = @"MineHomeHeaderFooterIdentifier
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
   
-    return [tableView dequeueReusableHeaderFooterViewWithIdentifier:headerFooterIdentifier];
-}
-
-- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
-  
-    if(section ==0) return 0;
+   UITableViewHeaderFooterView *header = [tableView dequeueReusableHeaderFooterViewWithIdentifier:headerFooterIdentifier];
     
-    return 10;
+    //header.contentView.backgroundColor = [UIColor greenColor];
+    
+    return header;
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section{
   
-    return [tableView dequeueReusableHeaderFooterViewWithIdentifier:headerFooterIdentifier];
+    UITableViewHeaderFooterView *footer = [tableView dequeueReusableHeaderFooterViewWithIdentifier:headerFooterIdentifier];
+    
+    //footer.contentView.backgroundColor = [UIColor redColor];
+    
+    return footer;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+    
+    return CGFLOAT_MIN;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
   
-    return 0;
+    if(section == [tableView numberOfSections]-1){
+        
+        return CGFLOAT_MIN;
+    }
+    
+    return 10;
 }
-
 
 #pragma mark - <UITableViewDataSourcePrefetching>
 
@@ -167,51 +178,22 @@ static NSString *const headerFooterIdentifier = @"MineHomeHeaderFooterIdentifier
     [scrollView.tjs_viewController.view endEditing:YES];
 
     if(scrollView.contentOffset.y < -_headerHeight){
-        CGRect frame = _headerContainer.frame;
-        //frame.origin.x =
-        frame.origin.y = scrollView.contentOffset.y;
-        //frame.size.width =
-        frame.size.height = -scrollView.contentOffset.y;
+        CGRect frame     = _headerContainer.frame;
+        frame.size.width = -scrollView.contentOffset.y * 1.75;
+        frame.size.height= -scrollView.contentOffset.y;
+        frame.origin.x   = (SCREEN_WIDTH - frame.size.width)/2.0;
+        frame.origin.y   = scrollView.contentOffset.y;
         _headerContainer.frame = frame;
     }
-
-
-    if (scrollView == self.tableView)
-    {
-        CGFloat sectionHeaderHeight = 10;;
-        if(scrollView.contentOffset.y <= (sectionHeaderHeight-_headerHeight) &&
-           scrollView.contentOffset.y >= -_headerHeight) {
-
-            scrollView.contentInset = UIEdgeInsetsMake(-scrollView.contentOffset.y, scrollView.contentInset.left, scrollView.contentInset.bottom,scrollView.contentInset.right);
-
-
-        } else if (scrollView.contentOffset.y > (sectionHeaderHeight-_headerHeight)) {
-
-            scrollView.contentInset = UIEdgeInsetsMake(-sectionHeaderHeight+_headerHeight, scrollView.contentInset.left, scrollView.contentInset.bottom, scrollView.contentInset.right);
-        }else{
-
-
-        }
-    }
-
-
-
-
 
     UIColor * color = UIColorFromHEX(0x007cf4);
     CGFloat offset = scrollView.contentOffset.y;
     if (offset > -_headerHeight) {
-        
-        CGFloat alpha = MIN(1,fabs(offset+_headerHeight) / 64.0);
-
+        //CGFloat alpha = MIN(1,fabs(offset+_headerHeight) / 64.0);
         scrollView.tjs_viewController.navigationController.navigationBar.barTintColor = [UIColor redColor];
-
-
     } else {
-        
         scrollView.tjs_viewController.navigationController.navigationBar.barTintColor = [color colorWithAlphaComponent:1];
     }
-
 }
 
 

@@ -33,9 +33,9 @@
     
     //1.
     
-    MyFavListDataSourceImpl *dataSoureImpl = [[MyFavListDataSourceImpl alloc]init];
+    //MyFavListDataSourceImpl *dataSoureImpl = [[MyFavListDataSourceImpl alloc]init];
     
-    MyFavListLayoutImpl *layoutImpl = [[MyFavListLayoutImpl alloc]initWithTableView:tableView];
+    //MyFavListLayoutImpl *layoutImpl = [[MyFavListLayoutImpl alloc]initWithTableView:tableView];
     
     _interactor = [[MyFavListInteractorImpl alloc]init];
     

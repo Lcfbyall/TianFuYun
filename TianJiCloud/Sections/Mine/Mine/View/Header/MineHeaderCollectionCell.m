@@ -14,7 +14,8 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *moneyL;
 
-@property (weak, nonatomic) IBOutlet NSLayoutConstraint *moneyTopConstraint;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *bottomConstant;
+
 
 @end
 
@@ -30,9 +31,29 @@
     self.titleL.font = [UIFont systemFontOfSize:14.0f];
     self.titleL.textColor = ThemeService.main_color_00;
     
-    self.moneyL.font = [UIFont boldSystemFontOfSize:20.0f];
-    self.moneyL.textColor = [UIColor yellowColor];
+    self.moneyL.font = [UIFont boldSystemFontOfSize:25.0f];
+    self.moneyL.textColor = UIColorFromHEX(0xfeef5d);
     
+}
+
+
+- (void)updateConstraints{
+
+    [self removeConstraint:_bottomConstant];
+
+    NSLayoutConstraint *myConstraint =
+    [NSLayoutConstraint
+        constraintWithItem:_moneyL
+        attribute:NSLayoutAttributeBottom
+        relatedBy:NSLayoutRelationEqual
+        toItem:self
+        attribute:NSLayoutAttributeBottom
+        multiplier:1.0
+        constant:-(SCREEN_WIDTH/1.75/2.0-30)];
+    
+    [self addConstraint: myConstraint];
+    
+    [super updateConstraints];
 }
 
 @end

@@ -43,9 +43,17 @@
     
     _vc.params = @{
                    NavigationBarTranslucentKey:@(YES),
-                   NavigationBarBarTintColor:  [UIColor redColor]
+                   NavigationBarBarTintColor:  [UIColor clearColor]
                    
                    };
+    
+    
+    /*
+    UIColor *a = RGB(254, 239, 93);
+    NSString *hex = a.hexString;
+    NSString *hexa = a.hexStringWithAlpha;
+    NSLog(@"");
+    */   
 }
 
 
@@ -74,7 +82,7 @@
     //设置
     UITableView *mineTable = (UITableView *)self.vc.tjs_listView;
     BOOL translucent = self.vc.tabBarController.tabBar.translucent;
-    mineTable.contentInset = UIEdgeInsetsMake(mineTable.contentInset.top, mineTable.contentInset.left, translucent?49:0, mineTable.contentInset.right);
+    mineTable.contentInset = UIEdgeInsetsMake(mineTable.contentInset.top, mineTable.contentInset.left, translucent?49:mineTable.contentInset.bottom, mineTable.contentInset.right);
 
 }
 

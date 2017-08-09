@@ -22,11 +22,14 @@ static UIColor *TintColor    = nil;
 @implementation UINavigationBar (StyleConfigure)
 
 + (void)initialize{
-  
-    TitleColor   =  [UIColor blackColor];
-    TitleFont    =  [UIFont systemFontOfSize:16.0f];
-    BarTintColor =  ThemeService.main_color_00;
-    TintColor    =  ThemeService.main_color_00;
+    
+    if (self == [UINavigationBar self]) {
+    
+        TitleColor   =  [UIColor blackColor];
+        TitleFont    =  [UIFont systemFontOfSize:16.0f];
+        BarTintColor =  ThemeService.main_color_00;
+        TintColor    =  ThemeService.main_color_00;
+    }
 }
 
 /**

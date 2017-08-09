@@ -99,7 +99,6 @@ static NSString *identifier = @"MineHeaderCollectionCell";
         TJSPageControl *page = [[TJSPageControl alloc]init];
         
         
-        
         [self addSubview: page];
         
         [page mas_makeConstraints:^(MASConstraintMaker *make) {
