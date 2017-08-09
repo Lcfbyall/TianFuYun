@@ -52,10 +52,7 @@ static NSString *const headerFooterIdentifier = @"MineHomeHeaderFooterIdentifier
 
 - (void)setupTableView{
 
-    //
     [_tableView registerClass:[UITableViewHeaderFooterView class] forHeaderFooterViewReuseIdentifier:headerFooterIdentifier];
-
-    //
     _headerContainer = [MineHomeHeaderContainer headerContainer];
     //_tableView.tableHeaderView = _headerContainer;
     _headerContainer.tjs_origin = CGPointMake(0, -_headerContainer.tjs_height);
@@ -63,9 +60,10 @@ static NSString *const headerFooterIdentifier = @"MineHomeHeaderFooterIdentifier
     _headerContainer.contentMode = UIViewContentModeScaleAspectFill;
     _tableView.contentInset = UIEdgeInsetsMake(_headerHeight, 0, 0, 0);
     [_tableView addSubview:_headerContainer];
-
     _tableView.tableHeaderView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 0, CGFLOAT_MIN)];
-  
+    _tableView.tableFooterView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 0, CGFLOAT_MIN)];
+    _tableView.sectionHeaderHeight=0;
+    
 }
 
 
@@ -143,19 +141,17 @@ static NSString *const headerFooterIdentifier = @"MineHomeHeaderFooterIdentifier
     return header;
 }
 
+/*
 - (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section{
-  
     UITableViewHeaderFooterView *footer = [tableView dequeueReusableHeaderFooterViewWithIdentifier:headerFooterIdentifier];
-    
     //footer.contentView.backgroundColor = [UIColor redColor];
-    
     return footer;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
-    
     return CGFLOAT_MIN;
 }
+*/
 
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
   
@@ -186,6 +182,7 @@ static NSString *const headerFooterIdentifier = @"MineHomeHeaderFooterIdentifier
         _headerContainer.frame = frame;
     }
 
+    /*
     UIColor * color = UIColorFromHEX(0x007cf4);
     CGFloat offset = scrollView.contentOffset.y;
     if (offset > -_headerHeight) {
@@ -194,7 +191,9 @@ static NSString *const headerFooterIdentifier = @"MineHomeHeaderFooterIdentifier
     } else {
         scrollView.tjs_viewController.navigationController.navigationBar.barTintColor = [color colorWithAlphaComponent:1];
     }
+     */
 }
 
-
 @end
+
+

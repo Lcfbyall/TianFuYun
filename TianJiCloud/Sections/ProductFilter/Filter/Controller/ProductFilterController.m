@@ -28,6 +28,11 @@
 }
 
 
+#pragma mark - setupConfig
+
+
+
+
 #pragma mark - TJSBaseVCConfig
 - (void)tjs_configBaseView{
     
@@ -39,6 +44,8 @@
     
     return _filterCollectionView;
 }
+
+
 
 
 @end

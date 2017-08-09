@@ -42,13 +42,18 @@ static NSString *const PlatAnnounceListVC   = @"PlatformAnnounceController";
 static NSString *const AllActivityListVC    = @"AllActivityViewController";
 
 #pragma mark - ProductFilterVC identifier
+
 static NSString *const ProductFilterVC      = @"ProductFilterController";
+static NSString *const ProductFilterResultVC = @"ProductFilterResultController";
+
 
 #pragma mark - ProductDetailVC identifier
+
 static NSString *const ProductListVC        = @"ProductListViewController";
 static NSString *const ProductDetailVC      = @"TJSProductDetailController";
 
 #pragma mark - ProductSearchVC identifier
+
 static NSString *const ProductSearchVC      = @"ProductSearchController";
 
 #pragma mark - DiscoveryVC identifier
