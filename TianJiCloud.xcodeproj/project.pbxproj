@@ -16,6 +16,11 @@
 		2C027D161F3C7C71001D7EB6 /* ProductFilterResultDataSourceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C027D151F3C7C71001D7EB6 /* ProductFilterResultDataSourceImpl.m */; };
 		2C027D191F3C7C80001D7EB6 /* ProductFilterResultLayoutImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C027D181F3C7C80001D7EB6 /* ProductFilterResultLayoutImpl.m */; };
 		2C027D1C1F3C7C92001D7EB6 /* ProductFilterResultTableAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C027D1B1F3C7C92001D7EB6 /* ProductFilterResultTableAdapter.m */; };
+		2C027D211F3C827F001D7EB6 /* ProductSearchConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C027D201F3C827F001D7EB6 /* ProductSearchConfigurator.m */; };
+		2C027D241F3C8296001D7EB6 /* ProductSearchInteractorImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C027D231F3C8296001D7EB6 /* ProductSearchInteractorImpl.m */; };
+		2C027D271F3C82B1001D7EB6 /* ProductSearchDataSourceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C027D261F3C82B1001D7EB6 /* ProductSearchDataSourceImpl.m */; };
+		2C027D2A1F3C82C8001D7EB6 /* ProductSearchLayoutImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C027D291F3C82C8001D7EB6 /* ProductSearchLayoutImpl.m */; };
+		2C027D2D1F3C82D7001D7EB6 /* ProductSearchTableAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C027D2C1F3C82D7001D7EB6 /* ProductSearchTableAdapter.m */; };
 		2C02DF8F1F39CA44000410E1 /* MyFavNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C02DF8E1F39CA44000410E1 /* MyFavNetworkTool.m */; };
 		2C02DF971F39CC41000410E1 /* MyFavListConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C02DF961F39CC41000410E1 /* MyFavListConfigurator.m */; };
 		2C02DF9A1F39D4E7000410E1 /* MyFavListInteractorImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C02DF991F39D4E7000410E1 /* MyFavListInteractorImpl.m */; };
@@ -393,6 +398,16 @@
 		2C027D1B1F3C7C92001D7EB6 /* ProductFilterResultTableAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductFilterResultTableAdapter.m; sourceTree = "<group>"; };
 		2C027D1D1F3C7D0B001D7EB6 /* ProductFilterResultConfigurateProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductFilterResultConfigurateProtocol.h; sourceTree = "<group>"; };
 		2C027D1E1F3C80AA001D7EB6 /* ProductFilterResultPrivateProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductFilterResultPrivateProtocol.h; sourceTree = "<group>"; };
+		2C027D1F1F3C827F001D7EB6 /* ProductSearchConfigurator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductSearchConfigurator.h; sourceTree = "<group>"; };
+		2C027D201F3C827F001D7EB6 /* ProductSearchConfigurator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductSearchConfigurator.m; sourceTree = "<group>"; };
+		2C027D221F3C8296001D7EB6 /* ProductSearchInteractorImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductSearchInteractorImpl.h; sourceTree = "<group>"; };
+		2C027D231F3C8296001D7EB6 /* ProductSearchInteractorImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductSearchInteractorImpl.m; sourceTree = "<group>"; };
+		2C027D251F3C82B1001D7EB6 /* ProductSearchDataSourceImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductSearchDataSourceImpl.h; sourceTree = "<group>"; };
+		2C027D261F3C82B1001D7EB6 /* ProductSearchDataSourceImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductSearchDataSourceImpl.m; sourceTree = "<group>"; };
+		2C027D281F3C82C8001D7EB6 /* ProductSearchLayoutImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductSearchLayoutImpl.h; sourceTree = "<group>"; };
+		2C027D291F3C82C8001D7EB6 /* ProductSearchLayoutImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductSearchLayoutImpl.m; sourceTree = "<group>"; };
+		2C027D2B1F3C82D7001D7EB6 /* ProductSearchTableAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductSearchTableAdapter.h; sourceTree = "<group>"; };
+		2C027D2C1F3C82D7001D7EB6 /* ProductSearchTableAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductSearchTableAdapter.m; sourceTree = "<group>"; };
 		2C02DF8D1F39CA44000410E1 /* MyFavNetworkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyFavNetworkTool.h; path = TianJiCloud/Sections/Mine/Reward/History/MyFavNetworkTool.h; sourceTree = SOURCE_ROOT; };
 		2C02DF8E1F39CA44000410E1 /* MyFavNetworkTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyFavNetworkTool.m; path = TianJiCloud/Sections/Mine/Reward/History/MyFavNetworkTool.m; sourceTree = SOURCE_ROOT; };
 		2C02DF931F39CADB000410E1 /* MyFavListConfigurateProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MyFavListConfigurateProtocol.h; path = TianJiCloud/Sections/Mine/Reward/History/MyFavListConfigurateProtocol.h; sourceTree = SOURCE_ROOT; };
@@ -2799,6 +2814,16 @@
 		2C89AD7D1F2C7DF8005C29AC /* Disaggregate */ = {
 			isa = PBXGroup;
 			children = (
+				2C027D1F1F3C827F001D7EB6 /* ProductSearchConfigurator.h */,
+				2C027D201F3C827F001D7EB6 /* ProductSearchConfigurator.m */,
+				2C027D221F3C8296001D7EB6 /* ProductSearchInteractorImpl.h */,
+				2C027D231F3C8296001D7EB6 /* ProductSearchInteractorImpl.m */,
+				2C027D251F3C82B1001D7EB6 /* ProductSearchDataSourceImpl.h */,
+				2C027D261F3C82B1001D7EB6 /* ProductSearchDataSourceImpl.m */,
+				2C027D281F3C82C8001D7EB6 /* ProductSearchLayoutImpl.h */,
+				2C027D291F3C82C8001D7EB6 /* ProductSearchLayoutImpl.m */,
+				2C027D2B1F3C82D7001D7EB6 /* ProductSearchTableAdapter.h */,
+				2C027D2C1F3C82D7001D7EB6 /* ProductSearchTableAdapter.m */,
 			);
 			path = Disaggregate;
 			sourceTree = "<group>";
@@ -4244,6 +4269,7 @@
 				2C4412A61F2201FF00C453EF /* TJSBaseRequest+TJSSingleRequestBlock.m in Sources */,
 				2C801BD61F233F46009F82F7 /* TJSRootTabBarController.m in Sources */,
 				2C02DF9D1F39D4FA000410E1 /* MyFavListDataSourceImpl.m in Sources */,
+				2C027D2D1F3C82D7001D7EB6 /* ProductSearchTableAdapter.m in Sources */,
 				2CCC85B91F3AEEDE0009FC1C /* ProductFilterResultController.m in Sources */,
 				A292B2701F39F88F0086E03E /* CapitalRecordNetworkTool.m in Sources */,
 				2C4412AD1F22031600C453EF /* TJSHudAlert.m in Sources */,
@@ -4305,6 +4331,7 @@
 				2CAF42D51F281B8600ABCA5E /* TJSProductListTextContentConfig.m in Sources */,
 				2CCBE4921F34207C006C4018 /* TJSBaseTableHeaderFooterView.m in Sources */,
 				2C300F851F2F3C7E00DD440E /* GesturePasswordController.m in Sources */,
+				2C027D2A1F3C82C8001D7EB6 /* ProductSearchLayoutImpl.m in Sources */,
 				2C44124E1F21D54400C453EF /* TJSSystemAlertMaker.m in Sources */,
 				2C859CF71F31EB2E00B86575 /* ZLPhotoPickerGroup.m in Sources */,
 				2CCC85B01F3AEE3A0009FC1C /* TJSProductFilterDataSourceImpl.m in Sources */,
@@ -4323,6 +4350,7 @@
 				2C859CF01F31EB2E00B86575 /* ZLPhotoPickerBrowserViewController.m in Sources */,
 				2CAF42DB1F281B8600ABCA5E /* ProductListViewController.m in Sources */,
 				2CAF42D31F281B8600ABCA5E /* TJSProductListContentConfig.m in Sources */,
+				2C027D271F3C82B1001D7EB6 /* ProductSearchDataSourceImpl.m in Sources */,
 				2C4412A81F2201FF00C453EF /* TJSUploadRequest.m in Sources */,
 				2C027D0E1F3C7BAD001D7EB6 /* ProductFilterResultConfigurator.m in Sources */,
 				2CCBE4911F34207C006C4018 /* TJSBaseCollectionViewCell.m in Sources */,
@@ -4394,6 +4422,7 @@
 				2C300F881F2F3C9900DD440E /* FindWithDrawPasswordController.m in Sources */,
 				2C83C6F91F39B6C2004034CA /* TJSBaseStoreTool.m in Sources */,
 				A292B2731F39F8AB0086E03E /* CapitalRecordStoreTool.m in Sources */,
+				2C027D241F3C8296001D7EB6 /* ProductSearchInteractorImpl.m in Sources */,
 				2CAF430A1F2828C200ABCA5E /* TJSProductListTableAdapter.m in Sources */,
 				2C8DE5EE1F2AE7D0009B3AE2 /* TJSDiscoNewsConfigurator.m in Sources */,
 				2C859CE11F31EB2E00B86575 /* DALabeledCircularProgressView.m in Sources */,
@@ -4436,6 +4465,7 @@
 				2CAF427A1F26EAA600ABCA5E /* AppVersionNetworkTool.m in Sources */,
 				2C4C1C891F3948E100002166 /* PNPieChartDataItem.m in Sources */,
 				2CCBE46D1F3312D4006C4018 /* DiscoRoadShowVideoDetailController.m in Sources */,
+				2C027D211F3C827F001D7EB6 /* ProductSearchConfigurator.m in Sources */,
 				2C8BB7B21F3088D600E2D75F /* HomeHeaderConfig.m in Sources */,
 				2C4412851F21EB3100C453EF /* UITextView+EditRect.m in Sources */,
 				2C85E33E1F2ECB1300ADD360 /* UseAgreementController.m in Sources */,
