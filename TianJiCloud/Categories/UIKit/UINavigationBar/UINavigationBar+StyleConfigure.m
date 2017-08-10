@@ -147,7 +147,7 @@ static UIColor *TintColor    = nil;
 }
 
 
--(void)changeNavigationBarBackgroundColor{
+-(void)tjs_changeNavigationBarBackgroundColor{
     
     if ([self respondsToSelector:@selector(setBackgroundImage:forBarMetrics:)]){
         
@@ -161,9 +161,35 @@ static UIColor *TintColor    = nil;
                 UIImageView *imageView=(UIImageView *)viewObj;
                 [self sendSubviewToBack:imageView];
             }
-            
         }
     }
 }
+
+#pragma mark 去除navigationController中navgationBar中的黑线
+-(void)tjs_removeLineOfNavigationBar
+{
+    if([self respondsToSelector:@selector(setBackgroundImage:forBarMetrics:)])
+    {
+        NSArray *list=self.subviews;
+        for (id obj in list)
+        {
+            if ([obj isKindOfClass:[UIImageView class]])
+            {
+                UIImageView *imageView=(UIImageView *)obj;
+                NSArray *list2=imageView.subviews;
+                for (id obj2 in list2)
+                {
+                    if ([obj2 isKindOfClass:[UIImageView class]])
+                    {
+                        UIImageView *imageView2=(UIImageView *)obj2;
+                        imageView2.hidden=YES;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
 
 @end

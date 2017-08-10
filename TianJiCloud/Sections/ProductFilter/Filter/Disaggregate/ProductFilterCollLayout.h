@@ -10,7 +10,7 @@
 
 @class ProductFilterCollLayout;
 
-@protocol ProductFilterLayoutDelegate <NSObject>
+@protocol ProductFilterCollLayoutDelegate <NSObject>
 
 @required
 
@@ -42,6 +42,10 @@
 
 @interface ProductFilterCollLayout : UICollectionViewLayout
 
-@property (nonatomic,weak) id<ProductFilterLayoutDelegate> delegate;
+@property (nonatomic,weak) id<ProductFilterCollLayoutDelegate> delegate;
+
+@property (nonatomic,assign) CGFloat collectionViewWidth;
+
+- (void)calculateLayoutAttributes;
 
 @end

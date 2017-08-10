@@ -23,9 +23,14 @@
 
 //数据
 
+- (void)loadFilterParamas:(void (^)(NSArray *paramas, NSError *error))callback;
+
 - (NSArray *)items;
 
 - (NSArray *)filterParamas;
+
+- (UICollectionViewLayout *)collectionViewLayout;
+
 
 //交互
 

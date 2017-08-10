@@ -8,6 +8,12 @@
 
 #import "ProductFilterReusableSectionHeader.h"
 
+@interface ProductFilterReusableSectionHeader ()
+
+@property (nonatomic,strong) UILabel *textLabel;
+
+@end
+
 @implementation ProductFilterReusableSectionHeader
 
 - (instancetype)initWithFrame:(CGRect)frame{
@@ -16,11 +22,36 @@
     
     if(self){
      
-        self.backgroundColor = [UIColor blueColor];
-      
+        self.backgroundColor = ThemeService.origin_color_00;
+        
+        [self p_addSubViews];
     }
     return self;
 }
+
+
+- (void)p_addSubViews{
+  
+    self.textLabel = ({
+    
+        UILabel *label = [[UILabel alloc]init];
+        label.textColor = ThemeService.text_color_00;
+        label.font = [UIFont systemFontOfSize:16.0f];
+        
+        [self addSubview:label];
+        
+        [label mas_makeConstraints:^(MASConstraintMaker *make) {
+            
+            make.edges.mas_equalTo(UIEdgeInsetsMake(0, 15, 0, 15));
+            
+        }];
+        
+        label;
+    });
+}
+
+
+#pragma mark - UICollectionReusableView
 
 - (void)prepareForReuse{
     [super prepareForReuse];
@@ -53,6 +84,7 @@
 
 - (void)tjs_bindDataToCellWithValue:(id)value{
 
+    self.textLabel.text = value;
 
 }
 

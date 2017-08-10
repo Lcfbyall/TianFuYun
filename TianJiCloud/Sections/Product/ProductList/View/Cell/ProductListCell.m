@@ -113,9 +113,9 @@
 }
 
 
-#pragma mark - addSubViews
+#pragma mark - p_addSubViews
 
-- (void)addSubviews{
+- (void)p_addSubviews{
 
     _productNameL = [[UILabel alloc] init];
     _productNameL.backgroundColor = [UIColor clearColor];

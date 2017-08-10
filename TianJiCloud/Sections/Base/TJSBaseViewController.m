@@ -65,14 +65,14 @@ NSString * const HideBackBarButtonItemKey = @"HideBackBarButtonItemKey";
 #pragma mark - <TJSNavigationConfig>
 - (BOOL)tjs_hideNavigationBar{
     
-    BOOL hide = self.params[HideNavigationBarKey];
+    BOOL hide = [self.params[HideNavigationBarKey] boolValue];
     
     return hide;
 }
 
 - (BOOL)tjs_translucentNavigationBar{
   
-    BOOL translucent = self.params[NavigationBarTranslucentKey];
+    BOOL translucent = [self.params[NavigationBarTranslucentKey] boolValue];
     
     return translucent;
 }
@@ -93,7 +93,7 @@ NSString * const HideBackBarButtonItemKey = @"HideBackBarButtonItemKey";
 
 - (BOOL)tjs_hideBackBarButtonItem{
 
-    BOOL hide = self.params[HideBackBarButtonItemKey];
+    BOOL hide = [self.params[HideBackBarButtonItemKey] boolValue];;
     
     return hide;
 }

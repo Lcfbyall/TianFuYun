@@ -16,7 +16,7 @@ static NSString *headerIdentifier = @"ProductFilterReusableSectionHeader";
 static NSString *identifier = @"ProductFilterCollectionCell";
 
 
-@interface TJSProductFilterCollAdapter ()<ProductFilterLayoutDelegate>
+@interface TJSProductFilterCollAdapter ()<ProductFilterCollLayoutDelegate>
 
 @property (nonatomic,weak)  UICollectionView *collectionView;
 
@@ -30,27 +30,30 @@ static NSString *identifier = @"ProductFilterCollectionCell";
     if(self){
         
         _collectionView = collectionView;
-        
-        [self registerElementForCollecitonView];
     }
     
     return self;
 }
 
+- (void)setInteractor:(id<TJSProductFilterInteractor>)interactor{
+  
+    _interactor = interactor;
+    
+    [self registerElementForCollecitonView];
+}
 
 - (void)registerElementForCollecitonView{
 
-    ProductFilterCollLayout *layout = [[ProductFilterCollLayout alloc]init];
-    layout.delegate  = self;
-   
-
-    _collectionView.collectionViewLayout = layout;
     
+    ProductFilterCollLayout *layout = (ProductFilterCollLayout *)self.interactor.collectionViewLayout;
+    layout.delegate  = self;
+    layout.collectionViewWidth=SCREEN_WIDTH;
+    
+    _collectionView.collectionViewLayout = layout;
+
     [_collectionView registerClass:[ProductFilterReusableSectionHeader class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:headerIdentifier];
     [_collectionView registerClass:[ProductFilterCollectionCell class] forCellWithReuseIdentifier:identifier];
-    
 }
-
 
 
 #pragma mark - <UICollectionViewDataSource>
@@ -112,7 +115,7 @@ static NSString *identifier = @"ProductFilterCollectionCell";
 }
 
 
-#pragma mark - <ProductFilterLayoutDelegate>
+#pragma mark - <ProductFilterCollLayoutDelegate>
 
 - (CGSize)collectionView:(UICollectionView *)collectionView
                   layout:(ProductFilterCollLayout *)collectionViewLayout
@@ -128,7 +131,7 @@ static NSString *identifier = @"ProductFilterCollectionCell";
         insetForSectionAtIndex:(NSInteger)section{
 
 
-    return UIEdgeInsetsZero;
+    return UIEdgeInsetsMake(10, 10, 10, 10);
 }
 
 - (CGFloat)collectionView:(UICollectionView *)collectionView

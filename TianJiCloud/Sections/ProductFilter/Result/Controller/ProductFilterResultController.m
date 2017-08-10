@@ -17,6 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.title = @"产品筛选";
+    
 }
 
 - (void)didReceiveMemoryWarning {

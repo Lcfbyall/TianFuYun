@@ -14,7 +14,7 @@
 }
 
 @property (strong, nonatomic) NSMutableArray *layoutInfo;
-
+@property (nonatomic,strong) NSMutableDictionary *layoutInfoDic;
 
 @end
 
@@ -23,32 +23,7 @@
 - (void)prepareLayout{
     [super prepareLayout];
 
-    self.layoutInfo = [NSMutableArray array];
-    
-    NSIndexPath *indexPath;
-    NSInteger numSections = [self.collectionView numberOfSections];
-    for(NSInteger section = 0; section < numSections; section++) {
-        
-        NSInteger numItems = [self.collectionView numberOfItemsInSection:section];
-        
-        indexPath = [NSIndexPath indexPathWithIndex:section];
-        
-        UICollectionViewLayoutAttributes *headerAtt = [self layoutAttributesForSupplementaryViewOfKind:UICollectionElementKindSectionHeader atIndexPath:indexPath];
-        
-        [self.layoutInfo addObject:headerAtt];
-        
-        for(NSInteger item = 0; item < numItems; item++){
-            
-            indexPath = [NSIndexPath indexPathForItem:item inSection:section];
-            
-            UICollectionViewLayoutAttributes *attrs = [self layoutAttributesForItemAtIndexPath:indexPath];
-            
-    
-            //供layoutAttributesForElementsInRect使用
-            
-            [self.layoutInfo addObject:attrs];
-        }
-    }
+
 }
 
 - (nullable NSArray<__kindof UICollectionViewLayoutAttributes *> *)layoutAttributesForElementsInRect:(CGRect)rect{
@@ -69,31 +44,43 @@
 
 - (nullable UICollectionViewLayoutAttributes *)layoutAttributesForItemAtIndexPath:(NSIndexPath *)indexPath{
     
-    //UICollectionViewLayoutAttributes
     UICollectionViewLayoutAttributes *layoutAttribute =
     [UICollectionViewLayoutAttributes layoutAttributesForCellWithIndexPath:indexPath];
     
     if(layoutAttribute.representedElementCategory == UICollectionElementCategoryCell){
         
+        NSIndexPath *headerIndexPath = [NSIndexPath indexPathWithIndex:indexPath.section];
+        UICollectionViewLayoutAttributes *headerAttribute = [self.layoutInfoDic objectForKey:headerIndexPath];
+      
+        
         CGSize size = [self sizeForItemAtIndexPath:indexPath];
         UIEdgeInsets insetForSection = [self insetForSectionAtIndex:indexPath.section];
         CGFloat minimumInteritemSpacing = [self minimumInteritemSpacingForSectionAtIndex:indexPath.section];
-        //CGFloat minimumLineSpacing = [self minimumLineSpacingForSectionAtIndex:indexPath.section];
+        CGFloat minimumLineSpacing = [self minimumLineSpacingForSectionAtIndex:indexPath.section];
         
         if(indexPath.item == 0 ){
-            layoutAttribute.frame = CGRectMake(insetForSection.left, insetForSection.top, size.width, size.height);
+            
+            CGFloat Y = headerAttribute.frame.origin.y+headerAttribute.frame.size.height+insetForSection.top;
+            layoutAttribute.frame = CGRectMake(insetForSection.left, Y, size.width, size.height);
         }else{
             
-            UICollectionViewLayoutAttributes *lastAttribute = [self layoutAttributesForItemAtIndexPath:[NSIndexPath indexPathForItem:indexPath.item-1 inSection:indexPath.section]];
+            NSIndexPath *lastItemOfSection = [NSIndexPath indexPathForItem:indexPath.item-1 inSection:indexPath.section];
+            UICollectionViewLayoutAttributes *lastAttribute = [self.layoutInfoDic objectForKey:lastItemOfSection];
+           
+            CGFloat X = 0;
+            CGFloat Y = 0;
+            CGFloat now = lastAttribute.frame.origin.x + lastAttribute.frame.size.width + minimumInteritemSpacing + size.width + insetForSection.right;
+            if(now<=self.collectionViewWidth){
             
+                 X = lastAttribute.frame.origin.x+lastAttribute.frame.size.width+minimumInteritemSpacing;
+                 Y = lastAttribute.frame.origin.y;
+            }else{
             
-            layoutAttribute.frame =
-            CGRectMake(lastAttribute.frame.origin.x + lastAttribute.frame.size.width + minimumInteritemSpacing,
-                       
-                       lastAttribute.frame.origin.y + lastAttribute.frame.size.height + insetForSection.top,
-                       size.width,
-                       size.height);
-            
+                 X = insetForSection.left;
+                 Y = lastAttribute.frame.origin.y+lastAttribute.frame.size.height+minimumLineSpacing;
+            }
+         
+            layoutAttribute.frame = CGRectMake(X, Y, size.width, size.height);
         }
     }
     return layoutAttribute;
@@ -102,35 +89,32 @@
 - (nullable UICollectionViewLayoutAttributes *)layoutAttributesForSupplementaryViewOfKind:(NSString *)elementKind atIndexPath:(NSIndexPath *)indexPath{
 
     UICollectionViewLayoutAttributes *layoutAttributes = [UICollectionViewLayoutAttributes layoutAttributesForSupplementaryViewOfKind:elementKind withIndexPath:indexPath];
-    
-    //NSInteger itemsInSection = [self.collectionView numberOfItemsInSection:indexPath.section];
-    
+
     if([elementKind isEqualToString:UICollectionElementKindSectionHeader]){
     
         CGSize headerSize = [self referenceSizeForHeaderInSection:indexPath.section];
         
-        layoutAttributes.frame = CGRectMake(0, 0, headerSize.width, headerSize.height);
-    
-    }else{
-    
+        if(indexPath.section == 0){
         
-    
+            layoutAttributes.frame = CGRectMake(0, 0, headerSize.width, headerSize.height);
+        }else{
+        
+            NSInteger lastSection = indexPath.section-1;
+            NSInteger itemsInLastSection = [self.collectionView numberOfItemsInSection:lastSection];
+            NSIndexPath *lastSectionLastItemIndexPath = [NSIndexPath indexPathForItem:itemsInLastSection-1 inSection:lastSection];
+            
+            UICollectionViewLayoutAttributes *lastItem = [self.layoutInfoDic objectForKey:lastSectionLastItemIndexPath];
+            UIEdgeInsets insetForSection = [self insetForSectionAtIndex:indexPath.section];
+            layoutAttributes.frame = CGRectMake(0, lastItem.frame.origin.y+lastItem.size.height+insetForSection.bottom, headerSize.width, headerSize.height);
+        }
     }
     
     return layoutAttributes;
 }
 
-/*
-- (nullable UICollectionViewLayoutAttributes *)layoutAttributesForDecorationViewOfKind:(NSString*)elementKind atIndexPath:(NSIndexPath *)indexPath{
- 
-    //UICollectionViewLayoutAttributes
-    + (instancetype)layoutAttributesForDecorationViewOfKind:(NSString *)decorationViewKind withIndexPath:(NSIndexPath *)indexPath;
-}
-*/
-
 - (BOOL)shouldInvalidateLayoutForBoundsChange:(CGRect)oldBounds
 {
-    return YES;
+    return NO;
 }
 
 - (CGSize)collectionViewContentSize{
@@ -139,9 +123,48 @@
     UICollectionViewLayoutAttributes *attributes = [self.layoutInfo lastObject];
     maxHeight = attributes.frame.origin.y + attributes.frame.size.height + 15;
     
-    return CGSizeMake(self.collectionView.frame.size.width, maxHeight);
+    return CGSizeMake(self.collectionViewWidth, maxHeight);
 }
 
+
+#pragma mark - Public
+
+- (void)calculateLayoutAttributes{
+ 
+    
+    [self.layoutInfo removeAllObjects];
+    self.layoutInfo = nil;
+    
+    self.layoutInfo = [NSMutableArray array];
+    
+    [self.layoutInfoDic removeAllObjects];
+    self.layoutInfoDic = nil;
+    self.layoutInfoDic = [NSMutableDictionary dictionary];
+    
+    NSIndexPath *indexPath;
+    NSInteger numSections = [self.collectionView numberOfSections];
+    for(NSInteger section = 0; section < numSections; section++) {
+        
+        NSInteger numItems = [self.collectionView numberOfItemsInSection:section];
+        
+        indexPath = [NSIndexPath indexPathWithIndex:section];
+        UICollectionViewLayoutAttributes *headerAtt = [self layoutAttributesForSupplementaryViewOfKind:UICollectionElementKindSectionHeader atIndexPath:indexPath];
+        
+        [self.layoutInfo addObject:headerAtt];
+        [self.layoutInfoDic setObject:headerAtt forKey:indexPath];
+       
+        for(NSInteger item = 0; item < numItems; item++){
+            
+            indexPath = [NSIndexPath indexPathForItem:item inSection:section];
+            
+            UICollectionViewLayoutAttributes *itemAttrs = [self layoutAttributesForItemAtIndexPath:indexPath];
+            
+            //供layoutAttributesForElementsInRect使用
+            [self.layoutInfo addObject:itemAttrs];
+            [self.layoutInfoDic setObject:itemAttrs forKey:indexPath];
+        }
+    }
+}
 
 
 #pragma mark - Private
@@ -150,7 +173,7 @@
  
     //
     CGSize size = CGSizeZero;
-    if([self.delegate conformsToProtocol:@protocol(ProductFilterLayoutDelegate)] && [self.delegate respondsToSelector:@selector(collectionView:layout:sizeForItemAtIndexPath:)]){
+    if([self.delegate conformsToProtocol:@protocol(ProductFilterCollLayoutDelegate)] && [self.delegate respondsToSelector:@selector(collectionView:layout:sizeForItemAtIndexPath:)]){
         
         size = [self.delegate collectionView:self.collectionView layout:self sizeForItemAtIndexPath:indexPath];
     }
@@ -161,7 +184,7 @@
 - (UIEdgeInsets)insetForSectionAtIndex:(NSInteger)section{
 
   UIEdgeInsets insetForSection = UIEdgeInsetsZero;
-    if([self.delegate conformsToProtocol:@protocol(ProductFilterLayoutDelegate)] && [self.delegate respondsToSelector:@selector(collectionView:layout:insetForSectionAtIndex:)]){
+    if([self.delegate conformsToProtocol:@protocol(ProductFilterCollLayoutDelegate)] && [self.delegate respondsToSelector:@selector(collectionView:layout:insetForSectionAtIndex:)]){
         
         insetForSection = [self.delegate collectionView:self.collectionView layout:self insetForSectionAtIndex:section];
     }
@@ -173,7 +196,7 @@
     
      CGFloat minimumInteritemSpacing = 0;
 
-    if([self.delegate conformsToProtocol:@protocol(ProductFilterLayoutDelegate)] && [self.delegate respondsToSelector:@selector(collectionView:layout:minimumInteritemSpacingForSectionAtIndex:)]){
+    if([self.delegate conformsToProtocol:@protocol(ProductFilterCollLayoutDelegate)] && [self.delegate respondsToSelector:@selector(collectionView:layout:minimumInteritemSpacingForSectionAtIndex:)]){
         
         minimumInteritemSpacing = [self.delegate collectionView:self.collectionView layout:self minimumInteritemSpacingForSectionAtIndex:section];
     }
@@ -184,7 +207,7 @@
 - (CGFloat)minimumLineSpacingForSectionAtIndex:(NSInteger)section{
   
     CGFloat minimumLineSpacing = 0;
-    if([self.delegate conformsToProtocol:@protocol(ProductFilterLayoutDelegate)] && [self.delegate respondsToSelector:@selector(collectionView:layout:minimumLineSpacingForSectionAtIndex:)]){
+    if([self.delegate conformsToProtocol:@protocol(ProductFilterCollLayoutDelegate)] && [self.delegate respondsToSelector:@selector(collectionView:layout:minimumLineSpacingForSectionAtIndex:)]){
         
         minimumLineSpacing = [self.delegate collectionView:self.collectionView layout:self minimumLineSpacingForSectionAtIndex:section];
     }
@@ -195,7 +218,7 @@
 - (CGSize)referenceSizeForHeaderInSection:(NSInteger)section{
     
    CGSize headerSize = CGSizeZero;
-    if([self.delegate conformsToProtocol:@protocol(ProductFilterLayoutDelegate)] && [self.delegate respondsToSelector:@selector(collectionView:layout:referenceSizeForHeaderInSection:)]){
+    if([self.delegate conformsToProtocol:@protocol(ProductFilterCollLayoutDelegate)] && [self.delegate respondsToSelector:@selector(collectionView:layout:referenceSizeForHeaderInSection:)]){
         
         headerSize = [self.delegate collectionView:self.collectionView layout:self referenceSizeForHeaderInSection:section];
     }
@@ -205,7 +228,7 @@
 - (CGSize)referenceSizeForFooterInSection:(NSInteger)section{
     
     CGSize footerSize = CGSizeZero;
-    if([self.delegate conformsToProtocol:@protocol(ProductFilterLayoutDelegate)] && [self.delegate respondsToSelector:@selector(collectionView:layout:referenceSizeForFooterInSection:)]){
+    if([self.delegate conformsToProtocol:@protocol(ProductFilterCollLayoutDelegate)] && [self.delegate respondsToSelector:@selector(collectionView:layout:referenceSizeForFooterInSection:)]){
         
         footerSize = [self.delegate collectionView:self.collectionView layout:self referenceSizeForFooterInSection:section];
     }

@@ -23,7 +23,11 @@
 
 @optional
 
+- (void)loadFilterParamas:(void (^)(NSArray *paramas, NSError *error))callback;
+
 - (NSArray *)items;
+
+- (UICollectionViewLayout *)collectionViewLayout;
 
 - (NSArray *)filterParamas;
 

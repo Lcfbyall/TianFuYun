@@ -20,5 +20,4 @@
 
 - (instancetype)initWithCollectionView:(UICollectionView *)collectionView;
     
-
 @end

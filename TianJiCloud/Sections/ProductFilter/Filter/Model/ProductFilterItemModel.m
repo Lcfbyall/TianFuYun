@@ -20,7 +20,7 @@
         
         NSMutableArray *items = [NSMutableArray array];
         
-        NSArray *titles = @[@"",@"",@"",@"",@""];
+        NSArray *titles = @[@"集合信托",@"资管计划",@"债权基金",@"股权基金",@"证券基金"];
         NSArray *imgs = @[@"",@"",@"",@"",@""];
         
         [titles enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
@@ -41,7 +41,7 @@
         
         NSMutableArray *items = [NSMutableArray array];
         
-        NSArray *titles = @[@"",@"",@""];
+        NSArray *titles = @[@"在售+预热",@"封闭",@"结束"];
         NSArray *imgs   = @[@"",@"",@""];
         
         [titles enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
@@ -62,7 +62,7 @@
         
         NSMutableArray *items = [NSMutableArray array];
         
-        NSArray *titles = @[@"",@"",@""];
+        NSArray *titles = @[@"1%以下",@"1%-3%",@"3%以上"];
         NSArray *imgs   = @[@"",@"",@""];
         
         [titles enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
@@ -84,7 +84,7 @@
         
         NSMutableArray *items = [NSMutableArray array];
         
-        NSArray *titles = @[@"",@"",@"",@"",@"",@""];
+        NSArray *titles = @[@"7%以下",@"7-7.9%",@"8-8.9%",@"9-9.9%",@"10%以上",@"浮动"];
         NSArray *imgs   = @[@"",@"",@"",@"",@"",@""];
         
         [titles enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
@@ -106,7 +106,7 @@
         
         NSMutableArray *items = [NSMutableArray array];
         
-        NSArray *titles = @[@"",@"",@"",@"",@""];
+        NSArray *titles = @[@"12个月以内",@"12个月",@"13-23个月",@"24个月",@"24个月以上"];
         NSArray *imgs   = @[@"",@"",@"",@"",@""];
         
         [titles enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
@@ -128,7 +128,7 @@
         
         NSMutableArray *items = [NSMutableArray array];
         
-        NSArray *titles = @[@"",@"",@"",@""];
+        NSArray *titles = @[@"按季付息",@"半年付息",@"按年付息",@"到期付息"];
         NSArray *imgs   = @[@"",@"",@"",@""];
         
         [titles enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
@@ -151,7 +151,7 @@
         
         NSMutableArray *items = [NSMutableArray array];
         
-        NSArray *titles = @[@"",@"",@"",@"",@"",@"",@"",@"",@""];
+        NSArray *titles = @[@"AAA",@"AA",@"A",@"BBB",@"BB",@"B",@"CCC",@"CC",@"C"];
         NSArray *imgs   = @[@"",@"",@"",@"",@"",@"",@"",@"",@""];
         
         [titles enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
@@ -173,7 +173,7 @@
         
         NSMutableArray *items = [NSMutableArray array];
         
-        NSArray *titles = @[@"",@"",@"",@"",@"",@""];
+        NSArray *titles = @[@"工商企业类",@"金融市场类",@"基础建设类",@"房地产类",@"资金池类",@"其他类"];
         NSArray *imgs   = @[@"",@"",@"",@"",@"",@""];
         
         [titles enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {

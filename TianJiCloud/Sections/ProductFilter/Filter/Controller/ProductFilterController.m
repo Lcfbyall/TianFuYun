@@ -27,6 +27,10 @@
 
 @implementation ProductFilterController
 
+- (void)dealloc {
+    NSLog(@"%@-释放了",self.class);
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -78,8 +82,9 @@
     [self.sureBtn addBlockForControlEvents:UIControlEventTouchUpInside block:^(id  _Nonnull sender) {
         STRONG_SELF(self);
         if(self){
+            
             id params = [self.interactor filterParamas];
-            [UIViewController tjs_pushViewController:ProductFilterResultVC params:params animated:YES];
+            [UIViewController tjs_pushViewController:ProductFilterResultVC params:@{@"keys":params} animated:YES];
         }
     }];
 }

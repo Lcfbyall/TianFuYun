@@ -35,8 +35,6 @@
     TJSProductFilterLayoutImpl *layoutImpl  =  [[TJSProductFilterLayoutImpl alloc]initWithCollectionView:collectionView];
     
     _interactor = [[TJSProductFilterInteractorImpl alloc]init];
-    
-    
     _interactor.delegate       = vc;
     _interactor.dataSource     = dataSourceImpl;
     _interactor.layout         = layoutImpl;
@@ -47,8 +45,6 @@
     
     //2.
     _collectAdapter = [[TJSProductFilterCollAdapter alloc]initWithCollectionView:collectionView];
-    
-    
     _collectAdapter.interactor   = _interactor;
     _collectAdapter.cellDelegate = vc;
     

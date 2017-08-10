@@ -13,10 +13,32 @@
 
 #pragma mark - <TJSProductFilterInteractor>
 
+//数据
+
+- (void)loadFilterParamas:(void (^)(NSArray *paramas, NSError *error))callback{
+
+    WEAK_SELF(self);
+    [self.dataSource loadFilterParamas:^(NSArray *paramas, NSError *error) {
+        
+        STRONG_SELF(self);
+        if(self){
+        
+            if(callback){
+                
+                callback(paramas,error);
+            }
+        }
+        
+    }];
+    
+}
+
 - (NSArray *)items{
   
     return self.dataSource.items;
 }
+
+//
 
 - (NSArray *)filterParamas{
   
@@ -30,15 +52,29 @@
     [self.layout reloadCollect];
 }
 
+- (UICollectionViewLayout *)collectionViewLayout{
+  
+    return self.dataSource.collectionViewLayout;
+}
+
 
 #pragma mark - <ProductFilterLayoutDelegate>
 
 - (void)onRefresh{
-  
-    [self.layout reloadCollect];
     
-    //结束刷新
-    [self.layout endRefresh];
+    //请求
+    WEAK_SELF(self);
+    [self loadFilterParamas:^(NSArray *paramas, NSError *error) {
+        
+        STRONG_SELF(self);
+        if(self){
+        
+            [self.layout reloadCollect];
+            
+            //结束刷新
+            [self.layout endRefresh];
+        }
+    }];
 }
 
 
