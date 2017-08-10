@@ -45,6 +45,16 @@
     return _items;
 }
 
+- (NSArray *)filterParamas{
+
+    return @[];
+}
+
+
+- (void)resetFilterParamas{
+
+
+}
 
 @end
 

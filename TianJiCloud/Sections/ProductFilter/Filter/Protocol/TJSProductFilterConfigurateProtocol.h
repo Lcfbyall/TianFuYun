@@ -21,7 +21,17 @@
 
 @required
 
+//数据
+
 - (NSArray *)items;
+
+- (NSArray *)filterParamas;
+
+//交互
+
+- (void)resetFilterParamas;
+
+
 
 @end
 

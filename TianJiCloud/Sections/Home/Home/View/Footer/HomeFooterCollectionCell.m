@@ -32,7 +32,7 @@
 }
 
 
-#pragma mark - <TJSCollectionViewCellProtocol>
+#pragma mark - <TJSBaseCollectionReusableViewProtocol>
 
 - (void)tjs_bindDataToCellWithValue:(id)value{
   

@@ -18,6 +18,18 @@
     return self.dataSource.items;
 }
 
+- (NSArray *)filterParamas{
+  
+    return [self.dataSource filterParamas];
+}
+
+- (void)resetFilterParamas{
+  
+    [self.dataSource resetFilterParamas];
+    
+    [self.layout reloadCollect];
+}
+
 
 #pragma mark - <ProductFilterLayoutDelegate>
 

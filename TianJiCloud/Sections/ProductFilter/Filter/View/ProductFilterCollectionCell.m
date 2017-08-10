@@ -28,8 +28,15 @@
     return self;
 }
 
+- (void)prepareForReuse{
+    [super prepareForReuse];
+    
+    
+}
 
-#pragma mark - <TJSCollectionViewCellProtocol>
+
+#pragma mark - <TJSBaseCollectionReusableViewProtocol>
+
 
 - (void)tjs_bindDataToCellWithValue:(id)value{
     

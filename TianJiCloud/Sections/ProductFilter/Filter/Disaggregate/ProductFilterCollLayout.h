@@ -18,17 +18,30 @@
                   layout:(ProductFilterCollLayout *)collectionViewLayout
   sizeForItemAtIndexPath:(NSIndexPath *)indexPat;
 
+@optional
+
+- (UIEdgeInsets)collectionView:(UICollectionView *)collectionView
+                        layout:(ProductFilterCollLayout*)collectionViewLayout
+        insetForSectionAtIndex:(NSInteger)section;
+
+- (CGFloat)collectionView:(UICollectionView *)collectionView
+                   layout:(ProductFilterCollLayout*)collectionViewLayout
+                  minimumLineSpacingForSectionAtIndex:(NSInteger)section;
+
+- (CGFloat)collectionView:(UICollectionView *)collectionView
+                   layout:(ProductFilterCollLayout*)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section;
+
+- (CGSize)collectionView:(UICollectionView *)collectionView
+                  layout:(ProductFilterCollLayout*)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section;
+
+- (CGSize)collectionView:(UICollectionView *)collectionView
+                  layout:(ProductFilterCollLayout*)collectionViewLayout referenceSizeForFooterInSection:(NSInteger)section;
+
 
 @end
 
 @interface ProductFilterCollLayout : UICollectionViewLayout
 
 @property (nonatomic,weak) id<ProductFilterLayoutDelegate> delegate;
-
-@property (nonatomic,assign) UIEdgeInsets insets;
-
-@property (nonatomic,assign) CGFloat interMargin;
-
-
 
 @end

@@ -23,8 +23,12 @@
 
 @optional
 
-
 - (NSArray *)items;
+
+- (NSArray *)filterParamas;
+
+- (void)resetFilterParamas;
+    
 
 @end
 

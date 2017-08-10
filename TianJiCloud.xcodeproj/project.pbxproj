@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2C027D041F3B3075001D7EB6 /* FeedBackCommitApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C027D031F3B3075001D7EB6 /* FeedBackCommitApi.m */; };
+		2C027D081F3BF848001D7EB6 /* ProductFilterReusableSectionHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C027D071F3BF847001D7EB6 /* ProductFilterReusableSectionHeader.m */; };
+		2C027D0B1F3BFA28001D7EB6 /* TJSBaseCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C027D0A1F3BFA28001D7EB6 /* TJSBaseCollectionReusableView.m */; };
 		2C02DF8F1F39CA44000410E1 /* MyFavNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C02DF8E1F39CA44000410E1 /* MyFavNetworkTool.m */; };
 		2C02DF971F39CC41000410E1 /* MyFavListConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C02DF961F39CC41000410E1 /* MyFavListConfigurator.m */; };
 		2C02DF9A1F39D4E7000410E1 /* MyFavListInteractorImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C02DF991F39D4E7000410E1 /* MyFavListInteractorImpl.m */; };
@@ -368,6 +370,10 @@
 		2C027D021F3B3075001D7EB6 /* FeedBackCommitApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedBackCommitApi.h; sourceTree = "<group>"; };
 		2C027D031F3B3075001D7EB6 /* FeedBackCommitApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedBackCommitApi.m; sourceTree = "<group>"; };
 		2C027D051F3B30A5001D7EB6 /* ProductFilterResultProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductFilterResultProtocol.h; sourceTree = "<group>"; };
+		2C027D061F3BF847001D7EB6 /* ProductFilterReusableSectionHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductFilterReusableSectionHeader.h; sourceTree = "<group>"; };
+		2C027D071F3BF847001D7EB6 /* ProductFilterReusableSectionHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductFilterReusableSectionHeader.m; sourceTree = "<group>"; };
+		2C027D091F3BFA28001D7EB6 /* TJSBaseCollectionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSBaseCollectionReusableView.h; sourceTree = "<group>"; };
+		2C027D0A1F3BFA28001D7EB6 /* TJSBaseCollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSBaseCollectionReusableView.m; sourceTree = "<group>"; };
 		2C02DF8D1F39CA44000410E1 /* MyFavNetworkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyFavNetworkTool.h; path = TianJiCloud/Sections/Mine/Reward/History/MyFavNetworkTool.h; sourceTree = SOURCE_ROOT; };
 		2C02DF8E1F39CA44000410E1 /* MyFavNetworkTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyFavNetworkTool.m; path = TianJiCloud/Sections/Mine/Reward/History/MyFavNetworkTool.m; sourceTree = SOURCE_ROOT; };
 		2C02DF931F39CADB000410E1 /* MyFavListConfigurateProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MyFavListConfigurateProtocol.h; path = TianJiCloud/Sections/Mine/Reward/History/MyFavListConfigurateProtocol.h; sourceTree = SOURCE_ROOT; };
@@ -3534,6 +3540,8 @@
 			children = (
 				2CCBE48B1F34207C006C4018 /* TJSBaseCollectionViewCell.h */,
 				2CCBE48C1F34207C006C4018 /* TJSBaseCollectionViewCell.m */,
+				2C027D091F3BFA28001D7EB6 /* TJSBaseCollectionReusableView.h */,
+				2C027D0A1F3BFA28001D7EB6 /* TJSBaseCollectionReusableView.m */,
 				2CCBE48D1F34207C006C4018 /* TJSBaseTableHeaderFooterView.h */,
 				2CCBE48E1F34207C006C4018 /* TJSBaseTableHeaderFooterView.m */,
 				2CCBE48F1F34207C006C4018 /* TJSBaseTableViewCell.h */,
@@ -3721,6 +3729,8 @@
 			children = (
 				2CCC85CE1F3B0B650009FC1C /* ProductFilterCollectionCell.h */,
 				2CCC85CF1F3B0B650009FC1C /* ProductFilterCollectionCell.m */,
+				2C027D061F3BF847001D7EB6 /* ProductFilterReusableSectionHeader.h */,
+				2C027D071F3BF847001D7EB6 /* ProductFilterReusableSectionHeader.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -4135,6 +4145,7 @@
 				2CAF42DD1F281B8600ABCA5E /* ProductDeleteNetworkTool.m in Sources */,
 				2C4C1BD11F380DFE00002166 /* MyOrderListViewController.m in Sources */,
 				2C83C71F1F39B9C9004034CA /* PlatformAnnounceController.m in Sources */,
+				2C027D0B1F3BFA28001D7EB6 /* TJSBaseCollectionReusableView.m in Sources */,
 				2C4C1C1F1F38531F00002166 /* TJSMyOrderListCellLayoutConfig.m in Sources */,
 				2C859CE21F31EB2E00B86575 /* MBProgressHUD.m in Sources */,
 				2C85E34D1F2ECC1200ADD360 /* AboutMeViewController.m in Sources */,
@@ -4232,6 +4243,7 @@
 				2C44126D1F21E64600C453EF /* UIButton+ContentRect.m in Sources */,
 				2C89AD871F2C9A90005C29AC /* UISearchBar+CommanStyle.m in Sources */,
 				2C8DE5A41F29FF89009B3AE2 /* ProductSearchController.m in Sources */,
+				2C027D081F3BF848001D7EB6 /* ProductFilterReusableSectionHeader.m in Sources */,
 				2C8DE5F81F2AE9D0009B3AE2 /* DiscoveryNewsNetworkTool.m in Sources */,
 				2C44125D1F21DF3600C453EF /* NSObject+Swizzle.m in Sources */,
 				2C4C1CBE1F3958C900002166 /* FeedBackVCConfig.m in Sources */,

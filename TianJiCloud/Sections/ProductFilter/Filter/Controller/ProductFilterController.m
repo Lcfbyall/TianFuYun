@@ -67,16 +67,20 @@
 #pragma mark - TJSBaseVCConfig
 - (void)tjs_configBaseView{
     
+    WEAK_SELF(self);
     [self.resetBtn addBlockForControlEvents:UIControlEventTouchUpInside block:^(id  _Nonnull sender) {
-        
-        
-        
+        STRONG_SELF(self);
+        if(self){
+            [self.interactor resetFilterParamas];
+        }
     }];
     
     [self.sureBtn addBlockForControlEvents:UIControlEventTouchUpInside block:^(id  _Nonnull sender) {
-        
-        
-        
+        STRONG_SELF(self);
+        if(self){
+            id params = [self.interactor filterParamas];
+            [UIViewController tjs_pushViewController:ProductFilterResultVC params:params animated:YES];
+        }
     }];
 }
 

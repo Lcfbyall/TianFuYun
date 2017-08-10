@@ -8,9 +8,11 @@
 
 #import "TJSProductFilterCollAdapter.h"
 #import "ProductFilterCollLayout.h"
+#import "ProductFilterReusableSectionHeader.h"
 #import "ProductFilterCollectionCell.h"
 #import "ProductFilterItemModel.h"
 
+static NSString *headerIdentifier = @"ProductFilterReusableSectionHeader";
 static NSString *identifier = @"ProductFilterCollectionCell";
 
 
@@ -40,12 +42,11 @@ static NSString *identifier = @"ProductFilterCollectionCell";
 
     ProductFilterCollLayout *layout = [[ProductFilterCollLayout alloc]init];
     layout.delegate  = self;
-    layout.insets = UIEdgeInsetsMake(10, 10, 10, 10);
-    layout.interMargin = 10;
+   
 
     _collectionView.collectionViewLayout = layout;
     
-    
+    [_collectionView registerClass:[ProductFilterReusableSectionHeader class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:headerIdentifier];
     [_collectionView registerClass:[ProductFilterCollectionCell class] forCellWithReuseIdentifier:identifier];
     
 }
@@ -85,12 +86,27 @@ static NSString *identifier = @"ProductFilterCollectionCell";
     return cell;
 }
 
+- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath{
+  
+    ProductFilterItemModel *model = [[self.interactor items] objectAtIndex:indexPath.section];
+    
+    if([kind isEqualToString:UICollectionElementKindSectionHeader]){
+        ProductFilterReusableSectionHeader *header = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:headerIdentifier forIndexPath:indexPath];
+        
+        [header tjs_bindDataToCellWithValue:model.type];
+        
+        return header;
+    }
+    
+    return nil;
+}
 
 #pragma mark - <UICollectionViewDelegate>
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
   
 //    [collectionView deselectItemAtIndexPath:indexPath animated:YES];
+    
     
 
 }
@@ -107,6 +123,31 @@ static NSString *identifier = @"ProductFilterCollectionCell";
 
 }
 
+- (UIEdgeInsets)collectionView:(UICollectionView *)collectionView
+                        layout:(ProductFilterCollLayout *)collectionViewLayout
+        insetForSectionAtIndex:(NSInteger)section{
+
+
+    return UIEdgeInsetsZero;
+}
+
+- (CGFloat)collectionView:(UICollectionView *)collectionView
+                   layout:(ProductFilterCollLayout *)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section{
+  
+    return 10;
+}
+
+- (CGFloat)collectionView:(UICollectionView *)collectionView
+                   layout:(ProductFilterCollLayout *)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section{
+
+    return 10;
+}
+
+- (CGSize)collectionView:(UICollectionView *)collectionView
+                  layout:(ProductFilterCollLayout *)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section{
+
+    return CGSizeMake(SCREEN_WIDTH, 50);
+}
 
 
 @end
