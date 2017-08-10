@@ -10,4 +10,7 @@
 
 @interface ProductSearchTableAdapter : NSObject
 
+- (instancetype)initWithCollectionView:(UICollectionView *)collectionView;
+
+
 @end

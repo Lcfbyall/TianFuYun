@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+@class ProductSearchController;
 @interface ProductSearchConfigurator : NSObject
+
+- (void)setup:(ProductSearchController *)vc;
+
 
 @end

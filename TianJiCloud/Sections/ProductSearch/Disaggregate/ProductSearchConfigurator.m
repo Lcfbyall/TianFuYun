@@ -7,7 +7,30 @@
 //
 
 #import "ProductSearchConfigurator.h"
+#import "ProductSearchController.h"
+
+#import "ProductSearchInteractorImpl.h"
+#import "ProductSearchDataSourceImpl.h"
+#import "ProductSearchLayoutImpl.h"
+#import "ProductSearchTableAdapter.h"
+
+@interface ProductSearchConfigurator ()
+
+@property (nonatomic,strong) ProductSearchInteractorImpl *interactor;
+
+@property (nonatomic,strong) ProductSearchTableAdapter *adapter;
+
+
+@end
 
 @implementation ProductSearchConfigurator
+
+- (void)setup:(ProductSearchController *)vc{
+
+    UICollectionView *collectionView = (UICollectionView *)vc.tjs_listView;
+
+
+
+}
 
 @end

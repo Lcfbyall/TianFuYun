@@ -36,10 +36,10 @@
  @property (strong, nonatomic) IBInspectable UIColor *tjs_borderColorHighlighted;
  @property (strong, nonatomic) IBInspectable UIColor *tjs_borderColorSelected;
  
- @property (assign, nonatomic) IBInspectable CGFloat tjs_borderWidthNormal;
- @property (assign, nonatomic) IBInspectable CGFloat tjs_borderWidthDisabled;
- @property (assign, nonatomic) IBInspectable CGFloat tjs_borderWidthHighlighted;
- @property (assign, nonatomic) IBInspectable CGFloat tjs_borderWidthSelected;
+ //@property (assign, nonatomic) IBInspectable CGFloat tjs_borderWidthNormal;
+ //@property (assign, nonatomic) IBInspectable CGFloat tjs_borderWidthDisabled;
+ //@property (assign, nonatomic) IBInspectable CGFloat tjs_borderWidthHighlighted;
+ //@property (assign, nonatomic) IBInspectable CGFloat tjs_borderWidthSelected;
 
 
 - (void)tjs_setBackGroundColor:(UIColor *)backGroundColor

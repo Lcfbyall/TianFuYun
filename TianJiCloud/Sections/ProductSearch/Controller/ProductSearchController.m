@@ -8,10 +8,18 @@
 
 #import "ProductSearchController.h"
 #import "ProductSearchVCConfig.h"
+#import "ProductSearchConfigurator.h"
+
 
 @interface ProductSearchController ()
 
 @property (nonatomic,strong) ProductSearchVCConfig *searchConfig;
+
+@property (nonatomic,strong) ProductSearchConfigurator *configurator;
+
+@property (weak, nonatomic) IBOutlet UICollectionView *searchlist;
+
+
 
 @end
 
@@ -22,7 +30,8 @@
     // Do any additional setup after loading the view.
     
     [self setSearchConfig];
-    
+
+    [self setupconfigurator];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -52,8 +61,35 @@
     _searchConfig = searchConfig;
 }
 
+- (void)setupconfigurator{
+
+    ProductSearchConfigurator *configurator = [[ProductSearchConfigurator alloc]init];
+
+    [configurator setup:self];
+    _configurator = configurator;
+
+}
+
+
 
 #pragma mark - <ProductSearchVCConfig>
+
+
+
+#pragma mark - <>
+
+- (void)tjs_configBaseView{
+
+
+}
+
+
+- (UIView *)tjs_listView{
+
+    return  _searchlist;
+
+}
+
 
 
 @end

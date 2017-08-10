@@ -10,4 +10,7 @@
 
 @interface ProductSearchLayoutImpl : NSObject
 
+- (instancetype)initWithCollectionView:(UICollectionView *)collectionView;
+
+
 @end

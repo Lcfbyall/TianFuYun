@@ -10,4 +10,16 @@
 
 @implementation ProductSearchTableAdapter
 
+- (instancetype)initWithCollectionView:(UICollectionView *)collectionView{
+
+    self = [super init];
+
+    if(self){
+
+
+    }
+
+    return self;
+}
+
 @end
