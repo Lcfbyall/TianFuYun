@@ -8,6 +8,8 @@
 
 #import "TJSBaseViewController.h"
 
-@interface ProductFilterResultController : TJSBaseViewController
+#import "ProductFilterResultConfigurateProtocol.h"
+
+@interface ProductFilterResultController : TJSBaseViewController<ProductFilterResultInteractorDelegate>
 
 @end

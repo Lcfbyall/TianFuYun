@@ -7,7 +7,29 @@
 //
 
 #import "FilterResultVCConfig.h"
+#import "ProductFilterResultController.h"
+
+@interface FilterResultVCConfig ()
+
+@property (nonatomic,weak)ProductFilterResultController *vc;
+
+@end
 
 @implementation FilterResultVCConfig
+
+- (void)setup:(ProductFilterResultController *)vc{
+ 
+    _vc = vc;
+    
+    _vc.view.backgroundColor = ThemeService.origin_color_00;
+    
+    _vc.title = @"产品筛选";
+
+}
+
+
+
+
+
 
 @end

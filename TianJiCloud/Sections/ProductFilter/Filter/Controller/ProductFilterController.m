@@ -34,7 +34,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.title = @"产品筛选";
     
     [self setupConfig];
     
@@ -55,6 +54,7 @@
 - (void)setupConfig{
 
     ProducFilterVCConfig *config = [[ProducFilterVCConfig alloc]init];
+    [config setup:self];
     [config resetBtnConfig:self.resetBtn];
     [config sureBtnConfig:self.sureBtn];
     _config = config;

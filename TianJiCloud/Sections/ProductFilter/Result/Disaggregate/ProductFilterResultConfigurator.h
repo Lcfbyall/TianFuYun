@@ -1,8 +1,8 @@
 //
-//  FilterResultVCConfig.h
+//  ProductFilterResultConfigurator.h
 //  TianJiCloud
 //
-//  Created by 朱鹏 on 2017/8/9.
+//  Created by 朱鹏 on 2017/8/10.
 //  Copyright © 2017年 TianJiMoney. All rights reserved.
 //
 
@@ -10,8 +10,9 @@
 
 @class ProductFilterResultController;
 
-@interface FilterResultVCConfig : NSObject
+@interface ProductFilterResultConfigurator : NSObject
 
 - (void)setup:(ProductFilterResultController *)vc;
+
 
 @end

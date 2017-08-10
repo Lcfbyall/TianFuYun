@@ -141,27 +141,31 @@
     self.layoutInfoDic = nil;
     self.layoutInfoDic = [NSMutableDictionary dictionary];
     
-    NSIndexPath *indexPath;
-    NSInteger numSections = [self.collectionView numberOfSections];
-    for(NSInteger section = 0; section < numSections; section++) {
+    
+    @autoreleasepool {
         
-        NSInteger numItems = [self.collectionView numberOfItemsInSection:section];
-        
-        indexPath = [NSIndexPath indexPathWithIndex:section];
-        UICollectionViewLayoutAttributes *headerAtt = [self layoutAttributesForSupplementaryViewOfKind:UICollectionElementKindSectionHeader atIndexPath:indexPath];
-        
-        [self.layoutInfo addObject:headerAtt];
-        [self.layoutInfoDic setObject:headerAtt forKey:indexPath];
-       
-        for(NSInteger item = 0; item < numItems; item++){
+        NSIndexPath *indexPath;
+        NSInteger numSections = [self.collectionView numberOfSections];
+        for(NSInteger section = 0; section < numSections; section++) {
             
-            indexPath = [NSIndexPath indexPathForItem:item inSection:section];
+            NSInteger numItems = [self.collectionView numberOfItemsInSection:section];
             
-            UICollectionViewLayoutAttributes *itemAttrs = [self layoutAttributesForItemAtIndexPath:indexPath];
+            indexPath = [NSIndexPath indexPathWithIndex:section];
+            UICollectionViewLayoutAttributes *headerAtt = [self layoutAttributesForSupplementaryViewOfKind:UICollectionElementKindSectionHeader atIndexPath:indexPath];
             
-            //供layoutAttributesForElementsInRect使用
-            [self.layoutInfo addObject:itemAttrs];
-            [self.layoutInfoDic setObject:itemAttrs forKey:indexPath];
+            [self.layoutInfo addObject:headerAtt];
+            [self.layoutInfoDic setObject:headerAtt forKey:indexPath];
+           
+            for(NSInteger item = 0; item < numItems; item++){
+                
+                indexPath = [NSIndexPath indexPathForItem:item inSection:section];
+                
+                UICollectionViewLayoutAttributes *itemAttrs = [self layoutAttributesForItemAtIndexPath:indexPath];
+                
+                //供layoutAttributesForElementsInRect使用
+                [self.layoutInfo addObject:itemAttrs];
+                [self.layoutInfoDic setObject:itemAttrs forKey:indexPath];
+            }
         }
     }
 }

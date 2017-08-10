@@ -23,7 +23,6 @@
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="lqx-2P-VYZ">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="612"/>
-                                <color key="backgroundColor" red="1" green="0.26337714109999999" blue="0.20233296440000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="QGd-sv-rsh">
                                     <size key="itemSize" width="150" height="163"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -79,12 +78,27 @@
                     <view key="view" contentMode="scaleToFill" id="GjK-oY-qsx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="t8Y-IV-8rC">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="t8Y-IV-8rC" firstAttribute="leading" secondItem="GjK-oY-qsx" secondAttribute="leading" id="2wI-0w-maz"/>
+                            <constraint firstAttribute="bottom" secondItem="t8Y-IV-8rC" secondAttribute="bottom" id="P7j-64-ZOj"/>
+                            <constraint firstItem="t8Y-IV-8rC" firstAttribute="top" secondItem="GjK-oY-qsx" secondAttribute="top" id="a73-bY-WcH"/>
+                            <constraint firstAttribute="trailing" secondItem="t8Y-IV-8rC" secondAttribute="trailing" id="kjx-he-eVn"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="resultlist" destination="t8Y-IV-8rC" id="N1t-d4-8cp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="90k-Ag-UoH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4364" y="610"/>
+            <point key="canvasLocation" x="4364" y="609.44527736131943"/>
         </scene>
         <!--Base Navigation Controller-->
         <scene sceneID="SpR-ny-6eU">

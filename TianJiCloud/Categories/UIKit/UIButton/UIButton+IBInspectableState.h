@@ -30,7 +30,7 @@
 @property (copy, nonatomic) IBInspectable   NSString *tjs_titleHighlighted;
 @property (copy, nonatomic) IBInspectable   NSString *tjs_titleSelected;
 
-/*
+
  @property (strong, nonatomic) IBInspectable UIColor *tjs_borderColorNormal;
  @property (strong, nonatomic) IBInspectable UIColor *tjs_borderColorDisabled;
  @property (strong, nonatomic) IBInspectable UIColor *tjs_borderColorHighlighted;
@@ -40,7 +40,7 @@
  @property (assign, nonatomic) IBInspectable CGFloat tjs_borderWidthDisabled;
  @property (assign, nonatomic) IBInspectable CGFloat tjs_borderWidthHighlighted;
  @property (assign, nonatomic) IBInspectable CGFloat tjs_borderWidthSelected;
- */
+
 
 - (void)tjs_setBackGroundColor:(UIColor *)backGroundColor
                       forState:(UIControlState)state;

@@ -21,7 +21,9 @@
  
     _vc = vc;
     
+    _vc.title = @"产品筛选";
     
+    _vc.view.backgroundColor = ThemeService.origin_color_00;
     
 }
 

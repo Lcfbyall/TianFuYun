@@ -191,6 +191,52 @@ static void * TJSUIButtonStateChangedContext = & TJSUIButtonStateChangedContext;
 }
 
 
+#pragma mark tjs_borderColor for state
+
+- (UIColor *)tjs_borderColorNormal{
+  
+    return  [self tjs_borderColorForState:UIControlStateNormal];
+}
+
+- (void)setTjs_borderColorNormal:(UIColor *)tjs_borderColorNormal{
+  
+    [self tjs_setBorderColor:tjs_borderColorNormal forState:UIControlStateNormal];
+    
+}
+
+- (UIColor *)tjs_borderColorDisabled{
+  
+    return [self tjs_borderColorForState:UIControlStateDisabled];
+}
+
+- (void)setTjs_borderColorDisabled:(UIColor *)tjs_borderColorDisabled{
+
+    [self tjs_setBorderColor:tjs_borderColorDisabled forState:UIControlStateDisabled];
+}
+
+- (UIColor *)tjs_borderColorHighlighted{
+   
+    return [self tjs_borderColorForState:UIControlStateHighlighted];
+}
+
+- (void)setTjs_borderColorHighlighted:(UIColor *)tjs_borderColorHighlighted{
+  
+    [self tjs_setBorderColor:tjs_borderColorHighlighted forState:UIControlStateHighlighted];
+}
+
+- (UIColor *)tjs_borderColorSelected{
+  
+    return  [self tjs_borderColorForState:UIControlStateSelected];
+}
+
+- (void)setTjs_borderColorSelected:(UIColor *)tjs_borderColorSelected{
+
+    [self tjs_setBorderColor:tjs_borderColorSelected forState:UIControlStateSelected];
+}
+
+#pragma mark tjs_borderWidth for state
+
+
 
 
 #pragma mark tools
