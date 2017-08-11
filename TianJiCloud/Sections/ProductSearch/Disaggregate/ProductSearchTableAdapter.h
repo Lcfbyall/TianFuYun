@@ -8,7 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
-@interface ProductSearchTableAdapter : NSObject
+#import "ProductSerachConfigurateProtocol.h"
+
+@interface ProductSearchTableAdapter : NSObject<UICollectionViewDataSource,UICollectionViewDelegate>
+
+@property (nonatomic,weak) id<ProductSerachInteractor> interactor;
+
+//@property (nonatomic,weak) id<TJSProductSearchCellDelegate> cellDelegate;
+
 
 - (instancetype)initWithCollectionView:(UICollectionView *)collectionView;
 

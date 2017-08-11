@@ -8,6 +8,25 @@
 
 #import "ProductFilterResultInteractorImpl.h"
 
+@interface ProductFilterResultInteractorImpl ()
+
+@end
+
 @implementation ProductFilterResultInteractorImpl
+
+
+#pragma mark - <>
+
+- (NSArray *)items{
+  
+    return self.dataSource.items;
+}
+
+#pragma mark - <ProductFilterResultLayoutDelegate>
+
+- (void)onRefresh{
+
+
+}
 
 @end

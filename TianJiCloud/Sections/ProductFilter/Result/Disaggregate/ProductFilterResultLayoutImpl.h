@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ProductFilterResultPrivateProtocol.h"
 
-@interface ProductFilterResultLayoutImpl : NSObject
+@interface ProductFilterResultLayoutImpl : NSObject<ProductFilterResultLayout>
+
+- (instancetype)initWithTableView:(UITableView *)tableView;
+
 
 @end

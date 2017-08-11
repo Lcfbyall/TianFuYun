@@ -8,6 +8,32 @@
 
 #import "ProductFilterResultDataSourceImpl.h"
 
+@interface ProductFilterResultDataSourceImpl ()
+
+@property (nonatomic,strong) NSMutableArray *items;
+
+
+@end
+
 @implementation ProductFilterResultDataSourceImpl
+
+
+
+
+#pragma mark - <ProductFilterResultDataSource>
+
+- (NSArray *)items{
+  
+    return @[@"",@"",@""];
+}
+
+
+@end
+
+
+#pragma mark - ProductFilterResultOperateResult
+
+@implementation ProductFilterResultOperateResult
+
 
 @end

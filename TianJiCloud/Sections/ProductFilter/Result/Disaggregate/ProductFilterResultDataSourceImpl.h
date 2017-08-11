@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface ProductFilterResultDataSourceImpl : NSObject
+#import "ProductFilterResultPrivateProtocol.h"
+
+@interface ProductFilterResultDataSourceImpl : NSObject<ProductFilterResultDataSource>
 
 @end

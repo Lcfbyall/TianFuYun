@@ -20,6 +20,8 @@
 
 @required
 
+- (NSArray *)items;
+
 @end
 
 #endif /* ProductFilterResultConfigurateProtocol_h */

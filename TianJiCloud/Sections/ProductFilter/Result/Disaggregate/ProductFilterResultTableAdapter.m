@@ -7,7 +7,59 @@
 //
 
 #import "ProductFilterResultTableAdapter.h"
+#import "ProductFilterResultCell.h"
+
+static NSString *const identifier = @"ProductFilterResultCell";
+@interface ProductFilterResultTableAdapter ()
+
+@property (nonatomic,weak)UITableView *tableView;
+
+
+@end
 
 @implementation ProductFilterResultTableAdapter
+
+
+- (instancetype)initWithTableView:(UITableView *)tableView{
+  
+    self = [super init];
+    if(self){
+    
+        _tableView = tableView;
+        
+        [self setupTableView];
+    }
+    return self;
+}
+
+- (void)setupTableView{
+  
+    [_tableView registerClass:[ProductFilterResultCell class] forCellReuseIdentifier:identifier];
+}
+
+
+#pragma mark - <UITableViewDataSource>
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+ 
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+
+    return self.interactor.items.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+ 
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+    
+    return cell;
+    
+}
+
+#pragma mark - <UITableViewDelegate>
+
+
 
 @end

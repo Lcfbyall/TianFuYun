@@ -10,7 +10,7 @@
 
 @interface TJSProductFilterLayoutImpl ()
 
-@property (nonatomic,strong)  UICollectionView *collectionView;
+@property (nonatomic,weak)  UICollectionView *collectionView;
 
 @property (nonatomic,weak) id<ProductFilterLayoutDelegate> delegate;
 

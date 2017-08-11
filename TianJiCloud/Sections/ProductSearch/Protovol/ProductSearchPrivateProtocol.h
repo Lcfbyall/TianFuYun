@@ -10,4 +10,57 @@
 #define ProductSearchPrivateProtocol_h
 
 
+@interface ProductSearchOperateResult : NSObject
+
+@property (nonatomic,copy) NSArray *indexpaths;
+
+@property (nonatomic,copy) NSArray *productInfoModels;
+@end
+
+@protocol ProductSearchDataSource <NSObject>
+
+@optional
+
+- (NSArray *)items;
+
+@end
+
+
+
+@protocol ProductSearchLayoutDelegate <NSObject>
+
+@optional
+
+- (void)onRefresh;
+
+@end
+
+@protocol ProductSearchLayout <NSObject>
+
+@optional
+
+- (void)reloadCollect;
+
+- (void)beginRefresh;
+
+- (void)endRefresh;
+
+- (void)setDelegate:(id<ProductSearchLayoutDelegate>)delegate;
+
+
+@end
+
+
+
+
+#import "ProductSearchController.h"
+
+@interface ProductSearchController (Interactor)
+
+- (void)setInteractor:(id<ProductSerachInteractor>) interactor;
+
+@end
+
+
+
 #endif /* ProductSearchPrivateProtocol_h */

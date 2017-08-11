@@ -8,6 +8,24 @@
 
 #import "ProductSearchInteractorImpl.h"
 
+
+
 @implementation ProductSearchInteractorImpl
+
+
+#pragma mark - <ProductSerachInteractor>
+
+- (NSArray *)items{
+
+   return  [self.dataSource items];
+}
+
+#pragma mark - <ProductSearchLayoutDelegate>
+
+- (void)onRefresh{
+
+
+}
+
 
 @end

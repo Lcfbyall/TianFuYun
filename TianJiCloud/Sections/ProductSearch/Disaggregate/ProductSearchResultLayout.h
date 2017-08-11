@@ -8,6 +8,24 @@
 
 #import <UIKit/UIKit.h>
 
+
+@class ProductSearchResultLayout;
+
+@protocol ProductSearchResultLayoutDelegate <NSObject>
+
+@required
+
+- (CGSize)collectionView:(UICollectionView *)collectionView
+                  resultLayout:(ProductSearchResultLayout *)collectionViewLayout
+  sizeForItemAtIndexPath:(NSIndexPath *)indexPat;
+
+
+@end
+
+
+
 @interface ProductSearchResultLayout : UICollectionViewLayout
+
+
 
 @end

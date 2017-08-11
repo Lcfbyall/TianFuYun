@@ -21,6 +21,10 @@
 
 @required
 
+- (NSArray *)items;
+
+
+
 @end
 
 

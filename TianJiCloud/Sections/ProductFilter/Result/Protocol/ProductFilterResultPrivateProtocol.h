@@ -22,6 +22,8 @@
 
 @optional
 
+- (NSArray *)items;
+
 @end
 
 
@@ -37,6 +39,14 @@
 @protocol ProductFilterResultLayout <NSObject>
 
 @optional
+
+- (void)reloadTable;
+
+- (void)beginRefresh;
+
+- (void)endRefresh;
+
+- (void)setDelegate:(id<ProductFilterResultLayoutDelegate>)delegate;
 
 
 @end

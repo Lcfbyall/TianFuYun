@@ -8,6 +8,35 @@
 
 #import "ProductSearchDataSourceImpl.h"
 
+
+@interface ProductSearchDataSourceImpl ()
+
+@property (nonatomic,strong)NSMutableArray *items;
+
+
+@end
+
 @implementation ProductSearchDataSourceImpl
+
+
+
+
+#pragma mark - <ProductSearchDataSource>
+
+- (NSArray *)items{
+
+    return @[@"",@"",@""];
+}
+
+
+
+
+@end
+
+
+#pragma mark - ProductSearchOperateResult
+
+@implementation ProductSearchOperateResult
+
 
 @end

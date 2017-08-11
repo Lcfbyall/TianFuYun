@@ -7,8 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ProductSearchPrivateProtocol.h"
 
-@interface ProductSearchDataSourceImpl : NSObject
+
+@interface ProductSearchDataSourceImpl : NSObject<ProductSearchDataSource>
 
 
 

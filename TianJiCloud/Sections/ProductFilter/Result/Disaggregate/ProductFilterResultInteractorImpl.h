@@ -7,7 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ProductFilterResultConfigurateProtocol.h"
+#import "ProductFilterResultPrivateProtocol.h"
 
-@interface ProductFilterResultInteractorImpl : NSObject
+
+@interface ProductFilterResultInteractorImpl : NSObject<ProductFilterResultInteractor,ProductFilterResultLayoutDelegate>
+
+
+@property(nonatomic,weak) id<ProductFilterResultInteractorDelegate> delegate;
+
+@property(nonatomic,strong) id<ProductFilterResultDataSource> dataSource;
+
+@property(nonatomic,strong) id<ProductFilterResultLayout> layout;
+
 
 @end

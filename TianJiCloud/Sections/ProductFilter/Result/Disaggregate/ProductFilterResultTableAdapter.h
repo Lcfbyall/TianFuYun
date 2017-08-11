@@ -8,6 +8,17 @@
 
 #import <Foundation/Foundation.h>
 
-@interface ProductFilterResultTableAdapter : NSObject
+#import "ProductFilterResultConfigurateProtocol.h"
+
+@interface ProductFilterResultTableAdapter : NSObject<UITableViewDataSource,UITableViewDelegate>
+
+
+@property (nonatomic,weak) id<ProductFilterResultInteractor> interactor;
+
+//@property (nonatomic,weak) id<TJSProductFilterResultCellDelegate> cellDelegate;
+
+- (instancetype)initWithTableView:(UITableView *)tableView;
+
+
 
 @end

@@ -8,6 +8,14 @@
 
 #import "ProductSearchLayoutImpl.h"
 
+@interface ProductSearchLayoutImpl ()
+
+@property (nonatomic,weak) id<ProductSearchLayoutDelegate> delegate;
+
+@property (nonatomic,weak) UICollectionView *collectionView;
+
+@end
+
 @implementation ProductSearchLayoutImpl
 
 - (instancetype)initWithCollectionView:(UICollectionView *)collectionView{
@@ -15,11 +23,55 @@
     self = [super init];
 
     if(self){
-
+ 
+        _collectionView = collectionView;
 
     }
     
     return self;
 }
+
+
+#pragma mark - <ProductSearchLayout>
+
+- (void)reloadCollect{
+
+    [self.collectionView reloadData];
+}
+
+- (void)beginRefresh{
+  
+    [self.collectionView.mj_header beginRefreshing];
+}
+
+- (void)endRefresh{
+
+    [self.collectionView.mj_header endRefreshing];
+}
+
+
+#pragma mark - Private
+
+- (void)setupRefreshControl{
+
+    
+    WEAK_SELF(self);
+    
+    self.collectionView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        
+        STRONG_SELF(self);
+        
+        if(self){
+            
+            if ([self.delegate respondsToSelector:@selector(onRefresh)])
+            {
+                [self.delegate onRefresh];
+            }
+            
+        }
+        
+    }];
+}
+
 
 @end

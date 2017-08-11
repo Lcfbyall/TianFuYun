@@ -20,17 +20,49 @@
 
 @property (nonatomic,strong) ProductSearchTableAdapter *adapter;
 
-
 @end
 
 @implementation ProductSearchConfigurator
+
 
 - (void)setup:(ProductSearchController *)vc{
 
     UICollectionView *collectionView = (UICollectionView *)vc.tjs_listView;
 
+    
+    //1.
+    
+    ProductSearchDataSourceImpl *dataSource = [[ProductSearchDataSourceImpl alloc]init];
+    
+    ProductSearchLayoutImpl *layout = [[ProductSearchLayoutImpl alloc]initWithCollectionView:collectionView];
+    
+    _interactor = [[ProductSearchInteractorImpl alloc]init];
+    _interactor.delegate = vc;
+    _interactor.dataSource = dataSource;
+    _interactor.layout = layout;
+    
+    [layout setDelegate:_interactor];
+    
+    
+    //2.
+    _adapter = [[ProductSearchTableAdapter alloc]initWithCollectionView:collectionView];
+    
+    _adapter.interactor = _interactor;
+//    _adapter.cellDelegate = vc;
+    
+    
+    //3.
+    collectionView.dataSource = _adapter;
+    collectionView.delegate = _adapter;
+    
 
-
+    //4.
+    [vc setInteractor:_interactor];
+    
+    
+    //5.
+    [layout beginRefresh];
+    
 }
 
 @end

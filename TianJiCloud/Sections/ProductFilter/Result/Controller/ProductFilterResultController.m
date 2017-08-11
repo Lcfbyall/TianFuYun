@@ -17,6 +17,8 @@
 
 @property (nonatomic,strong)ProductFilterResultConfigurator *configurator;
 
+@property (nonatomic,strong) id<ProductFilterResultInteractor> interactor;
+
 @property (weak, nonatomic) IBOutlet UITableView *resultlist;
 
 

@@ -7,8 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ProductSearchPrivateProtocol.h"
 
-@interface ProductSearchLayoutImpl : NSObject
+@interface ProductSearchLayoutImpl : NSObject<ProductSearchLayout>
 
 - (instancetype)initWithCollectionView:(UICollectionView *)collectionView;
 

@@ -8,6 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
-@interface ProductSearchInteractorImpl : NSObject
+#import "ProductSerachConfigurateProtocol.h"
+#import "ProductSearchPrivateProtocol.h"
+
+@interface ProductSearchInteractorImpl : NSObject<ProductSerachInteractor,ProductSearchLayoutDelegate>
+
+@property(nonatomic,weak) id<ProductSerachInteractorDelegate> delegate;
+
+@property(nonatomic,strong) id<ProductSearchDataSource> dataSource;
+
+@property(nonatomic,strong) id<ProductSearchLayout> layout;
 
 @end

@@ -8,6 +8,23 @@
 
 #import <UIKit/UIKit.h>
 
+
+@class ProductSearchHotLayout;
+@protocol ProductSearchHotLayoutDelegate <NSObject>
+
+@required
+
+- (CGSize)collectionView:(UICollectionView *)collectionView
+                  hotLayout:(ProductSearchHotLayout *)collectionViewLayout
+  sizeForItemAtIndexPath:(NSIndexPath *)indexPat;
+
+
+@end
+
+
 @interface ProductSearchHotLayout : UICollectionViewLayout
+
+
+
 
 @end
