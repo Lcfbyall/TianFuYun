@@ -9,14 +9,13 @@
 #ifndef TJSMyOrderListCellProtocol_h
 #define TJSMyOrderListCellProtocol_h
 
-@protocol MyOrderListCellDelegate <NSObject>
+#import "TJSBaseTableViewCellDelegate.h"
+
+
+@protocol MyOrderListCellDelegate <TJSBaseTableViewCellDelegate>
 
 @optional
 
-- (BOOL)onTapCell:(id)obj;
-
-- (BOOL)onLongPressCell:(id)obj
-                 inView:(UIView *)view;
 
 @end
 

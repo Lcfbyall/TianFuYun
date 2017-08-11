@@ -6,26 +6,9 @@
 //  Copyright © 2017年 TianJiMoney. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "TJSBaseCollectionViewLayout.h"
 
-
-@class ProductSearchResultLayout;
-
-@protocol ProductSearchResultLayoutDelegate <NSObject>
-
-@required
-
-- (CGSize)collectionView:(UICollectionView *)collectionView
-                  resultLayout:(ProductSearchResultLayout *)collectionViewLayout
-  sizeForItemAtIndexPath:(NSIndexPath *)indexPat;
-
-
-@end
-
-
-
-@interface ProductSearchResultLayout : UICollectionViewLayout
-
+@interface ProductSearchResultLayout : TJSBaseCollectionViewLayout
 
 
 @end

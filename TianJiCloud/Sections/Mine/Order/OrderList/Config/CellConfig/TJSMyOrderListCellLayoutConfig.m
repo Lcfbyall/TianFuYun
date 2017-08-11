@@ -14,11 +14,10 @@
 
 + (instancetype)sharedLayoutConfig
 {
-    static TJSMyOrderListCellLayoutConfig *instance = nil;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        instance = [[TJSMyOrderListCellLayoutConfig alloc] init];
-    });
+    TJSMyOrderListCellLayoutConfig *instance = nil;
+   
+    instance = [[TJSMyOrderListCellLayoutConfig alloc] init];
+    
     return instance;
 }
 

@@ -33,8 +33,8 @@ static NSString *const identifier = @"ProductFilterResultCell";
 }
 
 - (void)setupTableView{
-  
-    [_tableView registerClass:[ProductFilterResultCell class] forCellReuseIdentifier:identifier];
+
+    [_tableView registerNib:[UINib nibWithNibName:NSStringFromClass([ProductFilterResultCell class]) bundle:[NSBundle mainBundle]] forCellReuseIdentifier:identifier];
 }
 
 

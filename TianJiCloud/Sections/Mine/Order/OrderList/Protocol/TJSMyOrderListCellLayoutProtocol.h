@@ -9,21 +9,11 @@
 #ifndef TJSMyOrderListCellLayoutProtocol_h
 #define TJSMyOrderListCellLayoutProtocol_h
 
-@protocol TJSMyOrderListCellLayoutConfig <NSObject>
+#import "TJSBaseCellLayoutProtocol.h"
+
+@protocol TJSMyOrderListCellLayoutConfig <TJSBaseCellLayoutConfig>
 
 @optional
-
-/**
- * @return 返回message的内容大小
- */
-- (CGSize)contentSize:(id)model cellWidth:(CGFloat)width;
-
-
-/**
- *  需要构造的cellContent类名
- */
-- (NSString *)cellContent:(id)model;
-
 
 @end
 

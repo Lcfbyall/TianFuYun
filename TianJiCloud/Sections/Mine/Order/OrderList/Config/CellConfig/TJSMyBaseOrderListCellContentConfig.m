@@ -21,14 +21,11 @@
 
 + (instancetype)sharedFacotry{
 
-    static TJSMyOrderListCellContentConfigFactory *instance = nil;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        
-        instance = [[TJSMyOrderListCellContentConfigFactory alloc] init];
-    });
-    return instance;
+    TJSMyOrderListCellContentConfigFactory *instance = nil;
+    
+    instance = [[TJSMyOrderListCellContentConfigFactory alloc] init];
 
+    return instance;
 }
 
 - (instancetype)init

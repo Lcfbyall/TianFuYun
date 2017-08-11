@@ -9,8 +9,9 @@
 #ifndef TJSProductFilterCellProtocol_h
 #define TJSProductFilterCellProtocol_h
 
+#import "TJSBaseCollectionViewCellDelegate.h"
 
-@protocol TJSProductFilterCellDelegate <NSObject>
+@protocol TJSProductFilterCellDelegate <TJSBaseCollectionViewCellDelegate>
 
 @optional
 

@@ -29,7 +29,6 @@
 }
 
 
-
 #pragma mark - <TJSProductCellLayoutConfig>
 
 - (CGSize)contentSize:(TJSProductInfoModel *)model cellWidth:(CGFloat)cellWidth{
@@ -39,7 +38,7 @@
     
     if(config){
     
-      return [config contentSize:cellWidth product:model.product];
+      return [config contentSize:cellWidth model:model.product];
     }
     
     return CGSizeMake(cellWidth, 120);

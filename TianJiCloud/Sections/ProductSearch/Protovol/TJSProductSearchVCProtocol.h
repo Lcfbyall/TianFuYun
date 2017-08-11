@@ -9,11 +9,14 @@
 #ifndef TJSProductSearchVCProtocol_h
 #define TJSProductSearchVCProtocol_h
 
-
-
 @protocol ProductSearchVCConfig <NSObject>
 
+- (void)searchBarTextDidChange:(UISearchBar *)searchBar
+                    searchText:(NSString *)searchText;
 
+- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar;
+
+- (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar;
 
 
 @end

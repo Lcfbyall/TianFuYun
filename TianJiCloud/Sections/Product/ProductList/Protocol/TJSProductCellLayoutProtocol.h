@@ -10,22 +10,16 @@
 #define TJSProductCellLayoutProtocol_h
 
 #import <UIKit/UIKit.h>
+#import "TJSBaseCellLayoutProtocol.h"
 
 @class TJSProductInfoModel;
 
-@protocol TJSProductCellLayoutConfig <NSObject>
+@protocol TJSProductCellLayoutConfig <TJSBaseCellLayoutConfig>
 
 @optional
 
-/**
- * @return 返回message的内容大小
- */
-- (CGSize)contentSize:(TJSProductInfoModel *)model cellWidth:(CGFloat)width;
+- (NSArray *)allCells;
 
-/**
- *  需要构造的cellContent类名
- */
-- (NSString *)cellContent:(TJSProductInfoModel *)model;
 
 @end
 

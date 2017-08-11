@@ -8,12 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol TJSMineHomeCellContentConfig <NSObject>
+#import "TJSBaseCellContentConfigProtocol.h"
+
+@protocol TJSMineHomeCellContentConfig <TJSBaseCellContentConfig>
 @required
 
-- (CGSize)contentSize:(CGFloat)cellWidth model:(id)model;
-
-- (NSString *)cellContent:(id)model;
 
 @end
 

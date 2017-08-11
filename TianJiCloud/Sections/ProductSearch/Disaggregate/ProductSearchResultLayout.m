@@ -8,6 +8,25 @@
 
 #import "ProductSearchResultLayout.h"
 
+@interface ProductSearchResultLayout ()
+
+@end
+
 @implementation ProductSearchResultLayout
+
+- (void)prepareLayout{
+    [super prepareLayout];
+    
+    
+}
+
+#pragma mark - Public
+
+- (void)calculateLayoutAttributes{
+    
+    
+}
+
+
 
 @end

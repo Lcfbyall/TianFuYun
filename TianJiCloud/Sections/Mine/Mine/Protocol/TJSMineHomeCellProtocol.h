@@ -9,15 +9,12 @@
 #ifndef TJSMineHomeCellProtocol_h
 #define TJSMineHomeCellProtocol_h
 
+#import "TJSBaseTableViewCellDelegate.h"
 
-@protocol TJSMineHomeCellDelegate <NSObject>
+@protocol TJSMineHomeCellDelegate <TJSBaseTableViewCellDelegate>
 
 @optional
 
-- (BOOL)onTapCell:(id)obj;
-
-- (BOOL)onLongPressCell:(id)obj
-                 inView:(UIView *)view;
 
 @end
 

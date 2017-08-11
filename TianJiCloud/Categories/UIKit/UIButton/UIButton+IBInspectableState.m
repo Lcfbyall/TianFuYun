@@ -236,6 +236,45 @@ static void * TJSUIButtonStateChangedContext = & TJSUIButtonStateChangedContext;
 
 #pragma mark tjs_borderWidth for state
 
+- (CGFloat)tjs_borderWidthNormal{
+ 
+    return [self tjs_borderWidthForState:UIControlStateNormal];
+}
+
+- (void)setTjs_borderWidthNormal:(CGFloat)tjs_borderWidthNormal{
+  
+    [self tjs_setBorderWidth:tjs_borderWidthNormal forState:UIControlStateNormal];
+}
+
+- (CGFloat)tjs_borderWidthDisabled{
+    
+   return [self tjs_borderWidthForState:UIControlStateDisabled];
+}
+
+- (void)setTjs_borderWidthDisabled:(CGFloat)tjs_borderWidthDisabled{
+
+    [self tjs_setBorderWidth:tjs_borderWidthDisabled forState:UIControlStateDisabled];
+}
+
+- (CGFloat)tjs_borderWidthHighlighted{
+    
+  return [self tjs_borderWidthForState:UIControlStateHighlighted];
+}
+
+- (void)setTjs_borderWidthHighlighted:(CGFloat)tjs_borderWidthHighlighted{
+
+    [self tjs_setBorderWidth:tjs_borderWidthHighlighted forState:UIControlStateHighlighted];
+}
+
+- (CGFloat)tjs_borderWidthSelected{
+
+  return [self tjs_borderWidthForState:UIControlStateSelected];
+}
+
+- (void)setTjs_borderWidthSelected:(CGFloat)tjs_borderWidthSelected{
+  
+  [self tjs_setBorderWidth:tjs_borderWidthSelected forState:UIControlStateSelected];
+}
 
 
 
@@ -291,6 +330,8 @@ static void * TJSUIButtonStateChangedContext = & TJSUIButtonStateChangedContext;
     }
     return font;
 }
+
+
 - (void)tjs_setBorderColor:(UIColor *)borderColor
                   forState:(UIControlState)state {
     
@@ -346,6 +387,8 @@ static void * TJSUIButtonStateChangedContext = & TJSUIButtonStateChangedContext;
 }
 
 
+
+
 #pragma mark state发生改变  字体、边框要手动修改！！！
 #pragma mark - KVO  监听手动设置text
 - (void)tjs_addObserverForKeyPathstate{
@@ -353,7 +396,9 @@ static void * TJSUIButtonStateChangedContext = & TJSUIButtonStateChangedContext;
     if(!self.tjs_isExcuteObserve){
         
         [self addObserver:self forKeyPath:TJSUIButtonKeyPathEnabled options:NSKeyValueObservingOptionNew context:TJSUIButtonStateChangedContext];
+        
         [self addObserver:self forKeyPath:TJSUIButtonKeyPathSelected options:NSKeyValueObservingOptionNew context:TJSUIButtonStateChangedContext];
+        
         [self addObserver:self forKeyPath:TJSUIButtonKeyPathHighlighted options:NSKeyValueObservingOptionNew context:TJSUIButtonStateChangedContext];
         
         self.tjs_isExcuteObserve = 1;
@@ -364,20 +409,25 @@ static void * TJSUIButtonStateChangedContext = & TJSUIButtonStateChangedContext;
     if(self.tjs_isExcuteObserve){
         
         [self removeObserver:self forKeyPath:TJSUIButtonKeyPathEnabled context:TJSUIButtonStateChangedContext];
+        
         [self removeObserver:self forKeyPath:TJSUIButtonKeyPathSelected context:TJSUIButtonStateChangedContext];
+        
         [self removeObserver:self forKeyPath:TJSUIButtonKeyPathHighlighted context:TJSUIButtonStateChangedContext];
     }
 }
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context{
     
     if (object == self &&
-        ([keyPath isEqualToString:TJSUIButtonKeyPathEnabled] || [keyPath isEqualToString:TJSUIButtonKeyPathSelected] || [keyPath isEqualToString:TJSUIButtonKeyPathHighlighted])
-        && context==TJSUIButtonStateChangedContext) {
+        ([keyPath isEqualToString:TJSUIButtonKeyPathEnabled] ||
+         [keyPath isEqualToString:TJSUIButtonKeyPathSelected] ||
+         [keyPath isEqualToString:TJSUIButtonKeyPathHighlighted]) &&
+        context==TJSUIButtonStateChangedContext) {
         
         
         [self tjs_updateButtonForgroundWhenStateChanged];
         
     } else {
+        
         // Make sure to call the superclass's implementation in the else block in case it is also implementing KVO
         [super observeValueForKeyPath:keyPath ofObject:object change:change context:context];
     }
@@ -387,6 +437,7 @@ static void * TJSUIButtonStateChangedContext = & TJSUIButtonStateChangedContext;
     
     UIFont *fontForCurrent =  [self tjs_titleLabelFontForState:self.state];
     if(fontForCurrent){
+        
         [self tjs_setTitleLabelFont:fontForCurrent forState:self.state];
     }
     

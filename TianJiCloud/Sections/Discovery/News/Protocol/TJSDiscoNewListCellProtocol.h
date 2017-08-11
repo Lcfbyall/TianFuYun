@@ -9,15 +9,11 @@
 #ifndef TJSDiscoNewListCellProtocol_h
 #define TJSDiscoNewListCellProtocol_h
 
+#import "TJSBaseCollectionViewCellDelegate.h"
 
-@protocol TJSDiscoNewListCellDelegate <NSObject>
+@protocol TJSDiscoNewListCellDelegate <TJSBaseCollectionViewCellDelegate>
 
 @optional
-
-- (BOOL)onTapCell:(id)event;
-
-- (BOOL)onLongPressCell:(id)product
-                 inView:(UIView *)view;
 
 
 @end

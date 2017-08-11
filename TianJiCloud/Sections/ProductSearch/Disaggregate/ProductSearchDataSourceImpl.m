@@ -8,28 +8,89 @@
 
 #import "ProductSearchDataSourceImpl.h"
 
+#import "ProductSearchHotLayout.h"
+#import "ProductSearchResultLayout.h"
+
+#import "ProductSearchHotNetworkTool.h"
+#import "ProductSearchNetworkTool.h"
+
 
 @interface ProductSearchDataSourceImpl ()
 
 @property (nonatomic,strong)NSMutableArray *items;
 
+@property (nonatomic,strong) UICollectionViewLayout *layout;
+
+@property (nonatomic,strong) Class networkToolClass;
 
 @end
 
 @implementation ProductSearchDataSourceImpl
 
 
-
+- (instancetype)init{
+  
+    self = [super init];
+    if(self){
+    
+        
+    }
+    
+    return self;
+}
 
 #pragma mark - <ProductSearchDataSource>
+
+- (void)search:(void (^)(NSArray *products, NSError *error))callback{
+
+    WEAK_SELF(self);
+    
+    
+   
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^
+                   {
+                       
+           STRONG_SELF(self);
+           if(self){
+               
+               NSArray *products = @[];
+               NSError *error    = nil;;
+               
+               if(callback){
+                   
+                   callback(products,error);
+               }
+           }
+           
+       });
+
+
+}
 
 - (NSArray *)items{
 
     return @[@"",@"",@""];
 }
 
+- (UICollectionViewLayout *)collectionViewLayout{
+
+    if(_layout == nil){
+    
+        _layout = [[ProductSearchHotLayout alloc]init];
+    }
+
+    return _layout;
+}
 
 
+#pragma mark - Private
+
+- (Class)networkToolClass{
+
+    return [ProductSearchHotNetworkTool class];
+   
+}
 
 @end
 

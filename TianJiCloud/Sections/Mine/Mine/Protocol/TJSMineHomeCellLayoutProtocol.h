@@ -9,20 +9,12 @@
 #ifndef TJSMineHomeCellLayoutProtocol_h
 #define TJSMineHomeCellLayoutProtocol_h
 
-@protocol TJSMineHomeCellLayoutConfig <NSObject>
+#import "TJSBaseCellLayoutProtocol.h"
+
+
+@protocol TJSMineHomeCellLayoutConfig <TJSBaseCellLayoutConfig>
 
 @optional
-
-/**
- * @return 返回message的内容大小
- */
-- (CGSize)contentSize:(id)model cellWidth:(CGFloat)width;
-
-
-/**
- *  需要构造的cellContent类名
- */
-- (NSString *)cellContent:(id)model;
 
 
 @end

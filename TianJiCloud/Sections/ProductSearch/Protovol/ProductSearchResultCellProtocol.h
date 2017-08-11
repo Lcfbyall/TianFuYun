@@ -9,7 +9,10 @@
 #ifndef ProductSearchResultCellProtocol_h
 #define ProductSearchResultCellProtocol_h
 
-@protocol ProductSearchResultCellDelegate <NSObject>
+#import "TJSBaseCollectionViewCellDelegate.h"
+
+
+@protocol ProductSearchResultCellDelegate <TJSBaseCollectionViewCellDelegate>
 
 @optional
 

@@ -47,6 +47,7 @@ static NSString *identifier = @"ProductFilterCollectionCell";
     ProductFilterCollLayout *layout = (ProductFilterCollLayout *)self.interactor.collectionViewLayout;
     layout.delegate  = self;
     layout.collectionViewWidth=SCREEN_WIDTH;
+    
     _collectionView.collectionViewLayout = layout;
     _collectionView.backgroundColor = ThemeService.origin_color_00;
     [_collectionView registerClass:[ProductFilterReusableSectionHeader class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:headerIdentifier];

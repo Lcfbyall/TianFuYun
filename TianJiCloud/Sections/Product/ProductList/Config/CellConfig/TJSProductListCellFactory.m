@@ -22,21 +22,6 @@
 
 @implementation TJSProductListCellFactory
 
-- (instancetype)init
-{
-    self = [super init];
-    if (self) {
-        
-        
-    }
-    return self;
-}
-
-- (void)dealloc
-{
-    
-}
-
 
 #pragma mark - make cell
 

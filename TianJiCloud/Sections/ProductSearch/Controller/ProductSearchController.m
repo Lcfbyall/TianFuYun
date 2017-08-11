@@ -17,8 +17,9 @@
 
 @property (nonatomic,strong) ProductSearchConfigurator *configurator;
 
-@property (weak, nonatomic) IBOutlet UICollectionView *searchlist;
+@property (nonatomic,strong) id<ProductSerachInteractor> interactor;
 
+@property (weak, nonatomic) IBOutlet UICollectionView *searchlist;
 
 
 @end
@@ -53,7 +54,7 @@
     ProductSearchVCConfig *searchConfig = [[ProductSearchVCConfig alloc]init];
     [searchConfig setup:self];
 
-    self.navigationItem.rightBarButtonItems = [searchConfig tjs_rightBarButtonItems];
+    //self.navigationItem.rightBarButtonItems = [searchConfig tjs_rightBarButtonItems];
     
     self.navigationItem.titleView = [searchConfig tjs_titleView];
 
@@ -74,9 +75,24 @@
 
 #pragma mark - <ProductSearchVCConfig>
 
+- (void)searchBarTextDidChange:(UISearchBar *)searchBar searchText:(NSString *)searchText{
+
+    //交给self.interactor去做
+    
+}
+
+- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar{
 
 
-#pragma mark - <>
+}
+
+- (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar{
+
+
+}
+
+
+#pragma mark - <TJSBaseVCConfig>
 
 - (void)tjs_configBaseView{
 

@@ -21,9 +21,11 @@
 
 @required
 
+- (void)search:(void (^)(NSArray *products, NSError *error))callback;
+
 - (NSArray *)items;
 
-
+- (UICollectionViewLayout *)collectionViewLayout;
 
 @end
 

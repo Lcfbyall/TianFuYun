@@ -14,4 +14,6 @@
 
 @property (nonatomic,weak)id <ProductSearchHotCellDelegate> delegate;
 
+@property (nonatomic,strong) NSIndexPath *indexPath;
+
 @end

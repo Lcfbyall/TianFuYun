@@ -8,15 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
-
+#import "TJSBaseCellContentConfigProtocol.h"
 @class TJSProductInfo;
 
-@protocol TJSProductListContentConfig <NSObject>
+
+@protocol TJSProductListContentConfig <TJSBaseCellContentConfig>
 @required
 
-- (CGSize)contentSize:(CGFloat)cellWidth product:(TJSProductInfo *)product;
-
-- (NSString *)cellContent:(TJSProductInfo *)product;
 
 @end
 

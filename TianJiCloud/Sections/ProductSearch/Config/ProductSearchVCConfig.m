@@ -85,8 +85,30 @@
     searchBar.backgroundColor  = bgColor;
     searchBar.tintColor        = ThemeService.main_color_02;
     searchBar.barTintColor     = bgColor;
+    
     [searchBar setSearchFieldBackgroundImage:[UIImage tjs_imageWithColor:bgColor size:searchBar.bounds.size] forState:UIControlStateNormal];
     [bgView addSubview:searchBar];
+    
+    //searchBar.showsCancelButton = YES;
+    
+    searchBar.searchBarTextDidChange = ^(UISearchBar *searchBar, NSString *searchText) {
+        
+        NSLog(@"searchBarTextDidChange");
+    };
+    
+    searchBar.searchBarSearchButtonClicked = ^(UISearchBar *searchBar) {
+        
+        NSLog(@"searchBarSearchButtonClicked");
+    };
+    
+    searchBar.searchBarCancelButtonClicked = ^(UISearchBar *searchBar) {
+        
+        NSLog(@"searchBarCancelButtonClicked");
+        
+    };
+    
+    
+    
     return bgView;
 }
 

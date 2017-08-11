@@ -7,7 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ProductSearchListCellLayoutConfig.h"
+
+@class TJSProductInfoModel;
+@class TJSBaseCollectionViewCell;
 
 @interface ProductSearchListCellFactory : NSObject
+
+@property (nonatomic,strong)ProductSearchListCellLayoutConfig *layoutConfig;
+
+- (TJSBaseCollectionViewCell *)cellInCollectView:(UICollectionView*)collectionView
+                             forProductInfoModel:(TJSProductInfoModel *)model indexPath:(NSIndexPath*)indexPath;
+
 
 @end

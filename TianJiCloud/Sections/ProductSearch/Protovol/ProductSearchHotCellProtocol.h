@@ -9,8 +9,9 @@
 #ifndef ProductSearchHotCellProtocol_h
 #define ProductSearchHotCellProtocol_h
 
+#import "TJSBaseCollectionViewCellDelegate.h"
 
-@protocol ProductSearchHotCellDelegate <NSObject>
+@protocol ProductSearchHotCellDelegate <TJSBaseCollectionViewCellDelegate>
 
 @optional
 

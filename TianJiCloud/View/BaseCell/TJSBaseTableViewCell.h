@@ -28,6 +28,8 @@
 - (void)tjs_separatorInsetZeroWithTableView:(UITableView *)tableView;
 @end
 
+
+
 @interface TJSBaseTableViewCell : UITableViewCell<TJSTableViewCellProtocol>
 
 @end

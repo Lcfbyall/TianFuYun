@@ -7,13 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "TJSBaseCellContentConfigProtocol.h"
 
-@protocol TJSMyOrderListCellContentConfig <NSObject>
+@protocol TJSMyOrderListCellContentConfig <TJSBaseCellContentConfig>
 @required
 
-- (CGSize)contentSize:(CGFloat)cellWidth model:(id)model;
-
-- (NSString *)cellContent:(id)model;
 
 @end
 

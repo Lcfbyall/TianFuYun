@@ -8,14 +8,36 @@
 
 #import "ProductSearchResultCell.h"
 
+@interface ProductSearchResultCell ()
+
+
+@end
+
 @implementation ProductSearchResultCell
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+- (instancetype)initWithFrame:(CGRect)frame{
+    
+    self = [super initWithFrame:frame];
+    
+    if(self){
+        
+       
+    }
+    
+    return self;
 }
-*/
+
+
+#pragma mark -
+
+
+#pragma mark - <TJSBaseCollectionReusableViewProtocol>
+
+- (void)tjs_bindDataToCellWithValue:(id)value{
+    
+  
+    
+}
+
 
 @end

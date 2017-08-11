@@ -14,6 +14,7 @@
 
 @property (nonatomic,strong) TJSProductInfo *product;
 
+@property (nonatomic,copy) NSString *cellClass;
 
 - (instancetype)initWithProduct:(TJSProductInfo *)product;
 

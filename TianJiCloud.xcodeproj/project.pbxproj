@@ -348,6 +348,16 @@
 		2CF8B53E1F3D469F003B8520 /* ProductSearchHotCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF8B53D1F3D469F003B8520 /* ProductSearchHotCell.m */; };
 		2CF8B5411F3D46B8003B8520 /* ProductSearchResultCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF8B5401F3D46B8003B8520 /* ProductSearchResultCell.m */; };
 		2CF8B5451F3D48B0003B8520 /* ProductSearchListCellFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF8B5441F3D48B0003B8520 /* ProductSearchListCellFactory.m */; };
+		2CF8B54B1F3D9E5C003B8520 /* TJSBaseCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF8B54A1F3D9E5C003B8520 /* TJSBaseCollectionViewLayout.m */; };
+		2CF8B5571F3DA324003B8520 /* ProductSearchApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF8B5541F3DA324003B8520 /* ProductSearchApi.m */; };
+		2CF8B5581F3DA324003B8520 /* ProductSearchHotApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF8B5561F3DA324003B8520 /* ProductSearchHotApi.m */; };
+		2CF8B55B1F3DA3D7003B8520 /* ProductSearchHotNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF8B55A1F3DA3D7003B8520 /* ProductSearchHotNetworkTool.m */; };
+		2CF8B55E1F3DA438003B8520 /* ProductSearchNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF8B55D1F3DA438003B8520 /* ProductSearchNetworkTool.m */; };
+		2CF8B5611F3DBAAD003B8520 /* ProductSearchListCellLayoutConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF8B5601F3DBAAD003B8520 /* ProductSearchListCellLayoutConfig.m */; };
+		2CF8B5651F3DC3B2003B8520 /* ProductSearchCellContentConfigFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF8B5641F3DC3B2003B8520 /* ProductSearchCellContentConfigFactory.m */; };
+		2CF8B5681F3DC6F9003B8520 /* ProductHotCellContentConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF8B5671F3DC6F9003B8520 /* ProductHotCellContentConfig.m */; };
+		2CF8B56B1F3DC710003B8520 /* ProductSearchCellContentConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF8B56A1F3DC710003B8520 /* ProductSearchCellContentConfig.m */; };
+		2CF8B56E1F3DD88D003B8520 /* ProductSearchResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CF8B56D1F3DD88D003B8520 /* ProductSearchResultCell.xib */; };
 		A28956951F3CA22A002D6845 /* ProductSearchHotLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A28956941F3CA22A002D6845 /* ProductSearchHotLayout.m */; };
 		A28956981F3CA25E002D6845 /* ProductSearchResultLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A28956971F3CA25E002D6845 /* ProductSearchResultLayout.m */; };
 		A292B2611F39F7DD0086E03E /* CapitalRecordListController.m in Sources */ = {isa = PBXBuildFile; fileRef = A292B2601F39F7DD0086E03E /* CapitalRecordListController.m */; };
@@ -1081,6 +1091,29 @@
 		2CF8B5431F3D48B0003B8520 /* ProductSearchListCellFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductSearchListCellFactory.h; sourceTree = "<group>"; };
 		2CF8B5441F3D48B0003B8520 /* ProductSearchListCellFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductSearchListCellFactory.m; sourceTree = "<group>"; };
 		2CF8B5461F3D48F4003B8520 /* ProductSearchResultCellProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductSearchResultCellProtocol.h; sourceTree = "<group>"; };
+		2CF8B5471F3D99F9003B8520 /* TJSBaseCollectionViewCellDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TJSBaseCollectionViewCellDelegate.h; sourceTree = "<group>"; };
+		2CF8B5481F3D9A2D003B8520 /* TJSBaseTableViewCellDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TJSBaseTableViewCellDelegate.h; sourceTree = "<group>"; };
+		2CF8B5491F3D9E5C003B8520 /* TJSBaseCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSBaseCollectionViewLayout.h; sourceTree = "<group>"; };
+		2CF8B54A1F3D9E5C003B8520 /* TJSBaseCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSBaseCollectionViewLayout.m; sourceTree = "<group>"; };
+		2CF8B5531F3DA324003B8520 /* ProductSearchApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductSearchApi.h; sourceTree = "<group>"; };
+		2CF8B5541F3DA324003B8520 /* ProductSearchApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductSearchApi.m; sourceTree = "<group>"; };
+		2CF8B5551F3DA324003B8520 /* ProductSearchHotApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductSearchHotApi.h; sourceTree = "<group>"; };
+		2CF8B5561F3DA324003B8520 /* ProductSearchHotApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductSearchHotApi.m; sourceTree = "<group>"; };
+		2CF8B5591F3DA3D7003B8520 /* ProductSearchHotNetworkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductSearchHotNetworkTool.h; sourceTree = "<group>"; };
+		2CF8B55A1F3DA3D7003B8520 /* ProductSearchHotNetworkTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductSearchHotNetworkTool.m; sourceTree = "<group>"; };
+		2CF8B55C1F3DA438003B8520 /* ProductSearchNetworkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductSearchNetworkTool.h; sourceTree = "<group>"; };
+		2CF8B55D1F3DA438003B8520 /* ProductSearchNetworkTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductSearchNetworkTool.m; sourceTree = "<group>"; };
+		2CF8B55F1F3DBAAD003B8520 /* ProductSearchListCellLayoutConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductSearchListCellLayoutConfig.h; sourceTree = "<group>"; };
+		2CF8B5601F3DBAAD003B8520 /* ProductSearchListCellLayoutConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductSearchListCellLayoutConfig.m; sourceTree = "<group>"; };
+		2CF8B5621F3DBB59003B8520 /* TJSBaseCellLayoutProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TJSBaseCellLayoutProtocol.h; sourceTree = "<group>"; };
+		2CF8B5631F3DC3B2003B8520 /* ProductSearchCellContentConfigFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductSearchCellContentConfigFactory.h; sourceTree = "<group>"; };
+		2CF8B5641F3DC3B2003B8520 /* ProductSearchCellContentConfigFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductSearchCellContentConfigFactory.m; sourceTree = "<group>"; };
+		2CF8B5661F3DC6F9003B8520 /* ProductHotCellContentConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductHotCellContentConfig.h; sourceTree = "<group>"; };
+		2CF8B5671F3DC6F9003B8520 /* ProductHotCellContentConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductHotCellContentConfig.m; sourceTree = "<group>"; };
+		2CF8B5691F3DC710003B8520 /* ProductSearchCellContentConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductSearchCellContentConfig.h; sourceTree = "<group>"; };
+		2CF8B56A1F3DC710003B8520 /* ProductSearchCellContentConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductSearchCellContentConfig.m; sourceTree = "<group>"; };
+		2CF8B56C1F3DC75D003B8520 /* TJSBaseCellContentConfigProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TJSBaseCellContentConfigProtocol.h; sourceTree = "<group>"; };
+		2CF8B56D1F3DD88D003B8520 /* ProductSearchResultCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductSearchResultCell.xib; sourceTree = "<group>"; };
 		78C8A77EBFE6464B5B247606 /* Pods-TianJiCloud.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TianJiCloud.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TianJiCloud/Pods-TianJiCloud.debug.xcconfig"; sourceTree = "<group>"; };
 		A28956931F3CA22A002D6845 /* ProductSearchHotLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductSearchHotLayout.h; sourceTree = "<group>"; };
 		A28956941F3CA22A002D6845 /* ProductSearchHotLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductSearchHotLayout.m; sourceTree = "<group>"; };
@@ -2987,6 +3020,7 @@
 			isa = PBXGroup;
 			children = (
 				2C8DE5A51F29FFBF009B3AE2 /* ProductSearch.storyboard */,
+				2CF8B54C1F3DA209003B8520 /* NetworkTool */,
 				2C8DE5A01F29FF4C009B3AE2 /* Config */,
 				2C8DE5A11F29FF4C009B3AE2 /* Controller */,
 				2C89AD7D1F2C7DF8005C29AC /* Disaggregate */,
@@ -3334,6 +3368,10 @@
 				2CAF426E1F26E01E00ABCA5E /* TJSProductListApi.m */,
 				2CAF42831F27261A00ABCA5E /* TJSProductDeleteApi.h */,
 				2CAF42841F27261A00ABCA5E /* TJSProductDeleteApi.m */,
+				2CF8B5531F3DA324003B8520 /* ProductSearchApi.h */,
+				2CF8B5541F3DA324003B8520 /* ProductSearchApi.m */,
+				2CF8B5551F3DA324003B8520 /* ProductSearchHotApi.h */,
+				2CF8B5561F3DA324003B8520 /* ProductSearchHotApi.m */,
 			);
 			path = Product;
 			sourceTree = "<group>";
@@ -3611,14 +3649,20 @@
 		2CCBE48A1F34207C006C4018 /* BaseCell */ = {
 			isa = PBXGroup;
 			children = (
+				2CF8B5621F3DBB59003B8520 /* TJSBaseCellLayoutProtocol.h */,
+				2CF8B56C1F3DC75D003B8520 /* TJSBaseCellContentConfigProtocol.h */,
+				2CF8B5491F3D9E5C003B8520 /* TJSBaseCollectionViewLayout.h */,
+				2CF8B54A1F3D9E5C003B8520 /* TJSBaseCollectionViewLayout.m */,
+				2CF8B5471F3D99F9003B8520 /* TJSBaseCollectionViewCellDelegate.h */,
 				2CCBE48B1F34207C006C4018 /* TJSBaseCollectionViewCell.h */,
 				2CCBE48C1F34207C006C4018 /* TJSBaseCollectionViewCell.m */,
 				2C027D091F3BFA28001D7EB6 /* TJSBaseCollectionReusableView.h */,
 				2C027D0A1F3BFA28001D7EB6 /* TJSBaseCollectionReusableView.m */,
-				2CCBE48D1F34207C006C4018 /* TJSBaseTableHeaderFooterView.h */,
-				2CCBE48E1F34207C006C4018 /* TJSBaseTableHeaderFooterView.m */,
 				2CCBE48F1F34207C006C4018 /* TJSBaseTableViewCell.h */,
 				2CCBE4901F34207C006C4018 /* TJSBaseTableViewCell.m */,
+				2CCBE48D1F34207C006C4018 /* TJSBaseTableHeaderFooterView.h */,
+				2CCBE48E1F34207C006C4018 /* TJSBaseTableHeaderFooterView.m */,
+				2CF8B5481F3D9A2D003B8520 /* TJSBaseTableViewCellDelegate.h */,
 			);
 			path = BaseCell;
 			sourceTree = "<group>";
@@ -3835,6 +3879,7 @@
 				2CF8B53D1F3D469F003B8520 /* ProductSearchHotCell.m */,
 				2CF8B53F1F3D46B8003B8520 /* ProductSearchResultCell.h */,
 				2CF8B5401F3D46B8003B8520 /* ProductSearchResultCell.m */,
+				2CF8B56D1F3DD88D003B8520 /* ProductSearchResultCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -3844,8 +3889,27 @@
 			children = (
 				2CF8B5431F3D48B0003B8520 /* ProductSearchListCellFactory.h */,
 				2CF8B5441F3D48B0003B8520 /* ProductSearchListCellFactory.m */,
+				2CF8B55F1F3DBAAD003B8520 /* ProductSearchListCellLayoutConfig.h */,
+				2CF8B5601F3DBAAD003B8520 /* ProductSearchListCellLayoutConfig.m */,
+				2CF8B5631F3DC3B2003B8520 /* ProductSearchCellContentConfigFactory.h */,
+				2CF8B5641F3DC3B2003B8520 /* ProductSearchCellContentConfigFactory.m */,
+				2CF8B5661F3DC6F9003B8520 /* ProductHotCellContentConfig.h */,
+				2CF8B5671F3DC6F9003B8520 /* ProductHotCellContentConfig.m */,
+				2CF8B5691F3DC710003B8520 /* ProductSearchCellContentConfig.h */,
+				2CF8B56A1F3DC710003B8520 /* ProductSearchCellContentConfig.m */,
 			);
 			path = CellConfig;
+			sourceTree = "<group>";
+		};
+		2CF8B54C1F3DA209003B8520 /* NetworkTool */ = {
+			isa = PBXGroup;
+			children = (
+				2CF8B5591F3DA3D7003B8520 /* ProductSearchHotNetworkTool.h */,
+				2CF8B55A1F3DA3D7003B8520 /* ProductSearchHotNetworkTool.m */,
+				2CF8B55C1F3DA438003B8520 /* ProductSearchNetworkTool.h */,
+				2CF8B55D1F3DA438003B8520 /* ProductSearchNetworkTool.m */,
+			);
+			path = NetworkTool;
 			sourceTree = "<group>";
 		};
 		9E277105A9B5436B9F8117CB /* Frameworks */ = {
@@ -4125,6 +4189,7 @@
 				2C300F931F2F3E9F00DD440E /* GestureSet.storyboard in Resources */,
 				2C8BB7A51F30859C00E2D75F /* HomeHeaderCollectionCell.xib in Resources */,
 				2C1BFEBF1F2978C500665A71 /* Discovery.storyboard in Resources */,
+				2CF8B56E1F3DD88D003B8520 /* ProductSearchResultCell.xib in Resources */,
 				2C7A344D1F2F633C004DD566 /* CumulateInvest.storyboard in Resources */,
 				2C8DE59E1F29FE80009B3AE2 /* Product.storyboard in Resources */,
 				2C8DE5A61F29FFBF009B3AE2 /* ProductSearch.storyboard in Resources */,
@@ -4237,6 +4302,7 @@
 				2CCBE4961F3421F1006C4018 /* TJSPageControl.m in Sources */,
 				2C859CED1F31EB2E00B86575 /* ZLPhotoPickerBrowserPhoto.m in Sources */,
 				2C4412731F21E79900C453EF /* UIButton+IBInspectableState.m in Sources */,
+				2CF8B5681F3DC6F9003B8520 /* ProductHotCellContentConfig.m in Sources */,
 				2C4412061F219A5300C453EF /* UINavigationBar+StyleConfigure.m in Sources */,
 				2C7A34601F2F80F7004DD566 /* MineHomeCellInfo.m in Sources */,
 				2C85E3731F2EDB1000ADD360 /* TJSBaseControllerConfig.m in Sources */,
@@ -4260,6 +4326,7 @@
 				2C4C1C1F1F38531F00002166 /* TJSMyOrderListCellLayoutConfig.m in Sources */,
 				2C859CE21F31EB2E00B86575 /* MBProgressHUD.m in Sources */,
 				2C85E34D1F2ECC1200ADD360 /* AboutMeViewController.m in Sources */,
+				2CF8B55E1F3DA438003B8520 /* ProductSearchNetworkTool.m in Sources */,
 				2CCBE4A41F344A98006C4018 /* MineHomeCellItem.m in Sources */,
 				2C85E3641F2ECE9400ADD360 /* WithdrawDepositRecord.m in Sources */,
 				2C8BB7B81F315CA600E2D75F /* HomeHeaderWebController.m in Sources */,
@@ -4278,8 +4345,10 @@
 				2C89AD841F2C91DE005C29AC /* UIColor+TJSiOS7Colors.m in Sources */,
 				2C8BB7A01F30859C00E2D75F /* HomeFooterCollectionCell.m in Sources */,
 				2CAF42D71F281B8600ABCA5E /* TJSProductListCellLayoutConfig.m in Sources */,
+				2CF8B5571F3DA324003B8520 /* ProductSearchApi.m in Sources */,
 				2C300F8B1F2F3CB100DD440E /* ProfesisonAuthenController.m in Sources */,
 				2CAF43211F28398E00ABCA5E /* UIView+TJSFrame.m in Sources */,
+				2CF8B54B1F3D9E5C003B8520 /* TJSBaseCollectionViewLayout.m in Sources */,
 				2CCBE4861F3417A5006C4018 /* MineHeaderCollectionCell.m in Sources */,
 				2C4412931F21FF9C00C453EF /* TJSDownLoaderManager.m in Sources */,
 				2C8BB7C51F31AEF600E2D75F /* UIButton+ImageTitleEdgeInset.m in Sources */,
@@ -4307,6 +4376,7 @@
 				2C4C1C011F38476900002166 /* MyOrderInfo.m in Sources */,
 				2C431DEB1F299A9600858C12 /* HomeVCConfig.m in Sources */,
 				2C02DF8F1F39CA44000410E1 /* MyFavNetworkTool.m in Sources */,
+				2CF8B5651F3DC3B2003B8520 /* ProductSearchCellContentConfigFactory.m in Sources */,
 				2C859CFB1F31EB2E00B86575 /* ZLPhotoPickerGroupViewController.m in Sources */,
 				2C859CE61F31EB2E00B86575 /* YZFlowLayout.m in Sources */,
 				2C4412031F219A5300C453EF /* UIDevice+CurrentArg.m in Sources */,
@@ -4358,6 +4428,7 @@
 				2C89AD871F2C9A90005C29AC /* UISearchBar+CommanStyle.m in Sources */,
 				2C8DE5A41F29FF89009B3AE2 /* ProductSearchController.m in Sources */,
 				2C027D081F3BF848001D7EB6 /* ProductFilterReusableSectionHeader.m in Sources */,
+				2CF8B5611F3DBAAD003B8520 /* ProductSearchListCellLayoutConfig.m in Sources */,
 				2C8DE5F81F2AE9D0009B3AE2 /* DiscoveryNewsNetworkTool.m in Sources */,
 				2C44125D1F21DF3600C453EF /* NSObject+Swizzle.m in Sources */,
 				2C4C1CBE1F3958C900002166 /* FeedBackVCConfig.m in Sources */,
@@ -4449,6 +4520,7 @@
 				2C85E3581F2ECDA200ADD360 /* CapitalRecordContainer.m in Sources */,
 				2C4412881F21EB8800C453EF /* UITextField+LengthLimited.m in Sources */,
 				2CAF43111F2829B300ABCA5E /* TJSAppInfo.m in Sources */,
+				2CF8B56B1F3DC710003B8520 /* ProductSearchCellContentConfig.m in Sources */,
 				2C4C1BFE1F3846F600002166 /* MyOrderListTableCell.m in Sources */,
 				2C8DE5841F29D509009B3AE2 /* TJSHomeListInteractorImpl.m in Sources */,
 				2CCBE45D1F32CB61006C4018 /* ProductListCellHeaderView.m in Sources */,
@@ -4476,6 +4548,7 @@
 				A292B2731F39F8AB0086E03E /* CapitalRecordStoreTool.m in Sources */,
 				2C027D241F3C8296001D7EB6 /* ProductSearchInteractorImpl.m in Sources */,
 				2CAF430A1F2828C200ABCA5E /* TJSProductListTableAdapter.m in Sources */,
+				2CF8B5581F3DA324003B8520 /* ProductSearchHotApi.m in Sources */,
 				2C8DE5EE1F2AE7D0009B3AE2 /* TJSDiscoNewsConfigurator.m in Sources */,
 				2C859CE11F31EB2E00B86575 /* DALabeledCircularProgressView.m in Sources */,
 				2C4C1C9F1F39493400002166 /* PNLineChartDataItem.m in Sources */,
@@ -4493,6 +4566,7 @@
 				2C4C1CA81F394BDC00002166 /* FeedbackContainerController.m in Sources */,
 				2C85E3B71F2F302900ADD360 /* UIImage+Resizeable.m in Sources */,
 				2C8DE5CC1F2AE3BC009B3AE2 /* DiscoNewsListController.m in Sources */,
+				2CF8B55B1F3DA3D7003B8520 /* ProductSearchHotNetworkTool.m in Sources */,
 				2C4C1CA21F39497900002166 /* TJSInvestPieChart.m in Sources */,
 				2CAF43061F2828C200ABCA5E /* TJSProductListConfigurator.m in Sources */,
 				2C4C1C951F3948E800002166 /* PNGenericChart.m in Sources */,

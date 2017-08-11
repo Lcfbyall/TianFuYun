@@ -42,7 +42,7 @@
     
     
     //2.
-    _adapter = [[ProductFilterResultTableAdapter alloc]init];
+    _adapter = [[ProductFilterResultTableAdapter alloc]initWithTableView:tableView];
     _adapter.interactor = _interactorImpl;
 //    _adapter.cellDelegate =  vc;
     

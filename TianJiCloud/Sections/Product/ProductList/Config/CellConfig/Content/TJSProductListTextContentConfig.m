@@ -10,7 +10,7 @@
 
 @implementation TJSProductListTextContentConfig
 
-- (CGSize)contentSize:(CGFloat)cellWidth product:(TJSProductInfo *)product{
+- (CGSize)contentSize:(CGFloat)cellWidth model:(TJSProductInfo *)product{
     
     //根据自己业务实现
     return CGSizeZero;
