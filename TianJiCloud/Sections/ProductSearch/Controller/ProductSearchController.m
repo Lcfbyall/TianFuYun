@@ -54,11 +54,8 @@
     ProductSearchVCConfig *searchConfig = [[ProductSearchVCConfig alloc]init];
     [searchConfig setup:self];
 
-    //self.navigationItem.rightBarButtonItems = [searchConfig tjs_rightBarButtonItems];
-    
+    self.navigationItem.rightBarButtonItems = [searchConfig tjs_rightBarButtonItems];
     self.navigationItem.titleView = [searchConfig tjs_titleView];
-
-    
     _searchConfig = searchConfig;
 }
 
@@ -68,7 +65,6 @@
 
     [configurator setup:self];
     _configurator = configurator;
-
 }
 
 

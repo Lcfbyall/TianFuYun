@@ -3021,8 +3021,8 @@
 			children = (
 				2C8DE5A51F29FFBF009B3AE2 /* ProductSearch.storyboard */,
 				2CF8B54C1F3DA209003B8520 /* NetworkTool */,
-				2C8DE5A01F29FF4C009B3AE2 /* Config */,
 				2C8DE5A11F29FF4C009B3AE2 /* Controller */,
+				2C8DE5A01F29FF4C009B3AE2 /* Config */,
 				2C89AD7D1F2C7DF8005C29AC /* Disaggregate */,
 				2C89AD7C1F2C7DF3005C29AC /* Protovol */,
 				2CF8B53B1F3D4682003B8520 /* View */,

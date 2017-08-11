@@ -24,8 +24,6 @@
     if(self){
         
         _layoutConfig = [[ProductSearchListCellLayoutConfig alloc]init];
-        
-        
     }
     
     return self;
