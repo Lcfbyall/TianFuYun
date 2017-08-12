@@ -20,6 +20,7 @@
     [super prepareLayout];
     
 
+
 }
 
 
@@ -36,6 +37,50 @@
     }];
 
     return allAttributes;
+}
+
+
+
+- (nullable UICollectionViewLayoutAttributes *)layoutAttributesForItemAtIndexPath:(NSIndexPath *)indexPath{
+
+    UICollectionViewLayoutAttributes *layoutAttribute =
+    [UICollectionViewLayoutAttributes layoutAttributesForCellWithIndexPath:indexPath];
+
+    if(layoutAttribute.representedElementCategory == UICollectionElementCategoryCell){
+
+
+
+    }
+
+    return layoutAttribute;
+}
+
+
+- (nullable UICollectionViewLayoutAttributes *)layoutAttributesForSupplementaryViewOfKind:(NSString *)elementKind atIndexPath:(NSIndexPath *)indexPath{
+
+    UICollectionViewLayoutAttributes *layoutAttributes = [UICollectionViewLayoutAttributes layoutAttributesForSupplementaryViewOfKind:elementKind withIndexPath:indexPath];
+
+    if([elementKind isEqualToString:UICollectionElementKindSectionHeader]){
+
+
+
+    }
+
+    return layoutAttributes;
+}
+
+- (BOOL)shouldInvalidateLayoutForBoundsChange:(CGRect)oldBounds
+{
+    return NO;
+}
+
+- (CGSize)collectionViewContentSize{
+
+    CGFloat maxHeight = 0;
+    UICollectionViewLayoutAttributes *attributes = [self.layoutInfo lastObject];
+    maxHeight = attributes.frame.origin.y + attributes.frame.size.height + 15;
+
+    return CGSizeMake(self.collectionViewWidth, maxHeight);
 }
 
 

@@ -77,6 +77,7 @@
             layoutAttribute.frame = CGRectMake(X, Y, size.width, size.height);
         }
     }
+
     return layoutAttribute;
 }
 
