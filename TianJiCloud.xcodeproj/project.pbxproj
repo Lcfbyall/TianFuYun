@@ -3649,8 +3649,8 @@
 			isa = PBXGroup;
 			children = (
 				2CF8B5621F3DBB59003B8520 /* TJSBaseCellLayoutProtocol.h */,
-				2CF8B5471F3D99F9003B8520 /* TJSBaseCollectionViewCellDelegate.h */,
 				2CF8B56C1F3DC75D003B8520 /* TJSBaseCellContentConfigProtocol.h */,
+				2CF8B5471F3D99F9003B8520 /* TJSBaseCollectionViewCellDelegate.h */,
 				2CF8B5491F3D9E5C003B8520 /* TJSBaseCollectionViewLayout.h */,
 				2CF8B54A1F3D9E5C003B8520 /* TJSBaseCollectionViewLayout.m */,
 				2CCBE48B1F34207C006C4018 /* TJSBaseCollectionViewCell.h */,

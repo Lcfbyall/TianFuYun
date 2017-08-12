@@ -23,15 +23,6 @@
 
 - (void)calculateLayoutAttributes{
 
-    [self.layoutInfo removeAllObjects];
-    self.layoutInfo = nil;
-
-    self.layoutInfo = [NSMutableArray array];
-
-    [self.layoutInfoDic removeAllObjects];
-    self.layoutInfoDic = nil;
-    self.layoutInfoDic = [NSMutableDictionary dictionary];
-
 
 }
 

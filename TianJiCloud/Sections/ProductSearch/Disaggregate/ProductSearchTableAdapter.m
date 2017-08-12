@@ -84,10 +84,10 @@
 
 - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath{
 
-    TJSProductInfoModel *model = [self.interactor.items objectAtIndex:indexPath.item];
-    TJSBaseCollectionReusableView *reusable = (TJSBaseCollectionReusableView *)[_cellFactory supplementary:collectionView kind:kind model:model indexPath:indexPath];
+    //TJSProductInfoModel *model = [self.interactor.items objectAtIndex:indexPath.item];
+    TJSBaseCollectionReusableView *reusable = (TJSBaseCollectionReusableView *)[_cellFactory supplementary:collectionView kind:kind model:nil indexPath:indexPath];
 
-    [reusable tjs_bindDataToCellWithValue:@""];
+    [reusable tjs_bindDataToCellWithValue:@"热门搜索"];
 
     return  reusable;
 
@@ -100,12 +100,21 @@
   
     [collectionView deselectItemAtIndexPath:indexPath animated:YES];
  
-    
-    
+
+}
+
+
+#pragma mark - <UIScrollViewDelegate>
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
+
+    [scrollView.tjs_viewController.navigationController.navigationBar endEditing:YES];
 }
 
 
 #pragma  mark - <UICollectionViewDataSourcePrefetching>
+
+
 
 
 #pragma mark - <TJSBaseCollectionViewLayoutDelegate>
@@ -113,12 +122,14 @@
 - (CGSize)collectionView:(UICollectionView *)collectionView
                   layout:(TJSBaseCollectionViewLayout *)collectionViewLayout
   sizeForItemAtIndexPath:(NSIndexPath *)indexPat{
-    
+
+    /*
     TJSProductInfoModel *model = [self.interactor.items objectAtIndex:indexPat.item];
 
     return [self.cellFactory.layoutConfig contentSize:model cellWidth:SCREEN_WIDTH];
+     */
     
-    return CGSizeMake(100, 40);
+    return CGSizeMake(100 + 10 * indexPat.item, 40);
 }
 
 - (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(TJSBaseCollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section{

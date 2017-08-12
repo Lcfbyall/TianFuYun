@@ -91,8 +91,8 @@
 
 - (nullable UICollectionViewLayoutAttributes *)layoutAttributesForSupplementaryViewOfKind:(NSString *)elementKind atIndexPath:(NSIndexPath *)indexPath{
 
-    UICollectionViewLayoutAttributes *layoutAttributes = [UICollectionViewLayoutAttributes layoutAttributesForSupplementaryViewOfKind:elementKind withIndexPath:indexPath];
 
+    UICollectionViewLayoutAttributes *layoutAttributes = [UICollectionViewLayoutAttributes layoutAttributesForSupplementaryViewOfKind:elementKind withIndexPath:indexPath];
     if([elementKind isEqualToString:UICollectionElementKindSectionHeader]){
 
         CGSize headerSize = [self referenceSizeForHeaderInSection:indexPath.section];
@@ -136,7 +136,16 @@
 
 - (void)calculateLayoutAttributes{
     
-    [super calculateLayoutAttributes];
+    [self.layoutInfo removeAllObjects];
+    self.layoutInfo = nil;
+
+    self.layoutInfo = [NSMutableArray array];
+
+    [self.layoutInfoDic removeAllObjects];
+    self.layoutInfoDic = nil;
+    self.layoutInfoDic = [NSMutableDictionary dictionary];
+
+    
 
     @autoreleasepool {
 
