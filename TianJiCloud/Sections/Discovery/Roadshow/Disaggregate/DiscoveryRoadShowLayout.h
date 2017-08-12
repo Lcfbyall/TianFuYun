@@ -6,19 +6,9 @@
 //  Copyright © 2017年 TianJiMoney. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "TJSBaseCollectionViewLayout.h"
 
-
-@protocol DiscoveryRoadShowLayout <NSObject>
-
-@required
-
-
-
-@end
-
-
-@interface DiscoveryRoadShowLayout : UICollectionViewLayout
+@interface DiscoveryRoadShowLayout : TJSBaseCollectionViewLayout
 
 
 

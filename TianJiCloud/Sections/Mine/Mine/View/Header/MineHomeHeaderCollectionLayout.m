@@ -10,9 +10,6 @@
 
 @interface MineHomeHeaderCollectionLayout ()
 
-@property (strong, nonatomic) NSMutableArray *layoutInfo;
-
-
 @end
 
 @implementation MineHomeHeaderCollectionLayout

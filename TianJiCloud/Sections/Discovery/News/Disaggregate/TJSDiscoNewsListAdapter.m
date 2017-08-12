@@ -15,7 +15,7 @@
 
 static NSString *identifier = @"DiscoveryNewsListCell";
 
-@interface TJSDiscoNewsListAdapter ()<DiscoveryNewsCollectLayoutDelegate>
+@interface TJSDiscoNewsListAdapter ()<TJSBaseCollectionViewLayoutDelegate>
 
 @property (nonatomic,weak)  UICollectionView *collectionView;
 
@@ -100,13 +100,13 @@ static NSString *identifier = @"DiscoveryNewsListCell";
 
 
 
-#pragma mark - <DiscoveryNewsCollectLayoutDelegate>
+#pragma mark - <TJSBaseCollectionViewLayoutDelegate>
 
 - (CGSize)collectionView:(UICollectionView *)collectionView
                   layout:(DiscoveryNewsCollectLayout *)collectionViewLayout
   sizeForItemAtIndexPath:(NSIndexPath *)indexPat{
 
-    UIEdgeInsets insets = [self collectionView:collectionView layout:collectionViewLayout InsetsForItemAtIndexPath:indexPat];
+    UIEdgeInsets insets = [self collectionView:collectionView layout:collectionViewLayout insetForSectionAtIndex:indexPat.section];
     
     CGFloat width = collectionView.bounds.size.width -insets.left-insets.right;
     CGFloat height= width * 5/12.0 + 40;
@@ -117,7 +117,7 @@ static NSString *identifier = @"DiscoveryNewsListCell";
 
 - (UIEdgeInsets)collectionView:(UICollectionView *)collectionView
                         layout:(DiscoveryNewsCollectLayout*)collectionViewLayout
-      InsetsForItemAtIndexPath:(NSIndexPath *)indexPat{
+        insetForSectionAtIndex:(NSInteger)section{
   
     return UIEdgeInsetsMake(10, 16, 10, 16);
 
@@ -125,4 +125,23 @@ static NSString *identifier = @"DiscoveryNewsListCell";
 
 
 @end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

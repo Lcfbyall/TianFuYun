@@ -8,13 +8,7 @@
 
 #import "ProductFilterCollLayout.h"
 
-@interface ProductFilterCollLayout (){
-
-    
-}
-
-@property (strong, nonatomic) NSMutableArray *layoutInfo;
-@property (nonatomic,strong) NSMutableDictionary *layoutInfoDic;
+@interface ProductFilterCollLayout ()
 
 @end
 
@@ -171,73 +165,5 @@
 }
 
 
-#pragma mark - Private
-
-- (CGSize)sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
- 
-    //
-    CGSize size = CGSizeZero;
-    if([self.delegate conformsToProtocol:@protocol(ProductFilterCollLayoutDelegate)] && [self.delegate respondsToSelector:@selector(collectionView:layout:sizeForItemAtIndexPath:)]){
-        
-        size = [self.delegate collectionView:self.collectionView layout:self sizeForItemAtIndexPath:indexPath];
-    }
-    
-    return size;
-}
-
-- (UIEdgeInsets)insetForSectionAtIndex:(NSInteger)section{
-
-  UIEdgeInsets insetForSection = UIEdgeInsetsZero;
-    if([self.delegate conformsToProtocol:@protocol(ProductFilterCollLayoutDelegate)] && [self.delegate respondsToSelector:@selector(collectionView:layout:insetForSectionAtIndex:)]){
-        
-        insetForSection = [self.delegate collectionView:self.collectionView layout:self insetForSectionAtIndex:section];
-    }
-
-    return insetForSection;
-}
-
-- (CGFloat)minimumInteritemSpacingForSectionAtIndex:(NSInteger)section{
-    
-     CGFloat minimumInteritemSpacing = 0;
-
-    if([self.delegate conformsToProtocol:@protocol(ProductFilterCollLayoutDelegate)] && [self.delegate respondsToSelector:@selector(collectionView:layout:minimumInteritemSpacingForSectionAtIndex:)]){
-        
-        minimumInteritemSpacing = [self.delegate collectionView:self.collectionView layout:self minimumInteritemSpacingForSectionAtIndex:section];
-    }
-    
-    return minimumInteritemSpacing;
-}
-
-- (CGFloat)minimumLineSpacingForSectionAtIndex:(NSInteger)section{
-  
-    CGFloat minimumLineSpacing = 0;
-    if([self.delegate conformsToProtocol:@protocol(ProductFilterCollLayoutDelegate)] && [self.delegate respondsToSelector:@selector(collectionView:layout:minimumLineSpacingForSectionAtIndex:)]){
-        
-        minimumLineSpacing = [self.delegate collectionView:self.collectionView layout:self minimumLineSpacingForSectionAtIndex:section];
-    }
-    
-    return minimumLineSpacing;
-}
-
-- (CGSize)referenceSizeForHeaderInSection:(NSInteger)section{
-    
-   CGSize headerSize = CGSizeZero;
-    if([self.delegate conformsToProtocol:@protocol(ProductFilterCollLayoutDelegate)] && [self.delegate respondsToSelector:@selector(collectionView:layout:referenceSizeForHeaderInSection:)]){
-        
-        headerSize = [self.delegate collectionView:self.collectionView layout:self referenceSizeForHeaderInSection:section];
-    }
-    return headerSize;
-}
-
-- (CGSize)referenceSizeForFooterInSection:(NSInteger)section{
-    
-    CGSize footerSize = CGSizeZero;
-    if([self.delegate conformsToProtocol:@protocol(ProductFilterCollLayoutDelegate)] && [self.delegate respondsToSelector:@selector(collectionView:layout:referenceSizeForFooterInSection:)]){
-        
-        footerSize = [self.delegate collectionView:self.collectionView layout:self referenceSizeForFooterInSection:section];
-    }
-        
-    return footerSize;
-}
 
 @end

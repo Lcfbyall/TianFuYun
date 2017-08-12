@@ -18,7 +18,7 @@ static CGFloat const CollectHeight = 115;
 
 static NSString *identifier = @"HomeFooterCollectionCell";
 
-@interface HomeFooterContainer ()<UICollectionViewDataSource,UICollectionViewDelegate,HomeFooterCollectionLayoutDelegate>
+@interface HomeFooterContainer ()<UICollectionViewDataSource,UICollectionViewDelegate,TJSBaseCollectionViewLayoutDelegate>
 
 @property (nonatomic,strong) UICollectionView *collectionView;
 
@@ -114,7 +114,7 @@ static NSString *identifier = @"HomeFooterCollectionCell";
 }
 
 
-#pragma mark - <HomeFooterCollectionLayoutDelegate>
+#pragma mark - <TJSBaseCollectionViewLayoutDelegate>
 
 - (CGSize)collectionView:(UICollectionView *)collectionView
                   layout:(HomeFooterCollectionLayout *)collectionViewLayout

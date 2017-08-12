@@ -6,28 +6,11 @@
 //  Copyright © 2017年 TianJiMoney. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-
-@class HomeHeaderCollectionLayout;
-
-@protocol HomeHeaderCollectionLayoutDelegate <NSObject>
-
-@required
-
-- (CGSize)collectionView:(UICollectionView *)collectionView
-                  layout:(HomeHeaderCollectionLayout *)collectionViewLayout
-  sizeForItemAtIndexPath:(NSIndexPath *)indexPat;
-
-@end
+#import "TJSBaseCollectionViewLayout.h"
 
 
-@interface HomeHeaderCollectionLayout : UICollectionViewLayout
+@interface HomeHeaderCollectionLayout : TJSBaseCollectionViewLayout
 
-@property (nonatomic,weak) id<HomeHeaderCollectionLayoutDelegate> delegate;
-
-@property (nonatomic,assign) UIEdgeInsets insets;
-
-@property (nonatomic,assign) CGFloat interMargin;
 
 
 @end

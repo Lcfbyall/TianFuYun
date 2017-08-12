@@ -10,6 +10,8 @@
 
 @interface ProductSearchHotLayout ()
 
+
+
 @end
 
 @implementation ProductSearchHotLayout
@@ -20,6 +22,21 @@
 
 }
 
+
+
+- (nullable NSArray<__kindof UICollectionViewLayoutAttributes *> *)layoutAttributesForElementsInRect:(CGRect)rect{
+
+    NSMutableArray *allAttributes = [NSMutableArray arrayWithCapacity:self.layoutInfo.count];
+
+    [self.layoutInfo enumerateObjectsUsingBlock:^(UICollectionViewLayoutAttributes *attributes, NSUInteger idx, BOOL * _Nonnull stop) {
+
+        if (CGRectIntersectsRect(rect, attributes.frame)) {
+            [allAttributes addObject:attributes];
+        }
+    }];
+
+    return allAttributes;
+}
 
 
 

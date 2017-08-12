@@ -16,7 +16,7 @@ static NSString *headerIdentifier = @"ProductFilterReusableSectionHeader";
 static NSString *identifier = @"ProductFilterCollectionCell";
 
 
-@interface TJSProductFilterCollAdapter ()<ProductFilterCollLayoutDelegate>
+@interface TJSProductFilterCollAdapter ()<TJSBaseCollectionViewLayoutDelegate>
 
 @property (nonatomic,weak)  UICollectionView *collectionView;
 
@@ -114,7 +114,7 @@ static NSString *identifier = @"ProductFilterCollectionCell";
 }
 
 
-#pragma mark - <ProductFilterCollLayoutDelegate>
+#pragma mark - <TJSBaseCollectionViewLayoutDelegate>
 
 - (CGSize)collectionView:(UICollectionView *)collectionView
                   layout:(ProductFilterCollLayout *)collectionViewLayout
