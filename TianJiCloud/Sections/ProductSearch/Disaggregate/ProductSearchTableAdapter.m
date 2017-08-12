@@ -8,19 +8,12 @@
 
 #import "ProductSearchTableAdapter.h"
 
-#import "ProductSearchHotCell.h"
-#import "ProductSearchResultCell.h"
-#import "ProductSearchHotLayout.h"
-#import "ProductSearchResultLayout.h"
 
 #import "TJSProductInfoModel.h"
 #import "ProductSearchListCellFactory.h"
 
 
-static NSString *searchHotCellIdentifier = @"ProductSearchHotCell";
-static NSString *searchResultIdentifier = @"ProductSearchResultCell";
-
-@interface ProductSearchTableAdapter ()<TJSBaseCollectionViewLayoutDelegate,ProductSearchHotCellDelegate>
+@interface ProductSearchTableAdapter ()<TJSBaseCollectionViewLayoutDelegate,TJSBaseCollectionViewCellDelegate>
 
 @property (nonatomic,weak) UICollectionView *collectionView;
 
@@ -89,6 +82,17 @@ static NSString *searchResultIdentifier = @"ProductSearchResultCell";
     return cell;
 }
 
+- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath{
+
+    TJSProductInfoModel *model = [self.interactor.items objectAtIndex:indexPath.item];
+    TJSBaseCollectionReusableView *reusable = (TJSBaseCollectionReusableView *)[_cellFactory supplementary:collectionView kind:kind model:model indexPath:indexPath];
+
+    [reusable tjs_bindDataToCellWithValue:@""];
+
+    return  reusable;
+
+}
+
 
 #pragma mark - <UICollectionViewDelegate>
 
@@ -104,8 +108,8 @@ static NSString *searchResultIdentifier = @"ProductSearchResultCell";
 #pragma  mark - <UICollectionViewDataSourcePrefetching>
 
 
-
 #pragma mark - <TJSBaseCollectionViewLayoutDelegate>
+
 - (CGSize)collectionView:(UICollectionView *)collectionView
                   layout:(TJSBaseCollectionViewLayout *)collectionViewLayout
   sizeForItemAtIndexPath:(NSIndexPath *)indexPat{
@@ -117,9 +121,25 @@ static NSString *searchResultIdentifier = @"ProductSearchResultCell";
     return CGSizeMake(100, 40);
 }
 
+- (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(TJSBaseCollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section{
 
+    return UIEdgeInsetsMake(10, 10, 10, 10);
+}
 
+- (CGFloat)collectionView:(UICollectionView *)collectionView layout:(TJSBaseCollectionViewLayout *)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section{
 
+    return 10;
+}
+
+- (CGFloat)collectionView:(UICollectionView *)collectionView layout:(TJSBaseCollectionViewLayout *)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section{
+
+    return 10;
+}
+
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(TJSBaseCollectionViewLayout *)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section{
+
+    return CGSizeMake(collectionViewLayout.collectionViewWidth, 50);
+}
 
 #pragma mark - <ProductSearchHotCellDelegate>
 #pragma mark - <ProductSerachInteractorDelegate>

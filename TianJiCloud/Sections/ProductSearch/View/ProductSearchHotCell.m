@@ -56,7 +56,7 @@
             
             STRONG_SELF(self);
             
-            if([self.delegate conformsToProtocol:@protocol(ProductSearchHotCellDelegate)] && [self.delegate respondsToSelector:@selector(onTapCell:)]){
+            if([self.delegate conformsToProtocol:@protocol(TJSBaseCollectionViewCellDelegate)] && [self.delegate respondsToSelector:@selector(onTapCell:)]){
               
                 [self.delegate onTapCell:self.indexPath];
             }

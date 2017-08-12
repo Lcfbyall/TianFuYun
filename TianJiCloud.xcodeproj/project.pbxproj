@@ -369,6 +369,7 @@
 		A292B2731F39F8AB0086E03E /* CapitalRecordStoreTool.m in Sources */ = {isa = PBXBuildFile; fileRef = A292B2721F39F8AB0086E03E /* CapitalRecordStoreTool.m */; };
 		A292B2771F39F92D0086E03E /* CapitalRecordVCConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = A292B2761F39F92D0086E03E /* CapitalRecordVCConfig.m */; };
 		A292B27A1F39FBC10086E03E /* TJSBaseDisplayContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = A292B2791F39FBC10086E03E /* TJSBaseDisplayContainer.m */; };
+		A2A71C691F3F200700577E45 /* ProductSearchHotReusableHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A71C681F3F200700577E45 /* ProductSearchHotReusableHeader.m */; };
 		A2FE0A891F38B47000E678E5 /* MyFavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2FE0A831F38B47000E678E5 /* MyFavViewController.m */; };
 		A2FE0A8C1F38B4B400E678E5 /* MyFavVCConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = A2FE0A8B1F38B4B400E678E5 /* MyFavVCConfig.m */; };
 		D8B489F6D9BA2D941ED245C3 /* libPods-TianJiCloud.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24C0B56EAE3CA4A62571C4DD /* libPods-TianJiCloud.a */; };
@@ -1090,7 +1091,6 @@
 		2CF8B5401F3D46B8003B8520 /* ProductSearchResultCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductSearchResultCell.m; sourceTree = "<group>"; };
 		2CF8B5431F3D48B0003B8520 /* ProductSearchListCellFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductSearchListCellFactory.h; sourceTree = "<group>"; };
 		2CF8B5441F3D48B0003B8520 /* ProductSearchListCellFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductSearchListCellFactory.m; sourceTree = "<group>"; };
-		2CF8B5461F3D48F4003B8520 /* ProductSearchResultCellProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductSearchResultCellProtocol.h; sourceTree = "<group>"; };
 		2CF8B5471F3D99F9003B8520 /* TJSBaseCollectionViewCellDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TJSBaseCollectionViewCellDelegate.h; sourceTree = "<group>"; };
 		2CF8B5481F3D9A2D003B8520 /* TJSBaseTableViewCellDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TJSBaseTableViewCellDelegate.h; sourceTree = "<group>"; };
 		2CF8B5491F3D9E5C003B8520 /* TJSBaseCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSBaseCollectionViewLayout.h; sourceTree = "<group>"; };
@@ -1121,7 +1121,6 @@
 		A28956971F3CA25E002D6845 /* ProductSearchResultLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductSearchResultLayout.m; sourceTree = "<group>"; };
 		A28956991F3CA4C9002D6845 /* ProductSerachConfigurateProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductSerachConfigurateProtocol.h; sourceTree = "<group>"; };
 		A289569A1F3CA4E6002D6845 /* ProductSearchPrivateProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductSearchPrivateProtocol.h; sourceTree = "<group>"; };
-		A289569B1F3CA512002D6845 /* ProductSearchHotCellProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductSearchHotCellProtocol.h; sourceTree = "<group>"; };
 		A292B25F1F39F7DD0086E03E /* CapitalRecordListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CapitalRecordListController.h; sourceTree = "<group>"; };
 		A292B2601F39F7DD0086E03E /* CapitalRecordListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CapitalRecordListController.m; sourceTree = "<group>"; };
 		A292B2621F39F81D0086E03E /* CapitalRecordConfigurator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CapitalRecordConfigurator.h; sourceTree = "<group>"; };
@@ -1141,6 +1140,8 @@
 		A292B2761F39F92D0086E03E /* CapitalRecordVCConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CapitalRecordVCConfig.m; sourceTree = "<group>"; };
 		A292B2781F39FBC10086E03E /* TJSBaseDisplayContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSBaseDisplayContainer.h; sourceTree = "<group>"; };
 		A292B2791F39FBC10086E03E /* TJSBaseDisplayContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSBaseDisplayContainer.m; sourceTree = "<group>"; };
+		A2A71C671F3F200700577E45 /* ProductSearchHotReusableHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductSearchHotReusableHeader.h; sourceTree = "<group>"; };
+		A2A71C681F3F200700577E45 /* ProductSearchHotReusableHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductSearchHotReusableHeader.m; sourceTree = "<group>"; };
 		A2FE0A821F38B47000E678E5 /* MyFavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyFavViewController.h; sourceTree = "<group>"; };
 		A2FE0A831F38B47000E678E5 /* MyFavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyFavViewController.m; sourceTree = "<group>"; };
 		A2FE0A8A1F38B4B400E678E5 /* MyFavVCConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyFavVCConfig.h; sourceTree = "<group>"; };
@@ -2861,8 +2862,6 @@
 				2C89AD811F2C7EF6005C29AC /* TJSProductSearchVCProtocol.h */,
 				A28956991F3CA4C9002D6845 /* ProductSerachConfigurateProtocol.h */,
 				A289569A1F3CA4E6002D6845 /* ProductSearchPrivateProtocol.h */,
-				A289569B1F3CA512002D6845 /* ProductSearchHotCellProtocol.h */,
-				2CF8B5461F3D48F4003B8520 /* ProductSearchResultCellProtocol.h */,
 			);
 			path = Protovol;
 			sourceTree = "<group>";
@@ -3650,19 +3649,19 @@
 			isa = PBXGroup;
 			children = (
 				2CF8B5621F3DBB59003B8520 /* TJSBaseCellLayoutProtocol.h */,
+				2CF8B5471F3D99F9003B8520 /* TJSBaseCollectionViewCellDelegate.h */,
 				2CF8B56C1F3DC75D003B8520 /* TJSBaseCellContentConfigProtocol.h */,
 				2CF8B5491F3D9E5C003B8520 /* TJSBaseCollectionViewLayout.h */,
 				2CF8B54A1F3D9E5C003B8520 /* TJSBaseCollectionViewLayout.m */,
-				2CF8B5471F3D99F9003B8520 /* TJSBaseCollectionViewCellDelegate.h */,
 				2CCBE48B1F34207C006C4018 /* TJSBaseCollectionViewCell.h */,
 				2CCBE48C1F34207C006C4018 /* TJSBaseCollectionViewCell.m */,
 				2C027D091F3BFA28001D7EB6 /* TJSBaseCollectionReusableView.h */,
 				2C027D0A1F3BFA28001D7EB6 /* TJSBaseCollectionReusableView.m */,
+				2CF8B5481F3D9A2D003B8520 /* TJSBaseTableViewCellDelegate.h */,
 				2CCBE48F1F34207C006C4018 /* TJSBaseTableViewCell.h */,
 				2CCBE4901F34207C006C4018 /* TJSBaseTableViewCell.m */,
 				2CCBE48D1F34207C006C4018 /* TJSBaseTableHeaderFooterView.h */,
 				2CCBE48E1F34207C006C4018 /* TJSBaseTableHeaderFooterView.m */,
-				2CF8B5481F3D9A2D003B8520 /* TJSBaseTableViewCellDelegate.h */,
 			);
 			path = BaseCell;
 			sourceTree = "<group>";
@@ -3877,6 +3876,8 @@
 			children = (
 				2CF8B53C1F3D469F003B8520 /* ProductSearchHotCell.h */,
 				2CF8B53D1F3D469F003B8520 /* ProductSearchHotCell.m */,
+				A2A71C671F3F200700577E45 /* ProductSearchHotReusableHeader.h */,
+				A2A71C681F3F200700577E45 /* ProductSearchHotReusableHeader.m */,
 				2CF8B53F1F3D46B8003B8520 /* ProductSearchResultCell.h */,
 				2CF8B5401F3D46B8003B8520 /* ProductSearchResultCell.m */,
 				2CF8B56D1F3DD88D003B8520 /* ProductSearchResultCell.xib */,
@@ -4311,6 +4312,7 @@
 				2C027D191F3C7C80001D7EB6 /* ProductFilterResultLayoutImpl.m in Sources */,
 				2C859CEE1F31EB2E00B86575 /* ZLPhotoRect.m in Sources */,
 				2CF8B5451F3D48B0003B8520 /* ProductSearchListCellFactory.m in Sources */,
+				A2A71C691F3F200700577E45 /* ProductSearchHotReusableHeader.m in Sources */,
 				2C4C1C2D1F386DF400002166 /* TJSAlertHandleUtil.m in Sources */,
 				2C4C1C931F3948E800002166 /* PNChartLabel.m in Sources */,
 				A2FE0A8C1F38B4B400E678E5 /* MyFavVCConfig.m in Sources */,

@@ -8,11 +8,9 @@
 
 #import "TJSBaseCollectionViewCell.h"
 
-#import "ProductSearchHotCellProtocol.h"
-
 @interface ProductSearchHotCell : TJSBaseCollectionViewCell
 
-@property (nonatomic,weak)id <ProductSearchHotCellDelegate> delegate;
+@property (nonatomic,weak)id <TJSBaseCollectionViewCellDelegate> delegate;
 
 @property (nonatomic,strong) NSIndexPath *indexPath;
 
