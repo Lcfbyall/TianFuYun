@@ -45,7 +45,7 @@
         btn.tjs_backGroundColorNormal= ThemeService.origin_color_00;
         btn.tjs_backGroundColorHighlighted = ThemeService.main_color_02;
         [self addSubview:btn];
-        
+        btn.backgroundColor = [UIColor redColor];
         [btn mas_makeConstraints:^(MASConstraintMaker *make) {
             
             make.edges.mas_equalTo(UIEdgeInsetsMake(0, 0, 0, 0));

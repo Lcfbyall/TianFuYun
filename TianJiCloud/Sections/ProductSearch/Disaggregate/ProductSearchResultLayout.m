@@ -24,7 +24,7 @@
 
 - (void)calculateLayoutAttributes{
     
-    
+    [super calculateLayoutAttributes];
 }
 
 

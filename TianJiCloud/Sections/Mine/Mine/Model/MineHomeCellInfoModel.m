@@ -28,7 +28,7 @@ static NSString *const Order_cell = @"MineHomeOrderCell";
 
 //
 static NSString *const Invest_cell = @"MineHomeInvestCell";
-#define investTypes @[@"累计投资",@"资金记录",@"银行卡管理",@"专属经理"]
+#define investTypes @[@"累计投资   ",@"资金记录   ",@"银行卡管理",@"专属经理   "]
 #define investImgs  @[@"total_invest",@"money_record",@"bank_card_new",@"manager"]
 
 

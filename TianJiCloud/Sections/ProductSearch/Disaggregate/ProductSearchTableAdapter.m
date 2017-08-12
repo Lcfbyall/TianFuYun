@@ -105,7 +105,6 @@ static NSString *searchResultIdentifier = @"ProductSearchResultCell";
 
 
 
-
 #pragma mark - <TJSBaseCollectionViewLayoutDelegate>
 - (CGSize)collectionView:(UICollectionView *)collectionView
                   layout:(TJSBaseCollectionViewLayout *)collectionViewLayout
