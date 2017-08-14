@@ -92,6 +92,7 @@
 		2C4412A91F2201FF00C453EF /* TJWUrlArgumentsFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4412A41F2201FF00C453EF /* TJWUrlArgumentsFilter.m */; };
 		2C4412AD1F22031600C453EF /* TJSHudAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4412AC1F22031600C453EF /* TJSHudAlert.m */; };
 		2C4412B41F2207CD00C453EF /* TJSLoginStateUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4412B31F2207CD00C453EF /* TJSLoginStateUtil.m */; };
+		2C44776A1F41461200ED8685 /* ProductInfoSearchModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4477691F41461200ED8685 /* ProductInfoSearchModel.m */; };
 		2C4C1BD11F380DFE00002166 /* MyOrderListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C1BD01F380DFE00002166 /* MyOrderListViewController.m */; };
 		2C4C1BD51F38143B00002166 /* UIApplication+TJSAppVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C1BD41F38143B00002166 /* UIApplication+TJSAppVersion.m */; };
 		2C4C1BD81F381AF300002166 /* MineHomeCellBalanceItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C1BD71F381AF200002166 /* MineHomeCellBalanceItem.m */; };
@@ -111,8 +112,6 @@
 		2C4C1C2A1F386DA100002166 /* TJSAppSoreUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C1C291F386DA100002166 /* TJSAppSoreUtil.m */; };
 		2C4C1C2D1F386DF400002166 /* TJSAlertHandleUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C1C2C1F386DF400002166 /* TJSAlertHandleUtil.m */; };
 		2C4C1C301F386E3B00002166 /* TJSMobileCallUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C1C2F1F386E3B00002166 /* TJSMobileCallUtil.m */; };
-		2C4C1C3A1F393FDC00002166 /* CumulativeInvestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C1C391F393FDC00002166 /* CumulativeInvestController.m */; };
-		2C4C1C3E1F3940AE00002166 /* CumulateInvestBarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C1C3D1F3940AE00002166 /* CumulateInvestBarCell.m */; };
 		2C4C1C881F3948E100002166 /* PNPieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C1C851F3948E100002166 /* PNPieChart.m */; };
 		2C4C1C891F3948E100002166 /* PNPieChartDataItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C1C871F3948E100002166 /* PNPieChartDataItem.m */; };
 		2C4C1C931F3948E800002166 /* PNChartLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C1C8E1F3948E800002166 /* PNChartLabel.m */; };
@@ -311,6 +310,15 @@
 		2CAF43191F2829CF00ABCA5E /* TJSProductInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF43151F2829CF00ABCA5E /* TJSProductInfo.m */; };
 		2CAF431A1F2829CF00ABCA5E /* TJSProductInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF43171F2829CF00ABCA5E /* TJSProductInfoModel.m */; };
 		2CAF43211F28398E00ABCA5E /* UIView+TJSFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF43201F28398E00ABCA5E /* UIView+TJSFrame.m */; };
+		2CB4F5721F418FFB00FF98C9 /* CumulativeInvestConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB4F55C1F418FFB00FF98C9 /* CumulativeInvestConfig.m */; };
+		2CB4F5731F418FFB00FF98C9 /* CumulativeInvestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB4F55F1F418FFB00FF98C9 /* CumulativeInvestController.m */; };
+		2CB4F5741F418FFB00FF98C9 /* CumulateInvestInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB4F5631F418FFB00FF98C9 /* CumulateInvestInfo.m */; };
+		2CB4F5751F418FFB00FF98C9 /* CumulateInvestInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB4F5651F418FFB00FF98C9 /* CumulateInvestInfoModel.m */; };
+		2CB4F5761F418FFB00FF98C9 /* CumulateInvestNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB4F5681F418FFB00FF98C9 /* CumulateInvestNetworkTool.m */; };
+		2CB4F5771F418FFB00FF98C9 /* CumulateInvestStoreTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB4F56C1F418FFB00FF98C9 /* CumulateInvestStoreTool.m */; };
+		2CB4F5781F418FFB00FF98C9 /* CumulateInvestBarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB4F56F1F418FFB00FF98C9 /* CumulateInvestBarCell.m */; };
+		2CB4F5791F418FFB00FF98C9 /* CumulateInvestDefaultCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB4F5711F418FFB00FF98C9 /* CumulateInvestDefaultCell.m */; };
+		2CB4F57E1F41905500FF98C9 /* InvestProductController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB4F57D1F41905500FF98C9 /* InvestProductController.m */; };
 		2CCBE45D1F32CB61006C4018 /* ProductListCellHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCBE45C1F32CB61006C4018 /* ProductListCellHeaderView.m */; };
 		2CCBE4651F330572006C4018 /* DiscoveryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCBE4641F330572006C4018 /* DiscoveryViewController.m */; };
 		2CCBE4681F330597006C4018 /* DiscoveryVCConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCBE4671F330597006C4018 /* DiscoveryVCConfig.m */; };
@@ -565,6 +573,8 @@
 		2C4412B21F2207CD00C453EF /* TJSLoginStateUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSLoginStateUtil.h; sourceTree = "<group>"; };
 		2C4412B31F2207CD00C453EF /* TJSLoginStateUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSLoginStateUtil.m; sourceTree = "<group>"; };
 		2C4412B51F2208F700C453EF /* TJSApiParamasKeyDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TJSApiParamasKeyDefine.h; sourceTree = "<group>"; };
+		2C4477681F41461200ED8685 /* ProductInfoSearchModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductInfoSearchModel.h; sourceTree = "<group>"; };
+		2C4477691F41461200ED8685 /* ProductInfoSearchModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductInfoSearchModel.m; sourceTree = "<group>"; };
 		2C4C1BCF1F380DFE00002166 /* MyOrderListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyOrderListViewController.h; sourceTree = "<group>"; };
 		2C4C1BD01F380DFE00002166 /* MyOrderListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyOrderListViewController.m; sourceTree = "<group>"; };
 		2C4C1BD31F38143B00002166 /* UIApplication+TJSAppVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+TJSAppVersion.h"; sourceTree = "<group>"; };
@@ -608,10 +618,6 @@
 		2C4C1C2C1F386DF400002166 /* TJSAlertHandleUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSAlertHandleUtil.m; sourceTree = "<group>"; };
 		2C4C1C2E1F386E3B00002166 /* TJSMobileCallUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSMobileCallUtil.h; sourceTree = "<group>"; };
 		2C4C1C2F1F386E3B00002166 /* TJSMobileCallUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSMobileCallUtil.m; sourceTree = "<group>"; };
-		2C4C1C381F393FDC00002166 /* CumulativeInvestController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CumulativeInvestController.h; sourceTree = "<group>"; };
-		2C4C1C391F393FDC00002166 /* CumulativeInvestController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CumulativeInvestController.m; sourceTree = "<group>"; };
-		2C4C1C3C1F3940AE00002166 /* CumulateInvestBarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CumulateInvestBarCell.h; sourceTree = "<group>"; };
-		2C4C1C3D1F3940AE00002166 /* CumulateInvestBarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CumulateInvestBarCell.m; sourceTree = "<group>"; };
 		2C4C1C841F3948E100002166 /* PNPieChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNPieChart.h; sourceTree = "<group>"; };
 		2C4C1C851F3948E100002166 /* PNPieChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNPieChart.m; sourceTree = "<group>"; };
 		2C4C1C861F3948E100002166 /* PNPieChartDataItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNPieChartDataItem.h; sourceTree = "<group>"; };
@@ -808,7 +814,6 @@
 		2C85E3791F2F02B800ADD360 /* TJSMineHomeInteractorImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSMineHomeInteractorImpl.m; sourceTree = "<group>"; };
 		2C85E37B1F2F031600ADD360 /* TJSMineHomeTableAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSMineHomeTableAdapter.h; sourceTree = "<group>"; };
 		2C85E37C1F2F031600ADD360 /* TJSMineHomeTableAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSMineHomeTableAdapter.m; sourceTree = "<group>"; };
-		2C85E37E1F2F03A300ADD360 /* TJSMineHomeCellProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TJSMineHomeCellProtocol.h; sourceTree = "<group>"; };
 		2C85E37F1F2F03D100ADD360 /* TJSMineHomeConfigurateProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TJSMineHomeConfigurateProtocol.h; sourceTree = "<group>"; };
 		2C85E3801F2F03EB00ADD360 /* TJSMineHomePrivateProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TJSMineHomePrivateProtocol.h; sourceTree = "<group>"; };
 		2C85E3811F2F042A00ADD360 /* TJSMineHomeDataSourceImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSMineHomeDataSourceImpl.h; sourceTree = "<group>"; };
@@ -979,7 +984,6 @@
 		2CAF42C01F281B8600ABCA5E /* ProductListNetworkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductListNetworkTool.h; sourceTree = "<group>"; };
 		2CAF42C11F281B8600ABCA5E /* ProductListNetworkTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductListNetworkTool.m; sourceTree = "<group>"; };
 		2CAF42CE1F281B8600ABCA5E /* TJSProductCellLayoutProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSProductCellLayoutProtocol.h; sourceTree = "<group>"; };
-		2CAF42CF1F281B8600ABCA5E /* TJSProductListCellProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSProductListCellProtocol.h; sourceTree = "<group>"; };
 		2CAF42D01F281B8600ABCA5E /* TJSProductListConfigurateProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSProductListConfigurateProtocol.h; sourceTree = "<group>"; };
 		2CAF42D11F281B8600ABCA5E /* TJSProductListPrivateProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSProductListPrivateProtocol.h; sourceTree = "<group>"; };
 		2CAF42EC1F28273300ABCA5E /* ProductListCellContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductListCellContentView.h; sourceTree = "<group>"; };
@@ -1013,6 +1017,25 @@
 		2CAF43171F2829CF00ABCA5E /* TJSProductInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSProductInfoModel.m; sourceTree = "<group>"; };
 		2CAF431F1F28398E00ABCA5E /* UIView+TJSFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TJSFrame.h"; sourceTree = "<group>"; };
 		2CAF43201F28398E00ABCA5E /* UIView+TJSFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TJSFrame.m"; sourceTree = "<group>"; };
+		2CB4F5491F41856500FF98C9 /* TJSBaseCollectionReusableViewProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TJSBaseCollectionReusableViewProtocol.h; sourceTree = "<group>"; };
+		2CB4F55B1F418FFB00FF98C9 /* CumulativeInvestConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CumulativeInvestConfig.h; sourceTree = "<group>"; };
+		2CB4F55C1F418FFB00FF98C9 /* CumulativeInvestConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CumulativeInvestConfig.m; sourceTree = "<group>"; };
+		2CB4F55E1F418FFB00FF98C9 /* CumulativeInvestController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CumulativeInvestController.h; sourceTree = "<group>"; };
+		2CB4F55F1F418FFB00FF98C9 /* CumulativeInvestController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CumulativeInvestController.m; sourceTree = "<group>"; };
+		2CB4F5621F418FFB00FF98C9 /* CumulateInvestInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CumulateInvestInfo.h; sourceTree = "<group>"; };
+		2CB4F5631F418FFB00FF98C9 /* CumulateInvestInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CumulateInvestInfo.m; sourceTree = "<group>"; };
+		2CB4F5641F418FFB00FF98C9 /* CumulateInvestInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CumulateInvestInfoModel.h; sourceTree = "<group>"; };
+		2CB4F5651F418FFB00FF98C9 /* CumulateInvestInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CumulateInvestInfoModel.m; sourceTree = "<group>"; };
+		2CB4F5671F418FFB00FF98C9 /* CumulateInvestNetworkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CumulateInvestNetworkTool.h; sourceTree = "<group>"; };
+		2CB4F5681F418FFB00FF98C9 /* CumulateInvestNetworkTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CumulateInvestNetworkTool.m; sourceTree = "<group>"; };
+		2CB4F56B1F418FFB00FF98C9 /* CumulateInvestStoreTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CumulateInvestStoreTool.h; sourceTree = "<group>"; };
+		2CB4F56C1F418FFB00FF98C9 /* CumulateInvestStoreTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CumulateInvestStoreTool.m; sourceTree = "<group>"; };
+		2CB4F56E1F418FFB00FF98C9 /* CumulateInvestBarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CumulateInvestBarCell.h; sourceTree = "<group>"; };
+		2CB4F56F1F418FFB00FF98C9 /* CumulateInvestBarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CumulateInvestBarCell.m; sourceTree = "<group>"; };
+		2CB4F5701F418FFB00FF98C9 /* CumulateInvestDefaultCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CumulateInvestDefaultCell.h; sourceTree = "<group>"; };
+		2CB4F5711F418FFB00FF98C9 /* CumulateInvestDefaultCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CumulateInvestDefaultCell.m; sourceTree = "<group>"; };
+		2CB4F57C1F41905500FF98C9 /* InvestProductController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InvestProductController.h; sourceTree = "<group>"; };
+		2CB4F57D1F41905500FF98C9 /* InvestProductController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InvestProductController.m; sourceTree = "<group>"; };
 		2CCBE45B1F32CB61006C4018 /* ProductListCellHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductListCellHeaderView.h; sourceTree = "<group>"; };
 		2CCBE45C1F32CB61006C4018 /* ProductListCellHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductListCellHeaderView.m; sourceTree = "<group>"; };
 		2CCBE4631F330572006C4018 /* DiscoveryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoveryViewController.h; sourceTree = "<group>"; };
@@ -1754,6 +1777,15 @@
 			path = HudAlert;
 			sourceTree = "<group>";
 		};
+		2C4477671F4145F100ED8685 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2C4477681F41461200ED8685 /* ProductInfoSearchModel.h */,
+				2C4477691F41461200ED8685 /* ProductInfoSearchModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		2C4C1BCB1F380CED00002166 /* Config */ = {
 			isa = PBXGroup;
 			children = (
@@ -1866,66 +1898,6 @@
 				2C4C1C151F384A5600002166 /* TJSMyOrderListTableAdapter.m */,
 			);
 			path = Disaggregate;
-			sourceTree = "<group>";
-		};
-		2C4C1C311F393FC200002166 /* Protocol */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Protocol;
-			sourceTree = "<group>";
-		};
-		2C4C1C321F393FC200002166 /* Config */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Config;
-			sourceTree = "<group>";
-		};
-		2C4C1C331F393FC200002166 /* Store */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Store;
-			sourceTree = "<group>";
-		};
-		2C4C1C341F393FC200002166 /* NetworkTool */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = NetworkTool;
-			sourceTree = "<group>";
-		};
-		2C4C1C351F393FC200002166 /* Disaggregate */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Disaggregate;
-			sourceTree = "<group>";
-		};
-		2C4C1C361F393FC200002166 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		2C4C1C371F393FC200002166 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				2C4C1C381F393FDC00002166 /* CumulativeInvestController.h */,
-				2C4C1C391F393FDC00002166 /* CumulativeInvestController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		2C4C1C3B1F39404300002166 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				2C4C1C3C1F3940AE00002166 /* CumulateInvestBarCell.h */,
-				2C4C1C3D1F3940AE00002166 /* CumulateInvestBarCell.m */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		2C4C1C831F3948E100002166 /* PNPieChart */ = {
@@ -2620,7 +2592,6 @@
 				2C85E3741F2EDBDE00ADD360 /* TJSMineHomeVCProtocol.h */,
 				2C85E37F1F2F03D100ADD360 /* TJSMineHomeConfigurateProtocol.h */,
 				2C85E3801F2F03EB00ADD360 /* TJSMineHomePrivateProtocol.h */,
-				2C85E37E1F2F03A300ADD360 /* TJSMineHomeCellProtocol.h */,
 				2C85E3901F2F0A7400ADD360 /* TJSMineHomeCellLayoutProtocol.h */,
 			);
 			path = Protocol;
@@ -3019,6 +2990,7 @@
 			isa = PBXGroup;
 			children = (
 				2C8DE5A51F29FFBF009B3AE2 /* ProductSearch.storyboard */,
+				2C4477671F4145F100ED8685 /* Model */,
 				2CF8B54C1F3DA209003B8520 /* NetworkTool */,
 				2C8DE5A11F29FF4C009B3AE2 /* Controller */,
 				2C8DE5A01F29FF4C009B3AE2 /* Config */,
@@ -3179,14 +3151,8 @@
 			isa = PBXGroup;
 			children = (
 				2C7A344C1F2F633C004DD566 /* CumulateInvest.storyboard */,
-				2C4C1C3B1F39404300002166 /* View */,
-				2C4C1C371F393FC200002166 /* Controller */,
-				2C4C1C311F393FC200002166 /* Protocol */,
-				2C4C1C321F393FC200002166 /* Config */,
-				2C4C1C331F393FC200002166 /* Store */,
-				2C4C1C341F393FC200002166 /* NetworkTool */,
-				2C4C1C351F393FC200002166 /* Disaggregate */,
-				2C4C1C361F393FC200002166 /* Model */,
+				2CB4F5591F418FFB00FF98C9 /* InvestHome */,
+				2CB4F57A1F41900300FF98C9 /* InvestProduct */,
 			);
 			path = CumulativeInvest;
 			sourceTree = "<group>";
@@ -3510,7 +3476,6 @@
 				2C89AD7A1F2C7C2B005C29AC /* TJSProductListVCProtocol.h */,
 				2CAF42D01F281B8600ABCA5E /* TJSProductListConfigurateProtocol.h */,
 				2CAF42D11F281B8600ABCA5E /* TJSProductListPrivateProtocol.h */,
-				2CAF42CF1F281B8600ABCA5E /* TJSProductListCellProtocol.h */,
 				2CAF42CE1F281B8600ABCA5E /* TJSProductCellLayoutProtocol.h */,
 			);
 			path = Protocol;
@@ -3594,6 +3559,110 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		2CB4F5591F418FFB00FF98C9 /* InvestHome */ = {
+			isa = PBXGroup;
+			children = (
+				2CB4F55A1F418FFB00FF98C9 /* Config */,
+				2CB4F55D1F418FFB00FF98C9 /* Controller */,
+				2CB4F5601F418FFB00FF98C9 /* Disaggregate */,
+				2CB4F5611F418FFB00FF98C9 /* Model */,
+				2CB4F5661F418FFB00FF98C9 /* NetworkTool */,
+				2CB4F5691F418FFB00FF98C9 /* Protocol */,
+				2CB4F56A1F418FFB00FF98C9 /* Store */,
+				2CB4F56D1F418FFB00FF98C9 /* View */,
+			);
+			path = InvestHome;
+			sourceTree = "<group>";
+		};
+		2CB4F55A1F418FFB00FF98C9 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				2CB4F55B1F418FFB00FF98C9 /* CumulativeInvestConfig.h */,
+				2CB4F55C1F418FFB00FF98C9 /* CumulativeInvestConfig.m */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		2CB4F55D1F418FFB00FF98C9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2CB4F55E1F418FFB00FF98C9 /* CumulativeInvestController.h */,
+				2CB4F55F1F418FFB00FF98C9 /* CumulativeInvestController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2CB4F5601F418FFB00FF98C9 /* Disaggregate */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Disaggregate;
+			sourceTree = "<group>";
+		};
+		2CB4F5611F418FFB00FF98C9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2CB4F5621F418FFB00FF98C9 /* CumulateInvestInfo.h */,
+				2CB4F5631F418FFB00FF98C9 /* CumulateInvestInfo.m */,
+				2CB4F5641F418FFB00FF98C9 /* CumulateInvestInfoModel.h */,
+				2CB4F5651F418FFB00FF98C9 /* CumulateInvestInfoModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2CB4F5661F418FFB00FF98C9 /* NetworkTool */ = {
+			isa = PBXGroup;
+			children = (
+				2CB4F5671F418FFB00FF98C9 /* CumulateInvestNetworkTool.h */,
+				2CB4F5681F418FFB00FF98C9 /* CumulateInvestNetworkTool.m */,
+			);
+			path = NetworkTool;
+			sourceTree = "<group>";
+		};
+		2CB4F5691F418FFB00FF98C9 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		2CB4F56A1F418FFB00FF98C9 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				2CB4F56B1F418FFB00FF98C9 /* CumulateInvestStoreTool.h */,
+				2CB4F56C1F418FFB00FF98C9 /* CumulateInvestStoreTool.m */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		2CB4F56D1F418FFB00FF98C9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2CB4F56E1F418FFB00FF98C9 /* CumulateInvestBarCell.h */,
+				2CB4F56F1F418FFB00FF98C9 /* CumulateInvestBarCell.m */,
+				2CB4F5701F418FFB00FF98C9 /* CumulateInvestDefaultCell.h */,
+				2CB4F5711F418FFB00FF98C9 /* CumulateInvestDefaultCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2CB4F57A1F41900300FF98C9 /* InvestProduct */ = {
+			isa = PBXGroup;
+			children = (
+				2CB4F57B1F41901D00FF98C9 /* Controller */,
+			);
+			path = InvestProduct;
+			sourceTree = "<group>";
+		};
+		2CB4F57B1F41901D00FF98C9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2CB4F57C1F41905500FF98C9 /* InvestProductController.h */,
+				2CB4F57D1F41905500FF98C9 /* InvestProductController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		2CCBE4611F33054A006C4018 /* Config */ = {
 			isa = PBXGroup;
 			children = (
@@ -3651,17 +3720,18 @@
 				2CF8B5621F3DBB59003B8520 /* TJSBaseCellLayoutProtocol.h */,
 				2CF8B56C1F3DC75D003B8520 /* TJSBaseCellContentConfigProtocol.h */,
 				2CF8B5471F3D99F9003B8520 /* TJSBaseCollectionViewCellDelegate.h */,
+				2CB4F5491F41856500FF98C9 /* TJSBaseCollectionReusableViewProtocol.h */,
 				2CF8B5491F3D9E5C003B8520 /* TJSBaseCollectionViewLayout.h */,
 				2CF8B54A1F3D9E5C003B8520 /* TJSBaseCollectionViewLayout.m */,
 				2CCBE48B1F34207C006C4018 /* TJSBaseCollectionViewCell.h */,
 				2CCBE48C1F34207C006C4018 /* TJSBaseCollectionViewCell.m */,
 				2C027D091F3BFA28001D7EB6 /* TJSBaseCollectionReusableView.h */,
 				2C027D0A1F3BFA28001D7EB6 /* TJSBaseCollectionReusableView.m */,
-				2CF8B5481F3D9A2D003B8520 /* TJSBaseTableViewCellDelegate.h */,
 				2CCBE48F1F34207C006C4018 /* TJSBaseTableViewCell.h */,
 				2CCBE4901F34207C006C4018 /* TJSBaseTableViewCell.m */,
 				2CCBE48D1F34207C006C4018 /* TJSBaseTableHeaderFooterView.h */,
 				2CCBE48E1F34207C006C4018 /* TJSBaseTableHeaderFooterView.m */,
+				2CF8B5481F3D9A2D003B8520 /* TJSBaseTableViewCellDelegate.h */,
 			);
 			path = BaseCell;
 			sourceTree = "<group>";
@@ -4341,6 +4411,7 @@
 				2C8BB7AC1F30878A00E2D75F /* HomeWebClickItem.m in Sources */,
 				2C8DE5A91F2ACA75009B3AE2 /* TJSBaseControllerContainer.m in Sources */,
 				2C85E3AD1F2F1C1D00ADD360 /* MineHomeInvestCell.m in Sources */,
+				2CB4F5761F418FFB00FF98C9 /* CumulateInvestNetworkTool.m in Sources */,
 				2C8DE5B61F2AD8B3009B3AE2 /* DiscoveryRoadShowListCell.m in Sources */,
 				2CCC85AB1F3AEE3A0009FC1C /* ProducFilterVCConfig.m in Sources */,
 				2C8BB7A71F30859C00E2D75F /* HomeHeaderContainer.m in Sources */,
@@ -4365,12 +4436,11 @@
 				2C8DE59C1F29FC51009B3AE2 /* TJSProductDetailController.m in Sources */,
 				2C4412A51F2201FF00C453EF /* TJSAnimatingRequestAccessory.m in Sources */,
 				2C44123F1F21D2A600C453EF /* GVUserDefaults+TJSGlobalProperties.m in Sources */,
-				2C4C1C3E1F3940AE00002166 /* CumulateInvestBarCell.m in Sources */,
-				2C4C1C3A1F393FDC00002166 /* CumulativeInvestController.m in Sources */,
 				2C4412591F21DDA900C453EF /* UIWindow+Transition.m in Sources */,
 				2C4C1C071F3847C200002166 /* MyOrderListVCConfig.m in Sources */,
 				2C83C7021F39B79C004034CA /* TJSStoreManager.m in Sources */,
 				2CCC85C21F3AEF4D0009FC1C /* ProductFilterResultCell.m in Sources */,
+				2CB4F5781F418FFB00FF98C9 /* CumulateInvestBarCell.m in Sources */,
 				2C85E3891F2F09D100ADD360 /* TJSMineHomeCellFactory.m in Sources */,
 				2C83C7051F39B80A004034CA /* ProductListStoreTool.m in Sources */,
 				2C859CFE1F31EB2E00B86575 /* ZLPhotoPickerCollectionViewCell.m in Sources */,
@@ -4437,6 +4507,7 @@
 				2C83C6F31F39B354004034CA /* MyContractViewController.m in Sources */,
 				2CCC85B21F3AEE3A0009FC1C /* TJSProductFilterLayoutImpl.m in Sources */,
 				2C4C1C161F384A5600002166 /* TJSMyOrderListTableAdapter.m in Sources */,
+				2C44776A1F41461200ED8685 /* ProductInfoSearchModel.m in Sources */,
 				2C8DE5911F29F4AF009B3AE2 /* TJSBaseWebViewController.m in Sources */,
 				2CAF42731F26E66500ABCA5E /* TJSBaseNetworkTool.m in Sources */,
 				2C8DE5F11F2AE82F009B3AE2 /* TJSDiscoNewsInteracotImpl.m in Sources */,
@@ -4457,6 +4528,7 @@
 				2CCBE4921F34207C006C4018 /* TJSBaseTableHeaderFooterView.m in Sources */,
 				2C300F851F2F3C7E00DD440E /* GesturePasswordController.m in Sources */,
 				2C027D2A1F3C82C8001D7EB6 /* ProductSearchLayoutImpl.m in Sources */,
+				2CB4F5741F418FFB00FF98C9 /* CumulateInvestInfo.m in Sources */,
 				2C44124E1F21D54400C453EF /* TJSSystemAlertMaker.m in Sources */,
 				2C859CF71F31EB2E00B86575 /* ZLPhotoPickerGroup.m in Sources */,
 				2CCC85B01F3AEE3A0009FC1C /* TJSProductFilterDataSourceImpl.m in Sources */,
@@ -4468,6 +4540,8 @@
 				2C859CE81F31EB2E00B86575 /* UIView+ZLExtension.m in Sources */,
 				2C300F821F2F3C5F00DD440E /* ModifyLogPasswordController.m in Sources */,
 				2CAF43181F2829CF00ABCA5E /* TJSProductEvent.m in Sources */,
+				2CB4F5731F418FFB00FF98C9 /* CumulativeInvestController.m in Sources */,
+				2CB4F5721F418FFB00FF98C9 /* CumulativeInvestConfig.m in Sources */,
 				2C859CF51F31EB2E00B86575 /* ZLPhotoAssets.m in Sources */,
 				2C85E3B01F2F1C2B00ADD360 /* MineHomeBalanceCell.m in Sources */,
 				2C859CEC1F31EB2E00B86575 /* ZLCameraViewController.m in Sources */,
@@ -4524,6 +4598,7 @@
 				2CAF43111F2829B300ABCA5E /* TJSAppInfo.m in Sources */,
 				2CF8B56B1F3DC710003B8520 /* ProductSearchCellContentConfig.m in Sources */,
 				2C4C1BFE1F3846F600002166 /* MyOrderListTableCell.m in Sources */,
+				2CB4F57E1F41905500FF98C9 /* InvestProductController.m in Sources */,
 				2C8DE5841F29D509009B3AE2 /* TJSHomeListInteractorImpl.m in Sources */,
 				2CCBE45D1F32CB61006C4018 /* ProductListCellHeaderView.m in Sources */,
 				2C85E39E1F2F1A5800ADD360 /* TJSMineHomeInvestCellContentConfig.m in Sources */,
@@ -4531,6 +4606,7 @@
 				2C89AD8A1F2C9FE5005C29AC /* UIView+TJSViewController.m in Sources */,
 				2C02DFA31F39D527000410E1 /* MyFavListTableAdapter.m in Sources */,
 				2CCC85BF1F3AEF2C0009FC1C /* FilterResultVCConfig.m in Sources */,
+				2CB4F5751F418FFB00FF98C9 /* CumulateInvestInfoModel.m in Sources */,
 				2C027D131F3C7C61001D7EB6 /* ProductFilterResultInteractorImpl.m in Sources */,
 				2C4412A91F2201FF00C453EF /* TJWUrlArgumentsFilter.m in Sources */,
 				2C859CFF1F31EB2E00B86575 /* ZLPhotoPickerFooterCollectionReusableView.m in Sources */,
@@ -4540,6 +4616,7 @@
 				2C85E37D1F2F031600ADD360 /* TJSMineHomeTableAdapter.m in Sources */,
 				2C4C1BD51F38143B00002166 /* UIApplication+TJSAppVersion.m in Sources */,
 				2C4412671F21E17200C453EF /* NSMutableAttributedString+Formated.m in Sources */,
+				2CB4F5791F418FFB00FF98C9 /* CumulateInvestDefaultCell.m in Sources */,
 				2C8DE58A1F29E066009B3AE2 /* TJSHomeListLayoutImpl.m in Sources */,
 				2C83C71D1F39B9C9004034CA /* MessageKindListController.m in Sources */,
 				2C4C1CB51F3956C300002166 /* FeedbackViewController.m in Sources */,
@@ -4550,6 +4627,7 @@
 				A292B2731F39F8AB0086E03E /* CapitalRecordStoreTool.m in Sources */,
 				2C027D241F3C8296001D7EB6 /* ProductSearchInteractorImpl.m in Sources */,
 				2CAF430A1F2828C200ABCA5E /* TJSProductListTableAdapter.m in Sources */,
+				2CB4F5771F418FFB00FF98C9 /* CumulateInvestStoreTool.m in Sources */,
 				2CF8B5581F3DA324003B8520 /* ProductSearchHotApi.m in Sources */,
 				2C8DE5EE1F2AE7D0009B3AE2 /* TJSDiscoNewsConfigurator.m in Sources */,
 				2C859CE11F31EB2E00B86575 /* DALabeledCircularProgressView.m in Sources */,

@@ -83,6 +83,7 @@ static NSString *const MyOrderListVC = @"MyOrderListViewController";
 #pragma mark - CumulativeInvest identifier
 
 static NSString *const CumulativeInvestVC = @"CumulativeInvestController";
+static NSString *const InvestProductVC = @"InvestProductController";
 
 #pragma mark - CapitalRecordContainer identifier
 

@@ -10,8 +10,6 @@
 
 @interface ProductSearchHotCell : TJSBaseCollectionViewCell
 
-@property (nonatomic,weak)id <TJSBaseCollectionViewCellDelegate> delegate;
-
 @property (nonatomic,strong) NSIndexPath *indexPath;
 
 @end

@@ -10,7 +10,6 @@
 #define TJSBaseVCProtocol_h
 
 
-
 #pragma mark - BaseVCConfig
 @protocol TJSBaseVCConfig <NSObject>
 

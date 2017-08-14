@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface MyFavListDataSourceImpl : NSObject
+#import "MyFavListPrivateProtocol.h"
+
+@interface MyFavListDataSourceImpl : NSObject<MyFavListDataSource>
 
 @end

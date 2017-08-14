@@ -48,7 +48,7 @@
     _adapter = [[ProductSearchTableAdapter alloc]initWithCollectionView:collectionView];
     
     _adapter.interactor = _interactor;
-//    _adapter.cellDelegate = vc;
+    _adapter.cellDelegate = vc;
     
     
     //3.

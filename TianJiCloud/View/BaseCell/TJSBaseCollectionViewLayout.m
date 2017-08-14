@@ -32,6 +32,30 @@
 
 #pragma mark - Private
 
+- (NSInteger)numberOfSectionsInCollectionView{
+
+    NSInteger secitons = 0;
+
+    if([self.delegate conformsToProtocol:@protocol(TJSBaseCollectionViewLayoutDelegate)] && [self.delegate respondsToSelector:@selector(numberOfSectionsInCollectionView:layout:)]){
+    
+       secitons =  [self.delegate numberOfSectionsInCollectionView:self.collectionView layout:self];
+    }
+    
+    return secitons;
+}
+
+- (NSInteger)numberOfItemsInSection:(NSInteger)section{
+
+    NSInteger items = 0;
+
+    if([self.delegate conformsToProtocol:@protocol(TJSBaseCollectionViewLayoutDelegate)] && [self.delegate respondsToSelector:@selector(collectionView:numberOfItemsInSection:layout:)]){
+    
+        items = [self.delegate numberOfSectionsInCollectionView:self.collectionView layout:self];
+    }
+    
+    return items;
+}
+
 - (CGSize)sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
 
     //

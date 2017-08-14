@@ -8,6 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
+@class MyFavViewController;
+
+
 @interface MyFavVCConfig : NSObject
+
+- (void)setup:(MyFavViewController *)vc;
 
 @end

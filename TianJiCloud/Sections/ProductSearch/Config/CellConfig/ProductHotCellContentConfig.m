@@ -7,6 +7,12 @@
 //
 
 #import "ProductHotCellContentConfig.h"
+#import "ProductInfoSearchModel.h"
+
+
+@interface ProductHotCellContentConfig ()
+
+@end
 
 @implementation ProductHotCellContentConfig
 
@@ -14,12 +20,12 @@
 
 - (CGSize)contentSize:(CGFloat)cellWidth model:(id)model{
 
-    return CGSizeMake(100, 40);
+    return ((ProductInfoSearchModel *)model).nameSize;
 }
 
 - (NSString *)cellContent:(id)model{
 
-   return @"ProductSearchHotCell";
+   return ((ProductInfoSearchModel *)model).cellClass;
 }
 
 @end

@@ -9,13 +9,12 @@
 #import <Foundation/Foundation.h>
 
 #import "TJSHomeListConfigurateProtocol.h"
-#import "TJSProductListCellProtocol.h"
 
 @interface TJSHomeListTableAdapter : NSObject<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic,weak) id<TJSHomeListInteractor> interactor;
 
-@property (nonatomic,weak) id<TJSProductListCellDelegate> cellDelegate;
+@property (nonatomic,weak) id<TJSBaseTableViewCellDelegate> cellDelegate;
 
 - (instancetype)initWithTableView:(UITableView *)tableView;
 

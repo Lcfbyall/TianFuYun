@@ -9,6 +9,8 @@
 #ifndef MyFavListConfigurateProtocol_h
 #define MyFavListConfigurateProtocol_h
 
+#import "TJSProductInfoModel.h"
+
 @protocol MyFavListInteractorDelegate <NSObject>
 
 @optional
@@ -20,6 +22,22 @@
 @protocol MyFavListInteractor <NSObject>
 
 @optional
+
+//
+- (void)loadProducts:(void (^)(NSArray *products, NSError *error))callback;
+
+- (void)deleteProducts:(NSArray <TJSProductInfoModel *> *)products
+              callback:(void (^)(BOOL success, NSError *error))callback;
+
+- (void)deleteProduct:(TJSProductInfoModel *)product
+             callback:(void (^)(BOOL success, NSError *error))callback;
+
+//
+- (NSArray *)items;
+
+- (void)onViewWillAppear;
+
+- (void)onViewDidDisappear;
 
 @end
 

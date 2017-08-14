@@ -6,10 +6,10 @@
 //  Copyright © 2017年 TianJiMoney. All rights reserved.
 //
 
-#import "TJSBaseCollectionReusableView.h"
-
+#import <UIKit/UIKit.h>
 
 @interface TJSBaseCollectionViewCell : UICollectionViewCell<TJSBaseCollectionReusableViewProtocol>
 
+@property (nonatomic,weak)id <TJSBaseCollectionViewCellDelegate> delegate;
 
 @end

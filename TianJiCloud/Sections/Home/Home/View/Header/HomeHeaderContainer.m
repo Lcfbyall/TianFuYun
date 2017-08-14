@@ -187,6 +187,17 @@ static NSString *identifier     = @"HomeHeaderCollectionCell";
 
 #pragma mark - <HomeHeaderCollectionLayoutDelegate>
 
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView layout:(TJSBaseCollectionViewLayout *)collectionViewLayout{
+    
+    return  [self numberOfSectionsInCollectionView:collectionView];
+}
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section layout:(TJSBaseCollectionViewLayout *)collectionViewLayout{
+    
+    return [self collectionView:collectionView numberOfItemsInSection:section];
+}
+
+
 - (CGSize)collectionView:(UICollectionView *)collectionView
                   layout:(HomeHeaderCollectionLayout *)collectionViewLayout
   sizeForItemAtIndexPath:(NSIndexPath *)indexPat{

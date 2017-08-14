@@ -8,7 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-@interface MyFavListLayoutImpl : NSObject
+#import "MyFavListPrivateProtocol.h"
+
+@interface MyFavListLayoutImpl : NSObject<MyFavListLayout>
 
 - (instancetype)initWithTableView:(UITableView *)tableView;
 

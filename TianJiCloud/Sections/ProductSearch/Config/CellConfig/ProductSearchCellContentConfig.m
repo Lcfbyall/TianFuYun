@@ -7,6 +7,7 @@
 //
 
 #import "ProductSearchCellContentConfig.h"
+#import "ProductInfoSearchModel.h"
 
 @implementation ProductSearchCellContentConfig
 

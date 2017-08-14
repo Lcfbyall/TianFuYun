@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "ProductSearchListCellLayoutConfig.h"
 
-@class TJSProductInfoModel;
+@class ProductInfoSearchModel;
 @class TJSBaseCollectionViewCell;
 
 @interface ProductSearchListCellFactory : NSObject
@@ -17,9 +17,9 @@
 @property (nonatomic,strong)ProductSearchListCellLayoutConfig *layoutConfig;
 
 - (TJSBaseCollectionViewCell *)cellInCollectView:(UICollectionView*)collectionView
-                             forProductInfoModel:(TJSProductInfoModel *)model indexPath:(NSIndexPath*)indexPath;
+                             forProductInfoModel:(ProductInfoSearchModel *)model indexPath:(NSIndexPath*)indexPath;
 
-- (UICollectionReusableView *)supplementary:(UICollectionView *)collectionView  kind:(NSString *)kind model:(TJSProductInfoModel *)model indexPath:(NSIndexPath *)indexPath;
+- (UICollectionReusableView *)supplementary:(UICollectionView *)collectionView  kind:(NSString *)kind model:(ProductInfoSearchModel *)model indexPath:(NSIndexPath *)indexPath;
 
 
 @end

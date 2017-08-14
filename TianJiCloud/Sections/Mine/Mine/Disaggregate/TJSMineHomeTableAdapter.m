@@ -120,11 +120,6 @@ static NSString *const headerFooterIdentifier = @"MineHomeHeaderFooterIdentifier
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 
     MineHomeBaseTableCell *cell =  [tableView cellForRowAtIndexPath:indexPath];
-    
-    if([cell.delegate conformsToProtocol:@protocol(TJSMineHomeCellDelegate)] && [cell.delegate respondsToSelector:@selector(onTapCell:)]){
-    
-        [cell.delegate onTapCell:cell.cellInfo];
-    }
 
     if(cell.cellInfo.cellOperation){
 

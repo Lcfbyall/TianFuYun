@@ -9,8 +9,7 @@
 #import "MineHomeBaseTableCell.h"
 
 
-#import "TJSMineHomeCellProtocol.h"
-@protocol MineHomeInvestCellDelegate <TJSMineHomeCellDelegate>
+@protocol MineHomeInvestCellDelegate <TJSBaseTableViewCellDelegate>
 
 @optional
 

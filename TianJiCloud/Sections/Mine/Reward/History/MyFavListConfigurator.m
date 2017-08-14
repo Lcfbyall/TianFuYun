@@ -33,23 +33,23 @@
     
     //1.
     
-    //MyFavListDataSourceImpl *dataSoureImpl = [[MyFavListDataSourceImpl alloc]init];
+    MyFavListDataSourceImpl *dataSoureImpl = [[MyFavListDataSourceImpl alloc]init];
     
-    //MyFavListLayoutImpl *layoutImpl = [[MyFavListLayoutImpl alloc]initWithTableView:tableView];
+    MyFavListLayoutImpl *layoutImpl = [[MyFavListLayoutImpl alloc]initWithTableView:tableView];
     
     _interactor = [[MyFavListInteractorImpl alloc]init];
     
-    //_interactor.delegate       = vc;
-    //_interactor.dataSource     = dataSourceImpl;
-    //_interactor.layout         = layoutImpl;
+    _interactor.delegate       = vc;
+    _interactor.dataSource     = dataSoureImpl;
+    _interactor.layout         = layoutImpl;
     
-    //[layoutImpl setDelegate:_interactor];
+    [layoutImpl setDelegate:_interactor];
     
     //2.
     
     _tableAdapter = [[MyFavListTableAdapter alloc]initWithTableView:tableView];
-    //_tableAdapter.interactor   = _interactor;
-    //_tableAdapter.cellDelegate = vc;
+    _tableAdapter.interactor   = _interactor;
+    _tableAdapter.cellDelegate = vc;
     
     
     //3.
@@ -60,14 +60,13 @@
     
     //4.
     
-    //[vc setInterator:_interactor];
+    [vc setInteractor:_interactor];
     
     
     //5.
     
-    //[layoutImpl beginRefresh];
-    
-    
+    [layoutImpl beginRefresh];
+
 }
 
 

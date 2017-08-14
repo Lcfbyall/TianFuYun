@@ -7,7 +7,7 @@
 //
 
 #import "ProductSearchCellContentConfigFactory.h"
-#import "TJSProductInfoModel.h"
+#import "ProductInfoSearchModel.h"
 
 #import "ProductHotCellContentConfig.h"
 #import "ProductSearchCellContentConfig.h"
@@ -48,9 +48,9 @@
     return  [_dict allKeys];
 }
 
-- (id<TJSBaseCellContentConfig>)configBy:(TJSProductInfoModel *)model{
+- (id<TJSBaseCellContentConfig>)configBy:(ProductInfoSearchModel *)model{
 
-    if([model isKindOfClass:[TJSProductInfoModel class]]){
+    if([model isKindOfClass:[ProductInfoSearchModel class]]){
         
         id<TJSBaseCellContentConfig>config = [_dict objectForKey:model.cellClass];
         

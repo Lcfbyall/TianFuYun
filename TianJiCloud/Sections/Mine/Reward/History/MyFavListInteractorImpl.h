@@ -8,6 +8,17 @@
 
 #import <Foundation/Foundation.h>
 
-@interface MyFavListInteractorImpl : NSObject
+#import "MyFavListConfigurateProtocol.h"
+#import "MyFavListPrivateProtocol.h"
+
+@interface MyFavListInteractorImpl : NSObject<MyFavListInteractor,MyFavListLayoutDelegate>
+
+@property(nonatomic,weak) id<MyFavListInteractorDelegate> delegate;
+
+@property(nonatomic,strong) id<MyFavListDataSource> dataSource;
+
+@property(nonatomic,strong) id<MyFavListLayout> layout;
+
+
 
 @end

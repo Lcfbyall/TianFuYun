@@ -7,16 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
-
 #import "TJSProductListConfigurateProtocol.h"
-#import "TJSProductListCellProtocol.h"
 
 @interface TJSProductListTableAdapter : NSObject<UITableViewDelegate,UITableViewDataSource>
 
 
 @property (nonatomic,weak) id<TJSProductListInteractor> interactor;
 
-@property (nonatomic,weak) id<TJSProductListCellDelegate> cellDelegate;
+@property (nonatomic,weak) id<TJSBaseTableViewCellDelegate> cellDelegate;
 
 
 

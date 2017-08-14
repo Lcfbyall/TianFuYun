@@ -9,6 +9,8 @@
 #ifndef MyFavListPrivateProtocol_h
 #define MyFavListPrivateProtocol_h
 
+@class TJSProductInfo;
+@class TJSProductInfoModel;
 
 ////////////////////////////////////////////////
 @interface MyFavListOperateResult : NSObject
@@ -21,6 +23,16 @@
 @protocol MyFavListDataSource <NSObject>
 
 @optional
+
+//
+- (void)loadProducts:(void (^)(NSArray *products, NSError *error))callback;
+- (void)deleteProducts:(NSArray <TJSProductInfoModel *> *)products
+              callback:(void (^)(BOOL success, NSError *error))callback;
+//
+- (MyFavListOperateResult *)deleteModel:(TJSProductInfoModel *)model;
+- (MyFavListOperateResult *)deleteModels:(NSArray<TJSProductInfoModel *> *)models;
+
+- (NSArray *)items;
 
 @end
 
@@ -38,8 +50,19 @@
 
 @optional
 
-@end
+- (void)remove:(NSArray <NSIndexPath *> *)indexPaths;
 
+- (void)reloadTable;
+
+- (void)beginRefresh;
+
+- (void)endRefresh;
+
+- (void)setDelegate:(id<MyFavListLayoutDelegate>)delegate;
+
+
+
+@end
 
 
 

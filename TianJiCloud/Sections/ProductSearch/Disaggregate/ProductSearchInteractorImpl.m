@@ -41,7 +41,7 @@
 
 - (void)onRefresh{
 
-    WEAK_SELF(self);
+   WEAK_SELF(self);
    [self search:^(NSArray *products, NSError *error) {
        
        STRONG_SELF(self);

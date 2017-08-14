@@ -75,6 +75,7 @@
 
     //交给self.interactor去做
     
+    
 }
 
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar{
@@ -86,6 +87,17 @@
 
 
 }
+
+
+#pragma mark - <TJSBaseCollectionViewCellDelegate>
+
+- (BOOL)onTapCell:(id)value{
+
+    
+    
+    return YES;
+}
+
 
 
 #pragma mark - <TJSBaseVCConfig>

@@ -9,8 +9,7 @@
 #import "TJSBaseViewController.h"
 
 #import "MyFavListConfigurateProtocol.h"
-#import "TJSProductListCellProtocol.h"
 
-@interface MyFavViewController : TJSBaseViewController<MyFavListInteractorDelegate,TJSProductListCellDelegate>
+@interface MyFavViewController : TJSBaseViewController<MyFavListInteractorDelegate,TJSBaseTableViewCellDelegate>
 
 @end

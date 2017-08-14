@@ -10,9 +10,8 @@
 
 #import "TJSMineHomeVCProtocol.h"
 #import "TJSMineHomeConfigurateProtocol.h"
-#import "TJSMineHomeCellProtocol.h"
 
 
-@interface MineViewController : TJSBaseViewController<MineHomeVCConfig,TJSMineHomeInteractorDelegate,TJSMineHomeCellDelegate>
+@interface MineViewController : TJSBaseViewController<MineHomeVCConfig,TJSMineHomeInteractorDelegate,TJSBaseTableViewCellDelegate>
 
 @end

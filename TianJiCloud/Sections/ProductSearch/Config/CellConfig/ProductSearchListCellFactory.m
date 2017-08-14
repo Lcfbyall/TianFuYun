@@ -7,7 +7,7 @@
 //
 
 #import "ProductSearchListCellFactory.h"
-#import "TJSProductInfoModel.h"
+#import "ProductInfoSearchModel.h"
 #import "TJSBaseCollectionViewCell.h"
 #import "TJSBaseCollectionReusableView.h"
 
@@ -31,7 +31,7 @@
 }
 
 - (TJSBaseCollectionViewCell *)cellInCollectView:(UICollectionView *)collectionView
-                             forProductInfoModel:(TJSProductInfoModel *)model
+                             forProductInfoModel:(ProductInfoSearchModel *)model
                                        indexPath:(NSIndexPath *)indexPath{
  
     id<TJSProductCellLayoutConfig> layoutConfig = _layoutConfig;
@@ -54,7 +54,7 @@
 }
 
 
-- (UICollectionReusableView *)supplementary:(UICollectionView *)collectionView  kind:(NSString *)kind model:(TJSProductInfoModel *)model indexPath:(NSIndexPath *)indexPath{
+- (UICollectionReusableView *)supplementary:(UICollectionView *)collectionView  kind:(NSString *)kind model:(ProductInfoSearchModel *)model indexPath:(NSIndexPath *)indexPath{
 
     TJSBaseCollectionReusableView *reusableView;
    if([kind isEqualToString:UICollectionElementKindSectionHeader]){

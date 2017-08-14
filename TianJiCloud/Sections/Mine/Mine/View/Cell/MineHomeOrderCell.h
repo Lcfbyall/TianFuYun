@@ -8,8 +8,7 @@
 
 #import "MineHomeBaseTableCell.h"
 
-#import "TJSMineHomeCellProtocol.h"
-@protocol MineHomeOrderCellDelegate <TJSMineHomeCellDelegate>
+@protocol MineHomeOrderCellDelegate <TJSBaseTableViewCellDelegate>
 
 @optional
 

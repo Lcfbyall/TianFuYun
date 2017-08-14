@@ -10,4 +10,9 @@
 
 @implementation MyFavNetworkTool
 
++ (void)requestWithParameters:(id)parameters successCallback:(TJSSuccessCompletionBlock)success failCallback:(TJSFailCompletionBlock)fail{
+
+
+}
+
 @end

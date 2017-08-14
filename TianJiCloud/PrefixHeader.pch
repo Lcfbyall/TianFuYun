@@ -64,11 +64,16 @@
 
 /** 6. Base **/
 
+#import "TJSBaseCellLayoutProtocol.h"
+#import "TJSBaseCellContentConfigProtocol.h"
 #import "TJSBaseCollectionViewCellDelegate.h"
+#import "TJSBaseCollectionReusableViewProtocol.h"
 #import "TJSBaseCollectionViewLayout.h"
 #import "TJSBaseCollectionViewCell.h"
 #import "TJSBaseCollectionReusableView.h"
 
+
+#import "TJSBaseTableViewCellDelegate.h"
 
 
 #endif /* PrefixHeader_pch */

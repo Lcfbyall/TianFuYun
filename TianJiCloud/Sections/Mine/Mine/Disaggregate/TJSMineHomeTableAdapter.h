@@ -9,14 +9,13 @@
 #import <Foundation/Foundation.h>
 
 #import "TJSMineHomeConfigurateProtocol.h"
-#import "TJSMineHomeCellProtocol.h"
 
 @interface TJSMineHomeTableAdapter : NSObject<UITableViewDelegate,UITableViewDataSource>
 
 
 @property (nonatomic,weak) id<TJSMineHomeInteractor> interactor;
 
-@property (nonatomic,weak) id<TJSMineHomeCellDelegate> cellDelegate;
+@property (nonatomic,weak) id<TJSBaseTableViewCellDelegate> cellDelegate;
 
 - (instancetype)initWithTableView:(UITableView *)tableView;
 

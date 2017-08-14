@@ -9,13 +9,13 @@
 #import <Foundation/Foundation.h>
 #import "TJSBaseCellContentConfigProtocol.h"
 
-@class TJSProductInfoModel;
+@class ProductInfoSearchModel;
 
 @interface ProductSearchCellContentConfigFactory : NSObject
 
 - (NSArray *)allCells;
 
-- (id<TJSBaseCellContentConfig>)configBy:(TJSProductInfoModel *)model;
+- (id<TJSBaseCellContentConfig>)configBy:(ProductInfoSearchModel *)model;
 
 
 @end

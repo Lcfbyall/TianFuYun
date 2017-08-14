@@ -10,6 +10,8 @@
 
 @interface TJSProductInfo : NSObject
 
+@property (nonatomic,copy) NSString *name;
+
 
 
 @end

@@ -13,9 +13,11 @@
 
 @interface MyFavViewController ()
 
+@property (nonatomic,strong)MyFavVCConfig *config;
+
 @property (nonatomic,strong)MyFavListConfigurator *configurtor;
 
-@property (nonatomic,strong) id <MyFavListInteractor>interactor;
+@property (nonatomic,strong) id <MyFavListInteractor> interactor;
 
 @end
 
@@ -47,8 +49,24 @@
 
 - (void)setupConfigurator{
 
-
+    _configurtor = [[MyFavListConfigurator alloc]init];
+    
+    [_config setup:self];
 }
+
+
+#pragma mark - <MyFavListCellDelegate>
+
+- (BOOL)onTapCell:(id)event{
+    
+    [UIViewController tjs_pushViewController:ProductDetailVC
+                                      params:@{}
+                                    animated:YES];
+    
+    
+    return YES;
+}
+
 
 
 #pragma mark - <TJSBaseVCConfig>

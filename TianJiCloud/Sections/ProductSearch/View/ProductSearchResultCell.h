@@ -10,7 +10,5 @@
 
 @interface ProductSearchResultCell : TJSBaseCollectionViewCell
 
-@property (nonatomic,weak)id <TJSBaseCollectionViewCellDelegate> delegate;
-
 
 @end

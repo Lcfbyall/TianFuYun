@@ -8,7 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
+#import "MyFavListConfigurateProtocol.h"
+
 @interface MyFavListTableAdapter : NSObject<UITableViewDataSource,UITableViewDelegate>
+
+@property (nonatomic,weak) id<MyFavListInteractor> interactor;
+
+@property (nonatomic,weak) id<TJSBaseTableViewCellDelegate> cellDelegate;
+
+
 
 - (instancetype)initWithTableView:(UITableView *)tableView;
 

@@ -8,12 +8,11 @@
 
 #import "TJSBaseViewController.h"
 
-
 #import "TJSHomeListVCProtocol.h"
 #import "TJSHomeListConfigurateProtocol.h"
-#import "TJSProductListCellProtocol.h"
 
-@interface HomeViewController : TJSBaseViewController<TJSHomeListInteractorDelegate,TJSProductListCellDelegate,HomeVCConfig>
+
+@interface HomeViewController : TJSBaseViewController<TJSHomeListInteractorDelegate,TJSBaseTableViewCellDelegate,HomeVCConfig>
 
 
 

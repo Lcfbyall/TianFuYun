@@ -9,11 +9,11 @@
 #ifndef TJSDiscoNewListCellProtocol_h
 #define TJSDiscoNewListCellProtocol_h
 
-#import "TJSBaseCollectionViewCellDelegate.h"
-
 @protocol TJSDiscoNewListCellDelegate <TJSBaseCollectionViewCellDelegate>
 
 @optional
+
+
 
 
 @end

@@ -32,4 +32,10 @@
 
 @interface TJSBaseTableViewCell : UITableViewCell<TJSTableViewCellProtocol>
 
+@property (nonatomic,weak)id <TJSBaseTableViewCellDelegate> delegate;
+
 @end
+
+
+
+

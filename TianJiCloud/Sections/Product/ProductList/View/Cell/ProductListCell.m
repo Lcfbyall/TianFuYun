@@ -107,7 +107,7 @@
   
     if ([self.delegate respondsToSelector:@selector(onTapLikeBtn:)]) {
         
-        [self.delegate onTapLikeBtn:self.model];
+        //[self.delegate onTapLikeBtn:self.model];
     }
 
 }

@@ -15,6 +15,4 @@
 
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *aspectForIamge;
 
-@property (nonatomic, weak)   id<TJSDiscoNewListCellDelegate> delegate;
-
 @end

@@ -8,7 +8,7 @@
 
 #import "ProductSearchListCellLayoutConfig.h"
 #import "ProductSearchCellContentConfigFactory.h"
-#import "TJSProductInfoModel.h"
+#import "ProductInfoSearchModel.h"
 
 @interface ProductSearchListCellLayoutConfig ()
 

@@ -117,7 +117,7 @@
     ProductListCell *cell =  [tableView cellForRowAtIndexPath:indexPath];
     TJSProductInfoModel *model = [[self.interactor items] objectAtIndex:indexPath.row];
     
-    if([cell.delegate conformsToProtocol:@protocol(TJSProductListCellDelegate)] && [cell.delegate respondsToSelector:@selector(onTapCell:)]){
+    if([cell.delegate conformsToProtocol:@protocol(TJSBaseTableViewCellDelegate)] && [cell.delegate respondsToSelector:@selector(onTapCell:)]){
         
         [cell.delegate onTapCell:model];
     }

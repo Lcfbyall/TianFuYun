@@ -14,7 +14,7 @@
 
 @property (nonatomic,weak) id<ProductSerachInteractor> interactor;
 
-//@property (nonatomic,weak) id<TJSProductSearchCellDelegate> cellDelegate;
+@property (nonatomic,weak) id<TJSBaseCollectionViewCellDelegate> cellDelegate;
 
 
 - (instancetype)initWithCollectionView:(UICollectionView *)collectionView;

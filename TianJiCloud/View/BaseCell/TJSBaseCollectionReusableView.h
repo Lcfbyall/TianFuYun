@@ -9,16 +9,6 @@
 #import <UIKit/UIKit.h>
 
 
-@protocol TJSBaseCollectionReusableViewProtocol <NSObject>
-
-@optional
-
-// 数据绑定赋值
-- (void)tjs_bindDataToCellWithValue:(id)value;
-
-@end
-
-
 @interface TJSBaseCollectionReusableView : UICollectionReusableView<TJSBaseCollectionReusableViewProtocol>
 
 

@@ -144,15 +144,15 @@
     self.layoutInfoDic = nil;
     self.layoutInfoDic = [NSMutableDictionary dictionary];
 
-    
 
     @autoreleasepool {
 
         NSIndexPath *indexPath;
-        NSInteger numSections = [self.collectionView numberOfSections];
+        NSInteger numSections = [self.delegate numberOfSectionsInCollectionView:self.collectionView layout:self];
+        
         for(NSInteger section = 0; section < numSections; section++) {
 
-            NSInteger numItems = [self.collectionView numberOfItemsInSection:section];
+            NSInteger numItems = [self.delegate collectionView:self.collectionView numberOfItemsInSection:section layout:self];
 
             indexPath = [NSIndexPath indexPathWithIndex:section];
             UICollectionViewLayoutAttributes *headerAtt = [self layoutAttributesForSupplementaryViewOfKind:UICollectionElementKindSectionHeader atIndexPath:indexPath];

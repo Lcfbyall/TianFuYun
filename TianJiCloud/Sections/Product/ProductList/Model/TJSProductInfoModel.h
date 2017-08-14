@@ -16,6 +16,7 @@
 
 @property (nonatomic,copy) NSString *cellClass;
 
+
 - (instancetype)initWithProduct:(TJSProductInfo *)product;
 
 
