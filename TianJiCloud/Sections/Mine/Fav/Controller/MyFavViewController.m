@@ -19,6 +19,9 @@
 
 @property (nonatomic,strong) id <MyFavListInteractor> interactor;
 
+@property (weak, nonatomic) IBOutlet UITableView *favlist;
+
+
 @end
 
 @implementation MyFavViewController
@@ -28,7 +31,9 @@
     // Do any additional setup after loading the view.
     self.title = @"我的收藏";
     
+    [self setupFavConfig];
     
+    [self setupConfigurator];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -51,7 +56,7 @@
 
     _configurtor = [[MyFavListConfigurator alloc]init];
     
-    [_config setup:self];
+    [_configurtor setup:self];
 }
 
 
@@ -75,6 +80,11 @@
 
     
 
+}
+
+- (UIView *)tjs_listView{
+  
+    return _favlist;
 }
 
 @end

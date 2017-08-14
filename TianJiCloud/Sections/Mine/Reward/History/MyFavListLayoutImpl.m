@@ -55,7 +55,9 @@
 - (void)remove:(NSArray <NSIndexPath *>*)indexPaths{
     
     [self.tableView beginUpdates];
+    
     [self.tableView deleteRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationNone];
+    
     [self.tableView endUpdates];
 }
 

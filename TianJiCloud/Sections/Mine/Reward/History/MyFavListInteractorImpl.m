@@ -53,18 +53,28 @@
     
     [self.dataSource deleteProducts:@[product] callback:^(BOOL success, NSError *error) {
         
+        if(callback){
         
-        STRONG_SELF(self);
-        if(self){
-            
-            if(callback)callback(success,error);
-            
-            //算出indexPath
-            MyFavListOperateResult *result = [self.dataSource deleteModel:product];
-            
-            [self.layout remove:(NSArray <NSIndexPath *> *)result.indexpaths];
+            STRONG_SELF(self);
+            if(self){
+                
+                if(callback)callback(success,error);
+                
+                //算出indexPath
+                MyFavListOperateResult *result = [self.dataSource deleteModel:product];
+                
+                [self.layout remove:(NSArray <NSIndexPath *> *)result.indexpaths];
+            }
         }
     }];
+    
+    if(callback==NULL){
+    
+        //算出indexPath
+        MyFavListOperateResult *result = [self.dataSource deleteModel:product];
+        
+        [self.layout remove:(NSArray <NSIndexPath *> *)result.indexpaths];
+    }
 }
 
 - (void)deleteProducts:(NSArray<TJSProductInfoModel *> *)products
@@ -74,17 +84,28 @@
     [self.dataSource deleteProducts:products callback:^(BOOL success, NSError *error) {
         
         STRONG_SELF(self);
-        if(self){
-            
-            if(callback)callback(success,error);
-            
-            MyFavListOperateResult *result = [self.dataSource deleteModels:products];
-            
-            [self.layout remove:(NSArray <NSIndexPath *> *)result.indexpaths];
-            
+        if(callback){
+            if(self){
+                
+                if(callback)callback(success,error);
+                
+                MyFavListOperateResult *result = [self.dataSource deleteModels:products];
+                
+                [self.layout remove:(NSArray <NSIndexPath *> *)result.indexpaths];
+                
+            }
         }
         
     }];
+    
+    
+    if(callback==NULL){
+      
+        MyFavListOperateResult *result = [self.dataSource deleteModels:products];
+        
+        [self.layout remove:(NSArray <NSIndexPath *> *)result.indexpaths];
+        
+    }
 }
 
 - (NSArray *)items{

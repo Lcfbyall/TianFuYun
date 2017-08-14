@@ -19,15 +19,12 @@
 
 @implementation MyFavListDataSourceImpl
 
-
-
-
 - (instancetype)init{
     
     self = [super init];
     if(self){
         
-        _items = [NSMutableArray array];
+        
     }
     
     return self;
@@ -79,12 +76,8 @@
     WEAK_SELF(self);
     [MyFavNetworkTool requestWithParameters:nil successCallback:^(id _Nullable data) {
         
-        
-        
     } failCallback:^(id _Nullable errorInfo) {
-        
-        
-        
+    
     }];
     
     
@@ -108,7 +101,7 @@
 //
 - (NSArray *)items{
     
-    if(!_items || !_items.count){
+    if(!_items){
         
         _items =  [NSMutableArray arrayWithObjects:
                    
@@ -116,20 +109,14 @@
                    [TJSProductInfoModel new],
                    [TJSProductInfoModel new],
                    [TJSProductInfoModel new],
-                   [TJSProductInfoModel new],
-                   [TJSProductInfoModel new],
-                   [TJSProductInfoModel new],
-                   [TJSProductInfoModel new],
-                   [TJSProductInfoModel new],
+                
                    nil];
     }
     
     return _items;
 }
 
-
 - (MyFavListOperateResult *)deleteModel:(TJSProductInfoModel *)model{
-    
     
     NSArray <NSNumber *> *indexs =  nil;
     
@@ -162,11 +149,9 @@
     result.productInfoModels   = @[model];
     
     return result;
-    
 }
 
 - (MyFavListOperateResult *)deleteModels:(NSArray<TJSProductInfoModel *> *)models{
-    
     
     NSIndexSet *delMsgIndexSet = [self.items indexesOfObjectsPassingTest:^BOOL(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         
@@ -195,10 +180,7 @@
     result.productInfoModels   = models;
     
     return result;
-    
 }
-
-
 
 
 #pragma mark - private methods
