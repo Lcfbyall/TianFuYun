@@ -21,8 +21,6 @@
 }
 
 
-
-
 #pragma mark - Public
 
 - (void)calculateLayoutAttributes{
