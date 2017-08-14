@@ -74,22 +74,25 @@
     
     UIView *bgView = [UIView new];
     UIColor *bgColor = ThemeService.weak_color_00;
-    CGRect frame   =  CGRectMake(0, 0, SCREEN_WIDTH-120, 35);
+    CGRect frame   =  CGRectMake(0, 0, SCREEN_WIDTH-140, 35);
     bgView.frame   = frame;
     bgView.backgroundColor     = bgColor;
     bgView.layer.cornerRadius  = frame.size.height/2.0;
     bgView.layer.masksToBounds = YES;
+
+    //frame = CGRectInset(bgView.bounds, 20, 0);
     UISearchBar *searchBar     = [[UISearchBar alloc] init];
     searchBar.placeholder      = @"请输入您想查找的产品";
-    searchBar.frame            = bgView.bounds;;
+    searchBar.frame            = frame;;
     searchBar.backgroundColor  = bgColor;
-    searchBar.tintColor        = ThemeService.main_color_02;
     searchBar.barTintColor     = bgColor;
-    
+    searchBar.tintColor        = ThemeService.main_color_02;
+
     [searchBar setSearchFieldBackgroundImage:[UIImage tjs_imageWithColor:bgColor size:searchBar.bounds.size] forState:UIControlStateNormal];
     [bgView addSubview:searchBar];
     
     //searchBar.showsCancelButton = YES;
+
     
     searchBar.searchBarTextDidChange = ^(UISearchBar *searchBar, NSString *searchText) {
         

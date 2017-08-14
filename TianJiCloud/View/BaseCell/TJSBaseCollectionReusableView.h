@@ -21,4 +21,6 @@
 
 @interface TJSBaseCollectionReusableView : UICollectionReusableView<TJSBaseCollectionReusableViewProtocol>
 
+
+
 @end

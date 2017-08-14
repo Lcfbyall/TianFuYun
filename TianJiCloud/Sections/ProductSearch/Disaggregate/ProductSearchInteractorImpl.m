@@ -47,7 +47,7 @@
        STRONG_SELF(self);
        if(self){
            
-           [self .layout reloadCollect];
+           [self.layout reloadCollect];
            
            //结束刷新
            [self.layout endRefresh];

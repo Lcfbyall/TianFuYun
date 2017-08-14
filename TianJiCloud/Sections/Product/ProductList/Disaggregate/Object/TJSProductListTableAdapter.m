@@ -82,7 +82,7 @@
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
 
-
+    [scrollView.tjs_viewController.navigationController.navigationBar endEditing:YES];
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -97,5 +97,7 @@
         [cell.delegate onTapCell:model];
     }
 }
+
+
 
 @end

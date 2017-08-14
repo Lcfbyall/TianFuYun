@@ -45,22 +45,32 @@
 
     WEAK_SELF(self);
     
-    
-   
+
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^
                    {
                        
            STRONG_SELF(self);
            if(self){
-               
-               NSArray *products = @[];
-               NSError *error    = nil;;
-               
-               if(callback){
-                   
-                   callback(products,error);
-               }
+
+               //计算布局
+
+               dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+
+                   [(TJSBaseCollectionViewLayout *)self.layout calculateLayoutAttributes];
+
+                   dispatch_async(dispatch_get_main_queue(), ^{
+
+                       NSArray *products = @[];
+                       NSError *error    = nil;;
+
+                       if(callback){
+
+                           callback(products,error);
+                       }
+                   });
+
+               });
            }
            
        });
@@ -70,7 +80,13 @@
 
 - (NSArray *)items{
 
-    return @[@"",@"",@""];
+    if(_items == nil){
+
+        _items = [NSMutableArray arrayWithObjects:@"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9",@"10",@"11",@"12",@"13",@"14",@"15",@"16",@"17",@"18",@"19", nil];
+
+    }
+
+    return _items;
 }
 
 - (UICollectionViewLayout *)collectionViewLayout{

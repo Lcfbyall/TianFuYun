@@ -8,12 +8,9 @@
 
 #import "TJSBaseCollectionViewCell.h"
 
-#import "ProductSearchResultCellProtocol.h"
-
-
 @interface ProductSearchResultCell : TJSBaseCollectionViewCell
 
-@property (nonatomic,weak)id <ProductSearchResultCellDelegate> delegate;
+@property (nonatomic,weak)id <TJSBaseCollectionViewCellDelegate> delegate;
 
 
 @end

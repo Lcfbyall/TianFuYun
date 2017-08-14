@@ -10,7 +10,7 @@
 
 @interface HomeHeaderCollectionLayout ()
 
-@property (strong, nonatomic) NSMutableArray *layoutInfo;
+
 
 @end
 

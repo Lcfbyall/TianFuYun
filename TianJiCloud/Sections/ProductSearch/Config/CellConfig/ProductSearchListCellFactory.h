@@ -19,5 +19,7 @@
 - (TJSBaseCollectionViewCell *)cellInCollectView:(UICollectionView*)collectionView
                              forProductInfoModel:(TJSProductInfoModel *)model indexPath:(NSIndexPath*)indexPath;
 
+- (UICollectionReusableView *)supplementary:(UICollectionView *)collectionView  kind:(NSString *)kind model:(TJSProductInfoModel *)model indexPath:(NSIndexPath *)indexPath;
+
 
 @end

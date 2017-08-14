@@ -42,10 +42,10 @@
         btn.layer.cornerRadius = 3;
         btn.tjs_titleColorNormal = ThemeService.text_color_01;
         btn.tjs_titleColorHighlighted = ThemeService.origin_color_00;
-        btn.tjs_backGroundColorNormal= ThemeService.origin_color_00;
-        btn.tjs_backGroundColorHighlighted = ThemeService.main_color_02;
+        btn.tjs_backGroundColorNormal= ThemeService.weak_color_00;
+        btn.tjs_backGroundColorHighlighted = ThemeService.weak_color_00;
         [self addSubview:btn];
-        
+
         [btn mas_makeConstraints:^(MASConstraintMaker *make) {
             
             make.edges.mas_equalTo(UIEdgeInsetsMake(0, 0, 0, 0));
@@ -56,7 +56,7 @@
             
             STRONG_SELF(self);
             
-            if([self.delegate conformsToProtocol:@protocol(ProductSearchHotCellDelegate)] && [self.delegate respondsToSelector:@selector(onTapCell:)]){
+            if([self.delegate conformsToProtocol:@protocol(TJSBaseCollectionViewCellDelegate)] && [self.delegate respondsToSelector:@selector(onTapCell:)]){
               
                 [self.delegate onTapCell:self.indexPath];
             }

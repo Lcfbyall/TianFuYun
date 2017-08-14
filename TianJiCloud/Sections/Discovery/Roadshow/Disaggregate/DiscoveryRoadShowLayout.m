@@ -10,7 +10,7 @@
 
 @interface DiscoveryRoadShowLayout ()
 
-@property (strong, nonatomic) NSMutableArray *layoutInfo;
+
 
 @end
 

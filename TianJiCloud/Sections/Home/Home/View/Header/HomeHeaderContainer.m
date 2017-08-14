@@ -24,7 +24,7 @@ static CGFloat   const Margin   = 10;
 static NSInteger const column   = 4;
 static NSString *identifier     = @"HomeHeaderCollectionCell";
 
-@interface HomeHeaderContainer ()<UICollectionViewDataSource,UICollectionViewDelegate,HomeHeaderCollectionLayoutDelegate>
+@interface HomeHeaderContainer ()<UICollectionViewDataSource,UICollectionViewDelegate,TJSBaseCollectionViewLayoutDelegate>
 
 @property (nonatomic,strong) UICollectionView *collectionView;
 

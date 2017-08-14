@@ -26,6 +26,9 @@
  
         _collectionView = collectionView;
 
+
+        [self setupRefreshControl];
+
     }
     
     return self;

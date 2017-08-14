@@ -11,8 +11,6 @@
 
 @interface HomeFooterCollectionLayout ()
 
-@property (strong, nonatomic) NSMutableArray *layoutInfo;
-
 
 @end
 

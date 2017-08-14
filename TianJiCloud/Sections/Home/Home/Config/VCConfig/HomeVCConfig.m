@@ -91,7 +91,7 @@
     
     UIView *bgView = [UIView new];
     UIColor *bgColor = ThemeService.weak_color_00;
-    CGRect frame   =  CGRectMake(0, 0, SCREEN_WIDTH-120, 35);
+    CGRect frame   =  CGRectMake(0, 0, SCREEN_WIDTH-140, 35);
     bgView.frame   = frame;
     bgView.backgroundColor     = bgColor;
     bgView.layer.cornerRadius  = frame.size.height/2.0;

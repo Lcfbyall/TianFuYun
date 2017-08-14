@@ -10,8 +10,7 @@
 
 #import "TJSProductSearchVCProtocol.h"
 #import "ProductSerachConfigurateProtocol.h"
-#import "ProductSearchHotCellProtocol.h"
 
-@interface ProductSearchController : TJSBaseViewController<ProductSearchVCConfig,ProductSearchHotCellDelegate,ProductSerachInteractorDelegate>
+@interface ProductSearchController : TJSBaseViewController<ProductSearchVCConfig,TJSBaseCollectionViewCellDelegate,ProductSerachInteractorDelegate>
 
 @end

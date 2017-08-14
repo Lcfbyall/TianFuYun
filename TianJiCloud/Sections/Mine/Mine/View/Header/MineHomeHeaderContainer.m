@@ -15,7 +15,7 @@
 static CGFloat const Margin = 0;
 static NSString *identifier = @"MineHeaderCollectionCell";
 
-@interface MineHomeHeaderContainer ()<UICollectionViewDataSource,UICollectionViewDelegate,MineHomeHeaderCollectionLayoutDelegate>
+@interface MineHomeHeaderContainer ()<UICollectionViewDataSource,UICollectionViewDelegate,TJSBaseCollectionViewLayoutDelegate>
 
 @property (nonatomic,strong) UIImageView *bgImageView;
 

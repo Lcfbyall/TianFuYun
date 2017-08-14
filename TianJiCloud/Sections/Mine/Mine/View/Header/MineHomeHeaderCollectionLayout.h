@@ -6,27 +6,11 @@
 //  Copyright © 2017年 TianJiMoney. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "TJSBaseCollectionViewLayout.h"
 
-@class MineHomeHeaderCollectionLayout;
 
-@protocol MineHomeHeaderCollectionLayoutDelegate <NSObject>
+@interface MineHomeHeaderCollectionLayout : TJSBaseCollectionViewLayout
 
-@required
-
-- (CGSize)collectionView:(UICollectionView *)collectionView
-                  layout:(MineHomeHeaderCollectionLayout *)collectionViewLayout
-  sizeForItemAtIndexPath:(NSIndexPath *)indexPat;
-
-@end
-
-@interface MineHomeHeaderCollectionLayout : UICollectionViewLayout
-
-@property (nonatomic,weak) id<MineHomeHeaderCollectionLayoutDelegate> delegate;
-
-@property (nonatomic,assign) UIEdgeInsets insets;
-
-@property (nonatomic,assign) CGFloat interMargin;
 
 
 @end

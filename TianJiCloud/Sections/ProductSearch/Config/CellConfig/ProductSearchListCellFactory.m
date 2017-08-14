@@ -9,6 +9,7 @@
 #import "ProductSearchListCellFactory.h"
 #import "TJSProductInfoModel.h"
 #import "TJSBaseCollectionViewCell.h"
+#import "TJSBaseCollectionReusableView.h"
 
 @interface ProductSearchListCellFactory ()
 
@@ -24,8 +25,6 @@
     if(self){
         
         _layoutConfig = [[ProductSearchListCellLayoutConfig alloc]init];
-        
-        
     }
     
     return self;
@@ -52,6 +51,23 @@
     
     return cell;
 
+}
+
+
+- (UICollectionReusableView *)supplementary:(UICollectionView *)collectionView  kind:(NSString *)kind model:(TJSProductInfoModel *)model indexPath:(NSIndexPath *)indexPath{
+
+    TJSBaseCollectionReusableView *reusableView;
+   if([kind isEqualToString:UICollectionElementKindSectionHeader]){
+
+       static NSString *const identifier = @"ProductSearchHotReusableHeader";
+
+       [collectionView registerClass:NSClassFromString(identifier) forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:identifier];
+
+        reusableView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:identifier forIndexPath:indexPath];
+
+   }
+
+    return reusableView;
 }
 
 @end
