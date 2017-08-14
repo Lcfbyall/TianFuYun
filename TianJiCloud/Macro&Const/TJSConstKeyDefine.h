@@ -46,7 +46,6 @@ static NSString *const AllActivityListVC    = @"AllActivityViewController";
 static NSString *const ProductFilterVC      = @"ProductFilterController";
 static NSString *const ProductFilterResultVC = @"ProductFilterResultController";
 
-
 #pragma mark - ProductDetailVC identifier
 
 static NSString *const ProductListVC        = @"ProductListViewController";
@@ -59,9 +58,7 @@ static NSString *const ProductSearchVC      = @"ProductSearchController";
 #pragma mark - DiscoveryVC identifier
 
 static NSString *const DiscoryNewsListVC    = @"DiscoNewsListController";
-
 static NSString *const DiscoryNewsDetailVC  = @"DiscoNewsDetailController";
-
 static NSString *const DiscoryRoadShowListVC = @"DiscoRoadShowListController";
 
 #pragma mark - Setting identifier
@@ -71,13 +68,11 @@ static NSString *const SettingListVC = @"MineSettingViewController";
 #pragma mark - WithdrawDeposit identifier
 
 static NSString *const WithdrawDepositVC = @"WithdrawDepositController";
-
 static NSString *const WithdrawDepositRecordVC = @"WithdrawDepositRecord";
 
 #pragma mark - Order identifier 
 
 static NSString *const MyOrderContainerVC = @"MyOrderContainerController";
-
 static NSString *const MyOrderListVC = @"MyOrderListViewController";
 
 #pragma mark - CumulativeInvest identifier
@@ -107,7 +102,8 @@ static NSString *const MyFavariteVC = @"MyFavViewController";
 
 static NSString *const MyContractVC    = @"MyContractViewController";
 static NSString *const ContractApplyVC = @"ContractApplyController";
-static NSString *const AddAdressVC = @"AddAdressViewController";
+static NSString *const AddAdressVC     = @"AddAdressViewController";
+static NSString *const AddressManageVC = @"AddressManageController";
 
 #pragma mark - UseAgreement identifier 
 

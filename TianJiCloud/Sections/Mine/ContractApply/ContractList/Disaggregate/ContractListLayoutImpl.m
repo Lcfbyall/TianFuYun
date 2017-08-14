@@ -1,22 +1,22 @@
 //
-//  MyFavListLayoutImpl.m
+//  ContractListLayoutImpl.m
 //  TianJiCloud
 //
-//  Created by 朱鹏 on 2017/8/8.
+//  Created by 朱鹏 on 2017/8/14.
 //  Copyright © 2017年 TianJiMoney. All rights reserved.
 //
 
-#import "MyFavListLayoutImpl.h"
+#import "ContractListLayoutImpl.h"
 
-@interface MyFavListLayoutImpl ()
+@interface ContractListLayoutImpl ()
 
-@property (nonatomic,weak)  UITableView *tableView;
+@property (nonatomic,weak)UITableView *tableView;
 
-@property (nonatomic,weak) id <MyFavListLayoutDelegate> delegate;
+@property (nonatomic,weak) id <ContractListLayoutDelegate> delegate;
 
 @end
 
-@implementation MyFavListLayoutImpl
+@implementation ContractListLayoutImpl
 
 - (instancetype)initWithTableView:(UITableView *)tableView{
     
@@ -33,31 +33,21 @@
     
 }
 
-
-#pragma mark - <MyFavListLayout>
+#pragma mark - <ContractListLayout>
 
 - (void)reloadTable{
-    
+
     [self.tableView reloadData];
 }
 
 - (void)beginRefresh{
-    
+
     [self.tableView.mj_header beginRefreshing];
 }
 
 - (void)endRefresh{
-    
-    [self.tableView.mj_header endRefreshing];
-}
 
-- (void)remove:(NSArray <NSIndexPath *>*)indexPaths{
-    
-    [self.tableView beginUpdates];
-    
-    [self.tableView deleteRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationNone];
-    
-    [self.tableView endUpdates];
+    [self.tableView.mj_header endRefreshing];
 }
 
 

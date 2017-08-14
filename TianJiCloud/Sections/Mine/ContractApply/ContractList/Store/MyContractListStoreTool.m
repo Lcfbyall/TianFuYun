@@ -9,6 +9,9 @@
 #import "MyContractListStoreTool.h"
 #import "TJSStoreManager.h"
 
+@interface MyContractListStoreTool ()
+
+@end
 
 @implementation MyContractListStoreTool
 
