@@ -87,6 +87,7 @@
 
 // After a row has the minus or plus button invoked (based on the UITableViewCellEditingStyle for the cell), the dataSource must commit the change
 // Not called for edit actions using UITableViewRowAction - the action's handler will be invoked instead
+/*
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath{
     
     if (editingStyle == UITableViewCellEditingStyleDelete) {
@@ -96,6 +97,7 @@
         [self.interactor deleteProduct:model callback:NULL];
     }
 }
+ */
 
 
 
@@ -138,30 +140,57 @@
     return UITableViewCellEditingStyleDelete;
 }
 
+/*
 - (nullable NSString *)tableView:(UITableView *)tableView titleForDeleteConfirmationButtonForRowAtIndexPath:(NSIndexPath *)indexPath NS_AVAILABLE_IOS(3_0) __TVOS_PROHIBITED{
 
-    return @"嘿嘿嘿";
+    return @"取消收藏";
 }
+ */
 
-
-/*
 // supercedes -tableView:titleForDeleteConfirmationButtonForRowAtIndexPath: if return value is non-nil
 - (nullable NSArray<UITableViewRowAction *> *)tableView:(UITableView *)tableView editActionsForRowAtIndexPath:(NSIndexPath *)indexPath NS_AVAILABLE_IOS(8_0) __TVOS_PROHIBITED{
+    
+    
+    unsigned int count = 0;
+    Ivar *ivars = class_copyIvarList([UITableViewRowAction class], &count);
+    for(int i =0;i < count;i ++){
+        
+        Ivar ivar = ivars[i];
+        
+        NSString *ivarName = [NSString stringWithCString:ivar_getName(ivar) encoding:NSUTF8StringEncoding];
+        
+        //_style  _title _backgroundColor _handler _handler _backgroundEffect
+        NSLog(@"%@",ivarName);
+        
+    }
+    
+    // 注意手动释放ivars
+    free(ivars);
+
+    
 
      //UITableViewRowAction是iOS8才有的，title不想要打了空格占着大小
      UITableViewRowAction *rowAction = [UITableViewRowAction
      rowActionWithStyle:UITableViewRowActionStyleDefault
-     title:@"删除"
+     title:@"取消收藏"
      handler:^(UITableViewRowAction*_Nonnull action,NSIndexPath*_Nonnull indexPath)
      {
      
-     NSLog(@"进来了");
+         //if (editingStyle == UITableViewCellEditingStyleDelete) {
+             
+             TJSProductInfoModel *model = [[self.interactor items] objectAtIndex:indexPath.row];
+             
+             [self.interactor deleteProduct:model callback:NULL];
+         //}
      
      }];
+    
+    rowAction.backgroundColor = ThemeService.main_color_01;
  
- return @[rowAction];
+    return @[rowAction];
+    
 }
- */
+
 
 // Controls whether the background is indented while editing.  If not implemented, the default is YES.  This is unrelated to the indentation level below.  This method only applies to grouped style table views.
 - (BOOL)tableView:(UITableView *)tableView shouldIndentWhileEditingRowAtIndexPath:(NSIndexPath *)indexPath{
