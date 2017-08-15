@@ -34,7 +34,6 @@
 
 #pragma mark - <TJSProductListDataSource>
 
-//
 - (void)loadProducts:(void (^)(NSArray *products, NSError *error))callback{
     
     WEAK_SELF(self);
@@ -104,7 +103,6 @@
     
 }
 
-//
 - (NSArray *)items{
     
     if(!_items || !_items.count){
@@ -214,7 +212,6 @@
     return array;
 }
 
-
 //刷新，重置
 - (void)p_resetProductModels:(NSArray <TJSProductInfo *> *)models{
   
@@ -246,7 +243,6 @@
 
 
 }
-
 
 
 @end

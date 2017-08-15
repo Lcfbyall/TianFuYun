@@ -310,7 +310,6 @@
 		2CB4F57E1F41905500FF98C9 /* InvestProductController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB4F57D1F41905500FF98C9 /* InvestProductController.m */; };
 		2CB4F5DF1F41C3BB00FF98C9 /* AddAdressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB4F5AD1F41C3BA00FF98C9 /* AddAdressViewController.m */; };
 		2CB4F5E01F41C3BB00FF98C9 /* AddressManageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB4F5B01F41C3BA00FF98C9 /* AddressManageController.m */; };
-		2CB4F5E11F41C3BB00FF98C9 /* ContractApplyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB4F5B31F41C3BA00FF98C9 /* ContractApplyController.m */; };
 		2CB4F5E21F41C3BB00FF98C9 /* ContractListConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB4F5B71F41C3BA00FF98C9 /* ContractListConfig.m */; };
 		2CB4F5E31F41C3BB00FF98C9 /* MyContractViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB4F5BA1F41C3BA00FF98C9 /* MyContractViewController.m */; };
 		2CB4F5E41F41C3BB00FF98C9 /* ContractListConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB4F5BD1F41C3BA00FF98C9 /* ContractListConfigurator.m */; };
@@ -333,6 +332,14 @@
 		2CB4F60A1F42849100FF98C9 /* MyFavListLayoutImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB4F6011F42849100FF98C9 /* MyFavListLayoutImpl.m */; };
 		2CB4F60B1F42849100FF98C9 /* MyFavListTableAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB4F6031F42849100FF98C9 /* MyFavListTableAdapter.m */; };
 		2CB4F60C1F42849100FF98C9 /* MyFavNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB4F6061F42849100FF98C9 /* MyFavNetworkTool.m */; };
+		2CB4F60F1F42897100FF98C9 /* ContractListHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB4F60E1F42897000FF98C9 /* ContractListHeader.m */; };
+		2CB4F6121F42982800FF98C9 /* ContractListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB4F6111F42982800FF98C9 /* ContractListCell.m */; };
+		2CB4F6151F4298E900FF98C9 /* ContractListCellFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB4F6141F4298E900FF98C9 /* ContractListCellFactory.m */; };
+		2CB4F61A1F429ADF00FF98C9 /* ContractDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB4F6191F429ADF00FF98C9 /* ContractDetailController.m */; };
+		2CB4F61F1F42A02400FF98C9 /* AddressSelectController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB4F61E1F42A02400FF98C9 /* AddressSelectController.m */; };
+		2CB4F6231F42CDB800FF98C9 /* ContractDetailNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB4F6221F42CDB800FF98C9 /* ContractDetailNetworkTool.m */; };
+		2CB4F62E1F42D18600FF98C9 /* ContractApplyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB4F62D1F42D18600FF98C9 /* ContractApplyController.m */; };
+		2CB4F6301F42D4A300FF98C9 /* ContractListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CB4F62F1F42D4A300FF98C9 /* ContractListCell.xib */; };
 		2CCBE45D1F32CB61006C4018 /* ProductListCellHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCBE45C1F32CB61006C4018 /* ProductListCellHeaderView.m */; };
 		2CCBE4651F330572006C4018 /* DiscoveryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCBE4641F330572006C4018 /* DiscoveryViewController.m */; };
 		2CCBE4681F330597006C4018 /* DiscoveryVCConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCBE4671F330597006C4018 /* DiscoveryVCConfig.m */; };
@@ -1030,8 +1037,6 @@
 		2CB4F5AD1F41C3BA00FF98C9 /* AddAdressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddAdressViewController.m; sourceTree = "<group>"; };
 		2CB4F5AF1F41C3BA00FF98C9 /* AddressManageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressManageController.h; sourceTree = "<group>"; };
 		2CB4F5B01F41C3BA00FF98C9 /* AddressManageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressManageController.m; sourceTree = "<group>"; };
-		2CB4F5B21F41C3BA00FF98C9 /* ContractApplyController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContractApplyController.h; sourceTree = "<group>"; };
-		2CB4F5B31F41C3BA00FF98C9 /* ContractApplyController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContractApplyController.m; sourceTree = "<group>"; };
 		2CB4F5B61F41C3BA00FF98C9 /* ContractListConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContractListConfig.h; sourceTree = "<group>"; };
 		2CB4F5B71F41C3BA00FF98C9 /* ContractListConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContractListConfig.m; sourceTree = "<group>"; };
 		2CB4F5B91F41C3BA00FF98C9 /* MyContractViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyContractViewController.h; sourceTree = "<group>"; };
@@ -1080,6 +1085,22 @@
 		2CB4F6031F42849100FF98C9 /* MyFavListTableAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyFavListTableAdapter.m; sourceTree = "<group>"; };
 		2CB4F6051F42849100FF98C9 /* MyFavNetworkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyFavNetworkTool.h; sourceTree = "<group>"; };
 		2CB4F6061F42849100FF98C9 /* MyFavNetworkTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyFavNetworkTool.m; sourceTree = "<group>"; };
+		2CB4F60D1F42897000FF98C9 /* ContractListHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContractListHeader.h; sourceTree = "<group>"; };
+		2CB4F60E1F42897000FF98C9 /* ContractListHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContractListHeader.m; sourceTree = "<group>"; };
+		2CB4F6101F42982800FF98C9 /* ContractListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContractListCell.h; sourceTree = "<group>"; };
+		2CB4F6111F42982800FF98C9 /* ContractListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContractListCell.m; sourceTree = "<group>"; };
+		2CB4F6131F4298E900FF98C9 /* ContractListCellFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContractListCellFactory.h; sourceTree = "<group>"; };
+		2CB4F6141F4298E900FF98C9 /* ContractListCellFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContractListCellFactory.m; sourceTree = "<group>"; };
+		2CB4F6181F429ADF00FF98C9 /* ContractDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContractDetailController.h; sourceTree = "<group>"; };
+		2CB4F6191F429ADF00FF98C9 /* ContractDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContractDetailController.m; sourceTree = "<group>"; };
+		2CB4F61D1F42A02400FF98C9 /* AddressSelectController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressSelectController.h; sourceTree = "<group>"; };
+		2CB4F61E1F42A02400FF98C9 /* AddressSelectController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressSelectController.m; sourceTree = "<group>"; };
+		2CB4F6201F42A9C700FF98C9 /* ContractVCConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContractVCConfig.h; sourceTree = "<group>"; };
+		2CB4F6211F42CDB800FF98C9 /* ContractDetailNetworkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContractDetailNetworkTool.h; sourceTree = "<group>"; };
+		2CB4F6221F42CDB800FF98C9 /* ContractDetailNetworkTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContractDetailNetworkTool.m; sourceTree = "<group>"; };
+		2CB4F62C1F42D18600FF98C9 /* ContractApplyController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContractApplyController.h; sourceTree = "<group>"; };
+		2CB4F62D1F42D18600FF98C9 /* ContractApplyController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContractApplyController.m; sourceTree = "<group>"; };
+		2CB4F62F1F42D4A300FF98C9 /* ContractListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContractListCell.xib; sourceTree = "<group>"; };
 		2CCBE45B1F32CB61006C4018 /* ProductListCellHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductListCellHeaderView.h; sourceTree = "<group>"; };
 		2CCBE45C1F32CB61006C4018 /* ProductListCellHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductListCellHeaderView.m; sourceTree = "<group>"; };
 		2CCBE4631F330572006C4018 /* DiscoveryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoveryViewController.h; sourceTree = "<group>"; };
@@ -3115,10 +3136,12 @@
 			isa = PBXGroup;
 			children = (
 				2C7A34561F2F673D004DD566 /* ContractApply.storyboard */,
+				2CB4F5B41F41C3BA00FF98C9 /* ContractList */,
+				2CB4F6161F429AB500FF98C9 /* ContractDetail */,
+				2CB4F5B11F41C3BA00FF98C9 /* ContractApply */,
+				2CB4F61B1F429FE900FF98C9 /* AddressPick */,
 				2CB4F5AB1F41C3BA00FF98C9 /* AddAddress */,
 				2CB4F5AE1F41C3BA00FF98C9 /* AddressManage */,
-				2CB4F5B11F41C3BA00FF98C9 /* ContractApply */,
-				2CB4F5B41F41C3BA00FF98C9 /* ContractList */,
 			);
 			path = ContractApply;
 			sourceTree = "<group>";
@@ -3660,8 +3683,14 @@
 		2CB4F5B11F41C3BA00FF98C9 /* ContractApply */ = {
 			isa = PBXGroup;
 			children = (
-				2CB4F5B21F41C3BA00FF98C9 /* ContractApplyController.h */,
-				2CB4F5B31F41C3BA00FF98C9 /* ContractApplyController.m */,
+				2CB4F62B1F42D18600FF98C9 /* Controller */,
+				2CB4F6241F42D18600FF98C9 /* Disaggregate */,
+				2CB4F6251F42D18600FF98C9 /* Protocol */,
+				2CB4F6261F42D18600FF98C9 /* View */,
+				2CB4F6271F42D18600FF98C9 /* Store */,
+				2CB4F6281F42D18600FF98C9 /* NetworkTool */,
+				2CB4F6291F42D18600FF98C9 /* Model */,
+				2CB4F62A1F42D18600FF98C9 /* Config */,
 			);
 			path = ContractApply;
 			sourceTree = "<group>";
@@ -3686,6 +3715,8 @@
 			children = (
 				2CB4F5B61F41C3BA00FF98C9 /* ContractListConfig.h */,
 				2CB4F5B71F41C3BA00FF98C9 /* ContractListConfig.m */,
+				2CB4F6131F4298E900FF98C9 /* ContractListCellFactory.h */,
+				2CB4F6141F4298E900FF98C9 /* ContractListCellFactory.m */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -3704,10 +3735,10 @@
 			children = (
 				2CB4F5BC1F41C3BA00FF98C9 /* ContractListConfigurator.h */,
 				2CB4F5BD1F41C3BA00FF98C9 /* ContractListConfigurator.m */,
-				2CB4F5BE1F41C3BB00FF98C9 /* ContractListDataSourceImpl.h */,
-				2CB4F5BF1F41C3BB00FF98C9 /* ContractListDataSourceImpl.m */,
 				2CB4F5C01F41C3BB00FF98C9 /* ContractListInteractorImpl.h */,
 				2CB4F5C11F41C3BB00FF98C9 /* ContractListInteractorImpl.m */,
+				2CB4F5BE1F41C3BB00FF98C9 /* ContractListDataSourceImpl.h */,
+				2CB4F5BF1F41C3BB00FF98C9 /* ContractListDataSourceImpl.m */,
 				2CB4F5C21F41C3BB00FF98C9 /* ContractListLayoutImpl.h */,
 				2CB4F5C31F41C3BB00FF98C9 /* ContractListLayoutImpl.m */,
 				2CB4F5C41F41C3BB00FF98C9 /* ContractListTableAdapter.h */,
@@ -3730,14 +3761,16 @@
 		2CB4F5CB1F41C3BB00FF98C9 /* NetworkTool */ = {
 			isa = PBXGroup;
 			children = (
+				2CB4F5D21F41C3BB00FF98C9 /* ContractListNetworkTool.h */,
+				2CB4F5D31F41C3BB00FF98C9 /* ContractListNetworkTool.m */,
+				2CB4F6211F42CDB800FF98C9 /* ContractDetailNetworkTool.h */,
+				2CB4F6221F42CDB800FF98C9 /* ContractDetailNetworkTool.m */,
 				2CB4F5CC1F41C3BB00FF98C9 /* AdressEditNetworkTool.h */,
 				2CB4F5CD1F41C3BB00FF98C9 /* AdressEditNetworkTool.m */,
 				2CB4F5CE1F41C3BB00FF98C9 /* AdressManageNetworkTool.h */,
 				2CB4F5CF1F41C3BB00FF98C9 /* AdressManageNetworkTool.m */,
 				2CB4F5D01F41C3BB00FF98C9 /* ContractApplyNetworkTool.h */,
 				2CB4F5D11F41C3BB00FF98C9 /* ContractApplyNetworkTool.m */,
-				2CB4F5D21F41C3BB00FF98C9 /* ContractListNetworkTool.h */,
-				2CB4F5D31F41C3BB00FF98C9 /* ContractListNetworkTool.m */,
 			);
 			path = NetworkTool;
 			sourceTree = "<group>";
@@ -3745,6 +3778,7 @@
 		2CB4F5D41F41C3BB00FF98C9 /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
+				2CB4F6201F42A9C700FF98C9 /* ContractVCConfig.h */,
 				2CB4F5D51F41C3BB00FF98C9 /* ContractListConfigurateProtocol.h */,
 				2CB4F5D61F41C3BB00FF98C9 /* ContractListPrivateProtocol.h */,
 			);
@@ -3765,6 +3799,11 @@
 		2CB4F5DE1F41C3BB00FF98C9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2CB4F60D1F42897000FF98C9 /* ContractListHeader.h */,
+				2CB4F60E1F42897000FF98C9 /* ContractListHeader.m */,
+				2CB4F6101F42982800FF98C9 /* ContractListCell.h */,
+				2CB4F6111F42982800FF98C9 /* ContractListCell.m */,
+				2CB4F62F1F42D4A300FF98C9 /* ContractListCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -3792,10 +3831,10 @@
 			children = (
 				2CB4F5FA1F42849100FF98C9 /* MyFavListConfigurator.h */,
 				2CB4F5FB1F42849100FF98C9 /* MyFavListConfigurator.m */,
-				2CB4F5FC1F42849100FF98C9 /* MyFavListDataSourceImpl.h */,
-				2CB4F5FD1F42849100FF98C9 /* MyFavListDataSourceImpl.m */,
 				2CB4F5FE1F42849100FF98C9 /* MyFavListInteractorImpl.h */,
 				2CB4F5FF1F42849100FF98C9 /* MyFavListInteractorImpl.m */,
+				2CB4F5FC1F42849100FF98C9 /* MyFavListDataSourceImpl.h */,
+				2CB4F5FD1F42849100FF98C9 /* MyFavListDataSourceImpl.m */,
 				2CB4F6001F42849100FF98C9 /* MyFavListLayoutImpl.h */,
 				2CB4F6011F42849100FF98C9 /* MyFavListLayoutImpl.m */,
 				2CB4F6021F42849100FF98C9 /* MyFavListTableAdapter.h */,
@@ -3811,6 +3850,98 @@
 				2CB4F6061F42849100FF98C9 /* MyFavNetworkTool.m */,
 			);
 			path = NetworkTool;
+			sourceTree = "<group>";
+		};
+		2CB4F6161F429AB500FF98C9 /* ContractDetail */ = {
+			isa = PBXGroup;
+			children = (
+				2CB4F6171F429AC500FF98C9 /* Controller */,
+			);
+			path = ContractDetail;
+			sourceTree = "<group>";
+		};
+		2CB4F6171F429AC500FF98C9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2CB4F6181F429ADF00FF98C9 /* ContractDetailController.h */,
+				2CB4F6191F429ADF00FF98C9 /* ContractDetailController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2CB4F61B1F429FE900FF98C9 /* AddressPick */ = {
+			isa = PBXGroup;
+			children = (
+				2CB4F61C1F429FFA00FF98C9 /* Controller */,
+			);
+			path = AddressPick;
+			sourceTree = "<group>";
+		};
+		2CB4F61C1F429FFA00FF98C9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2CB4F61D1F42A02400FF98C9 /* AddressSelectController.h */,
+				2CB4F61E1F42A02400FF98C9 /* AddressSelectController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2CB4F6241F42D18600FF98C9 /* Disaggregate */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Disaggregate;
+			sourceTree = "<group>";
+		};
+		2CB4F6251F42D18600FF98C9 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		2CB4F6261F42D18600FF98C9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2CB4F6271F42D18600FF98C9 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		2CB4F6281F42D18600FF98C9 /* NetworkTool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NetworkTool;
+			sourceTree = "<group>";
+		};
+		2CB4F6291F42D18600FF98C9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2CB4F62A1F42D18600FF98C9 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		2CB4F62B1F42D18600FF98C9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2CB4F62C1F42D18600FF98C9 /* ContractApplyController.h */,
+				2CB4F62D1F42D18600FF98C9 /* ContractApplyController.m */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		2CCBE4611F33054A006C4018 /* Config */ = {
@@ -4382,6 +4513,7 @@
 				2C7A345D1F2F69CF004DD566 /* AboutMe.storyboard in Resources */,
 				2C7A344B1F2F61C1004DD566 /* WithDarwDeposit.storyboard in Resources */,
 				2C801BD71F233F46009F82F7 /* Mine.storyboard in Resources */,
+				2CB4F6301F42D4A300FF98C9 /* ContractListCell.xib in Resources */,
 				2C8DE5B81F2AD8E7009B3AE2 /* DiscoveryNewsListCell.xib in Resources */,
 				2C300F911F2F3E1000DD440E /* MLoginCode.storyboard in Resources */,
 				2CCBE4881F341887006C4018 /* MineHeaderCollectionCell.xib in Resources */,
@@ -4495,7 +4627,6 @@
 				2CB4F60B1F42849100FF98C9 /* MyFavListTableAdapter.m in Sources */,
 				2C4C1C2D1F386DF400002166 /* TJSAlertHandleUtil.m in Sources */,
 				2C4C1C931F3948E800002166 /* PNChartLabel.m in Sources */,
-				2CB4F5E11F41C3BB00FF98C9 /* ContractApplyController.m in Sources */,
 				A2FE0A8C1F38B4B400E678E5 /* MyFavVCConfig.m in Sources */,
 				2C89AD791F2C5155005C29AC /* UISearchBar+TJSBlock.m in Sources */,
 				2C859CF11F31EB2E00B86575 /* ZLPhotoPickerBrowserPhotoImageView.m in Sources */,
@@ -4508,6 +4639,7 @@
 				2C027D0B1F3BFA28001D7EB6 /* TJSBaseCollectionReusableView.m in Sources */,
 				2C4C1C1F1F38531F00002166 /* TJSMyOrderListCellLayoutConfig.m in Sources */,
 				2C859CE21F31EB2E00B86575 /* MBProgressHUD.m in Sources */,
+				2CB4F61A1F429ADF00FF98C9 /* ContractDetailController.m in Sources */,
 				2C85E34D1F2ECC1200ADD360 /* AboutMeViewController.m in Sources */,
 				2CB4F5EC1F41C3BB00FF98C9 /* AdressManageNetworkTool.m in Sources */,
 				2CF8B55E1F3DA438003B8520 /* ProductSearchNetworkTool.m in Sources */,
@@ -4590,6 +4722,7 @@
 				2C859D011F31EB2E00B86575 /* ZLPhotoPickerImageView.m in Sources */,
 				2C89AD801F2C7E39005C29AC /* ProductSearchVCConfig.m in Sources */,
 				2C4412311F21AA5900C453EF /* AppDelegate.m in Sources */,
+				2CB4F61F1F42A02400FF98C9 /* AddressSelectController.m in Sources */,
 				2C44126A1F21E2DA00C453EF /* UIButton+CountDown.m in Sources */,
 				2CCC85BC1F3AEF1D0009FC1C /* FilterResultNetworkTool.m in Sources */,
 				2C85E3531F2ECCC800ADD360 /* BackCardManagerController.m in Sources */,
@@ -4649,11 +4782,14 @@
 				2C027D2A1F3C82C8001D7EB6 /* ProductSearchLayoutImpl.m in Sources */,
 				2CB4F5741F418FFB00FF98C9 /* CumulateInvestInfo.m in Sources */,
 				2C44124E1F21D54400C453EF /* TJSSystemAlertMaker.m in Sources */,
+				2CB4F62E1F42D18600FF98C9 /* ContractApplyController.m in Sources */,
 				2C859CF71F31EB2E00B86575 /* ZLPhotoPickerGroup.m in Sources */,
 				2CCC85B01F3AEE3A0009FC1C /* TJSProductFilterDataSourceImpl.m in Sources */,
 				2C85E3A41F2F1AF900ADD360 /* TJSMineHomeDefaultCellContentConfig.m in Sources */,
 				2C85E3A71F2F1BEB00ADD360 /* MineHomeDefaultCell.m in Sources */,
+				2CB4F6121F42982800FF98C9 /* ContractListCell.m in Sources */,
 				2C4412011F219A5300C453EF /* NSString+StringSize.m in Sources */,
+				2CB4F60F1F42897100FF98C9 /* ContractListHeader.m in Sources */,
 				2C85E3831F2F042A00ADD360 /* TJSMineHomeDataSourceImpl.m in Sources */,
 				2C859D091F31EB6B00B86575 /* NSObject+vk_msgSend.m in Sources */,
 				2C859CE81F31EB2E00B86575 /* UIView+ZLExtension.m in Sources */,
@@ -4661,6 +4797,7 @@
 				2CAF43181F2829CF00ABCA5E /* TJSProductEvent.m in Sources */,
 				2CB4F5731F418FFB00FF98C9 /* CumulativeInvestController.m in Sources */,
 				2CB4F5721F418FFB00FF98C9 /* CumulativeInvestConfig.m in Sources */,
+				2CB4F6151F4298E900FF98C9 /* ContractListCellFactory.m in Sources */,
 				2CB4F5EB1F41C3BB00FF98C9 /* AdressEditNetworkTool.m in Sources */,
 				2C859CF51F31EB2E00B86575 /* ZLPhotoAssets.m in Sources */,
 				2C85E3B01F2F1C2B00ADD360 /* MineHomeBalanceCell.m in Sources */,
@@ -4792,6 +4929,7 @@
 				2C4C1C0D1F384A2500002166 /* TJSMyOrderListInteractorImpl.m in Sources */,
 				2CAF427A1F26EAA600ABCA5E /* AppVersionNetworkTool.m in Sources */,
 				2CF8B5411F3D46B8003B8520 /* ProductSearchResultCell.m in Sources */,
+				2CB4F6231F42CDB800FF98C9 /* ContractDetailNetworkTool.m in Sources */,
 				2C4C1C891F3948E100002166 /* PNPieChartDataItem.m in Sources */,
 				2CCBE46D1F3312D4006C4018 /* DiscoRoadShowVideoDetailController.m in Sources */,
 				2C027D211F3C827F001D7EB6 /* ProductSearchConfigurator.m in Sources */,

@@ -16,6 +16,7 @@
 @optional
 
 
+
 @end
 
 
@@ -24,12 +25,12 @@
 @optional
 
 //
-- (void)loadContracts:(void (^)(NSArray *products, NSError *error))callback;
+- (void)loadContracts:(void (^)(NSArray *contracts, NSError *error))callback;
 
-- (void)deleteContracts:(NSArray <ContractInfoModel *> *)products
+- (void)deleteContracts:(NSArray <ContractInfoModel *> *)contracts
               callback:(void (^)(BOOL success, NSError *error))callback;
 
-- (void)deleteContract:(ContractInfoModel *)product
+- (void)deleteContract:(ContractInfoModel *)contract
              callback:(void (^)(BOOL success, NSError *error))callback;
 
 //

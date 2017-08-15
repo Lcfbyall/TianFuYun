@@ -14,14 +14,27 @@
 
 - (void)loadContracts:(void (^)(NSArray *, NSError *))callback{
 
+    WEAK_SELF(self);
+    [self.dataSource loadContracts:^(NSArray *contracts, NSError *error) {
+        
+        STRONG_SELF(self);
+        if (self) {
+            
+            if(callback){
+                
+                callback(contracts,error);
+            }
+        }
+        
+    }];
 }
 
-- (void)deleteContracts:(NSArray<ContractInfoModel *> *)products callback:(void (^)(BOOL, NSError *))callback{
+- (void)deleteContracts:(NSArray<ContractInfoModel *> *)contracts callback:(void (^)(BOOL, NSError *))callback{
 
 
 }
 
-- (void)deleteContract:(ContractInfoModel *)product callback:(void (^)(BOOL, NSError *))callback{
+- (void)deleteContract:(ContractInfoModel *)contract callback:(void (^)(BOOL, NSError *))callback{
 
 
 }

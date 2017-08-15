@@ -7,10 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "ContractVCConfig.h"
 @class MyContractViewController;
 
-@interface ContractListConfig : NSObject
+@interface ContractListConfig : NSObject<ContractVCConfig>
 
 - (void)setup:(MyContractViewController *)vc;
 

@@ -1,24 +1,24 @@
 //
-//  AddAdressViewController.m
+//  COntractDetailController.m
 //  TianJiCloud
 //
-//  Created by 朱鹏 on 2017/8/8.
+//  Created by 朱鹏 on 2017/8/15.
 //  Copyright © 2017年 TianJiMoney. All rights reserved.
 //
 
-#import "AddAdressViewController.h"
+#import "ContractDetailController.h"
 
-@interface AddAdressViewController ()
+@interface ContractDetailController ()
 
 @end
 
-@implementation AddAdressViewController
+@implementation ContractDetailController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.title = @"新增地址";
+    self.title = @"合同详情";
     
     
 }

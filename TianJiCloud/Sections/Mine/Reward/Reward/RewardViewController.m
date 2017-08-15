@@ -43,6 +43,7 @@
     self.historyBtn.tjs_titleColorHighlighted = ThemeService.text_color_02;
     self.historyBtn.tjs_titleFontNormal = [ThemeService pingFangSCMediumWithSize:16.0f];
     self.historyBtn.tjs_titleNormal = @"查看历史奖励";
+    
     [self.historyBtn addBlockForControlEvents:UIControlEventTouchUpInside block:^(id  _Nonnull sender) {
         [UIViewController tjs_pushViewController:HistoryRewardsVC animated:YES];
     }];

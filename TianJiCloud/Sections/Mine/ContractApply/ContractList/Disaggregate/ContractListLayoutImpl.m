@@ -71,6 +71,10 @@
         }
         
     }];
+    
+    
+    self.tableView.mj_header.ignoredScrollViewContentInsetTop = 16;
+    
 }
 
 

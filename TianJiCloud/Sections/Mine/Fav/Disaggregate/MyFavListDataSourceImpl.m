@@ -19,20 +19,9 @@
 
 @implementation MyFavListDataSourceImpl
 
-- (instancetype)init{
-    
-    self = [super init];
-    if(self){
-        
-        
-    }
-    
-    return self;
-}
 
 #pragma mark - <TJSProductListDataSource>
 
-//
 - (void)loadProducts:(void (^)(NSArray *products, NSError *error))callback{
     
     WEAK_SELF(self);
@@ -84,21 +73,20 @@
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^
                    {
                        
-                       STRONG_SELF(self);
-                       if(self){
-                           
-                           NSError *error    = nil;;
-                           
-                           if(callback){
-                               
-                               callback(YES,error);
-                           }
-                       }
-                   });
+       STRONG_SELF(self);
+       if(self){
+           
+           NSError *error    = nil;;
+           
+           if(callback){
+               
+               callback(YES,error);
+           }
+       }
+    });
     
 }
 
-//
 - (NSArray *)items{
     
     if(!_items){
@@ -183,6 +171,7 @@
 }
 
 
+
 #pragma mark - private methods
 
 - (NSArray <TJSProductInfoModel *> *)p_modelsWithProducts:(NSArray<TJSProductInfo *> *)products{
@@ -196,7 +185,6 @@
     }
     return array;
 }
-
 
 //刷新，重置
 - (void)p_resetProductModels:(NSArray <TJSProductInfo *> *)models{
@@ -212,7 +200,7 @@
     
 }
 
-//从后插入
+//从后面插入
 - (void)p_appendProductModels:(NSArray <TJSProductInfoModel *>  *)models{
     
     if (!models.count) {
@@ -224,6 +212,7 @@
     
 }
 
+//删除
 - (void)p_deleteProductModels:(NSArray <TJSProductInfoModel *>  *)models{
     
     
@@ -240,3 +229,8 @@
 @implementation MyFavListOperateResult
 
 @end
+
+
+
+
+

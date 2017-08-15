@@ -10,6 +10,10 @@
 
 @interface ContractApplyController ()
 
+@property (weak, nonatomic) IBOutlet UITableView *applylist;
+
+
+
 @end
 
 @implementation ContractApplyController

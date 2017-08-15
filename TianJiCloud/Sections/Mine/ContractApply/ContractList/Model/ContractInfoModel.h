@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+#import "ContractInfo.h"
+
 @interface ContractInfoModel : NSObject
 
 @end

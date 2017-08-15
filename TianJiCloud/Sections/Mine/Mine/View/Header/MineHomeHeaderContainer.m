@@ -63,6 +63,7 @@ static NSString *identifier = @"MineHeaderCollectionCell";
     
     });
   
+    
     self.collectionView = ({
         
         MineHomeHeaderCollectionLayout *layout =  [[MineHomeHeaderCollectionLayout alloc]init];

@@ -8,6 +8,11 @@
 
 #import "ContractListTableAdapter.h"
 
+#import "ContractListCellFactory.h"
+#import "ContractListCell.h"
+#import "ContractListHeader.h"
+#import "ContractInfoModel.h"
+
 @interface ContractListTableAdapter ()
 
 @property (nonatomic,weak)UITableView *tableView;
@@ -33,7 +38,13 @@
 
 
 - (void)setupTableView{
+    
+    _tableView.contentInset = UIEdgeInsetsMake(16, 0, 0, 0);
+    
+    _tableView.backgroundColor = ThemeService.weak_color_00;
 
+    _tableView.tableHeaderView = [ContractListHeader header];
+    
     _tableView.tableFooterView = [UIView new];
     
 }
@@ -53,15 +64,21 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
 
-    return [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cellForRowAtIndexPath"];
-
+    ContractInfoModel *model = [self.interactor.items objectAtIndex:indexPath.row];
+    return [ContractListCellFactory cellInTable:tableView forMineInfoModel:model];
 }
+
 
 #pragma mark - <UITableViewDelegate>
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
 
-    return 50;
+    return 120;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+ 
+    return 10;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -69,7 +86,9 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
     
+    
 }
 
-
 @end
+
+

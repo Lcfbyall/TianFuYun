@@ -29,10 +29,11 @@ static NSString *const DiscoveryNC = @"DiscoveryNC";
 static NSString *const MineNC      = @"MineNC";
 
 #pragma mark - VC identifier
-static NSString *const HomeVC       = @"HomeViewController";
-static NSString *const ProductVC    = @"ProductContainerController";
-static NSString *const DiscoveryVC  = @"DiscoveryViewController";
-static NSString *const MineVC       = @"MineViewController";
+static NSString *const HomeVC      = @"HomeViewController";
+static NSString *const ProductVC   = @"ProductContainerController";
+static NSString *const DiscoveryVC = @"DiscoveryViewController";
+static NSString *const MineVC      = @"MineViewController";
+
 
 ////////////////////////////////
 #pragma mark - MessageVC identifier
@@ -100,10 +101,13 @@ static NSString *const MyFavariteVC = @"MyFavViewController";
 
 #pragma mark - ContractApply identifier 
 
-static NSString *const MyContractVC    = @"MyContractViewController";
-static NSString *const ContractApplyVC = @"ContractApplyController";
-static NSString *const AddAdressVC     = @"AddAdressViewController";
-static NSString *const AddressManageVC = @"AddressManageController";
+static NSString *const MyContractVC     = @"MyContractViewController";
+static NSString *const ContractDetailVC = @"ContractDetailController";
+static NSString *const ContractApplyVC  = @"ContractApplyController";
+static NSString *const AddressSelectVC  = @"AddressSelectController";
+static NSString *const AddAdressVC      = @"AddAdressViewController";
+static NSString *const AddressManageVC  = @"AddressManageController";
+
 
 #pragma mark - UseAgreement identifier 
 

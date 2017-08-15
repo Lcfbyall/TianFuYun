@@ -7,6 +7,7 @@
 //
 
 #import "TJSBaseViewController.h"
+
 #import "ContractListConfigurateProtocol.h"
 
 

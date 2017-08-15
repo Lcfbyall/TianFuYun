@@ -14,6 +14,9 @@
 
 @property (weak, nonatomic) IBOutlet UITableView *contractlist;
 
+@property (weak, nonatomic) IBOutlet UIButton *applyBtn;
+
+
 @property (nonatomic,strong) ContractListConfig *config;
 
 @property (nonatomic,strong) ContractListConfigurator *configurator;
@@ -46,6 +49,8 @@
 
     _config = [[ContractListConfig alloc]init];
     
+    [_config applyButtonConfig:self.applyBtn];
+    
     [_config setup:self];
 }
 
@@ -59,7 +64,6 @@
 }
 
 
-
 #pragma mark - <ContractListInteractorDelegate>
 
 
@@ -67,10 +71,25 @@
 
 #pragma mark - <TJSBaseTableViewCellDelegate>
 
+- (BOOL)onTapCell:(id)value{
 
+    [UIViewController tjs_pushViewController:ContractDetailVC params:@{}  animated:YES];
+    
+    return YES;
+}
 
 
 #pragma mark - <TJSBaseVCConfig>
+
+- (void)tjs_configBaseView{
+ 
+    [self.applyBtn addBlockForControlEvents:UIControlEventTouchUpInside block:^(id  _Nonnull sender) {
+        
+        [UIViewController tjs_pushViewController:ContractApplyVC animated:YES];
+        
+    }];
+    
+}
 
 - (UIView *)tjs_listView{
 
