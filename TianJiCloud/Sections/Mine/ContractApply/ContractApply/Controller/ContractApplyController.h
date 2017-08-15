@@ -8,6 +8,9 @@
 
 #import "TJSBaseViewController.h"
 
-@interface ContractApplyController : TJSBaseViewController
+#import "ContractApplyConfigurateProtocol.h"
+
+@interface ContractApplyController : TJSBaseViewController<ContractApplyInteractorDelegate,TJSBaseTableViewCellDelegate>
+
 
 @end

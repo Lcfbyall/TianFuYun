@@ -1,5 +1,5 @@
 //
-//  ContractListCellFactory.h
+//  ContractApplyCellFactory.h
 //  TianJiCloud
 //
 //  Created by 朱鹏 on 2017/8/15.
@@ -8,14 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-
 @class TJSBaseTableViewCell;
 
-@interface ContractListCellFactory : NSObject
+@interface ContractApplyCellFactory : NSObject
 
 + (TJSBaseTableViewCell *)cellInTable:(UITableView*)tableView
-                      forMineInfoModel:(id)model;
-
-//- (UITableViewHeaderFooterView *)headerFooterViewIntable:(UITableView *)tableView forSection:(NSInteger)section;
+                     forMineInfoModel:(id)model;
 
 @end

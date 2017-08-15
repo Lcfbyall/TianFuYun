@@ -1,5 +1,5 @@
 //
-//  ContractListConfigurator.h
+//  ContractApplyConfigurator.h
 //  TianJiCloud
 //
 //  Created by 朱鹏 on 2017/8/14.
@@ -8,11 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-@class MyContractViewController;
+@class ContractApplyController;
 
-@interface ContractListConfigurator : NSObject
+@interface ContractApplyConfigurator : NSObject
 
-- (void)setup:(MyContractViewController *)vc;
+- (void)setup:(ContractApplyController *)vc;
 
 
 @end

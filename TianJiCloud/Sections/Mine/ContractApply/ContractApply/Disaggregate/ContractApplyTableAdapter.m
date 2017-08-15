@@ -1,28 +1,25 @@
 //
-//  ContractListTableAdapter.m
+//  ContractApplyTableAdapter.m
 //  TianJiCloud
 //
 //  Created by 朱鹏 on 2017/8/14.
 //  Copyright © 2017年 TianJiMoney. All rights reserved.
 //
 
-#import "ContractListTableAdapter.h"
+#import "ContractApplyTableAdapter.h"
 
-#import "ContractListCellFactory.h"
-#import "ContractListCell.h"
-#import "ContractListHeader.h"
-#import "ContractInfoModel.h"
+#import "ContractApplyCellFactory.h"
 
 static NSString *const headerFooterIdentifier = @"ContractListHeaderIdentifier";
 
-@interface ContractListTableAdapter ()
+@interface ContractApplyTableAdapter ()
 
 @property (nonatomic,weak)UITableView *tableView;
 
 
 @end
 
-@implementation ContractListTableAdapter
+@implementation ContractApplyTableAdapter
 
 - (instancetype)initWithTableView:(UITableView *)tableView{
     
@@ -45,11 +42,10 @@ static NSString *const headerFooterIdentifier = @"ContractListHeaderIdentifier";
     
     _tableView.backgroundColor = ThemeService.weak_color_00;
 
-    _tableView.tableHeaderView = [ContractListHeader header];
-    
     _tableView.tableFooterView = [UIView new];
     
     [_tableView registerClass:[UITableViewHeaderFooterView class] forHeaderFooterViewReuseIdentifier:headerFooterIdentifier];
+
 }
 
 
@@ -66,9 +62,8 @@ static NSString *const headerFooterIdentifier = @"ContractListHeaderIdentifier";
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-
-    ContractInfoModel *model = [self.interactor.items objectAtIndex:indexPath.row];
-    return [ContractListCellFactory cellInTable:tableView forMineInfoModel:model];
+    
+    return (UITableViewCell *)[ContractApplyCellFactory cellInTable:tableView forMineInfoModel:nil];
 }
 
 

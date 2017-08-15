@@ -1,5 +1,5 @@
 //
-//  ContractListConfigurator.h
+//  ContractApplyDataSourceImpl.h
 //  TianJiCloud
 //
 //  Created by 朱鹏 on 2017/8/14.
@@ -8,11 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-@class MyContractViewController;
+#import "ContractApplyPrivateProtocol.h"
 
-@interface ContractListConfigurator : NSObject
+@interface ContractApplyDataSourceImpl : NSObject<ContractApplyDataSource>
 
-- (void)setup:(MyContractViewController *)vc;
 
 
 @end

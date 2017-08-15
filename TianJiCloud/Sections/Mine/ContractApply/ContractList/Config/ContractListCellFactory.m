@@ -21,22 +21,35 @@
     
     if (!cell) {
         
-        NSString *path = [[NSBundle mainBundle] pathForResource:_identifier ofType:@"xib"];
+        //NSString *path = [[NSBundle mainBundle] pathForResource:_identifier ofType:@"xib"];
         
-        
-        if(path){
+        //if(path){
             
             [tableView registerNib:[UINib nibWithNibName:_identifier bundle:[NSBundle mainBundle]] forCellReuseIdentifier:_identifier];
+        /*
         }else{
             
             [tableView registerClass:NSClassFromString(_identifier) forCellReuseIdentifier:_identifier];
         }
+         */
         
         
         cell = [tableView dequeueReusableCellWithIdentifier:_identifier];
     }
     
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    
     return (TJSBaseTableViewCell *)cell;
 }
+
+
+/*
+- (UITableViewHeaderFooterView *)headerFooterViewIntable:(UITableView *)tableView forSection:(NSInteger)section{
+ 
+    
+    
+
+}
+ */
 
 @end

@@ -7,12 +7,15 @@
 //
 
 #import "ContractApplyController.h"
+#import "ContractApplyConfigurator.h"
 
 @interface ContractApplyController ()
 
 @property (weak, nonatomic) IBOutlet UITableView *applylist;
 
+@property (nonatomic,strong)ContractApplyConfigurator *configurator;
 
+@property (nonatomic,strong) id <ContractApplyInteractor>  interactor;
 
 @end
 
@@ -33,6 +36,11 @@
     
 }
 
+
+- (UIView *)tjs_listView{
+ 
+    return self.applylist;
+}
 
 
 @end
