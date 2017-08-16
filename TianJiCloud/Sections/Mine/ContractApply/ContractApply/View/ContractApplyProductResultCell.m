@@ -8,8 +8,22 @@
 
 #import "ContractApplyProductResultCell.h"
 
+@interface ContractApplyProductResultCell ()
+
+
+
+@end
+
 @implementation ContractApplyProductResultCell
 
+
+#pragma mark - <TJSTableViewCellProtocol>
+
+- (void)tjs_bindDataToCellWithValue:(id)value{
+    
+    
+    
+}
 
 
 

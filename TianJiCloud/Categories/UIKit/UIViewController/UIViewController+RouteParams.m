@@ -109,6 +109,55 @@
 }
 
 
+#pragma mark - popViewController
+
++ (void)tjs_popViewControllerAnimated:(BOOL)animated{
+    
+  [[[self project_currentViewController] navigationController] popViewControllerAnimated:animated];
+    
+}
+
++ (void)tjs_popViewController:(NSString *_Nullable)viewController
+                      animated:(BOOL)animated{
+
+    /*
+    Class vcClass = NSClassFromString(viewController);
+    
+    assert(vcClass);
+    
+    if(vcClass == nil){
+        
+        return;
+    }
+    
+    [[[self project_currentViewController] navigationController] popViewControllerAnimated:animated];
+     */
+}
+
+
++ (UIViewController *)project_currentViewController{
+
+    UIViewController *currentViewController = nil;
+    
+    id topMost = [UIViewController tjs_topMostController];
+    if([topMost isKindOfClass:[UITabBarController class]]){
+        
+        currentViewController = [(UITabBarController *)topMost selectedViewController];
+        
+        while ([currentViewController isKindOfClass:[UINavigationController class]] &&
+               [(UINavigationController*)currentViewController topViewController]){
+            
+            currentViewController = [(UINavigationController*)currentViewController topViewController];
+        }
+        
+    }else{
+        
+        currentViewController = [UIViewController tjs_currentController];
+    }
+  
+    return currentViewController;
+}
+
 
 #pragma mark - rootTabBar select
 

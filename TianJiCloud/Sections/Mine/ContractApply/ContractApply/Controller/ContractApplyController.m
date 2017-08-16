@@ -26,7 +26,7 @@
     // Do any additional setup after loading the view.
     self.title = @"合同申请";
     
-    
+    [self setupConfigurator];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -36,6 +36,19 @@
     
 }
 
+
+#pragma mark - setupConfig
+
+- (void)setupConfigurator{
+ 
+    _configurator = [[ContractApplyConfigurator alloc]init];
+    
+    [_configurator setup:self];
+
+}
+
+
+#pragma mark - <TJSBaseVCConfig>
 
 - (UIView *)tjs_listView{
  

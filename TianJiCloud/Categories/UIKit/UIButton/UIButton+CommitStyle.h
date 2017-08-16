@@ -12,5 +12,10 @@
 
 - (void)tjs_commitBtnStateConfigWithNormalTitle:(NSString *)title;
 
++ (UIButton *)tjs_commitBtnWithTitle:(NSString *)title;
+
++ (UIView *)tjs_commitBtnForTBFooter:(NSString *)title
+                     blockForControl:(void (^)(id))block;
+
 
 @end

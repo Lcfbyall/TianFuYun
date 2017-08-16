@@ -10,11 +10,16 @@
 #define TJSBaseCellContentConfigProtocol_h
 
 @protocol TJSBaseCellContentConfig <NSObject>
-@required
+
+
+@optional
 
 - (CGSize)contentSize:(CGFloat)cellWidth model:(id)model;
 
 - (NSString *)cellContent:(id)model;
+
+- (id<TJSBaseCellContentConfig>)configBy:(id)model;
+
 
 @end
 

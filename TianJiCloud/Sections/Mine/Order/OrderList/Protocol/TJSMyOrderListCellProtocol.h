@@ -9,8 +9,6 @@
 #ifndef TJSMyOrderListCellProtocol_h
 #define TJSMyOrderListCellProtocol_h
 
-#import "TJSBaseTableViewCellDelegate.h"
-
 
 @protocol MyOrderListCellDelegate <TJSBaseTableViewCellDelegate>
 

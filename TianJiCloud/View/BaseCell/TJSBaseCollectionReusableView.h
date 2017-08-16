@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+#import "TJSBaseCollectionReusableViewProtocol.h"
 
 @interface TJSBaseCollectionReusableView : UICollectionReusableView<TJSBaseCollectionReusableViewProtocol>
 

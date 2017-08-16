@@ -269,6 +269,8 @@
 		2C8DE60C1F2B15F3009B3AE2 /* TJSDiscoNewsListVCConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE60B1F2B15F3009B3AE2 /* TJSDiscoNewsListVCConfig.m */; };
 		2C8DE6171F2B43A8009B3AE2 /* DiscoRoadShowListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE6101F2B43A8009B3AE2 /* DiscoRoadShowListController.m */; };
 		2C8DE6181F2B43A8009B3AE2 /* DiscoveryRoadShowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE6131F2B43A8009B3AE2 /* DiscoveryRoadShowLayout.m */; };
+		2CA553081F43E1CB0095ECC1 /* RewardVCConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA553071F43E1CB0095ECC1 /* RewardVCConfig.m */; };
+		2CA5530F1F43EA7B0095ECC1 /* HistoryRewardConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA5530E1F43EA7B0095ECC1 /* HistoryRewardConfig.m */; };
 		2CAF426F1F26E01E00ABCA5E /* TJSProductListApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF426E1F26E01E00ABCA5E /* TJSProductListApi.m */; };
 		2CAF42731F26E66500ABCA5E /* TJSBaseNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF42721F26E66500ABCA5E /* TJSBaseNetworkTool.m */; };
 		2CAF427A1F26EAA600ABCA5E /* AppVersionNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF42791F26EAA600ABCA5E /* AppVersionNetworkTool.m */; };
@@ -384,6 +386,13 @@
 		2CCC85D01F3B0B650009FC1C /* ProductFilterCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCC85CF1F3B0B650009FC1C /* ProductFilterCollectionCell.m */; };
 		2CCC85D31F3B0CAA0009FC1C /* ProductFilterNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCC85D21F3B0CAA0009FC1C /* ProductFilterNetworkTool.m */; };
 		2CCC85D61F3B0CC20009FC1C /* ProductFilterStoreTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCC85D51F3B0CC20009FC1C /* ProductFilterStoreTool.m */; };
+		2CD896941F442731008F7C73 /* ContractApplyCellLayoutConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD896931F442731008F7C73 /* ContractApplyCellLayoutConfig.m */; };
+		2CD896971F442765008F7C73 /* ContractApplyContentConfigFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD896961F442765008F7C73 /* ContractApplyContentConfigFactory.m */; };
+		2CD8969B1F4427C2008F7C73 /* ContractApplyAddAddressContentConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD8969A1F4427C2008F7C73 /* ContractApplyAddAddressContentConfig.m */; };
+		2CD8969E1F4427E8008F7C73 /* ContractApplyInfoContentConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD8969D1F4427E8008F7C73 /* ContractApplyInfoContentConfig.m */; };
+		2CD896A11F442806008F7C73 /* ContractApplyPNameContentConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD896A01F442806008F7C73 /* ContractApplyPNameContentConfig.m */; };
+		2CD896A41F442824008F7C73 /* ContractApplyPResultContentConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD896A31F442824008F7C73 /* ContractApplyPResultContentConfig.m */; };
+		2CD896A81F442D99008F7C73 /* ContractInfoApplyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD896A71F442D99008F7C73 /* ContractInfoApplyModel.m */; };
 		2CF8B53E1F3D469F003B8520 /* ProductSearchHotCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF8B53D1F3D469F003B8520 /* ProductSearchHotCell.m */; };
 		2CF8B5411F3D46B8003B8520 /* ProductSearchResultCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF8B5401F3D46B8003B8520 /* ProductSearchResultCell.m */; };
 		2CF8B5451F3D48B0003B8520 /* ProductSearchListCellFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF8B5441F3D48B0003B8520 /* ProductSearchListCellFactory.m */; };
@@ -962,6 +971,11 @@
 		2C8DE6101F2B43A8009B3AE2 /* DiscoRoadShowListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoRoadShowListController.m; sourceTree = "<group>"; };
 		2C8DE6121F2B43A8009B3AE2 /* DiscoveryRoadShowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoveryRoadShowLayout.h; sourceTree = "<group>"; };
 		2C8DE6131F2B43A8009B3AE2 /* DiscoveryRoadShowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoveryRoadShowLayout.m; sourceTree = "<group>"; };
+		2CA553061F43E1CB0095ECC1 /* RewardVCConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RewardVCConfig.h; sourceTree = "<group>"; };
+		2CA553071F43E1CB0095ECC1 /* RewardVCConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RewardVCConfig.m; sourceTree = "<group>"; };
+		2CA5530C1F43E20A0095ECC1 /* RewardConfigProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RewardConfigProtocol.h; sourceTree = "<group>"; };
+		2CA5530D1F43EA7B0095ECC1 /* HistoryRewardConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryRewardConfig.h; sourceTree = "<group>"; };
+		2CA5530E1F43EA7B0095ECC1 /* HistoryRewardConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryRewardConfig.m; sourceTree = "<group>"; };
 		2CAF426D1F26E01E00ABCA5E /* TJSProductListApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSProductListApi.h; sourceTree = "<group>"; };
 		2CAF426E1F26E01E00ABCA5E /* TJSProductListApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSProductListApi.m; sourceTree = "<group>"; };
 		2CAF42711F26E66500ABCA5E /* TJSBaseNetworkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSBaseNetworkTool.h; sourceTree = "<group>"; };
@@ -1205,6 +1219,21 @@
 		2CCC85D21F3B0CAA0009FC1C /* ProductFilterNetworkTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductFilterNetworkTool.m; sourceTree = "<group>"; };
 		2CCC85D41F3B0CC20009FC1C /* ProductFilterStoreTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductFilterStoreTool.h; sourceTree = "<group>"; };
 		2CCC85D51F3B0CC20009FC1C /* ProductFilterStoreTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductFilterStoreTool.m; sourceTree = "<group>"; };
+		2CD896921F442731008F7C73 /* ContractApplyCellLayoutConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContractApplyCellLayoutConfig.h; sourceTree = "<group>"; };
+		2CD896931F442731008F7C73 /* ContractApplyCellLayoutConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContractApplyCellLayoutConfig.m; sourceTree = "<group>"; };
+		2CD896951F442765008F7C73 /* ContractApplyContentConfigFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContractApplyContentConfigFactory.h; sourceTree = "<group>"; };
+		2CD896961F442765008F7C73 /* ContractApplyContentConfigFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContractApplyContentConfigFactory.m; sourceTree = "<group>"; };
+		2CD896991F4427C2008F7C73 /* ContractApplyAddAddressContentConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContractApplyAddAddressContentConfig.h; sourceTree = "<group>"; };
+		2CD8969A1F4427C2008F7C73 /* ContractApplyAddAddressContentConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContractApplyAddAddressContentConfig.m; sourceTree = "<group>"; };
+		2CD8969C1F4427E8008F7C73 /* ContractApplyInfoContentConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContractApplyInfoContentConfig.h; sourceTree = "<group>"; };
+		2CD8969D1F4427E8008F7C73 /* ContractApplyInfoContentConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContractApplyInfoContentConfig.m; sourceTree = "<group>"; };
+		2CD8969F1F442806008F7C73 /* ContractApplyPNameContentConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContractApplyPNameContentConfig.h; sourceTree = "<group>"; };
+		2CD896A01F442806008F7C73 /* ContractApplyPNameContentConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContractApplyPNameContentConfig.m; sourceTree = "<group>"; };
+		2CD896A21F442824008F7C73 /* ContractApplyPResultContentConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContractApplyPResultContentConfig.h; sourceTree = "<group>"; };
+		2CD896A31F442824008F7C73 /* ContractApplyPResultContentConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContractApplyPResultContentConfig.m; sourceTree = "<group>"; };
+		2CD896A61F442D99008F7C73 /* ContractInfoApplyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContractInfoApplyModel.h; sourceTree = "<group>"; };
+		2CD896A71F442D99008F7C73 /* ContractInfoApplyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContractInfoApplyModel.m; sourceTree = "<group>"; };
+		2CD896A91F444574008F7C73 /* TJSTableViewCellProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TJSTableViewCellProtocol.h; sourceTree = "<group>"; };
 		2CF8B53C1F3D469F003B8520 /* ProductSearchHotCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductSearchHotCell.h; sourceTree = "<group>"; };
 		2CF8B53D1F3D469F003B8520 /* ProductSearchHotCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductSearchHotCell.m; sourceTree = "<group>"; };
 		2CF8B53F1F3D46B8003B8520 /* ProductSearchResultCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductSearchResultCell.h; sourceTree = "<group>"; };
@@ -2306,6 +2335,8 @@
 			children = (
 				2C83C72A1F39BB46004034CA /* HistoryRewardsController.h */,
 				2C83C72B1F39BB46004034CA /* HistoryRewardsController.m */,
+				2CA5530D1F43EA7B0095ECC1 /* HistoryRewardConfig.h */,
+				2CA5530E1F43EA7B0095ECC1 /* HistoryRewardConfig.m */,
 			);
 			path = History;
 			sourceTree = "<group>";
@@ -2315,6 +2346,9 @@
 			children = (
 				2C83C72E1F39BD27004034CA /* RewardViewController.h */,
 				2C83C72F1F39BD27004034CA /* RewardViewController.m */,
+				2CA553061F43E1CB0095ECC1 /* RewardVCConfig.h */,
+				2CA553071F43E1CB0095ECC1 /* RewardVCConfig.m */,
+				2CA5530C1F43E20A0095ECC1 /* RewardConfigProtocol.h */,
 			);
 			path = Reward;
 			sourceTree = "<group>";
@@ -3719,6 +3753,7 @@
 		2CB4F5B11F41C3BA00FF98C9 /* ContractApply */ = {
 			isa = PBXGroup;
 			children = (
+				2CD896A51F442D8F008F7C73 /* Model */,
 				2CB4F62A1F42D18600FF98C9 /* Config */,
 				2CB4F62B1F42D18600FF98C9 /* Controller */,
 				2CB4F6241F42D18600FF98C9 /* Disaggregate */,
@@ -3969,6 +4004,11 @@
 			children = (
 				2CB4F6401F42F34700FF98C9 /* ContractApplyCellFactory.h */,
 				2CB4F6411F42F34700FF98C9 /* ContractApplyCellFactory.m */,
+				2CD896921F442731008F7C73 /* ContractApplyCellLayoutConfig.h */,
+				2CD896931F442731008F7C73 /* ContractApplyCellLayoutConfig.m */,
+				2CD896951F442765008F7C73 /* ContractApplyContentConfigFactory.h */,
+				2CD896961F442765008F7C73 /* ContractApplyContentConfigFactory.m */,
+				2CD896981F442782008F7C73 /* CellContent */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -4051,6 +4091,7 @@
 				2CCBE48D1F34207C006C4018 /* TJSBaseTableHeaderFooterView.h */,
 				2CCBE48E1F34207C006C4018 /* TJSBaseTableHeaderFooterView.m */,
 				2CF8B5481F3D9A2D003B8520 /* TJSBaseTableViewCellDelegate.h */,
+				2CD896A91F444574008F7C73 /* TJSTableViewCellProtocol.h */,
 			);
 			path = BaseCell;
 			sourceTree = "<group>";
@@ -4258,6 +4299,30 @@
 			children = (
 			);
 			path = CellConfig;
+			sourceTree = "<group>";
+		};
+		2CD896981F442782008F7C73 /* CellContent */ = {
+			isa = PBXGroup;
+			children = (
+				2CD896991F4427C2008F7C73 /* ContractApplyAddAddressContentConfig.h */,
+				2CD8969A1F4427C2008F7C73 /* ContractApplyAddAddressContentConfig.m */,
+				2CD8969C1F4427E8008F7C73 /* ContractApplyInfoContentConfig.h */,
+				2CD8969D1F4427E8008F7C73 /* ContractApplyInfoContentConfig.m */,
+				2CD8969F1F442806008F7C73 /* ContractApplyPNameContentConfig.h */,
+				2CD896A01F442806008F7C73 /* ContractApplyPNameContentConfig.m */,
+				2CD896A21F442824008F7C73 /* ContractApplyPResultContentConfig.h */,
+				2CD896A31F442824008F7C73 /* ContractApplyPResultContentConfig.m */,
+			);
+			path = CellContent;
+			sourceTree = "<group>";
+		};
+		2CD896A51F442D8F008F7C73 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2CD896A61F442D99008F7C73 /* ContractInfoApplyModel.h */,
+				2CD896A71F442D99008F7C73 /* ContractInfoApplyModel.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		2CF8B53B1F3D4682003B8520 /* View */ = {
@@ -4634,6 +4699,7 @@
 			files = (
 				2C4C1C941F3948E800002166 /* PNColor.m in Sources */,
 				2CAF42D81F281B8600ABCA5E /* ProductListVCConfig.m in Sources */,
+				2CD896A11F442806008F7C73 /* ContractApplyPNameContentConfig.m in Sources */,
 				2C85E3B41F2F269D00ADD360 /* MineHomeCellInfoModel.m in Sources */,
 				2CCC85AC1F3AEE3A0009FC1C /* ProductFilterController.m in Sources */,
 				2C859CE51F31EB2E00B86575 /* YZDisplayViewController.m in Sources */,
@@ -4688,6 +4754,7 @@
 				2CCBE4831F3415F2006C4018 /* MineHomeHeaderCollectionLayout.m in Sources */,
 				2C859CEB1F31EB2E00B86575 /* ZLCameraView.m in Sources */,
 				2C859CE01F31EB2E00B86575 /* DACircularProgressView.m in Sources */,
+				2CD8969E1F4427E8008F7C73 /* ContractApplyInfoContentConfig.m in Sources */,
 				2C859CE31F31EB2E00B86575 /* UIView+Frame.m in Sources */,
 				2C89AD741F2B5C81005C29AC /* DiscoNewsDetailController.m in Sources */,
 				2C83C7221F39BA14004034CA /* PlatformAnnounceCell.m in Sources */,
@@ -4709,6 +4776,7 @@
 				2CF8B54B1F3D9E5C003B8520 /* TJSBaseCollectionViewLayout.m in Sources */,
 				2CCBE4861F3417A5006C4018 /* MineHeaderCollectionCell.m in Sources */,
 				2C4412931F21FF9C00C453EF /* TJSDownLoaderManager.m in Sources */,
+				2CA5530F1F43EA7B0095ECC1 /* HistoryRewardConfig.m in Sources */,
 				2C8BB7C51F31AEF600E2D75F /* UIButton+ImageTitleEdgeInset.m in Sources */,
 				2C8DE5941F29F5FF009B3AE2 /* TJSWeakScriptMessageHandler.m in Sources */,
 				2C4412551F21DBBA00C453EF /* UIViewController+RouteParams.m in Sources */,
@@ -4804,10 +4872,12 @@
 				2CB4F6091F42849100FF98C9 /* MyFavListInteractorImpl.m in Sources */,
 				2C8DE5911F29F4AF009B3AE2 /* TJSBaseWebViewController.m in Sources */,
 				2CAF42731F26E66500ABCA5E /* TJSBaseNetworkTool.m in Sources */,
+				2CA553081F43E1CB0095ECC1 /* RewardVCConfig.m in Sources */,
 				2C8DE5F11F2AE82F009B3AE2 /* TJSDiscoNewsInteracotImpl.m in Sources */,
 				2C44128B1F21ECA600C453EF /* UITextView+LengthLimited.m in Sources */,
 				2C859CFD1F31EB2E00B86575 /* ZLPhotoPickerCollectionView.m in Sources */,
 				2C85E3931F2F0B6500ADD360 /* TJSBaseMineHomeCellContentConfig.m in Sources */,
+				2CD896941F442731008F7C73 /* ContractApplyCellLayoutConfig.m in Sources */,
 				2C8DE5FF1F2AEAF6009B3AE2 /* DiscoveryNewsInfoModel.m in Sources */,
 				2CAF42DE1F281B8600ABCA5E /* ProductListNetworkTool.m in Sources */,
 				2CCC85C81F3AF5A20009FC1C /* ProductFilterItem.m in Sources */,
@@ -4912,6 +4982,7 @@
 				2CCC85BF1F3AEF2C0009FC1C /* FilterResultVCConfig.m in Sources */,
 				2CB4F5751F418FFB00FF98C9 /* CumulateInvestInfoModel.m in Sources */,
 				2C027D131F3C7C61001D7EB6 /* ProductFilterResultInteractorImpl.m in Sources */,
+				2CD896A81F442D99008F7C73 /* ContractInfoApplyModel.m in Sources */,
 				2CB4F5EE1F41C3BB00FF98C9 /* ContractListNetworkTool.m in Sources */,
 				2C4412A91F2201FF00C453EF /* TJWUrlArgumentsFilter.m in Sources */,
 				2C859CFF1F31EB2E00B86575 /* ZLPhotoPickerFooterCollectionReusableView.m in Sources */,
@@ -4920,6 +4991,7 @@
 				2CB4F5E01F41C3BB00FF98C9 /* AddressManageController.m in Sources */,
 				2C8BB7B51F3088E200E2D75F /* HomeFooterConfig.m in Sources */,
 				2C85E37D1F2F031600ADD360 /* TJSMineHomeTableAdapter.m in Sources */,
+				2CD8969B1F4427C2008F7C73 /* ContractApplyAddAddressContentConfig.m in Sources */,
 				2C4C1BD51F38143B00002166 /* UIApplication+TJSAppVersion.m in Sources */,
 				2CB4F5E31F41C3BB00FF98C9 /* MyContractViewController.m in Sources */,
 				2C4412671F21E17200C453EF /* NSMutableAttributedString+Formated.m in Sources */,
@@ -4952,6 +5024,7 @@
 				2C4C1CA81F394BDC00002166 /* FeedbackContainerController.m in Sources */,
 				2C85E3B71F2F302900ADD360 /* UIImage+Resizeable.m in Sources */,
 				2C8DE5CC1F2AE3BC009B3AE2 /* DiscoNewsListController.m in Sources */,
+				2CD896A41F442824008F7C73 /* ContractApplyPResultContentConfig.m in Sources */,
 				2CF8B55B1F3DA3D7003B8520 /* ProductSearchHotNetworkTool.m in Sources */,
 				2C4C1CA21F39497900002166 /* TJSInvestPieChart.m in Sources */,
 				2CAF43061F2828C200ABCA5E /* TJSProductListConfigurator.m in Sources */,
@@ -4972,6 +5045,7 @@
 				2C859CF41F31EB2E00B86575 /* ZLPhotoPickerCustomToolBarView.m in Sources */,
 				2CB4F64D1F42F56300FF98C9 /* ContractApplyProductNameCell.m in Sources */,
 				2C8BB7A41F30859C00E2D75F /* HomeHeaderCollectionCell.m in Sources */,
+				2CD896971F442765008F7C73 /* ContractApplyContentConfigFactory.m in Sources */,
 				2C8DE6181F2B43A8009B3AE2 /* DiscoveryRoadShowLayout.m in Sources */,
 				2CCBE4931F34207C006C4018 /* TJSBaseTableViewCell.m in Sources */,
 				2C859CEF1F31EB2E00B86575 /* ZLPhotoPickerBrowserViewController+SignlePhotoBrowser.m in Sources */,

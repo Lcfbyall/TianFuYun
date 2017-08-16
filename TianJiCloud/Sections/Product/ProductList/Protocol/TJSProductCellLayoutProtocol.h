@@ -10,7 +10,6 @@
 #define TJSProductCellLayoutProtocol_h
 
 #import <UIKit/UIKit.h>
-#import "TJSBaseCellLayoutProtocol.h"
 
 @class TJSProductInfoModel;
 

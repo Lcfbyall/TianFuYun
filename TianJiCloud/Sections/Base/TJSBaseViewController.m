@@ -9,13 +9,14 @@
 #import "TJSBaseViewController.h"
 
 
-NSString * const HideNavigationBarKey     = @"HideNavigationBarKey";
-NSString * const NavigationBarTranslucentKey = @"NavigationBarTranslucentKey";
-NSString * const NavigationBarBarTintColor = @"NavigationBarBarTintColor";
-NSString *const  NavigationBarTintColor   = @"NavigationBarTintColor";
-NSString * const HideBackBarButtonItemKey = @"HideBackBarButtonItemKey";
+NSString * const HideNavigationBarKey     = @"tjsHideNavigationBarKey";
+NSString * const NavigationBarTranslucentKey = @"tjsNavigationBarTranslucentKey";
+NSString * const NavigationBarBarTintColor = @"tjsNavigationBarBarTintColor";
+NSString *const  NavigationBarTintColor   = @"tjsNavigationBarTintColor";
+NSString * const HideBackBarButtonItemKey = @"tjsHideBackBarButtonItemKey";
+NSString * const AdjustsScrollViewInsets = @"tjsAdjustsScrollViewInsets";
 
-@interface TJSBaseViewController ()<UINavigationControllerDelegate>
+@interface TJSBaseViewController ()
 
 @end
 
@@ -30,10 +31,16 @@ NSString * const HideBackBarButtonItemKey = @"HideBackBarButtonItemKey";
     
     [self tjs_configBaseView];
     
-    self.navigationController.delegate = self;
+    
 }
 
+- (void)viewWillAppear:(BOOL)animated{
+ 
+    [super viewWillAppear:animated];
 
+    [self.navigationController.navigationBar setupStyleBasic];
+    
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -98,78 +105,20 @@ NSString * const HideBackBarButtonItemKey = @"HideBackBarButtonItemKey";
     return hide;
 }
 
+- (BOOL)tjs_adjustsScrollViewInsets{
+  
+    BOOL adjust = [self.params[AdjustsScrollViewInsets] boolValue];
+
+    return adjust;
+}
+
 - (void)tjs_unifyPopForMoreEvent{
 
     if(self.backHandler)self.backHandler(self);
 }
 
-
-
-
-#pragma mark - <UINavigationControllerDelegate>
-
-- (void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated{
-
-
-    [self.navigationController.navigationBar setupStyleBasic];
-
-
-    //0.
-    BOOL isHidden = NO;
-    
-    if ([viewController isKindOfClass:[TJSBaseViewController class]]&&
-        [viewController conformsToProtocol:@protocol(TJSNavigationConfig)] &&
-        [viewController respondsToSelector:@selector(tjs_hideNavigationBar)]) {
-        
-        isHidden = [((TJSBaseViewController *)viewController) tjs_hideNavigationBar];
-        [self.navigationController setNavigationBarHidden:isHidden animated:YES];
-        
-    }
-
-
-    if(!isHidden){
-    
-        //1.translucent
-        BOOL translucent = NO;
-        
-        if ([viewController isKindOfClass:[TJSBaseViewController class]]&&
-            [viewController conformsToProtocol:@protocol(TJSNavigationConfig)] &&
-            [viewController respondsToSelector:@selector(tjs_translucentNavigationBar)]) {
-            
-            translucent = [((TJSBaseViewController *)viewController) tjs_translucentNavigationBar];
-            self.navigationController.navigationBar.translucent = translucent;
-        }
-
-        //2.barTintColor
-        UIColor *barTintColor = nil;
-        if ([viewController isKindOfClass:[TJSBaseViewController class]]&&
-            [viewController conformsToProtocol:@protocol(TJSNavigationConfig)] &&
-            [viewController respondsToSelector:@selector(tjs_navigationBarBarTintColor)]) {
-        
-            barTintColor = [((TJSBaseViewController *)viewController) tjs_navigationBarBarTintColor];
-            self.navigationController.navigationBar.barTintColor = barTintColor;
-            
-        }
-
-
-        //3.tintColor
-        UIColor *tintColor = nil;
-        if ([viewController isKindOfClass:[TJSBaseViewController class]]&&
-            [viewController conformsToProtocol:@protocol(TJSNavigationConfig)] &&
-            [viewController respondsToSelector:@selector(tjs_navigationBarTintColor)]) {
-            
-            tintColor = [((TJSBaseViewController *)viewController) tjs_navigationBarTintColor];
-            self.navigationController.navigationBar.tintColor = tintColor;
-        }
-
-    }
-}
-
-- (void)navigationController:(UINavigationController *)navigationController didShowViewController:(UIViewController *)viewController animated:(BOOL)animated{
-    
-    //NSLog(@"%@",viewController);
-    
-    
-}
-
 @end
+
+
+
+

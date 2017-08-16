@@ -12,7 +12,10 @@
 
 @interface ContractApplyCellFactory : NSObject
 
-+ (TJSBaseTableViewCell *)cellInTable:(UITableView*)tableView
+- (TJSBaseTableViewCell *)cellInTable:(UITableView*)tableView
                      forMineInfoModel:(id)model;
 
+- (CGFloat)cellHeight:(id)model cellWidth:(CGFloat)cellWidth;
+
 @end
+

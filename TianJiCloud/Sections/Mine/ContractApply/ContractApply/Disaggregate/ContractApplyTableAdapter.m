@@ -7,8 +7,10 @@
 //
 
 #import "ContractApplyTableAdapter.h"
-
 #import "ContractApplyCellFactory.h"
+
+#import "ContractInfoApplyModel.h"
+
 
 static NSString *const headerFooterIdentifier = @"ContractListHeaderIdentifier";
 
@@ -16,6 +18,7 @@ static NSString *const headerFooterIdentifier = @"ContractListHeaderIdentifier";
 
 @property (nonatomic,weak)UITableView *tableView;
 
+@property (nonatomic,strong)ContractApplyCellFactory *cellFactory;
 
 @end
 
@@ -28,6 +31,7 @@ static NSString *const headerFooterIdentifier = @"ContractListHeaderIdentifier";
         
         _tableView = tableView;
         
+        _cellFactory = [[ContractApplyCellFactory alloc]init];
         
         [self setupTableView];
     }
@@ -42,10 +46,14 @@ static NSString *const headerFooterIdentifier = @"ContractListHeaderIdentifier";
     
     _tableView.backgroundColor = ThemeService.weak_color_00;
 
-    _tableView.tableFooterView = [UIView new];
-    
+    WEAK_SELF(self);
+    _tableView.tableFooterView = [UIButton tjs_commitBtnForTBFooter:@"提交" blockForControl:^(id sender) {
+        
+        STRONG_SELF(self);
+        [self.interactor applyContractWithParams:nil callback:NULL];
+    }];
+                                
     [_tableView registerClass:[UITableViewHeaderFooterView class] forHeaderFooterViewReuseIdentifier:headerFooterIdentifier];
-
 }
 
 
@@ -53,17 +61,20 @@ static NSString *const headerFooterIdentifier = @"ContractListHeaderIdentifier";
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     
-    return 1;
+    return self.interactor.items.count;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
 
-    return self.interactor.items.count;
+    return [((NSArray *)[self.interactor.items objectAtIndex:section]) count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    return (UITableViewCell *)[ContractApplyCellFactory cellInTable:tableView forMineInfoModel:nil];
+    ContractInfoApplyModel *model = [((NSArray *)[self.interactor.items objectAtIndex:indexPath.section]) objectAtIndex:indexPath.row];
+    
+    return (UITableViewCell *)[_cellFactory cellInTable:tableView forMineInfoModel:model];
+    
 }
 
 
@@ -71,7 +82,11 @@ static NSString *const headerFooterIdentifier = @"ContractListHeaderIdentifier";
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
 
-    return 120;
+    ContractInfoApplyModel *model = [((NSArray *)[self.interactor.items objectAtIndex:indexPath.section]) objectAtIndex:indexPath.row];
+    
+    CGFloat height =  [_cellFactory cellHeight:model cellWidth:SCREEN_WIDTH];
+    
+    return height;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{

@@ -9,9 +9,11 @@
 #import "ContractApplyDataSourceImpl.h"
 
 #import "ContractApplyNetworkTool.h"
-
+#import "ContractInfoApplyModel.h"
 
 @interface ContractApplyDataSourceImpl ()
+
+@property (nonatomic,strong) NSMutableArray *items;
 
 @end
 
@@ -20,32 +22,46 @@
 
 #pragma mark - <ContractApplyDataSource>
 
-- (void)applyContractWithParams:(id)params callback:(void (^)(id, NSError *))callback{
+- (void)applyContractWithParams:(id)params
+   callback:(void (^)(id, NSError *))callback{
  
     
     [ContractApplyNetworkTool requestWithParameters:params successCallback:^(id _Nullable data) {
         
-        
+    
         
     } failCallback:^(id _Nullable error) {
         
-        
-        
+
     }];
     
+    NSError *error = nil;
+    if(callback)callback(nil,error);
     
-    
-
 }
 
-- (void)searchProductWithKey:(NSString *)key callback:(void (^)(NSArray *, NSError *))callback{
+- (void)searchProductWithKey:(NSString *)key
+  callback:(void (^)(NSArray *, NSError *))callback{
 
 
 }
 
 - (NSArray *)items{
- 
-    return @[@"",@"",@""];
+    
+    if(_items==nil){
+    
+        ContractInfoApplyModel *add = [ContractInfoApplyModel new];
+        add.cellClass = @"ContractApplyAddAddressCell";
+        
+        
+        ContractInfoApplyModel *product = [ContractInfoApplyModel new];
+        product.cellClass = @"ContractApplyProductNameCell";
+        
+        
+        _items = [NSMutableArray arrayWithObjects:@[add],@[product], nil];
+    }
+    
+    return _items;
 }
 
 

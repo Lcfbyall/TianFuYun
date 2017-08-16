@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+#import "TJSBaseCollectionViewCellDelegate.h"
+#import "TJSBaseCollectionReusableViewProtocol.h"
+
 @interface TJSBaseCollectionViewCell : UICollectionViewCell<TJSBaseCollectionReusableViewProtocol>
 
 @property (nonatomic,weak)id <TJSBaseCollectionViewCellDelegate> delegate;

@@ -116,7 +116,7 @@
     ContractListHeader *header = [[ContractListHeader alloc]init];
     header.backgroundColor = ThemeService.origin_color_00;
     
-    header.frame = CGRectMake(0, 0, SCREEN_WIDTH, 120);
+    header.frame = CGRectMake(0, 0, SCREEN_WIDTH, 100);
     
     [header tjs_bindDataToCellWithValue:nil];
     

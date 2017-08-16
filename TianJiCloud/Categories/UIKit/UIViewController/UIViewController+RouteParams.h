@@ -35,6 +35,14 @@
                       animated:(BOOL)animated;
 
 
+#pragma mark - popViewController
+
++ (void)tjs_popViewControllerAnimated:(BOOL)animated;
+
++ (void)tjs_popViewController:(NSString *_Nullable)viewController
+                     animated:(BOOL)animated;
+
+
 #pragma mark - rootTabBar select
 
 + (void)tjs_rootTabBarToProductWithParams:(NSDictionary *_Nullable)params;

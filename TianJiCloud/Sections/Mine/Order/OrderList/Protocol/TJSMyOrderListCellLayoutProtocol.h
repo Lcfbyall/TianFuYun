@@ -9,7 +9,6 @@
 #ifndef TJSMyOrderListCellLayoutProtocol_h
 #define TJSMyOrderListCellLayoutProtocol_h
 
-#import "TJSBaseCellLayoutProtocol.h"
 
 @protocol TJSMyOrderListCellLayoutConfig <TJSBaseCellLayoutConfig>
 

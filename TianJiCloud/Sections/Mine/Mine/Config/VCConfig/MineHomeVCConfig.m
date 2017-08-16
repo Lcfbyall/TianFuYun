@@ -43,9 +43,9 @@
     
     _vc.params = @{
                    NavigationBarTranslucentKey:@(YES),
-                   NavigationBarBarTintColor:  [UIColor clearColor]
-                   
-                   };
+                   NavigationBarBarTintColor:  [UIColor clearColor],
+                   AdjustsScrollViewInsets :@(NO)
+                  };
     
     
     /*

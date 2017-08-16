@@ -43,15 +43,22 @@
 
 #import "UIViewController+StackLevel.h"
 #import "UIViewController+RouteParams.h"
+
+#import "UISearchBar+TJSBlock.h"
+
 #import "UIView+TJSFrame.h"
 #import "UIView+TJSViewController.h"
+
 #import "UIImage+FromColor.h"
 #import "UIImage+Resizeable.h"
-#import "UISearchBar+TJSBlock.h"
+
+#import "UIColor+HEX.h"
 #import "UIColor+TJSiOS7Colors.h"
+
 #import "UIButton+ImageTitleEdgeInset.h"
 #import "UIButton+BackgroundColor.h"
 #import "UIButton+IBInspectableState.h"
+#import "UIButton+CommitStyle.h"
 
 /** 5. vender **/
 
@@ -64,17 +71,13 @@
 
 /** 6. Base **/
 
-#import "TJSBaseCellLayoutProtocol.h"
-#import "TJSBaseCellContentConfigProtocol.h"
-#import "TJSBaseCollectionViewCellDelegate.h"
-#import "TJSBaseCollectionReusableViewProtocol.h"
 #import "TJSBaseCollectionViewLayout.h"
 #import "TJSBaseCollectionViewCell.h"
 #import "TJSBaseCollectionReusableView.h"
-
-
-#import "TJSBaseTableViewCellDelegate.h"
-
+#import "TJSBaseTableHeaderFooterView.h"
+#import "TJSBaseTableViewCell.h"
+#import "TJSBaseCellLayoutProtocol.h"
+#import "TJSBaseCellContentConfigProtocol.h"
 
 #endif /* PrefixHeader_pch */
 

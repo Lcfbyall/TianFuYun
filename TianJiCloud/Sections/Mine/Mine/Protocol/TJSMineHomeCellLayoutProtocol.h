@@ -9,8 +9,6 @@
 #ifndef TJSMineHomeCellLayoutProtocol_h
 #define TJSMineHomeCellLayoutProtocol_h
 
-#import "TJSBaseCellLayoutProtocol.h"
-
 
 @protocol TJSMineHomeCellLayoutConfig <TJSBaseCellLayoutConfig>
 

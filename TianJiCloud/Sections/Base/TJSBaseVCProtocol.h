@@ -41,6 +41,8 @@
 
 - (BOOL)tjs_hideBackBarButtonItem;
 
+- (BOOL)tjs_adjustsScrollViewInsets;
+
 //2.自定义返回按钮事件
 - (void)tjs_unifyPopForMoreEvent;
 

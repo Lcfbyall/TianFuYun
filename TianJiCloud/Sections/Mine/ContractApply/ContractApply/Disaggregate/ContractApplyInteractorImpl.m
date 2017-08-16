@@ -12,22 +12,25 @@
 
 #pragma mark - <ContractApplyInteractor>
 
-- (void)applyContractWithParams:(id)params callback:(void (^)(id, NSError *))callback;{
+- (void)applyContractWithParams:(id)params
+    callback:(void (^)(id, NSError *))callback;{
  
     [self.dataSource applyContractWithParams:params callback:^(id data, NSError * error) {
         
+        [UIViewController tjs_popViewControllerAnimated:YES];
         
+        if(callback)callback(data,error);
         
     }];
 }
 
-- (void)searchProductWithKey:(NSString *)key callback:(void (^)(NSArray *, NSError *))callback;{
+- (void)searchProductWithKey:(NSString *)key
+    callback:(void (^)(NSArray *, NSError *))callback;{
  
     [self.dataSource searchProductWithKey:key callback:^(NSArray *products, NSError *error) {
         
         
     }];
-
 }
 
 - (NSArray *)items{
@@ -40,8 +43,9 @@
 
 - (void)onRefresh{
 
-  [self .layout reloadTable];
+    [self.layout reloadTable];
     
+    [self.layout endRefresh];
 }
 
 @end
