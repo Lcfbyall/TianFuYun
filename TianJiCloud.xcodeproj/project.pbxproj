@@ -438,6 +438,12 @@
 		2CD897501F457B96008F7C73 /* AddressSelectedInteractorImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD897491F457B96008F7C73 /* AddressSelectedInteractorImpl.m */; };
 		2CD897511F457B96008F7C73 /* AddressSelectedLayoutImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD8974B1F457B96008F7C73 /* AddressSelectedLayoutImpl.m */; };
 		2CD897521F457B96008F7C73 /* AddressSelectedTableAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD8974D1F457B96008F7C73 /* AddressSelectedTableAdapter.m */; };
+		2CD897551F45851A008F7C73 /* ConAddressRightInputContentConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD897541F45851A008F7C73 /* ConAddressRightInputContentConfig.m */; };
+		2CD897581F458537008F7C73 /* ConAddressMiddleLabelContentConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD897571F458537008F7C73 /* ConAddressMiddleLabelContentConfig.m */; };
+		2CD8975B1F45854A008F7C73 /* ConAddressBottomInputContentConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD8975A1F45854A008F7C73 /* ConAddressBottomInputContentConfig.m */; };
+		2CD8975D1F458E29008F7C73 /* ConAddressRightInputCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CD8975C1F458E29008F7C73 /* ConAddressRightInputCell.xib */; };
+		2CD8975F1F458E3C008F7C73 /* ConAddressMiddleLabelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CD8975E1F458E3C008F7C73 /* ConAddressMiddleLabelCell.xib */; };
+		2CD897611F458E50008F7C73 /* ConAddressBottomInputCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CD897601F458E50008F7C73 /* ConAddressBottomInputCell.xib */; };
 		2CF8B53E1F3D469F003B8520 /* ProductSearchHotCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF8B53D1F3D469F003B8520 /* ProductSearchHotCell.m */; };
 		2CF8B5411F3D46B8003B8520 /* ProductSearchResultCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF8B5401F3D46B8003B8520 /* ProductSearchResultCell.m */; };
 		2CF8B5451F3D48B0003B8520 /* ProductSearchListCellFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF8B5441F3D48B0003B8520 /* ProductSearchListCellFactory.m */; };
@@ -1372,6 +1378,15 @@
 		2CD8974B1F457B96008F7C73 /* AddressSelectedLayoutImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressSelectedLayoutImpl.m; sourceTree = "<group>"; };
 		2CD8974C1F457B96008F7C73 /* AddressSelectedTableAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressSelectedTableAdapter.h; sourceTree = "<group>"; };
 		2CD8974D1F457B96008F7C73 /* AddressSelectedTableAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressSelectedTableAdapter.m; sourceTree = "<group>"; };
+		2CD897531F45851A008F7C73 /* ConAddressRightInputContentConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConAddressRightInputContentConfig.h; sourceTree = "<group>"; };
+		2CD897541F45851A008F7C73 /* ConAddressRightInputContentConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConAddressRightInputContentConfig.m; sourceTree = "<group>"; };
+		2CD897561F458537008F7C73 /* ConAddressMiddleLabelContentConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConAddressMiddleLabelContentConfig.h; sourceTree = "<group>"; };
+		2CD897571F458537008F7C73 /* ConAddressMiddleLabelContentConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConAddressMiddleLabelContentConfig.m; sourceTree = "<group>"; };
+		2CD897591F45854A008F7C73 /* ConAddressBottomInputContentConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConAddressBottomInputContentConfig.h; sourceTree = "<group>"; };
+		2CD8975A1F45854A008F7C73 /* ConAddressBottomInputContentConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConAddressBottomInputContentConfig.m; sourceTree = "<group>"; };
+		2CD8975C1F458E29008F7C73 /* ConAddressRightInputCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConAddressRightInputCell.xib; sourceTree = "<group>"; };
+		2CD8975E1F458E3C008F7C73 /* ConAddressMiddleLabelCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConAddressMiddleLabelCell.xib; sourceTree = "<group>"; };
+		2CD897601F458E50008F7C73 /* ConAddressBottomInputCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConAddressBottomInputCell.xib; sourceTree = "<group>"; };
 		2CF8B53C1F3D469F003B8520 /* ProductSearchHotCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductSearchHotCell.h; sourceTree = "<group>"; };
 		2CF8B53D1F3D469F003B8520 /* ProductSearchHotCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductSearchHotCell.m; sourceTree = "<group>"; };
 		2CF8B53F1F3D46B8003B8520 /* ProductSearchResultCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductSearchResultCell.h; sourceTree = "<group>"; };
@@ -4484,10 +4499,10 @@
 			children = (
 				2CD896D41F453D33008F7C73 /* ContractAddAddressConfigurator.h */,
 				2CD896D51F453D33008F7C73 /* ContractAddAddressConfigurator.m */,
-				2CD896D61F453D33008F7C73 /* ContractAddAddressDataSourceImpl.h */,
-				2CD896D71F453D33008F7C73 /* ContractAddAddressDataSourceImpl.m */,
 				2CD896D81F453D33008F7C73 /* ContractAddAddressInteractorImpl.h */,
 				2CD896D91F453D33008F7C73 /* ContractAddAddressInteractorImpl.m */,
+				2CD896D61F453D33008F7C73 /* ContractAddAddressDataSourceImpl.h */,
+				2CD896D71F453D33008F7C73 /* ContractAddAddressDataSourceImpl.m */,
 				2CD896DA1F453D33008F7C73 /* ContractAddAddressLayoutImpl.h */,
 				2CD896DB1F453D33008F7C73 /* ContractAddAddressLayoutImpl.m */,
 				2CD896DC1F453D33008F7C73 /* ContractAddAddressTableAdapter.h */,
@@ -4507,6 +4522,12 @@
 				2CD896E91F453F8C008F7C73 /* ContractAddAddressCellLayoutConfig.m */,
 				2CD896EA1F453F8C008F7C73 /* ContractAddAddressContentConfigFactory.h */,
 				2CD896EB1F453F8C008F7C73 /* ContractAddAddressContentConfigFactory.m */,
+				2CD897531F45851A008F7C73 /* ConAddressRightInputContentConfig.h */,
+				2CD897541F45851A008F7C73 /* ConAddressRightInputContentConfig.m */,
+				2CD897561F458537008F7C73 /* ConAddressMiddleLabelContentConfig.h */,
+				2CD897571F458537008F7C73 /* ConAddressMiddleLabelContentConfig.m */,
+				2CD897591F45854A008F7C73 /* ConAddressBottomInputContentConfig.h */,
+				2CD8975A1F45854A008F7C73 /* ConAddressBottomInputContentConfig.m */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -4538,10 +4559,13 @@
 				2CD896C61F453B09008F7C73 /* ContractAddAddressBaseCell.m */,
 				2CD896C81F453BE0008F7C73 /* ConAddressRightInputCell.h */,
 				2CD896C91F453BE0008F7C73 /* ConAddressRightInputCell.m */,
+				2CD8975C1F458E29008F7C73 /* ConAddressRightInputCell.xib */,
 				2CD896CE1F453C34008F7C73 /* ConAddressMiddleLabelCell.h */,
 				2CD896CF1F453C34008F7C73 /* ConAddressMiddleLabelCell.m */,
+				2CD8975E1F458E3C008F7C73 /* ConAddressMiddleLabelCell.xib */,
 				2CD896CB1F453C11008F7C73 /* ConAddressBottomInputCell.h */,
 				2CD896CC1F453C11008F7C73 /* ConAddressBottomInputCell.m */,
+				2CD897601F458E50008F7C73 /* ConAddressBottomInputCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -4969,6 +4993,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C859D021F31EB2E00B86575 /* ZLPhotoLib.bundle in Resources */,
+				2CD8975D1F458E29008F7C73 /* ConAddressRightInputCell.xib in Resources */,
 				2C85E3331F2EC6E500ADD360 /* Oder.storyboard in Resources */,
 				2C300F7C1F2F32BF00DD440E /* Settings.storyboard in Resources */,
 				2C7A34511F2F64DA004DD566 /* BankCardManager.storyboard in Resources */,
@@ -4980,6 +5005,7 @@
 				2C7A34591F2F685B004DD566 /* UseAgreement.storyboard in Resources */,
 				2C300F8D1F2F3D4700DD440E /* Profile.storyboard in Resources */,
 				2C7A34531F2F6590004DD566 /* MyReward.storyboard in Resources */,
+				2CD897611F458E50008F7C73 /* ConAddressBottomInputCell.xib in Resources */,
 				2C300F931F2F3E9F00DD440E /* GestureSet.storyboard in Resources */,
 				2C8BB7A51F30859C00E2D75F /* HomeHeaderCollectionCell.xib in Resources */,
 				2C1BFEBF1F2978C500665A71 /* Discovery.storyboard in Resources */,
@@ -4992,6 +5018,7 @@
 				2C7A344F1F2F63BE004DD566 /* CapitalRecord.storyboard in Resources */,
 				2C8DE5BA1F2ADCFA009B3AE2 /* DiscoveryRoadShowListCell.xib in Resources */,
 				2C4411BB1F21981E00C453EF /* Assets.xcassets in Resources */,
+				2CD8975F1F458E3C008F7C73 /* ConAddressMiddleLabelCell.xib in Resources */,
 				2C4412991F22007D00C453EF /* TJSThemeConfig.strings in Resources */,
 				2C7A345B1F2F68E6004DD566 /* Feedback.storyboard in Resources */,
 				2CD896AB1F4529DA008F7C73 /* ContractApplyInfoCell.xib in Resources */,
@@ -5254,6 +5281,7 @@
 				2C4412701F21E73E00C453EF /* UIButton+CommitStyle.m in Sources */,
 				2CCC85CB1F3AF5B50009FC1C /* ProductFilterItemModel.m in Sources */,
 				2C8BB7A61F30859C00E2D75F /* HomeHeaderCollectionLayout.m in Sources */,
+				2CD8975B1F45854A008F7C73 /* ConAddressBottomInputContentConfig.m in Sources */,
 				2C8BB7AF1F3087BA00E2D75F /* HomeProductClickItem.m in Sources */,
 				2CB4F5EA1F41C3BB00FF98C9 /* ContractInfoModel.m in Sources */,
 				2CCBE4801F333386006C4018 /* UINavigationBar+Awesome.m in Sources */,
@@ -5364,6 +5392,7 @@
 				2C859CF91F31EB2E00B86575 /* ZLNavigationController.m in Sources */,
 				2C4412051F219A5300C453EF /* UIImage+Stretchable.m in Sources */,
 				2C4411AD1F21981E00C453EF /* main.m in Sources */,
+				2CD897581F458537008F7C73 /* ConAddressMiddleLabelContentConfig.m in Sources */,
 				2CCBE4681F330597006C4018 /* DiscoveryVCConfig.m in Sources */,
 				2CB4F5E51F41C3BB00FF98C9 /* ContractListDataSourceImpl.m in Sources */,
 				2C83C6E51F39AE2F004034CA /* FeedbackCommitNetworkTool.m in Sources */,
@@ -5400,6 +5429,7 @@
 				2CB4F5751F418FFB00FF98C9 /* CumulateInvestInfoModel.m in Sources */,
 				2C027D131F3C7C61001D7EB6 /* ProductFilterResultInteractorImpl.m in Sources */,
 				2CD896A81F442D99008F7C73 /* ContractInfoApplyModel.m in Sources */,
+				2CD897551F45851A008F7C73 /* ConAddressRightInputContentConfig.m in Sources */,
 				2CB4F5EE1F41C3BB00FF98C9 /* ContractListNetworkTool.m in Sources */,
 				2C4412A91F2201FF00C453EF /* TJWUrlArgumentsFilter.m in Sources */,
 				2C859CFF1F31EB2E00B86575 /* ZLPhotoPickerFooterCollectionReusableView.m in Sources */,

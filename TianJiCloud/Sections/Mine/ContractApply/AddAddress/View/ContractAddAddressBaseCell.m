@@ -12,6 +12,7 @@
 
 @implementation ContractAddAddressBaseCell
 
+
 #pragma mark - <TJSBaseTableViewCellProtocol>
 
 - (void)tjs_bindDataToCellWithValue:(id)value{

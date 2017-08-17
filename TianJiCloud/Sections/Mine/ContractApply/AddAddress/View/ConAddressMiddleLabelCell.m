@@ -8,8 +8,15 @@
 
 #import "ConAddressMiddleLabelCell.h"
 
+@interface ConAddressMiddleLabelCell ()
+
+@end
+
 @implementation ConAddressMiddleLabelCell
 
+
+
+#pragma mark - <TJSBaseTableViewCellProtocol>
 
 - (void)tjs_bindDataToCellWithValue:(id)value{
     

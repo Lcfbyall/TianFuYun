@@ -8,6 +8,10 @@
 
 #import "ConAddressRightInputCell.h"
 
+@interface ConAddressRightInputCell ()
+
+@end
+
 @implementation ConAddressRightInputCell
 
 #pragma mark - <TJSBaseTableViewCellProtocol>

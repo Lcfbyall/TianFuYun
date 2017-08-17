@@ -26,6 +26,11 @@
 
 @property (nonatomic,copy) void (^cellOperation)(id obj1,id obj2);
 
++ (NSArray <ContractInfoApplyModel *> *)configModels;
 
 @end
+
+
+
+
 

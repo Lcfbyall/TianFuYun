@@ -11,6 +11,8 @@
 
 @interface AddAdressViewController ()
 
+@property (nonatomic,strong)ContractAddAddressConfigurator *configurator;
+
 @property (nonatomic,strong) id<ContractAddAddressInteractor>interactor;
 
 @property (weak, nonatomic) IBOutlet UITableView *addressEidtList;
@@ -27,7 +29,7 @@
     
     self.title = @"新增地址";
     
-    
+    [self setupConfigurator];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -38,6 +40,18 @@
 }
 
 
+
+#pragma mark - setupConfigurator
+
+- (void)setupConfigurator{
+
+    _configurator = [[ContractAddAddressConfigurator alloc]init];
+    
+    [_configurator setup:self];
+}
+
+
+#pragma mark - <TJSBaseVCConfig>
 
 - (UIView *)tjs_listView{
   

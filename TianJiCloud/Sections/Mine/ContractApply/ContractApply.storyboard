@@ -99,15 +99,28 @@
                     <view key="view" contentMode="scaleToFill" id="Nuh-Cq-rQt">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="omn-0E-7vT">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="omn-0E-7vT" secondAttribute="trailing" id="3Ow-kx-kvB"/>
+                            <constraint firstAttribute="bottom" secondItem="omn-0E-7vT" secondAttribute="bottom" id="MrK-Ci-HB9"/>
+                            <constraint firstItem="omn-0E-7vT" firstAttribute="leading" secondItem="Nuh-Cq-rQt" secondAttribute="leading" id="aVp-wS-sDm"/>
+                            <constraint firstItem="omn-0E-7vT" firstAttribute="top" secondItem="Nuh-Cq-rQt" secondAttribute="top" id="cV3-9a-s91"/>
+                        </constraints>
                     </view>
                     <connections>
+                        <outlet property="addreslist" destination="omn-0E-7vT" id="IPa-AO-Mc3"/>
                         <segue destination="y0v-q0-Ghy" kind="show" identifier="AddressSelectedToAddressManageVC" id="oy1-cf-VJq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LQO-bs-eTM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5886" y="75"/>
+            <point key="canvasLocation" x="5885.6000000000004" y="74.212893553223395"/>
         </scene>
         <!--Contract Detail Controller-->
         <scene sceneID="9mc-8U-VnH">

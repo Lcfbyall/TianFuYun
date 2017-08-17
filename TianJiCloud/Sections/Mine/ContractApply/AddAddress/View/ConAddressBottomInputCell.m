@@ -8,8 +8,15 @@
 
 #import "ConAddressBottomInputCell.h"
 
+@interface ConAddressBottomInputCell ()
+
+
+@end
+
 @implementation ConAddressBottomInputCell
 
+
+#pragma mark - <TJSBaseTableViewCellProtocol>
 
 - (void)tjs_bindDataToCellWithValue:(id)value{
     

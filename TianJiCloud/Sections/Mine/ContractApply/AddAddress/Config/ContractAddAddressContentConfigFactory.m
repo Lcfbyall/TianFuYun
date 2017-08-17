@@ -8,6 +8,10 @@
 
 #import "ContractAddAddressContentConfigFactory.h"
 
+#import "ConAddressRightInputContentConfig.h"
+#import "ConAddressMiddleLabelContentConfig.h"
+#import "ConAddressBottomInputContentConfig.h"
+
 #import "ContractAddAddressCellModel.h"
 
 @interface ContractAddAddressContentConfigFactory ()
@@ -26,7 +30,11 @@
         
         _dict = @{
                   
+        @"ConAddressRightInputCell": [ConAddressRightInputContentConfig new],
         
+        @"ConAddressMiddleLabelCell":[ConAddressMiddleLabelContentConfig new],
+        
+        @"ConAddressBottomInputCell":[ConAddressBottomInputContentConfig new],
                   
                  };
     }

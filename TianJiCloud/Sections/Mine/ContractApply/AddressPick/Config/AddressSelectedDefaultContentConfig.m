@@ -22,7 +22,7 @@
 - (CGSize)contentSize:(CGFloat)cellWidth model:(id)model{
 
     
-    return CGSizeMake(cellWidth, 125);
+    return CGSizeMake(cellWidth, 95);
 }
 
 - (NSString *)cellContent:(id)model{
