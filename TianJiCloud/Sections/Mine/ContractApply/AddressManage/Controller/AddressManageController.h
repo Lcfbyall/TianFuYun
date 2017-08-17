@@ -8,6 +8,8 @@
 
 #import "TJSBaseViewController.h"
 
-@interface AddressManageController : TJSBaseViewController
+#import "AddressManageConfigurateProtocol.h"
+
+@interface AddressManageController : TJSBaseViewController<AddressManageInteractorDelegate,TJSBaseTableViewCellDelegate>
 
 @end

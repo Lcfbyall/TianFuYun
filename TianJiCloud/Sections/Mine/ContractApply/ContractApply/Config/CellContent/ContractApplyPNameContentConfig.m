@@ -19,7 +19,9 @@
 
 - (NSString *)cellContent:(id)model{
     
-    return @"ContractApplyProductNameCell";
+    static NSString *const identifier = @"ContractApplyProductNameCell";
+    
+    return identifier;
 }
 
 

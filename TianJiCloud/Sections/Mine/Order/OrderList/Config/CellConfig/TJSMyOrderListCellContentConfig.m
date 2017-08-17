@@ -18,8 +18,11 @@
 }
 
 - (NSString *)cellContent:(id)model{
+    
+    static NSString *const identifier = @"MyOrderListTableCell";
+    
+    return identifier;
 
-   return @"MyOrderListTableCell";
 }
 
 @end

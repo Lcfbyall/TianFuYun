@@ -8,12 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-#import "TJSTableViewCellProtocol.h"
+#import "TJSBaseTableViewCellProtocol.h"
 #import "TJSBaseTableViewCellDelegate.h"
 
-@interface TJSBaseTableViewCell : UITableViewCell<TJSTableViewCellProtocol>
+@interface TJSBaseTableViewCell : UITableViewCell<TJSBaseTableViewCellProtocol>
 
 @property (nonatomic,weak)id <TJSBaseTableViewCellDelegate> delegate;
+
 
 @end
 

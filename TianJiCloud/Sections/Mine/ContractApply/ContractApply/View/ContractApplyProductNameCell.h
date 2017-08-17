@@ -6,8 +6,11 @@
 //  Copyright © 2017年 TianJiMoney. All rights reserved.
 //
 
-#import "TJSBaseTableViewCell.h"
+#import "ContarctApplyBaseCell.h"
 
-@interface ContractApplyProductNameCell : TJSBaseTableViewCell
+@interface ContractApplyProductNameCell : ContarctApplyBaseCell
+
+
+
 
 @end

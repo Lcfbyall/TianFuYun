@@ -19,6 +19,7 @@
 
 - (void)tjs_bindDataToCellWithValue:(id)value{
     
+    [super tjs_bindDataToCellWithValue:value];
     
     
 }

@@ -106,7 +106,9 @@ static NSString *const headerFooterIdentifier = @"ContractListHeaderIdentifier";
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
+    ContractInfoApplyModel *model = [((NSArray *)[self.interactor.items objectAtIndex:indexPath.section]) objectAtIndex:indexPath.row];
     
+    if(model.cellOperation) model.cellOperation(nil, nil);
     
 }
 

@@ -19,7 +19,10 @@
 
 - (NSString *)cellContent:(id)model{
 
-    return @"ContractApplyAddAddressCell";
+    static NSString *const identifier =
+    @"ContractApplyAddAddressCell";
+    
+    return identifier;
 }
 
 @end

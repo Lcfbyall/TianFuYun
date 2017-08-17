@@ -81,16 +81,17 @@
                     <connections>
                         <outlet property="applylist" destination="w83-yu-1Qh" id="TNv-zT-lrw"/>
                         <segue destination="rxy-o4-G6W" kind="show" identifier="ApplyToAddressSelectedVC" id="qYl-4A-k32"/>
+                        <segue destination="nTA-8X-Tsh" kind="show" identifier="ApplyToAddAddressVC" id="DZ2-oV-SY0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UIc-f1-ghV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4904.8000000000002" y="161.46926536731635"/>
+            <point key="canvasLocation" x="4905" y="-59"/>
         </scene>
-        <!--View Controller-->
+        <!--Address Select Controller-->
         <scene sceneID="Tjg-uC-50v">
             <objects>
-                <viewController id="rxy-o4-G6W" sceneMemberID="viewController">
+                <viewController id="rxy-o4-G6W" customClass="AddressSelectController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="DbE-hJ-VcK"/>
                         <viewControllerLayoutGuide type="bottom" id="uK4-un-5FB"/>
@@ -101,13 +102,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <segue destination="nTA-8X-Tsh" kind="show" identifier="AddressSelectedToAddAddresVC" id="e3a-iq-dsi"/>
                         <segue destination="y0v-q0-Ghy" kind="show" identifier="AddressSelectedToAddressManageVC" id="oy1-cf-VJq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LQO-bs-eTM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5764" y="161"/>
+            <point key="canvasLocation" x="5886" y="75"/>
         </scene>
         <!--Contract Detail Controller-->
         <scene sceneID="9mc-8U-VnH">
@@ -125,7 +125,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CZD-zR-OzT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4905" y="961"/>
+            <point key="canvasLocation" x="4905" y="848"/>
         </scene>
         <!--Add Adress View Controller-->
         <scene sceneID="U5q-fJ-BA3">
@@ -138,12 +138,27 @@
                     <view key="view" contentMode="scaleToFill" id="FJv-7d-Rca">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="u5C-ib-Cki">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="u5C-ib-Cki" secondAttribute="bottom" id="OL7-yH-wEw"/>
+                            <constraint firstItem="u5C-ib-Cki" firstAttribute="leading" secondItem="FJv-7d-Rca" secondAttribute="leading" id="c58-Iq-mvV"/>
+                            <constraint firstItem="u5C-ib-Cki" firstAttribute="top" secondItem="FJv-7d-Rca" secondAttribute="top" id="krr-tg-rbi"/>
+                            <constraint firstAttribute="trailing" secondItem="u5C-ib-Cki" secondAttribute="trailing" id="o1Q-wv-AHT"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="addressEidtList" destination="u5C-ib-Cki" id="vOb-Ds-jQR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lzx-1h-cTg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6750" y="-65"/>
+            <point key="canvasLocation" x="5885.6000000000004" y="-669.71514242878561"/>
         </scene>
         <!--Address Manage Controller-->
         <scene sceneID="6mV-4a-cFX">
@@ -156,12 +171,27 @@
                     <view key="view" contentMode="scaleToFill" id="yuu-pq-3Hq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="X9U-sP-P9y">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="X9U-sP-P9y" secondAttribute="bottom" id="19x-IA-VJx"/>
+                            <constraint firstItem="X9U-sP-P9y" firstAttribute="top" secondItem="yuu-pq-3Hq" secondAttribute="top" id="9DT-ev-7GU"/>
+                            <constraint firstAttribute="trailing" secondItem="X9U-sP-P9y" secondAttribute="trailing" id="l09-VL-fuO"/>
+                            <constraint firstItem="X9U-sP-P9y" firstAttribute="leading" secondItem="yuu-pq-3Hq" secondAttribute="leading" id="qgG-AH-v5T"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="addresslist" destination="X9U-sP-P9y" id="NTF-Rf-Yff"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OmM-pG-zME" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6750" y="610"/>
+            <point key="canvasLocation" x="6749.6000000000004" y="73.313343328335833"/>
         </scene>
         <!--Base Navigation Controller-->
         <scene sceneID="qT5-XA-wEK">

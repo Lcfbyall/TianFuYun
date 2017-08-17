@@ -19,7 +19,10 @@
 
 - (NSString *)cellContent:(id)model{
     
-    return @"MineHomeBalanceCell";
+    static NSString *const identifier = @"MineHomeBalanceCell";
+    
+    return identifier;
+    
 }
 
 @end

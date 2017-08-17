@@ -52,7 +52,10 @@
         return [config cellContent:model];
     }
     
-   return   @"MineHomeDefaultCell";
+    static NSString *const identifier = @"MineHomeDefaultCell";
+    
+    return identifier;
+
 }
 
 

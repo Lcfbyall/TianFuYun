@@ -8,7 +8,13 @@
 
 #import "AddressSelectController.h"
 
+#import "AddressSelectedConfigurator.h"
+
 @interface AddressSelectController ()
+
+@property (nonatomic,strong)AddressSelectedConfigurator *configurator;
+
+@property (nonatomic,strong) id <AddressSelectedInteractor>  interactor;
 
 @end
 

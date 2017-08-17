@@ -1,16 +1,16 @@
 //
-//  TJSTableViewCellProtocol.h
+//  TJSBaseTableViewCellProtocol.h
 //  TianJiCloud
 //
 //  Created by 朱鹏 on 2017/8/16.
 //  Copyright © 2017年 TianJiMoney. All rights reserved.
 //
 
-#ifndef TJSTableViewCellProtocol_h
-#define TJSTableViewCellProtocol_h
+#ifndef TJSBaseTableViewCellProtocol_h
+#define TJSBaseTableViewCellProtocol_h
 
 
-@protocol TJSTableViewCellProtocol <NSObject>
+@protocol TJSBaseTableViewCellProtocol <NSObject>
 
 @optional
 
@@ -31,4 +31,4 @@
 @end
 
 
-#endif /* TJSTableViewCellProtocol_h */
+#endif /* TJSBaseTableViewCellProtocol_h */

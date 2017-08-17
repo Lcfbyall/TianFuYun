@@ -52,8 +52,11 @@
     
         return  [contentConfig cellContent:model];
     }
-  
-    return @"ContractApplyInfoContentConfig";
+    
+    static NSString *const identifier = @"ContractApplyInfoContentConfig";
+    
+    return identifier;
+
 }
 
 @end

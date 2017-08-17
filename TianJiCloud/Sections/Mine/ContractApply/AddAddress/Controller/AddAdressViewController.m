@@ -7,8 +7,15 @@
 //
 
 #import "AddAdressViewController.h"
+#import "ContractAddAddressConfigurator.h"
 
 @interface AddAdressViewController ()
+
+@property (nonatomic,strong) id<ContractAddAddressInteractor>interactor;
+
+@property (weak, nonatomic) IBOutlet UITableView *addressEidtList;
+
+
 
 @end
 
@@ -30,6 +37,12 @@
     
 }
 
+
+
+- (UIView *)tjs_listView{
+  
+    return _addressEidtList;
+}
 
 
 @end

@@ -19,7 +19,10 @@
 
 - (NSString *)cellContent:(id)model{
     
-    return @"MineHomeOrderCell";
+    static NSString *const identifier = @"MineHomeOrderCell";
+    
+    return identifier;
+
 }
 
 

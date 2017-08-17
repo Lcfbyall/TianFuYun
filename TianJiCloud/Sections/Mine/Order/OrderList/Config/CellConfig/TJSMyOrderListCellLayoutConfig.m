@@ -54,7 +54,9 @@
         return [config cellContent:model];
     }
     
-    return  @"MyOrderListTableCell";
+    static NSString *const identifier = @"MyOrderListTableCell";
+    
+    return identifier;
 
 }
 
