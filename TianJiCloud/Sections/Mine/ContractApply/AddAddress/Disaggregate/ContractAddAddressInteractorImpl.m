@@ -12,7 +12,14 @@
 
 #pragma mark - <ContractAddAddressInteractor>
 
-
+- (void)saveAddress:(void (^)(id, NSError *))callback{
+ 
+    [self.dataSource saveAddress:^(id result, NSError *error) {
+        
+        if(callback)callback(result,error);
+        
+    }];
+}
 
 - (NSArray *)items{
  

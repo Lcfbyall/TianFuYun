@@ -50,6 +50,25 @@
 
 #pragma mark - <TJSBaseVCConfig>
 
+- (void)tjs_configBaseView{
+ 
+    //临时
+    
+    WEAK_SELF(self);
+    UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] bk_initWithTitle:@"选择地址" style:UIBarButtonItemStylePlain handler:^(id sender) {
+        
+        STRONG_SELF(self);
+        if(self){
+            
+            [UIViewController tjs_pushViewController:AddressSelectVC animated:YES];
+            
+        }
+    }];
+    
+    self.navigationItem.rightBarButtonItem = rightItem;
+
+}
+
 - (UIView *)tjs_listView{
  
     return self.applylist;

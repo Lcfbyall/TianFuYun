@@ -22,6 +22,7 @@
 
 @optional
 
+- (void)saveAddress:(void (^)(id, NSError *))callback;
 
 - (NSArray *)items;
 

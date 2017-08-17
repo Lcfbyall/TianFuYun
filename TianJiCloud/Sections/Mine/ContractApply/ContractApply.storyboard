@@ -91,7 +91,7 @@
         <!--Address Select Controller-->
         <scene sceneID="Tjg-uC-50v">
             <objects>
-                <viewController id="rxy-o4-G6W" customClass="AddressSelectController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AddressSelectController" id="rxy-o4-G6W" customClass="AddressSelectController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="DbE-hJ-VcK"/>
                         <viewControllerLayoutGuide type="bottom" id="uK4-un-5FB"/>

@@ -29,7 +29,7 @@
     product.accessoryType = UITableViewCellAccessoryNone;
     product.selectionStyle= UITableViewCellSelectionStyleNone;
     
-    return [NSArray arrayWithObjects:add,product, nil];
+    return [NSArray arrayWithObjects:@[add],@[product], nil];
 }
 
 @end

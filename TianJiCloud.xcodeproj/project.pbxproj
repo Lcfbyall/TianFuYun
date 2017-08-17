@@ -1387,6 +1387,8 @@
 		2CD8975C1F458E29008F7C73 /* ConAddressRightInputCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConAddressRightInputCell.xib; sourceTree = "<group>"; };
 		2CD8975E1F458E3C008F7C73 /* ConAddressMiddleLabelCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConAddressMiddleLabelCell.xib; sourceTree = "<group>"; };
 		2CD897601F458E50008F7C73 /* ConAddressBottomInputCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConAddressBottomInputCell.xib; sourceTree = "<group>"; };
+		2CEE1E1A1F45919500FEE9BD /* ContractAddAddressConfigProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContractAddAddressConfigProtocol.h; sourceTree = "<group>"; };
+		2CEE1E1B1F459AA200FEE9BD /* AddressSelectedConfigProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddressSelectedConfigProtocol.h; sourceTree = "<group>"; };
 		2CF8B53C1F3D469F003B8520 /* ProductSearchHotCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductSearchHotCell.h; sourceTree = "<group>"; };
 		2CF8B53D1F3D469F003B8520 /* ProductSearchHotCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductSearchHotCell.m; sourceTree = "<group>"; };
 		2CF8B53F1F3D46B8003B8520 /* ProductSearchResultCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductSearchResultCell.h; sourceTree = "<group>"; };
@@ -4582,6 +4584,7 @@
 		2CD896E31F453E00008F7C73 /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
+				2CEE1E1A1F45919500FEE9BD /* ContractAddAddressConfigProtocol.h */,
 				2CD896E41F453E22008F7C73 /* ContractAddAddressConfigurateProtocol.h */,
 				2CD896E51F453E22008F7C73 /* ContractAddAddressPrivateProtocol.h */,
 			);
@@ -4691,10 +4694,10 @@
 			children = (
 				2CD897441F457B96008F7C73 /* AddressSelectedConfigurator.h */,
 				2CD897451F457B96008F7C73 /* AddressSelectedConfigurator.m */,
-				2CD897461F457B96008F7C73 /* AddressSelectedDataSourceImpl.h */,
-				2CD897471F457B96008F7C73 /* AddressSelectedDataSourceImpl.m */,
 				2CD897481F457B96008F7C73 /* AddressSelectedInteractorImpl.h */,
 				2CD897491F457B96008F7C73 /* AddressSelectedInteractorImpl.m */,
+				2CD897461F457B96008F7C73 /* AddressSelectedDataSourceImpl.h */,
+				2CD897471F457B96008F7C73 /* AddressSelectedDataSourceImpl.m */,
 				2CD8974A1F457B96008F7C73 /* AddressSelectedLayoutImpl.h */,
 				2CD8974B1F457B96008F7C73 /* AddressSelectedLayoutImpl.m */,
 				2CD8974C1F457B96008F7C73 /* AddressSelectedTableAdapter.h */,
@@ -4726,6 +4729,7 @@
 		2CD897351F45770F008F7C73 /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
+				2CEE1E1B1F459AA200FEE9BD /* AddressSelectedConfigProtocol.h */,
 				2CD897361F457B16008F7C73 /* AddressSelectedConfigurateProtocol.h */,
 				2CD897371F457B16008F7C73 /* AddressSelectedPrivateProtocol.h */,
 			);

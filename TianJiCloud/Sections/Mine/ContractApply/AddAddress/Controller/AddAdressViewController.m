@@ -7,9 +7,12 @@
 //
 
 #import "AddAdressViewController.h"
+#import "ContractAddAddressConfig.h"
 #import "ContractAddAddressConfigurator.h"
 
 @interface AddAdressViewController ()
+
+@property (nonatomic,strong)ContractAddAddressConfig *config;
 
 @property (nonatomic,strong)ContractAddAddressConfigurator *configurator;
 
@@ -26,8 +29,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+
     
-    self.title = @"新增地址";
+    [self setupConfig];
     
     [self setupConfigurator];
 }
@@ -40,6 +44,14 @@
 }
 
 
+- (void)setupConfig{
+ 
+    _config = [[ContractAddAddressConfig alloc]init];
+    
+    [_config setup:self];
+    
+    self.navigationItem.rightBarButtonItems = [_config tjs_rightBarButtonItems];
+}
 
 #pragma mark - setupConfigurator
 
@@ -51,11 +63,41 @@
 }
 
 
+#pragma mark - 
+
+- (void)tjs_configBaseView{
+ 
+    
+    
+}
+
+
 #pragma mark - <TJSBaseVCConfig>
 
 - (UIView *)tjs_listView{
   
     return _addressEidtList;
+}
+
+
+#pragma mark - <ContractAddAddressConfig>
+
+- (void)onTapRightBarBtnToSaveAddress:(id)sender{
+
+   [self.interactor saveAddress:^(id result, NSError *error) {
+      
+       [UIViewController tjs_popViewControllerAnimated:YES];
+       
+   }];
+    
+}
+
+#pragma  maek - <TJSBaseTableViewCellDelegate>
+
+- (BOOL)onTapCell:(id)value{
+
+
+    return YES;
 }
 
 

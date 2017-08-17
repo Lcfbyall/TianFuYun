@@ -7,9 +7,12 @@
 //
 
 #import "AddressManageController.h"
+#import "AddressManageConfig.h"
 #import "AddressManageConfigurator.h"
 
 @interface AddressManageController ()
+
+@property (nonatomic,strong)AddressManageConfig *config;
 
 @property (nonatomic,strong) AddressManageConfigurator *configurator;
 
@@ -28,6 +31,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    [self setupConfig];
+    
     [self setupConfigurator];
 }
 
@@ -39,6 +44,13 @@
 }
 
 
+- (void)setupConfig{
+ 
+    _config = [[AddressManageConfig alloc]init];
+    
+    [_config setup:self];
+
+}
 
 #pragma mark -
 

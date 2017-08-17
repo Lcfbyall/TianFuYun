@@ -7,7 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "TJSBaseVCProtocol.h"
 
-@interface AddressSelectedConfig : NSObject
+@class AddressSelectController;
+
+@interface AddressSelectedConfig : NSObject<TJSNavigationConfig>
+
+- (void)setup:(AddressSelectController *)vc;
 
 @end

@@ -7,7 +7,25 @@
 //
 
 #import "AddressManageConfig.h"
+#import "AddressManageController.h"
+
+@interface AddressManageConfig ()
+
+@property (nonatomic,weak)AddressManageController *vc;
+
+@end
 
 @implementation AddressManageConfig
+
+- (void)setup:(AddressManageController *)vc{
+  
+    _vc = vc;
+    
+    _vc.title = @"地址管理";
+
+}
+
+
+
 
 @end

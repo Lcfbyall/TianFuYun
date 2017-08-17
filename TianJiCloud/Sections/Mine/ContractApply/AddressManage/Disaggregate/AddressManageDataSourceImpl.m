@@ -35,7 +35,7 @@
         product.cellClass = @"AddressManageDefaultCell";
     
         
-        _items = [NSMutableArray arrayWithObjects:@[add],@[product], nil];
+        _items = [NSMutableArray arrayWithObjects:add,product, nil];
     }
     
     return _items;

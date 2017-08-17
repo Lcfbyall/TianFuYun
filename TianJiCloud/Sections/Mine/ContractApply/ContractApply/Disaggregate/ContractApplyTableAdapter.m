@@ -41,9 +41,7 @@ static NSString *const headerFooterIdentifier = @"ContractListHeaderIdentifier";
 
 
 - (void)setupTableView{
-    
-    _tableView.contentInset = UIEdgeInsetsMake(16, 0, 0, 0);
-    
+
     _tableView.backgroundColor = ThemeService.weak_color_00;
 
     WEAK_SELF(self);

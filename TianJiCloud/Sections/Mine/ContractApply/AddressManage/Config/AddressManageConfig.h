@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+
+@class AddressManageController;
 @interface AddressManageConfig : NSObject
+
+- (void)setup:(AddressManageController *)vc;
 
 @end

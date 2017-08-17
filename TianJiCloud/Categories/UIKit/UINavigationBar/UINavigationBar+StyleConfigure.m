@@ -25,10 +25,10 @@ static UIColor *TintColor    = nil;
     
     if (self == [UINavigationBar self]) {
     
-        TitleColor   =  [UIColor blackColor];
+        TitleColor   =  ThemeService.origin_color_01;
         TitleFont    =  [UIFont systemFontOfSize:16.0f];
         BarTintColor =  ThemeService.main_color_00;
-        TintColor    =  ThemeService.main_color_00;
+        TintColor    =  ThemeService.origin_color_01;
     }
 }
 

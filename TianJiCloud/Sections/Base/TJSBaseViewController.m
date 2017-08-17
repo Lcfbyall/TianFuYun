@@ -95,7 +95,7 @@ NSString * const AdjustsScrollViewInsets = @"tjsAdjustsScrollViewInsets";
     
     UIColor *mainColor = self.params[NavigationBarTintColor];
     
-    return mainColor?:ThemeService.main_color_00;
+    return mainColor?:ThemeService.origin_color_01;
 }
 
 - (BOOL)tjs_hideBackBarButtonItem{

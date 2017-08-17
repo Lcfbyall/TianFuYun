@@ -8,8 +8,9 @@
 
 #import "TJSBaseViewController.h"
 
+#import "ContractAddAddressConfigProtocol.h"
 #import "ContractAddAddressConfigurateProtocol.h"
 
-@interface AddAdressViewController : TJSBaseViewController<ContractAddAddressInteractorDelegate,TJSBaseTableViewCellDelegate>
+@interface AddAdressViewController : TJSBaseViewController<ContractAddAddressConfig,ContractAddAddressInteractorDelegate,TJSBaseTableViewCellDelegate>
 
 @end

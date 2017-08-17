@@ -7,10 +7,10 @@
 //
 
 #import "TJSBaseViewController.h"
-
+#import "AddressSelectedConfigProtocol.h"
 #import "AddressSelectedConfigurateProtocol.h"
 
 
-@interface AddressSelectController : TJSBaseViewController<AddressSelectedInteractorDelegate,TJSBaseTableViewCellDelegate>
+@interface AddressSelectController : TJSBaseViewController<AddressSelectedConfig,AddressSelectedInteractorDelegate,TJSBaseTableViewCellDelegate>
 
 @end

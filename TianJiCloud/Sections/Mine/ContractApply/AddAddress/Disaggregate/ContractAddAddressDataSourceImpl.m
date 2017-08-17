@@ -24,6 +24,20 @@
 #pragma mark - <ContractAddAddressDataSource>
 
 
+- (void)saveAddress:(void (^)(id, NSError *))callback{
+
+    [AdressEditNetworkTool requestWithParameters:nil successCallback:^(id _Nullable data) {
+        
+        
+    } failCallback:^(id _Nullable error) {
+        
+        
+    }];
+    
+
+    if(callback)callback(nil,nil);
+
+}
 
 - (NSArray *)items{
     

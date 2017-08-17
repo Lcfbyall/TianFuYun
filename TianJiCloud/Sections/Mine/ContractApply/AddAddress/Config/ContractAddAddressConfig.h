@@ -7,7 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "TJSBaseVCProtocol.h"
 
-@interface ContractAddAddressConfig : NSObject
+@class AddAdressViewController;
+
+@interface ContractAddAddressConfig : NSObject<TJSNavigationConfig>
+
+- (void)setup:(AddAdressViewController *)vc;
 
 @end

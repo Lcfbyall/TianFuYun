@@ -11,6 +11,7 @@
 
 #import "AddressManageCellModel.h"
 
+static NSString *const headerFooterIdentifier = @"ContractListHeaderIdentifier";
 @interface AddressManageTableAdapter ()
 
 @property (nonatomic,weak)UITableView *tableView;
@@ -39,11 +40,12 @@
 
 - (void)setupTableView{
     
-    _tableView.contentInset = UIEdgeInsetsMake(16, 0, 0, 0);
-    
+  
     _tableView.backgroundColor = ThemeService.weak_color_00;
-
     
+    _tableView.tableFooterView = [UIView new];
+
+    [_tableView registerClass:[UITableViewHeaderFooterView class] forHeaderFooterViewReuseIdentifier:headerFooterIdentifier];
 }
 
 
@@ -51,12 +53,12 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     
-    return self.interactor.items.count;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
 
-    return [((NSArray *)[self.interactor.items objectAtIndex:section]) count];
+    return self.interactor.items.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -89,6 +91,20 @@
     if(model.cellOperation) model.cellOperation(nil, nil);
     
 }
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+    
+    return 10;
+}
+
+- (nullable UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
+    
+    UITableViewHeaderFooterView *header = [tableView dequeueReusableHeaderFooterViewWithIdentifier:headerFooterIdentifier];
+    header.contentView.backgroundColor = ThemeService.weak_color_00;
+    
+    return header;
+}
+
 
 @end
 
