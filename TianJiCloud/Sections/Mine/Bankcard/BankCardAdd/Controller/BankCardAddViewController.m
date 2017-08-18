@@ -57,7 +57,9 @@
 
 - (void)setupConfigurator{
 
-
+    _configurator = [[BankCardAddConfigurator alloc]init];
+    [_configurator setup:self];
+ 
 }
 
 

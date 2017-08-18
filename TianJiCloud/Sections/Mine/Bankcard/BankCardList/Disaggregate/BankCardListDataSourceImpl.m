@@ -42,7 +42,7 @@
     
     if(_items==nil){
     
-        _items = [[BankCardInfoModel configModels] mutableCopy];
+        _items = [[BankCardInfoModel configModelsWithInfos:nil] mutableCopy];
     }
     
     return _items;

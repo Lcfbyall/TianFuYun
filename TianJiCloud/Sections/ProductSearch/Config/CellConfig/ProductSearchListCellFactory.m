@@ -37,7 +37,11 @@
     id<TJSProductCellLayoutConfig> layoutConfig = _layoutConfig;
     
     NSString *_identifier = [layoutConfig cellContent:model];
+    
     NSString *path = [[NSBundle mainBundle] pathForResource:_identifier ofType:@"xib"];
+    
+    if(!path) path = [[NSBundle mainBundle] pathForResource:_identifier ofType:@"nib"];
+    
     if(!path){
     
         [collectionView registerClass:NSClassFromString(_identifier) forCellWithReuseIdentifier:_identifier];

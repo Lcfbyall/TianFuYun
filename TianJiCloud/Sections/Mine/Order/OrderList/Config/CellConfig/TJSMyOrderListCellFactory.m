@@ -27,6 +27,8 @@
         
         NSString *path = [[NSBundle mainBundle] pathForResource:_identifier ofType:@"xib"];
         
+        if(!path) path = [[NSBundle mainBundle] pathForResource:_identifier ofType:@"nib"];
+        
         if(path){
             
             [tableView registerNib:[UINib nibWithNibName:_identifier bundle:[NSBundle mainBundle]] forCellReuseIdentifier:_identifier];

@@ -88,12 +88,12 @@ static NSString *const headerFooterIdentifier = @"BankCardListHeaderIdentifier";
     
     BankCardInfoModel *model = [self.interactor.items objectAtIndex:indexPath.row];
   
-    
+    if(model.cellOperation)model.cellOperation(nil, nil);
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
     
-    return 10;
+    return 20;
 }
 
 - (nullable UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{

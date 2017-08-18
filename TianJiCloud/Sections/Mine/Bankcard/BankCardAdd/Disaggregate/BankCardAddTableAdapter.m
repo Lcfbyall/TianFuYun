@@ -8,10 +8,11 @@
 
 #import "BankCardAddTableAdapter.h"
 #import "BankCardAddCellFactory.h"
-
 #import "BankCardAddCellInfoModel.h"
 
-static NSString *const headerFooterIdentifier = @"BankCardAddHeaderIdentifier";
+#import "BankCardAddHeaderFooterView.h"
+
+static NSString *const headerFooterIdentifier = @"BankCardAddHeaderFooterView";
 
 @interface BankCardAddTableAdapter ()
 
@@ -45,7 +46,7 @@ static NSString *const headerFooterIdentifier = @"BankCardAddHeaderIdentifier";
 
     _tableView.tableFooterView = [UIView new];
     
-    [_tableView registerClass:[UITableViewHeaderFooterView class] forHeaderFooterViewReuseIdentifier:headerFooterIdentifier];
+    [_tableView registerClass:[BankCardAddHeaderFooterView class] forHeaderFooterViewReuseIdentifier:headerFooterIdentifier];
 }
 
 
@@ -53,20 +54,23 @@ static NSString *const headerFooterIdentifier = @"BankCardAddHeaderIdentifier";
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     
-    return 1;
+    return self.interactor.items.count;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
 
-    return[self.interactor.items count];
+    return [((NSArray *)[self.interactor.items objectAtIndex:section]) count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    BankCardAddCellInfoModel *model = [self.interactor.items objectAtIndex:indexPath.row];
+    BankCardAddCellInfoModel *model = [((NSArray *)[self.interactor.items objectAtIndex:indexPath.section]) objectAtIndex:indexPath.row];
     
-    return (UITableViewCell *)[_cellFactory cellInTable:tableView forMineInfoModel:model];
     
+    TJSBaseTableViewCell *cell = (TJSBaseTableViewCell *)[_cellFactory cellInTable:tableView forMineInfoModel:model];
+    
+    
+    return cell;
 }
 
 
@@ -74,7 +78,8 @@ static NSString *const headerFooterIdentifier = @"BankCardAddHeaderIdentifier";
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
 
-    BankCardAddCellInfoModel *model = [self.interactor.items objectAtIndex:indexPath.row];
+    BankCardAddCellInfoModel *model = [((NSArray *)[self.interactor.items objectAtIndex:indexPath.section]) objectAtIndex:indexPath.row];
+    
     
     CGFloat height =  [_cellFactory cellHeight:model cellWidth:SCREEN_WIDTH];
     
@@ -86,20 +91,39 @@ static NSString *const headerFooterIdentifier = @"BankCardAddHeaderIdentifier";
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    BankCardAddCellInfoModel *model = [self.interactor.items objectAtIndex:indexPath.row];
+    BankCardAddCellInfoModel *model = [((NSArray *)[self.interactor.items objectAtIndex:indexPath.section]) objectAtIndex:indexPath.row];
+    
+    
   
     
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
     
-    return 10;
+    return 40;
 }
 
 - (nullable UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
     
-    UITableViewHeaderFooterView *header = [tableView dequeueReusableHeaderFooterViewWithIdentifier:headerFooterIdentifier];
-    header.contentView.backgroundColor = ThemeService.weak_color_00;
+    BankCardAddHeaderFooterView *header = [tableView dequeueReusableHeaderFooterViewWithIdentifier:headerFooterIdentifier];
+
+    
+    [header tjs_bindDataToCellWithValue:@""];
+    
+    return header;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
+ 
+    return section?40:0;
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section{
+ 
+    BankCardAddHeaderFooterView *header = [tableView dequeueReusableHeaderFooterViewWithIdentifier:headerFooterIdentifier];
+  
+    
+    [header tjs_bindDataToCellWithValue:@""];
     
     return header;
 }

@@ -89,6 +89,7 @@ static NSString *const CapitalRecordListVC      = @"CapitalRecordListController"
 #pragma mark - BankCardManager identifier
 
 static NSString *const BankCardManagerVC = @"BackCardManagerController";
+static NSString *const BankCardAddVC = @"BankCardAddViewController";
 
 #pragma mark - Reward identifier
 

@@ -1,5 +1,5 @@
 //
-//  BankCardAddDefaaultCell.h
+//  BankCardAddDefaultCell.h
 //  TianJiCloud
 //
 //  Created by 朱鹏 on 2017/8/18.
@@ -8,6 +8,6 @@
 
 #import "BankCardAddBaseTableCell.h"
 
-@interface BankCardAddDefaaultCell : BankCardAddBaseTableCell
+@interface BankCardAddDefaultCell : BankCardAddBaseTableCell
 
 @end

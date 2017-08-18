@@ -13,11 +13,20 @@
 
 @property (nonatomic,strong) BankCardInfo *bankCardInfo;
 
-
 @property (nonatomic,copy) NSString *cellClass;
 
-+ (NSArray <BankCardInfo *> *)configModels;
+@property (nonatomic,assign) UITableViewCellAccessoryType accessoryType;
 
+@property (nonatomic,assign) UITableViewCellSelectionStyle *selectionStyle;
+
+//textField
+@property (nonatomic,assign) BOOL canInput;
+
+@property (nonatomic,copy) NSString *placeHolder;
+
+
+//
++ (NSArray <BankCardAddCellInfoModel *> *)configModelsWithInfos:(NSArray <BankCardInfo *> *)infos;
 
 
 @end

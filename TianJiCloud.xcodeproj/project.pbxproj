@@ -46,7 +46,7 @@
 		2C1B74E61F4698A30000E71A /* BankCardAddDefaultContentConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B74E01F4698A30000E71A /* BankCardAddDefaultContentConfig.m */; };
 		2C1B74E91F4698C90000E71A /* BankCardAddCellInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B74E81F4698C90000E71A /* BankCardAddCellInfoModel.m */; };
 		2C1B74EC1F4699A50000E71A /* BankCardAddBaseTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B74EB1F4699A50000E71A /* BankCardAddBaseTableCell.m */; };
-		2C1B74EF1F4699BE0000E71A /* BankCardAddDefaaultCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B74EE1F4699BE0000E71A /* BankCardAddDefaaultCell.m */; };
+		2C1B74EF1F4699BE0000E71A /* BankCardAddDefaultCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B74EE1F4699BE0000E71A /* BankCardAddDefaultCell.m */; };
 		2C1B74F21F469A140000E71A /* BankCardAddHeaderFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B74F11F469A140000E71A /* BankCardAddHeaderFooterView.m */; };
 		2C1B74F51F469BDB0000E71A /* BankCardAddContentConfigFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B74F41F469BDB0000E71A /* BankCardAddContentConfigFactory.m */; };
 		2C1B75001F469E5A0000E71A /* BankCardAddConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B74F71F469E5A0000E71A /* BankCardAddConfigurator.m */; };
@@ -69,6 +69,8 @@
 		2C300F931F2F3E9F00DD440E /* GestureSet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C300F921F2F3E9F00DD440E /* GestureSet.storyboard */; };
 		2C300F951F2F3F1200DD440E /* FindWithDrawCode.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C300F941F2F3F1200DD440E /* FindWithDrawCode.storyboard */; };
 		2C300F971F2F3F9F00DD440E /* ProfessionAuthen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C300F961F2F3F9F00DD440E /* ProfessionAuthen.storyboard */; };
+		2C3B5DA71F46CF95001E6609 /* BankCardListAddCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C3B5DA61F46CF95001E6609 /* BankCardListAddCell.xib */; };
+		2C3B5DA91F46D492001E6609 /* BankCardAddDefaultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C3B5DA81F46D492001E6609 /* BankCardAddDefaultCell.xib */; };
 		2C431DEB1F299A9600858C12 /* HomeVCConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C431DE71F299A9600858C12 /* HomeVCConfig.m */; };
 		2C431DEC1F299A9600858C12 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C431DEA1F299A9600858C12 /* HomeViewController.m */; };
 		2C431E0F1F29C59C00858C12 /* Message.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C431E0E1F29C59C00858C12 /* Message.storyboard */; };
@@ -609,8 +611,8 @@
 		2C1B74E81F4698C90000E71A /* BankCardAddCellInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankCardAddCellInfoModel.m; sourceTree = "<group>"; };
 		2C1B74EA1F4699A50000E71A /* BankCardAddBaseTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankCardAddBaseTableCell.h; sourceTree = "<group>"; };
 		2C1B74EB1F4699A50000E71A /* BankCardAddBaseTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankCardAddBaseTableCell.m; sourceTree = "<group>"; };
-		2C1B74ED1F4699BE0000E71A /* BankCardAddDefaaultCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankCardAddDefaaultCell.h; sourceTree = "<group>"; };
-		2C1B74EE1F4699BE0000E71A /* BankCardAddDefaaultCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankCardAddDefaaultCell.m; sourceTree = "<group>"; };
+		2C1B74ED1F4699BE0000E71A /* BankCardAddDefaultCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankCardAddDefaultCell.h; sourceTree = "<group>"; };
+		2C1B74EE1F4699BE0000E71A /* BankCardAddDefaultCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankCardAddDefaultCell.m; sourceTree = "<group>"; };
 		2C1B74F01F469A140000E71A /* BankCardAddHeaderFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankCardAddHeaderFooterView.h; sourceTree = "<group>"; };
 		2C1B74F11F469A140000E71A /* BankCardAddHeaderFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankCardAddHeaderFooterView.m; sourceTree = "<group>"; };
 		2C1B74F31F469BDB0000E71A /* BankCardAddContentConfigFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankCardAddContentConfigFactory.h; sourceTree = "<group>"; };
@@ -650,6 +652,8 @@
 		2C300F921F2F3E9F00DD440E /* GestureSet.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GestureSet.storyboard; sourceTree = "<group>"; };
 		2C300F941F2F3F1200DD440E /* FindWithDrawCode.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FindWithDrawCode.storyboard; sourceTree = "<group>"; };
 		2C300F961F2F3F9F00DD440E /* ProfessionAuthen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ProfessionAuthen.storyboard; sourceTree = "<group>"; };
+		2C3B5DA61F46CF95001E6609 /* BankCardListAddCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BankCardListAddCell.xib; sourceTree = "<group>"; };
+		2C3B5DA81F46D492001E6609 /* BankCardAddDefaultCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BankCardAddDefaultCell.xib; sourceTree = "<group>"; };
 		2C431DE61F299A9600858C12 /* HomeVCConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeVCConfig.h; sourceTree = "<group>"; };
 		2C431DE71F299A9600858C12 /* HomeVCConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeVCConfig.m; sourceTree = "<group>"; };
 		2C431DE91F299A9600858C12 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
@@ -1602,18 +1606,18 @@
 		2C1B74881F4694FF0000E71A /* Config */ = {
 			isa = PBXGroup;
 			children = (
-				2C1B74891F4694FF0000E71A /* BankCardListAddContentConfig.h */,
-				2C1B748A1F4694FF0000E71A /* BankCardListAddContentConfig.m */,
+				2C1B748F1F4694FF0000E71A /* BankCardListConfig.h */,
+				2C1B74901F4694FF0000E71A /* BankCardListConfig.m */,
 				2C1B748B1F4694FF0000E71A /* BankCardListCellFactory.h */,
 				2C1B748C1F4694FF0000E71A /* BankCardListCellFactory.m */,
 				2C1B748D1F4694FF0000E71A /* BankCardListCellLayoutConfig.h */,
 				2C1B748E1F4694FF0000E71A /* BankCardListCellLayoutConfig.m */,
-				2C1B748F1F4694FF0000E71A /* BankCardListConfig.h */,
-				2C1B74901F4694FF0000E71A /* BankCardListConfig.m */,
 				2C1B74911F4694FF0000E71A /* BankCardListContentConfigFactory.h */,
 				2C1B74921F4694FF0000E71A /* BankCardListContentConfigFactory.m */,
 				2C1B74931F4694FF0000E71A /* BankCardListDefaultContentConfig.h */,
 				2C1B74941F4694FF0000E71A /* BankCardListDefaultContentConfig.m */,
+				2C1B74891F4694FF0000E71A /* BankCardListAddContentConfig.h */,
+				2C1B748A1F4694FF0000E71A /* BankCardListAddContentConfig.m */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -1684,10 +1688,11 @@
 		2C1B74B01F4694FF0000E71A /* View */ = {
 			isa = PBXGroup;
 			children = (
-				2C1B74B11F4694FF0000E71A /* BankCardListAddCell.h */,
-				2C1B74B21F4694FF0000E71A /* BankCardListAddCell.m */,
 				2C1B74B31F4694FF0000E71A /* BankCardListBaseTableCell.h */,
 				2C1B74B41F4694FF0000E71A /* BankCardListBaseTableCell.m */,
+				2C1B74B11F4694FF0000E71A /* BankCardListAddCell.h */,
+				2C1B74B21F4694FF0000E71A /* BankCardListAddCell.m */,
+				2C3B5DA61F46CF95001E6609 /* BankCardListAddCell.xib */,
 				2C1B74B51F4694FF0000E71A /* BankCardListDefaultCell.h */,
 				2C1B74B61F4694FF0000E71A /* BankCardListDefaultCell.m */,
 			);
@@ -1784,8 +1789,9 @@
 			children = (
 				2C1B74EA1F4699A50000E71A /* BankCardAddBaseTableCell.h */,
 				2C1B74EB1F4699A50000E71A /* BankCardAddBaseTableCell.m */,
-				2C1B74ED1F4699BE0000E71A /* BankCardAddDefaaultCell.h */,
-				2C1B74EE1F4699BE0000E71A /* BankCardAddDefaaultCell.m */,
+				2C1B74ED1F4699BE0000E71A /* BankCardAddDefaultCell.h */,
+				2C1B74EE1F4699BE0000E71A /* BankCardAddDefaultCell.m */,
+				2C3B5DA81F46D492001E6609 /* BankCardAddDefaultCell.xib */,
 				2C1B74F01F469A140000E71A /* BankCardAddHeaderFooterView.h */,
 				2C1B74F11F469A140000E71A /* BankCardAddHeaderFooterView.m */,
 			);
@@ -5326,6 +5332,7 @@
 				2C300F931F2F3E9F00DD440E /* GestureSet.storyboard in Resources */,
 				2C8BB7A51F30859C00E2D75F /* HomeHeaderCollectionCell.xib in Resources */,
 				2C1BFEBF1F2978C500665A71 /* Discovery.storyboard in Resources */,
+				2C3B5DA91F46D492001E6609 /* BankCardAddDefaultCell.xib in Resources */,
 				2CF8B56E1F3DD88D003B8520 /* ProductSearchResultCell.xib in Resources */,
 				2C7A344D1F2F633C004DD566 /* CumulateInvest.storyboard in Resources */,
 				2C8DE59E1F29FE80009B3AE2 /* Product.storyboard in Resources */,
@@ -5338,6 +5345,7 @@
 				2CD8975F1F458E3C008F7C73 /* ConAddressMiddleLabelCell.xib in Resources */,
 				2C4412991F22007D00C453EF /* TJSThemeConfig.strings in Resources */,
 				2C7A345B1F2F68E6004DD566 /* Feedback.storyboard in Resources */,
+				2C3B5DA71F46CF95001E6609 /* BankCardListAddCell.xib in Resources */,
 				2CD896AB1F4529DA008F7C73 /* ContractApplyInfoCell.xib in Resources */,
 				2C300F951F2F3F1200DD440E /* FindWithDrawCode.storyboard in Resources */,
 				2C8BB7A11F30859C00E2D75F /* HomeFooterCollectionCell.xib in Resources */,
@@ -5531,7 +5539,7 @@
 				2C8DE5941F29F5FF009B3AE2 /* TJSWeakScriptMessageHandler.m in Sources */,
 				2C4412551F21DBBA00C453EF /* UIViewController+RouteParams.m in Sources */,
 				2C44127F1F21E99700C453EF /* UITextView+PlaceHolder.m in Sources */,
-				2C1B74EF1F4699BE0000E71A /* BankCardAddDefaaultCell.m in Sources */,
+				2C1B74EF1F4699BE0000E71A /* BankCardAddDefaultCell.m in Sources */,
 				2C44128F1F21ED2D00C453EF /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				2CAF431A1F2829CF00ABCA5E /* TJSProductInfoModel.m in Sources */,
 				2C859CEA1F31EB2E00B86575 /* ZLCameraImageView.m in Sources */,

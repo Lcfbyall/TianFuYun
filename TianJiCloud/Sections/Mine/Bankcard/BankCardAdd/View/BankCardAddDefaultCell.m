@@ -1,14 +1,20 @@
 //
-//  BankCardAddDefaaultCell.m
+//  BankCardAddDefaultCell.m
 //  TianJiCloud
 //
 //  Created by 朱鹏 on 2017/8/18.
 //  Copyright © 2017年 TianJiMoney. All rights reserved.
 //
 
-#import "BankCardAddDefaaultCell.h"
+#import "BankCardAddDefaultCell.h"
 
-@implementation BankCardAddDefaaultCell
+@interface BankCardAddDefaultCell ()
+
+
+
+@end
+
+@implementation BankCardAddDefaultCell
 
 
 #pragma mark - <TJSBaseTableViewCellProtocol>

@@ -8,14 +8,23 @@
 
 #import "BankCardListAddCell.h"
 
+@interface BankCardListAddCell ()
+
+@property (weak, nonatomic) IBOutlet UIImageView *img;
+
+@property (weak, nonatomic) IBOutlet UILabel *title;
+
+
+@end
+
 @implementation BankCardListAddCell
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+#pragma mark - <TJSBaseTableViewCellProtocol>
+
+- (void)tjs_bindDataToCellWithValue:(id)value{
+
+    
+
 }
-*/
 
 @end

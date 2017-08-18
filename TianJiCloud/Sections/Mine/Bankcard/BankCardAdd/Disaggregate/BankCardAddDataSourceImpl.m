@@ -7,7 +7,7 @@
 //
 
 #import "BankCardAddDataSourceImpl.h"
-#import "BankCardInfoModel.h"
+#import "BankCardAddCellInfoModel.h"
 
 #import "BankCardAddNetworkTool.h"
 
@@ -43,7 +43,7 @@
     
     if(_items==nil){
     
-        _items = [[BankCardInfoModel configModels] mutableCopy];
+        _items = [[BankCardAddCellInfoModel configModelsWithInfos:nil] mutableCopy];
     }
     
     return _items;
@@ -59,6 +59,8 @@
 
 
 @implementation BankCardAddOperateResult
+
+
 
 @end
 

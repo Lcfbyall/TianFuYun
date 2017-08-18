@@ -53,7 +53,7 @@
         return  [contentConfig cellContent:model];
     }
     
-    static NSString *const identifier = @"AddressManageInfoContentConfig";
+    static NSString *const identifier = @"AddressManageDefaultCell";
     
     return identifier;
 

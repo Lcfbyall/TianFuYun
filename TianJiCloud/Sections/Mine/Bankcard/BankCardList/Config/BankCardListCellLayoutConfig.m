@@ -53,7 +53,7 @@
         return  [contentConfig cellContent:model];
     }
     
-    static NSString *const identifier = @"BankCardListAddContentConfig";
+    static NSString *const identifier = @"BankCardListAddCell";
     
     return identifier;
 

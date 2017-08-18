@@ -53,7 +53,7 @@
         return  [contentConfig cellContent:model];
     }
     
-    static NSString *const identifier = @"ContractApplyInfoContentConfig";
+    static NSString *const identifier = @"ContractApplyAddAddressCell";
     
     return identifier;
 

@@ -10,4 +10,18 @@
 
 @implementation BankCardListAddContentConfig
 
+#pragma mark - <TJSBaseCellContentConfig>
+
+- (CGSize)contentSize:(CGFloat)cellWidth model:(id)model{
+    
+    
+    return CGSizeMake(cellWidth, 50);
+}
+
+- (NSString *)cellContent:(id)model{
+    
+    static NSString *const identifier = @"BankCardListAddCell";
+    
+    return identifier;
+}
 @end
