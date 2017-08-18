@@ -20,13 +20,62 @@
                     <view key="view" contentMode="scaleToFill" id="sNw-Sg-kgR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4dN-wf-StF">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="4dN-wf-StF" secondAttribute="trailing" id="09V-SI-24n"/>
+                            <constraint firstItem="4dN-wf-StF" firstAttribute="leading" secondItem="sNw-Sg-kgR" secondAttribute="leading" id="KbQ-Bm-yl1"/>
+                            <constraint firstAttribute="bottom" secondItem="4dN-wf-StF" secondAttribute="bottom" id="Pkh-1T-Dtt"/>
+                            <constraint firstItem="4dN-wf-StF" firstAttribute="top" secondItem="sNw-Sg-kgR" secondAttribute="top" id="k4I-N6-A02"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="nFL-3M-c0V"/>
+                    <connections>
+                        <outlet property="bankCardList" destination="4dN-wf-StF" id="IEW-pb-Gwe"/>
+                        <segue destination="2WU-Ny-EZ7" kind="show" identifier="BankListToAddBankVC" id="99B-65-KKT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xNN-nA-zwJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3552.8000000000002" y="457.42128935532236"/>
+        </scene>
+        <!--Bank Card Add View Controller-->
+        <scene sceneID="UpH-Ca-o2V">
+            <objects>
+                <viewController storyboardIdentifier="BankCardAddViewController" id="2WU-Ny-EZ7" customClass="BankCardAddViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uw0-9a-z9k"/>
+                        <viewControllerLayoutGuide type="bottom" id="1Tf-W6-q9i"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="S4M-jJ-pok">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="K9Q-lz-xC5">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="K9Q-lz-xC5" firstAttribute="top" secondItem="S4M-jJ-pok" secondAttribute="top" id="RdN-6I-kYy"/>
+                            <constraint firstAttribute="bottom" secondItem="K9Q-lz-xC5" secondAttribute="bottom" id="TNk-km-lrM"/>
+                            <constraint firstAttribute="trailing" secondItem="K9Q-lz-xC5" secondAttribute="trailing" id="j97-QV-pZp"/>
+                            <constraint firstItem="K9Q-lz-xC5" firstAttribute="leading" secondItem="S4M-jJ-pok" secondAttribute="leading" id="qjw-fI-OnE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addlist" destination="K9Q-lz-xC5" id="Zdl-gQ-mzX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wpt-WE-1Ax" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4404" y="451.12443778110946"/>
         </scene>
         <!--Base Navigation Controller-->
         <scene sceneID="KaW-pP-cjz">

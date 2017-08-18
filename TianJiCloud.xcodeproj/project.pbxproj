@@ -21,6 +21,40 @@
 		2C027D271F3C82B1001D7EB6 /* ProductSearchDataSourceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C027D261F3C82B1001D7EB6 /* ProductSearchDataSourceImpl.m */; };
 		2C027D2A1F3C82C8001D7EB6 /* ProductSearchLayoutImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C027D291F3C82C8001D7EB6 /* ProductSearchLayoutImpl.m */; };
 		2C027D2D1F3C82D7001D7EB6 /* ProductSearchTableAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C027D2C1F3C82D7001D7EB6 /* ProductSearchTableAdapter.m */; };
+		2C1B74B71F4694FF0000E71A /* BankCardListAddContentConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B748A1F4694FF0000E71A /* BankCardListAddContentConfig.m */; };
+		2C1B74B81F4694FF0000E71A /* BankCardListCellFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B748C1F4694FF0000E71A /* BankCardListCellFactory.m */; };
+		2C1B74B91F4694FF0000E71A /* BankCardListCellLayoutConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B748E1F4694FF0000E71A /* BankCardListCellLayoutConfig.m */; };
+		2C1B74BA1F4694FF0000E71A /* BankCardListConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B74901F4694FF0000E71A /* BankCardListConfig.m */; };
+		2C1B74BB1F4694FF0000E71A /* BankCardListContentConfigFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B74921F4694FF0000E71A /* BankCardListContentConfigFactory.m */; };
+		2C1B74BC1F4694FF0000E71A /* BankCardListDefaultContentConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B74941F4694FF0000E71A /* BankCardListDefaultContentConfig.m */; };
+		2C1B74BD1F4694FF0000E71A /* BackCardManagerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B74971F4694FF0000E71A /* BackCardManagerController.m */; };
+		2C1B74BE1F4694FF0000E71A /* BankCardListConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B749A1F4694FF0000E71A /* BankCardListConfigurator.m */; };
+		2C1B74BF1F4694FF0000E71A /* BankCardListDataSourceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B749C1F4694FF0000E71A /* BankCardListDataSourceImpl.m */; };
+		2C1B74C01F4694FF0000E71A /* BankCardListInteractorImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B749E1F4694FF0000E71A /* BankCardListInteractorImpl.m */; };
+		2C1B74C11F4694FF0000E71A /* BankCardListLayoutImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B74A01F4694FF0000E71A /* BankCardListLayoutImpl.m */; };
+		2C1B74C21F4694FF0000E71A /* BankCardListTableAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B74A21F4694FF0000E71A /* BankCardListTableAdapter.m */; };
+		2C1B74C31F4694FF0000E71A /* BankCardInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B74A51F4694FF0000E71A /* BankCardInfo.m */; };
+		2C1B74C41F4694FF0000E71A /* BankCardInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B74A71F4694FF0000E71A /* BankCardInfoModel.m */; };
+		2C1B74C51F4694FF0000E71A /* BankCardListNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B74AA1F4694FF0000E71A /* BankCardListNetworkTool.m */; };
+		2C1B74C61F4694FF0000E71A /* BankCardListAddCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B74B21F4694FF0000E71A /* BankCardListAddCell.m */; };
+		2C1B74C71F4694FF0000E71A /* BankCardListBaseTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B74B41F4694FF0000E71A /* BankCardListBaseTableCell.m */; };
+		2C1B74C81F4694FF0000E71A /* BankCardListDefaultCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B74B61F4694FF0000E71A /* BankCardListDefaultCell.m */; };
+		2C1B74D41F4698050000E71A /* BankCardAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B74D31F4698050000E71A /* BankCardAddViewController.m */; };
+		2C1B74E21F4698A30000E71A /* BankCardAddCellFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B74D81F4698A30000E71A /* BankCardAddCellFactory.m */; };
+		2C1B74E31F4698A30000E71A /* BankCardAddCellLayoutConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B74DA1F4698A30000E71A /* BankCardAddCellLayoutConfig.m */; };
+		2C1B74E41F4698A30000E71A /* BankCardAddConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B74DC1F4698A30000E71A /* BankCardAddConfig.m */; };
+		2C1B74E61F4698A30000E71A /* BankCardAddDefaultContentConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B74E01F4698A30000E71A /* BankCardAddDefaultContentConfig.m */; };
+		2C1B74E91F4698C90000E71A /* BankCardAddCellInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B74E81F4698C90000E71A /* BankCardAddCellInfoModel.m */; };
+		2C1B74EC1F4699A50000E71A /* BankCardAddBaseTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B74EB1F4699A50000E71A /* BankCardAddBaseTableCell.m */; };
+		2C1B74EF1F4699BE0000E71A /* BankCardAddDefaaultCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B74EE1F4699BE0000E71A /* BankCardAddDefaaultCell.m */; };
+		2C1B74F21F469A140000E71A /* BankCardAddHeaderFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B74F11F469A140000E71A /* BankCardAddHeaderFooterView.m */; };
+		2C1B74F51F469BDB0000E71A /* BankCardAddContentConfigFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B74F41F469BDB0000E71A /* BankCardAddContentConfigFactory.m */; };
+		2C1B75001F469E5A0000E71A /* BankCardAddConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B74F71F469E5A0000E71A /* BankCardAddConfigurator.m */; };
+		2C1B75011F469E5A0000E71A /* BankCardAddDataSourceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B74F91F469E5A0000E71A /* BankCardAddDataSourceImpl.m */; };
+		2C1B75021F469E5A0000E71A /* BankCardAddInteractorImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B74FB1F469E5A0000E71A /* BankCardAddInteractorImpl.m */; };
+		2C1B75031F469E5A0000E71A /* BankCardAddLayoutImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B74FD1F469E5A0000E71A /* BankCardAddLayoutImpl.m */; };
+		2C1B75041F469E5A0000E71A /* BankCardAddTableAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B74FF1F469E5A0000E71A /* BankCardAddTableAdapter.m */; };
+		2C1B750A1F46C1100000E71A /* BankCardAddNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B75091F46C1100000E71A /* BankCardAddNetworkTool.m */; };
 		2C1BFEBD1F29779100665A71 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C1BFEBC1F29779100665A71 /* Home.storyboard */; };
 		2C1BFEBF1F2978C500665A71 /* Discovery.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C1BFEBE1F2978C500665A71 /* Discovery.storyboard */; };
 		2C300F7A1F2F327E00DD440E /* MineSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C300F791F2F327E00DD440E /* MineSettingViewController.m */; };
@@ -191,7 +225,6 @@
 		2C85E3331F2EC6E500ADD360 /* Oder.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C85E3321F2EC6E500ADD360 /* Oder.storyboard */; };
 		2C85E33E1F2ECB1300ADD360 /* UseAgreementController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E33D1F2ECB1300ADD360 /* UseAgreementController.m */; };
 		2C85E34D1F2ECC1200ADD360 /* AboutMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E34C1F2ECC1200ADD360 /* AboutMeViewController.m */; };
-		2C85E3531F2ECCC800ADD360 /* BackCardManagerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E3521F2ECCC800ADD360 /* BackCardManagerController.m */; };
 		2C85E3581F2ECDA200ADD360 /* CapitalRecordContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E3571F2ECDA200ADD360 /* CapitalRecordContainer.m */; };
 		2C85E3611F2ECE7300ADD360 /* WithdrawDepositController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E3601F2ECE7300ADD360 /* WithdrawDepositController.m */; };
 		2C85E3641F2ECE9400ADD360 /* WithdrawDepositRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E3631F2ECE9400ADD360 /* WithdrawDepositRecord.m */; };
@@ -523,6 +556,80 @@
 		2C027D291F3C82C8001D7EB6 /* ProductSearchLayoutImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductSearchLayoutImpl.m; sourceTree = "<group>"; };
 		2C027D2B1F3C82D7001D7EB6 /* ProductSearchTableAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductSearchTableAdapter.h; sourceTree = "<group>"; };
 		2C027D2C1F3C82D7001D7EB6 /* ProductSearchTableAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductSearchTableAdapter.m; sourceTree = "<group>"; };
+		2C1B74891F4694FF0000E71A /* BankCardListAddContentConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankCardListAddContentConfig.h; sourceTree = "<group>"; };
+		2C1B748A1F4694FF0000E71A /* BankCardListAddContentConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankCardListAddContentConfig.m; sourceTree = "<group>"; };
+		2C1B748B1F4694FF0000E71A /* BankCardListCellFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankCardListCellFactory.h; sourceTree = "<group>"; };
+		2C1B748C1F4694FF0000E71A /* BankCardListCellFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankCardListCellFactory.m; sourceTree = "<group>"; };
+		2C1B748D1F4694FF0000E71A /* BankCardListCellLayoutConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankCardListCellLayoutConfig.h; sourceTree = "<group>"; };
+		2C1B748E1F4694FF0000E71A /* BankCardListCellLayoutConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankCardListCellLayoutConfig.m; sourceTree = "<group>"; };
+		2C1B748F1F4694FF0000E71A /* BankCardListConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankCardListConfig.h; sourceTree = "<group>"; };
+		2C1B74901F4694FF0000E71A /* BankCardListConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankCardListConfig.m; sourceTree = "<group>"; };
+		2C1B74911F4694FF0000E71A /* BankCardListContentConfigFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankCardListContentConfigFactory.h; sourceTree = "<group>"; };
+		2C1B74921F4694FF0000E71A /* BankCardListContentConfigFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankCardListContentConfigFactory.m; sourceTree = "<group>"; };
+		2C1B74931F4694FF0000E71A /* BankCardListDefaultContentConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankCardListDefaultContentConfig.h; sourceTree = "<group>"; };
+		2C1B74941F4694FF0000E71A /* BankCardListDefaultContentConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankCardListDefaultContentConfig.m; sourceTree = "<group>"; };
+		2C1B74961F4694FF0000E71A /* BackCardManagerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackCardManagerController.h; sourceTree = "<group>"; };
+		2C1B74971F4694FF0000E71A /* BackCardManagerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackCardManagerController.m; sourceTree = "<group>"; };
+		2C1B74991F4694FF0000E71A /* BankCardListConfigurator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankCardListConfigurator.h; sourceTree = "<group>"; };
+		2C1B749A1F4694FF0000E71A /* BankCardListConfigurator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankCardListConfigurator.m; sourceTree = "<group>"; };
+		2C1B749B1F4694FF0000E71A /* BankCardListDataSourceImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankCardListDataSourceImpl.h; sourceTree = "<group>"; };
+		2C1B749C1F4694FF0000E71A /* BankCardListDataSourceImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankCardListDataSourceImpl.m; sourceTree = "<group>"; };
+		2C1B749D1F4694FF0000E71A /* BankCardListInteractorImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankCardListInteractorImpl.h; sourceTree = "<group>"; };
+		2C1B749E1F4694FF0000E71A /* BankCardListInteractorImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankCardListInteractorImpl.m; sourceTree = "<group>"; };
+		2C1B749F1F4694FF0000E71A /* BankCardListLayoutImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankCardListLayoutImpl.h; sourceTree = "<group>"; };
+		2C1B74A01F4694FF0000E71A /* BankCardListLayoutImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankCardListLayoutImpl.m; sourceTree = "<group>"; };
+		2C1B74A11F4694FF0000E71A /* BankCardListTableAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankCardListTableAdapter.h; sourceTree = "<group>"; };
+		2C1B74A21F4694FF0000E71A /* BankCardListTableAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankCardListTableAdapter.m; sourceTree = "<group>"; };
+		2C1B74A41F4694FF0000E71A /* BankCardInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankCardInfo.h; sourceTree = "<group>"; };
+		2C1B74A51F4694FF0000E71A /* BankCardInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankCardInfo.m; sourceTree = "<group>"; };
+		2C1B74A61F4694FF0000E71A /* BankCardInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankCardInfoModel.h; sourceTree = "<group>"; };
+		2C1B74A71F4694FF0000E71A /* BankCardInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankCardInfoModel.m; sourceTree = "<group>"; };
+		2C1B74A91F4694FF0000E71A /* BankCardListNetworkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankCardListNetworkTool.h; sourceTree = "<group>"; };
+		2C1B74AA1F4694FF0000E71A /* BankCardListNetworkTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankCardListNetworkTool.m; sourceTree = "<group>"; };
+		2C1B74AC1F4694FF0000E71A /* BankCardListConfigProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankCardListConfigProtocol.h; sourceTree = "<group>"; };
+		2C1B74AD1F4694FF0000E71A /* BankCardListConfigurateProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankCardListConfigurateProtocol.h; sourceTree = "<group>"; };
+		2C1B74AE1F4694FF0000E71A /* BankCardListPrivateProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankCardListPrivateProtocol.h; sourceTree = "<group>"; };
+		2C1B74B11F4694FF0000E71A /* BankCardListAddCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankCardListAddCell.h; sourceTree = "<group>"; };
+		2C1B74B21F4694FF0000E71A /* BankCardListAddCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankCardListAddCell.m; sourceTree = "<group>"; };
+		2C1B74B31F4694FF0000E71A /* BankCardListBaseTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankCardListBaseTableCell.h; sourceTree = "<group>"; };
+		2C1B74B41F4694FF0000E71A /* BankCardListBaseTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankCardListBaseTableCell.m; sourceTree = "<group>"; };
+		2C1B74B51F4694FF0000E71A /* BankCardListDefaultCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankCardListDefaultCell.h; sourceTree = "<group>"; };
+		2C1B74B61F4694FF0000E71A /* BankCardListDefaultCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankCardListDefaultCell.m; sourceTree = "<group>"; };
+		2C1B74D21F4698050000E71A /* BankCardAddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankCardAddViewController.h; sourceTree = "<group>"; };
+		2C1B74D31F4698050000E71A /* BankCardAddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankCardAddViewController.m; sourceTree = "<group>"; };
+		2C1B74D71F4698A30000E71A /* BankCardAddCellFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankCardAddCellFactory.h; sourceTree = "<group>"; };
+		2C1B74D81F4698A30000E71A /* BankCardAddCellFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankCardAddCellFactory.m; sourceTree = "<group>"; };
+		2C1B74D91F4698A30000E71A /* BankCardAddCellLayoutConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankCardAddCellLayoutConfig.h; sourceTree = "<group>"; };
+		2C1B74DA1F4698A30000E71A /* BankCardAddCellLayoutConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankCardAddCellLayoutConfig.m; sourceTree = "<group>"; };
+		2C1B74DB1F4698A30000E71A /* BankCardAddConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankCardAddConfig.h; sourceTree = "<group>"; };
+		2C1B74DC1F4698A30000E71A /* BankCardAddConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankCardAddConfig.m; sourceTree = "<group>"; };
+		2C1B74DF1F4698A30000E71A /* BankCardAddDefaultContentConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankCardAddDefaultContentConfig.h; sourceTree = "<group>"; };
+		2C1B74E01F4698A30000E71A /* BankCardAddDefaultContentConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankCardAddDefaultContentConfig.m; sourceTree = "<group>"; };
+		2C1B74E71F4698C90000E71A /* BankCardAddCellInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankCardAddCellInfoModel.h; sourceTree = "<group>"; };
+		2C1B74E81F4698C90000E71A /* BankCardAddCellInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankCardAddCellInfoModel.m; sourceTree = "<group>"; };
+		2C1B74EA1F4699A50000E71A /* BankCardAddBaseTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankCardAddBaseTableCell.h; sourceTree = "<group>"; };
+		2C1B74EB1F4699A50000E71A /* BankCardAddBaseTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankCardAddBaseTableCell.m; sourceTree = "<group>"; };
+		2C1B74ED1F4699BE0000E71A /* BankCardAddDefaaultCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankCardAddDefaaultCell.h; sourceTree = "<group>"; };
+		2C1B74EE1F4699BE0000E71A /* BankCardAddDefaaultCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankCardAddDefaaultCell.m; sourceTree = "<group>"; };
+		2C1B74F01F469A140000E71A /* BankCardAddHeaderFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankCardAddHeaderFooterView.h; sourceTree = "<group>"; };
+		2C1B74F11F469A140000E71A /* BankCardAddHeaderFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankCardAddHeaderFooterView.m; sourceTree = "<group>"; };
+		2C1B74F31F469BDB0000E71A /* BankCardAddContentConfigFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankCardAddContentConfigFactory.h; sourceTree = "<group>"; };
+		2C1B74F41F469BDB0000E71A /* BankCardAddContentConfigFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankCardAddContentConfigFactory.m; sourceTree = "<group>"; };
+		2C1B74F61F469E5A0000E71A /* BankCardAddConfigurator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankCardAddConfigurator.h; sourceTree = "<group>"; };
+		2C1B74F71F469E5A0000E71A /* BankCardAddConfigurator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankCardAddConfigurator.m; sourceTree = "<group>"; };
+		2C1B74F81F469E5A0000E71A /* BankCardAddDataSourceImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankCardAddDataSourceImpl.h; sourceTree = "<group>"; };
+		2C1B74F91F469E5A0000E71A /* BankCardAddDataSourceImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankCardAddDataSourceImpl.m; sourceTree = "<group>"; };
+		2C1B74FA1F469E5A0000E71A /* BankCardAddInteractorImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankCardAddInteractorImpl.h; sourceTree = "<group>"; };
+		2C1B74FB1F469E5A0000E71A /* BankCardAddInteractorImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankCardAddInteractorImpl.m; sourceTree = "<group>"; };
+		2C1B74FC1F469E5A0000E71A /* BankCardAddLayoutImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankCardAddLayoutImpl.h; sourceTree = "<group>"; };
+		2C1B74FD1F469E5A0000E71A /* BankCardAddLayoutImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankCardAddLayoutImpl.m; sourceTree = "<group>"; };
+		2C1B74FE1F469E5A0000E71A /* BankCardAddTableAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankCardAddTableAdapter.h; sourceTree = "<group>"; };
+		2C1B74FF1F469E5A0000E71A /* BankCardAddTableAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankCardAddTableAdapter.m; sourceTree = "<group>"; };
+		2C1B75051F46BF8D0000E71A /* BankCardAddConfigProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankCardAddConfigProtocol.h; sourceTree = "<group>"; };
+		2C1B75061F46BF8D0000E71A /* BankCardAddConfigurateProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankCardAddConfigurateProtocol.h; sourceTree = "<group>"; };
+		2C1B75071F46BF8D0000E71A /* BankCardAddPrivateProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankCardAddPrivateProtocol.h; sourceTree = "<group>"; };
+		2C1B75081F46C1100000E71A /* BankCardAddNetworkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankCardAddNetworkTool.h; sourceTree = "<group>"; };
+		2C1B75091F46C1100000E71A /* BankCardAddNetworkTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankCardAddNetworkTool.m; sourceTree = "<group>"; };
 		2C1BFEBC1F29779100665A71 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		2C1BFEBE1F2978C500665A71 /* Discovery.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Discovery.storyboard; sourceTree = "<group>"; };
 		2C300F781F2F327E00DD440E /* MineSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineSettingViewController.h; sourceTree = "<group>"; };
@@ -862,8 +969,6 @@
 		2C85E33D1F2ECB1300ADD360 /* UseAgreementController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UseAgreementController.m; sourceTree = "<group>"; };
 		2C85E34B1F2ECC1200ADD360 /* AboutMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutMeViewController.h; sourceTree = "<group>"; };
 		2C85E34C1F2ECC1200ADD360 /* AboutMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutMeViewController.m; sourceTree = "<group>"; };
-		2C85E3511F2ECCC800ADD360 /* BackCardManagerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackCardManagerController.h; sourceTree = "<group>"; };
-		2C85E3521F2ECCC800ADD360 /* BackCardManagerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackCardManagerController.m; sourceTree = "<group>"; };
 		2C85E3561F2ECDA200ADD360 /* CapitalRecordContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CapitalRecordContainer.h; sourceTree = "<group>"; };
 		2C85E3571F2ECDA200ADD360 /* CapitalRecordContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CapitalRecordContainer.m; sourceTree = "<group>"; };
 		2C85E35F1F2ECE7300ADD360 /* WithdrawDepositController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WithdrawDepositController.h; sourceTree = "<group>"; };
@@ -1479,6 +1584,214 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C1B74871F4694FF0000E71A /* BankCardList */ = {
+			isa = PBXGroup;
+			children = (
+				2C1B74881F4694FF0000E71A /* Config */,
+				2C1B74951F4694FF0000E71A /* Controller */,
+				2C1B74981F4694FF0000E71A /* Disaggregate */,
+				2C1B74A31F4694FF0000E71A /* Model */,
+				2C1B74A81F4694FF0000E71A /* NetworkTool */,
+				2C1B74AB1F4694FF0000E71A /* Protocol */,
+				2C1B74AF1F4694FF0000E71A /* Store */,
+				2C1B74B01F4694FF0000E71A /* View */,
+			);
+			path = BankCardList;
+			sourceTree = "<group>";
+		};
+		2C1B74881F4694FF0000E71A /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				2C1B74891F4694FF0000E71A /* BankCardListAddContentConfig.h */,
+				2C1B748A1F4694FF0000E71A /* BankCardListAddContentConfig.m */,
+				2C1B748B1F4694FF0000E71A /* BankCardListCellFactory.h */,
+				2C1B748C1F4694FF0000E71A /* BankCardListCellFactory.m */,
+				2C1B748D1F4694FF0000E71A /* BankCardListCellLayoutConfig.h */,
+				2C1B748E1F4694FF0000E71A /* BankCardListCellLayoutConfig.m */,
+				2C1B748F1F4694FF0000E71A /* BankCardListConfig.h */,
+				2C1B74901F4694FF0000E71A /* BankCardListConfig.m */,
+				2C1B74911F4694FF0000E71A /* BankCardListContentConfigFactory.h */,
+				2C1B74921F4694FF0000E71A /* BankCardListContentConfigFactory.m */,
+				2C1B74931F4694FF0000E71A /* BankCardListDefaultContentConfig.h */,
+				2C1B74941F4694FF0000E71A /* BankCardListDefaultContentConfig.m */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		2C1B74951F4694FF0000E71A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2C1B74961F4694FF0000E71A /* BackCardManagerController.h */,
+				2C1B74971F4694FF0000E71A /* BackCardManagerController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2C1B74981F4694FF0000E71A /* Disaggregate */ = {
+			isa = PBXGroup;
+			children = (
+				2C1B74991F4694FF0000E71A /* BankCardListConfigurator.h */,
+				2C1B749A1F4694FF0000E71A /* BankCardListConfigurator.m */,
+				2C1B749B1F4694FF0000E71A /* BankCardListDataSourceImpl.h */,
+				2C1B749C1F4694FF0000E71A /* BankCardListDataSourceImpl.m */,
+				2C1B749D1F4694FF0000E71A /* BankCardListInteractorImpl.h */,
+				2C1B749E1F4694FF0000E71A /* BankCardListInteractorImpl.m */,
+				2C1B749F1F4694FF0000E71A /* BankCardListLayoutImpl.h */,
+				2C1B74A01F4694FF0000E71A /* BankCardListLayoutImpl.m */,
+				2C1B74A11F4694FF0000E71A /* BankCardListTableAdapter.h */,
+				2C1B74A21F4694FF0000E71A /* BankCardListTableAdapter.m */,
+			);
+			path = Disaggregate;
+			sourceTree = "<group>";
+		};
+		2C1B74A31F4694FF0000E71A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2C1B74A41F4694FF0000E71A /* BankCardInfo.h */,
+				2C1B74A51F4694FF0000E71A /* BankCardInfo.m */,
+				2C1B74A61F4694FF0000E71A /* BankCardInfoModel.h */,
+				2C1B74A71F4694FF0000E71A /* BankCardInfoModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2C1B74A81F4694FF0000E71A /* NetworkTool */ = {
+			isa = PBXGroup;
+			children = (
+				2C1B74A91F4694FF0000E71A /* BankCardListNetworkTool.h */,
+				2C1B74AA1F4694FF0000E71A /* BankCardListNetworkTool.m */,
+			);
+			path = NetworkTool;
+			sourceTree = "<group>";
+		};
+		2C1B74AB1F4694FF0000E71A /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				2C1B74AC1F4694FF0000E71A /* BankCardListConfigProtocol.h */,
+				2C1B74AD1F4694FF0000E71A /* BankCardListConfigurateProtocol.h */,
+				2C1B74AE1F4694FF0000E71A /* BankCardListPrivateProtocol.h */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		2C1B74AF1F4694FF0000E71A /* Store */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		2C1B74B01F4694FF0000E71A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2C1B74B11F4694FF0000E71A /* BankCardListAddCell.h */,
+				2C1B74B21F4694FF0000E71A /* BankCardListAddCell.m */,
+				2C1B74B31F4694FF0000E71A /* BankCardListBaseTableCell.h */,
+				2C1B74B41F4694FF0000E71A /* BankCardListBaseTableCell.m */,
+				2C1B74B51F4694FF0000E71A /* BankCardListDefaultCell.h */,
+				2C1B74B61F4694FF0000E71A /* BankCardListDefaultCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2C1B74CA1F46953C0000E71A /* BankCardAdd */ = {
+			isa = PBXGroup;
+			children = (
+				2C1B74CC1F4695AE0000E71A /* Config */,
+				2C1B74CE1F4695AE0000E71A /* Controller */,
+				2C1B74CB1F4695AE0000E71A /* Disaggregate */,
+				2C1B74CD1F4695AE0000E71A /* NetworkTool */,
+				2C1B74CF1F4695AE0000E71A /* Model */,
+				2C1B74D01F4695AE0000E71A /* Protocol */,
+				2C1B74D11F4695AE0000E71A /* View */,
+			);
+			path = BankCardAdd;
+			sourceTree = "<group>";
+		};
+		2C1B74CB1F4695AE0000E71A /* Disaggregate */ = {
+			isa = PBXGroup;
+			children = (
+				2C1B74F61F469E5A0000E71A /* BankCardAddConfigurator.h */,
+				2C1B74F71F469E5A0000E71A /* BankCardAddConfigurator.m */,
+				2C1B74FA1F469E5A0000E71A /* BankCardAddInteractorImpl.h */,
+				2C1B74FB1F469E5A0000E71A /* BankCardAddInteractorImpl.m */,
+				2C1B74F81F469E5A0000E71A /* BankCardAddDataSourceImpl.h */,
+				2C1B74F91F469E5A0000E71A /* BankCardAddDataSourceImpl.m */,
+				2C1B74FC1F469E5A0000E71A /* BankCardAddLayoutImpl.h */,
+				2C1B74FD1F469E5A0000E71A /* BankCardAddLayoutImpl.m */,
+				2C1B74FE1F469E5A0000E71A /* BankCardAddTableAdapter.h */,
+				2C1B74FF1F469E5A0000E71A /* BankCardAddTableAdapter.m */,
+			);
+			path = Disaggregate;
+			sourceTree = "<group>";
+		};
+		2C1B74CC1F4695AE0000E71A /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				2C1B74DB1F4698A30000E71A /* BankCardAddConfig.h */,
+				2C1B74DC1F4698A30000E71A /* BankCardAddConfig.m */,
+				2C1B74D71F4698A30000E71A /* BankCardAddCellFactory.h */,
+				2C1B74D81F4698A30000E71A /* BankCardAddCellFactory.m */,
+				2C1B74D91F4698A30000E71A /* BankCardAddCellLayoutConfig.h */,
+				2C1B74DA1F4698A30000E71A /* BankCardAddCellLayoutConfig.m */,
+				2C1B74F31F469BDB0000E71A /* BankCardAddContentConfigFactory.h */,
+				2C1B74F41F469BDB0000E71A /* BankCardAddContentConfigFactory.m */,
+				2C1B74DF1F4698A30000E71A /* BankCardAddDefaultContentConfig.h */,
+				2C1B74E01F4698A30000E71A /* BankCardAddDefaultContentConfig.m */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		2C1B74CD1F4695AE0000E71A /* NetworkTool */ = {
+			isa = PBXGroup;
+			children = (
+				2C1B75081F46C1100000E71A /* BankCardAddNetworkTool.h */,
+				2C1B75091F46C1100000E71A /* BankCardAddNetworkTool.m */,
+			);
+			path = NetworkTool;
+			sourceTree = "<group>";
+		};
+		2C1B74CE1F4695AE0000E71A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2C1B74D21F4698050000E71A /* BankCardAddViewController.h */,
+				2C1B74D31F4698050000E71A /* BankCardAddViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2C1B74CF1F4695AE0000E71A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2C1B74E71F4698C90000E71A /* BankCardAddCellInfoModel.h */,
+				2C1B74E81F4698C90000E71A /* BankCardAddCellInfoModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2C1B74D01F4695AE0000E71A /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				2C1B75051F46BF8D0000E71A /* BankCardAddConfigProtocol.h */,
+				2C1B75061F46BF8D0000E71A /* BankCardAddConfigurateProtocol.h */,
+				2C1B75071F46BF8D0000E71A /* BankCardAddPrivateProtocol.h */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		2C1B74D11F4695AE0000E71A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2C1B74EA1F4699A50000E71A /* BankCardAddBaseTableCell.h */,
+				2C1B74EB1F4699A50000E71A /* BankCardAddBaseTableCell.m */,
+				2C1B74ED1F4699BE0000E71A /* BankCardAddDefaaultCell.h */,
+				2C1B74EE1F4699BE0000E71A /* BankCardAddDefaaultCell.m */,
+				2C1B74F01F469A140000E71A /* BankCardAddHeaderFooterView.h */,
+				2C1B74F11F469A140000E71A /* BankCardAddHeaderFooterView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		2C1BFEB21F29773700665A71 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -3337,8 +3650,8 @@
 			isa = PBXGroup;
 			children = (
 				2C7A34501F2F64DA004DD566 /* BankCardManager.storyboard */,
-				2C85E3511F2ECCC800ADD360 /* BackCardManagerController.h */,
-				2C85E3521F2ECCC800ADD360 /* BackCardManagerController.m */,
+				2C1B74871F4694FF0000E71A /* BankCardList */,
+				2C1B74CA1F46953C0000E71A /* BankCardAdd */,
 			);
 			path = Bankcard;
 			sourceTree = "<group>";
@@ -5115,6 +5428,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C4C1C941F3948E800002166 /* PNColor.m in Sources */,
+				2C1B74E41F4698A30000E71A /* BankCardAddConfig.m in Sources */,
 				2CAF42D81F281B8600ABCA5E /* ProductListVCConfig.m in Sources */,
 				2CD896A11F442806008F7C73 /* ContractApplyPNameContentConfig.m in Sources */,
 				2CD896B21F45323F008F7C73 /* ContarctApplyBaseCell.m in Sources */,
@@ -5154,6 +5468,7 @@
 				2CF8B5451F3D48B0003B8520 /* ProductSearchListCellFactory.m in Sources */,
 				2CD896E21F453D33008F7C73 /* ContractAddAddressTableAdapter.m in Sources */,
 				A2A71C691F3F200700577E45 /* ProductSearchHotReusableHeader.m in Sources */,
+				2C1B74C51F4694FF0000E71A /* BankCardListNetworkTool.m in Sources */,
 				2CB4F60B1F42849100FF98C9 /* MyFavListTableAdapter.m in Sources */,
 				2C4C1C2D1F386DF400002166 /* TJSAlertHandleUtil.m in Sources */,
 				2CD897241F4572CC008F7C73 /* AddressManageDefaultCell.m in Sources */,
@@ -5168,9 +5483,12 @@
 				2CD8970B1F45480B008F7C73 /* AddressManageConfigurator.m in Sources */,
 				2C027D1C1F3C7C92001D7EB6 /* ProductFilterResultTableAdapter.m in Sources */,
 				2C83C71F1F39B9C9004034CA /* PlatformAnnounceController.m in Sources */,
+				2C1B74BF1F4694FF0000E71A /* BankCardListDataSourceImpl.m in Sources */,
 				2C027D0B1F3BFA28001D7EB6 /* TJSBaseCollectionReusableView.m in Sources */,
 				2C4C1C1F1F38531F00002166 /* TJSMyOrderListCellLayoutConfig.m in Sources */,
 				2C859CE21F31EB2E00B86575 /* MBProgressHUD.m in Sources */,
+				2C1B74C81F4694FF0000E71A /* BankCardListDefaultCell.m in Sources */,
+				2C1B74C71F4694FF0000E71A /* BankCardListBaseTableCell.m in Sources */,
 				2CB4F61A1F429ADF00FF98C9 /* ContractDetailController.m in Sources */,
 				2C85E34D1F2ECC1200ADD360 /* AboutMeViewController.m in Sources */,
 				2CF8B55E1F3DA438003B8520 /* ProductSearchNetworkTool.m in Sources */,
@@ -5184,6 +5502,7 @@
 				2C859CE01F31EB2E00B86575 /* DACircularProgressView.m in Sources */,
 				2CD8969E1F4427E8008F7C73 /* ContractApplyInfoContentConfig.m in Sources */,
 				2C859CE31F31EB2E00B86575 /* UIView+Frame.m in Sources */,
+				2C1B74C61F4694FF0000E71A /* BankCardListAddCell.m in Sources */,
 				2C89AD741F2B5C81005C29AC /* DiscoNewsDetailController.m in Sources */,
 				2CD896E01F453D33008F7C73 /* ContractAddAddressInteractorImpl.m in Sources */,
 				2C83C7221F39BA14004034CA /* PlatformAnnounceCell.m in Sources */,
@@ -5198,6 +5517,7 @@
 				2C8BB7A71F30859C00E2D75F /* HomeHeaderContainer.m in Sources */,
 				2C89AD841F2C91DE005C29AC /* UIColor+TJSiOS7Colors.m in Sources */,
 				2C8BB7A01F30859C00E2D75F /* HomeFooterCollectionCell.m in Sources */,
+				2C1B74F51F469BDB0000E71A /* BankCardAddContentConfigFactory.m in Sources */,
 				2CAF42D71F281B8600ABCA5E /* TJSProductListCellLayoutConfig.m in Sources */,
 				2CF8B5571F3DA324003B8520 /* ProductSearchApi.m in Sources */,
 				2C300F8B1F2F3CB100DD440E /* ProfesisonAuthenController.m in Sources */,
@@ -5211,6 +5531,7 @@
 				2C8DE5941F29F5FF009B3AE2 /* TJSWeakScriptMessageHandler.m in Sources */,
 				2C4412551F21DBBA00C453EF /* UIViewController+RouteParams.m in Sources */,
 				2C44127F1F21E99700C453EF /* UITextView+PlaceHolder.m in Sources */,
+				2C1B74EF1F4699BE0000E71A /* BankCardAddDefaaultCell.m in Sources */,
 				2C44128F1F21ED2D00C453EF /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				2CAF431A1F2829CF00ABCA5E /* TJSProductInfoModel.m in Sources */,
 				2C859CEA1F31EB2E00B86575 /* ZLCameraImageView.m in Sources */,
@@ -5222,6 +5543,7 @@
 				2C44123F1F21D2A600C453EF /* GVUserDefaults+TJSGlobalProperties.m in Sources */,
 				2CD8974E1F457B96008F7C73 /* AddressSelectedConfigurator.m in Sources */,
 				2CD897121F454839008F7C73 /* AddressManageCellModel.m in Sources */,
+				2C1B74E31F4698A30000E71A /* BankCardAddCellLayoutConfig.m in Sources */,
 				2CD8970E1F45480B008F7C73 /* AddressManageLayoutImpl.m in Sources */,
 				2C4412591F21DDA900C453EF /* UIWindow+Transition.m in Sources */,
 				2C4C1C071F3847C200002166 /* MyOrderListVCConfig.m in Sources */,
@@ -5239,8 +5561,11 @@
 				2C431DEB1F299A9600858C12 /* HomeVCConfig.m in Sources */,
 				2CF8B5651F3DC3B2003B8520 /* ProductSearchCellContentConfigFactory.m in Sources */,
 				2C859CFB1F31EB2E00B86575 /* ZLPhotoPickerGroupViewController.m in Sources */,
+				2C1B75021F469E5A0000E71A /* BankCardAddInteractorImpl.m in Sources */,
 				2C859CE61F31EB2E00B86575 /* YZFlowLayout.m in Sources */,
+				2C1B74C01F4694FF0000E71A /* BankCardListInteractorImpl.m in Sources */,
 				2C4412031F219A5300C453EF /* UIDevice+CurrentArg.m in Sources */,
+				2C1B74E91F4698C90000E71A /* BankCardAddCellInfoModel.m in Sources */,
 				2C8DE6171F2B43A8009B3AE2 /* DiscoRoadShowListController.m in Sources */,
 				2C85E3861F2F044600ADD360 /* TJSMineHomeLayoutImpl.m in Sources */,
 				A292B2611F39F7DD0086E03E /* CapitalRecordListController.m in Sources */,
@@ -5275,7 +5600,6 @@
 				2CB4F6531F42F5A300FF98C9 /* ContractApplyAddAddressCell.m in Sources */,
 				2C44126A1F21E2DA00C453EF /* UIButton+CountDown.m in Sources */,
 				2CCC85BC1F3AEF1D0009FC1C /* FilterResultNetworkTool.m in Sources */,
-				2C85E3531F2ECCC800ADD360 /* BackCardManagerController.m in Sources */,
 				2C85E32E1F2EC60700ADD360 /* MyOrderContainerController.m in Sources */,
 				2C8DE6021F2AEB06009B3AE2 /* DiscoveryNewsInfo.m in Sources */,
 				A28956951F3CA22A002D6845 /* ProductSearchHotLayout.m in Sources */,
@@ -5286,6 +5610,7 @@
 				2CCC85CB1F3AF5B50009FC1C /* ProductFilterItemModel.m in Sources */,
 				2C8BB7A61F30859C00E2D75F /* HomeHeaderCollectionLayout.m in Sources */,
 				2CD8975B1F45854A008F7C73 /* ConAddressBottomInputContentConfig.m in Sources */,
+				2C1B75031F469E5A0000E71A /* BankCardAddLayoutImpl.m in Sources */,
 				2C8BB7AF1F3087BA00E2D75F /* HomeProductClickItem.m in Sources */,
 				2CB4F5EA1F41C3BB00FF98C9 /* ContractInfoModel.m in Sources */,
 				2CCBE4801F333386006C4018 /* UINavigationBar+Awesome.m in Sources */,
@@ -5318,8 +5643,10 @@
 				2C44128B1F21ECA600C453EF /* UITextView+LengthLimited.m in Sources */,
 				2C859CFD1F31EB2E00B86575 /* ZLPhotoPickerCollectionView.m in Sources */,
 				2C85E3931F2F0B6500ADD360 /* TJSBaseMineHomeCellContentConfig.m in Sources */,
+				2C1B75001F469E5A0000E71A /* BankCardAddConfigurator.m in Sources */,
 				2CD896941F442731008F7C73 /* ContractApplyCellLayoutConfig.m in Sources */,
 				2C8DE5FF1F2AEAF6009B3AE2 /* DiscoveryNewsInfoModel.m in Sources */,
+				2C1B74C21F4694FF0000E71A /* BankCardListTableAdapter.m in Sources */,
 				2CAF42DE1F281B8600ABCA5E /* ProductListNetworkTool.m in Sources */,
 				2CCC85C81F3AF5A20009FC1C /* ProductFilterItem.m in Sources */,
 				2C4C1CB91F39570400002166 /* FeedbackHistoryController.m in Sources */,
@@ -5329,9 +5656,11 @@
 				2CB4F5F51F42844900FF98C9 /* MyFavListStoreTool.m in Sources */,
 				2C4C1C301F386E3B00002166 /* TJSMobileCallUtil.m in Sources */,
 				2C4C1C0A1F38496800002166 /* TJSMyOrderListConfigurator.m in Sources */,
+				2C1B74BE1F4694FF0000E71A /* BankCardListConfigurator.m in Sources */,
 				2C85E37A1F2F02B800ADD360 /* TJSMineHomeInteractorImpl.m in Sources */,
 				2C859CE41F31EB2E00B86575 /* YZDisplayTitleLabel.m in Sources */,
 				2CB4F5E41F41C3BB00FF98C9 /* ContractListConfigurator.m in Sources */,
+				2C1B74C41F4694FF0000E71A /* BankCardInfoModel.m in Sources */,
 				2CD896ED1F453F8C008F7C73 /* ContractAddAddressCellLayoutConfig.m in Sources */,
 				2CAF42D51F281B8600ABCA5E /* TJSProductListTextContentConfig.m in Sources */,
 				2CCBE4921F34207C006C4018 /* TJSBaseTableHeaderFooterView.m in Sources */,
@@ -5345,6 +5674,7 @@
 				2C859CF71F31EB2E00B86575 /* ZLPhotoPickerGroup.m in Sources */,
 				2CCC85B01F3AEE3A0009FC1C /* TJSProductFilterDataSourceImpl.m in Sources */,
 				2C85E3A41F2F1AF900ADD360 /* TJSMineHomeDefaultCellContentConfig.m in Sources */,
+				2C1B74E61F4698A30000E71A /* BankCardAddDefaultContentConfig.m in Sources */,
 				2CD8974F1F457B96008F7C73 /* AddressSelectedDataSourceImpl.m in Sources */,
 				2C85E3A71F2F1BEB00ADD360 /* MineHomeDefaultCell.m in Sources */,
 				2CB4F6121F42982800FF98C9 /* ContractListCell.m in Sources */,
@@ -5356,12 +5686,14 @@
 				2C300F821F2F3C5F00DD440E /* ModifyLogPasswordController.m in Sources */,
 				2CAF43181F2829CF00ABCA5E /* TJSProductEvent.m in Sources */,
 				2CB4F5731F418FFB00FF98C9 /* CumulativeInvestController.m in Sources */,
+				2C1B74E21F4698A30000E71A /* BankCardAddCellFactory.m in Sources */,
 				2CB4F5721F418FFB00FF98C9 /* CumulativeInvestConfig.m in Sources */,
 				2CB4F6151F4298E900FF98C9 /* ContractListCellFactory.m in Sources */,
 				2C859CF51F31EB2E00B86575 /* ZLPhotoAssets.m in Sources */,
 				2C85E3B01F2F1C2B00ADD360 /* MineHomeBalanceCell.m in Sources */,
 				2C859CEC1F31EB2E00B86575 /* ZLCameraViewController.m in Sources */,
 				2CD896BD1F453A05008F7C73 /* AdressEditNetworkTool.m in Sources */,
+				2C1B74C31F4694FF0000E71A /* BankCardInfo.m in Sources */,
 				2C83C7251F39BA30004034CA /* PersonalMessageCell.m in Sources */,
 				2C859CF01F31EB2E00B86575 /* ZLPhotoPickerBrowserViewController.m in Sources */,
 				2CAF42DB1F281B8600ABCA5E /* ProductListViewController.m in Sources */,
@@ -5374,6 +5706,7 @@
 				2C4C1C041F38477E00002166 /* MyOrderInfoModel.m in Sources */,
 				2C4412791F21E83D00C453EF /* UIImage+ColorAtPixel.m in Sources */,
 				2C85E3971F2F155700ADD360 /* MineHomeBaseTableCell.m in Sources */,
+				2C1B74BC1F4694FF0000E71A /* BankCardListDefaultContentConfig.m in Sources */,
 				2C85E38C1F2F09F100ADD360 /* TJSMineHomeCellLayoutConfig.m in Sources */,
 				2C4412041F219A5300C453EF /* UIImage+FromColor.m in Sources */,
 				2CAF42851F27261A00ABCA5E /* TJSProductDeleteApi.m in Sources */,
@@ -5408,6 +5741,7 @@
 				2CAF43071F2828C200ABCA5E /* TJSProductListDataSourceImpl.m in Sources */,
 				A292B26A1F39F8470086E03E /* CapitalRecordInfo.m in Sources */,
 				2C859D001F31EB2E00B86575 /* ZLPhotoPickerGroupTableViewCell.m in Sources */,
+				2C1B74B71F4694FF0000E71A /* BankCardListAddContentConfig.m in Sources */,
 				2CB4F65F1F43052E00FF98C9 /* ContractDetailNetworkTool.m in Sources */,
 				2C4C1C881F3948E100002166 /* PNPieChart.m in Sources */,
 				2CD896FA1F45435F008F7C73 /* AdressManageNetworkTool.m in Sources */,
@@ -5433,6 +5767,7 @@
 				2CB4F5751F418FFB00FF98C9 /* CumulateInvestInfoModel.m in Sources */,
 				2C027D131F3C7C61001D7EB6 /* ProductFilterResultInteractorImpl.m in Sources */,
 				2CD896A81F442D99008F7C73 /* ContractInfoApplyModel.m in Sources */,
+				2C1B74B81F4694FF0000E71A /* BankCardListCellFactory.m in Sources */,
 				2CD897551F45851A008F7C73 /* ConAddressRightInputContentConfig.m in Sources */,
 				2CB4F5EE1F41C3BB00FF98C9 /* ContractListNetworkTool.m in Sources */,
 				2C4412A91F2201FF00C453EF /* TJWUrlArgumentsFilter.m in Sources */,
@@ -5451,13 +5786,16 @@
 				2C83C71D1F39B9C9004034CA /* MessageKindListController.m in Sources */,
 				2C4C1CB51F3956C300002166 /* FeedbackViewController.m in Sources */,
 				2C4412431F21D36200C453EF /* TJSEnumValueService.m in Sources */,
+				2C1B75011F469E5A0000E71A /* BankCardAddDataSourceImpl.m in Sources */,
 				2CAF43091F2828C200ABCA5E /* TJSProductListLayoutImpl.m in Sources */,
 				2C300F881F2F3C9900DD440E /* FindWithDrawPasswordController.m in Sources */,
 				2C83C6F91F39B6C2004034CA /* TJSBaseStoreTool.m in Sources */,
 				2CD8970F1F45480B008F7C73 /* AddressManageTableAdapter.m in Sources */,
 				2CD896BE1F453A05008F7C73 /* AddAdressViewController.m in Sources */,
 				A292B2731F39F8AB0086E03E /* CapitalRecordStoreTool.m in Sources */,
+				2C1B74BB1F4694FF0000E71A /* BankCardListContentConfigFactory.m in Sources */,
 				2C027D241F3C8296001D7EB6 /* ProductSearchInteractorImpl.m in Sources */,
+				2C1B75041F469E5A0000E71A /* BankCardAddTableAdapter.m in Sources */,
 				2CAF430A1F2828C200ABCA5E /* TJSProductListTableAdapter.m in Sources */,
 				2CB4F5771F418FFB00FF98C9 /* CumulateInvestStoreTool.m in Sources */,
 				2CF8B5581F3DA324003B8520 /* ProductSearchHotApi.m in Sources */,
@@ -5471,12 +5809,14 @@
 				A28956981F3CA25E002D6845 /* ProductSearchResultLayout.m in Sources */,
 				2CCBE4A51F344A98006C4018 /* MineHomeCellIvestItem.m in Sources */,
 				2C300F7F1F2F3C3C00DD440E /* ProfileViewController.m in Sources */,
+				2C1B74D41F4698050000E71A /* BankCardAddViewController.m in Sources */,
 				2CB4F5E61F41C3BB00FF98C9 /* ContractListInteractorImpl.m in Sources */,
 				2C83C70A1F39B85B004034CA /* NewsListStoreTool.m in Sources */,
 				2CD8972B1F457587008F7C73 /* AddressSelectedModel.m in Sources */,
 				2C4C1C9D1F39493400002166 /* PNLineChart.m in Sources */,
 				2C4C1C1C1F3852F300002166 /* TJSMyOrderListCellFactory.m in Sources */,
 				2CAF426F1F26E01E00ABCA5E /* TJSProductListApi.m in Sources */,
+				2C1B74BD1F4694FF0000E71A /* BackCardManagerController.m in Sources */,
 				2C4C1CA81F394BDC00002166 /* FeedbackContainerController.m in Sources */,
 				2C85E3B71F2F302900ADD360 /* UIImage+Resizeable.m in Sources */,
 				2C8DE5CC1F2AE3BC009B3AE2 /* DiscoNewsListController.m in Sources */,
@@ -5488,12 +5828,15 @@
 				2C83C71E1F39B9C9004034CA /* PersonalMessageController.m in Sources */,
 				A292B26D1F39F8570086E03E /* CapitalRecordInfoModel.m in Sources */,
 				2C85E39B1F2F1A3100ADD360 /* TJSMineHomeOrderCellContentConfig.m in Sources */,
+				2C1B74BA1F4694FF0000E71A /* BankCardListConfig.m in Sources */,
 				2C8BB7A21F30859C00E2D75F /* HomeFooterCollectionLayout.m in Sources */,
 				2CAF42D61F281B8600ABCA5E /* TJSBaseProductListContentConfig.m in Sources */,
 				2CD897421F457B55008F7C73 /* AddressSelectedContentConfigFactory.m in Sources */,
 				2C4C1C101F384A3B00002166 /* TJSMyOrderListDataSourceImpl.m in Sources */,
 				2C44127C1F21E97700C453EF /* UITextField+PlaceHolder.m in Sources */,
+				2C1B74F21F469A140000E71A /* BankCardAddHeaderFooterView.m in Sources */,
 				2CAF42F61F28273300ABCA5E /* ProductListCellImageContentView.m in Sources */,
+				2C1B750A1F46C1100000E71A /* BankCardAddNetworkTool.m in Sources */,
 				A292B2671F39F8390086E03E /* CapitalRecordListCell.m in Sources */,
 				2CD896DE1F453D33008F7C73 /* ContractAddAddressConfigurator.m in Sources */,
 				2C4C1C9E1F39493400002166 /* PNLineChartData.m in Sources */,
@@ -5523,6 +5866,7 @@
 				2C8BB7A31F30859C00E2D75F /* HomeFooterContainer.m in Sources */,
 				2C8DE6051F2AECCD009B3AE2 /* TJSDiscoNewsLayoutImpl.m in Sources */,
 				2C85E3A11F2F1ACC00ADD360 /* TJSMineHomeBalanceCellContentConfig.m in Sources */,
+				2C1B74C11F4694FF0000E71A /* BankCardListLayoutImpl.m in Sources */,
 				2C859CE91F31EB2E00B86575 /* ZLCamera.m in Sources */,
 				2C4412971F22004500C453EF /* TJSThemeService.m in Sources */,
 				2C859CE71F31EB2E00B86575 /* UIImage+ZLPhotoLib.m in Sources */,
@@ -5530,6 +5874,8 @@
 				2C4C1C221F38535A00002166 /* TJSMyBaseOrderListCellContentConfig.m in Sources */,
 				2CAF427E1F26EAE300ABCA5E /* TJSAppVersionApi.m in Sources */,
 				2CCC85AE1F3AEE3A0009FC1C /* TJSProductFilterCollAdapter.m in Sources */,
+				2C1B74EC1F4699A50000E71A /* BankCardAddBaseTableCell.m in Sources */,
+				2C1B74B91F4694FF0000E71A /* BankCardListCellLayoutConfig.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

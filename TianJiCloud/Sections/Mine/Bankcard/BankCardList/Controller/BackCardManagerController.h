@@ -8,6 +8,10 @@
 
 #import "TJSBaseViewController.h"
 
-@interface BackCardManagerController : TJSBaseViewController
+#import "BankCardListConfigurateProtocol.h"
+
+@interface BackCardManagerController : TJSBaseViewController<TJSBaseTableViewCellDelegate,BankCardListInteractorDelegate>
+
+
 
 @end

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@protocol TJSTableHeaderFooterViewProtocol <NSObject>
+@protocol TJSBaseTableHeaderFooterViewProtocol <NSObject>
 
 @optional
 
@@ -23,6 +23,6 @@
 @end
 
 
-@interface TJSBaseTableHeaderFooterView : UITableViewHeaderFooterView<TJSTableHeaderFooterViewProtocol>
+@interface TJSBaseTableHeaderFooterView : UITableViewHeaderFooterView<TJSBaseTableHeaderFooterViewProtocol>
 
 @end
