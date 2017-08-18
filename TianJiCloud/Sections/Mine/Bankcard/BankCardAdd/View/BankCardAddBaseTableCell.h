@@ -8,6 +8,9 @@
 
 #import "TJSBaseTableViewCell.h"
 
+#import "BankCardAddCellInfoModel.h"
+
+
 @interface BankCardAddBaseTableCell : TJSBaseTableViewCell
 
 @end

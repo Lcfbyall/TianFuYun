@@ -66,9 +66,9 @@ static NSString *const headerFooterIdentifier = @"BankCardAddHeaderFooterView";
     
     BankCardAddCellInfoModel *model = [((NSArray *)[self.interactor.items objectAtIndex:indexPath.section]) objectAtIndex:indexPath.row];
     
-    
     TJSBaseTableViewCell *cell = (TJSBaseTableViewCell *)[_cellFactory cellInTable:tableView forMineInfoModel:model];
     
+    [cell tjs_bindDataToCellWithValue:model];
     
     return cell;
 }
@@ -79,7 +79,6 @@ static NSString *const headerFooterIdentifier = @"BankCardAddHeaderFooterView";
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
 
     BankCardAddCellInfoModel *model = [((NSArray *)[self.interactor.items objectAtIndex:indexPath.section]) objectAtIndex:indexPath.row];
-    
     
     CGFloat height =  [_cellFactory cellHeight:model cellWidth:SCREEN_WIDTH];
     
@@ -107,8 +106,9 @@ static NSString *const headerFooterIdentifier = @"BankCardAddHeaderFooterView";
     
     BankCardAddHeaderFooterView *header = [tableView dequeueReusableHeaderFooterViewWithIdentifier:headerFooterIdentifier];
 
+    BankCardAddCellInfoModel *model = [((NSArray *)[self.interactor.items objectAtIndex:section]) objectAtIndex:0];
     
-    [header tjs_bindDataToCellWithValue:@""];
+    [header tjs_bindDataToCellWithValue:[model.headFooterTitles firstObject]];
     
     return header;
 }
@@ -122,8 +122,9 @@ static NSString *const headerFooterIdentifier = @"BankCardAddHeaderFooterView";
  
     BankCardAddHeaderFooterView *header = [tableView dequeueReusableHeaderFooterViewWithIdentifier:headerFooterIdentifier];
   
+    BankCardAddCellInfoModel *model = [((NSArray *)[self.interactor.items objectAtIndex:section]) objectAtIndex:0];
     
-    [header tjs_bindDataToCellWithValue:@""];
+    [header tjs_bindDataToCellWithValue:[model.headFooterTitles lastObject]];
     
     return header;
 }

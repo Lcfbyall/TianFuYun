@@ -27,8 +27,8 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9su-h3-bwP">
-                        <rect key="frame" x="70" y="10" width="283" height="30"/>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9su-h3-bwP">
+                        <rect key="frame" x="78" y="10" width="275" height="30"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="30" id="VRy-tf-Y5g"/>
                         </constraints>
@@ -38,7 +38,7 @@
                     </textField>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="9su-h3-bwP" firstAttribute="leading" secondItem="zGj-zT-AwG" secondAttribute="trailing" constant="26" id="K0E-vR-dCU"/>
+                    <constraint firstItem="9su-h3-bwP" firstAttribute="leading" secondItem="SEa-wV-T5Z" secondAttribute="leading" constant="78" id="2xW-Hn-w18"/>
                     <constraint firstItem="zGj-zT-AwG" firstAttribute="centerY" secondItem="SEa-wV-T5Z" secondAttribute="centerY" id="LOI-jt-QED"/>
                     <constraint firstItem="9su-h3-bwP" firstAttribute="centerY" secondItem="SEa-wV-T5Z" secondAttribute="centerY" id="Svo-Zl-5ld"/>
                     <constraint firstItem="zGj-zT-AwG" firstAttribute="leading" secondItem="SEa-wV-T5Z" secondAttribute="leading" constant="15" id="WrI-SZ-7vs"/>
@@ -46,6 +46,10 @@
                     <constraint firstItem="zGj-zT-AwG" firstAttribute="centerY" secondItem="SEa-wV-T5Z" secondAttribute="centerY" id="vlH-aJ-cwr"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="textField" destination="9su-h3-bwP" id="L8M-5I-vhc"/>
+                <outlet property="titleL" destination="zGj-zT-AwG" id="ZMJ-xx-3jb"/>
+            </connections>
             <point key="canvasLocation" x="13.5" y="-416"/>
         </tableViewCell>
     </objects>

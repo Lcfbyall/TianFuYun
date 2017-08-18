@@ -10,6 +10,12 @@
 
 @implementation BankCardAddBaseTableCell
 
+#pragma mark - <TJSBaseTableViewCellProtocol>
 
+- (void)tjs_bindDataToCellWithValue:(id)value{
+  
+    self.accessoryType =  ((BankCardAddCellInfoModel *)value).accessoryType;
+    self.selectionStyle = ((BankCardAddCellInfoModel *)value).selectionStyle;
+}
 
 @end
