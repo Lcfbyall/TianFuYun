@@ -44,7 +44,17 @@ static NSString *const headerFooterIdentifier = @"BankCardAddHeaderFooterView";
     
     _tableView.backgroundColor = ThemeService.weak_color_00;
 
-    _tableView.tableFooterView = [UIView new];
+    WEAK_SELF(self);
+    _tableView.tableFooterView = [UIButton tjs_commitBtnForTBFooter:@"提交保存" state: UIControlStateDisabled blockForControl:^(id sender) {
+
+        STRONG_SELF(self);
+        [self.interactor addBankCard:^(id result, NSError * error) {
+
+
+        }];
+        
+    }];
+
     
     [_tableView registerClass:[BankCardAddHeaderFooterView class] forHeaderFooterViewReuseIdentifier:headerFooterIdentifier];
 }
@@ -74,6 +84,13 @@ static NSString *const headerFooterIdentifier = @"BankCardAddHeaderFooterView";
 }
 
 
+#pragma mark - <UIScrollViewDelegate>
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
+
+     [scrollView.tjs_viewController.view endEditing:YES];
+}
+
 #pragma mark - <UITableViewDelegate>
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -90,7 +107,7 @@ static NSString *const headerFooterIdentifier = @"BankCardAddHeaderFooterView";
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    BankCardAddCellInfoModel *model = [((NSArray *)[self.interactor.items objectAtIndex:indexPath.section]) objectAtIndex:indexPath.row];
+    //BankCardAddCellInfoModel *model = [((NSArray *)[self.interactor.items objectAtIndex:indexPath.section]) objectAtIndex:indexPath.row];
     
     
   

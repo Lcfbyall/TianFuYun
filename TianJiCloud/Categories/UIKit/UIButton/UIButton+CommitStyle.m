@@ -45,6 +45,23 @@
     return btn;
 }
 
++ (UIView *)tjs_commitBtnForTBFooter:(NSString *)title
+                               state:(UIControlState)state
+                     blockForControl:(void (^)(id))block{
+
+    UIView *bgview = [self tjs_commitBtnForTBFooter:title blockForControl:block];
+
+    UIButton *btn = [bgview viewWithTag:1111];
+
+    if(state == UIControlStateDisabled) btn.enabled = NO;
+
+    if(state == UIControlStateSelected) btn.selected = YES;
+
+    if(state == UIControlStateHighlighted) btn.highlighted=YES;
+
+    return bgview;
+}
+
 
 + (UIView *)tjs_commitBtnForTBFooter:(NSString *)title
                      blockForControl:(void (^)(id))block{
@@ -53,7 +70,7 @@
     bgView.frame = CGRectMake(0, 0, SCREEN_WIDTH, 90);
     
     UIButton *btn= [UIButton buttonWithType:UIButtonTypeCustom];
-    
+    btn.tag = 1111;
     btn.frame  = CGRectMake(0, 0, SCREEN_WIDTH-16*2, 50);
     
     btn.center = CGPointMake(bgView.bounds.size.width/2.0, bgView.bounds.size.height/2.0);

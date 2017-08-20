@@ -17,5 +17,9 @@
 + (UIView *)tjs_commitBtnForTBFooter:(NSString *)title
                      blockForControl:(void (^)(id))block;
 
++ (UIView *)tjs_commitBtnForTBFooter:(NSString *)title
+                               state:(UIControlState)state
+                     blockForControl:(void (^)(id))block;
+
 
 @end

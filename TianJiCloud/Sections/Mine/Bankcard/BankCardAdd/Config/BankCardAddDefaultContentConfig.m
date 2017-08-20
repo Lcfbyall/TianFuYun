@@ -26,7 +26,7 @@
 
 - (NSString *)cellContent:(id)model{
 
-  static NSString *const identifier = @"BankCardAddDefaaultCell";
+  static NSString *const identifier = @"BankCardAddDefaultCell";
     
   return identifier;
 }

@@ -492,6 +492,10 @@
 		2CF8B5681F3DC6F9003B8520 /* ProductHotCellContentConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF8B5671F3DC6F9003B8520 /* ProductHotCellContentConfig.m */; };
 		2CF8B56B1F3DC710003B8520 /* ProductSearchCellContentConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF8B56A1F3DC710003B8520 /* ProductSearchCellContentConfig.m */; };
 		2CF8B56E1F3DD88D003B8520 /* ProductSearchResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CF8B56D1F3DD88D003B8520 /* ProductSearchResultCell.xib */; };
+		A216E3291F48097100EBBD32 /* BankPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = A216E3281F48097100EBBD32 /* BankPickerView.m */; };
+		A216E32C1F48098800EBBD32 /* AddressPikerView.m in Sources */ = {isa = PBXBuildFile; fileRef = A216E32B1F48098800EBBD32 /* AddressPikerView.m */; };
+		A216E32E1F48129200EBBD32 /* BankPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A216E32D1F48129200EBBD32 /* BankPickerView.xib */; };
+		A216E3301F48147A00EBBD32 /* AddressPikerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A216E32F1F48147A00EBBD32 /* AddressPikerView.xib */; };
 		A28956951F3CA22A002D6845 /* ProductSearchHotLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A28956941F3CA22A002D6845 /* ProductSearchHotLayout.m */; };
 		A28956981F3CA25E002D6845 /* ProductSearchResultLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A28956971F3CA25E002D6845 /* ProductSearchResultLayout.m */; };
 		A292B2611F39F7DD0086E03E /* CapitalRecordListController.m in Sources */ = {isa = PBXBuildFile; fileRef = A292B2601F39F7DD0086E03E /* CapitalRecordListController.m */; };
@@ -1528,6 +1532,12 @@
 		2CF8B56C1F3DC75D003B8520 /* TJSBaseCellContentConfigProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TJSBaseCellContentConfigProtocol.h; sourceTree = "<group>"; };
 		2CF8B56D1F3DD88D003B8520 /* ProductSearchResultCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductSearchResultCell.xib; sourceTree = "<group>"; };
 		78C8A77EBFE6464B5B247606 /* Pods-TianJiCloud.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TianJiCloud.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TianJiCloud/Pods-TianJiCloud.debug.xcconfig"; sourceTree = "<group>"; };
+		A216E3271F48097100EBBD32 /* BankPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankPickerView.h; sourceTree = "<group>"; };
+		A216E3281F48097100EBBD32 /* BankPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankPickerView.m; sourceTree = "<group>"; };
+		A216E32A1F48098800EBBD32 /* AddressPikerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressPikerView.h; sourceTree = "<group>"; };
+		A216E32B1F48098800EBBD32 /* AddressPikerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressPikerView.m; sourceTree = "<group>"; };
+		A216E32D1F48129200EBBD32 /* BankPickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BankPickerView.xib; sourceTree = "<group>"; };
+		A216E32F1F48147A00EBBD32 /* AddressPikerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddressPikerView.xib; sourceTree = "<group>"; };
 		A28956931F3CA22A002D6845 /* ProductSearchHotLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductSearchHotLayout.h; sourceTree = "<group>"; };
 		A28956941F3CA22A002D6845 /* ProductSearchHotLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductSearchHotLayout.m; sourceTree = "<group>"; };
 		A28956961F3CA25E002D6845 /* ProductSearchResultLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductSearchResultLayout.h; sourceTree = "<group>"; };
@@ -1787,6 +1797,9 @@
 		2C1B74D11F4695AE0000E71A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A216E3271F48097100EBBD32 /* BankPickerView.h */,
+				A216E3281F48097100EBBD32 /* BankPickerView.m */,
+				A216E32D1F48129200EBBD32 /* BankPickerView.xib */,
 				2C1B74EA1F4699A50000E71A /* BankCardAddBaseTableCell.h */,
 				2C1B74EB1F4699A50000E71A /* BankCardAddBaseTableCell.m */,
 				2C1B74ED1F4699BE0000E71A /* BankCardAddDefaultCell.h */,
@@ -4876,6 +4889,9 @@
 		2CD896B91F453A05008F7C73 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A216E32A1F48098800EBBD32 /* AddressPikerView.h */,
+				A216E32B1F48098800EBBD32 /* AddressPikerView.m */,
+				A216E32F1F48147A00EBBD32 /* AddressPikerView.xib */,
 				2CD896C51F453B09008F7C73 /* ContractAddAddressBaseCell.h */,
 				2CD896C61F453B09008F7C73 /* ContractAddAddressBaseCell.m */,
 				2CD896C81F453BE0008F7C73 /* ConAddressRightInputCell.h */,
@@ -5324,6 +5340,7 @@
 				2C4411BE1F21981E00C453EF /* LaunchScreen.storyboard in Resources */,
 				2CAF42F91F28273300ABCA5E /* ProductListCell.xib in Resources */,
 				2C431E111F29C6B200858C12 /* ProductFilter.storyboard in Resources */,
+				A216E3301F48147A00EBBD32 /* AddressPikerView.xib in Resources */,
 				2C431E0F1F29C59C00858C12 /* Message.storyboard in Resources */,
 				2C7A34591F2F685B004DD566 /* UseAgreement.storyboard in Resources */,
 				2C300F8D1F2F3D4700DD440E /* Profile.storyboard in Resources */,
@@ -5363,6 +5380,7 @@
 				2C1BFEBD1F29779100665A71 /* Home.storyboard in Resources */,
 				2C7A34571F2F673D004DD566 /* ContractApply.storyboard in Resources */,
 				2C8BB7BD1F315D2800E2D75F /* HomeHeaderWeb.storyboard in Resources */,
+				A216E32E1F48129200EBBD32 /* BankPickerView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5479,6 +5497,7 @@
 				2C1B74C51F4694FF0000E71A /* BankCardListNetworkTool.m in Sources */,
 				2CB4F60B1F42849100FF98C9 /* MyFavListTableAdapter.m in Sources */,
 				2C4C1C2D1F386DF400002166 /* TJSAlertHandleUtil.m in Sources */,
+				A216E3291F48097100EBBD32 /* BankPickerView.m in Sources */,
 				2CD897241F4572CC008F7C73 /* AddressManageDefaultCell.m in Sources */,
 				2C4C1C931F3948E800002166 /* PNChartLabel.m in Sources */,
 				A2FE0A8C1F38B4B400E678E5 /* MyFavVCConfig.m in Sources */,
@@ -5588,6 +5607,7 @@
 				2CF8B53E1F3D469F003B8520 /* ProductSearchHotCell.m in Sources */,
 				2CCC85B91F3AEEDE0009FC1C /* ProductFilterResultController.m in Sources */,
 				A292B2701F39F88F0086E03E /* CapitalRecordNetworkTool.m in Sources */,
+				A216E32C1F48098800EBBD32 /* AddressPikerView.m in Sources */,
 				2C4412AD1F22031600C453EF /* TJSHudAlert.m in Sources */,
 				2C8DE5811F29D4F7009B3AE2 /* TJSHomeListTableAdapter.m in Sources */,
 				2C431DEC1F299A9600858C12 /* HomeViewController.m in Sources */,
