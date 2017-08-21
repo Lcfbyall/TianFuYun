@@ -316,6 +316,11 @@
 		2CA6391C1F4ADE8A00C39562 /* WithDrawDepositSumCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CA6391B1F4ADE8A00C39562 /* WithDrawDepositSumCell.xib */; };
 		2CA6391F1F4AE3BD00C39562 /* WithDrawDepositNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA6391E1F4AE3BD00C39562 /* WithDrawDepositNetworkTool.m */; };
 		2CA639221F4AE42200C39562 /* WithDrawDepositCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA639211F4AE42200C39562 /* WithDrawDepositCellModel.m */; };
+		2CA6392F1F4AE9D000C39562 /* WithdrawDepositCellFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA639261F4AE9D000C39562 /* WithdrawDepositCellFactory.m */; };
+		2CA639301F4AE9D000C39562 /* WithdrawDepositCellLayoutConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA639281F4AE9D000C39562 /* WithdrawDepositCellLayoutConfig.m */; };
+		2CA639321F4AE9D000C39562 /* WithdrawDepositContentConfigFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA6392C1F4AE9D000C39562 /* WithdrawDepositContentConfigFactory.m */; };
+		2CA639331F4AE9D000C39562 /* WithdrawDepositDefaultContentConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA6392E1F4AE9D000C39562 /* WithdrawDepositDefaultContentConfig.m */; };
+		2CA639371F4AEAC300C39562 /* WithdrawDepositHeaderFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA639361F4AEAC300C39562 /* WithdrawDepositHeaderFooterView.m */; };
 		2CAF426F1F26E01E00ABCA5E /* TJSProductListApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF426E1F26E01E00ABCA5E /* TJSProductListApi.m */; };
 		2CAF42731F26E66500ABCA5E /* TJSBaseNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF42721F26E66500ABCA5E /* TJSBaseNetworkTool.m */; };
 		2CAF427A1F26EAA600ABCA5E /* AppVersionNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF42791F26EAA600ABCA5E /* AppVersionNetworkTool.m */; };
@@ -1170,6 +1175,16 @@
 		2CA639231F4AE81400C39562 /* WithdrawDepositConfigProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WithdrawDepositConfigProtocol.h; sourceTree = "<group>"; };
 		2CA639241F4AE81400C39562 /* WithdrawDepositConfigurateProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WithdrawDepositConfigurateProtocol.h; sourceTree = "<group>"; };
 		2CA639251F4AE81400C39562 /* WithdrawDepositPrivateProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WithdrawDepositPrivateProtocol.h; sourceTree = "<group>"; };
+		2CA639261F4AE9D000C39562 /* WithdrawDepositCellFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WithdrawDepositCellFactory.m; sourceTree = "<group>"; };
+		2CA639271F4AE9D000C39562 /* WithdrawDepositCellLayoutConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WithdrawDepositCellLayoutConfig.h; sourceTree = "<group>"; };
+		2CA639281F4AE9D000C39562 /* WithdrawDepositCellLayoutConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WithdrawDepositCellLayoutConfig.m; sourceTree = "<group>"; };
+		2CA6392B1F4AE9D000C39562 /* WithdrawDepositContentConfigFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WithdrawDepositContentConfigFactory.h; sourceTree = "<group>"; };
+		2CA6392C1F4AE9D000C39562 /* WithdrawDepositContentConfigFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WithdrawDepositContentConfigFactory.m; sourceTree = "<group>"; };
+		2CA6392D1F4AE9D000C39562 /* WithdrawDepositDefaultContentConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WithdrawDepositDefaultContentConfig.h; sourceTree = "<group>"; };
+		2CA6392E1F4AE9D000C39562 /* WithdrawDepositDefaultContentConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WithdrawDepositDefaultContentConfig.m; sourceTree = "<group>"; };
+		2CA639341F4AEA8300C39562 /* WithdrawDepositCellFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WithdrawDepositCellFactory.h; sourceTree = "<group>"; };
+		2CA639351F4AEAC300C39562 /* WithdrawDepositHeaderFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WithdrawDepositHeaderFooterView.h; sourceTree = "<group>"; };
+		2CA639361F4AEAC300C39562 /* WithdrawDepositHeaderFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WithdrawDepositHeaderFooterView.m; sourceTree = "<group>"; };
 		2CAF426D1F26E01E00ABCA5E /* TJSProductListApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSProductListApi.h; sourceTree = "<group>"; };
 		2CAF426E1F26E01E00ABCA5E /* TJSProductListApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSProductListApi.m; sourceTree = "<group>"; };
 		2CAF42711F26E66500ABCA5E /* TJSBaseNetworkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSBaseNetworkTool.h; sourceTree = "<group>"; };
@@ -3928,6 +3943,14 @@
 			children = (
 				2CA638FF1F4AD41700C39562 /* WithDrawDepositConfig.h */,
 				2CA639001F4AD41700C39562 /* WithDrawDepositConfig.m */,
+				2CA639341F4AEA8300C39562 /* WithdrawDepositCellFactory.h */,
+				2CA639261F4AE9D000C39562 /* WithdrawDepositCellFactory.m */,
+				2CA639271F4AE9D000C39562 /* WithdrawDepositCellLayoutConfig.h */,
+				2CA639281F4AE9D000C39562 /* WithdrawDepositCellLayoutConfig.m */,
+				2CA6392B1F4AE9D000C39562 /* WithdrawDepositContentConfigFactory.h */,
+				2CA6392C1F4AE9D000C39562 /* WithdrawDepositContentConfigFactory.m */,
+				2CA6392D1F4AE9D000C39562 /* WithdrawDepositDefaultContentConfig.h */,
+				2CA6392E1F4AE9D000C39562 /* WithdrawDepositDefaultContentConfig.m */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -3994,6 +4017,8 @@
 				2CA639161F4ADD5300C39562 /* WithDrawDepositSumCell.h */,
 				2CA639171F4ADD5300C39562 /* WithDrawDepositSumCell.m */,
 				2CA6391B1F4ADE8A00C39562 /* WithDrawDepositSumCell.xib */,
+				2CA639351F4AEAC300C39562 /* WithdrawDepositHeaderFooterView.h */,
+				2CA639361F4AEAC300C39562 /* WithdrawDepositHeaderFooterView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -5844,6 +5869,7 @@
 				2C4412591F21DDA900C453EF /* UIWindow+Transition.m in Sources */,
 				2C4C1C071F3847C200002166 /* MyOrderListVCConfig.m in Sources */,
 				2C83C7021F39B79C004034CA /* TJSStoreManager.m in Sources */,
+				2CA6392F1F4AE9D000C39562 /* WithdrawDepositCellFactory.m in Sources */,
 				2CCC85C21F3AEF4D0009FC1C /* ProductFilterResultCell.m in Sources */,
 				2CB4F5781F418FFB00FF98C9 /* CumulateInvestBarCell.m in Sources */,
 				2CB4F63B1F42F26500FF98C9 /* ContractApplyConfigurator.m in Sources */,
@@ -6044,6 +6070,7 @@
 				2CAF43071F2828C200ABCA5E /* TJSProductListDataSourceImpl.m in Sources */,
 				A292B26A1F39F8470086E03E /* CapitalRecordInfo.m in Sources */,
 				2C859D001F31EB2E00B86575 /* ZLPhotoPickerGroupTableViewCell.m in Sources */,
+				2CA639321F4AE9D000C39562 /* WithdrawDepositContentConfigFactory.m in Sources */,
 				2C1B74B71F4694FF0000E71A /* BankCardListAddContentConfig.m in Sources */,
 				2CA6391F1F4AE3BD00C39562 /* WithDrawDepositNetworkTool.m in Sources */,
 				2CB4F65F1F43052E00FF98C9 /* ContractDetailNetworkTool.m in Sources */,
@@ -6066,6 +6093,7 @@
 				2C85E39E1F2F1A5800ADD360 /* TJSMineHomeInvestCellContentConfig.m in Sources */,
 				2CB4F6501F42F58800FF98C9 /* ContractApplyProductResultCell.m in Sources */,
 				A292B2771F39F92D0086E03E /* CapitalRecordVCConfig.m in Sources */,
+				2CA639371F4AEAC300C39562 /* WithdrawDepositHeaderFooterView.m in Sources */,
 				2C89AD8A1F2C9FE5005C29AC /* UIView+TJSViewController.m in Sources */,
 				2CCC85BF1F3AEF2C0009FC1C /* FilterResultVCConfig.m in Sources */,
 				2CB4F5751F418FFB00FF98C9 /* CumulateInvestInfoModel.m in Sources */,
@@ -6118,6 +6146,7 @@
 				2C83C70A1F39B85B004034CA /* NewsListStoreTool.m in Sources */,
 				2CD8972B1F457587008F7C73 /* AddressSelectedModel.m in Sources */,
 				2C4C1C9D1F39493400002166 /* PNLineChart.m in Sources */,
+				2CA639331F4AE9D000C39562 /* WithdrawDepositDefaultContentConfig.m in Sources */,
 				2C4C1C1C1F3852F300002166 /* TJSMyOrderListCellFactory.m in Sources */,
 				2CAF426F1F26E01E00ABCA5E /* TJSProductListApi.m in Sources */,
 				2C1B74BD1F4694FF0000E71A /* BackCardManagerController.m in Sources */,
@@ -6136,6 +6165,7 @@
 				2C8BB7A21F30859C00E2D75F /* HomeFooterCollectionLayout.m in Sources */,
 				2CAF42D61F281B8600ABCA5E /* TJSBaseProductListContentConfig.m in Sources */,
 				2CD897421F457B55008F7C73 /* AddressSelectedContentConfigFactory.m in Sources */,
+				2CA639301F4AE9D000C39562 /* WithdrawDepositCellLayoutConfig.m in Sources */,
 				2C4C1C101F384A3B00002166 /* TJSMyOrderListDataSourceImpl.m in Sources */,
 				2C44127C1F21E97700C453EF /* UITextField+PlaceHolder.m in Sources */,
 				2C1B74F21F469A140000E71A /* BankCardAddHeaderFooterView.m in Sources */,

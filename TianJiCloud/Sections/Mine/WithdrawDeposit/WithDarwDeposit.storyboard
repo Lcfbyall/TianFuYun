@@ -39,7 +39,7 @@
                     <connections>
                         <outlet property="withDrawList" destination="wNE-3G-4A1" id="Usv-mo-ale"/>
                         <segue destination="xv3-Sh-Q1d" kind="show" identifier="WithDarwDepostVCToRecordVC" id="oxm-Yp-au6"/>
-                        <segue destination="jq2-9A-7Nf" kind="show" id="OKp-ti-grb"/>
+                        <segue destination="jq2-9A-7Nf" kind="show" identifier="WithDrawToBankSeletedVC" id="OKp-ti-grb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MGo-Li-nmB" userLabel="First Responder" sceneMemberID="firstResponder"/>
