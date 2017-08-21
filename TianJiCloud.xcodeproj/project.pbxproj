@@ -228,8 +228,6 @@
 		2C85E33E1F2ECB1300ADD360 /* UseAgreementController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E33D1F2ECB1300ADD360 /* UseAgreementController.m */; };
 		2C85E34D1F2ECC1200ADD360 /* AboutMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E34C1F2ECC1200ADD360 /* AboutMeViewController.m */; };
 		2C85E3581F2ECDA200ADD360 /* CapitalRecordContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E3571F2ECDA200ADD360 /* CapitalRecordContainer.m */; };
-		2C85E3611F2ECE7300ADD360 /* WithdrawDepositController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E3601F2ECE7300ADD360 /* WithdrawDepositController.m */; };
-		2C85E3641F2ECE9400ADD360 /* WithdrawDepositRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E3631F2ECE9400ADD360 /* WithdrawDepositRecord.m */; };
 		2C85E3701F2ED87A00ADD360 /* MineHomeVCConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E36F1F2ED87A00ADD360 /* MineHomeVCConfig.m */; };
 		2C85E3731F2EDB1000ADD360 /* TJSBaseControllerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E3721F2EDB1000ADD360 /* TJSBaseControllerConfig.m */; };
 		2C85E3771F2F02A200ADD360 /* TJSMineHomeConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E3761F2F02A200ADD360 /* TJSMineHomeConfigurator.m */; };
@@ -306,6 +304,8 @@
 		2C8DE6181F2B43A8009B3AE2 /* DiscoveryRoadShowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE6131F2B43A8009B3AE2 /* DiscoveryRoadShowLayout.m */; };
 		2CA553081F43E1CB0095ECC1 /* RewardVCConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA553071F43E1CB0095ECC1 /* RewardVCConfig.m */; };
 		2CA5530F1F43EA7B0095ECC1 /* HistoryRewardConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA5530E1F43EA7B0095ECC1 /* HistoryRewardConfig.m */; };
+		2CA638FD1F4AD37700C39562 /* WithdrawDepositController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA638EB1F4AD37700C39562 /* WithdrawDepositController.m */; };
+		2CA638FE1F4AD37700C39562 /* WithdrawDepositRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA638F61F4AD37700C39562 /* WithdrawDepositRecord.m */; };
 		2CAF426F1F26E01E00ABCA5E /* TJSProductListApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF426E1F26E01E00ABCA5E /* TJSProductListApi.m */; };
 		2CAF42731F26E66500ABCA5E /* TJSBaseNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF42721F26E66500ABCA5E /* TJSBaseNetworkTool.m */; };
 		2CAF427A1F26EAA600ABCA5E /* AppVersionNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF42791F26EAA600ABCA5E /* AppVersionNetworkTool.m */; };
@@ -979,10 +979,6 @@
 		2C85E34C1F2ECC1200ADD360 /* AboutMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutMeViewController.m; sourceTree = "<group>"; };
 		2C85E3561F2ECDA200ADD360 /* CapitalRecordContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CapitalRecordContainer.h; sourceTree = "<group>"; };
 		2C85E3571F2ECDA200ADD360 /* CapitalRecordContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CapitalRecordContainer.m; sourceTree = "<group>"; };
-		2C85E35F1F2ECE7300ADD360 /* WithdrawDepositController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WithdrawDepositController.h; sourceTree = "<group>"; };
-		2C85E3601F2ECE7300ADD360 /* WithdrawDepositController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WithdrawDepositController.m; sourceTree = "<group>"; };
-		2C85E3621F2ECE9400ADD360 /* WithdrawDepositRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WithdrawDepositRecord.h; sourceTree = "<group>"; };
-		2C85E3631F2ECE9400ADD360 /* WithdrawDepositRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WithdrawDepositRecord.m; sourceTree = "<group>"; };
 		2C85E36E1F2ED87A00ADD360 /* MineHomeVCConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineHomeVCConfig.h; sourceTree = "<group>"; };
 		2C85E36F1F2ED87A00ADD360 /* MineHomeVCConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineHomeVCConfig.m; sourceTree = "<group>"; };
 		2C85E3711F2EDB1000ADD360 /* TJSBaseControllerConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSBaseControllerConfig.h; sourceTree = "<group>"; };
@@ -1140,6 +1136,10 @@
 		2CA5530C1F43E20A0095ECC1 /* RewardConfigProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RewardConfigProtocol.h; sourceTree = "<group>"; };
 		2CA5530D1F43EA7B0095ECC1 /* HistoryRewardConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryRewardConfig.h; sourceTree = "<group>"; };
 		2CA5530E1F43EA7B0095ECC1 /* HistoryRewardConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryRewardConfig.m; sourceTree = "<group>"; };
+		2CA638EA1F4AD37700C39562 /* WithdrawDepositController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WithdrawDepositController.h; sourceTree = "<group>"; };
+		2CA638EB1F4AD37700C39562 /* WithdrawDepositController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WithdrawDepositController.m; sourceTree = "<group>"; };
+		2CA638F51F4AD37700C39562 /* WithdrawDepositRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WithdrawDepositRecord.h; sourceTree = "<group>"; };
+		2CA638F61F4AD37700C39562 /* WithdrawDepositRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WithdrawDepositRecord.m; sourceTree = "<group>"; };
 		2CAF426D1F26E01E00ABCA5E /* TJSProductListApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSProductListApi.h; sourceTree = "<group>"; };
 		2CAF426E1F26E01E00ABCA5E /* TJSProductListApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSProductListApi.m; sourceTree = "<group>"; };
 		2CAF42711F26E66500ABCA5E /* TJSBaseNetworkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSBaseNetworkTool.h; sourceTree = "<group>"; };
@@ -3783,10 +3783,8 @@
 			isa = PBXGroup;
 			children = (
 				2C7A344A1F2F61C1004DD566 /* WithDarwDeposit.storyboard */,
-				2C85E35F1F2ECE7300ADD360 /* WithdrawDepositController.h */,
-				2C85E3601F2ECE7300ADD360 /* WithdrawDepositController.m */,
-				2C85E3621F2ECE9400ADD360 /* WithdrawDepositRecord.h */,
-				2C85E3631F2ECE9400ADD360 /* WithdrawDepositRecord.m */,
+				2CA638E71F4AD37700C39562 /* WithDrawHome */,
+				2CA638F21F4AD37700C39562 /* WithDrawRecord */,
 			);
 			path = WithdrawDeposit;
 			sourceTree = "<group>";
@@ -3876,6 +3874,152 @@
 			children = (
 			);
 			path = Protocol;
+			sourceTree = "<group>";
+		};
+		2CA638E71F4AD37700C39562 /* WithDrawHome */ = {
+			isa = PBXGroup;
+			children = (
+				2CA638E81F4AD37700C39562 /* Config */,
+				2CA638E91F4AD37700C39562 /* Controller */,
+				2CA638EC1F4AD37700C39562 /* Disaggregate */,
+				2CA638ED1F4AD37700C39562 /* Model */,
+				2CA638EE1F4AD37700C39562 /* NetworkTool */,
+				2CA638EF1F4AD37700C39562 /* Protocol */,
+				2CA638F01F4AD37700C39562 /* Store */,
+				2CA638F11F4AD37700C39562 /* View */,
+			);
+			path = WithDrawHome;
+			sourceTree = "<group>";
+		};
+		2CA638E81F4AD37700C39562 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		2CA638E91F4AD37700C39562 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2CA638EA1F4AD37700C39562 /* WithdrawDepositController.h */,
+				2CA638EB1F4AD37700C39562 /* WithdrawDepositController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2CA638EC1F4AD37700C39562 /* Disaggregate */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Disaggregate;
+			sourceTree = "<group>";
+		};
+		2CA638ED1F4AD37700C39562 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2CA638EE1F4AD37700C39562 /* NetworkTool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NetworkTool;
+			sourceTree = "<group>";
+		};
+		2CA638EF1F4AD37700C39562 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		2CA638F01F4AD37700C39562 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		2CA638F11F4AD37700C39562 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2CA638F21F4AD37700C39562 /* WithDrawRecord */ = {
+			isa = PBXGroup;
+			children = (
+				2CA638F31F4AD37700C39562 /* Config */,
+				2CA638F41F4AD37700C39562 /* Controller */,
+				2CA638F71F4AD37700C39562 /* Disaggregate */,
+				2CA638F81F4AD37700C39562 /* Model */,
+				2CA638F91F4AD37700C39562 /* NetworkTool */,
+				2CA638FA1F4AD37700C39562 /* Protocol */,
+				2CA638FB1F4AD37700C39562 /* Store */,
+				2CA638FC1F4AD37700C39562 /* View */,
+			);
+			path = WithDrawRecord;
+			sourceTree = "<group>";
+		};
+		2CA638F31F4AD37700C39562 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		2CA638F41F4AD37700C39562 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2CA638F51F4AD37700C39562 /* WithdrawDepositRecord.h */,
+				2CA638F61F4AD37700C39562 /* WithdrawDepositRecord.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2CA638F71F4AD37700C39562 /* Disaggregate */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Disaggregate;
+			sourceTree = "<group>";
+		};
+		2CA638F81F4AD37700C39562 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2CA638F91F4AD37700C39562 /* NetworkTool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NetworkTool;
+			sourceTree = "<group>";
+		};
+		2CA638FA1F4AD37700C39562 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		2CA638FB1F4AD37700C39562 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		2CA638FC1F4AD37700C39562 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		2CAF426A1F26DEDE00ABCA5E /* Product */ = {
@@ -5521,7 +5665,6 @@
 				2CF8B55E1F3DA438003B8520 /* ProductSearchNetworkTool.m in Sources */,
 				2CB4F63F1F42F26500FF98C9 /* ContractApplyTableAdapter.m in Sources */,
 				2CCBE4A41F344A98006C4018 /* MineHomeCellItem.m in Sources */,
-				2C85E3641F2ECE9400ADD360 /* WithdrawDepositRecord.m in Sources */,
 				2C8BB7B81F315CA600E2D75F /* HomeHeaderWebController.m in Sources */,
 				2CCBE4831F3415F2006C4018 /* MineHomeHeaderCollectionLayout.m in Sources */,
 				2CD8970D1F45480B008F7C73 /* AddressManageInteractorImpl.m in Sources */,
@@ -5616,7 +5759,6 @@
 				2C85E3771F2F02A200ADD360 /* TJSMineHomeConfigurator.m in Sources */,
 				2CD896C11F453A3B008F7C73 /* ContractAddAddressConfig.m in Sources */,
 				2C859CFA1F31EB2E00B86575 /* ZLPhotoPickerAssetsViewController.m in Sources */,
-				2C85E3611F2ECE7300ADD360 /* WithdrawDepositController.m in Sources */,
 				2CAF42F71F28273300ABCA5E /* ProductListCellTextContentView.m in Sources */,
 				2C859D011F31EB2E00B86575 /* ZLPhotoPickerImageView.m in Sources */,
 				2C89AD801F2C7E39005C29AC /* ProductSearchVCConfig.m in Sources */,
@@ -5675,6 +5817,7 @@
 				2CD896941F442731008F7C73 /* ContractApplyCellLayoutConfig.m in Sources */,
 				2C8DE5FF1F2AEAF6009B3AE2 /* DiscoveryNewsInfoModel.m in Sources */,
 				2C1B74C21F4694FF0000E71A /* BankCardListTableAdapter.m in Sources */,
+				2CA638FE1F4AD37700C39562 /* WithdrawDepositRecord.m in Sources */,
 				2CAF42DE1F281B8600ABCA5E /* ProductListNetworkTool.m in Sources */,
 				2CCC85C81F3AF5A20009FC1C /* ProductFilterItem.m in Sources */,
 				2C4C1CB91F39570400002166 /* FeedbackHistoryController.m in Sources */,
@@ -5745,6 +5888,7 @@
 				2CCBE4A31F344A98006C4018 /* MineHomeCellDefaultItem.m in Sources */,
 				2CD896CD1F453C11008F7C73 /* ConAddressBottomInputCell.m in Sources */,
 				2CCC85B11F3AEE3A0009FC1C /* TJSProductFilterInteractorImpl.m in Sources */,
+				2CA638FD1F4AD37700C39562 /* WithdrawDepositController.m in Sources */,
 				2C4C1BD81F381AF300002166 /* MineHomeCellBalanceItem.m in Sources */,
 				2C8DE5FB1F2AEA59009B3AE2 /* TJSDiscoNewsDataSorceImpl.m in Sources */,
 				2C300F7A1F2F327E00DD440E /* MineSettingViewController.m in Sources */,
