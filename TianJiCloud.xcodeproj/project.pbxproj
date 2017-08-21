@@ -1167,6 +1167,9 @@
 		2CA6391E1F4AE3BD00C39562 /* WithDrawDepositNetworkTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WithDrawDepositNetworkTool.m; sourceTree = "<group>"; };
 		2CA639201F4AE42200C39562 /* WithDrawDepositCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WithDrawDepositCellModel.h; sourceTree = "<group>"; };
 		2CA639211F4AE42200C39562 /* WithDrawDepositCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WithDrawDepositCellModel.m; sourceTree = "<group>"; };
+		2CA639231F4AE81400C39562 /* WithdrawDepositConfigProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WithdrawDepositConfigProtocol.h; sourceTree = "<group>"; };
+		2CA639241F4AE81400C39562 /* WithdrawDepositConfigurateProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WithdrawDepositConfigurateProtocol.h; sourceTree = "<group>"; };
+		2CA639251F4AE81400C39562 /* WithdrawDepositPrivateProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WithdrawDepositPrivateProtocol.h; sourceTree = "<group>"; };
 		2CAF426D1F26E01E00ABCA5E /* TJSProductListApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSProductListApi.h; sourceTree = "<group>"; };
 		2CAF426E1F26E01E00ABCA5E /* TJSProductListApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSProductListApi.m; sourceTree = "<group>"; };
 		2CAF42711F26E66500ABCA5E /* TJSBaseNetworkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSBaseNetworkTool.h; sourceTree = "<group>"; };
@@ -3966,6 +3969,9 @@
 		2CA638EF1F4AD37700C39562 /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
+				2CA639231F4AE81400C39562 /* WithdrawDepositConfigProtocol.h */,
+				2CA639241F4AE81400C39562 /* WithdrawDepositConfigurateProtocol.h */,
+				2CA639251F4AE81400C39562 /* WithdrawDepositPrivateProtocol.h */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
