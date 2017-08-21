@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="120" id="JzO-Sk-lR6" customClass="BankCardListDefaultCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JzO-Sk-lR6" id="kas-Z0-X9o">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="119.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BOC_big" translatesAutoresizingMaskIntoConstraints="NO" id="WPK-Wx-XUq">
+                        <rect key="frame" x="15" y="13" width="92" height="92"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="92" id="Vyi-1F-I5b"/>
+                            <constraint firstAttribute="width" constant="92" id="kyI-Re-Moz"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="622202 8765 2345 436" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JvQ-Sr-wmZ">
+                        <rect key="frame" x="128" y="24" width="225" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Rqe-H1-LFo"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="中国工商银行" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U6f-rs-z3G">
+                        <rect key="frame" x="128" y="65" width="225" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="MWb-5Y-Wy4"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="工资卡" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ymo-Ss-H65">
+                        <rect key="frame" x="301" y="84" width="52" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="5vK-Zg-sRW"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.95294117649999999" green="0.23921568630000001" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="U6f-rs-z3G" firstAttribute="trailing" secondItem="JvQ-Sr-wmZ" secondAttribute="trailing" id="9GD-sE-tCG"/>
+                    <constraint firstItem="U6f-rs-z3G" firstAttribute="top" secondItem="JvQ-Sr-wmZ" secondAttribute="bottom" constant="20" id="9J0-Sr-C4h"/>
+                    <constraint firstAttribute="trailing" secondItem="ymo-Ss-H65" secondAttribute="trailing" constant="22" id="KDx-Hb-NfE"/>
+                    <constraint firstItem="WPK-Wx-XUq" firstAttribute="leading" secondItem="kas-Z0-X9o" secondAttribute="leading" constant="15" id="Ow1-T6-ORU"/>
+                    <constraint firstItem="JvQ-Sr-wmZ" firstAttribute="top" secondItem="kas-Z0-X9o" secondAttribute="top" constant="24" id="Rea-2J-3w9"/>
+                    <constraint firstAttribute="trailing" secondItem="JvQ-Sr-wmZ" secondAttribute="trailing" constant="22" id="TCy-Zm-1hA"/>
+                    <constraint firstItem="JvQ-Sr-wmZ" firstAttribute="leading" secondItem="WPK-Wx-XUq" secondAttribute="trailing" constant="21" id="Uqx-yF-dMV"/>
+                    <constraint firstItem="U6f-rs-z3G" firstAttribute="leading" secondItem="JvQ-Sr-wmZ" secondAttribute="leading" id="fXx-GI-Gmo"/>
+                    <constraint firstItem="WPK-Wx-XUq" firstAttribute="centerY" secondItem="kas-Z0-X9o" secondAttribute="centerY" id="jgb-b7-akd"/>
+                    <constraint firstAttribute="bottom" secondItem="ymo-Ss-H65" secondAttribute="bottom" constant="14.5" id="tDc-c8-Z9j"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="-134.5" y="-85"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="BOC_big" width="46" height="46"/>
+    </resources>
+</document>

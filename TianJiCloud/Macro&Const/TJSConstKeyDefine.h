@@ -42,19 +42,23 @@ static NSString *const PersonalMessageListVC= @"PersonalMessageController";
 static NSString *const PlatAnnounceListVC   = @"PlatformAnnounceController";
 static NSString *const AllActivityListVC    = @"AllActivityViewController";
 
+
 #pragma mark - ProductFilterVC identifier
 
 static NSString *const ProductFilterVC      = @"ProductFilterController";
 static NSString *const ProductFilterResultVC = @"ProductFilterResultController";
+
 
 #pragma mark - ProductDetailVC identifier
 
 static NSString *const ProductListVC        = @"ProductListViewController";
 static NSString *const ProductDetailVC      = @"TJSProductDetailController";
 
+
 #pragma mark - ProductSearchVC identifier
 
 static NSString *const ProductSearchVC      = @"ProductSearchController";
+
 
 #pragma mark - DiscoveryVC identifier
 
@@ -62,43 +66,53 @@ static NSString *const DiscoryNewsListVC    = @"DiscoNewsListController";
 static NSString *const DiscoryNewsDetailVC  = @"DiscoNewsDetailController";
 static NSString *const DiscoryRoadShowListVC = @"DiscoRoadShowListController";
 
+
 #pragma mark - Setting identifier
 
 static NSString *const SettingListVC = @"MineSettingViewController";
+
 
 #pragma mark - WithdrawDeposit identifier
 
 static NSString *const WithdrawDepositVC = @"WithdrawDepositController";
 static NSString *const WithdrawDepositRecordVC = @"WithdrawDepositRecord";
+static NSString *const WithDrawBankSelectVC = @"WithdrawBankSelectController";
 
-#pragma mark - Order identifier 
+
+#pragma mark - Order identifier
 
 static NSString *const MyOrderContainerVC = @"MyOrderContainerController";
 static NSString *const MyOrderListVC = @"MyOrderListViewController";
+
 
 #pragma mark - CumulativeInvest identifier
 
 static NSString *const CumulativeInvestVC = @"CumulativeInvestController";
 static NSString *const InvestProductVC = @"InvestProductController";
 
+
 #pragma mark - CapitalRecordContainer identifier
 
 static NSString *const CapitalRecordContainerVC = @"CapitalRecordContainer";
 static NSString *const CapitalRecordListVC      = @"CapitalRecordListController";
+
 
 #pragma mark - BankCardManager identifier
 
 static NSString *const BankCardManagerVC = @"BackCardManagerController";
 static NSString *const BankCardAddVC = @"BankCardAddViewController";
 
+
 #pragma mark - Reward identifier
 
 static NSString *const RewardListVC  = @"RewardViewController";
 static NSString *const HistoryRewardsVC = @"HistoryRewardsController";
 
+
 #pragma mark - MyFavarite identifier
 
 static NSString *const MyFavariteVC = @"MyFavViewController";
+
 
 #pragma mark - ContractApply identifier 
 
@@ -114,11 +128,13 @@ static NSString *const AddressManageVC  = @"AddressManageController";
 
 static NSString *const UseAgreementVC = @"UseAgreementController";
 
+
 #pragma mark - Feedback identifier
 
 static NSString *const FeedbackContainerVC = @"FeedbackContainerController";
 static NSString *const FeedbackVC = @"FeedbackViewController";
 static NSString *const FeedbackHistoryVC = @"FeedbackHistoryController";
+
 
 #pragma mark - AboutMeVC identifier
 

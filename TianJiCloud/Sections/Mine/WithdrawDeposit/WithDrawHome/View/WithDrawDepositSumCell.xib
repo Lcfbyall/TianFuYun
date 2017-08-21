@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="NeW-Qa-xue" customClass="WithDrawDepositSumCell">
+            <rect key="frame" x="0.0" y="0.0" width="373" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NeW-Qa-xue" id="LX0-9P-Bjd">
+                <rect key="frame" x="0.0" y="0.0" width="373" height="99.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="提现金额(元)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="udG-J8-aM7">
+                        <rect key="frame" x="19" y="8" width="98" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="¥" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hrv-hD-pZY">
+                        <rect key="frame" x="19" y="44" width="239" height="36"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="36" id="fPV-ye-Dso"/>
+                        </constraints>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kHn-9G-fNN">
+                        <rect key="frame" x="283" y="47" width="75" height="30"/>
+                        <color key="backgroundColor" red="0.2119198263" green="1" blue="0.42678443760000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="75" id="0vD-kA-wbI"/>
+                        </constraints>
+                        <state key="normal" title="全部提现"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="hrv-hD-pZY" firstAttribute="leading" secondItem="udG-J8-aM7" secondAttribute="leading" id="6Tx-LA-azY"/>
+                    <constraint firstItem="hrv-hD-pZY" firstAttribute="top" secondItem="udG-J8-aM7" secondAttribute="bottom" constant="15" id="7IW-Ok-0f1"/>
+                    <constraint firstItem="udG-J8-aM7" firstAttribute="leading" secondItem="LX0-9P-Bjd" secondAttribute="leading" constant="19" id="9un-fe-fqg"/>
+                    <constraint firstItem="udG-J8-aM7" firstAttribute="top" secondItem="LX0-9P-Bjd" secondAttribute="top" constant="8" id="KmJ-OY-Ix5"/>
+                    <constraint firstItem="kHn-9G-fNN" firstAttribute="leading" secondItem="hrv-hD-pZY" secondAttribute="trailing" constant="25" id="O7o-Eg-ieS"/>
+                    <constraint firstAttribute="trailing" secondItem="kHn-9G-fNN" secondAttribute="trailing" constant="15" id="UpB-zE-dCl"/>
+                    <constraint firstItem="kHn-9G-fNN" firstAttribute="centerY" secondItem="hrv-hD-pZY" secondAttribute="centerY" id="aO5-60-L5t"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="allWithDrawBtn" destination="kHn-9G-fNN" id="2qy-8f-BUo"/>
+                <outlet property="sumTextField" destination="hrv-hD-pZY" id="hyL-7W-gFi"/>
+                <outlet property="titleL" destination="udG-J8-aM7" id="yBE-fr-Ncs"/>
+            </connections>
+            <point key="canvasLocation" x="144.5" y="-79"/>
+        </tableViewCell>
+    </objects>
+</document>

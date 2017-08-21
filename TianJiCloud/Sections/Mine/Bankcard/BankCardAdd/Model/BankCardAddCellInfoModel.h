@@ -30,4 +30,6 @@
 //
 + (NSArray <BankCardAddCellInfoModel *> *)configModelsWithInfo:(BankCardInfo *)info;
 
+
+
 @end

@@ -41,8 +41,16 @@
 - (NSArray *)items{
     
     if(_items==nil){
+        
+        NSArray *bankCardInfos = @[
+                                   
+                                   [BankCardInfo new],
+                                   [BankCardInfo new],
+                                   [BankCardInfo new],
+                                   
+                                   ];
     
-        _items = [[BankCardInfoModel configModelsWithInfos:nil] mutableCopy];
+        _items = [[BankCardInfoModel configModelsWithInfos:bankCardInfos] mutableCopy];
     }
     
     return _items;

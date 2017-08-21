@@ -12,23 +12,6 @@
 
 + (NSArray <BankCardInfoModel *> *)configModelsWithInfos:(NSArray <BankCardInfo*>*)infos{
 
-    if(infos.count==0){
-    
-        BankCardInfoModel *add = [[BankCardInfoModel alloc]init];
-        add.cellClass = @"BankCardListAddCell";
-        add.target = BankCardAddVC;
-        add.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-        WEAK_SELF(add);
-        
-        add.cellOperation = ^(id obj1, id obj2) {
-            STRONG_SELF(add);
-            
-            [UIViewController tjs_pushViewController:add.target animated:YES];
-        };
-        
-        return @[add];
-    }
-    
     
     NSMutableArray *models = [NSMutableArray array];
     [infos enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
@@ -40,6 +23,22 @@
         
         [models addObject:cardInfo];
     }];
+    
+    
+    
+    BankCardInfoModel *add = [[BankCardInfoModel alloc]init];
+    add.cellClass = @"BankCardListAddCell";
+    add.target = BankCardAddVC;
+    add.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    WEAK_SELF(add);
+    
+    add.cellOperation = ^(id obj1, id obj2) {
+        STRONG_SELF(add);
+        
+        [UIViewController tjs_pushViewController:add.target animated:YES];
+    };
+    
+    [models addObject:add];
     
     return models;
 }
