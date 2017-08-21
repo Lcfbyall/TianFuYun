@@ -1,5 +1,5 @@
 //
-//  WithdrawDepositHeaderFooterView.h
+//  WithDrawDepositHeaderFooterView.h
 //  TianJiCloud
 //
 //  Created by 朱鹏 on 2017/8/21.
@@ -8,6 +8,6 @@
 
 #import "TJSBaseTableHeaderFooterView.h"
 
-@interface WithdrawDepositHeaderFooterView : TJSBaseTableHeaderFooterView
+@interface WithDrawDepositHeaderFooterView : TJSBaseTableHeaderFooterView
 
 @end

@@ -8,6 +8,13 @@
 
 #import "TJSBaseTableViewCell.h"
 
+#import "WithDrawDepositCellModel.h"
+
 @interface WithDrawDepositBaseCell : TJSBaseTableViewCell
+
+@property (nonatomic,copy) void (^valueChangedBlock)(id sender);
+
+@property (nonatomic,strong)WithDrawDepositCellModel *model;
+
 
 @end

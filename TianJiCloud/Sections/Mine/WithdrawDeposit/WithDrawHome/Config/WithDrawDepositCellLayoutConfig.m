@@ -1,22 +1,22 @@
 //
-//  WithdrawDepositCellLayoutConfig.m
+//  WithDrawDepositCellLayoutConfig.m
 //  TianJiCloud
 //
 //  Created by 朱鹏 on 2017/8/16.
 //  Copyright © 2017年 TianJiMoney. All rights reserved.
 //
 
-#import "WithdrawDepositCellLayoutConfig.h"
+#import "WithDrawDepositCellLayoutConfig.h"
 
-#import "WithdrawDepositContentConfigFactory.h"
+#import "WithDrawDepositContentConfigFactory.h"
 
-@interface WithdrawDepositCellLayoutConfig ()
+@interface WithDrawDepositCellLayoutConfig ()
 
-@property (nonatomic,strong)WithdrawDepositContentConfigFactory *factory;
+@property (nonatomic,strong)WithDrawDepositContentConfigFactory *factory;
 
 @end
 
-@implementation WithdrawDepositCellLayoutConfig
+@implementation WithDrawDepositCellLayoutConfig
 
 - (instancetype)init{
     
@@ -24,7 +24,7 @@
     
     if(self){
         
-        _factory = [[WithdrawDepositContentConfigFactory alloc]init];
+        _factory = [[WithDrawDepositContentConfigFactory alloc]init];
     }
     
     return self;
@@ -53,7 +53,7 @@
         return  [contentConfig cellContent:model];
     }
     
-    static NSString *const identifier = @"WithdrawDepositDefaultCell";
+    static NSString *const identifier = @"WithDrawDepositAddBankCell";
     
     return identifier;
 

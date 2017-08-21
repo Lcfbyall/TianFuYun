@@ -7,22 +7,22 @@
 //
 
 #import "WithDrawDepositConfig.h"
-#import "WithdrawDepositController.h"
+#import "WithDrawDepositController.h"
 
 @interface WithDrawDepositConfig ()
 
-@property (nonatomic,weak)WithdrawDepositController *vc;
+@property (nonatomic,weak)WithDrawDepositController *vc;
 
 @end
 
 @implementation WithDrawDepositConfig
 
 
-- (void)setup:(WithdrawDepositController *)vc{
+- (void)setup:(WithDrawDepositController *)vc{
 
     _vc = vc;
     
-    _vc.title = @"提现";
+    _vc.title = @"佣金提现";
 }
 
 @end

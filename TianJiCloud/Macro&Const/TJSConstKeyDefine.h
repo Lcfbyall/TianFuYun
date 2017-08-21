@@ -74,9 +74,9 @@ static NSString *const SettingListVC = @"MineSettingViewController";
 
 #pragma mark - WithdrawDeposit identifier
 
-static NSString *const WithdrawDepositVC = @"WithdrawDepositController";
-static NSString *const WithdrawDepositRecordVC = @"WithdrawDepositRecord";
-static NSString *const WithDrawBankSelectVC = @"WithdrawBankSelectController";
+static NSString *const WithdrawDepositVC = @"WithDrawDepositController";
+static NSString *const WithdrawDepositRecordVC = @"WithDrawDepositRecord";
+static NSString *const WithDrawBankSelectVC = @"WithDrawBankSelectController";
 
 
 #pragma mark - Order identifier

@@ -1,25 +1,25 @@
 //
-//  WithdrawDepositCellFactory.m
+//  WithDrawDepositCellFactory.m
 //  TianJiCloud
 //
 //  Created by 朱鹏 on 2017/8/15.
 //  Copyright © 2017年 TianJiMoney. All rights reserved.
 //
 
-#import "WithdrawDepositCellFactory.h"
+#import "WithDrawDepositCellFactory.h"
 
-#import "WithdrawDepositCellLayoutConfig.h"
+#import "WithDrawDepositCellLayoutConfig.h"
 #import "TJSBaseTableViewCell.h"
-#import "WithdrawDepositHeaderFooterView.h"
+#import "WithDrawDepositHeaderFooterView.h"
 
 
-@interface WithdrawDepositCellFactory ()
+@interface WithDrawDepositCellFactory ()
 
-@property (nonatomic,strong)WithdrawDepositCellLayoutConfig *layoutConfig;
+@property (nonatomic,strong)WithDrawDepositCellLayoutConfig *layoutConfig;
 
 @end
 
-@implementation WithdrawDepositCellFactory
+@implementation WithDrawDepositCellFactory
 
 - (instancetype)init{
  
@@ -27,7 +27,7 @@
 
     if(self){
     
-        _layoutConfig = [[WithdrawDepositCellLayoutConfig alloc]init];
+        _layoutConfig = [[WithDrawDepositCellLayoutConfig alloc]init];
     }
     
     return self;
@@ -73,15 +73,15 @@
 }
 
 
-- (WithdrawDepositHeaderFooterView *)headerFooterViewIntable:(UITableView *)tableView forSection:(NSInteger)section{
+- (WithDrawDepositHeaderFooterView *)headerFooterViewIntable:(UITableView *)tableView forSection:(NSInteger)section{
 
-    static NSString *const headerFooterIdentifier = @"WithdrawDepositHeaderFooterView";
+    static NSString *const headerFooterIdentifier = @"WithDrawDepositHeaderFooterView";
     
-    WithdrawDepositHeaderFooterView *header = [tableView dequeueReusableHeaderFooterViewWithIdentifier:headerFooterIdentifier];
+    WithDrawDepositHeaderFooterView *header = [tableView dequeueReusableHeaderFooterViewWithIdentifier:headerFooterIdentifier];
     
     if(!header){
         
-        [tableView registerClass:[WithdrawDepositHeaderFooterView class] forHeaderFooterViewReuseIdentifier:headerFooterIdentifier];
+        [tableView registerClass:[WithDrawDepositHeaderFooterView class] forHeaderFooterViewReuseIdentifier:headerFooterIdentifier];
         
         header = [tableView dequeueReusableHeaderFooterViewWithIdentifier:headerFooterIdentifier];
     }

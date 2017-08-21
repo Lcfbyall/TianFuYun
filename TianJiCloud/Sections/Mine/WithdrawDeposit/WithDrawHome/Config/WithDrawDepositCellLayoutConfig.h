@@ -1,5 +1,5 @@
 //
-//  WithdrawDepositCellLayoutConfig.h
+//  WithDrawDepositCellLayoutConfig.h
 //  TianJiCloud
 //
 //  Created by 朱鹏 on 2017/8/16.
@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 
-@interface WithdrawDepositCellLayoutConfig : NSObject<TJSBaseCellLayoutConfig>
+@interface WithDrawDepositCellLayoutConfig : NSObject<TJSBaseCellLayoutConfig>
 
 
 

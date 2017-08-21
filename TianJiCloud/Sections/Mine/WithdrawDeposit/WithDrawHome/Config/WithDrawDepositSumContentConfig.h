@@ -1,5 +1,5 @@
 //
-//  WithdrawDepositDefaultContentConfig.h
+//  WithDrawDepositSumContentConfig.h
 //  TianJiCloud
 //
 //  Created by 朱鹏 on 2017/8/17.
@@ -8,6 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface WithdrawDepositDefaultContentConfig : NSObject<TJSBaseCellContentConfig>
+@interface WithDrawDepositSumContentConfig : NSObject<TJSBaseCellContentConfig>
 
 @end

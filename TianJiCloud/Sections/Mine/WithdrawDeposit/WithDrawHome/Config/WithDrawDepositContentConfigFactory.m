@@ -1,24 +1,24 @@
 //
-//  WithdrawDepositContentConfigFactory.m
+//  WithDrawDepositContentConfigFactory.m
 //  TianJiCloud
 //
 //  Created by 朱鹏 on 2017/8/16.
 //  Copyright © 2017年 TianJiMoney. All rights reserved.
 //
 
-#import "WithdrawDepositContentConfigFactory.h"
-#import "WithdrawDepositDefaultContentConfig.h"
+#import "WithDrawDepositContentConfigFactory.h"
+#import "WithDrawDepositSumContentConfig.h"
 
 #import "WithDrawDepositCellModel.h"
 
-@interface WithdrawDepositContentConfigFactory ()
+@interface WithDrawDepositContentConfigFactory ()
 
-@property (nonatomic,strong)    NSDictionary  *dict;
+@property (nonatomic,strong) NSDictionary  *dict;
 
 @end
 
 
-@implementation WithdrawDepositContentConfigFactory
+@implementation WithDrawDepositContentConfigFactory
 
 - (instancetype)init
 {
@@ -28,7 +28,7 @@
         _dict = @{
                   
         
-                  @"WithdrawDepositDefaultCell":[WithdrawDepositDefaultContentConfig new],
+                  @"WithDrawDepositSumCell":[WithDrawDepositSumContentConfig new],
         
                   
                  };

@@ -104,7 +104,6 @@
     [UIView animateWithDuration:.35 animations:^{
         _contaniner.tjs_bottom =  self.frame.size.height;
     }];
-    
 }
 
 - (void)dismiss{
@@ -117,8 +116,6 @@
          [self removeFromSuperview];
      }];
 }
-
-
 
 
 #pragma mark - UIPickerViewDataSource

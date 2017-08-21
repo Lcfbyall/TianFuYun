@@ -304,7 +304,7 @@
 		2C8DE6181F2B43A8009B3AE2 /* DiscoveryRoadShowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE6131F2B43A8009B3AE2 /* DiscoveryRoadShowLayout.m */; };
 		2CA553081F43E1CB0095ECC1 /* RewardVCConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA553071F43E1CB0095ECC1 /* RewardVCConfig.m */; };
 		2CA5530F1F43EA7B0095ECC1 /* HistoryRewardConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA5530E1F43EA7B0095ECC1 /* HistoryRewardConfig.m */; };
-		2CA638FD1F4AD37700C39562 /* WithdrawDepositController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA638EB1F4AD37700C39562 /* WithdrawDepositController.m */; };
+		2CA638FD1F4AD37700C39562 /* WithDrawDepositController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA638EB1F4AD37700C39562 /* WithDrawDepositController.m */; };
 		2CA638FE1F4AD37700C39562 /* WithdrawDepositRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA638F61F4AD37700C39562 /* WithdrawDepositRecord.m */; };
 		2CA639011F4AD41700C39562 /* WithDrawDepositConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA639001F4AD41700C39562 /* WithDrawDepositConfig.m */; };
 		2CA639031F4AD4D000C39562 /* BankCardListDefaultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CA639021F4AD4D000C39562 /* BankCardListDefaultCell.xib */; };
@@ -316,11 +316,11 @@
 		2CA6391C1F4ADE8A00C39562 /* WithDrawDepositSumCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CA6391B1F4ADE8A00C39562 /* WithDrawDepositSumCell.xib */; };
 		2CA6391F1F4AE3BD00C39562 /* WithDrawDepositNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA6391E1F4AE3BD00C39562 /* WithDrawDepositNetworkTool.m */; };
 		2CA639221F4AE42200C39562 /* WithDrawDepositCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA639211F4AE42200C39562 /* WithDrawDepositCellModel.m */; };
-		2CA6392F1F4AE9D000C39562 /* WithdrawDepositCellFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA639261F4AE9D000C39562 /* WithdrawDepositCellFactory.m */; };
-		2CA639301F4AE9D000C39562 /* WithdrawDepositCellLayoutConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA639281F4AE9D000C39562 /* WithdrawDepositCellLayoutConfig.m */; };
-		2CA639321F4AE9D000C39562 /* WithdrawDepositContentConfigFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA6392C1F4AE9D000C39562 /* WithdrawDepositContentConfigFactory.m */; };
-		2CA639331F4AE9D000C39562 /* WithdrawDepositDefaultContentConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA6392E1F4AE9D000C39562 /* WithdrawDepositDefaultContentConfig.m */; };
-		2CA639371F4AEAC300C39562 /* WithdrawDepositHeaderFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA639361F4AEAC300C39562 /* WithdrawDepositHeaderFooterView.m */; };
+		2CA6392F1F4AE9D000C39562 /* WithDrawDepositCellFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA639261F4AE9D000C39562 /* WithDrawDepositCellFactory.m */; };
+		2CA639301F4AE9D000C39562 /* WithDrawDepositCellLayoutConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA639281F4AE9D000C39562 /* WithDrawDepositCellLayoutConfig.m */; };
+		2CA639321F4AE9D000C39562 /* WithDrawDepositContentConfigFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA6392C1F4AE9D000C39562 /* WithDrawDepositContentConfigFactory.m */; };
+		2CA639331F4AE9D000C39562 /* WithDrawDepositSumContentConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA6392E1F4AE9D000C39562 /* WithDrawDepositSumContentConfig.m */; };
+		2CA639371F4AEAC300C39562 /* WithDrawDepositHeaderFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA639361F4AEAC300C39562 /* WithDrawDepositHeaderFooterView.m */; };
 		2CAF426F1F26E01E00ABCA5E /* TJSProductListApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF426E1F26E01E00ABCA5E /* TJSProductListApi.m */; };
 		2CAF42731F26E66500ABCA5E /* TJSBaseNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF42721F26E66500ABCA5E /* TJSBaseNetworkTool.m */; };
 		2CAF427A1F26EAA600ABCA5E /* AppVersionNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF42791F26EAA600ABCA5E /* AppVersionNetworkTool.m */; };
@@ -523,6 +523,11 @@
 		A292B2771F39F92D0086E03E /* CapitalRecordVCConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = A292B2761F39F92D0086E03E /* CapitalRecordVCConfig.m */; };
 		A292B27A1F39FBC10086E03E /* TJSBaseDisplayContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = A292B2791F39FBC10086E03E /* TJSBaseDisplayContainer.m */; };
 		A2A71C691F3F200700577E45 /* ProductSearchHotReusableHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A71C681F3F200700577E45 /* ProductSearchHotReusableHeader.m */; };
+		A2ACF5F01F4B3B06007BADB9 /* WithDrawDepositConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = A2ACF5E71F4B3B06007BADB9 /* WithDrawDepositConfigurator.m */; };
+		A2ACF5F11F4B3B06007BADB9 /* WithDrawDepositDataSourceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = A2ACF5E91F4B3B06007BADB9 /* WithDrawDepositDataSourceImpl.m */; };
+		A2ACF5F21F4B3B06007BADB9 /* WithDrawDepositInteractorImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = A2ACF5EB1F4B3B06007BADB9 /* WithDrawDepositInteractorImpl.m */; };
+		A2ACF5F31F4B3B06007BADB9 /* WithDrawDepositLayoutImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = A2ACF5ED1F4B3B06007BADB9 /* WithDrawDepositLayoutImpl.m */; };
+		A2ACF5F41F4B3B06007BADB9 /* WithDrawDepositTableAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = A2ACF5EF1F4B3B06007BADB9 /* WithDrawDepositTableAdapter.m */; };
 		A2FE0A891F38B47000E678E5 /* MyFavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2FE0A831F38B47000E678E5 /* MyFavViewController.m */; };
 		A2FE0A8C1F38B4B400E678E5 /* MyFavVCConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = A2FE0A8B1F38B4B400E678E5 /* MyFavVCConfig.m */; };
 		D8B489F6D9BA2D941ED245C3 /* libPods-TianJiCloud.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24C0B56EAE3CA4A62571C4DD /* libPods-TianJiCloud.a */; };
@@ -1151,8 +1156,8 @@
 		2CA5530C1F43E20A0095ECC1 /* RewardConfigProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RewardConfigProtocol.h; sourceTree = "<group>"; };
 		2CA5530D1F43EA7B0095ECC1 /* HistoryRewardConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryRewardConfig.h; sourceTree = "<group>"; };
 		2CA5530E1F43EA7B0095ECC1 /* HistoryRewardConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryRewardConfig.m; sourceTree = "<group>"; };
-		2CA638EA1F4AD37700C39562 /* WithdrawDepositController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WithdrawDepositController.h; sourceTree = "<group>"; };
-		2CA638EB1F4AD37700C39562 /* WithdrawDepositController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WithdrawDepositController.m; sourceTree = "<group>"; };
+		2CA638EA1F4AD37700C39562 /* WithDrawDepositController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WithDrawDepositController.h; sourceTree = "<group>"; };
+		2CA638EB1F4AD37700C39562 /* WithDrawDepositController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WithDrawDepositController.m; sourceTree = "<group>"; };
 		2CA638F51F4AD37700C39562 /* WithdrawDepositRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WithdrawDepositRecord.h; sourceTree = "<group>"; };
 		2CA638F61F4AD37700C39562 /* WithdrawDepositRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WithdrawDepositRecord.m; sourceTree = "<group>"; };
 		2CA638FF1F4AD41700C39562 /* WithDrawDepositConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WithDrawDepositConfig.h; sourceTree = "<group>"; };
@@ -1172,19 +1177,19 @@
 		2CA6391E1F4AE3BD00C39562 /* WithDrawDepositNetworkTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WithDrawDepositNetworkTool.m; sourceTree = "<group>"; };
 		2CA639201F4AE42200C39562 /* WithDrawDepositCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WithDrawDepositCellModel.h; sourceTree = "<group>"; };
 		2CA639211F4AE42200C39562 /* WithDrawDepositCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WithDrawDepositCellModel.m; sourceTree = "<group>"; };
-		2CA639231F4AE81400C39562 /* WithdrawDepositConfigProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WithdrawDepositConfigProtocol.h; sourceTree = "<group>"; };
-		2CA639241F4AE81400C39562 /* WithdrawDepositConfigurateProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WithdrawDepositConfigurateProtocol.h; sourceTree = "<group>"; };
-		2CA639251F4AE81400C39562 /* WithdrawDepositPrivateProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WithdrawDepositPrivateProtocol.h; sourceTree = "<group>"; };
-		2CA639261F4AE9D000C39562 /* WithdrawDepositCellFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WithdrawDepositCellFactory.m; sourceTree = "<group>"; };
-		2CA639271F4AE9D000C39562 /* WithdrawDepositCellLayoutConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WithdrawDepositCellLayoutConfig.h; sourceTree = "<group>"; };
-		2CA639281F4AE9D000C39562 /* WithdrawDepositCellLayoutConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WithdrawDepositCellLayoutConfig.m; sourceTree = "<group>"; };
-		2CA6392B1F4AE9D000C39562 /* WithdrawDepositContentConfigFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WithdrawDepositContentConfigFactory.h; sourceTree = "<group>"; };
-		2CA6392C1F4AE9D000C39562 /* WithdrawDepositContentConfigFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WithdrawDepositContentConfigFactory.m; sourceTree = "<group>"; };
-		2CA6392D1F4AE9D000C39562 /* WithdrawDepositDefaultContentConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WithdrawDepositDefaultContentConfig.h; sourceTree = "<group>"; };
-		2CA6392E1F4AE9D000C39562 /* WithdrawDepositDefaultContentConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WithdrawDepositDefaultContentConfig.m; sourceTree = "<group>"; };
-		2CA639341F4AEA8300C39562 /* WithdrawDepositCellFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WithdrawDepositCellFactory.h; sourceTree = "<group>"; };
-		2CA639351F4AEAC300C39562 /* WithdrawDepositHeaderFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WithdrawDepositHeaderFooterView.h; sourceTree = "<group>"; };
-		2CA639361F4AEAC300C39562 /* WithdrawDepositHeaderFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WithdrawDepositHeaderFooterView.m; sourceTree = "<group>"; };
+		2CA639231F4AE81400C39562 /* WithDrawDepositConfigProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WithDrawDepositConfigProtocol.h; sourceTree = "<group>"; };
+		2CA639241F4AE81400C39562 /* WithDrawDepositConfigurateProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WithDrawDepositConfigurateProtocol.h; sourceTree = "<group>"; };
+		2CA639251F4AE81400C39562 /* WithDrawDepositPrivateProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WithDrawDepositPrivateProtocol.h; sourceTree = "<group>"; };
+		2CA639261F4AE9D000C39562 /* WithDrawDepositCellFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WithDrawDepositCellFactory.m; sourceTree = "<group>"; };
+		2CA639271F4AE9D000C39562 /* WithDrawDepositCellLayoutConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WithDrawDepositCellLayoutConfig.h; sourceTree = "<group>"; };
+		2CA639281F4AE9D000C39562 /* WithDrawDepositCellLayoutConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WithDrawDepositCellLayoutConfig.m; sourceTree = "<group>"; };
+		2CA6392B1F4AE9D000C39562 /* WithDrawDepositContentConfigFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WithDrawDepositContentConfigFactory.h; sourceTree = "<group>"; };
+		2CA6392C1F4AE9D000C39562 /* WithDrawDepositContentConfigFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WithDrawDepositContentConfigFactory.m; sourceTree = "<group>"; };
+		2CA6392D1F4AE9D000C39562 /* WithDrawDepositSumContentConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WithDrawDepositSumContentConfig.h; sourceTree = "<group>"; };
+		2CA6392E1F4AE9D000C39562 /* WithDrawDepositSumContentConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WithDrawDepositSumContentConfig.m; sourceTree = "<group>"; };
+		2CA639341F4AEA8300C39562 /* WithDrawDepositCellFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WithDrawDepositCellFactory.h; sourceTree = "<group>"; };
+		2CA639351F4AEAC300C39562 /* WithDrawDepositHeaderFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WithDrawDepositHeaderFooterView.h; sourceTree = "<group>"; };
+		2CA639361F4AEAC300C39562 /* WithDrawDepositHeaderFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WithDrawDepositHeaderFooterView.m; sourceTree = "<group>"; };
 		2CAF426D1F26E01E00ABCA5E /* TJSProductListApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSProductListApi.h; sourceTree = "<group>"; };
 		2CAF426E1F26E01E00ABCA5E /* TJSProductListApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSProductListApi.m; sourceTree = "<group>"; };
 		2CAF42711F26E66500ABCA5E /* TJSBaseNetworkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSBaseNetworkTool.h; sourceTree = "<group>"; };
@@ -1610,6 +1615,16 @@
 		A292B2791F39FBC10086E03E /* TJSBaseDisplayContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSBaseDisplayContainer.m; sourceTree = "<group>"; };
 		A2A71C671F3F200700577E45 /* ProductSearchHotReusableHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductSearchHotReusableHeader.h; sourceTree = "<group>"; };
 		A2A71C681F3F200700577E45 /* ProductSearchHotReusableHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductSearchHotReusableHeader.m; sourceTree = "<group>"; };
+		A2ACF5E61F4B3B06007BADB9 /* WithDrawDepositConfigurator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WithDrawDepositConfigurator.h; sourceTree = "<group>"; };
+		A2ACF5E71F4B3B06007BADB9 /* WithDrawDepositConfigurator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WithDrawDepositConfigurator.m; sourceTree = "<group>"; };
+		A2ACF5E81F4B3B06007BADB9 /* WithDrawDepositDataSourceImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WithDrawDepositDataSourceImpl.h; sourceTree = "<group>"; };
+		A2ACF5E91F4B3B06007BADB9 /* WithDrawDepositDataSourceImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WithDrawDepositDataSourceImpl.m; sourceTree = "<group>"; };
+		A2ACF5EA1F4B3B06007BADB9 /* WithDrawDepositInteractorImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WithDrawDepositInteractorImpl.h; sourceTree = "<group>"; };
+		A2ACF5EB1F4B3B06007BADB9 /* WithDrawDepositInteractorImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WithDrawDepositInteractorImpl.m; sourceTree = "<group>"; };
+		A2ACF5EC1F4B3B06007BADB9 /* WithDrawDepositLayoutImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WithDrawDepositLayoutImpl.h; sourceTree = "<group>"; };
+		A2ACF5ED1F4B3B06007BADB9 /* WithDrawDepositLayoutImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WithDrawDepositLayoutImpl.m; sourceTree = "<group>"; };
+		A2ACF5EE1F4B3B06007BADB9 /* WithDrawDepositTableAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WithDrawDepositTableAdapter.h; sourceTree = "<group>"; };
+		A2ACF5EF1F4B3B06007BADB9 /* WithDrawDepositTableAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WithDrawDepositTableAdapter.m; sourceTree = "<group>"; };
 		A2FE0A821F38B47000E678E5 /* MyFavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyFavViewController.h; sourceTree = "<group>"; };
 		A2FE0A831F38B47000E678E5 /* MyFavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyFavViewController.m; sourceTree = "<group>"; };
 		A2FE0A8A1F38B4B400E678E5 /* MyFavVCConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyFavVCConfig.h; sourceTree = "<group>"; };
@@ -3928,7 +3943,7 @@
 			children = (
 				2CA638E81F4AD37700C39562 /* Config */,
 				2CA638E91F4AD37700C39562 /* Controller */,
-				2CA638EC1F4AD37700C39562 /* Disaggregate */,
+				A2ACF5E51F4B3B06007BADB9 /* Disaggregate */,
 				2CA638ED1F4AD37700C39562 /* Model */,
 				2CA638EE1F4AD37700C39562 /* NetworkTool */,
 				2CA638EF1F4AD37700C39562 /* Protocol */,
@@ -3943,14 +3958,14 @@
 			children = (
 				2CA638FF1F4AD41700C39562 /* WithDrawDepositConfig.h */,
 				2CA639001F4AD41700C39562 /* WithDrawDepositConfig.m */,
-				2CA639341F4AEA8300C39562 /* WithdrawDepositCellFactory.h */,
-				2CA639261F4AE9D000C39562 /* WithdrawDepositCellFactory.m */,
-				2CA639271F4AE9D000C39562 /* WithdrawDepositCellLayoutConfig.h */,
-				2CA639281F4AE9D000C39562 /* WithdrawDepositCellLayoutConfig.m */,
-				2CA6392B1F4AE9D000C39562 /* WithdrawDepositContentConfigFactory.h */,
-				2CA6392C1F4AE9D000C39562 /* WithdrawDepositContentConfigFactory.m */,
-				2CA6392D1F4AE9D000C39562 /* WithdrawDepositDefaultContentConfig.h */,
-				2CA6392E1F4AE9D000C39562 /* WithdrawDepositDefaultContentConfig.m */,
+				2CA639341F4AEA8300C39562 /* WithDrawDepositCellFactory.h */,
+				2CA639261F4AE9D000C39562 /* WithDrawDepositCellFactory.m */,
+				2CA639271F4AE9D000C39562 /* WithDrawDepositCellLayoutConfig.h */,
+				2CA639281F4AE9D000C39562 /* WithDrawDepositCellLayoutConfig.m */,
+				2CA6392B1F4AE9D000C39562 /* WithDrawDepositContentConfigFactory.h */,
+				2CA6392C1F4AE9D000C39562 /* WithDrawDepositContentConfigFactory.m */,
+				2CA6392D1F4AE9D000C39562 /* WithDrawDepositSumContentConfig.h */,
+				2CA6392E1F4AE9D000C39562 /* WithDrawDepositSumContentConfig.m */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -3958,17 +3973,10 @@
 		2CA638E91F4AD37700C39562 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				2CA638EA1F4AD37700C39562 /* WithdrawDepositController.h */,
-				2CA638EB1F4AD37700C39562 /* WithdrawDepositController.m */,
+				2CA638EA1F4AD37700C39562 /* WithDrawDepositController.h */,
+				2CA638EB1F4AD37700C39562 /* WithDrawDepositController.m */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		2CA638EC1F4AD37700C39562 /* Disaggregate */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Disaggregate;
 			sourceTree = "<group>";
 		};
 		2CA638ED1F4AD37700C39562 /* Model */ = {
@@ -3992,9 +4000,9 @@
 		2CA638EF1F4AD37700C39562 /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
-				2CA639231F4AE81400C39562 /* WithdrawDepositConfigProtocol.h */,
-				2CA639241F4AE81400C39562 /* WithdrawDepositConfigurateProtocol.h */,
-				2CA639251F4AE81400C39562 /* WithdrawDepositPrivateProtocol.h */,
+				2CA639231F4AE81400C39562 /* WithDrawDepositConfigProtocol.h */,
+				2CA639241F4AE81400C39562 /* WithDrawDepositConfigurateProtocol.h */,
+				2CA639251F4AE81400C39562 /* WithDrawDepositPrivateProtocol.h */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -4017,8 +4025,8 @@
 				2CA639161F4ADD5300C39562 /* WithDrawDepositSumCell.h */,
 				2CA639171F4ADD5300C39562 /* WithDrawDepositSumCell.m */,
 				2CA6391B1F4ADE8A00C39562 /* WithDrawDepositSumCell.xib */,
-				2CA639351F4AEAC300C39562 /* WithdrawDepositHeaderFooterView.h */,
-				2CA639361F4AEAC300C39562 /* WithdrawDepositHeaderFooterView.m */,
+				2CA639351F4AEAC300C39562 /* WithDrawDepositHeaderFooterView.h */,
+				2CA639361F4AEAC300C39562 /* WithDrawDepositHeaderFooterView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -5485,6 +5493,23 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		A2ACF5E51F4B3B06007BADB9 /* Disaggregate */ = {
+			isa = PBXGroup;
+			children = (
+				A2ACF5E61F4B3B06007BADB9 /* WithDrawDepositConfigurator.h */,
+				A2ACF5E71F4B3B06007BADB9 /* WithDrawDepositConfigurator.m */,
+				A2ACF5EA1F4B3B06007BADB9 /* WithDrawDepositInteractorImpl.h */,
+				A2ACF5EB1F4B3B06007BADB9 /* WithDrawDepositInteractorImpl.m */,
+				A2ACF5E81F4B3B06007BADB9 /* WithDrawDepositDataSourceImpl.h */,
+				A2ACF5E91F4B3B06007BADB9 /* WithDrawDepositDataSourceImpl.m */,
+				A2ACF5EC1F4B3B06007BADB9 /* WithDrawDepositLayoutImpl.h */,
+				A2ACF5ED1F4B3B06007BADB9 /* WithDrawDepositLayoutImpl.m */,
+				A2ACF5EE1F4B3B06007BADB9 /* WithDrawDepositTableAdapter.h */,
+				A2ACF5EF1F4B3B06007BADB9 /* WithDrawDepositTableAdapter.m */,
+			);
+			path = Disaggregate;
+			sourceTree = "<group>";
+		};
 		A2FE0A801F38B47000E678E5 /* Config */ = {
 			isa = PBXGroup;
 			children = (
@@ -5809,6 +5834,7 @@
 				2C027D0B1F3BFA28001D7EB6 /* TJSBaseCollectionReusableView.m in Sources */,
 				2C4C1C1F1F38531F00002166 /* TJSMyOrderListCellLayoutConfig.m in Sources */,
 				2C859CE21F31EB2E00B86575 /* MBProgressHUD.m in Sources */,
+				A2ACF5F21F4B3B06007BADB9 /* WithDrawDepositInteractorImpl.m in Sources */,
 				2C1B74C81F4694FF0000E71A /* BankCardListDefaultCell.m in Sources */,
 				2C1B74C71F4694FF0000E71A /* BankCardListBaseTableCell.m in Sources */,
 				2CB4F61A1F429ADF00FF98C9 /* ContractDetailController.m in Sources */,
@@ -5849,6 +5875,7 @@
 				2C4412931F21FF9C00C453EF /* TJSDownLoaderManager.m in Sources */,
 				2CA5530F1F43EA7B0095ECC1 /* HistoryRewardConfig.m in Sources */,
 				2C8BB7C51F31AEF600E2D75F /* UIButton+ImageTitleEdgeInset.m in Sources */,
+				A2ACF5F01F4B3B06007BADB9 /* WithDrawDepositConfigurator.m in Sources */,
 				2C8DE5941F29F5FF009B3AE2 /* TJSWeakScriptMessageHandler.m in Sources */,
 				2C4412551F21DBBA00C453EF /* UIViewController+RouteParams.m in Sources */,
 				2C44127F1F21E99700C453EF /* UITextView+PlaceHolder.m in Sources */,
@@ -5869,7 +5896,8 @@
 				2C4412591F21DDA900C453EF /* UIWindow+Transition.m in Sources */,
 				2C4C1C071F3847C200002166 /* MyOrderListVCConfig.m in Sources */,
 				2C83C7021F39B79C004034CA /* TJSStoreManager.m in Sources */,
-				2CA6392F1F4AE9D000C39562 /* WithdrawDepositCellFactory.m in Sources */,
+				A2ACF5F41F4B3B06007BADB9 /* WithDrawDepositTableAdapter.m in Sources */,
+				2CA6392F1F4AE9D000C39562 /* WithDrawDepositCellFactory.m in Sources */,
 				2CCC85C21F3AEF4D0009FC1C /* ProductFilterResultCell.m in Sources */,
 				2CB4F5781F418FFB00FF98C9 /* CumulateInvestBarCell.m in Sources */,
 				2CB4F63B1F42F26500FF98C9 /* ContractApplyConfigurator.m in Sources */,
@@ -6041,10 +6069,11 @@
 				2C4412761F21E7F000C453EF /* UIButton+BackgroundColor.m in Sources */,
 				A292B2641F39F81D0086E03E /* CapitalRecordConfigurator.m in Sources */,
 				2CCBE4A31F344A98006C4018 /* MineHomeCellDefaultItem.m in Sources */,
+				A2ACF5F11F4B3B06007BADB9 /* WithDrawDepositDataSourceImpl.m in Sources */,
 				2CD896CD1F453C11008F7C73 /* ConAddressBottomInputCell.m in Sources */,
 				2CA639221F4AE42200C39562 /* WithDrawDepositCellModel.m in Sources */,
 				2CCC85B11F3AEE3A0009FC1C /* TJSProductFilterInteractorImpl.m in Sources */,
-				2CA638FD1F4AD37700C39562 /* WithdrawDepositController.m in Sources */,
+				2CA638FD1F4AD37700C39562 /* WithDrawDepositController.m in Sources */,
 				2C4C1BD81F381AF300002166 /* MineHomeCellBalanceItem.m in Sources */,
 				2C8DE5FB1F2AEA59009B3AE2 /* TJSDiscoNewsDataSorceImpl.m in Sources */,
 				2C300F7A1F2F327E00DD440E /* MineSettingViewController.m in Sources */,
@@ -6070,7 +6099,7 @@
 				2CAF43071F2828C200ABCA5E /* TJSProductListDataSourceImpl.m in Sources */,
 				A292B26A1F39F8470086E03E /* CapitalRecordInfo.m in Sources */,
 				2C859D001F31EB2E00B86575 /* ZLPhotoPickerGroupTableViewCell.m in Sources */,
-				2CA639321F4AE9D000C39562 /* WithdrawDepositContentConfigFactory.m in Sources */,
+				2CA639321F4AE9D000C39562 /* WithDrawDepositContentConfigFactory.m in Sources */,
 				2C1B74B71F4694FF0000E71A /* BankCardListAddContentConfig.m in Sources */,
 				2CA6391F1F4AE3BD00C39562 /* WithDrawDepositNetworkTool.m in Sources */,
 				2CB4F65F1F43052E00FF98C9 /* ContractDetailNetworkTool.m in Sources */,
@@ -6093,7 +6122,8 @@
 				2C85E39E1F2F1A5800ADD360 /* TJSMineHomeInvestCellContentConfig.m in Sources */,
 				2CB4F6501F42F58800FF98C9 /* ContractApplyProductResultCell.m in Sources */,
 				A292B2771F39F92D0086E03E /* CapitalRecordVCConfig.m in Sources */,
-				2CA639371F4AEAC300C39562 /* WithdrawDepositHeaderFooterView.m in Sources */,
+				2CA639371F4AEAC300C39562 /* WithDrawDepositHeaderFooterView.m in Sources */,
+				A2ACF5F31F4B3B06007BADB9 /* WithDrawDepositLayoutImpl.m in Sources */,
 				2C89AD8A1F2C9FE5005C29AC /* UIView+TJSViewController.m in Sources */,
 				2CCC85BF1F3AEF2C0009FC1C /* FilterResultVCConfig.m in Sources */,
 				2CB4F5751F418FFB00FF98C9 /* CumulateInvestInfoModel.m in Sources */,
@@ -6146,7 +6176,7 @@
 				2C83C70A1F39B85B004034CA /* NewsListStoreTool.m in Sources */,
 				2CD8972B1F457587008F7C73 /* AddressSelectedModel.m in Sources */,
 				2C4C1C9D1F39493400002166 /* PNLineChart.m in Sources */,
-				2CA639331F4AE9D000C39562 /* WithdrawDepositDefaultContentConfig.m in Sources */,
+				2CA639331F4AE9D000C39562 /* WithDrawDepositSumContentConfig.m in Sources */,
 				2C4C1C1C1F3852F300002166 /* TJSMyOrderListCellFactory.m in Sources */,
 				2CAF426F1F26E01E00ABCA5E /* TJSProductListApi.m in Sources */,
 				2C1B74BD1F4694FF0000E71A /* BackCardManagerController.m in Sources */,
@@ -6165,7 +6195,7 @@
 				2C8BB7A21F30859C00E2D75F /* HomeFooterCollectionLayout.m in Sources */,
 				2CAF42D61F281B8600ABCA5E /* TJSBaseProductListContentConfig.m in Sources */,
 				2CD897421F457B55008F7C73 /* AddressSelectedContentConfigFactory.m in Sources */,
-				2CA639301F4AE9D000C39562 /* WithdrawDepositCellLayoutConfig.m in Sources */,
+				2CA639301F4AE9D000C39562 /* WithDrawDepositCellLayoutConfig.m in Sources */,
 				2C4C1C101F384A3B00002166 /* TJSMyOrderListDataSourceImpl.m in Sources */,
 				2C44127C1F21E97700C453EF /* UITextField+PlaceHolder.m in Sources */,
 				2C1B74F21F469A140000E71A /* BankCardAddHeaderFooterView.m in Sources */,

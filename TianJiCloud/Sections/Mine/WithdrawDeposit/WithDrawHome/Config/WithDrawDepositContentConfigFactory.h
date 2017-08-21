@@ -1,5 +1,5 @@
 //
-//  WithdrawDepositContentConfigFactory.h
+//  WithDrawDepositContentConfigFactory.h
 //  TianJiCloud
 //
 //  Created by 朱鹏 on 2017/8/16.
@@ -10,7 +10,7 @@
 #import "TJSBaseCellContentConfigProtocol.h"
 
 
-@interface WithdrawDepositContentConfigFactory : NSObject<TJSBaseCellContentConfig>
+@interface WithDrawDepositContentConfigFactory : NSObject<TJSBaseCellContentConfig>
 
 
 @end

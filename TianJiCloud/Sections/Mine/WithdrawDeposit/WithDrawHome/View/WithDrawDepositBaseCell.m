@@ -21,7 +21,10 @@
 
 - (void)tjs_bindDataToCellWithValue:(id)value{
 
-   
+    self.model = (WithDrawDepositCellModel *)value;
+    self.accessoryType = self.model.accessoryType;
+    self.selectionStyle = self.model.selectionStyle;
+
 }
 
 

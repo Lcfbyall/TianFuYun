@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16D30" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Withdraw Deposit Controller-->
+        <!--With Draw Deposit Controller-->
         <scene sceneID="Afh-SR-95s">
             <objects>
-                <viewController storyboardIdentifier="WithdrawDepositController" id="eOu-gj-uZ9" customClass="WithdrawDepositController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WithDrawDepositController" id="eOu-gj-uZ9" customClass="WithDrawDepositController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="XLD-6Z-sLw"/>
                         <viewControllerLayoutGuide type="bottom" id="QrK-gd-nUW"/>
@@ -46,10 +46,10 @@
             </objects>
             <point key="canvasLocation" x="3631.1999999999998" y="412.44377811094455"/>
         </scene>
-        <!--Withdraw Deposit Record-->
+        <!--With Draw Deposit Record-->
         <scene sceneID="OeA-VV-cxk">
             <objects>
-                <viewController storyboardIdentifier="WithdrawDepositRecord" id="xv3-Sh-Q1d" customClass="WithdrawDepositRecord" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WithDrawDepositRecord" id="xv3-Sh-Q1d" customClass="WithDrawDepositRecord" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="lPZ-pm-i8s"/>
                         <viewControllerLayoutGuide type="bottom" id="Pju-OW-HJL"/>
@@ -64,10 +64,10 @@
             </objects>
             <point key="canvasLocation" x="4561" y="131"/>
         </scene>
-        <!--Withdraw Bank Select Controller-->
+        <!--With Draw Bank Select Controller-->
         <scene sceneID="hTf-lv-hja">
             <objects>
-                <viewController storyboardIdentifier="WithdrawBankSelectController" id="jq2-9A-7Nf" customClass="WithdrawBankSelectController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WithDrawBankSelectController" id="jq2-9A-7Nf" customClass="WithDrawBankSelectController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="EjI-ON-F1r"/>
                         <viewControllerLayoutGuide type="bottom" id="prE-7d-5XU"/>

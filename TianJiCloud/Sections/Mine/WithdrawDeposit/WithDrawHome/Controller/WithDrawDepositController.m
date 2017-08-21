@@ -1,18 +1,22 @@
 //
-//  WithdrawDepositController.m
+//  WithDrawDepositController.m
 //  TianJiCloud
 //
 //  Created by 朱鹏 on 2017/7/31.
 //  Copyright © 2017年 TianJiMoney. All rights reserved.
 //
 
-#import "WithdrawDepositController.h"
+#import "WithDrawDepositController.h"
 #import "WithDrawDepositConfig.h"
+#import "WithDrawDepositConfigurator.h"
 
-
-@interface WithdrawDepositController ()
+@interface WithDrawDepositController ()
 
 @property (nonatomic,strong)WithDrawDepositConfig *config;
+
+@property (nonatomic,strong) WithDrawDepositConfigurator *configurator;
+
+@property (nonatomic,strong) id <WithDrawDepositInteractor> interactor;
 
 @property (weak, nonatomic) IBOutlet UITableView *withDrawList;
 
@@ -20,7 +24,7 @@
 @end
 
 
-@implementation WithdrawDepositController
+@implementation WithDrawDepositController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -28,8 +32,7 @@
     
     [self setupConfig];
     
-    
-
+    [self setupConfigurator];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -52,7 +55,9 @@
 
 - (void)setupConfigurator{
 
-
+    _configurator = [[WithDrawDepositConfigurator alloc]init];
+    [_configurator setup:self];
+    [self.interactor configWithData:nil];
 
 }
 
