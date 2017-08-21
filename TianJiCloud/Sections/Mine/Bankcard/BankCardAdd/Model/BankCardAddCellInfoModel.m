@@ -18,7 +18,7 @@
     if(self){
         
         _title = @"";
-        _titleValue = @"";
+        
         _placeHolder = @"";
     
     }
@@ -26,7 +26,7 @@
     return self;
 }
 
-+ (NSArray <BankCardAddCellInfoModel *> *)configModelsWithInfos:(NSArray <BankCardInfo *> *)infos{
++ (NSArray <BankCardAddCellInfoModel *> *)configModelsWithInfo:(BankCardInfo *)info{
 
     
     NSArray *firstPlaceHolder = @[@"请输入持卡人姓名",@"请输入持卡人身份证号码"];
@@ -36,7 +36,7 @@
     [firstPlaceHolder enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
        
         BankCardAddCellInfoModel *model = [BankCardAddCellInfoModel new];
-        if(!infos.count){
+        if(!info){
             BankCardInfo *info = [BankCardInfo new];
             model.bankCardInfo = info;
         }
@@ -44,6 +44,9 @@
         model.canInput = YES;
         model.accessoryType = UITableViewCellAccessoryNone;
         model.selectionStyle = UITableViewCellSelectionStyleNone;
+        model.keyboardType = !idx?UIKeyboardTypeDefault:UIKeyboardTypeASCIICapable;
+        model.bankCardTitle = !idx?@"name":@"IDCard";
+        
         model.placeHolder = [firstPlaceHolder objectAtIndex:idx];
         model.title = [firstTitles objectAtIndex:idx];;
         model.headFooterTitles = firstHeadFooters;
@@ -57,14 +60,17 @@
     [secondPlaceHolder enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
        
         BankCardAddCellInfoModel *model = [BankCardAddCellInfoModel new];
-        if(!infos.count){
+        if(!info){
             BankCardInfo *info = [BankCardInfo new];
             model.bankCardInfo = info;
         }
         model.cellClass = @"BankCardAddDefaultCell";
         model.canInput = !idx? NO:YES;
         model.accessoryType = !idx?UITableViewCellAccessoryDisclosureIndicator: UITableViewCellAccessoryNone;
-        model.selectionStyle = UITableViewCellSelectionStyleNone;
+        model.selectionStyle = !idx?UITableViewCellSelectionStyleDefault:UITableViewCellSelectionStyleNone;
+        model.keyboardType = !idx?UIKeyboardTypeDefault:UIKeyboardTypeNumberPad;
+        model.bankCardTitle = !idx?@"bank":@"bankNumber";
+        
         model.placeHolder = [secondPlaceHolder objectAtIndex:idx];
         model.title = [secondTitles objectAtIndex:idx];
         model.headFooterTitles = secondHeadFooters;
@@ -73,6 +79,19 @@
     
  
     return @[firstModels,secondModels];
+}
+
+
+#pragma mark - getters
+
+- (void)setTitleValue:(NSString *)titleValue{
+  
+    [self.bankCardInfo setValue:titleValue forKey:self.bankCardTitle];
+}
+
+- (NSString *)titleValue{
+ 
+    return [self.bankCardInfo valueForKey:self.bankCardTitle];
 }
 
 @end

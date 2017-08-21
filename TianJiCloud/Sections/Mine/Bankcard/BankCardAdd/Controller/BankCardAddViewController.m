@@ -59,6 +59,8 @@
 
     _configurator = [[BankCardAddConfigurator alloc]init];
     [_configurator setup:self];
+    
+    [self.interactor configWithBankCardInfo:nil];
  
 }
 
@@ -75,7 +77,8 @@
 
 - (BOOL)onTapCell:(id)value{
 
-  
+    [self.interactor showBank];
+    
     return YES;
 }
 

@@ -11,7 +11,7 @@
 
 #import "AddressSelectedModel.h"
 
-static NSString *const headerFooterIdentifier = @"ContractListHeaderIdentifier";
+static NSString *const headerFooterIdentifier = @"AddressSelectedListHeaderIdentifier";
 @interface AddressSelectedTableAdapter ()
 
 @property (nonatomic,weak)UITableView *tableView;

@@ -7,6 +7,7 @@
 //
 
 #import "BankCardAddInteractorImpl.h"
+#import "BankPickerView.h"
 
 @implementation BankCardAddInteractorImpl
 
@@ -18,6 +19,7 @@
         
         if(callback)callback(result,error);
         
+        [UIViewController tjs_popViewControllerAnimated:YES];
     }];
 }
 
@@ -26,14 +28,38 @@
     return self.dataSource.items;
 }
 
+- (void)configWithBankCardInfo:(id)bankCardInfo{
+
+    [self.dataSource configWithBankCardInfo:bankCardInfo];
+}
+
+- (void)showBank{
+
+    WEAK_SELF(self);
+    NSArray *banks = [self.dataSource banks];
+    [BankPickerView showWithDatas:banks
+                       defaultRow:[self.dataSource bankIndex]
+                             done:^(NSInteger row) {
+
+        STRONG_SELF(self);
+        [self.dataSource fillingBank:[banks objectAtIndex:row]];
+        [self.layout reloadTable];
+    }];
+}
+
+- (BOOL)canCommit{
+ 
+    return [self.dataSource canCommit];
+}
+
 
 #pragma mark - <BankCardAddLayoutDelegate>
 
 - (void)onRefresh{
 
-    [self.layout reloadTable];
+    //[self.layout reloadTable];
     
-    [self.layout endRefresh];
+    //[self.layout endRefresh];
 }
 
 @end

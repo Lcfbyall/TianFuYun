@@ -48,7 +48,6 @@
     _tableAdapter.interactor   = _interactor;
     _tableAdapter.cellDelegate = vc;
     
-    
     //3.
     tableView.dataSource = _tableAdapter;
     tableView.delegate   = _tableAdapter;

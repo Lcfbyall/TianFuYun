@@ -26,6 +26,16 @@
 
 - (NSArray *)items;
 
+- (void)configWithBankCardInfo:(id)bankCardInfo;
+
+- (NSArray *)banks;
+
+- (void)fillingBank:(NSString *)bank;
+
+- (NSInteger)bankIndex;
+
+- (BOOL)canCommit;
+
 @end
 
 

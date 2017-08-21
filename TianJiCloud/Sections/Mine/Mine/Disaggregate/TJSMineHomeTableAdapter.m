@@ -7,10 +7,8 @@
 //
 
 #import "TJSMineHomeTableAdapter.h"
-
 #import "MineHomeBaseTableCell.h"
 #import "MineHomeHeaderContainer.h"
-
 #import "TJSMineHomeCellFactory.h"
 #import "TJSMineHomeCellLayoutConfig.h"
 

@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @class TJSBaseTableViewCell;
+@class BankCardAddHeaderFooterView;
 
 @interface BankCardAddCellFactory : NSObject
 
@@ -16,6 +17,9 @@
                      forMineInfoModel:(id)model;
 
 - (CGFloat)cellHeight:(id)model cellWidth:(CGFloat)cellWidth;
+
+
+- (BankCardAddHeaderFooterView *)headerFooterViewIntable:(UITableView *)tableView forSection:(NSInteger)section;
 
 @end
 

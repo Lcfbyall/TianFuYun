@@ -8,6 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
+
 @interface BankPickerView : UIControl
+
++ (instancetype)showWithDatas:(NSArray *)datas
+                   defaultRow:(NSInteger)defaultRow
+                         done:(void (^)(NSInteger row))done;
+
+- (void)show;
+
+- (void)dismiss;
 
 @end

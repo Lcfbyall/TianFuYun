@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+
 #import "BankCardInfo.h"
 
 @interface BankCardAddCellInfoModel : NSObject
@@ -15,9 +16,11 @@
 @property (nonatomic,copy) NSString *cellClass;
 @property (nonatomic,assign) UITableViewCellAccessoryType accessoryType;
 @property (nonatomic,assign) UITableViewCellSelectionStyle selectionStyle;
+@property (nonatomic,assign) UIKeyboardType keyboardType;
 
 //
 @property (nonatomic,copy) NSString *title;
+@property (nonatomic,copy) NSString *bankCardTitle;
 @property (nonatomic,copy) NSString *placeHolder;
 @property (nonatomic,copy) NSString *titleValue;
 @property (nonatomic,assign) BOOL canInput;
@@ -25,7 +28,6 @@
 
 
 //
-+ (NSArray <BankCardAddCellInfoModel *> *)configModelsWithInfos:(NSArray <BankCardInfo *> *)infos;
-
++ (NSArray <BankCardAddCellInfoModel *> *)configModelsWithInfo:(BankCardInfo *)info;
 
 @end

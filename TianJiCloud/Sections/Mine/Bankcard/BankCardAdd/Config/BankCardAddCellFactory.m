@@ -9,6 +9,9 @@
 #import "BankCardAddCellFactory.h"
 
 #import "BankCardAddCellLayoutConfig.h"
+#import "TJSBaseTableViewCell.h"
+#import "BankCardAddHeaderFooterView.h"
+
 
 @interface BankCardAddCellFactory ()
 
@@ -68,5 +71,25 @@
     return size.height;
     
 }
+
+
+- (BankCardAddHeaderFooterView *)headerFooterViewIntable:(UITableView *)tableView forSection:(NSInteger)section{
+
+    static NSString *const headerFooterIdentifier = @"BankCardAddHeaderFooterView";
+    
+    BankCardAddHeaderFooterView *header = [tableView dequeueReusableHeaderFooterViewWithIdentifier:headerFooterIdentifier];
+    
+    if(!header){
+        
+        [tableView registerClass:[BankCardAddHeaderFooterView class] forHeaderFooterViewReuseIdentifier:headerFooterIdentifier];
+        
+        header = [tableView dequeueReusableHeaderFooterViewWithIdentifier:headerFooterIdentifier];
+    }
+    
+    return header;
+
+}
+
+
 
 @end

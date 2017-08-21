@@ -11,7 +11,7 @@
 
 #import "ContractAddAddressCellModel.h"
 
-static NSString *const headerFooterIdentifier = @"ContractListHeaderIdentifier";
+static NSString *const headerFooterIdentifier = @"ContractAddAddressListHeaderIdentifier";
 @interface ContractAddAddressTableAdapter ()
 
 @property (nonatomic,weak)UITableView *tableView;

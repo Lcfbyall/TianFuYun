@@ -12,7 +12,7 @@
 #import "ContractInfoApplyModel.h"
 
 
-static NSString *const headerFooterIdentifier = @"ContractListHeaderIdentifier";
+static NSString *const headerFooterIdentifier = @" ContractApplyListHeaderIdentifier";
 
 @interface ContractApplyTableAdapter ()
 

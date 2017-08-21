@@ -9,14 +9,14 @@
 #import "BankCardAddTableAdapter.h"
 #import "BankCardAddCellFactory.h"
 #import "BankCardAddCellInfoModel.h"
-
 #import "BankCardAddHeaderFooterView.h"
-
-static NSString *const headerFooterIdentifier = @"BankCardAddHeaderFooterView";
+#import "BankCardAddDefaultCell.h"
 
 @interface BankCardAddTableAdapter ()
 
 @property (nonatomic,weak)UITableView *tableView;
+
+@property (nonatomic,weak)UIButton *commitBtn;
 
 @property (nonatomic,strong)BankCardAddCellFactory *cellFactory;
 
@@ -42,21 +42,26 @@ static NSString *const headerFooterIdentifier = @"BankCardAddHeaderFooterView";
 
 - (void)setupTableView{
     
-    _tableView.backgroundColor = ThemeService.weak_color_00;
-
     WEAK_SELF(self);
-    _tableView.tableFooterView = [UIButton tjs_commitBtnForTBFooter:@"提交保存" state: UIControlStateDisabled blockForControl:^(id sender) {
-
+    UIControlState state = ![self.interactor canCommit]?UIControlStateNormal:UIControlStateDisabled;
+    UIView *tableFooterView = [UIButton tjs_commitBtnForTBFooter:@"提交保存" state: state blockForControl:^(id sender) {
         STRONG_SELF(self);
         [self.interactor addBankCard:^(id result, NSError * error) {
 
-
         }];
-        
     }];
-
     
-    [_tableView registerClass:[BankCardAddHeaderFooterView class] forHeaderFooterViewReuseIdentifier:headerFooterIdentifier];
+    _commitBtn = [tableFooterView viewWithTag:1111];
+    _tableView.backgroundColor = ThemeService.weak_color_00;
+    _tableView.tableFooterView = tableFooterView;
+}
+
+
+#pragma mark - Private
+
+- (void)updateCommitBtn{
+ 
+    _commitBtn.enabled = [self.interactor canCommit];
 }
 
 
@@ -77,6 +82,15 @@ static NSString *const headerFooterIdentifier = @"BankCardAddHeaderFooterView";
     BankCardAddCellInfoModel *model = [((NSArray *)[self.interactor.items objectAtIndex:indexPath.section]) objectAtIndex:indexPath.row];
     
     TJSBaseTableViewCell *cell = (TJSBaseTableViewCell *)[_cellFactory cellInTable:tableView forMineInfoModel:model];
+    
+    cell.delegate = self.cellDelegate;
+    
+    WEAK_SELF(self);
+    ((BankCardAddDefaultCell *)cell).valueChangedBlock = ^(id sender) {
+        
+        STRONG_SELF(self);
+        [self updateCommitBtn];
+    };
     
     [cell tjs_bindDataToCellWithValue:model];
     
@@ -107,11 +121,17 @@ static NSString *const headerFooterIdentifier = @"BankCardAddHeaderFooterView";
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    //BankCardAddCellInfoModel *model = [((NSArray *)[self.interactor.items objectAtIndex:indexPath.section]) objectAtIndex:indexPath.row];
+    BankCardAddCellInfoModel *model = [((NSArray *)[self.interactor.items objectAtIndex:indexPath.section]) objectAtIndex:indexPath.row];
+    if(model.canInput) return;
     
+    TJSBaseTableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
     
-  
+    if([cell.delegate conformsToProtocol:@protocol(TJSBaseTableViewCellDelegate)] && [cell.delegate respondsToSelector:@selector(onTapCell:)]){
     
+        [tableView.tjs_viewController.view endEditing:YES];
+        
+        [cell.delegate onTapCell:nil];
+    }
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
@@ -121,8 +141,8 @@ static NSString *const headerFooterIdentifier = @"BankCardAddHeaderFooterView";
 
 - (nullable UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
     
-    BankCardAddHeaderFooterView *header = [tableView dequeueReusableHeaderFooterViewWithIdentifier:headerFooterIdentifier];
-
+    BankCardAddHeaderFooterView *header = [_cellFactory headerFooterViewIntable:tableView forSection:section];
+ 
     BankCardAddCellInfoModel *model = [((NSArray *)[self.interactor.items objectAtIndex:section]) objectAtIndex:0];
     
     [header tjs_bindDataToCellWithValue:[model.headFooterTitles firstObject]];
@@ -137,7 +157,7 @@ static NSString *const headerFooterIdentifier = @"BankCardAddHeaderFooterView";
 
 - (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section{
  
-    BankCardAddHeaderFooterView *header = [tableView dequeueReusableHeaderFooterViewWithIdentifier:headerFooterIdentifier];
+    BankCardAddHeaderFooterView *header = [_cellFactory headerFooterViewIntable:tableView forSection:section];
   
     BankCardAddCellInfoModel *model = [((NSArray *)[self.interactor.items objectAtIndex:section]) objectAtIndex:0];
     

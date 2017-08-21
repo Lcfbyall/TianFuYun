@@ -10,4 +10,13 @@
 
 @interface BankCardInfo : NSObject
 
+@property (nonatomic,copy) NSString *name;
+
+@property (nonatomic,copy) NSString *IDCard;
+
+@property (nonatomic,copy) NSString *bank;
+
+@property (nonatomic,copy) NSString *bankNumber;
+
+
 @end

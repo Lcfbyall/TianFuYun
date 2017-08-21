@@ -22,8 +22,15 @@
 
 - (void)addBankCard:(void (^)(id, NSError *))callback;
 
-
 - (NSArray *)items;
+
+- (void)configWithBankCardInfo:(id)bankCardInfo;
+
+//交互
+- (void)showBank;
+
+- (BOOL)canCommit;
+
 
 @end
 

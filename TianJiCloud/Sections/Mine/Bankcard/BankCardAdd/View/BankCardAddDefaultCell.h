@@ -10,4 +10,7 @@
 
 @interface BankCardAddDefaultCell : BankCardAddBaseTableCell
 
+@property (nonatomic,copy) void (^valueChangedBlock)(id sender);
+
+
 @end

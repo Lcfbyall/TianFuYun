@@ -11,7 +11,7 @@
 
 #import "AddressManageCellModel.h"
 
-static NSString *const headerFooterIdentifier = @"ContractListHeaderIdentifier";
+static NSString *const headerFooterIdentifier = @"AddressManageListHeaderIdentifier";
 @interface AddressManageTableAdapter ()
 
 @property (nonatomic,weak)UITableView *tableView;

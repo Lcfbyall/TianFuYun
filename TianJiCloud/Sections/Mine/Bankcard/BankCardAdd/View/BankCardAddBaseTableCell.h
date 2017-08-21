@@ -13,4 +13,6 @@
 
 @interface BankCardAddBaseTableCell : TJSBaseTableViewCell
 
+@property (nonatomic,strong) BankCardAddCellInfoModel *model;
+
 @end
