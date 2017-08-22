@@ -7,7 +7,11 @@
 //
 
 #import "TJSBaseViewController.h"
+#import "SettingHomeConfigurateProtocol.h"
 
-@interface MineSettingViewController : TJSBaseViewController
+
+@interface MineSettingViewController : TJSBaseViewController<SettingHomeInteractorDelegate,TJSBaseTableViewCellDelegate>
+
+
 
 @end

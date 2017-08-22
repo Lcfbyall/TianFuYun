@@ -57,7 +57,6 @@
 		2C1B750A1F46C1100000E71A /* BankCardAddNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B75091F46C1100000E71A /* BankCardAddNetworkTool.m */; };
 		2C1BFEBD1F29779100665A71 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C1BFEBC1F29779100665A71 /* Home.storyboard */; };
 		2C1BFEBF1F2978C500665A71 /* Discovery.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C1BFEBE1F2978C500665A71 /* Discovery.storyboard */; };
-		2C300F7A1F2F327E00DD440E /* MineSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C300F791F2F327E00DD440E /* MineSettingViewController.m */; };
 		2C300F7C1F2F32BF00DD440E /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C300F7B1F2F32BF00DD440E /* Settings.storyboard */; };
 		2C300F7F1F2F3C3C00DD440E /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C300F7E1F2F3C3C00DD440E /* ProfileViewController.m */; };
 		2C300F821F2F3C5F00DD440E /* ModifyLogPasswordController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C300F811F2F3C5F00DD440E /* ModifyLogPasswordController.m */; };
@@ -169,6 +168,20 @@
 		2C4D35E91F4C25860082BB36 /* CumulativeInvestTableAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4D35E41F4C25860082BB36 /* CumulativeInvestTableAdapter.m */; };
 		2C4D35EC1F4C26E50082BB36 /* CumulateInvestHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4D35EB1F4C26E50082BB36 /* CumulateInvestHeader.m */; };
 		2C4D35EE1F4C274F0082BB36 /* CumulateInvestHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C4D35ED1F4C274F0082BB36 /* CumulateInvestHeader.xib */; };
+		2C597DBA1F4C2CB900415EB6 /* MineSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C597DA01F4C2CB900415EB6 /* MineSettingViewController.m */; };
+		2C597DBB1F4C2CB900415EB6 /* SettingHomeCellFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C597DA31F4C2CB900415EB6 /* SettingHomeCellFactory.m */; };
+		2C597DBC1F4C2CB900415EB6 /* SettingHomeCellLayoutConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C597DA51F4C2CB900415EB6 /* SettingHomeCellLayoutConfig.m */; };
+		2C597DBE1F4C2CB900415EB6 /* SettingHomeContentConfigFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C597DA91F4C2CB900415EB6 /* SettingHomeContentConfigFactory.m */; };
+		2C597DBF1F4C2CB900415EB6 /* SettingHomeDefaultContentConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C597DAB1F4C2CB900415EB6 /* SettingHomeDefaultContentConfig.m */; };
+		2C597DC01F4C2CB900415EB6 /* SettingHomeConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C597DAE1F4C2CB900415EB6 /* SettingHomeConfigurator.m */; };
+		2C597DC11F4C2CB900415EB6 /* SettingHomeDataSourceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C597DB01F4C2CB900415EB6 /* SettingHomeDataSourceImpl.m */; };
+		2C597DC21F4C2CB900415EB6 /* SettingHomeInteractorImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C597DB21F4C2CB900415EB6 /* SettingHomeInteractorImpl.m */; };
+		2C597DC31F4C2CB900415EB6 /* SettingHomeLayoutImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C597DB41F4C2CB900415EB6 /* SettingHomeLayoutImpl.m */; };
+		2C597DC41F4C2CB900415EB6 /* SettingHomeTableAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C597DB61F4C2CB900415EB6 /* SettingHomeTableAdapter.m */; };
+		2C597DC91F4C2D4D00415EB6 /* SettingBaseTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C597DC81F4C2D4D00415EB6 /* SettingBaseTableCell.m */; };
+		2C597DCC1F4C2D6300415EB6 /* SettingDefaultTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C597DCB1F4C2D6300415EB6 /* SettingDefaultTableCell.m */; };
+		2C597DCF1F4C2DC600415EB6 /* SettingHomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C597DCE1F4C2DC600415EB6 /* SettingHomeModel.m */; };
+		2C597DD21F4C2F2300415EB6 /* SettingHomeConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C597DD11F4C2F2300415EB6 /* SettingHomeConfig.m */; };
 		2C7A344B1F2F61C1004DD566 /* WithDarwDeposit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C7A344A1F2F61C1004DD566 /* WithDarwDeposit.storyboard */; };
 		2C7A344D1F2F633C004DD566 /* CumulateInvest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C7A344C1F2F633C004DD566 /* CumulateInvest.storyboard */; };
 		2C7A344F1F2F63BE004DD566 /* CapitalRecord.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C7A344E1F2F63BD004DD566 /* CapitalRecord.storyboard */; };
@@ -671,8 +684,6 @@
 		2C1B75091F46C1100000E71A /* BankCardAddNetworkTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankCardAddNetworkTool.m; sourceTree = "<group>"; };
 		2C1BFEBC1F29779100665A71 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		2C1BFEBE1F2978C500665A71 /* Discovery.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Discovery.storyboard; sourceTree = "<group>"; };
-		2C300F781F2F327E00DD440E /* MineSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineSettingViewController.h; sourceTree = "<group>"; };
-		2C300F791F2F327E00DD440E /* MineSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineSettingViewController.m; sourceTree = "<group>"; };
 		2C300F7B1F2F32BF00DD440E /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		2C300F7D1F2F3C3C00DD440E /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
 		2C300F7E1F2F3C3C00DD440E /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
@@ -902,6 +913,36 @@
 		2C4D35EA1F4C26E50082BB36 /* CumulateInvestHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CumulateInvestHeader.h; sourceTree = "<group>"; };
 		2C4D35EB1F4C26E50082BB36 /* CumulateInvestHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CumulateInvestHeader.m; sourceTree = "<group>"; };
 		2C4D35ED1F4C274F0082BB36 /* CumulateInvestHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CumulateInvestHeader.xib; sourceTree = "<group>"; };
+		2C597D9F1F4C2CB900415EB6 /* MineSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineSettingViewController.h; sourceTree = "<group>"; };
+		2C597DA01F4C2CB900415EB6 /* MineSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineSettingViewController.m; sourceTree = "<group>"; };
+		2C597DA21F4C2CB900415EB6 /* SettingHomeCellFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingHomeCellFactory.h; sourceTree = "<group>"; };
+		2C597DA31F4C2CB900415EB6 /* SettingHomeCellFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingHomeCellFactory.m; sourceTree = "<group>"; };
+		2C597DA41F4C2CB900415EB6 /* SettingHomeCellLayoutConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingHomeCellLayoutConfig.h; sourceTree = "<group>"; };
+		2C597DA51F4C2CB900415EB6 /* SettingHomeCellLayoutConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingHomeCellLayoutConfig.m; sourceTree = "<group>"; };
+		2C597DA81F4C2CB900415EB6 /* SettingHomeContentConfigFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingHomeContentConfigFactory.h; sourceTree = "<group>"; };
+		2C597DA91F4C2CB900415EB6 /* SettingHomeContentConfigFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingHomeContentConfigFactory.m; sourceTree = "<group>"; };
+		2C597DAA1F4C2CB900415EB6 /* SettingHomeDefaultContentConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingHomeDefaultContentConfig.h; sourceTree = "<group>"; };
+		2C597DAB1F4C2CB900415EB6 /* SettingHomeDefaultContentConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingHomeDefaultContentConfig.m; sourceTree = "<group>"; };
+		2C597DAD1F4C2CB900415EB6 /* SettingHomeConfigurator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingHomeConfigurator.h; sourceTree = "<group>"; };
+		2C597DAE1F4C2CB900415EB6 /* SettingHomeConfigurator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingHomeConfigurator.m; sourceTree = "<group>"; };
+		2C597DAF1F4C2CB900415EB6 /* SettingHomeDataSourceImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingHomeDataSourceImpl.h; sourceTree = "<group>"; };
+		2C597DB01F4C2CB900415EB6 /* SettingHomeDataSourceImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingHomeDataSourceImpl.m; sourceTree = "<group>"; };
+		2C597DB11F4C2CB900415EB6 /* SettingHomeInteractorImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingHomeInteractorImpl.h; sourceTree = "<group>"; };
+		2C597DB21F4C2CB900415EB6 /* SettingHomeInteractorImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingHomeInteractorImpl.m; sourceTree = "<group>"; };
+		2C597DB31F4C2CB900415EB6 /* SettingHomeLayoutImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingHomeLayoutImpl.h; sourceTree = "<group>"; };
+		2C597DB41F4C2CB900415EB6 /* SettingHomeLayoutImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingHomeLayoutImpl.m; sourceTree = "<group>"; };
+		2C597DB51F4C2CB900415EB6 /* SettingHomeTableAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingHomeTableAdapter.h; sourceTree = "<group>"; };
+		2C597DB61F4C2CB900415EB6 /* SettingHomeTableAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingHomeTableAdapter.m; sourceTree = "<group>"; };
+		2C597DB81F4C2CB900415EB6 /* SettingHomeConfigurateProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingHomeConfigurateProtocol.h; sourceTree = "<group>"; };
+		2C597DB91F4C2CB900415EB6 /* SettingHomePrivateProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingHomePrivateProtocol.h; sourceTree = "<group>"; };
+		2C597DC71F4C2D4D00415EB6 /* SettingBaseTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingBaseTableCell.h; sourceTree = "<group>"; };
+		2C597DC81F4C2D4D00415EB6 /* SettingBaseTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingBaseTableCell.m; sourceTree = "<group>"; };
+		2C597DCA1F4C2D6300415EB6 /* SettingDefaultTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingDefaultTableCell.h; sourceTree = "<group>"; };
+		2C597DCB1F4C2D6300415EB6 /* SettingDefaultTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingDefaultTableCell.m; sourceTree = "<group>"; };
+		2C597DCD1F4C2DC600415EB6 /* SettingHomeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingHomeModel.h; sourceTree = "<group>"; };
+		2C597DCE1F4C2DC600415EB6 /* SettingHomeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingHomeModel.m; sourceTree = "<group>"; };
+		2C597DD01F4C2F2300415EB6 /* SettingHomeConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingHomeConfig.h; sourceTree = "<group>"; };
+		2C597DD11F4C2F2300415EB6 /* SettingHomeConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingHomeConfig.m; sourceTree = "<group>"; };
 		2C7A344A1F2F61C1004DD566 /* WithDarwDeposit.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WithDarwDeposit.storyboard; sourceTree = "<group>"; };
 		2C7A344C1F2F633C004DD566 /* CumulateInvest.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CumulateInvest.storyboard; sourceTree = "<group>"; };
 		2C7A344E1F2F63BD004DD566 /* CapitalRecord.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CapitalRecord.storyboard; sourceTree = "<group>"; };
@@ -2728,6 +2769,78 @@
 			path = Protocol;
 			sourceTree = "<group>";
 		};
+		2C597D9E1F4C2CB900415EB6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2C597D9F1F4C2CB900415EB6 /* MineSettingViewController.h */,
+				2C597DA01F4C2CB900415EB6 /* MineSettingViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2C597DA11F4C2CB900415EB6 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				2C597DD01F4C2F2300415EB6 /* SettingHomeConfig.h */,
+				2C597DD11F4C2F2300415EB6 /* SettingHomeConfig.m */,
+				2C597DA21F4C2CB900415EB6 /* SettingHomeCellFactory.h */,
+				2C597DA31F4C2CB900415EB6 /* SettingHomeCellFactory.m */,
+				2C597DA41F4C2CB900415EB6 /* SettingHomeCellLayoutConfig.h */,
+				2C597DA51F4C2CB900415EB6 /* SettingHomeCellLayoutConfig.m */,
+				2C597DA81F4C2CB900415EB6 /* SettingHomeContentConfigFactory.h */,
+				2C597DA91F4C2CB900415EB6 /* SettingHomeContentConfigFactory.m */,
+				2C597DAA1F4C2CB900415EB6 /* SettingHomeDefaultContentConfig.h */,
+				2C597DAB1F4C2CB900415EB6 /* SettingHomeDefaultContentConfig.m */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		2C597DAC1F4C2CB900415EB6 /* Disaggregate */ = {
+			isa = PBXGroup;
+			children = (
+				2C597DAD1F4C2CB900415EB6 /* SettingHomeConfigurator.h */,
+				2C597DAE1F4C2CB900415EB6 /* SettingHomeConfigurator.m */,
+				2C597DAF1F4C2CB900415EB6 /* SettingHomeDataSourceImpl.h */,
+				2C597DB01F4C2CB900415EB6 /* SettingHomeDataSourceImpl.m */,
+				2C597DB11F4C2CB900415EB6 /* SettingHomeInteractorImpl.h */,
+				2C597DB21F4C2CB900415EB6 /* SettingHomeInteractorImpl.m */,
+				2C597DB31F4C2CB900415EB6 /* SettingHomeLayoutImpl.h */,
+				2C597DB41F4C2CB900415EB6 /* SettingHomeLayoutImpl.m */,
+				2C597DB51F4C2CB900415EB6 /* SettingHomeTableAdapter.h */,
+				2C597DB61F4C2CB900415EB6 /* SettingHomeTableAdapter.m */,
+			);
+			path = Disaggregate;
+			sourceTree = "<group>";
+		};
+		2C597DB71F4C2CB900415EB6 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				2C597DB81F4C2CB900415EB6 /* SettingHomeConfigurateProtocol.h */,
+				2C597DB91F4C2CB900415EB6 /* SettingHomePrivateProtocol.h */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		2C597DC51F4C2D1C00415EB6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2C597DCD1F4C2DC600415EB6 /* SettingHomeModel.h */,
+				2C597DCE1F4C2DC600415EB6 /* SettingHomeModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2C597DC61F4C2D1C00415EB6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2C597DC71F4C2D4D00415EB6 /* SettingBaseTableCell.h */,
+				2C597DC81F4C2D4D00415EB6 /* SettingBaseTableCell.m */,
+				2C597DCA1F4C2D6300415EB6 /* SettingDefaultTableCell.h */,
+				2C597DCB1F4C2D6300415EB6 /* SettingDefaultTableCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		2C801BA31F233F46009F82F7 /* Sections */ = {
 			isa = PBXGroup;
 			children = (
@@ -3400,8 +3513,12 @@
 		2C85E36B1F2ECF3700ADD360 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
-				2C300F781F2F327E00DD440E /* MineSettingViewController.h */,
-				2C300F791F2F327E00DD440E /* MineSettingViewController.m */,
+				2C597D9E1F4C2CB900415EB6 /* Controller */,
+				2C597DA11F4C2CB900415EB6 /* Config */,
+				2C597DAC1F4C2CB900415EB6 /* Disaggregate */,
+				2C597DB71F4C2CB900415EB6 /* Protocol */,
+				2C597DC51F4C2D1C00415EB6 /* Model */,
+				2C597DC61F4C2D1C00415EB6 /* View */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -5913,6 +6030,7 @@
 				2C85E34D1F2ECC1200ADD360 /* AboutMeViewController.m in Sources */,
 				2CF8B55E1F3DA438003B8520 /* ProductSearchNetworkTool.m in Sources */,
 				2CB4F63F1F42F26500FF98C9 /* ContractApplyTableAdapter.m in Sources */,
+				2C597DBB1F4C2CB900415EB6 /* SettingHomeCellFactory.m in Sources */,
 				2CCBE4A41F344A98006C4018 /* MineHomeCellItem.m in Sources */,
 				2C8BB7B81F315CA600E2D75F /* HomeHeaderWebController.m in Sources */,
 				2CCBE4831F3415F2006C4018 /* MineHomeHeaderCollectionLayout.m in Sources */,
@@ -5966,6 +6084,7 @@
 				2C44123F1F21D2A600C453EF /* GVUserDefaults+TJSGlobalProperties.m in Sources */,
 				2CD8974E1F457B96008F7C73 /* AddressSelectedConfigurator.m in Sources */,
 				2CD897121F454839008F7C73 /* AddressManageCellModel.m in Sources */,
+				2C597DC31F4C2CB900415EB6 /* SettingHomeLayoutImpl.m in Sources */,
 				2C1B74E31F4698A30000E71A /* BankCardAddCellLayoutConfig.m in Sources */,
 				2CD8970E1F45480B008F7C73 /* AddressManageLayoutImpl.m in Sources */,
 				2C4412591F21DDA900C453EF /* UIWindow+Transition.m in Sources */,
@@ -5992,6 +6111,7 @@
 				2C1B74C01F4694FF0000E71A /* BankCardListInteractorImpl.m in Sources */,
 				2C4412031F219A5300C453EF /* UIDevice+CurrentArg.m in Sources */,
 				2C1B74E91F4698C90000E71A /* BankCardAddCellInfoModel.m in Sources */,
+				2C597DCF1F4C2DC600415EB6 /* SettingHomeModel.m in Sources */,
 				2C8DE6171F2B43A8009B3AE2 /* DiscoRoadShowListController.m in Sources */,
 				2C85E3861F2F044600ADD360 /* TJSMineHomeLayoutImpl.m in Sources */,
 				A292B2611F39F7DD0086E03E /* CapitalRecordListController.m in Sources */,
@@ -6029,6 +6149,7 @@
 				2C85E32E1F2EC60700ADD360 /* MyOrderContainerController.m in Sources */,
 				2C8DE6021F2AEB06009B3AE2 /* DiscoveryNewsInfo.m in Sources */,
 				A28956951F3CA22A002D6845 /* ProductSearchHotLayout.m in Sources */,
+				2C597DC11F4C2CB900415EB6 /* SettingHomeDataSourceImpl.m in Sources */,
 				2CCC85AF1F3AEE3A0009FC1C /* TJSProductFilterConfigurator.m in Sources */,
 				2CB4F5E21F41C3BB00FF98C9 /* ContractListConfig.m in Sources */,
 				2CB4F64A1F42F52200FF98C9 /* ContractApplyInfoCell.m in Sources */,
@@ -6128,6 +6249,7 @@
 				2C83C7251F39BA30004034CA /* PersonalMessageCell.m in Sources */,
 				2C859CF01F31EB2E00B86575 /* ZLPhotoPickerBrowserViewController.m in Sources */,
 				2CAF42DB1F281B8600ABCA5E /* ProductListViewController.m in Sources */,
+				2C597DBC1F4C2CB900415EB6 /* SettingHomeCellLayoutConfig.m in Sources */,
 				2CAF42D31F281B8600ABCA5E /* TJSProductListContentConfig.m in Sources */,
 				2CD896F91F45435F008F7C73 /* AddressManageController.m in Sources */,
 				2C027D271F3C82B1001D7EB6 /* ProductSearchDataSourceImpl.m in Sources */,
@@ -6140,9 +6262,11 @@
 				2C85E3971F2F155700ADD360 /* MineHomeBaseTableCell.m in Sources */,
 				2C1B74BC1F4694FF0000E71A /* BankCardListDefaultContentConfig.m in Sources */,
 				2C85E38C1F2F09F100ADD360 /* TJSMineHomeCellLayoutConfig.m in Sources */,
+				2C597DBE1F4C2CB900415EB6 /* SettingHomeContentConfigFactory.m in Sources */,
 				2C4412041F219A5300C453EF /* UIImage+FromColor.m in Sources */,
 				2CAF42851F27261A00ABCA5E /* TJSProductDeleteApi.m in Sources */,
 				2C8BB7BB1F315CB500E2D75F /* HomeFooterWebController.m in Sources */,
+				2C597DC41F4C2CB900415EB6 /* SettingHomeTableAdapter.m in Sources */,
 				2CAF43081F2828C200ABCA5E /* TJSProductListInteractorImpl.m in Sources */,
 				2C4412761F21E7F000C453EF /* UIButton+BackgroundColor.m in Sources */,
 				A292B2641F39F81D0086E03E /* CapitalRecordConfigurator.m in Sources */,
@@ -6154,7 +6278,7 @@
 				2CA638FD1F4AD37700C39562 /* WithDrawDepositController.m in Sources */,
 				2C4C1BD81F381AF300002166 /* MineHomeCellBalanceItem.m in Sources */,
 				2C8DE5FB1F2AEA59009B3AE2 /* TJSDiscoNewsDataSorceImpl.m in Sources */,
-				2C300F7A1F2F327E00DD440E /* MineSettingViewController.m in Sources */,
+				2C597DBA1F4C2CB900415EB6 /* MineSettingViewController.m in Sources */,
 				2CCBE4A61F344A98006C4018 /* MineHomeCellOrderItem.m in Sources */,
 				2C4412B41F2207CD00C453EF /* TJSLoginStateUtil.m in Sources */,
 				A292B27A1F39FBC10086E03E /* TJSBaseDisplayContainer.m in Sources */,
@@ -6180,6 +6304,7 @@
 				2C859D001F31EB2E00B86575 /* ZLPhotoPickerGroupTableViewCell.m in Sources */,
 				2CA639321F4AE9D000C39562 /* WithDrawDepositContentConfigFactory.m in Sources */,
 				2C1B74B71F4694FF0000E71A /* BankCardListAddContentConfig.m in Sources */,
+				2C597DC21F4C2CB900415EB6 /* SettingHomeInteractorImpl.m in Sources */,
 				2CA6391F1F4AE3BD00C39562 /* WithDrawDepositNetworkTool.m in Sources */,
 				2CB4F65F1F43052E00FF98C9 /* ContractDetailNetworkTool.m in Sources */,
 				2C4C1C881F3948E100002166 /* PNPieChart.m in Sources */,
@@ -6194,6 +6319,7 @@
 				2CB4F5E91F41C3BB00FF98C9 /* ContractInfo.m in Sources */,
 				2CF8B56B1F3DC710003B8520 /* ProductSearchCellContentConfig.m in Sources */,
 				2CB4F60C1F42849100FF98C9 /* MyFavNetworkTool.m in Sources */,
+				2C597DC91F4C2D4D00415EB6 /* SettingBaseTableCell.m in Sources */,
 				2C4C1BFE1F3846F600002166 /* MyOrderListTableCell.m in Sources */,
 				2CB4F57E1F41905500FF98C9 /* InvestProductController.m in Sources */,
 				2C8DE5841F29D509009B3AE2 /* TJSHomeListInteractorImpl.m in Sources */,
@@ -6246,6 +6372,7 @@
 				2C4C1C9F1F39493400002166 /* PNLineChartDataItem.m in Sources */,
 				2CD8971A1F4548E2008F7C73 /* AddressManageCellLayoutConfig.m in Sources */,
 				2C8DE5CD1F2AE3BC009B3AE2 /* DiscoveryNewsCollectLayout.m in Sources */,
+				2C597DC01F4C2CB900415EB6 /* SettingHomeConfigurator.m in Sources */,
 				2C4D35D71F4C23B10082BB36 /* CumulativeInvestContentConfigFactory.m in Sources */,
 				2C8DE5F41F2AE849009B3AE2 /* TJSDiscoNewsListAdapter.m in Sources */,
 				A28956981F3CA25E002D6845 /* ProductSearchResultLayout.m in Sources */,
@@ -6278,6 +6405,7 @@
 				2CA639301F4AE9D000C39562 /* WithDrawDepositCellLayoutConfig.m in Sources */,
 				2C4C1C101F384A3B00002166 /* TJSMyOrderListDataSourceImpl.m in Sources */,
 				2C44127C1F21E97700C453EF /* UITextField+PlaceHolder.m in Sources */,
+				2C597DD21F4C2F2300415EB6 /* SettingHomeConfig.m in Sources */,
 				2C1B74F21F469A140000E71A /* BankCardAddHeaderFooterView.m in Sources */,
 				2CAF42F61F28273300ABCA5E /* ProductListCellImageContentView.m in Sources */,
 				2C1B750A1F46C1100000E71A /* BankCardAddNetworkTool.m in Sources */,
@@ -6308,6 +6436,7 @@
 				2C4412851F21EB3100C453EF /* UITextView+EditRect.m in Sources */,
 				2C85E33E1F2ECB1300ADD360 /* UseAgreementController.m in Sources */,
 				2C8BB7A31F30859C00E2D75F /* HomeFooterContainer.m in Sources */,
+				2C597DBF1F4C2CB900415EB6 /* SettingHomeDefaultContentConfig.m in Sources */,
 				2C8DE6051F2AECCD009B3AE2 /* TJSDiscoNewsLayoutImpl.m in Sources */,
 				2C85E3A11F2F1ACC00ADD360 /* TJSMineHomeBalanceCellContentConfig.m in Sources */,
 				2C1B74C11F4694FF0000E71A /* BankCardListLayoutImpl.m in Sources */,
@@ -6316,6 +6445,7 @@
 				2C859CE71F31EB2E00B86575 /* UIImage+ZLPhotoLib.m in Sources */,
 				2CAF42F81F28273300ABCA5E /* ProductListCell.m in Sources */,
 				2C4C1C221F38535A00002166 /* TJSMyBaseOrderListCellContentConfig.m in Sources */,
+				2C597DCC1F4C2D6300415EB6 /* SettingDefaultTableCell.m in Sources */,
 				2CAF427E1F26EAE300ABCA5E /* TJSAppVersionApi.m in Sources */,
 				2CCC85AE1F3AEE3A0009FC1C /* TJSProductFilterCollAdapter.m in Sources */,
 				2C1B74EC1F4699A50000E71A /* BankCardAddBaseTableCell.m in Sources */,

@@ -1,16 +1,16 @@
 //
-//  CumulativeInvestInteractorImpl.m
+//  SettingHomeInteractorImpl.m
 //  TianJiCloud
 //
 //  Created by 朱鹏 on 2017/8/14.
 //  Copyright © 2017年 TianJiMoney. All rights reserved.
 //
 
-#import "CumulativeInvestInteractorImpl.h"
+#import "SettingHomeInteractorImpl.h"
 
-@implementation CumulativeInvestInteractorImpl
+@implementation SettingHomeInteractorImpl
 
-#pragma mark - <CumulativeInvestInteractor>
+#pragma mark - <SettingHomeInteractor>
 
 - (void)loadInvest:(void (^)(id, NSError *))callback{
 
@@ -26,7 +26,7 @@
 }
 
 
-#pragma mark - <CumulativeInvestLayoutDelegate>
+#pragma mark - <SettingHomeLayoutDelegate>
 
 - (void)onRefresh{
 
