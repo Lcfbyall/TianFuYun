@@ -9,6 +9,7 @@
 #ifndef TJSBaseVCProtocol_h
 #define TJSBaseVCProtocol_h
 
+#import <UIKit/UIKit.h>
 
 #pragma mark - BaseVCConfig
 @protocol TJSBaseVCConfig <NSObject>
@@ -40,6 +41,10 @@
 - (UIColor *)tjs_navigationBarTintColor;
 
 - (BOOL)tjs_hideBackBarButtonItem;
+
+- (NSString *)tjs_backBarButtonTitle;
+
+- (UIImage *)tjs_backBarButtonImage;
 
 - (UIColor *)tjs_backBarButtonItemTintColor;
 

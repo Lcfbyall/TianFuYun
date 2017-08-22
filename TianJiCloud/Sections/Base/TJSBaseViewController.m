@@ -74,6 +74,7 @@ NSString * const AdjustsScrollViewInsets = @"tjsAdjustsScrollViewInsets";
 }
 
 #pragma mark - <TJSNavigationConfig>
+
 - (BOOL)tjs_hideNavigationBar{
     
     BOOL hide = [self.params[HideNavigationBarKey] boolValue];
@@ -109,6 +110,15 @@ NSString * const AdjustsScrollViewInsets = @"tjsAdjustsScrollViewInsets";
     return hide;
 }
 
+- (NSString *)tjs_backBarButtonTitle{
+
+    return @"";
+}
+
+- (UIImage *)tjs_backBarButtonImage{
+
+    return IMAGE(@"back_arrow");
+}
 
 - (UIColor *)tjs_backBarButtonItemTintColor{
 

@@ -10,7 +10,7 @@
 
 @class WithDrawDepositController;
 
-@interface WithDrawDepositConfig : NSObject
+@interface WithDrawDepositConfig : NSObject<TJSNavigationConfig>
 
 - (void)setup:(WithDrawDepositController *)vc;
 

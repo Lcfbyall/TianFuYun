@@ -99,6 +99,7 @@
         }
     }];
     
+    
     NSArray *rightBarButtonItems = _vc.navigationItem.rightBarButtonItems?:[NSArray array];
     NSMutableArray *mutable = [rightBarButtonItems mutableCopy];
     [mutable addObject:rightItem];

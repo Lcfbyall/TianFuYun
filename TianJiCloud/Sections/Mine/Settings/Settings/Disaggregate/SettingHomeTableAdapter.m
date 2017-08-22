@@ -45,6 +45,8 @@ static NSString *const headerFooterIdentifier = @"SettingHomeListHeaderIdentifie
     
     _tableView.tableFooterView = [UIView new];
 
+    _tableView.contentInset = UIEdgeInsetsMake(100, 0, 0, 0);
+
     [_tableView registerClass:[UITableViewHeaderFooterView class] forHeaderFooterViewReuseIdentifier:headerFooterIdentifier];
 }
 

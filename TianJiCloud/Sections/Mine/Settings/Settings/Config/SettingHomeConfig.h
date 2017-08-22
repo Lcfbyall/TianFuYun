@@ -10,7 +10,7 @@
 
 @class MineSettingViewController;
 
-@interface SettingHomeConfig : NSObject
+@interface SettingHomeConfig : NSObject<TJSNavigationConfig>
 
 - (void)setup:(MineSettingViewController *)vc;
 

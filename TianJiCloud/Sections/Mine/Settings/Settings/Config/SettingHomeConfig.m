@@ -8,6 +8,7 @@
 
 #import "SettingHomeConfig.h"
 #import "MineSettingViewController.h"
+#import "UIBarButtonItem+TJSCustom.h"
 
 @interface SettingHomeConfig ()
 
@@ -21,6 +22,17 @@
 
     _vc = vc;
 
+    _vc.navigationItem.leftBarButtonItems = [self tjs_leftBarButtonItems];
+
+    _vc.params = [UINavigationBar translucentWhiteTint];
+}
+
+
+#pragma mark - <TJSNavigationConfig>
+
+- (NSArray <UIBarButtonItem *> *)tjs_leftBarButtonItems{
+    UIBarButtonItem *left = [UIBarButtonItem tjs_backTitleWhiteImage];
+    return @[left];
 }
 
 

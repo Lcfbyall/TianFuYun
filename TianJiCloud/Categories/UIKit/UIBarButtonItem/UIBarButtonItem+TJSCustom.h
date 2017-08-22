@@ -10,6 +10,6 @@
 
 @interface UIBarButtonItem (TJSCustom)
 
-
++ (UIBarButtonItem *)tjs_backTitleWhiteImage;
 
 @end

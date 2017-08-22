@@ -43,6 +43,8 @@
        if([nextVC conformsToProtocol:@protocol(TJSNavigationConfig)] &&
           ![nextVC tjs_hideBackBarButtonItem]){
 
+           
+
         WEAK_SELF(self);
         UIBarButtonItem *leftItem = [[UIBarButtonItem alloc] bk_initWithImage:IMAGE(@"back_arrow") style:UIBarButtonItemStylePlain handler:^(id sender) {
             
@@ -63,7 +65,8 @@
         }];
            
         viewController.navigationItem.leftBarButtonItem = leftItem;
-           
+
+
        }else{
        
            UIBarButtonItem *left = [[UIBarButtonItem alloc]bk_initWithTitle:@"" style:UIBarButtonItemStylePlain handler:^(id sender) {
@@ -73,9 +76,6 @@
            left.width = 10;
            
            viewController.navigationItem.leftBarButtonItem = left;
-          //不允许设置为navigationItem
-          //[[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
-           
        }
     }
     
