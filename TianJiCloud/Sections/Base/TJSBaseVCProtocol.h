@@ -41,7 +41,12 @@
 
 - (BOOL)tjs_hideBackBarButtonItem;
 
+- (UIColor *)tjs_backBarButtonItemTintColor;
+
+- (NSDictionary *)tjs_navigaitonBarTitleTextAttributes;
+
 - (BOOL)tjs_adjustsScrollViewInsets;
+
 
 //2.自定义返回按钮事件
 - (void)tjs_unifyPopForMoreEvent;

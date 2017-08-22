@@ -10,4 +10,8 @@
 
 @interface TJSBaseNavigationController : UINavigationController
 
+
++ (void)p_configViewController:(UIViewController *)viewController;
+
+
 @end

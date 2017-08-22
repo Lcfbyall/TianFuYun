@@ -34,6 +34,7 @@
        
    }];
     
+    
    if(callback)callback(nil,nil);
 
 }
@@ -48,6 +49,18 @@
 
     _items = [[WithDrawDepositCellModel configModelsWithInfo:data] mutableCopy];
 
+}
+
+- (BOOL)canCommit{
+  
+    //校验银行卡、输入金额
+    WithDrawDepositCellModel *first = [[_items firstObject] firstObject];
+    
+    
+    WithDrawDepositCellModel *second = [[_items lastObject] firstObject];
+    
+
+    return second.sum.length;
 }
 
 

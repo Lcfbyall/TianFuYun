@@ -7,14 +7,18 @@
 //
 
 #import "TJSBaseViewController.h"
-
+#import "TJSBaseNavigationController.h"
 
 NSString * const HideNavigationBarKey     = @"tjsHideNavigationBarKey";
 NSString * const NavigationBarTranslucentKey = @"tjsNavigationBarTranslucentKey";
 NSString * const NavigationBarBarTintColor = @"tjsNavigationBarBarTintColor";
 NSString *const  NavigationBarTintColor   = @"tjsNavigationBarTintColor";
 NSString * const HideBackBarButtonItemKey = @"tjsHideBackBarButtonItemKey";
+NSString *const  BackBarButtonItemTintColor = @"BackBarButtonItemTintColor";
+NSString *const  NavigationTitleTextAttributes = @"NavigationTitleTextAttributes";
 NSString * const AdjustsScrollViewInsets = @"tjsAdjustsScrollViewInsets";
+
+
 
 @interface TJSBaseViewController ()
 
@@ -31,15 +35,15 @@ NSString * const AdjustsScrollViewInsets = @"tjsAdjustsScrollViewInsets";
     
     [self tjs_configBaseView];
     
+    [self.navigationController.navigationBar setupStyleBasic];
     
 }
 
 - (void)viewWillAppear:(BOOL)animated{
  
     [super viewWillAppear:animated];
-
-    [self.navigationController.navigationBar setupStyleBasic];
     
+    [TJSBaseNavigationController p_configViewController:self];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -104,6 +108,26 @@ NSString * const AdjustsScrollViewInsets = @"tjsAdjustsScrollViewInsets";
     
     return hide;
 }
+
+
+- (UIColor *)tjs_backBarButtonItemTintColor{
+
+    UIColor *mainColor = self.params[BackBarButtonItemTintColor];
+    
+    return mainColor?:ThemeService.origin_color_01;
+}
+
+- (NSDictionary *)tjs_navigaitonBarTitleTextAttributes{
+  
+    NSDictionary *dic = self.params[NavigationTitleTextAttributes];
+    if(!dic){
+    
+        dic = @{NSForegroundColorAttributeName:ThemeService.origin_color_01,NSFontAttributeName:[UIFont systemFontOfSize:16.0f]};
+    }
+    
+    return dic;
+}
+
 
 - (BOOL)tjs_adjustsScrollViewInsets{
   

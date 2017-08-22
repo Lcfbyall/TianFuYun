@@ -24,7 +24,7 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="¥" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hrv-hD-pZY">
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hrv-hD-pZY">
                         <rect key="frame" x="19" y="44" width="239" height="36"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="36" id="fPV-ye-Dso"/>
@@ -35,7 +35,6 @@
                     </textField>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kHn-9G-fNN">
                         <rect key="frame" x="283" y="47" width="75" height="30"/>
-                        <color key="backgroundColor" red="0.2119198263" green="1" blue="0.42678443760000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="75" id="0vD-kA-wbI"/>
                         </constraints>

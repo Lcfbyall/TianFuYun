@@ -1,18 +1,18 @@
 //
-//  WithdrawDepositRecord.m
+//  WithDrawBankSelectController.m
 //  TianJiCloud
 //
-//  Created by 朱鹏 on 2017/7/31.
+//  Created by 朱鹏 on 2017/8/21.
 //  Copyright © 2017年 TianJiMoney. All rights reserved.
 //
 
-#import "WithdrawDepositRecord.h"
+#import "WithDrawBankSelectController.h"
 
-@interface WithdrawDepositRecord ()
+@interface WithDrawBankSelectController ()
 
 @end
 
-@implementation WithdrawDepositRecord
+@implementation WithDrawBankSelectController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

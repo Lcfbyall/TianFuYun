@@ -1,5 +1,5 @@
 //
-//  WithdrawBankSelectController.h
+//  WithDrawBankSelectController.h
 //  TianJiCloud
 //
 //  Created by 朱鹏 on 2017/8/21.
@@ -8,6 +8,6 @@
 
 #import "TJSBaseViewController.h"
 
-@interface WithdrawBankSelectController : TJSBaseViewController
+@interface WithDrawBankSelectController : TJSBaseViewController
 
 @end

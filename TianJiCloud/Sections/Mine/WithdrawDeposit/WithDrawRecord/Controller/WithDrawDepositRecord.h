@@ -1,5 +1,5 @@
 //
-//  WithdrawDepositRecord.h
+//  WithDrawDepositRecord.h
 //  TianJiCloud
 //
 //  Created by 朱鹏 on 2017/7/31.
@@ -8,6 +8,6 @@
 
 #import "TJSBaseViewController.h"
 
-@interface WithdrawDepositRecord : TJSBaseViewController
+@interface WithDrawDepositRecord : TJSBaseViewController
 
 @end

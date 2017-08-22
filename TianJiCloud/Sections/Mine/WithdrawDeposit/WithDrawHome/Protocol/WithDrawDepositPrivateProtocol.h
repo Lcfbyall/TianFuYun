@@ -28,6 +28,7 @@
 
 - (void)configWithData:(id)data;
 
+- (BOOL)canCommit;
 
 @end
 

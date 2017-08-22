@@ -32,18 +32,25 @@
         _tableView = tableView;
         
         _cellFactory = [[BankCardAddCellFactory alloc]init];
-        
-        [self setupTableView];
+    
     }
     
     return self;
 }
 
 
+- (void)setInteractor:(id<BankCardAddInteractor>)interactor{
+    
+    _interactor = interactor;
+    
+    [self setupTableView];
+}
+
 - (void)setupTableView{
     
     WEAK_SELF(self);
-    UIControlState state = ![self.interactor canCommit]?UIControlStateNormal:UIControlStateDisabled;
+    BOOL valid = [self.interactor canCommit];
+    UIControlState state = valid?UIControlStateNormal:UIControlStateDisabled;
     UIView *tableFooterView = [UIButton tjs_commitBtnForTBFooter:@"提交保存" state: state blockForControl:^(id sender) {
         STRONG_SELF(self);
         [self.interactor addBankCard:^(id result, NSError * error) {

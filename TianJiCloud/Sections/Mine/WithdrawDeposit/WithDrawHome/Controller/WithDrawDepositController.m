@@ -15,9 +15,7 @@
 @property (nonatomic,strong)WithDrawDepositConfig *config;
 
 @property (nonatomic,strong) WithDrawDepositConfigurator *configurator;
-
 @property (nonatomic,strong) id <WithDrawDepositInteractor> interactor;
-
 @property (weak, nonatomic) IBOutlet UITableView *withDrawList;
 
 
@@ -47,7 +45,6 @@
   
     _config = [[WithDrawDepositConfig alloc]init];
     [_config setup:self];
-
 }
 
 

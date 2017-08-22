@@ -72,10 +72,10 @@ static NSString *const DiscoryRoadShowListVC = @"DiscoRoadShowListController";
 static NSString *const SettingListVC = @"MineSettingViewController";
 
 
-#pragma mark - WithdrawDeposit identifier
+#pragma mark - WithDrawDeposit identifier
 
-static NSString *const WithdrawDepositVC = @"WithDrawDepositController";
-static NSString *const WithdrawDepositRecordVC = @"WithDrawDepositRecord";
+static NSString *const WithDrawDepositVC = @"WithDrawDepositController";
+static NSString *const WithDrawDepositRecordVC = @"WithDrawDepositRecord";
 static NSString *const WithDrawBankSelectVC = @"WithDrawBankSelectController";
 
 

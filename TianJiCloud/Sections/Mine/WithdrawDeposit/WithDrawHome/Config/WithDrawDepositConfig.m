@@ -23,6 +23,56 @@
     _vc = vc;
     
     _vc.title = @"佣金提现";
+    
+    _vc.navigationItem.rightBarButtonItems = [self tjs_rightBarButtonItems];
+    
+    _vc.params = @{
+                   
+                   NavigationBarTranslucentKey:@YES,
+                   NavigationBarTintColor: ThemeService.origin_color_00,
+                   NavigationBarBarTintColor:  [UIColor clearColor],
+                   BackBarButtonItemTintColor:ThemeService.origin_color_00,
+                   AdjustsScrollViewInsets :@NO,
+                   
+                   NavigationTitleTextAttributes:
+                   @{
+                     NSForegroundColorAttributeName:ThemeService.origin_color_00,
+                     NSFontAttributeName:[UIFont systemFontOfSize:16.0f]
+                    }
+                 };
 }
+
+
+#pragma mark - <TJSNavigationConfig>
+
+- (NSArray <UIBarButtonItem *> *)tjs_rightBarButtonItems{
+    
+    WEAK_SELF(self);
+    UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] bk_initWithTitle:@"提现记录" style:UIBarButtonItemStylePlain handler:^(id sender) {
+        
+        STRONG_SELF(self);
+        if(self){
+            
+            [UIViewController tjs_pushViewController:WithDrawDepositRecordVC animated:YES];
+        }
+    }];
+    
+    [rightItem setTitleTextAttributes:
+  
+    @{
+    NSForegroundColorAttributeName:ThemeService.origin_color_00,
+    NSFontAttributeName:[UIFont systemFontOfSize:14.0f]
+                                       
+    } forState:UIControlStateNormal];
+    
+    
+    NSArray *rightBarButtonItems = _vc.navigationItem.rightBarButtonItems?:[NSArray array];
+    NSMutableArray *mutable = [rightBarButtonItems mutableCopy];
+    [mutable addObject:rightItem];
+    
+    return [mutable copy];
+}
+
+
 
 @end

@@ -11,13 +11,14 @@
 #import "WithDrawDepositCellModel.h"
 #import "WithDrawDepositHeaderFooterView.h"
 #import "WithDrawDepositBaseCell.h"
+#import "WithDrawDepositHomeHeader.h"
 
 @interface WithDrawDepositTableAdapter ()
 
 @property (nonatomic,weak)UITableView *tableView;
 
 @property (nonatomic,weak)UIButton *commitBtn;
-
+@property (nonatomic,weak)WithDrawDepositHomeHeader *header;
 @property (nonatomic,strong)WithDrawDepositCellFactory *cellFactory;
 
 @end
@@ -32,29 +33,38 @@
         _tableView = tableView;
         
         _cellFactory = [[WithDrawDepositCellFactory alloc]init];
-        
-        [self setupTableView];
     }
     
     return self;
 }
 
 
+- (void)setInteractor:(id<WithDrawDepositInteractor>)interactor{
+  
+    _interactor = interactor;
+
+    [self setupTableView];
+}
+
 - (void)setupTableView{
     
     WEAK_SELF(self);
-    UIControlState state = UIControlStateNormal;
-
+    BOOL valid = [self.interactor canCommit];
+    UIControlState state = valid? UIControlStateNormal:UIControlStateDisabled;
     UIView *tableFooterView = [UIButton tjs_commitBtnForTBFooter:@"提交保存" state: state blockForControl:^(id sender) {
         STRONG_SELF(self);
-        [self.interactor withDrawForFree:^(id result, NSError * error) {
-
-        }];
+        [self.interactor withDrawForFree:^(id result, NSError * error) {}];
     }];
-    
     _commitBtn = [tableFooterView viewWithTag:1111];
     _tableView.backgroundColor = ThemeService.weak_color_00;
     _tableView.tableFooterView = tableFooterView;
+    
+    //
+    _header = [WithDrawDepositHomeHeader header];
+    _tableView.tableHeaderView = _header;
+    [_header tjs_bindDataToCellWithValue:@"10000"];
+    
+    _tableView.bounces = NO;
 }
 
 
@@ -62,7 +72,7 @@
 
 - (void)updateCommitBtn{
  
-    _commitBtn.enabled = YES;
+    _commitBtn.enabled = [self.interactor canCommit];
 }
 
 
@@ -88,7 +98,7 @@
     cell.delegate = self.cellDelegate;
     
     WEAK_SELF(self);
-    ((WithDrawDepositBaseCell *)cell).valueChangedBlock = ^(id sender) {
+    model.itemOperation = ^(id obj1, id obj2) {
         
         STRONG_SELF(self);
         [self updateCommitBtn];
@@ -123,19 +133,21 @@
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    //WithDrawDepositCellModel *model = [((NSArray *)[self.interactor.items objectAtIndex:indexPath.section]) objectAtIndex:indexPath.row];
+    WithDrawDepositCellModel *model = [((NSArray *)[self.interactor.items objectAtIndex:indexPath.section]) objectAtIndex:indexPath.row];
 
-
-    /*
     TJSBaseTableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
     
-    if([cell.delegate conformsToProtocol:@protocol(TJSBaseTableViewCellDelegate)] && [cell.delegate respondsToSelector:@selector(onTapCell:)]){
+    if(model.cellOperation){
+     
+        model.cellOperation(nil, nil);
     
-        [tableView.tjs_viewController.view endEditing:YES];
-        
-        [cell.delegate onTapCell:nil];
+        if([cell.delegate conformsToProtocol:@protocol(TJSBaseTableViewCellDelegate)] && [cell.delegate respondsToSelector:@selector(onTapCell:)]){
+
+            [tableView.tjs_viewController.view endEditing:YES];
+            
+            [cell.delegate onTapCell:nil];
+        }
     }
-     */
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
@@ -157,9 +169,11 @@
 
 - (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section{
  
-    WithDrawDepositHeaderFooterView *header = [_cellFactory headerFooterViewIntable:tableView forSection:section];
+    WithDrawDepositHeaderFooterView *footer = [_cellFactory headerFooterViewIntable:tableView forSection:section];
+    WithDrawDepositCellModel *model = [((NSArray *)[self.interactor.items objectAtIndex:section]) firstObject];
+    [footer tjs_bindDataToCellWithValue:[model.headerFooterTitles lastObject]];
     
-    return header;
+    return footer;
 }
 
 @end

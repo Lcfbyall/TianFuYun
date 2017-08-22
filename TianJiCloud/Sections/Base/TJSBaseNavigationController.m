@@ -31,6 +31,7 @@
     
 }
 
+//push -> viewDidLoad -> viewWillAppear -> willShowViewController
 
 #pragma mark - UINavigationController
 
@@ -43,7 +44,7 @@
           ![nextVC tjs_hideBackBarButtonItem]){
 
         WEAK_SELF(self);
-        UIBarButtonItem *leftItem = [[UIBarButtonItem alloc] bk_initWithImage:IMAGEOriginal(@"back_arrow") style:UIBarButtonItemStylePlain handler:^(id sender) {
+        UIBarButtonItem *leftItem = [[UIBarButtonItem alloc] bk_initWithImage:IMAGE(@"back_arrow") style:UIBarButtonItemStylePlain handler:^(id sender) {
             
             STRONG_SELF(self);
             TJSBaseViewController *vc = [self.viewControllers lastObject];
@@ -58,29 +59,38 @@
                 
                 [vc.navigationController popViewControllerAnimated:YES];
             }
+            
         }];
            
         viewController.navigationItem.leftBarButtonItem = leftItem;
            
        }else{
        
-           viewController.navigationItem.leftBarButtonItem = nil;
+           UIBarButtonItem *left = [[UIBarButtonItem alloc]bk_initWithTitle:@"" style:UIBarButtonItemStylePlain handler:^(id sender) {
+              
+           }];
+           
+           left.width = 10;
+           
+           viewController.navigationItem.leftBarButtonItem = left;
+          //不允许设置为navigationItem
+          //[[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
+           
        }
     }
     
     [super pushViewController:viewController animated:animated];
 }
 
-
-
-
 #pragma mark - <UINavigationControllerDelegate>
 
 // Called when the navigation controller shows a new top view controller via a push, pop or setting of the view controller stack.
+// 侧滑一点，会调用，放开没有返回还在本界面，但界面设置已经是上一个的了
 - (void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated{
     
-
     [TJSBaseNavigationController p_configViewController:viewController];
+    
+    NSLog(@"-----------------:%@",viewController);
 
 }
 
@@ -92,7 +102,7 @@
 }
 
 
-#pragma mark - Private
+#pragma mark - Public
 
 + (void)p_configViewController:(UIViewController *)viewController{
     
@@ -136,21 +146,59 @@
         }
         
         
-        //3.tintColor
-        UIColor *tintColor = nil;
-        if ([viewController isKindOfClass:[TJSBaseViewController class]]&&
-            [viewController conformsToProtocol:@protocol(TJSNavigationConfig)] &&
-            [viewController respondsToSelector:@selector(tjs_navigationBarTintColor)]) {
+        NSArray *controllers = viewController.navigationController.viewControllers;
+        NSInteger index = [controllers indexOfObject:viewController];
+        
+        if(index){
+        
+            //3.tintColor
+            UIColor *tintColor = nil;
+            if ([viewController isKindOfClass:[TJSBaseViewController class]]&&
+                [viewController conformsToProtocol:@protocol(TJSNavigationConfig)] &&
+                [viewController respondsToSelector:@selector(tjs_navigationBarTintColor)]) {
+                
+                tintColor = [((TJSBaseViewController *)viewController) tjs_navigationBarTintColor];
+                viewController.navigationController.navigationBar.tintColor = tintColor;
+            }
             
-            tintColor = [((TJSBaseViewController *)viewController) tjs_navigationBarTintColor];
-            viewController.navigationController.navigationBar.tintColor = tintColor;
+            
+            //4.hideBackBarButtonItem
+            BOOL hideBackBarButtonItem = NO;
+            if ([viewController isKindOfClass:[TJSBaseViewController class]]&&
+                [viewController conformsToProtocol:@protocol(TJSNavigationConfig)] &&
+                [viewController respondsToSelector:@selector(tjs_hideBackBarButtonItem)]) {
+                
+                
+                hideBackBarButtonItem = [((TJSBaseViewController *)viewController) tjs_hideBackBarButtonItem];
+               
+            }
+            
+            //5. backBarButtonItemTintColor
+            UIColor *backItemColor = nil;
+            if ([viewController isKindOfClass:[TJSBaseViewController class]]&&
+                [viewController conformsToProtocol:@protocol(TJSNavigationConfig)] &&
+                [viewController respondsToSelector:@selector(tjs_backBarButtonItemTintColor)]) {
+                
+                backItemColor = [((TJSBaseViewController *)viewController) tjs_backBarButtonItemTintColor];
+                viewController.navigationController.navigationItem.leftBarButtonItem.tintColor = backItemColor;
+            }
+            
         }
         
         
-        //4.hideBackBarButtonItem
+        
+        //6.TitleTextAttributes
+        NSDictionary * titleTextAttributes = nil;
+        if ([viewController isKindOfClass:[TJSBaseViewController class]]&&
+            [viewController conformsToProtocol:@protocol(TJSNavigationConfig)] &&
+            [viewController respondsToSelector:@selector(tjs_navigaitonBarTitleTextAttributes)]) {
+            
+            titleTextAttributes = [((TJSBaseViewController *)viewController) tjs_navigaitonBarTitleTextAttributes];
+            viewController.navigationController.navigationBar.titleTextAttributes = titleTextAttributes;
+        }
         
         
-        //5.adjustsScrollViewInsets
+        //7.adjustsScrollViewInsets
         BOOL adjust = NO;
         if ([viewController isKindOfClass:[TJSBaseViewController class]]&&
             [viewController conformsToProtocol:@protocol(TJSNavigationConfig)] &&

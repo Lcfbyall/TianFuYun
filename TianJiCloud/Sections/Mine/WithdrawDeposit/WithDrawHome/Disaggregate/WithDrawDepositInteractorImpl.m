@@ -15,7 +15,11 @@
 
 - (void)withDrawForFree:(void (^)(id, NSError *))callback{
 
-
+   [self.dataSource withDrawForFree:^(id result, NSError *error) {
+       
+       [UIViewController tjs_popViewControllerAnimated:YES];
+       if(callback)callback(result,error);
+   }];
 }
 
 
@@ -27,6 +31,11 @@
 - (void)configWithData:(id)data{
 
     [self.dataSource configWithData:data];
+}
+
+- (BOOL)canCommit{
+  
+    return self.dataSource.canCommit;
 }
 
 

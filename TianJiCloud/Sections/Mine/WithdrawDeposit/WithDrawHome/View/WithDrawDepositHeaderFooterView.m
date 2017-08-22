@@ -25,4 +25,11 @@
 }
 
 
+- (void)tjs_bindDataToCellWithValue:(id)value{
+  
+    self.textLabel.text = value;
+
+}
+
+
 @end

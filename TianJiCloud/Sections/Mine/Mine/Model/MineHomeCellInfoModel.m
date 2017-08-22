@@ -62,7 +62,7 @@ static NSString *const Default_cell = @"MineHomeDefaultCell";
     balance.cellOperation = NULL;
     balance.itemOperation = ^(id obj1, id obj2) {
         //去提现
-        [UIViewController tjs_pushViewController:WithdrawDepositVC params:@{} animated:YES];
+        [UIViewController tjs_pushViewController:WithDrawDepositVC params:@{} animated:YES];
     };
 
 
