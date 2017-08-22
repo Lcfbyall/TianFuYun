@@ -8,6 +8,7 @@
 
 #import "UIBarButtonItem+TJSCustom.h"
 #import "UIImage+Retinted.h"
+#import "UIBarButtonItem+BlocksKit.h"
 
 
 @implementation UIBarButtonItem (TJSCustom)
@@ -30,5 +31,8 @@
 
     return left;
 }
+
+
+
 
 @end
