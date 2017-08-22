@@ -7,8 +7,19 @@
 //
 
 #import "CumulativeInvestController.h"
+#import "CumulativeInvestConfig.h"
+#import "CumulativeInvestConfigurator.h"
 
 @interface CumulativeInvestController ()
+
+@property (nonatomic,strong)CumulativeInvestConfig *config;
+
+@property (nonatomic,strong)CumulativeInvestConfigurator *configurator;
+
+@property (nonatomic,strong) id<CumulativeInvestInteractor> interactor;
+
+
+@property (weak, nonatomic) IBOutlet UITableView *investList;
 
 @end
 
@@ -17,10 +28,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.title = @"累计投资";
     
+    [self setupConfig];
     
-    
+    [self setupConfigurator];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -29,7 +40,33 @@
 }
 
 
+#pragma mark - setupConfig
+
+- (void)setupConfig{
+
+    _config = [[CumulativeInvestConfig alloc]init];
+    [_config setup:self];
+    
+}
 
 
+#pragma mark - setupConfigurator
+
+- (void)setupConfigurator{
+
+   _configurator = [[CumulativeInvestConfigurator alloc]init];
+    
+    [_configurator setup:self];
+    
+}
+
+
+
+#pragma mark - <TJSBaseVCConfig>
+
+- (UIView *)tjs_listView{
+  
+    return _investList;
+}
 
 @end

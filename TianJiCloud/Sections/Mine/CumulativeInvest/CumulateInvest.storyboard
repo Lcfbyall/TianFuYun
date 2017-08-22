@@ -20,11 +20,24 @@
                     <view key="view" contentMode="scaleToFill" id="LiU-BQ-roh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="x8N-Qf-CB1">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="x8N-Qf-CB1" firstAttribute="leading" secondItem="LiU-BQ-roh" secondAttribute="leading" id="I40-lJ-EGL"/>
+                            <constraint firstItem="x8N-Qf-CB1" firstAttribute="top" secondItem="LiU-BQ-roh" secondAttribute="top" id="MRW-zc-CBD"/>
+                            <constraint firstAttribute="trailing" secondItem="x8N-Qf-CB1" secondAttribute="trailing" id="fxX-Ij-hsO"/>
+                            <constraint firstAttribute="bottom" secondItem="x8N-Qf-CB1" secondAttribute="bottom" id="i4s-pK-6WJ"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="HU6-oN-quM"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
+                        <outlet property="investList" destination="x8N-Qf-CB1" id="Wva-rq-6d0"/>
                         <segue destination="U05-V2-gpC" kind="show" identifier="InvestHomeToInvestProduct" id="7wR-i0-6lH"/>
                     </connections>
                 </viewController>
@@ -43,12 +56,24 @@
                     <view key="view" contentMode="scaleToFill" id="A3J-34-nBW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eoT-W8-OkY">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="eoT-W8-OkY" secondAttribute="trailing" id="6Mo-QC-wOw"/>
+                            <constraint firstItem="eoT-W8-OkY" firstAttribute="leading" secondItem="A3J-34-nBW" secondAttribute="leading" id="C77-W3-Oyd"/>
+                            <constraint firstItem="eoT-W8-OkY" firstAttribute="top" secondItem="A3J-34-nBW" secondAttribute="top" id="Ew6-GX-xlV"/>
+                            <constraint firstAttribute="bottom" secondItem="eoT-W8-OkY" secondAttribute="bottom" id="z8S-ov-Mbh"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u5J-DE-Y3S" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4432" y="389"/>
+            <point key="canvasLocation" x="4431.1999999999998" y="388.15592203898052"/>
         </scene>
         <!--Base Navigation Controller-->
         <scene sceneID="O7n-Rq-R72">

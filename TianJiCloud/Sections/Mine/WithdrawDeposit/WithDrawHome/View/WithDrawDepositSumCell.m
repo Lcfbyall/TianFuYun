@@ -44,7 +44,6 @@
     _sumTextField.leftViewMode = UITextFieldViewModeAlways;
     _sumTextField.leftView = ({
     
-        
         UILabel *left = [[UILabel alloc]init];
         left.text = @"¥";
         left.textColor = ThemeService.text_color_00;

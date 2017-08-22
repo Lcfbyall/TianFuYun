@@ -7,7 +7,9 @@
 //
 
 #import "TJSBaseViewController.h"
+#import "CumulativeInvestConfigurateProtocol.h"
 
-@interface CumulativeInvestController : TJSBaseViewController
+@interface CumulativeInvestController : TJSBaseViewController<CumulativeInvestInteractorDelegate,TJSBaseTableViewCellDelegate>
+
 
 @end
