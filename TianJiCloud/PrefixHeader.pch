@@ -72,6 +72,7 @@
 
 /** 6. Base **/
 
+#import "TJSBaseViewController.h"
 #import "TJSBaseCollectionViewLayout.h"
 #import "TJSBaseCollectionViewCell.h"
 #import "TJSBaseCollectionReusableView.h"

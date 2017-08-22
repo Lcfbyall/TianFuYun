@@ -193,4 +193,28 @@ static UIColor *TintColor    = nil;
 }
 
 
+
++ (NSDictionary *)translucentWhiteTint{
+  
+    NSDictionary *dic =
+  @{
+                          
+  NavigationBarTranslucentKey:@YES,
+  NavigationBarTintColor: ThemeService.origin_color_00,
+  NavigationBarBarTintColor:  [UIColor clearColor],
+  BackBarButtonItemTintColor:ThemeService.origin_color_00,
+  AdjustsScrollViewInsets :@NO,
+  
+  NavigationTitleTextAttributes:
+      @{
+          NSForegroundColorAttributeName:ThemeService.origin_color_00,
+          NSFontAttributeName:[UIFont systemFontOfSize:16.0f]
+          }
+  };
+
+    
+    return dic;
+}
+
+
 @end

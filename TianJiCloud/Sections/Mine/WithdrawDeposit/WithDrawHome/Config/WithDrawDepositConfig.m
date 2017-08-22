@@ -26,20 +26,7 @@
     
     _vc.navigationItem.rightBarButtonItems = [self tjs_rightBarButtonItems];
     
-    _vc.params = @{
-                   
-                   NavigationBarTranslucentKey:@YES,
-                   NavigationBarTintColor: ThemeService.origin_color_00,
-                   NavigationBarBarTintColor:  [UIColor clearColor],
-                   BackBarButtonItemTintColor:ThemeService.origin_color_00,
-                   AdjustsScrollViewInsets :@NO,
-                   
-                   NavigationTitleTextAttributes:
-                   @{
-                     NSForegroundColorAttributeName:ThemeService.origin_color_00,
-                     NSFontAttributeName:[UIFont systemFontOfSize:16.0f]
-                    }
-                 };
+    _vc.params = [UINavigationBar translucentWhiteTint];
 }
 
 

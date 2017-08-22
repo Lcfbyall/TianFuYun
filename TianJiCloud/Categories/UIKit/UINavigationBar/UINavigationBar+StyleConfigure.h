@@ -30,4 +30,7 @@
                        tintColor:(UIColor *)tintColor
                      translucent:(BOOL)translucent;
 
+
++ (NSDictionary *)translucentWhiteTint;
+
 @end

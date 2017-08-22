@@ -40,14 +40,11 @@
 - (void)setup:(MineViewController *)vc{
 
     _vc = vc;
-    
-    _vc.params = @{
-                   NavigationBarTranslucentKey:@YES,
-                   NavigationBarBarTintColor:  [UIColor clearColor],
-                   AdjustsScrollViewInsets :@NO
-                  };
-    
 
+    
+    _vc.params =  [UINavigationBar translucentWhiteTint];
+    
+    
     /*
     UIColor *a = RGB(254, 239, 93);
     NSString *hex = a.hexString;

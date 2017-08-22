@@ -182,6 +182,7 @@
 		2C597DCC1F4C2D6300415EB6 /* SettingDefaultTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C597DCB1F4C2D6300415EB6 /* SettingDefaultTableCell.m */; };
 		2C597DCF1F4C2DC600415EB6 /* SettingHomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C597DCE1F4C2DC600415EB6 /* SettingHomeModel.m */; };
 		2C597DD21F4C2F2300415EB6 /* SettingHomeConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C597DD11F4C2F2300415EB6 /* SettingHomeConfig.m */; };
+		2C597DD81F4C358500415EB6 /* UIBarButtonItem+TJSCustom.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C597DD71F4C358500415EB6 /* UIBarButtonItem+TJSCustom.m */; };
 		2C7A344B1F2F61C1004DD566 /* WithDarwDeposit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C7A344A1F2F61C1004DD566 /* WithDarwDeposit.storyboard */; };
 		2C7A344D1F2F633C004DD566 /* CumulateInvest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C7A344C1F2F633C004DD566 /* CumulateInvest.storyboard */; };
 		2C7A344F1F2F63BE004DD566 /* CapitalRecord.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C7A344E1F2F63BD004DD566 /* CapitalRecord.storyboard */; };
@@ -943,6 +944,8 @@
 		2C597DCE1F4C2DC600415EB6 /* SettingHomeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingHomeModel.m; sourceTree = "<group>"; };
 		2C597DD01F4C2F2300415EB6 /* SettingHomeConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingHomeConfig.h; sourceTree = "<group>"; };
 		2C597DD11F4C2F2300415EB6 /* SettingHomeConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingHomeConfig.m; sourceTree = "<group>"; };
+		2C597DD61F4C358500415EB6 /* UIBarButtonItem+TJSCustom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+TJSCustom.h"; sourceTree = "<group>"; };
+		2C597DD71F4C358500415EB6 /* UIBarButtonItem+TJSCustom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+TJSCustom.m"; sourceTree = "<group>"; };
 		2C7A344A1F2F61C1004DD566 /* WithDarwDeposit.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WithDarwDeposit.storyboard; sourceTree = "<group>"; };
 		2C7A344C1F2F633C004DD566 /* CumulateInvest.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CumulateInvest.storyboard; sourceTree = "<group>"; };
 		2C7A344E1F2F63BD004DD566 /* CapitalRecord.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CapitalRecord.storyboard; sourceTree = "<group>"; };
@@ -2464,6 +2467,8 @@
 		2C4412631F21E0C600C453EF /* UIBarButtonItem */ = {
 			isa = PBXGroup;
 			children = (
+				2C597DD61F4C358500415EB6 /* UIBarButtonItem+TJSCustom.h */,
+				2C597DD71F4C358500415EB6 /* UIBarButtonItem+TJSCustom.m */,
 			);
 			path = UIBarButtonItem;
 			sourceTree = "<group>";
@@ -5972,6 +5977,7 @@
 				2CD897501F457B96008F7C73 /* AddressSelectedInteractorImpl.m in Sources */,
 				2C4D35E71F4C25860082BB36 /* CumulativeInvestInteractorImpl.m in Sources */,
 				2C859CF81F31EB2E00B86575 /* UIViewController+Alert.m in Sources */,
+				2C597DD81F4C358500415EB6 /* UIBarButtonItem+TJSCustom.m in Sources */,
 				2CB4F5EF1F41C3BB00FF98C9 /* ContractAddressListStore.m in Sources */,
 				2C4412821F21EA8900C453EF /* UIImage+Retinted.m in Sources */,
 				2C85E3701F2ED87A00ADD360 /* MineHomeVCConfig.m in Sources */,
