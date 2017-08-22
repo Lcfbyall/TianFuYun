@@ -16,6 +16,5 @@
 
 - (void)setup:(MineViewController *)vc;
 
-- (void)setfullScreen;
 
 @end

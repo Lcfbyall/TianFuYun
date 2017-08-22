@@ -36,7 +36,7 @@
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     
-    [self.minehomeConfig setfullScreen];
+    
 }
 
 
@@ -76,8 +76,7 @@
 
 - (void)tjs_configBaseView{
     
-    _mineTableView.backgroundColor = ThemeService.weak_color_00;
-    _mineTableView.tableFooterView = [UIView new];
+    
     
 }
 

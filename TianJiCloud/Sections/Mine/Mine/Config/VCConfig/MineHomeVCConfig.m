@@ -42,48 +42,18 @@
     _vc = vc;
     
     _vc.params = @{
-                   NavigationBarTranslucentKey:@(YES),
+                   NavigationBarTranslucentKey:@YES,
                    NavigationBarBarTintColor:  [UIColor clearColor],
-                   AdjustsScrollViewInsets :@(NO)
+                   AdjustsScrollViewInsets :@NO
                   };
     
-    
+
     /*
     UIColor *a = RGB(254, 239, 93);
     NSString *hex = a.hexString;
     NSString *hexa = a.hexStringWithAlpha;
     NSLog(@"");
     */   
-}
-
-
-//viewWillAppear -> willShowViewController
-- (void)setfullScreen{
-    
-
-    //需要全屏
-    //1.self.edgesForExtendedLayout = UIRectEdgeAll;
-    
-    //2.优先级高于edgesForExtendedLayout
-        //1).这个属性有两个功能：1设置导航条（nav,tabbar）为半透明状态；
-        //2).修改当前控制器根容器下的屏幕起始原点
-    //self.vc.navigationController.navigationBar.translucent = YES;
-    
-    //3.automaticallyAdjusts优先级高于translucent
-    //简单点说就是automaticallyAdjustsScrollViewInsets根据按所在界面的status bar，navigationbar，与tabbar的高度，自动调整scrollview的 inset
-    self.vc.automaticallyAdjustsScrollViewInsets = NO;
-    
-    
-    //4.一定全屏
-    //如果状态栏是不透明的，view将不会延伸到状态栏，除非将该属性的值设置为YES。
-    //self.vc.extendedLayoutIncludesOpaqueBars = YES;
-    
-    
-    //设置
-    UITableView *mineTable = (UITableView *)self.vc.tjs_listView;
-    BOOL translucent = self.vc.tabBarController.tabBar.translucent;
-    mineTable.contentInset = UIEdgeInsetsMake(mineTable.contentInset.top, mineTable.contentInset.left, translucent?49:mineTable.contentInset.bottom, mineTable.contentInset.right);
-
 }
 
 

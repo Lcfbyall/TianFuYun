@@ -50,6 +50,9 @@ static NSString *const headerFooterIdentifier = @"MineHomeHeaderFooterIdentifier
 
 - (void)setupTableView{
 
+    _tableView.backgroundColor = ThemeService.weak_color_00;
+    _tableView.tableFooterView = [UIView new];
+    
     [_tableView registerClass:[UITableViewHeaderFooterView class] forHeaderFooterViewReuseIdentifier:headerFooterIdentifier];
     _headerContainer = [MineHomeHeaderContainer headerContainer];
     //_tableView.tableHeaderView = _headerContainer;

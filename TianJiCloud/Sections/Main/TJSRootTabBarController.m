@@ -25,7 +25,7 @@
     //self.tabBar.tintColor = ThemeService.main_color_00;
     
     self.delegate            = self;
-    self.tabBar.translucent  = YES;
+    self.tabBar.translucent  = NO;
     
     //选中后的颜色,tabBarItem.setTitleTextAttributes后无效
     //self.tabBar.tintColor = ;
