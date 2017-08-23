@@ -26,7 +26,7 @@
         _tableView = tableView;
         
         
-        [self setupRefreshControl];
+        //[self setupRefreshControl];
     }
     
     return self;
@@ -41,8 +41,10 @@
 }
 
 - (void)beginRefresh{
-
-    [self.tableView.mj_header beginRefreshing];
+ 
+    [self.tableView reloadData];
+    
+    //[self.tableView.mj_header beginRefreshing];
 }
 
 - (void)endRefresh{
@@ -71,10 +73,7 @@
         }
         
     }];
-    
-    
-    self.tableView.mj_header.ignoredScrollViewContentInsetTop = 16;
-    
+
 }
 
 

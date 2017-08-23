@@ -8,9 +8,8 @@
 
 #import "SettingHomeDataSourceImpl.h"
 
-#import "CumulateInvestNetworkTool.h"
+#import "SettingHomeModel.h"
 
-#import "CumulateInvestInfoModel.h"
 
 @interface SettingHomeDataSourceImpl ()
 
@@ -23,25 +22,14 @@
 
 #pragma mark - <SettingHomeDataSource>
 
-- (void)loadInvest:(void (^)(id, NSError *))callback{
-
-
-
-
-}
 
 - (NSArray *)items{
     
     if(_items==nil){
     
-        CumulateInvestInfoModel *add = [CumulateInvestInfoModel new];
-        add.cellClass = @"SettingHomeDefaultCell";
-        
-        CumulateInvestInfoModel *product = [CumulateInvestInfoModel new];
-        product.cellClass = @"SettingHomeDefaultCell";
-    
-        
-        _items = [NSMutableArray arrayWithObjects:add,product, nil];
+        NSArray *items = [SettingHomeModel configModels];
+  
+        _items = [NSMutableArray arrayWithArray:items];
     }
     
     return _items;

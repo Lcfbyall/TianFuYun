@@ -70,7 +70,11 @@ static NSString *const DiscoryRoadShowListVC = @"DiscoRoadShowListController";
 #pragma mark - Setting identifier
 
 static NSString *const SettingListVC = @"MineSettingViewController";
-
+static NSString *const ProfileVC = @"ProfileViewController";
+static NSString *const ModifyLogPasswordVC = @"ModifyLogPasswordController";
+static NSString *const GesturePasswordVC = @"GesturePasswordController";
+static NSString *const FindWithDrawPasswordVC = @"FindWithDrawPasswordController";
+static NSString *const ProfesisonAuthenVC = @"ProfesisonAuthenController";
 
 #pragma mark - WithDrawDeposit identifier
 

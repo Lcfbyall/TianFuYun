@@ -61,6 +61,7 @@ static NSString *const headerFooterIdentifier = @"MineHomeHeaderFooterIdentifier
     _headerContainer.contentMode = UIViewContentModeScaleAspectFill;
     _tableView.contentInset = UIEdgeInsetsMake(_headerHeight, 0, 0, 0);
     [_tableView addSubview:_headerContainer];
+    
     _tableView.tableHeaderView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 0, CGFLOAT_MIN)];
     _tableView.tableFooterView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 0, CGFLOAT_MIN)];
     _tableView.sectionHeaderHeight=0;

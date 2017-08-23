@@ -57,6 +57,8 @@
 		2C1B750A1F46C1100000E71A /* BankCardAddNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B75091F46C1100000E71A /* BankCardAddNetworkTool.m */; };
 		2C1BFEBD1F29779100665A71 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C1BFEBC1F29779100665A71 /* Home.storyboard */; };
 		2C1BFEBF1F2978C500665A71 /* Discovery.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C1BFEBE1F2978C500665A71 /* Discovery.storyboard */; };
+		2C2E65991F4D143B00681758 /* SettingHomeHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2E65981F4D143B00681758 /* SettingHomeHeader.m */; };
+		2C2E659B1F4D17CE00681758 /* SettingHomeHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C2E659A1F4D17CE00681758 /* SettingHomeHeader.xib */; };
 		2C300F7C1F2F32BF00DD440E /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C300F7B1F2F32BF00DD440E /* Settings.storyboard */; };
 		2C300F7F1F2F3C3C00DD440E /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C300F7E1F2F3C3C00DD440E /* ProfileViewController.m */; };
 		2C300F821F2F3C5F00DD440E /* ModifyLogPasswordController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C300F811F2F3C5F00DD440E /* ModifyLogPasswordController.m */; };
@@ -685,6 +687,9 @@
 		2C1B75091F46C1100000E71A /* BankCardAddNetworkTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankCardAddNetworkTool.m; sourceTree = "<group>"; };
 		2C1BFEBC1F29779100665A71 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		2C1BFEBE1F2978C500665A71 /* Discovery.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Discovery.storyboard; sourceTree = "<group>"; };
+		2C2E65971F4D143B00681758 /* SettingHomeHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingHomeHeader.h; sourceTree = "<group>"; };
+		2C2E65981F4D143B00681758 /* SettingHomeHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingHomeHeader.m; sourceTree = "<group>"; };
+		2C2E659A1F4D17CE00681758 /* SettingHomeHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingHomeHeader.xib; sourceTree = "<group>"; };
 		2C300F7B1F2F32BF00DD440E /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		2C300F7D1F2F3C3C00DD440E /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
 		2C300F7E1F2F3C3C00DD440E /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
@@ -2805,10 +2810,10 @@
 			children = (
 				2C597DAD1F4C2CB900415EB6 /* SettingHomeConfigurator.h */,
 				2C597DAE1F4C2CB900415EB6 /* SettingHomeConfigurator.m */,
-				2C597DAF1F4C2CB900415EB6 /* SettingHomeDataSourceImpl.h */,
-				2C597DB01F4C2CB900415EB6 /* SettingHomeDataSourceImpl.m */,
 				2C597DB11F4C2CB900415EB6 /* SettingHomeInteractorImpl.h */,
 				2C597DB21F4C2CB900415EB6 /* SettingHomeInteractorImpl.m */,
+				2C597DAF1F4C2CB900415EB6 /* SettingHomeDataSourceImpl.h */,
+				2C597DB01F4C2CB900415EB6 /* SettingHomeDataSourceImpl.m */,
 				2C597DB31F4C2CB900415EB6 /* SettingHomeLayoutImpl.h */,
 				2C597DB41F4C2CB900415EB6 /* SettingHomeLayoutImpl.m */,
 				2C597DB51F4C2CB900415EB6 /* SettingHomeTableAdapter.h */,
@@ -2842,6 +2847,9 @@
 				2C597DC81F4C2D4D00415EB6 /* SettingBaseTableCell.m */,
 				2C597DCA1F4C2D6300415EB6 /* SettingDefaultTableCell.h */,
 				2C597DCB1F4C2D6300415EB6 /* SettingDefaultTableCell.m */,
+				2C2E65971F4D143B00681758 /* SettingHomeHeader.h */,
+				2C2E65981F4D143B00681758 /* SettingHomeHeader.m */,
+				2C2E659A1F4D17CE00681758 /* SettingHomeHeader.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -5874,6 +5882,7 @@
 				2C3B5DA71F46CF95001E6609 /* BankCardListAddCell.xib in Resources */,
 				2CD896AB1F4529DA008F7C73 /* ContractApplyInfoCell.xib in Resources */,
 				2C300F951F2F3F1200DD440E /* FindWithDrawCode.storyboard in Resources */,
+				2C2E659B1F4D17CE00681758 /* SettingHomeHeader.xib in Resources */,
 				2C8BB7A11F30859C00E2D75F /* HomeFooterCollectionCell.xib in Resources */,
 				2C7A345D1F2F69CF004DD566 /* AboutMe.storyboard in Resources */,
 				2CD896AD1F452B7F008F7C73 /* ContractApplyProductNameCell.xib in Resources */,
@@ -6171,6 +6180,7 @@
 				2CB4F63D1F42F26500FF98C9 /* ContractApplyInteractorImpl.m in Sources */,
 				2C4412A71F2201FF00C453EF /* TJSBaseRequest.m in Sources */,
 				2C8BB7C91F31BB9F00E2D75F /* ProductContainerController.m in Sources */,
+				2C2E65991F4D143B00681758 /* SettingHomeHeader.m in Sources */,
 				2C4412521F21DABC00C453EF /* UIViewController+StackLevel.m in Sources */,
 				2C8DE57E1F29D484009B3AE2 /* TJSHomeListConfigurator.m in Sources */,
 				2C801BD31F233F46009F82F7 /* TJSBaseViewController.m in Sources */,

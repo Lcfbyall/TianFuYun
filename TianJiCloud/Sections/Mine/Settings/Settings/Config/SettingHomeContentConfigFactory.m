@@ -9,7 +9,7 @@
 #import "SettingHomeContentConfigFactory.h"
 #import "SettingHomeDefaultContentConfig.h"
 
-#import "CumulateInvestInfoModel.h"
+#import "SettingHomeModel.h"
 
 @interface SettingHomeContentConfigFactory ()
 
@@ -41,7 +41,7 @@
 
 - (id<TJSBaseCellContentConfig>)configBy:(id)model{
 
-    id<TJSBaseCellContentConfig>config = [_dict objectForKey:((CumulateInvestInfoModel *)model).cellClass];
+    id<TJSBaseCellContentConfig>config = [_dict objectForKey:((SettingHomeModel *)model).cellClass];
     
     return config;
 }

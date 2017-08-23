@@ -21,6 +21,8 @@
 - (void)setup:(MineSettingViewController *)vc{
 
     _vc = vc;
+    
+    _vc.view.backgroundColor = ThemeService.main_color_01;
 
     _vc.navigationItem.leftBarButtonItems = [self tjs_leftBarButtonItems];
 

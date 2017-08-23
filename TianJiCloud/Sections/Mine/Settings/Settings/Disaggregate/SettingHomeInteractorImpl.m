@@ -12,13 +12,6 @@
 
 #pragma mark - <SettingHomeInteractor>
 
-- (void)loadInvest:(void (^)(id, NSError *))callback{
-
-      [self.dataSource loadInvest:^(id result, NSError *error) {
-          
-          if(callback)callback(result,error);
-      }];
-}
 
 - (NSArray *)items{
  

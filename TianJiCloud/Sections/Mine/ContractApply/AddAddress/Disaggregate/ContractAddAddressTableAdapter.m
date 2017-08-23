@@ -20,6 +20,7 @@ static NSString *const headerFooterIdentifier = @"ContractAddAddressListHeaderId
 
 @end
 
+
 @implementation ContractAddAddressTableAdapter
 
 - (instancetype)initWithTableView:(UITableView *)tableView{

@@ -10,12 +10,13 @@
 
 @implementation SettingBaseTableCell
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+
+#pragma mark -
+
+- (void)tjs_bindDataToCellWithValue:(id)value{
+    
+    
+
 }
-*/
 
 @end

@@ -22,8 +22,6 @@
 
 @optional
 
-- (void)loadInvest:(void (^)(id, NSError *))callback;
-
 - (NSArray *)items;
 
 @end
