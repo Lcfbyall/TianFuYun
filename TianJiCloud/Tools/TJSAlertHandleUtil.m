@@ -7,8 +7,13 @@
 //
 
 #import "TJSAlertHandleUtil.h"
+
 #import "TJSMobileCallUtil.h"
 #import "UIDevice+CurrentArg.h"
+
+//actionSheet
+#import "TJSActionSheet.h"
+#import "TJSImagePicker.h"
 
 @implementation TJSAlertHandleUtil
 
@@ -49,4 +54,30 @@
 }
 
 
+
++ (void)actionSheetHandleWhenUploadProfileIcon:(void (^)(id))block{
+
+    //UIAlertController can only have one action with a style of UIAlertActionStyleCancel
+    ACTION_SHEET.action(@"从手机相册中选择",^(UIAlertAction *action){
+        
+        [TJSImagePicker presentPhotoLibraryCompletionHandler:^(UIImage *pikingImage) {
+            
+            if(block)block(pikingImage);
+        }];
+        
+    }).action(@"拍照",^(UIAlertAction *action){
+        
+        [TJSImagePicker presentCameraCompletionHandler:^(UIImage *pikingImage) {
+            
+            if(block)block(pikingImage);
+        }];
+        
+    }).cancelAction(@"取消",^(UIAlertAction *action){
+        
+    }).actionButtonColor(ThemeService.text_color_01).cancelButtonColor([UIColor redColor]).show();
+}
+
+
 @end
+
+

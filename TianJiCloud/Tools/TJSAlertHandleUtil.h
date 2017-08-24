@@ -14,4 +14,6 @@
 
 + (void)alertHandleWhenCallNotAvailableOnSimulator;
 
++ (void)actionSheetHandleWhenUploadProfileIcon:(void (^)(id))block;
+
 @end

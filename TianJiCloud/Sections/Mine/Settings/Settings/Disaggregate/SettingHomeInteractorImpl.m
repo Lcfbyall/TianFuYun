@@ -7,13 +7,11 @@
 //
 
 #import "SettingHomeInteractorImpl.h"
-#import "TJSActionSheet.h"
-#import "TJSImagePicker.h"
+
 
 @implementation SettingHomeInteractorImpl
 
 #pragma mark - <SettingHomeInteractor>
-
 
 - (NSArray *)items{
  
@@ -27,7 +25,6 @@
         [UIViewController tjs_popViewControllerAnimated:YES];
         
         if(block) block(result);
-        
     }];
 }
 
@@ -39,27 +36,13 @@
     }];
 }
 
-
 - (void)presentImageAcitonSheet:(void (^)(id))block{
 
-    //UIAlertController can only have one action with a style of UIAlertActionStyleCancel
-    ACTION_SHEET.action(@"从手机相册中选择",^(UIAlertAction *action){
-        
-        [TJSImagePicker presentPhotoLibraryCompletionHandler:^(UIImage *pikingImage) {
-            
-            if(block)block(pikingImage);
-        }];
-        
-    }).action(@"拍照",^(UIAlertAction *action){
-        
-        [TJSImagePicker presentCameraCompletionHandler:^(UIImage *pikingImage) {
-            
-            if(block)block(pikingImage);
-        }];
-        
-    }).cancelAction(@"取消",^(UIAlertAction *action){
-        
-    }).actionButtonColor(ThemeService.text_color_01).cancelButtonColor([UIColor redColor]).show();
+    //获取图片
+    [TJSAlertHandleUtil actionSheetHandleWhenUploadProfileIcon:^(id result) {
+       
+        if(block)block(result);
+    }];
     
     //
     [self.layout presentImageAcitonSheet:^(id value) {
