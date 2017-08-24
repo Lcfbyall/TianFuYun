@@ -9,8 +9,9 @@
 #import "DiscoveryVCConfig.h"
 
 #import "DiscoveryViewController.h"
-
 #import "NSObject+Swizzle.h"
+#import "UISegmentedControl+TJSCustomStyle.h"
+
 
 @interface DiscoveryVCConfig ()
 
@@ -32,18 +33,15 @@
 - (UIView *)tjs_titleView{
 
     UISegmentedControl *segment = [[UISegmentedControl alloc]initWithItems:@[@"新闻资讯",@"路演视频"]];
-    segment.selectedSegmentIndex = 0;
-    segment.apportionsSegmentWidthsByContent = YES;
-    segment.tintColor = ThemeService.main_color_02;
+    
+    [segment tjs_customTitleViewConfig];
+    
     [segment addBlockForControlEvents:UIControlEventValueChanged
                                 block:^(id  _Nonnull sender) {
-        
         if([self.vc conformsToProtocol:@protocol(DiscoveryVCConfig)] &&
            [self.vc respondsToSelector:@selector(onTapSegmental:)]){
-            
             [self.vc onTapSegmental:sender];
         }
-        
     }];
     
     return segment;

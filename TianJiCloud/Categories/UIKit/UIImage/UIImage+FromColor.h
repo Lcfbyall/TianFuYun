@@ -15,4 +15,8 @@
 + (UIImage *)tjs_imageWithColor:(UIColor *)color
                        size:(CGSize)size;
 
++ (UIImage *)tjs_imageWithColor:(UIColor *)color
+                           size:(CGSize)size
+                   cornerRadius:(CGFloat)cornerRadius;
+
 @end

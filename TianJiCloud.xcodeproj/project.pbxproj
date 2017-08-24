@@ -540,6 +540,8 @@
 		2CE542451F4EA99300205993 /* SetWithDarwCodeApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE542441F4EA99300205993 /* SetWithDarwCodeApi.m */; };
 		2CE542481F4EA9BA00205993 /* ModifyWithDrawCodeApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE542471F4EA9BA00205993 /* ModifyWithDrawCodeApi.m */; };
 		2CE5424B1F4EAA0900205993 /* ProfessionVertifyApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE5424A1F4EAA0900205993 /* ProfessionVertifyApi.m */; };
+		2CE85D091F4EE18200666DE4 /* TJSSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE85D081F4EE18200666DE4 /* TJSSegmentedControl.m */; };
+		2CE85D0D1F4EFCAA00666DE4 /* UISegmentedControl+TJSCustomStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE85D0C1F4EFCAA00666DE4 /* UISegmentedControl+TJSCustomStyle.m */; };
 		2CF8B53E1F3D469F003B8520 /* ProductSearchHotCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF8B53D1F3D469F003B8520 /* ProductSearchHotCell.m */; };
 		2CF8B5411F3D46B8003B8520 /* ProductSearchResultCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF8B5401F3D46B8003B8520 /* ProductSearchResultCell.m */; };
 		2CF8B5451F3D48B0003B8520 /* ProductSearchListCellFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF8B5441F3D48B0003B8520 /* ProductSearchListCellFactory.m */; };
@@ -1689,6 +1691,10 @@
 		2CE542471F4EA9BA00205993 /* ModifyWithDrawCodeApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModifyWithDrawCodeApi.m; sourceTree = "<group>"; };
 		2CE542491F4EAA0900205993 /* ProfessionVertifyApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfessionVertifyApi.h; sourceTree = "<group>"; };
 		2CE5424A1F4EAA0900205993 /* ProfessionVertifyApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfessionVertifyApi.m; sourceTree = "<group>"; };
+		2CE85D071F4EE18200666DE4 /* TJSSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSSegmentedControl.h; sourceTree = "<group>"; };
+		2CE85D081F4EE18200666DE4 /* TJSSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSSegmentedControl.m; sourceTree = "<group>"; };
+		2CE85D0B1F4EFCAA00666DE4 /* UISegmentedControl+TJSCustomStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISegmentedControl+TJSCustomStyle.h"; sourceTree = "<group>"; };
+		2CE85D0C1F4EFCAA00666DE4 /* UISegmentedControl+TJSCustomStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISegmentedControl+TJSCustomStyle.m"; sourceTree = "<group>"; };
 		2CEE1E1A1F45919500FEE9BD /* ContractAddAddressConfigProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContractAddAddressConfigProtocol.h; sourceTree = "<group>"; };
 		2CEE1E1B1F459AA200FEE9BD /* AddressSelectedConfigProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddressSelectedConfigProtocol.h; sourceTree = "<group>"; };
 		2CF8B53C1F3D469F003B8520 /* ProductSearchHotCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductSearchHotCell.h; sourceTree = "<group>"; };
@@ -2256,6 +2262,7 @@
 				2C4412351F21B37D00C453EF /* UIButton */,
 				2C4411E81F219A5300C453EF /* UIColor */,
 				2C4411EB1F219A5300C453EF /* UIDevice */,
+				2CE85D0A1F4EFC9400666DE4 /* UISegmentedControl */,
 				2C4411EE1F219A5300C453EF /* UIImage */,
 				2C88F68E1F4EBBCB009CF23E /* UIImageView */,
 			);
@@ -5145,6 +5152,8 @@
 				2CCBE4951F3421F1006C4018 /* TJSPageControl.m */,
 				2C88F6951F4EC434009CF23E /* TJSActionSheet.h */,
 				2C88F6961F4EC434009CF23E /* TJSActionSheet.m */,
+				2CE85D071F4EE18200666DE4 /* TJSSegmentedControl.h */,
+				2CE85D081F4EE18200666DE4 /* TJSSegmentedControl.m */,
 			);
 			path = Comman;
 			sourceTree = "<group>";
@@ -5698,6 +5707,15 @@
 			path = Settings;
 			sourceTree = "<group>";
 		};
+		2CE85D0A1F4EFC9400666DE4 /* UISegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+				2CE85D0B1F4EFCAA00666DE4 /* UISegmentedControl+TJSCustomStyle.h */,
+				2CE85D0C1F4EFCAA00666DE4 /* UISegmentedControl+TJSCustomStyle.m */,
+			);
+			path = UISegmentedControl;
+			sourceTree = "<group>";
+		};
 		2CF8B53B1F3D4682003B8520 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -6135,6 +6153,7 @@
 				2C4412731F21E79900C453EF /* UIButton+IBInspectableState.m in Sources */,
 				2CF8B5681F3DC6F9003B8520 /* ProductHotCellContentConfig.m in Sources */,
 				2C4412061F219A5300C453EF /* UINavigationBar+StyleConfigure.m in Sources */,
+				2CE85D091F4EE18200666DE4 /* TJSSegmentedControl.m in Sources */,
 				2C7A34601F2F80F7004DD566 /* MineHomeCellInfo.m in Sources */,
 				2CD896CA1F453BE0008F7C73 /* ConAddressRightInputCell.m in Sources */,
 				2C85E3731F2EDB1000ADD360 /* TJSBaseControllerConfig.m in Sources */,
@@ -6382,6 +6401,7 @@
 				2C44124E1F21D54400C453EF /* TJSSystemAlertMaker.m in Sources */,
 				2CB4F62E1F42D18600FF98C9 /* ContractApplyController.m in Sources */,
 				2C859CF71F31EB2E00B86575 /* ZLPhotoPickerGroup.m in Sources */,
+				2CE85D0D1F4EFCAA00666DE4 /* UISegmentedControl+TJSCustomStyle.m in Sources */,
 				2C4D35E61F4C25860082BB36 /* CumulativeInvestDataSourceImpl.m in Sources */,
 				2CCC85B01F3AEE3A0009FC1C /* TJSProductFilterDataSourceImpl.m in Sources */,
 				2C85E3A41F2F1AF900ADD360 /* TJSMineHomeDefaultCellContentConfig.m in Sources */,

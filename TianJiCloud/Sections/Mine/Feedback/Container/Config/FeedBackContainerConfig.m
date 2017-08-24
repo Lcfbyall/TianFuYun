@@ -8,6 +8,9 @@
 
 #import "FeedBackContainerConfig.h"
 #import "FeedbackContainerController.h"
+#import "UISegmentedControl+TJSCustomStyle.h"
+
+
 
 @interface FeedBackContainerConfig ()
 
@@ -31,9 +34,9 @@
 - (UIView *)tjs_titleView{
     
     UISegmentedControl *segment = [[UISegmentedControl alloc]initWithItems:@[@"反馈问题",@"历史问题"]];
-    segment.selectedSegmentIndex = 0;
-    segment.apportionsSegmentWidthsByContent = YES;
-    segment.tintColor = ThemeService.main_color_02;
+    
+    [segment tjs_customTitleViewConfig];
+    
     [segment addBlockForControlEvents:UIControlEventValueChanged
                                 block:^(id  _Nonnull sender) {
                                     

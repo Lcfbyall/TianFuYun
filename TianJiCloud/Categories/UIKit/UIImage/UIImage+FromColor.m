@@ -15,21 +15,37 @@
     return [UIImage tjs_imageWithColor:color size:CGSizeMake(1.0f, 1.0f)];
 }
 
-
 + (UIImage *)tjs_imageWithColor:(UIColor *)color
                        size:(CGSize)size{
+    
+   return  [self tjs_imageWithColor:color size:size cornerRadius:0];
+
+}
+
++ (UIImage *)tjs_imageWithColor:(UIColor *)color
+                           size:(CGSize)size
+                   cornerRadius:(CGFloat)cornerRadius{
     
     
     CGRect rect = CGRectMake(0.0f, 0.0f, size.width, size.height);
     UIGraphicsBeginImageContext(rect.size);
     CGContextRef context = UIGraphicsGetCurrentContext();
-    
     CGContextSetFillColorWithColor(context, [color CGColor]);
-    CGContextFillRect(context, rect);
+
+    if(cornerRadius>0){
+
+        CGContextAddPath(context, [UIBezierPath bezierPathWithRoundedRect:rect cornerRadius:cornerRadius].CGPath);
+        
+        CGContextClip(context);
+    }
     
+    CGContextFillRect(context, rect);
+
+    
+    CGContextClosePath(context);
+
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
-    
     return image;
 }
 
