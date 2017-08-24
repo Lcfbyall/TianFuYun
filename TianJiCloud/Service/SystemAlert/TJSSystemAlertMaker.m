@@ -7,7 +7,7 @@
 //
 
 #import "TJSSystemAlertMaker.h"
-#import "TJSAlertController.h"
+
 
 @interface TJSSystemAlertMaker ()
 
@@ -94,14 +94,26 @@
 
 - (TJSSystemAlertMaker *(^)(NSString * , TJSSystemAlertActionBlock))action {
     return ^id(NSString * title, TJSSystemAlertActionBlock handler) {
+        
         [self p_addActionWithStyle:UIAlertActionStyleDefault title:title handler:handler];
         return self;
     };
 }
 
 - (TJSSystemAlertMaker *(^)(NSString * , TJSSystemAlertActionBlock))cancelAction {
+    
     return ^id(NSString * title, TJSSystemAlertActionBlock handler) {
+        
         [self p_addActionWithStyle:UIAlertActionStyleCancel title:title handler:handler];
+        
+        return self;
+    };
+}
+
+- (TJSSystemAlertMaker *(^)(NSString * , TJSSystemAlertActionBlock))destructiveAction {
+    return ^id(NSString * title, TJSSystemAlertActionBlock handler) {
+        
+        [self p_addActionWithStyle:UIAlertActionStyleDestructive title:title handler:handler];
         return self;
     };
 }
@@ -122,6 +134,7 @@
         return self.alertController;
     };
 }
+
 
 #pragma mark - Private Methods
 - (void)p_addActionWithStyle:(UIAlertActionStyle)style

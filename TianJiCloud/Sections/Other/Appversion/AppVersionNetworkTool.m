@@ -51,7 +51,7 @@
         
         //        if(!msg && !code){
         //
-        //            [TJMHudAlertService showViewWithInfo:@"无法获取更新信息"];
+        //            [TJSHudAlert showViewWithInfo:@"无法获取更新信息"];
         //        }
     }];
 

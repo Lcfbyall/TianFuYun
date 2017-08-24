@@ -45,7 +45,7 @@ static NSString *const headerFooterIdentifier = @" ContractApplyListHeaderIdenti
     _tableView.backgroundColor = ThemeService.weak_color_00;
 
     WEAK_SELF(self);
-    _tableView.tableFooterView = [UIButton tjs_commitBtnForTBFooter:@"提交" blockForControl:^(id sender) {
+    _tableView.tableFooterView = [UIButton tjs_commitBtnForTBFooter:@"提交" state:UIControlStateNormal blockForControl:^(id sender) {
         
         STRONG_SELF(self);
         [self.interactor applyContractWithParams:nil callback:NULL];

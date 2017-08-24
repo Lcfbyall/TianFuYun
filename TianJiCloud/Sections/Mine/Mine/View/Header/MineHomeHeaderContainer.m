@@ -13,6 +13,7 @@
 
 
 static CGFloat const Margin = 0;
+#define Height  (SCREEN_WIDTH/1.75)
 static NSString *identifier = @"MineHeaderCollectionCell";
 
 @interface MineHomeHeaderContainer ()<UICollectionViewDataSource,UICollectionViewDelegate,TJSBaseCollectionViewLayoutDelegate>
@@ -34,7 +35,7 @@ static NSString *identifier = @"MineHeaderCollectionCell";
 
     MineHomeHeaderContainer *container = [[MineHomeHeaderContainer alloc]init];
     
-    container.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_WIDTH/1.75);
+    container.frame = CGRectMake(0, 0, SCREEN_WIDTH, Height);
     container.backgroundColor = ThemeService.weak_color_00;
    
     [container p_addSubViews];
@@ -183,7 +184,8 @@ static NSString *identifier = @"MineHeaderCollectionCell";
 
 - (void)p_scrollViewDidScroll:(UIScrollView *)scrollView{
   
-    if(scrollView.contentOffset.y < -self.frame.size.height){
+    if(scrollView.contentOffset.y < -Height){
+        
         CGRect frame     = self.frame;
         frame.size.width = -scrollView.contentOffset.y * 1.75;
         frame.size.height= -scrollView.contentOffset.y;

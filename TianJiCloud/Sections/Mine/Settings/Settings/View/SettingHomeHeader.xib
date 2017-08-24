@@ -17,7 +17,7 @@
             <rect key="frame" x="0.0" y="0.0" width="465" height="381"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tradingHeadBg" translatesAutoresizingMaskIntoConstraints="NO" id="X2d-zq-wV3">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tradingHeadBg_new" translatesAutoresizingMaskIntoConstraints="NO" id="X2d-zq-wV3">
                     <rect key="frame" x="0.0" y="0.0" width="465" height="381"/>
                 </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aKq-JV-zf4">
@@ -36,21 +36,13 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dik-oE-Nbh">
-                            <rect key="frame" x="269" y="47.5" width="46" height="30"/>
+                            <rect key="frame" x="269" y="52" width="80" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="80" id="EZ8-Rc-lxo"/>
+                                <constraint firstAttribute="height" constant="21" id="L0F-Yc-SOY"/>
+                            </constraints>
                             <state key="normal" title="未认证">
                                 <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                            </state>
-                        </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Po-ZJ-JYk">
-                            <rect key="frame" x="385" y="-40" width="60" height="25"/>
-                            <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="60" id="7xJ-9b-xgY"/>
-                                <constraint firstAttribute="height" constant="25" id="AXC-Xk-Yir"/>
-                            </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                            <state key="normal" title="上传头像">
-                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                         </button>
                     </subviews>
@@ -58,15 +50,26 @@
                     <constraints>
                         <constraint firstItem="QL1-vd-bqA" firstAttribute="centerX" secondItem="aKq-JV-zf4" secondAttribute="centerX" id="6rD-yb-XCt"/>
                         <constraint firstItem="QL1-vd-bqA" firstAttribute="centerY" secondItem="aKq-JV-zf4" secondAttribute="top" id="BRD-Il-j01"/>
-                        <constraint firstAttribute="trailing" secondItem="7Po-ZJ-JYk" secondAttribute="trailing" constant="20" id="D8i-Zu-VcY"/>
                         <constraint firstItem="QL1-vd-bqA" firstAttribute="height" secondItem="aKq-JV-zf4" secondAttribute="height" id="DX1-58-cpt"/>
                         <constraint firstItem="oJJ-Jt-Pbw" firstAttribute="top" secondItem="QL1-vd-bqA" secondAttribute="bottom" constant="7.5" id="M2H-Wd-N6J"/>
                         <constraint firstItem="oJJ-Jt-Pbw" firstAttribute="centerX" secondItem="QL1-vd-bqA" secondAttribute="centerX" id="T9r-N1-Y8p"/>
                         <constraint firstItem="dik-oE-Nbh" firstAttribute="leading" secondItem="oJJ-Jt-Pbw" secondAttribute="trailing" constant="19.5" id="lbi-43-OjK"/>
-                        <constraint firstItem="7Po-ZJ-JYk" firstAttribute="top" secondItem="aKq-JV-zf4" secondAttribute="top" constant="-40" id="m9h-yg-wAg"/>
                         <constraint firstItem="dik-oE-Nbh" firstAttribute="centerY" secondItem="oJJ-Jt-Pbw" secondAttribute="centerY" id="mZL-Md-OlZ"/>
+                        <constraint firstAttribute="height" constant="90" id="oj1-bd-UEk"/>
                     </constraints>
                 </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Po-ZJ-JYk">
+                    <rect key="frame" x="385" y="243" width="60" height="25"/>
+                    <color key="backgroundColor" red="0.2119198263" green="1" blue="0.42678443760000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="7xJ-9b-xgY"/>
+                        <constraint firstAttribute="height" constant="25" id="AXC-Xk-Yir"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="上传头像">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
@@ -74,7 +77,9 @@
                 <constraint firstItem="X2d-zq-wV3" firstAttribute="leading" secondItem="i76-aY-Of0" secondAttribute="leading" id="1Sg-CR-H7k"/>
                 <constraint firstAttribute="bottom" secondItem="aKq-JV-zf4" secondAttribute="bottom" id="4Pk-I9-vn3"/>
                 <constraint firstItem="aKq-JV-zf4" firstAttribute="leading" secondItem="i76-aY-Of0" secondAttribute="leading" id="FhR-h6-Zm8"/>
+                <constraint firstItem="aKq-JV-zf4" firstAttribute="top" secondItem="7Po-ZJ-JYk" secondAttribute="bottom" constant="23" id="KN6-UX-D6B"/>
                 <constraint firstItem="X2d-zq-wV3" firstAttribute="top" secondItem="i76-aY-Of0" secondAttribute="top" id="RTT-Ym-bu6"/>
+                <constraint firstAttribute="trailing" secondItem="7Po-ZJ-JYk" secondAttribute="trailing" constant="20" id="SQX-1O-c3F"/>
                 <constraint firstAttribute="trailing" secondItem="aKq-JV-zf4" secondAttribute="trailing" id="aIZ-Ot-h1L"/>
                 <constraint firstAttribute="trailing" secondItem="X2d-zq-wV3" secondAttribute="trailing" id="zM4-6S-L28"/>
             </constraints>
@@ -92,6 +97,6 @@
     </objects>
     <resources>
         <image name="avatar" width="90" height="90"/>
-        <image name="tradingHeadBg" width="375" height="214"/>
+        <image name="tradingHeadBg_new" width="375" height="214"/>
     </resources>
 </document>

@@ -10,16 +10,16 @@
 
 @interface UIButton (CommitStyle)
 
-- (void)tjs_commitBtnStateConfigWithNormalTitle:(NSString *)title;
-
 + (UIButton *)tjs_commitBtnWithTitle:(NSString *)title;
 
-+ (UIView *)tjs_commitBtnForTBFooter:(NSString *)title
-                     blockForControl:(void (^)(id))block;
+- (void)tjs_commitBtnStateConfigWithNormalTitle:(NSString *)title;
+
+
++ (UIView *)tjs_logoutBtnForTBFooterWithTitle:(NSString *)title
+                              blockForControl:(void (^)(id))block;
 
 + (UIView *)tjs_commitBtnForTBFooter:(NSString *)title
                                state:(UIControlState)state
                      blockForControl:(void (^)(id))block;
-
 
 @end

@@ -14,10 +14,7 @@
 
 static NSString *const headerFooterIdentifier = @"MineHomeHeaderFooterIdentifier";
 
-@interface TJSMineHomeTableAdapter (){
-
-    CGFloat _headerHeight;
-}
+@interface TJSMineHomeTableAdapter ()
 
 @property (nonatomic,strong) TJSMineHomeCellFactory *cellFactory;
 
@@ -54,13 +51,13 @@ static NSString *const headerFooterIdentifier = @"MineHomeHeaderFooterIdentifier
     _tableView.tableFooterView = [UIView new];
     
     [_tableView registerClass:[UITableViewHeaderFooterView class] forHeaderFooterViewReuseIdentifier:headerFooterIdentifier];
+    
+    
     _headerContainer = [MineHomeHeaderContainer headerContainer];
-    //_tableView.tableHeaderView = _headerContainer;
     _headerContainer.tjs_origin = CGPointMake(0, -_headerContainer.tjs_height);
-    _headerHeight = _headerContainer.tjs_height;
-    _headerContainer.contentMode = UIViewContentModeScaleAspectFill;
-    _tableView.contentInset = UIEdgeInsetsMake(_headerHeight, 0, 0, 0);
+    _tableView.contentInset = UIEdgeInsetsMake(_headerContainer.tjs_height, 0, 0, 0);
     [_tableView addSubview:_headerContainer];
+    
     
     _tableView.tableHeaderView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 0, CGFLOAT_MIN)];
     _tableView.tableFooterView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 0, CGFLOAT_MIN)];

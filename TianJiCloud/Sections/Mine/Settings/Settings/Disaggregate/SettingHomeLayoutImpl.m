@@ -52,6 +52,11 @@
     [self.tableView.mj_header endRefreshing];
 }
 
+- (void)presentImageAcitonSheet:(void (^)(id))block{
+    
+
+}
+
 
 #pragma mark - private
 

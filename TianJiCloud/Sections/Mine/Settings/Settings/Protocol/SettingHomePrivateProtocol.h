@@ -24,6 +24,10 @@
 
 - (NSArray *)items;
 
+- (void)logout:(void (^)(id))block;
+
+- (void)uploadIcon:(UIImage *)icon block:(void (^)(id))block;
+
 @end
 
 
@@ -46,6 +50,9 @@
 - (void)endRefresh;
 
 - (void)setDelegate:(id<SettingHomeLayoutDelegate>)delegate;
+
+- (void)presentImageAcitonSheet:(void (^)(id))block;
+
 
 @end
 

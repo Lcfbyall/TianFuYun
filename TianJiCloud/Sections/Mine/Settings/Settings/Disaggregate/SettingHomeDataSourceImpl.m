@@ -35,6 +35,15 @@
     return _items;
 }
 
+- (void)logout:(void (^)(id))block{
+
+    if(block)block(nil);
+}
+
+- (void)uploadIcon:(UIImage *)icon block:(void (^)(id))block{
+
+    if(block)block(@"imageUrl");
+}
 
 #pragma mark - Private
 

@@ -10,8 +10,10 @@
 
 @interface SettingHomeHeader : UIView
 
-+ (instancetype)header;
++ (instancetype)headerWithUpload:(void (^)(id))block;
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView;
+
+- (void)tjs_bindDataWithValue:(id)value;
 
 @end

@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "TJSAlertController.h"
 
 @interface TJSSystemAlertMaker : NSObject
 
@@ -31,12 +32,17 @@ typedef UIAlertController  * _Nonnull (^TJSSystemAlertShowBlock)();
 - (TJSSystemAlertMaker *(^)(NSString *))message;
 - (TJSSystemAlertMaker *(^)(UIColor *))messageColor;
 - (TJSSystemAlertMaker *(^)(NSTextAlignment))messageAlignment;
+
 // 统一设置按钮样式 不写系统默认的蓝色
 - (TJSSystemAlertMaker *(^)(UIColor *))actionUnifyColor;
 - (TJSSystemAlertMaker *(^)(UIColor *))actionButtonColor;
 - (TJSSystemAlertMaker *(^)(UIColor *))cancelButtonColor;
+
+
 - (TJSSystemAlertMaker *(^)(NSString *, _Nullable TJSSystemAlertActionBlock))action;
 - (TJSSystemAlertMaker *(^)(NSString *, _Nullable TJSSystemAlertActionBlock))cancelAction;
+- (TJSSystemAlertMaker *(^)(NSString *, _Nullable TJSSystemAlertActionBlock))destructiveAction;
+
 - (TJSSystemAlertMaker *(^)(TJSSystemAlertConfigurationBlock))textField;
 - (TJSSystemAlertShowBlock)show;
 

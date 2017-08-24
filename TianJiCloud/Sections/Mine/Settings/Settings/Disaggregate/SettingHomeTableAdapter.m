@@ -44,11 +44,35 @@ static NSString *const headerFooterIdentifier = @"SettingHomeListHeaderIdentifie
 }
 
 
+#pragma mark - Private
+
 - (void)setupTableView{
     
+    [_tableView registerClass:[UITableViewHeaderFooterView class] forHeaderFooterViewReuseIdentifier:headerFooterIdentifier];
     _tableView.backgroundColor = ThemeService.weak_color_00;
     
-    _header = [SettingHomeHeader header];
+    [self configHeader];
+    
+    [self configFooter];
+}
+
+- (void)configHeader{
+
+    WEAK_SELF(self);
+    _header = [SettingHomeHeader headerWithUpload:^(id sender) {
+        STRONG_SELF(self);
+        [self.interactor presentImageAcitonSheet:^(id value) {
+            
+            NSLog(@"图片获取成功");
+            [self updateHeaderWithImage:(UIImage *)value];
+            
+            [self.interactor uploadIcon:value block:^(id result) {
+                 
+                 NSLog(@"图片上传成功");
+            }];
+        }];
+    }];
+    
     _tableView.contentInset = UIEdgeInsetsMake(_header.tjs_height, 0, 0, 0);
     [_tableView addSubview:_header];
     
@@ -56,11 +80,26 @@ static NSString *const headerFooterIdentifier = @"SettingHomeListHeaderIdentifie
     tableHeaderView.backgroundColor = ThemeService.origin_color_00;
     _tableView.tableHeaderView = tableHeaderView;
     
-    UIView *tableFooterView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 0, CGFLOAT_MIN)];
-    tableFooterView.backgroundColor = ThemeService.origin_color_00;
-    _tableView.tableFooterView = tableFooterView;
+    [self updateHeaderWithImage:IMAGE(@"avatar")];
+}
+
+- (void)updateHeaderWithImage:(UIImage *)image{
+  
+    [self.header tjs_bindDataWithValue:@[image,@"朱鹏",@YES]];
+
+}
+
+- (void)configFooter{
+
+    UIView *tableFooterView = [UIButton tjs_logoutBtnForTBFooterWithTitle:@"安全退出"
+      blockForControl:^(id sender) {
+          [self.interactor logout:^(id result) {
+              
+          }];
+      }];
     
-    [_tableView registerClass:[UITableViewHeaderFooterView class] forHeaderFooterViewReuseIdentifier:headerFooterIdentifier];
+    _tableView.tableFooterView = tableFooterView;
+
 }
 
 

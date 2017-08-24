@@ -22,6 +22,13 @@
 
 - (NSArray *)items;
 
+- (void)logout:(void (^)(id))block;
+
+- (void)uploadIcon:(UIImage *)icon block:(void (^)(id))block;
+
+//
+- (void)presentImageAcitonSheet:(void (^)(id))block;
+
 @end
 
 

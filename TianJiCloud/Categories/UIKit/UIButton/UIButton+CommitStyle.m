@@ -13,6 +13,17 @@
 @implementation UIButton (CommitStyle)
 
 
++ (UIButton *)tjs_commitBtnWithTitle:(NSString *)title{
+
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+
+    btn.frame = CGRectMake(0, 0, SCREEN_WIDTH-16*2, 40);
+    
+    [btn tjs_commitBtnStateConfigWithNormalTitle:title];
+    
+    return btn;
+}
+
 - (void)tjs_commitBtnStateConfigWithNormalTitle:(NSString *)title{
     
     self.tjs_backGroundColorNormal     = ThemeService.btn_color_00;
@@ -26,6 +37,7 @@
     self.tjs_titleFontNormal           = [ThemeService pingFangSCMediumWithSize:18.0f];
     
     if(title){
+        
         self.tjs_titleNormal           = title;
     }
     
@@ -34,22 +46,61 @@
 }
 
 
-+ (UIButton *)tjs_commitBtnWithTitle:(NSString *)title{
 
-    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
 
-    btn.frame = CGRectMake(0, 0, SCREEN_WIDTH-16*2, 40);
+#pragma mark - UITableView FooterView
+
++ (UIView *)tjs_logoutBtnForTBFooterWithTitle:(NSString *)title
+                            blockForControl:(void (^)(id))block{
     
-    [btn tjs_commitBtnStateConfigWithNormalTitle:title];
+    UIView *bgview = [self tjs_commitBtnForTBFooter:title
+                                             height:55
+                                         edgeInsets:UIEdgeInsetsMake(10, 0, 10, 0)
+                                        configBlock:^(id sender) {
+        
+        UIButton *btn = (UIButton *)sender;
+        btn.tjs_backGroundColorNormal     = ThemeService.origin_color_00;
+        btn.tjs_backGroundColorHighlighted= ThemeService.weak_color_00;
+        
+        btn.tjs_titleColorNormal          = [UIColor redColor];
+        btn.tjs_titleColorHighlighted     = [UIColor redColor];
+        
+        btn.tjs_titleFontNormal           = [ThemeService pingFangSCMediumWithSize:18.0f];
+        
+        if(title){
+            
+            btn.tjs_titleNormal           = title;
+        }
+                                            
+    } blockForControl:^(id sender) {
+        
+        block(((UIButton *)sender));
+        
+    }];
     
-    return btn;
+    bgview.backgroundColor = ThemeService.weak_color_00;
+    
+    return bgview;
 }
 
 + (UIView *)tjs_commitBtnForTBFooter:(NSString *)title
                                state:(UIControlState)state
                      blockForControl:(void (^)(id))block{
 
-    UIView *bgview = [self tjs_commitBtnForTBFooter:title blockForControl:block];
+    UIView *bgview = [self tjs_commitBtnForTBFooter:title
+                                             height:50
+                                         edgeInsets:UIEdgeInsetsMake(20, 16, 20, 16)
+                                        configBlock:^(id sender) {
+        
+        [((UIButton *)sender) tjs_commitBtnStateConfigWithNormalTitle:title];
+                                            
+    } blockForControl:^(id sender) {
+        
+        block(((UIButton *)sender));
+        
+    }];
+    
+    bgview.backgroundColor = ThemeService.weak_color_00;
 
     UIButton *btn = [bgview viewWithTag:1111];
 
@@ -63,19 +114,26 @@
 }
 
 
+
+
+#pragma mark - Private
+
 + (UIView *)tjs_commitBtnForTBFooter:(NSString *)title
-                     blockForControl:(void (^)(id))block{
+                              height:(CGFloat)height
+                          edgeInsets:(UIEdgeInsets)edgeInsets
+                         configBlock:(void (^)(id)) configBlock
+                     blockForControl:(void (^)(id)) block{
 
     UIView *bgView = [UIView new];
-    bgView.frame = CGRectMake(0, 0, SCREEN_WIDTH, 90);
+    bgView.frame = CGRectMake(0, 0, SCREEN_WIDTH, height + edgeInsets.top + edgeInsets.bottom);
     
     UIButton *btn= [UIButton buttonWithType:UIButtonTypeCustom];
     btn.tag = 1111;
-    btn.frame  = CGRectMake(0, 0, SCREEN_WIDTH-16*2, 50);
+    btn.frame  = CGRectMake(0, 0, SCREEN_WIDTH-edgeInsets.left-edgeInsets.right, height);
     
     btn.center = CGPointMake(bgView.bounds.size.width/2.0, bgView.bounds.size.height/2.0);
     
-    [btn tjs_commitBtnStateConfigWithNormalTitle:title];
+    if(configBlock)configBlock(btn);
     
     [btn addBlockForControlEvents:UIControlEventTouchUpInside block:^(id  _Nonnull sender) {
         
@@ -83,7 +141,6 @@
           
             block(sender);
         }
-        
     }];
     
     [bgView addSubview:btn];
