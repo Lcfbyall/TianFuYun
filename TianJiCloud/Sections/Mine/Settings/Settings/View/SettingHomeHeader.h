@@ -12,4 +12,6 @@
 
 + (instancetype)header;
 
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView;
+
 @end

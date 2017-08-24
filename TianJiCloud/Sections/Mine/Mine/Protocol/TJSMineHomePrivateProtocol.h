@@ -44,6 +44,8 @@
 
 - (void)setDelegate:(id<TJSMineHomeLayoutDelegate>)delegate;
 
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView;
+
 @end
 
 

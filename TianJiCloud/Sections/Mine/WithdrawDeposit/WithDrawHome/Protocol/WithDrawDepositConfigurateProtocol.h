@@ -28,6 +28,8 @@
 
 - (BOOL)canCommit;
 
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView;
+
 @end
 
 

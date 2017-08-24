@@ -168,27 +168,9 @@ static NSString *const headerFooterIdentifier = @"MineHomeHeaderFooterIdentifier
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
  
-    [scrollView.tjs_viewController.view endEditing:YES];
+    [self.headerContainer p_scrollViewDidScroll:scrollView];
 
-    if(scrollView.contentOffset.y < -_headerHeight){
-        CGRect frame     = _headerContainer.frame;
-        frame.size.width = -scrollView.contentOffset.y * 1.75;
-        frame.size.height= -scrollView.contentOffset.y;
-        frame.origin.x   = (SCREEN_WIDTH - frame.size.width)/2.0;
-        frame.origin.y   = scrollView.contentOffset.y;
-        _headerContainer.frame = frame;
-    }
-
-    /*
-    UIColor * color = UIColorFromHEX(0x007cf4);
-    CGFloat offset = scrollView.contentOffset.y;
-    if (offset > -_headerHeight) {
-        //CGFloat alpha = MIN(1,fabs(offset+_headerHeight) / 64.0);
-        scrollView.tjs_viewController.navigationController.navigationBar.barTintColor = [UIColor redColor];
-    } else {
-        scrollView.tjs_viewController.navigationController.navigationBar.barTintColor = [color colorWithAlphaComponent:1];
-    }
-     */
+    [self.interactor scrollViewDidScroll:scrollView];
 }
 
 @end

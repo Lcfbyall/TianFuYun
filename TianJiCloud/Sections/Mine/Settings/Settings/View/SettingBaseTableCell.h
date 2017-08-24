@@ -8,6 +8,10 @@
 
 #import "TJSBaseTableViewCell.h"
 
+#import "SettingHomeModel.h"
+
 @interface SettingBaseTableCell : TJSBaseTableViewCell
+
+@property (nonatomic,strong) SettingHomeModel *model;
 
 @end

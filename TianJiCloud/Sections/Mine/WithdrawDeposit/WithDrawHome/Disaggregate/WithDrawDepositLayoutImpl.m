@@ -51,6 +51,13 @@
     [self.tableView.mj_header endRefreshing];
 }
 
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
+
+    [scrollView.tjs_viewController.view endEditing:YES];
+
+}
+
+
 
 #pragma mark - private
 

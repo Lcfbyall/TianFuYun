@@ -30,6 +30,7 @@
 
 - (void)onViewDidDisappear;
 
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView;
 
 @end
 

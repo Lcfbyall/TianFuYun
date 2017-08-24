@@ -109,7 +109,7 @@
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
 
-     [scrollView.tjs_viewController.view endEditing:YES];
+    [self.interactor scrollViewDidScroll:scrollView];
 }
 
 #pragma mark - <UITableViewDelegate>

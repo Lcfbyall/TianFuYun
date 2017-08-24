@@ -13,7 +13,10 @@
 
 
 static NSString *const headerFooterIdentifier = @"SettingHomeListHeaderIdentifier";
-@interface SettingHomeTableAdapter ()
+@interface SettingHomeTableAdapter (){
+
+
+}
 
 @property (nonatomic,weak)UITableView *tableView;
 
@@ -43,17 +46,19 @@ static NSString *const headerFooterIdentifier = @"SettingHomeListHeaderIdentifie
 
 - (void)setupTableView{
     
-  
     _tableView.backgroundColor = ThemeService.weak_color_00;
-    _tableView.tableFooterView = [UIView new];
     
     _header = [SettingHomeHeader header];
     _tableView.contentInset = UIEdgeInsetsMake(_header.tjs_height, 0, 0, 0);
     [_tableView addSubview:_header];
     
-    _tableView.tableHeaderView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 0, CGFLOAT_MIN)];
-    _tableView.tableFooterView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 0, CGFLOAT_MIN)];
-    _tableView.sectionHeaderHeight=0;
+    UIView *tableHeaderView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 0, CGFLOAT_MIN)];
+    tableHeaderView.backgroundColor = ThemeService.origin_color_00;
+    _tableView.tableHeaderView = tableHeaderView;
+    
+    UIView *tableFooterView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 0, CGFLOAT_MIN)];
+    tableFooterView.backgroundColor = ThemeService.origin_color_00;
+    _tableView.tableFooterView = tableFooterView;
     
     [_tableView registerClass:[UITableViewHeaderFooterView class] forHeaderFooterViewReuseIdentifier:headerFooterIdentifier];
 }
@@ -75,7 +80,11 @@ static NSString *const headerFooterIdentifier = @"SettingHomeListHeaderIdentifie
     
     SettingHomeModel *model = [((NSArray *)[self.interactor.items objectAtIndex:indexPath.section]) objectAtIndex:indexPath.row];
     
-    return (UITableViewCell *)[_cellFactory cellInTable:tableView forMineInfoModel:model];
+    TJSBaseTableViewCell *cell = (TJSBaseTableViewCell *)[_cellFactory cellInTable:tableView forMineInfoModel:model];
+    
+    [cell tjs_bindDataToCellWithValue:model];
+    
+    return cell;
 }
 
 
@@ -90,7 +99,6 @@ static NSString *const headerFooterIdentifier = @"SettingHomeListHeaderIdentifie
     return height;
 }
 
-
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
@@ -103,7 +111,7 @@ static NSString *const headerFooterIdentifier = @"SettingHomeListHeaderIdentifie
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
     
-    return 10;
+    return section?10:0.001;
 }
 
 - (nullable UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
@@ -112,6 +120,28 @@ static NSString *const headerFooterIdentifier = @"SettingHomeListHeaderIdentifie
     header.contentView.backgroundColor = ThemeService.weak_color_00;
     
     return header;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
+  
+    return 0.001;
+}
+
+- (nullable UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section{
+  
+    UITableViewHeaderFooterView *header = [tableView dequeueReusableHeaderFooterViewWithIdentifier:headerFooterIdentifier];
+    header.contentView.backgroundColor = ThemeService.origin_color_00;
+    
+    return header;
+}
+
+
+#pragma mark - <UIScrollViewDelegate>
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
+
+    [self.header scrollViewDidScroll:scrollView];
+    
 }
 
 

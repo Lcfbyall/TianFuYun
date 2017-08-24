@@ -57,6 +57,8 @@
         cell = [tableView dequeueReusableCellWithIdentifier:_identifier];
     }
     
+
+    
     return (TJSBaseTableViewCell *)cell;
 
 }

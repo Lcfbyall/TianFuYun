@@ -38,6 +38,11 @@
     return self.dataSource.canCommit;
 }
 
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
+ 
+    [self.layout  scrollViewDidScroll:scrollView];
+}
+
 
 #pragma mark - <WithDrawDepositLayoutDelegate>
 

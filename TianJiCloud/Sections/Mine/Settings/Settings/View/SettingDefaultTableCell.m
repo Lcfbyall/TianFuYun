@@ -16,6 +16,7 @@
     
     [super tjs_bindDataToCellWithValue:value];
     
+    
 }
 
 @end

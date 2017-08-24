@@ -59,7 +59,25 @@
     [self.tableView endUpdates];
 }
 
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
+   
+    [scrollView.tjs_viewController.view endEditing:YES];
+    
+    
+    /*
+     UIColor * color = UIColorFromHEX(0x007cf4);
+     CGFloat offset = scrollView.contentOffset.y;
+     if (offset > -_headerHeight) {
+     //CGFloat alpha = MIN(1,fabs(offset+_headerHeight) / 64.0);
+     scrollView.tjs_viewController.navigationController.navigationBar.barTintColor = [UIColor redColor];
+     } else {
+     scrollView.tjs_viewController.navigationController.navigationBar.barTintColor = [color colorWithAlphaComponent:1];
+     }
+     */
+}
 
+
+#pragma mark -
 
 - (void)setupRefreshControl{
     

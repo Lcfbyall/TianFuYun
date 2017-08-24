@@ -59,6 +59,8 @@
 
 - (void)setDelegate:(id<BankCardAddLayoutDelegate>)delegate;
 
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView;
+
 @end
 
 

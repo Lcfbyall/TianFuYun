@@ -179,6 +179,21 @@ static NSString *identifier = @"MineHeaderCollectionCell";
 
 
 
+#pragma mark - Public
+
+- (void)p_scrollViewDidScroll:(UIScrollView *)scrollView{
+  
+    if(scrollView.contentOffset.y < -self.frame.size.height){
+        CGRect frame     = self.frame;
+        frame.size.width = -scrollView.contentOffset.y * 1.75;
+        frame.size.height= -scrollView.contentOffset.y;
+        frame.origin.x   = (SCREEN_WIDTH - frame.size.width)/2.0;
+        frame.origin.y   = scrollView.contentOffset.y;
+        self.frame = frame;
+    }
+}
+
+
 @end
 
 

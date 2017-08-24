@@ -15,6 +15,8 @@
 
     SettingHomeModel *profile = [SettingHomeModel new];
     profile.cellClass = @"SettingHomeDefaultCell";
+    profile.image = @"user_data";
+    profile.text = @"个人资料";
     profile.detailText = @"";
     profile.target = ProfileVC;
     profile.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
@@ -26,6 +28,8 @@
     
     SettingHomeModel *logincode = [SettingHomeModel new];
     logincode.cellClass = @"SettingHomeDefaultCell";
+    logincode.image = @"login_pwd";
+    logincode.text = @"登录密码";
     logincode.detailText = @"";
     logincode.target = ProfileVC;
     logincode.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
@@ -37,6 +41,8 @@
 
     SettingHomeModel *gesturecode = [SettingHomeModel new];
     gesturecode.cellClass = @"SettingHomeDefaultCell";
+    gesturecode.image = @"gesture_pwd";
+    gesturecode.text = @"手势密码";
     gesturecode.detailText = @"";
     gesturecode.target = ProfileVC;
     gesturecode.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
@@ -49,6 +55,8 @@
     
     SettingHomeModel *withdrawcode = [SettingHomeModel new];
     withdrawcode.cellClass = @"SettingHomeDefaultCell";
+    withdrawcode.image = @"cash_pwd";
+    withdrawcode.text = @"提现密码";
     withdrawcode.detailText = @"修改";
     withdrawcode.target = ProfileVC;
     withdrawcode.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
@@ -61,6 +69,8 @@
     
     SettingHomeModel *vertify = [SettingHomeModel new];
     vertify.cellClass = @"SettingHomeDefaultCell";
+    vertify.image = @"job_icon";
+    vertify.text = @"职业认证";
     vertify.detailText = @"已认证";
     vertify.target = ProfileVC;
     vertify.accessoryType = UITableViewCellAccessoryDisclosureIndicator;

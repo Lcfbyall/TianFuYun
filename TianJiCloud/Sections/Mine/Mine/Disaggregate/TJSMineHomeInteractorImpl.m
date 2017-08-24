@@ -39,6 +39,11 @@
 }
 
 
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    
+    [self.layout scrollViewDidScroll:scrollView];
+}
+
 #pragma mark - TJSMineHomeLayoutDelegate
 //下拉刷新
 - (void)onRefresh{

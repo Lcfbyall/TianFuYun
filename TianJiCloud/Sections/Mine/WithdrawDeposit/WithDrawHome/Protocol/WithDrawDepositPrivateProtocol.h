@@ -53,6 +53,9 @@
 
 - (void)setDelegate:(id<WithDrawDepositLayoutDelegate>)delegate;
 
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView;
+
+
 @end
 
 

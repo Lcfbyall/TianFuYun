@@ -10,6 +10,17 @@
 
 @interface SettingHomeHeader ()
 
+@property (weak, nonatomic) IBOutlet UIImageView *bgImageView;
+
+@property (weak, nonatomic) IBOutlet UIView *bottomContentView;
+
+@property (weak, nonatomic) IBOutlet UIImageView *icon;
+
+@property (weak, nonatomic) IBOutlet UILabel *nameL;
+
+@property (weak, nonatomic) IBOutlet UIButton *vertifyBtn;
+
+@property (weak, nonatomic) IBOutlet UIButton *uploadIconBtn;
 
 
 @end
@@ -28,7 +39,6 @@
         CGRect frame = CGRectMake(0.0f, -height, screenBounds.size.width, height);
         
         self.frame = frame;
-        
     }
     
     return self;
@@ -38,9 +48,22 @@
 + (instancetype)header{
 
     SettingHomeHeader *header = [[self alloc]init];
-    header.backgroundColor = [UIColor redColor];
+    header.backgroundColor = [UIColor clearColor];
     
     return header;
+}
+
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
+
+    if(scrollView.contentOffset.y < -self.frame.size.height){
+        CGRect frame     = self.frame;
+        frame.size.width = -scrollView.contentOffset.y * 1.75;
+        frame.size.height= -scrollView.contentOffset.y;
+        frame.origin.x   = (SCREEN_WIDTH - frame.size.width)/2.0;
+        frame.origin.y   = scrollView.contentOffset.y;
+        self.frame = frame;
+    }
 }
 
 
