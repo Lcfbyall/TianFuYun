@@ -11,39 +11,74 @@
 
 
 //
-static NSString *const Balance_AccoutLeft = @"账户余额:";
-static NSString *const Balance_WithDraw   = @"提现";
 static NSString *const Balance_cell  = @"MineHomeBalanceCell";
-
-
-//
-static NSString *const AllOrder_MyOrder = @"我的订单";
-static NSString *const AllOrder_AllOrder= @"全部订单";
 static NSString *const AllOrder_cell = @"MineHomeDefaultCell";
-//
-static NSString *const Order_cell = @"MineHomeOrderCell";
-#define orderStatus  @[@"预约中",@"待报单",@"审核中",@"待结算",@"已结算",@"失败"]
-#define orderImgs @[@"appointment",@"alloc_wait",@"check_wait",@"comm_wait",@"comm_suc",@"comm_fail"]
-
-
-//
+static NSString *const Order_cell    = @"MineHomeOrderCell";
+static NSString *const Default_cell  = @"MineHomeDefaultCell";
 static NSString *const Invest_cell = @"MineHomeInvestCell";
-#define investTypes @[@"累计投资   ",@"资金记录   ",@"银行卡管理",@"专属经理   "]
+
+#define orderImgs @[@"appointment",@"alloc_wait",@"check_wait",@"comm_wait",@"comm_suc",@"comm_fail"]
 #define investImgs  @[@"total_invest",@"money_record",@"bank_card_new",@"manager"]
-
-
-//
-static NSString *const Default_cell = @"MineHomeDefaultCell";
-#define fourthTitles  @[@"我的奖励",@"我的收藏",@"合同申请",@"使用协议",@"用户反馈",@"关于我们",@"当前版本"]
 #define fourthImages  @[@"my_reward",@"my_collection",@"apply_trading",@"use_protocol",@"feedback",@"about_us",@"version"]
 
 
-
 @interface MineHomeCellInfoModel ()
+{
+
+    NSString *Balance_AccoutLeft;
+    NSString *Balance_WithDraw;
+    NSString *AllOrder_MyOrder;
+    NSString *AllOrder_AllOrder;
+    NSArray  *orderStatus;
+    NSArray  *investTypes;
+    NSArray  *fourthTitles;
+}
 
 @end
 
 @implementation MineHomeCellInfoModel
+
+- (instancetype)init{
+  
+    self = [super init];
+    if(self){
+    
+        Balance_AccoutLeft = NSLocalizedString(@"account_balance:", @"账户余额:");
+        Balance_WithDraw   = NSLocalizedString(@"withDrawDeposit", @"提现");
+        AllOrder_MyOrder   = NSLocalizedString(@"my_order", @"我的订单");
+        AllOrder_AllOrder  = NSLocalizedString(@"my_allOrders", @"全部订单");
+        
+        orderStatus  = @[
+                         NSLocalizedString(@"order_status_InBooking",@"预约中"),
+                         NSLocalizedString(@"order_status_InDeclarating",@"待报单"),
+                         NSLocalizedString(@"order_status_InCheking",@"审核中"),
+                         NSLocalizedString(@"order_status_InSettling",@"待结算"),
+                         NSLocalizedString(@"order_status_Settled",@"已结算"),
+                         NSLocalizedString(@"order_status_Failed",@"失败"),
+                        ];
+        
+        investTypes  = @[
+                         NSLocalizedString(@"total_Invest",@"累计投资   "),
+                         NSLocalizedString(@"capital_Record",@"资金记录   "),
+                         NSLocalizedString(@"bankCard_Manage",@"银行卡管理"),
+                         NSLocalizedString(@"exclusive_Manager",@"专属经理   "),
+                       ];
+        
+        fourthTitles = @[
+                         NSLocalizedString(@"my_rewards",@"我的奖励"),
+                         NSLocalizedString(@"my_colloeciton",@"我的收藏"),
+                         NSLocalizedString(@"contract_apply",@"合同申请"),
+                         NSLocalizedString(@"use_agreement",@"使用协议"),
+                         NSLocalizedString(@"user_feedback",@"用户反馈"),
+                         NSLocalizedString(@"about_us",@"关于我们"),
+                         NSLocalizedString(@"current_version",@"当前版本"),
+                     
+                        ];
+        
+    }
+    
+    return self;
+}
 
 
 - (void)configItems{

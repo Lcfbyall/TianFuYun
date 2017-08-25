@@ -12,21 +12,16 @@
 
 - (void)tjs_customTitleViewConfig{
  
-    CGRect frame = CGRectMake(0, 0, 200, 40);
-    
-    self.frame = frame;
     self.selectedSegmentIndex = 0;
-    //self.apportionsSegmentWidthsByContent = YES;
+    self.apportionsSegmentWidthsByContent = YES;
     self.tintColor = ThemeService.main_color_02;
     
     self.layer.masksToBounds = YES;
-    self.layer.cornerRadius = frame.size.height/2.0;
+    self.layer.cornerRadius = self.frame.size.height/2.0;
     self.layer.borderWidth = 1;
     self.layer.borderColor = ThemeService.main_color_02.CGColor;
     
-    [self setWidth:100 forSegmentAtIndex:0];
-    [self setWidth:100 forSegmentAtIndex:1];
-    
+    /*
     [self.subviews enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         if([obj isKindOfClass:NSClassFromString(@"UISegment")]){
             [((UIView *)obj).subviews enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull objs, NSUInteger idx, BOOL * _Nonnull stop) {
@@ -37,7 +32,8 @@
             }];
         }}
      ];
-    
+     
+     
     UIImage *imgNormal = [UIImage tjs_imageWithColor:ThemeService.origin_color_00 size:CGSizeMake(frame.size.width/2.0, frame.size.height) cornerRadius:frame.size.height/2.0];
     UIImage *imgSelected = [UIImage tjs_imageWithColor:ThemeService.main_color_02 size:CGSizeMake(frame.size.width/2.0, frame.size.height) cornerRadius:frame.size.height/2.0];
     [self setBackgroundImage:imgNormal forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
@@ -48,6 +44,7 @@
     [self setDividerImage:segmentLineUnSelected forLeftSegmentState:UIControlStateNormal rightSegmentState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
     [self setDividerImage:segmentLineSelected forLeftSegmentState:UIControlStateSelected rightSegmentState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
     [self setDividerImage:segmentLineSelected forLeftSegmentState:UIControlStateNormal rightSegmentState:UIControlStateSelected barMetrics:UIBarMetricsDefault];
+     */
 }
 
 @end

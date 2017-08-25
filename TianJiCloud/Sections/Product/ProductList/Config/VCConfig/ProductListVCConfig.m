@@ -8,6 +8,8 @@
 
 #import "ProductListVCConfig.h"
 #import "ProductContainerController.h"
+#import "UISearchBar+CommanStyle.h"
+
 
 @interface ProductListVCConfig ()<UISearchBarDelegate>
 
@@ -61,56 +63,30 @@
 }
 
 - (UIView *)tjs_titleView{
-
-    
-    UIView *bgView = [UIView new];
-    UIColor *bgColor = ThemeService.weak_color_00;
-    CGRect frame   =  CGRectMake(0, 0, SCREEN_WIDTH-80, 35);
-    bgView.frame   = frame;
-    bgView.backgroundColor     = bgColor;
-    bgView.layer.cornerRadius  = frame.size.height/2.0;
-    bgView.layer.masksToBounds = YES;
- 
-    
-    UISearchBar *searchBar     = [[UISearchBar alloc] init];
-    searchBar.placeholder      = @"搜索你需要的产品";
-    searchBar.frame            = bgView.bounds;;
-    searchBar.backgroundColor  = bgColor;
-    searchBar.tintColor      = ThemeService.main_color_02;
-    searchBar.barTintColor     = bgColor;
-    
-    [searchBar setSearchFieldBackgroundImage:[UIImage tjs_imageWithColor:bgColor size:searchBar.bounds.size] forState:UIControlStateNormal];
-    
-    [bgView addSubview:searchBar];
-    
-    WEAK_SELF(self);
-    searchBar.searchBarShouldBeginEditing = ^(UISearchBar *searchBar){
-        
-        STRONG_SELF(self);
-        if([self.vc conformsToProtocol:@protocol(ProductListVCConfig)] &&
-           [self.vc respondsToSelector:@selector(onTapSearchBarToProductSearch:)]){
-            
-            [self.vc onTapSearchBarToProductSearch:searchBar];
-        }
-        
-        
-        return NO;
-        
-    };
-    
-    searchBar.searchBarTextDidBeginEditing = ^(UISearchBar *searchBar){
-        
-        
-        [self.vc.navigationController.navigationBar endEditing:YES];
-    };
     
     
-    searchBar.searchBarTextDidEndEditing = ^(UISearchBar *searchBar){
-        
-        NSLog(@"哈哈");
-        
-    };
-    
+    CGRect frame = CGRectMake(0, 0, SCREEN_WIDTH-80, 35);
+    NSString *placeHolder = NSLocalizedString(@"product_search_home_navi", @"搜索你需要的产品");
+    UIView *bgView = [UISearchBar tjs_customStyleWithFrame:frame
+                                               placeHolder:placeHolder
+                                                     block:^(id sender) {
+        WEAK_SELF(self);
+        UISearchBar *searchBar = (UISearchBar *)sender;
+        searchBar.searchBarShouldBeginEditing = ^(UISearchBar *searchBar){
+            STRONG_SELF(self);
+            if([self.vc conformsToProtocol:@protocol(ProductListVCConfig)] &&
+               [self.vc respondsToSelector:@selector(onTapSearchBarToProductSearch:)]){
+                [self.vc onTapSearchBarToProductSearch:searchBar];
+            }
+            return NO;
+        };
+        searchBar.searchBarTextDidBeginEditing = ^(UISearchBar *searchBar){
+            [self.vc.navigationController.navigationBar endEditing:YES];
+        };
+        searchBar.searchBarTextDidEndEditing = ^(UISearchBar *searchBar){
+          NSLog(@"哈哈");
+        };
+    }];
     return bgView;
 }
 

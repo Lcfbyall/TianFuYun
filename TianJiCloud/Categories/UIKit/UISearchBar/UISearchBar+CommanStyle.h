@@ -10,4 +10,8 @@
 
 @interface UISearchBar (CommanStyle)
 
++ (UIView *)tjs_customStyleWithFrame:(CGRect)frame
+                         placeHolder:(NSString *)placeHolder
+                               block:(void (^)(id sender))block;
+
 @end

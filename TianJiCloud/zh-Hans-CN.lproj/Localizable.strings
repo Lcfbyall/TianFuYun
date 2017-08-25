@@ -1,0 +1,70 @@
+/* 
+  Localizable.strings
+  TianJiCloud
+
+  Created by 朱鹏 on 2017/8/25.
+  Copyright © 2017年 TianJiMoney. All rights reserved.
+*/
+
+
+//0. app
+
+
+
+//1.tabBar
+"tab_first"       = "首页";
+"tab_second"      = "产品";
+"tab_third"       = "发现";
+"tab_fourth"      = "我的";
+
+
+//2.产品类型
+"product_type_new"             = "最新";
+"product_type_hot"             = "最热";
+"product_type_Featured"        = "精选";
+"product_type_collectivetrust" = "集合信托";
+"product_type_assetsManage"    = "资管计划";
+"product_type_obligateFound"   = "债权基金";
+"product_type_stockFound"      = "股权基金";
+"product_type_securityFound"   = "证券基金";
+
+
+//3.Home
+"product_Featured_homeSeciton" = "精选产品";
+"product_search_home_navi"     = "搜索你需要的产品";
+"product_search_input_navi"    = "请输入您想要查找的产品";
+
+
+//4. Discovery
+"discovery_title_newsInformation" = "新闻资讯";
+"discovery_title_newsInformation" = "路演视频";
+
+
+//5. Mine
+"total_EarnedAmount"       = "累计赚取金额(元)";
+"pending_commissionAmount" = "待结算佣金(元)";
+"account_balance:"         = "账户余额:";
+"withDrawDeposit"          = "提现";
+"my_order"                 = "我的订单";
+"my_allOrders"             = "全部订单";
+"total_Invest"             = "累计投资   ";
+"capital_Record"           = "资金记录";
+"bankCard_Manage"          = "银行卡管理";
+"exclusive_Manager"        = "专属经理";
+"my_rewards"               = "我的奖励";
+"my_colloeciton"           = "我的收藏";
+"contract_apply"           = "合同申请";
+"use_agreement"            = "使用协议";
+"user_feedback"            = "用户反馈";
+"about_us"                 = "关于我们";
+"current_version"          = "当前版本";
+
+
+//6. Order
+
+"order_status_InBooking"       = "预约中";
+"order_status_InDeclarating"   = "待报单";
+"order_status_InCheking"       = "审核中";
+"order_status_InSettling"      = "待结算";
+"order_status_Settled"         = "已结算";
+"order_status_Failed"          = "失败";

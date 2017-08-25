@@ -54,7 +54,7 @@
                    @{
                        @"ProductSB":HomeSB,
                        @"ProductNC":HomeNC,
-                       @"title"    :@"首页",
+                       @"title"    :NSLocalizedString(@"tab_first", @"首页"),
                        @"image"    :@"Home_Tab_nor",
                        @"selectedImage":@"Home_Tab_sel",
                        },
@@ -63,7 +63,7 @@
                     @{
                       @"ProductSB":ProductSB,
                       @"ProductNC":ProductNC,
-                      @"title"    :@"产品",
+                      @"title"    :NSLocalizedString(@"tab_second", @"产品"),
                       @"image"    :@"Product_Tab_nor",
                       @"selectedImage":@"Product_Tab_sel",
                     },
@@ -71,7 +71,7 @@
                     @{
                       @"ProductSB":DiscoverySB,
                       @"ProductNC":DiscoveryNC,
-                      @"title"    :@"发现",
+                      @"title"    :NSLocalizedString(@"tab_third", @"发现"),
                       @"image"    :@"Discovery_Tab_nor",
                       @"selectedImage":@"Discovery_Tab_sel",
                     },
@@ -80,7 +80,7 @@
                     @{
                       @"ProductSB":MineSB,
                       @"ProductNC":MineNC,
-                      @"title":@"我的",
+                      @"title":NSLocalizedString(@"tab_fourth", @"我的"),
                       @"image":@"Mine_Tab_nor",
                       @"selectedImage":@"Mine_Tab_sel",
                     },

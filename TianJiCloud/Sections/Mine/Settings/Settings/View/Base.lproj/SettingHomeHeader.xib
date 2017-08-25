@@ -59,10 +59,9 @@
                     </constraints>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Po-ZJ-JYk">
-                    <rect key="frame" x="385" y="243" width="60" height="25"/>
+                    <rect key="frame" x="395" y="243" width="50" height="25"/>
                     <color key="backgroundColor" red="0.2119198263" green="1" blue="0.42678443760000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="60" id="7xJ-9b-xgY"/>
                         <constraint firstAttribute="height" constant="25" id="AXC-Xk-Yir"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="12"/>

@@ -43,36 +43,36 @@
 
     
     HomeProductClickItem *recent = [HomeProductClickItem new];
-    recent.title           = @"最新";
+    recent.title           = NSLocalizedString(@"product_type_new",@"最新");
     recent.img             = @"new";
     
     
     HomeProductClickItem *hot = [HomeProductClickItem new];
-    hot.title              = @"最热";
+    hot.title              = NSLocalizedString(@"product_type_hot",@"最热");
     hot.img                = @"hot";
     
     HomeProductClickItem *handpick = [HomeProductClickItem new];
-    handpick.title         = @"精选";
+    handpick.title         = NSLocalizedString(@"product_type_Featured",@"精选");
     handpick.img           = @"choice";
     
     HomeProductClickItem *trustTransaction = [HomeProductClickItem new];
-    trustTransaction.title = @"集合信托";
+    trustTransaction.title = NSLocalizedString(@"product_type_collectivetrust",@"集合信托");
     trustTransaction.img   = @"collective_home";
     
     HomeProductClickItem *assetsManage = [HomeProductClickItem new];
-    assetsManage.title     = @"资管计划";
+    assetsManage.title     = NSLocalizedString(@"product_type_assetsManage",@"资管计划");
     assetsManage.img       = @"plan_home";
     
     HomeProductClickItem *obligateFound = [HomeProductClickItem new];
-    obligateFound.title    = @"债权基金";
+    obligateFound.title    =  NSLocalizedString(@"product_type_obligateFound",@"债权基金");
     obligateFound.img      = @"trust_home";
     
     HomeProductClickItem *stockFound = [HomeProductClickItem new];
-    stockFound.title       = @"股权基金";
+    stockFound.title       = NSLocalizedString(@"product_type_stockFound",@"股权基金");
     stockFound.img         = @"stock_home";
     
     HomeProductClickItem *securityFound = [HomeProductClickItem new];
-    securityFound.title    = @"证券基金";
+    securityFound.title    = NSLocalizedString(@"product_type_securityFound",@"证券基金");
     securityFound.img      = @"securities_home";
     
     
@@ -89,42 +89,42 @@
     
     
     HomeProductClickItem *recent = [HomeProductClickItem new];
-    recent.title                 = @"最新";
+    recent.title                 = NSLocalizedString(@"product_type_new",@"最新");
     recent.count                 = -1;
 
     
     HomeProductClickItem *hot = [HomeProductClickItem new];
-    hot.title                    = @"最热";
+    hot.title                    = NSLocalizedString(@"product_type_hot",@"最热");
     hot.count                    = -1;
     
     
     HomeProductClickItem *handpick = [HomeProductClickItem new];
-    handpick.title               = @"精选";
+    handpick.title               = NSLocalizedString(@"product_type_Featured",@"精选");
     handpick.count               = -1;
     
     
     HomeProductClickItem *trustTransaction = [HomeProductClickItem new];
-    trustTransaction.title       = @"集合信托";
+    trustTransaction.title       = NSLocalizedString(@"product_type_collectivetrust",@"集合信托");
     trustTransaction.count       = 10;
     
     
     HomeProductClickItem *assetsManage = [HomeProductClickItem new];
-    assetsManage.title           = @"资管计划";
+    assetsManage.title           = NSLocalizedString(@"product_type_assetsManage",@"资管计划");
     assetsManage.count           = 20;
     
     
     HomeProductClickItem *obligateFound = [HomeProductClickItem new];
-    obligateFound.title          = @"债权基金";
+    obligateFound.title          = NSLocalizedString(@"product_type_obligateFound",@"债权基金");
     obligateFound.count          = 30;
     
     
     HomeProductClickItem *stockFound = [HomeProductClickItem new];
-    stockFound.title             = @"股权基金";
+    stockFound.title             = NSLocalizedString(@"product_type_stockFound",@"股权基金");
     stockFound.count             = 40;
     
     
     HomeProductClickItem *securityFound = [HomeProductClickItem new];
-    securityFound.title          = @"证券基金";
+    securityFound.title          = NSLocalizedString(@"product_type_securityFound",@"证券基金");
     securityFound.count          = 50;
     
     return @[

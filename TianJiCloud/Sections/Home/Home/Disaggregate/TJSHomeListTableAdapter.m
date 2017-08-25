@@ -130,7 +130,7 @@
     
     ProductListCellHeaderView *header = [_cellFactory headerFooterViewIntable:tableView forSection:section];
 
-    [header tjs_bindDataToCellWithValue:@"精选产品"];
+    [header tjs_bindDataToCellWithValue:NSLocalizedString(@"product_Featured_homeSeciton", @"精选产品")];
     
     return header;
 }

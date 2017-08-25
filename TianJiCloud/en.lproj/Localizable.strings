@@ -1,0 +1,68 @@
+/* 
+  Localizable.strings
+  TianJiCloud
+
+  Created by 朱鹏 on 2017/8/25.
+  Copyright © 2017年 TianJiMoney. All rights reserved.
+*/
+
+//0. app
+
+
+//1.tabBar
+"tab_first"       = "Home";
+"tab_second"      = "Product";
+"tab_third"       = "Discovery";
+"tab_fourth"      = "Mine";
+
+
+//2.产品类型
+"product_type_new"             = "New";
+"product_type_hot"             = "Hot";
+"product_type_Featured"        = "Featured";
+"product_type_collectivetrust" = "Collective";
+"product_type_assetsManage"    = "Assets";
+"product_type_obligateFound"   = "Abligate";
+"product_type_stockFound"      = "StockFund";
+"product_type_securityFound"   = "EquityFund";
+
+
+//3.Home
+"product_Featured_homeSeciton" = "Featured Products";
+"product_search_home_navi"     = "Search products you want";
+"product_search_input_navi"    = "Please input what you want";
+
+
+//4. Discovery
+"discovery_title_newsInformation" = "News Infomation";
+"discovery_title_roadShowVedio"   = "RoadShow Vedio";
+
+
+//5. Mine
+"total_EarnedAmount"       = "Earned(¥)";
+"pending_commissionAmount" = "Pending(¥)";
+"account_balance:"         = "Balance:";
+"withDrawDeposit"          = "WithDraw";
+"my_order"                 = "MyOrders";
+"my_allOrders"             = "AllOrder";
+"total_Invest"             = "AllInvest                ";
+"capital_Record"           = "Capital Record      ";
+"bankCard_Manage"          = "BankCard Manage";
+"exclusive_Manager"        = "Exclusive Manager";
+"my_rewards"               = "My Rewards";
+"my_colloeciton"           = "My Collections";
+"contract_apply"           = "COntract Apply";
+"use_agreement"            = "Use Agreement";
+"user_feedback"            = "User FeedBack";
+"about_us"                 = "About";
+"current_version"          = "Current Version";
+
+
+//6. Order
+
+"order_status_InBooking"       = "Booking";
+"order_status_InDeclarating"   = "Declarating";
+"order_status_InCheking"       = "Cheking";
+"order_status_InSettling"      = "Settling";
+"order_status_Settled"         = "Settled";
+"order_status_Failed"          = "Failed";

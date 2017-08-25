@@ -156,7 +156,7 @@
     
     self.nameL.text = [values objectAtIndex:1];
     
-    self.vertifyBtn.selected = [values lastObject];
+    self.vertifyBtn.selected = [[values lastObject] boolValue];
     
     
     //self.icon.image = [UIImage tjs_imageWithColor:[UIColor redColor] size:CGSizeMake(100, 40) cornerRadius:20];

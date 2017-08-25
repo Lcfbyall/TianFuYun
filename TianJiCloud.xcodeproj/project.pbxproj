@@ -525,7 +525,6 @@
 		2CEC58DA1F4FCDE7006C03F5 /* UITextField+LengthLimited.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CEC58CC1F4FCDE7006C03F5 /* UITextField+LengthLimited.m */; };
 		2CEC58DB1F4FCDE7006C03F5 /* UITextField+PlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CEC58CE1F4FCDE7006C03F5 /* UITextField+PlaceHolder.m */; };
 		2CEC58DC1F4FCDE7006C03F5 /* UITextView+EditRect.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CEC58D01F4FCDE7006C03F5 /* UITextView+EditRect.m */; };
-		2CEC59311F4FD206006C03F5 /* CumulateInvestHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC59331F4FD206006C03F5 /* CumulateInvestHeader.xib */; };
 		2CEC59C81F4FF6E8006C03F5 /* NSBundle+TianJiCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CEC59C71F4FF6E8006C03F5 /* NSBundle+TianJiCloud.m */; };
 		2CEC59CA1F5004B7006C03F5 /* TJSNormalBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC59C91F5004B7006C03F5 /* TJSNormalBundle.bundle */; };
 		2CEC59DC1F500534006C03F5 /* loading@2x.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC59D71F500534006C03F5 /* loading@2x.gif */; };
@@ -541,7 +540,6 @@
 		2CEC59F01F501058006C03F5 /* DiscoveryNewsListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC59EF1F501058006C03F5 /* DiscoveryNewsListCell.xib */; };
 		2CEC59F21F501314006C03F5 /* DiscoveryRoadShowListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC59F11F501314006C03F5 /* DiscoveryRoadShowListCell.xib */; };
 		2CEC59F41F50134D006C03F5 /* MineHeaderCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC59F31F50134D006C03F5 /* MineHeaderCollectionCell.xib */; };
-		2CEC59F61F50135F006C03F5 /* SettingHomeHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC59F51F50135F006C03F5 /* SettingHomeHeader.xib */; };
 		2CEC59FA1F501380006C03F5 /* WithDrawDepositAddBankCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC59F71F501380006C03F5 /* WithDrawDepositAddBankCell.xib */; };
 		2CEC59FB1F501380006C03F5 /* WithDrawDepositHomeHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC59F81F501380006C03F5 /* WithDrawDepositHomeHeader.xib */; };
 		2CEC59FC1F501380006C03F5 /* WithDrawDepositSumCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC59F91F501380006C03F5 /* WithDrawDepositSumCell.xib */; };
@@ -557,6 +555,10 @@
 		2CEC5A101F50147A006C03F5 /* BankPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC5A0E1F50147A006C03F5 /* BankPickerView.xib */; };
 		2CEC5A131F50148E006C03F5 /* BankCardListAddCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC5A111F50148E006C03F5 /* BankCardListAddCell.xib */; };
 		2CEC5A141F50148E006C03F5 /* BankCardListDefaultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC5A121F50148E006C03F5 /* BankCardListDefaultCell.xib */; };
+		2CEC5A191F501579006C03F5 /* CumulateInvestHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC5A181F501579006C03F5 /* CumulateInvestHeader.xib */; };
+		2CEC5A241F50170D006C03F5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC5A261F50170D006C03F5 /* Localizable.strings */; };
+		2CEC5A291F50184A006C03F5 /* SettingHomeHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC5A2B1F50184A006C03F5 /* SettingHomeHeader.xib */; };
+		2CEC5A341F501D32006C03F5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC5A361F501D32006C03F5 /* InfoPlist.strings */; };
 		2CF8B53E1F3D469F003B8520 /* ProductSearchHotCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF8B53D1F3D469F003B8520 /* ProductSearchHotCell.m */; };
 		2CF8B5411F3D46B8003B8520 /* ProductSearchResultCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF8B5401F3D46B8003B8520 /* ProductSearchResultCell.m */; };
 		2CF8B5451F3D48B0003B8520 /* ProductSearchListCellFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF8B5441F3D48B0003B8520 /* ProductSearchListCellFactory.m */; };
@@ -750,7 +752,6 @@
 		2C4411B81F21981E00C453EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2C4411BA1F21981E00C453EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C4411BD1F21981E00C453EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		2C4411BF1F21981E00C453EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C4411C41F21981E00C453EF /* TianJiCloudTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TianJiCloudTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C4411C81F21981E00C453EF /* TianJiCloudTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TianJiCloudTests.m; sourceTree = "<group>"; };
 		2C4411CA1F21981E00C453EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -1695,7 +1696,6 @@
 		2CEC58CE1F4FCDE7006C03F5 /* UITextField+PlaceHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+PlaceHolder.m"; sourceTree = "<group>"; };
 		2CEC58CF1F4FCDE7006C03F5 /* UITextView+EditRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+EditRect.h"; sourceTree = "<group>"; };
 		2CEC58D01F4FCDE7006C03F5 /* UITextView+EditRect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+EditRect.m"; sourceTree = "<group>"; };
-		2CEC59321F4FD206006C03F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/CumulateInvestHeader.xib; sourceTree = "<group>"; };
 		2CEC59C61F4FF6E8006C03F5 /* NSBundle+TianJiCloud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+TianJiCloud.h"; sourceTree = "<group>"; };
 		2CEC59C71F4FF6E8006C03F5 /* NSBundle+TianJiCloud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+TianJiCloud.m"; sourceTree = "<group>"; };
 		2CEC59C91F5004B7006C03F5 /* TJSNormalBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TJSNormalBundle.bundle; sourceTree = "<group>"; };
@@ -1712,7 +1712,6 @@
 		2CEC59EF1F501058006C03F5 /* DiscoveryNewsListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DiscoveryNewsListCell.xib; sourceTree = "<group>"; };
 		2CEC59F11F501314006C03F5 /* DiscoveryRoadShowListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DiscoveryRoadShowListCell.xib; sourceTree = "<group>"; };
 		2CEC59F31F50134D006C03F5 /* MineHeaderCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MineHeaderCollectionCell.xib; sourceTree = "<group>"; };
-		2CEC59F51F50135F006C03F5 /* SettingHomeHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingHomeHeader.xib; sourceTree = "<group>"; };
 		2CEC59F71F501380006C03F5 /* WithDrawDepositAddBankCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WithDrawDepositAddBankCell.xib; sourceTree = "<group>"; };
 		2CEC59F81F501380006C03F5 /* WithDrawDepositHomeHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WithDrawDepositHomeHeader.xib; sourceTree = "<group>"; };
 		2CEC59F91F501380006C03F5 /* WithDrawDepositSumCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WithDrawDepositSumCell.xib; sourceTree = "<group>"; };
@@ -1728,6 +1727,21 @@
 		2CEC5A0E1F50147A006C03F5 /* BankPickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BankPickerView.xib; sourceTree = "<group>"; };
 		2CEC5A111F50148E006C03F5 /* BankCardListAddCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BankCardListAddCell.xib; sourceTree = "<group>"; };
 		2CEC5A121F50148E006C03F5 /* BankCardListDefaultCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BankCardListDefaultCell.xib; sourceTree = "<group>"; };
+		2CEC5A181F501579006C03F5 /* CumulateInvestHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CumulateInvestHeader.xib; sourceTree = "<group>"; };
+		2CEC5A1C1F50164E006C03F5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CEC5A1E1F501664006C03F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		2CEC5A201F501699006C03F5 /* zh-Hans-CN */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans-CN"; path = "zh-Hans-CN.lproj/Main.strings"; sourceTree = "<group>"; };
+		2CEC5A211F501699006C03F5 /* zh-Hans-CN */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans-CN"; path = "zh-Hans-CN.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		2CEC5A251F50170D006C03F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2CEC5A271F501712006C03F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2CEC5A281F501713006C03F5 /* zh-Hans-CN */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans-CN"; path = "zh-Hans-CN.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		2CEC5A2A1F50184A006C03F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SettingHomeHeader.xib; sourceTree = "<group>"; };
+		2CEC5A2D1F50184C006C03F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/SettingHomeHeader.strings; sourceTree = "<group>"; };
+		2CEC5A2F1F50184E006C03F5 /* zh-Hans-CN */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans-CN"; path = "zh-Hans-CN.lproj/SettingHomeHeader.strings"; sourceTree = "<group>"; };
+		2CEC5A311F50191F006C03F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		2CEC5A351F501D32006C03F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2CEC5A371F501D35006C03F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2CEC5A381F501D36006C03F5 /* zh-Hans-CN */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans-CN"; path = "zh-Hans-CN.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		2CEE1E1A1F45919500FEE9BD /* ContractAddAddressConfigProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContractAddAddressConfigProtocol.h; sourceTree = "<group>"; };
 		2CEE1E1B1F459AA200FEE9BD /* AddressSelectedConfigProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddressSelectedConfigProtocol.h; sourceTree = "<group>"; };
 		2CF8B53C1F3D469F003B8520 /* ProductSearchHotCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductSearchHotCell.h; sourceTree = "<group>"; };
@@ -2214,7 +2228,9 @@
 				2C4411B71F21981E00C453EF /* Main.storyboard */,
 				2C4411BC1F21981E00C453EF /* LaunchScreen.storyboard */,
 				2C4411BA1F21981E00C453EF /* Assets.xcassets */,
-				2C4411BF1F21981E00C453EF /* Info.plist */,
+				2CEC5A1C1F50164E006C03F5 /* Info.plist */,
+				2CEC5A361F501D32006C03F5 /* InfoPlist.strings */,
+				2CEC5A261F50170D006C03F5 /* Localizable.strings */,
 				2C4411AB1F21981E00C453EF /* Supporting Files */,
 			);
 			path = TianJiCloud;
@@ -2916,7 +2932,7 @@
 				2C597DCB1F4C2D6300415EB6 /* SettingDefaultTableCell.m */,
 				2C2E65971F4D143B00681758 /* SettingHomeHeader.h */,
 				2C2E65981F4D143B00681758 /* SettingHomeHeader.m */,
-				2CEC59F51F50135F006C03F5 /* SettingHomeHeader.xib */,
+				2CEC5A2B1F50184A006C03F5 /* SettingHomeHeader.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -4775,8 +4791,8 @@
 				2CB4F5701F418FFB00FF98C9 /* CumulateInvestDefaultCell.h */,
 				2CB4F5711F418FFB00FF98C9 /* CumulateInvestDefaultCell.m */,
 				2C4D35EA1F4C26E50082BB36 /* CumulateInvestHeader.h */,
+				2CEC5A181F501579006C03F5 /* CumulateInvestHeader.xib */,
 				2C4D35EB1F4C26E50082BB36 /* CumulateInvestHeader.m */,
-				2CEC59331F4FD206006C03F5 /* CumulateInvestHeader.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -6048,6 +6064,8 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				Base,
+				"zh-Hans-CN",
+				en,
 			);
 			mainGroup = 2C44119F1F21981E00C453EF;
 			productRefGroup = 2C4411A91F21981E00C453EF /* Products */;
@@ -6067,6 +6085,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CEC59F21F501314006C03F5 /* DiscoveryRoadShowListCell.xib in Resources */,
+				2CEC5A191F501579006C03F5 /* CumulateInvestHeader.xib in Resources */,
 				2C859D021F31EB2E00B86575 /* ZLPhotoLib.bundle in Resources */,
 				2C85E3331F2EC6E500ADD360 /* Oder.storyboard in Resources */,
 				2C300F7C1F2F32BF00DD440E /* Settings.storyboard in Resources */,
@@ -6090,7 +6109,7 @@
 				2C300F931F2F3E9F00DD440E /* GestureSet.storyboard in Resources */,
 				2C1BFEBF1F2978C500665A71 /* Discovery.storyboard in Resources */,
 				2C7A344D1F2F633C004DD566 /* CumulateInvest.storyboard in Resources */,
-				2CEC59F61F50135F006C03F5 /* SettingHomeHeader.xib in Resources */,
+				2CEC5A291F50184A006C03F5 /* SettingHomeHeader.xib in Resources */,
 				2C8DE59E1F29FE80009B3AE2 /* Product.storyboard in Resources */,
 				2CEC5A0C1F50146F006C03F5 /* ContractListCell.xib in Resources */,
 				2C8DE5A61F29FFBF009B3AE2 /* ProductSearch.storyboard in Resources */,
@@ -6098,11 +6117,11 @@
 				2CEC5A141F50148E006C03F5 /* BankCardListDefaultCell.xib in Resources */,
 				2CEC5A101F50147A006C03F5 /* BankPickerView.xib in Resources */,
 				2CEC5A0A1F501464006C03F5 /* ContractApplyProductNameCell.xib in Resources */,
+				2CEC5A341F501D32006C03F5 /* InfoPlist.strings in Resources */,
 				2C8BB7BF1F315DD000E2D75F /* HomeFooterWeb.storyboard in Resources */,
 				2C7A344F1F2F63BE004DD566 /* CapitalRecord.storyboard in Resources */,
 				2C4411BB1F21981E00C453EF /* Assets.xcassets in Resources */,
 				2CEC59CA1F5004B7006C03F5 /* TJSNormalBundle.bundle in Resources */,
-				2CEC59311F4FD206006C03F5 /* CumulateInvestHeader.xib in Resources */,
 				2CEC59FB1F501380006C03F5 /* WithDrawDepositHomeHeader.xib in Resources */,
 				2C4412991F22007D00C453EF /* TJSThemeConfig.strings in Resources */,
 				2CEC59E01F500534006C03F5 /* loading_3.gif in Resources */,
@@ -6110,6 +6129,7 @@
 				2C7A345B1F2F68E6004DD566 /* Feedback.storyboard in Resources */,
 				2CEC59EE1F501046006C03F5 /* ProductSearchResultCell.xib in Resources */,
 				2CEC5A081F501464006C03F5 /* ContractApplyAddAddressCell.xib in Resources */,
+				2CEC5A241F50170D006C03F5 /* Localizable.strings in Resources */,
 				2C300F951F2F3F1200DD440E /* FindWithDrawCode.storyboard in Resources */,
 				2C7A345D1F2F69CF004DD566 /* AboutMe.storyboard in Resources */,
 				2CEC59FA1F501380006C03F5 /* WithDrawDepositAddBankCell.xib in Resources */,
@@ -6758,6 +6778,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				2C4411B81F21981E00C453EF /* Base */,
+				2CEC5A1E1F501664006C03F5 /* en */,
+				2CEC5A201F501699006C03F5 /* zh-Hans-CN */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -6766,16 +6788,40 @@
 			isa = PBXVariantGroup;
 			children = (
 				2C4411BD1F21981E00C453EF /* Base */,
+				2CEC5A211F501699006C03F5 /* zh-Hans-CN */,
+				2CEC5A311F50191F006C03F5 /* en */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		2CEC59331F4FD206006C03F5 /* CumulateInvestHeader.xib */ = {
+		2CEC5A261F50170D006C03F5 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				2CEC59321F4FD206006C03F5 /* Base */,
+				2CEC5A251F50170D006C03F5 /* en */,
+				2CEC5A271F501712006C03F5 /* Base */,
+				2CEC5A281F501713006C03F5 /* zh-Hans-CN */,
 			);
-			name = CumulateInvestHeader.xib;
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		2CEC5A2B1F50184A006C03F5 /* SettingHomeHeader.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2CEC5A2A1F50184A006C03F5 /* Base */,
+				2CEC5A2D1F50184C006C03F5 /* en */,
+				2CEC5A2F1F50184E006C03F5 /* zh-Hans-CN */,
+			);
+			name = SettingHomeHeader.xib;
+			sourceTree = "<group>";
+		};
+		2CEC5A361F501D32006C03F5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2CEC5A351F501D32006C03F5 /* Base */,
+				2CEC5A371F501D35006C03F5 /* en */,
+				2CEC5A381F501D36006C03F5 /* zh-Hans-CN */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

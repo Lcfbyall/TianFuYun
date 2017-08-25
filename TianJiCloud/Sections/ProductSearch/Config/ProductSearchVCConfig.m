@@ -8,6 +8,7 @@
 
 #import "ProductSearchVCConfig.h"
 #import "ProductSearchController.h"
+#import "UISearchBar+CommanStyle.h"
 
 
 @interface ProductSearchVCConfig ()
@@ -72,44 +73,31 @@
 
 - (UIView *)tjs_titleView{
     
-    UIView *bgView = [UIView new];
-    UIColor *bgColor = ThemeService.weak_color_00;
-    CGRect frame   =  CGRectMake(0, 0, SCREEN_WIDTH-140, 35);
-    bgView.frame   = frame;
-    bgView.backgroundColor     = bgColor;
-    bgView.layer.cornerRadius  = frame.size.height/2.0;
-    bgView.layer.masksToBounds = YES;
-
-    //frame = CGRectInset(bgView.bounds, 20, 0);
-    UISearchBar *searchBar     = [[UISearchBar alloc] init];
-    searchBar.placeholder      = @"请输入您想查找的产品";
-    searchBar.frame            = frame;;
-    searchBar.backgroundColor  = bgColor;
-    searchBar.barTintColor     = bgColor;
-    searchBar.tintColor        = ThemeService.main_color_02;
-
-    [searchBar setSearchFieldBackgroundImage:[UIImage tjs_imageWithColor:bgColor size:searchBar.bounds.size] forState:UIControlStateNormal];
-    [bgView addSubview:searchBar];
     
-    //searchBar.showsCancelButton = YES;
-
+    CGRect frame = CGRectMake(0, 0, SCREEN_WIDTH-140, 35);
+    NSString *placeHolder = NSLocalizedString(@"product_search_input_navi", @"请输入您想查找的产品");
+    UIView *bgView = [UISearchBar tjs_customStyleWithFrame:frame
+                                               placeHolder:placeHolder
+                                                     block:^(id sender) {
+       
+        UISearchBar *searchBar = (UISearchBar *)sender;
     
-    searchBar.searchBarTextDidChange = ^(UISearchBar *searchBar, NSString *searchText) {
+        searchBar.searchBarTextDidChange = ^(UISearchBar *searchBar, NSString *searchText) {
+            
+            NSLog(@"searchBarTextDidChange");
+        };
         
-        NSLog(@"searchBarTextDidChange");
-    };
-    
-    searchBar.searchBarSearchButtonClicked = ^(UISearchBar *searchBar) {
+        searchBar.searchBarSearchButtonClicked = ^(UISearchBar *searchBar) {
+            
+            NSLog(@"searchBarSearchButtonClicked");
+        };
         
-        NSLog(@"searchBarSearchButtonClicked");
-    };
-    
-    searchBar.searchBarCancelButtonClicked = ^(UISearchBar *searchBar) {
-        
-        NSLog(@"searchBarCancelButtonClicked");
-        
-    };
-    
+        searchBar.searchBarCancelButtonClicked = ^(UISearchBar *searchBar) {
+            
+            NSLog(@"searchBarCancelButtonClicked");
+            
+        };
+    }];
     
     
     return bgView;

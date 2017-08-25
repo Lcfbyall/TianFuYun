@@ -42,7 +42,7 @@
         button.layer.borderColor   = tintcolor.CGColor;
         button.layer.borderWidth   = 1;
         button.titleLabel.font = [UIFont systemFontOfSize:15.0f];
-        [button setTitle:@"提现" forState:UIControlStateNormal];
+        [button setTitle:@"" forState:UIControlStateNormal];
         [button setTitleColor:tintcolor forState:UIControlStateNormal];
         [button setTitleColor:ThemeService.origin_color_00 forState:UIControlStateHighlighted];
         [button setBackgroundColor:ThemeService.main_color_02 forState:UIControlStateHighlighted];
@@ -71,7 +71,7 @@
     
     self.detailTextLabel.text = nil;
  
-    
+    [self.withdarwBtn setTitle:self.cellInfo.detailTitle forState:UIControlStateNormal];
     
 }
 

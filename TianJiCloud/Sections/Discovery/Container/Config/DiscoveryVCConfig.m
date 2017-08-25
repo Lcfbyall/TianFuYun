@@ -32,8 +32,10 @@
 
 - (UIView *)tjs_titleView{
 
-    UISegmentedControl *segment = [[UISegmentedControl alloc]initWithItems:@[@"新闻资讯",@"路演视频"]];
     
+    NSString *firstSegment = NSLocalizedString(@"discovery_title_newsInformation", @"新闻资讯");
+    NSString *secondSegment = NSLocalizedString(@"discovery_title_roadShowVedio", @"路演视频");
+    UISegmentedControl *segment = [[UISegmentedControl alloc]initWithItems:@[firstSegment,secondSegment]];
     [segment tjs_customTitleViewConfig];
     
     [segment addBlockForControlEvents:UIControlEventValueChanged
