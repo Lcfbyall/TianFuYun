@@ -32,7 +32,11 @@
             [((UIView *)obj).subviews enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull objs, NSUInteger idx, BOOL * _Nonnull stop) {
                 if([objs isKindOfClass:NSClassFromString(@"UIImageView")]){
                     ((UIImageView *)objs).layer.masksToBounds = YES;
-                    ((UIImageView *)objs).layer.cornerRadius = ((UIImageView *)objs).frame.size.height / 2.0;}}];}}];
+                    ((UIImageView *)objs).layer.cornerRadius = ((UIImageView *)objs).frame.size.height / 2.0;
+                }
+            }];
+        }}
+     ];
     
     UIImage *imgNormal = [UIImage tjs_imageWithColor:ThemeService.origin_color_00 size:CGSizeMake(frame.size.width/2.0, frame.size.height) cornerRadius:frame.size.height/2.0];
     UIImage *imgSelected = [UIImage tjs_imageWithColor:ThemeService.main_color_02 size:CGSizeMake(frame.size.width/2.0, frame.size.height) cornerRadius:frame.size.height/2.0];
@@ -44,8 +48,6 @@
     [self setDividerImage:segmentLineUnSelected forLeftSegmentState:UIControlStateNormal rightSegmentState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
     [self setDividerImage:segmentLineSelected forLeftSegmentState:UIControlStateSelected rightSegmentState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
     [self setDividerImage:segmentLineSelected forLeftSegmentState:UIControlStateNormal rightSegmentState:UIControlStateSelected barMetrics:UIBarMetricsDefault];
-    
-    
 }
 
 @end

@@ -17,7 +17,7 @@
  *  获得当前设备语言
  *
  */
-#define CURR_LANG       ([[NSLocale preferredLanguages] objectAtIndex:0])
+#define CURR_LANG       ([[NSLocale preferredLanguages] firstObject])
 #define LOCAL_COMPONENT [NSLocale componentsFromLocaleIdentifier:[NSLocale currentLocale].localeIdentifier]
 - (NSString*)tjs_getPreferredLanguage
 {

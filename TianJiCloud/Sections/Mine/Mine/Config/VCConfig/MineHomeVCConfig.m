@@ -61,7 +61,7 @@
     //user_setup
     WEAK_SELF(self);
     NSString *leftBarBtnImage  = @"avatar";
-    UIImage *img = [[[UIImage imageNamed:leftBarBtnImage] tjs_drawInSize:CGSizeMake(30, 30)] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    UIImage *img = [[IMAGE(leftBarBtnImage) tjs_drawInSize:CGSizeMake(30, 30)] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     UIBarButtonItem *leftItem  = [[UIBarButtonItem alloc] bk_initWithImage:img style:UIBarButtonItemStylePlain handler:^(id sender) {
         STRONG_SELF(self);
         if(self){
@@ -86,7 +86,7 @@
     //hide_money  隐藏金额
     WEAK_SELF(self);
     NSString *rightBarBtnImage  = @"avatar";
-    UIImage *img = [[[UIImage imageNamed:rightBarBtnImage] tjs_drawInSize:CGSizeMake(30, 30)] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    UIImage *img = [[IMAGE(rightBarBtnImage) tjs_drawInSize:CGSizeMake(30, 30)] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] bk_initWithImage:img style:UIBarButtonItemStylePlain handler:^(id sender) {
         STRONG_SELF(self);
         if(self){

@@ -39,7 +39,6 @@ static  TJSImagePicker *imagePikerSevice;
 
 @implementation TJSImagePicker
 
-
 #pragma mark 弹出相机
 + (void)presentCameraCompletionHandler:(void(^)(UIImage *pikingImage))complete
 {
@@ -70,6 +69,7 @@ static  TJSImagePicker *imagePikerSevice;
     imagePikerSevice.completionHandler = complete;
     
      [TJSHudAlert showLoadingViewInView:[UIViewController tjs_currentController].view];
+    
     [imagePikerSevice requestAccessForMediaCompleteHandler:^(BOOL granted) {
         
          [TJSHudAlert  dimissLoadingView];
@@ -84,6 +84,7 @@ static  TJSImagePicker *imagePikerSevice;
         }
     }];
 }
+
 
 #pragma mark 弹出相册
 + (void)presentPhotoAlbumCompletionHandler:(void(^)(UIImage *pikingImage))complete{
@@ -106,7 +107,6 @@ static  TJSImagePicker *imagePikerSevice;
         }
     }];
 }
-
 
 
 #pragma mark private method
@@ -216,6 +216,7 @@ static  TJSImagePicker *imagePikerSevice;
 
 
 #pragma mark UIImagePickerController
+
 - (UIImagePickerController *)imagePickerController
 {
     if (_imagePickerController == nil)
@@ -242,25 +243,27 @@ static  TJSImagePicker *imagePikerSevice;
         
         Bar.translucent=NO;
         Bar.barTintColor = ThemeService.main_color_00;
-        Bar.tintColor    = ThemeService.origin_color_00;
+        Bar.tintColor    = ThemeService.main_color_02;
         [Bar setTitleTextAttributes:
          @{
            NSFontAttributeName:[UIFont boldSystemFontOfSize:16.0f],
-           NSForegroundColorAttributeName:ThemeService.origin_color_00
+           NSForegroundColorAttributeName:ThemeService.origin_color_01
            }];
         
         
         //返回按钮 header-back
-        UIImage *backImage = [UIImage imageNamed:@"header-back"];
+        UIImage *backImage = IMAGE(@"header-back");
         backImage = [backImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
         //must both be set if you want to customize the back indicator image.
         Bar.backIndicatorImage = backImage;
         Bar.backIndicatorTransitionMaskImage =backImage;
+        
+        
         [BarItem setBackButtonTitlePositionAdjustment:UIOffsetMake(0,-60) forBarMetrics:UIBarMetricsDefault];
         
         UIFont  *font = [UIFont boldSystemFontOfSize:15.0f];
         UIColor *disablecolor = ThemeService.weak_color_00;
-        UIColor *normalcolor  = ThemeService.origin_color_00;
+        UIColor *normalcolor  = ThemeService.main_color_02;
         [BarItem setTitleTextAttributes:@{
         NSFontAttributeName:font,NSForegroundColorAttributeName:normalcolor}
         forState:UIControlStateNormal];
@@ -270,6 +273,8 @@ static  TJSImagePicker *imagePikerSevice;
     }
     return _imagePickerController;
 }
+
+
 #pragma mark UIImagePickerControllerDelegate
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info{
 
@@ -326,6 +331,7 @@ static  TJSImagePicker *imagePikerSevice;
         }
     }];
 }
+
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker{
 
     if ([picker isKindOfClass:[UIImagePickerController class]])
@@ -333,7 +339,10 @@ static  TJSImagePicker *imagePikerSevice;
         [picker dismissViewControllerAnimated:YES completion:nil];
     }
 }
+
+
 #pragma mark  savePhotoErrorSEL
+
 - (void)image:(UIImage*)image didFinishSavingWithError:(NSError*)error contextInfo:(void*)contextInfo{
     if (!error) {
         NSLog(@"picture saved with no error.");
@@ -346,6 +355,7 @@ static  TJSImagePicker *imagePikerSevice;
 
 
 #pragma mark alert tool
+
 - (void)showAlert:(NSString *)title
           message:(NSString *)message
              sure:(NSString *)sure{

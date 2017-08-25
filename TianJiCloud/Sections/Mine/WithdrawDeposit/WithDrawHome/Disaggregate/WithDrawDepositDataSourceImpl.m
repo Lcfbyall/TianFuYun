@@ -54,7 +54,7 @@
 - (BOOL)canCommit{
   
     //校验银行卡、输入金额
-    WithDrawDepositCellModel *first = [[_items firstObject] firstObject];
+    //WithDrawDepositCellModel *first = [[_items firstObject] firstObject];
     
     
     WithDrawDepositCellModel *second = [[_items lastObject] firstObject];

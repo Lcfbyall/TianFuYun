@@ -51,8 +51,8 @@
  
     [super awakeFromNib];
     
-    //self.icon.layer.cornerRadius = self.icon.tjs_height/2.0;
-    //self.icon.layer.masksToBounds = YES;
+    self.icon.layer.cornerRadius = self.icon.tjs_height/2.0;
+    self.icon.layer.masksToBounds = YES;
     
     self.nameL.textColor = ThemeService.text_color_01;
     self.nameL.font = [UIFont systemFontOfSize:17.0f];
@@ -84,7 +84,7 @@
     
     self.uploadIconBtn.layer.cornerRadius = self.uploadIconBtn.tjs_height/2.0;
     self.uploadIconBtn.layer.masksToBounds = YES;
-    self.uploadIconBtn.backgroundColor = ThemeService.origin_color_01;
+    self.uploadIconBtn.backgroundColor = [ThemeService.origin_color_01 colorWithAlphaComponent:0.5];
 
 }
 
@@ -159,7 +159,7 @@
     self.vertifyBtn.selected = [values lastObject];
     
     
-    self.icon.image = [UIImage tjs_imageWithColor:[UIColor redColor] size:CGSizeMake(100, 40) cornerRadius:20];
+    //self.icon.image = [UIImage tjs_imageWithColor:[UIColor redColor] size:CGSizeMake(100, 40) cornerRadius:20];
 
 }
 
