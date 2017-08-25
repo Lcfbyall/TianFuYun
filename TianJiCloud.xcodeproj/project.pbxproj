@@ -58,7 +58,6 @@
 		2C1BFEBF1F2978C500665A71 /* Discovery.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C1BFEBE1F2978C500665A71 /* Discovery.storyboard */; };
 		2C1D88D01F4FB9C0006A4F00 /* AppDelegate+TJSKeyboardSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1D88CF1F4FB9C0006A4F00 /* AppDelegate+TJSKeyboardSetting.m */; };
 		2C1D88D31F4FBA4E006A4F00 /* AppDelegate+TJSSocialSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1D88D21F4FBA4E006A4F00 /* AppDelegate+TJSSocialSetting.m */; };
-		2C1D88D41F4FBB23006A4F00 /* SettingHomeHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C1D88D61F4FBB23006A4F00 /* SettingHomeHeader.xib */; };
 		2C2E65991F4D143B00681758 /* SettingHomeHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2E65981F4D143B00681758 /* SettingHomeHeader.m */; };
 		2C300F7C1F2F32BF00DD440E /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C300F7B1F2F32BF00DD440E /* Settings.storyboard */; };
 		2C300F7F1F2F3C3C00DD440E /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C300F7E1F2F3C3C00DD440E /* ProfileViewController.m */; };
@@ -526,30 +525,7 @@
 		2CEC58DA1F4FCDE7006C03F5 /* UITextField+LengthLimited.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CEC58CC1F4FCDE7006C03F5 /* UITextField+LengthLimited.m */; };
 		2CEC58DB1F4FCDE7006C03F5 /* UITextField+PlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CEC58CE1F4FCDE7006C03F5 /* UITextField+PlaceHolder.m */; };
 		2CEC58DC1F4FCDE7006C03F5 /* UITextView+EditRect.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CEC58D01F4FCDE7006C03F5 /* UITextView+EditRect.m */; };
-		2CEC58E41F4FD188006C03F5 /* HomeHeaderCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC58E61F4FD188006C03F5 /* HomeHeaderCollectionCell.xib */; };
-		2CEC58EB1F4FD19B006C03F5 /* HomeFooterCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC58ED1F4FD19B006C03F5 /* HomeFooterCollectionCell.xib */; };
-		2CEC58F21F4FD1A4006C03F5 /* ProductListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC58F41F4FD1A4006C03F5 /* ProductListCell.xib */; };
-		2CEC58F91F4FD1AD006C03F5 /* ProductFilterResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC58FB1F4FD1AD006C03F5 /* ProductFilterResultCell.xib */; };
-		2CEC59001F4FD1C3006C03F5 /* ProductSearchResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC59021F4FD1C3006C03F5 /* ProductSearchResultCell.xib */; };
-		2CEC59071F4FD1CD006C03F5 /* DiscoveryNewsListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC59091F4FD1CD006C03F5 /* DiscoveryNewsListCell.xib */; };
-		2CEC590E1F4FD1D7006C03F5 /* DiscoveryRoadShowListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC59101F4FD1D7006C03F5 /* DiscoveryRoadShowListCell.xib */; };
-		2CEC59151F4FD1E2006C03F5 /* MineHeaderCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC59171F4FD1E2006C03F5 /* MineHeaderCollectionCell.xib */; };
-		2CEC591C1F4FD1F1006C03F5 /* WithDrawDepositAddBankCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC591E1F4FD1F1006C03F5 /* WithDrawDepositAddBankCell.xib */; };
-		2CEC59231F4FD1F8006C03F5 /* WithDrawDepositSumCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC59251F4FD1F8006C03F5 /* WithDrawDepositSumCell.xib */; };
-		2CEC592A1F4FD1FF006C03F5 /* WithDrawDepositHomeHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC592C1F4FD1FF006C03F5 /* WithDrawDepositHomeHeader.xib */; };
 		2CEC59311F4FD206006C03F5 /* CumulateInvestHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC59331F4FD206006C03F5 /* CumulateInvestHeader.xib */; };
-		2CEC59381F4FD20C006C03F5 /* BankCardListAddCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC593A1F4FD20C006C03F5 /* BankCardListAddCell.xib */; };
-		2CEC593F1F4FD218006C03F5 /* BankCardListDefaultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC59411F4FD218006C03F5 /* BankCardListDefaultCell.xib */; };
-		2CEC59461F4FD223006C03F5 /* BankPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC59481F4FD223006C03F5 /* BankPickerView.xib */; };
-		2CEC594D1F4FD22B006C03F5 /* BankCardAddDefaultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC594F1F4FD22B006C03F5 /* BankCardAddDefaultCell.xib */; };
-		2CEC59541F4FD236006C03F5 /* ContractListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC59561F4FD236006C03F5 /* ContractListCell.xib */; };
-		2CEC595B1F4FD23E006C03F5 /* ContractApplyAddAddressCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC595D1F4FD23E006C03F5 /* ContractApplyAddAddressCell.xib */; };
-		2CEC59631F4FD247006C03F5 /* ContractApplyInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC59651F4FD247006C03F5 /* ContractApplyInfoCell.xib */; };
-		2CEC596A1F4FD24E006C03F5 /* ContractApplyProductNameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC596C1F4FD24E006C03F5 /* ContractApplyProductNameCell.xib */; };
-		2CEC59711F4FD263006C03F5 /* AddressPikerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC59731F4FD263006C03F5 /* AddressPikerView.xib */; };
-		2CEC59781F4FD26C006C03F5 /* ConAddressRightInputCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC597A1F4FD26C006C03F5 /* ConAddressRightInputCell.xib */; };
-		2CEC597F1F4FD27B006C03F5 /* ConAddressMiddleLabelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC59811F4FD27B006C03F5 /* ConAddressMiddleLabelCell.xib */; };
-		2CEC59861F4FD284006C03F5 /* ConAddressBottomInputCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC59881F4FD284006C03F5 /* ConAddressBottomInputCell.xib */; };
 		2CEC59C81F4FF6E8006C03F5 /* NSBundle+TianJiCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CEC59C71F4FF6E8006C03F5 /* NSBundle+TianJiCloud.m */; };
 		2CEC59CA1F5004B7006C03F5 /* TJSNormalBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC59C91F5004B7006C03F5 /* TJSNormalBundle.bundle */; };
 		2CEC59DC1F500534006C03F5 /* loading@2x.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC59D71F500534006C03F5 /* loading@2x.gif */; };
@@ -557,6 +533,30 @@
 		2CEC59DE1F500534006C03F5 /* loading_1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC59D91F500534006C03F5 /* loading_1.gif */; };
 		2CEC59DF1F500534006C03F5 /* loading_2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC59DA1F500534006C03F5 /* loading_2.gif */; };
 		2CEC59E01F500534006C03F5 /* loading_3.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC59DB1F500534006C03F5 /* loading_3.gif */; };
+		2CEC59E61F500FDD006C03F5 /* HomeHeaderCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC59E51F500FDD006C03F5 /* HomeHeaderCollectionCell.xib */; };
+		2CEC59E81F50100B006C03F5 /* HomeFooterCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC59E71F50100B006C03F5 /* HomeFooterCollectionCell.xib */; };
+		2CEC59EA1F50101F006C03F5 /* ProductListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC59E91F50101F006C03F5 /* ProductListCell.xib */; };
+		2CEC59EC1F501032006C03F5 /* ProductFilterResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC59EB1F501032006C03F5 /* ProductFilterResultCell.xib */; };
+		2CEC59EE1F501046006C03F5 /* ProductSearchResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC59ED1F501046006C03F5 /* ProductSearchResultCell.xib */; };
+		2CEC59F01F501058006C03F5 /* DiscoveryNewsListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC59EF1F501058006C03F5 /* DiscoveryNewsListCell.xib */; };
+		2CEC59F21F501314006C03F5 /* DiscoveryRoadShowListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC59F11F501314006C03F5 /* DiscoveryRoadShowListCell.xib */; };
+		2CEC59F41F50134D006C03F5 /* MineHeaderCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC59F31F50134D006C03F5 /* MineHeaderCollectionCell.xib */; };
+		2CEC59F61F50135F006C03F5 /* SettingHomeHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC59F51F50135F006C03F5 /* SettingHomeHeader.xib */; };
+		2CEC59FA1F501380006C03F5 /* WithDrawDepositAddBankCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC59F71F501380006C03F5 /* WithDrawDepositAddBankCell.xib */; };
+		2CEC59FB1F501380006C03F5 /* WithDrawDepositHomeHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC59F81F501380006C03F5 /* WithDrawDepositHomeHeader.xib */; };
+		2CEC59FC1F501380006C03F5 /* WithDrawDepositSumCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC59F91F501380006C03F5 /* WithDrawDepositSumCell.xib */; };
+		2CEC5A011F501459006C03F5 /* AddressPikerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC59FD1F501459006C03F5 /* AddressPikerView.xib */; };
+		2CEC5A021F501459006C03F5 /* ConAddressBottomInputCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC59FE1F501459006C03F5 /* ConAddressBottomInputCell.xib */; };
+		2CEC5A031F501459006C03F5 /* ConAddressMiddleLabelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC59FF1F501459006C03F5 /* ConAddressMiddleLabelCell.xib */; };
+		2CEC5A041F501459006C03F5 /* ConAddressRightInputCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC5A001F501459006C03F5 /* ConAddressRightInputCell.xib */; };
+		2CEC5A081F501464006C03F5 /* ContractApplyAddAddressCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC5A051F501464006C03F5 /* ContractApplyAddAddressCell.xib */; };
+		2CEC5A091F501464006C03F5 /* ContractApplyInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC5A061F501464006C03F5 /* ContractApplyInfoCell.xib */; };
+		2CEC5A0A1F501464006C03F5 /* ContractApplyProductNameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC5A071F501464006C03F5 /* ContractApplyProductNameCell.xib */; };
+		2CEC5A0C1F50146F006C03F5 /* ContractListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC5A0B1F50146F006C03F5 /* ContractListCell.xib */; };
+		2CEC5A0F1F50147A006C03F5 /* BankCardAddDefaultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC5A0D1F50147A006C03F5 /* BankCardAddDefaultCell.xib */; };
+		2CEC5A101F50147A006C03F5 /* BankPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC5A0E1F50147A006C03F5 /* BankPickerView.xib */; };
+		2CEC5A131F50148E006C03F5 /* BankCardListAddCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC5A111F50148E006C03F5 /* BankCardListAddCell.xib */; };
+		2CEC5A141F50148E006C03F5 /* BankCardListDefaultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC5A121F50148E006C03F5 /* BankCardListDefaultCell.xib */; };
 		2CF8B53E1F3D469F003B8520 /* ProductSearchHotCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF8B53D1F3D469F003B8520 /* ProductSearchHotCell.m */; };
 		2CF8B5411F3D46B8003B8520 /* ProductSearchResultCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF8B5401F3D46B8003B8520 /* ProductSearchResultCell.m */; };
 		2CF8B5451F3D48B0003B8520 /* ProductSearchListCellFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF8B5441F3D48B0003B8520 /* ProductSearchListCellFactory.m */; };
@@ -721,7 +721,6 @@
 		2C1D88CF1F4FB9C0006A4F00 /* AppDelegate+TJSKeyboardSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+TJSKeyboardSetting.m"; sourceTree = "<group>"; };
 		2C1D88D11F4FBA4E006A4F00 /* AppDelegate+TJSSocialSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+TJSSocialSetting.h"; sourceTree = "<group>"; };
 		2C1D88D21F4FBA4E006A4F00 /* AppDelegate+TJSSocialSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+TJSSocialSetting.m"; sourceTree = "<group>"; };
-		2C1D88D51F4FBB23006A4F00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SettingHomeHeader.xib; sourceTree = "<group>"; };
 		2C2E65971F4D143B00681758 /* SettingHomeHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingHomeHeader.h; sourceTree = "<group>"; };
 		2C2E65981F4D143B00681758 /* SettingHomeHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingHomeHeader.m; sourceTree = "<group>"; };
 		2C300F7B1F2F32BF00DD440E /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
@@ -1696,30 +1695,7 @@
 		2CEC58CE1F4FCDE7006C03F5 /* UITextField+PlaceHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+PlaceHolder.m"; sourceTree = "<group>"; };
 		2CEC58CF1F4FCDE7006C03F5 /* UITextView+EditRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+EditRect.h"; sourceTree = "<group>"; };
 		2CEC58D01F4FCDE7006C03F5 /* UITextView+EditRect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+EditRect.m"; sourceTree = "<group>"; };
-		2CEC58E51F4FD188006C03F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/HomeHeaderCollectionCell.xib; sourceTree = "<group>"; };
-		2CEC58EC1F4FD19B006C03F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/HomeFooterCollectionCell.xib; sourceTree = "<group>"; };
-		2CEC58F31F4FD1A4006C03F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ProductListCell.xib; sourceTree = "<group>"; };
-		2CEC58FA1F4FD1AD006C03F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ProductFilterResultCell.xib; sourceTree = "<group>"; };
-		2CEC59011F4FD1C3006C03F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ProductSearchResultCell.xib; sourceTree = "<group>"; };
-		2CEC59081F4FD1CD006C03F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/DiscoveryNewsListCell.xib; sourceTree = "<group>"; };
-		2CEC590F1F4FD1D7006C03F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/DiscoveryRoadShowListCell.xib; sourceTree = "<group>"; };
-		2CEC59161F4FD1E2006C03F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MineHeaderCollectionCell.xib; sourceTree = "<group>"; };
-		2CEC591D1F4FD1F1006C03F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/WithDrawDepositAddBankCell.xib; sourceTree = "<group>"; };
-		2CEC59241F4FD1F8006C03F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/WithDrawDepositSumCell.xib; sourceTree = "<group>"; };
-		2CEC592B1F4FD1FF006C03F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/WithDrawDepositHomeHeader.xib; sourceTree = "<group>"; };
 		2CEC59321F4FD206006C03F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/CumulateInvestHeader.xib; sourceTree = "<group>"; };
-		2CEC59391F4FD20C006C03F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/BankCardListAddCell.xib; sourceTree = "<group>"; };
-		2CEC59401F4FD218006C03F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/BankCardListDefaultCell.xib; sourceTree = "<group>"; };
-		2CEC59471F4FD223006C03F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/BankPickerView.xib; sourceTree = "<group>"; };
-		2CEC594E1F4FD22B006C03F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/BankCardAddDefaultCell.xib; sourceTree = "<group>"; };
-		2CEC59551F4FD236006C03F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ContractListCell.xib; sourceTree = "<group>"; };
-		2CEC595C1F4FD23E006C03F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ContractApplyAddAddressCell.xib; sourceTree = "<group>"; };
-		2CEC59641F4FD247006C03F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ContractApplyInfoCell.xib; sourceTree = "<group>"; };
-		2CEC596B1F4FD24E006C03F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ContractApplyProductNameCell.xib; sourceTree = "<group>"; };
-		2CEC59721F4FD263006C03F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/AddressPikerView.xib; sourceTree = "<group>"; };
-		2CEC59791F4FD26C006C03F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ConAddressRightInputCell.xib; sourceTree = "<group>"; };
-		2CEC59801F4FD27B006C03F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ConAddressMiddleLabelCell.xib; sourceTree = "<group>"; };
-		2CEC59871F4FD284006C03F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ConAddressBottomInputCell.xib; sourceTree = "<group>"; };
 		2CEC59C61F4FF6E8006C03F5 /* NSBundle+TianJiCloud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+TianJiCloud.h"; sourceTree = "<group>"; };
 		2CEC59C71F4FF6E8006C03F5 /* NSBundle+TianJiCloud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+TianJiCloud.m"; sourceTree = "<group>"; };
 		2CEC59C91F5004B7006C03F5 /* TJSNormalBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TJSNormalBundle.bundle; sourceTree = "<group>"; };
@@ -1728,6 +1704,30 @@
 		2CEC59D91F500534006C03F5 /* loading_1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading_1.gif; sourceTree = "<group>"; };
 		2CEC59DA1F500534006C03F5 /* loading_2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading_2.gif; sourceTree = "<group>"; };
 		2CEC59DB1F500534006C03F5 /* loading_3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading_3.gif; sourceTree = "<group>"; };
+		2CEC59E51F500FDD006C03F5 /* HomeHeaderCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeHeaderCollectionCell.xib; sourceTree = "<group>"; };
+		2CEC59E71F50100B006C03F5 /* HomeFooterCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeFooterCollectionCell.xib; sourceTree = "<group>"; };
+		2CEC59E91F50101F006C03F5 /* ProductListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductListCell.xib; sourceTree = "<group>"; };
+		2CEC59EB1F501032006C03F5 /* ProductFilterResultCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductFilterResultCell.xib; sourceTree = "<group>"; };
+		2CEC59ED1F501046006C03F5 /* ProductSearchResultCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductSearchResultCell.xib; sourceTree = "<group>"; };
+		2CEC59EF1F501058006C03F5 /* DiscoveryNewsListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DiscoveryNewsListCell.xib; sourceTree = "<group>"; };
+		2CEC59F11F501314006C03F5 /* DiscoveryRoadShowListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DiscoveryRoadShowListCell.xib; sourceTree = "<group>"; };
+		2CEC59F31F50134D006C03F5 /* MineHeaderCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MineHeaderCollectionCell.xib; sourceTree = "<group>"; };
+		2CEC59F51F50135F006C03F5 /* SettingHomeHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingHomeHeader.xib; sourceTree = "<group>"; };
+		2CEC59F71F501380006C03F5 /* WithDrawDepositAddBankCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WithDrawDepositAddBankCell.xib; sourceTree = "<group>"; };
+		2CEC59F81F501380006C03F5 /* WithDrawDepositHomeHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WithDrawDepositHomeHeader.xib; sourceTree = "<group>"; };
+		2CEC59F91F501380006C03F5 /* WithDrawDepositSumCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WithDrawDepositSumCell.xib; sourceTree = "<group>"; };
+		2CEC59FD1F501459006C03F5 /* AddressPikerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddressPikerView.xib; sourceTree = "<group>"; };
+		2CEC59FE1F501459006C03F5 /* ConAddressBottomInputCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConAddressBottomInputCell.xib; sourceTree = "<group>"; };
+		2CEC59FF1F501459006C03F5 /* ConAddressMiddleLabelCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConAddressMiddleLabelCell.xib; sourceTree = "<group>"; };
+		2CEC5A001F501459006C03F5 /* ConAddressRightInputCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConAddressRightInputCell.xib; sourceTree = "<group>"; };
+		2CEC5A051F501464006C03F5 /* ContractApplyAddAddressCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContractApplyAddAddressCell.xib; sourceTree = "<group>"; };
+		2CEC5A061F501464006C03F5 /* ContractApplyInfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContractApplyInfoCell.xib; sourceTree = "<group>"; };
+		2CEC5A071F501464006C03F5 /* ContractApplyProductNameCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContractApplyProductNameCell.xib; sourceTree = "<group>"; };
+		2CEC5A0B1F50146F006C03F5 /* ContractListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContractListCell.xib; sourceTree = "<group>"; };
+		2CEC5A0D1F50147A006C03F5 /* BankCardAddDefaultCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BankCardAddDefaultCell.xib; sourceTree = "<group>"; };
+		2CEC5A0E1F50147A006C03F5 /* BankPickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BankPickerView.xib; sourceTree = "<group>"; };
+		2CEC5A111F50148E006C03F5 /* BankCardListAddCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BankCardListAddCell.xib; sourceTree = "<group>"; };
+		2CEC5A121F50148E006C03F5 /* BankCardListDefaultCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BankCardListDefaultCell.xib; sourceTree = "<group>"; };
 		2CEE1E1A1F45919500FEE9BD /* ContractAddAddressConfigProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContractAddAddressConfigProtocol.h; sourceTree = "<group>"; };
 		2CEE1E1B1F459AA200FEE9BD /* AddressSelectedConfigProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddressSelectedConfigProtocol.h; sourceTree = "<group>"; };
 		2CF8B53C1F3D469F003B8520 /* ProductSearchHotCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductSearchHotCell.h; sourceTree = "<group>"; };
@@ -1936,11 +1936,11 @@
 				2C1B74B31F4694FF0000E71A /* BankCardListBaseTableCell.h */,
 				2C1B74B41F4694FF0000E71A /* BankCardListBaseTableCell.m */,
 				2C1B74B11F4694FF0000E71A /* BankCardListAddCell.h */,
+				2CEC5A111F50148E006C03F5 /* BankCardListAddCell.xib */,
+				2CEC5A121F50148E006C03F5 /* BankCardListDefaultCell.xib */,
 				2C1B74B21F4694FF0000E71A /* BankCardListAddCell.m */,
-				2CEC593A1F4FD20C006C03F5 /* BankCardListAddCell.xib */,
 				2C1B74B51F4694FF0000E71A /* BankCardListDefaultCell.h */,
 				2C1B74B61F4694FF0000E71A /* BankCardListDefaultCell.m */,
-				2CEC59411F4FD218006C03F5 /* BankCardListDefaultCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -2035,12 +2035,12 @@
 			children = (
 				A216E3271F48097100EBBD32 /* BankPickerView.h */,
 				A216E3281F48097100EBBD32 /* BankPickerView.m */,
-				2CEC59481F4FD223006C03F5 /* BankPickerView.xib */,
 				2C1B74EA1F4699A50000E71A /* BankCardAddBaseTableCell.h */,
 				2C1B74EB1F4699A50000E71A /* BankCardAddBaseTableCell.m */,
+				2CEC5A0D1F50147A006C03F5 /* BankCardAddDefaultCell.xib */,
+				2CEC5A0E1F50147A006C03F5 /* BankPickerView.xib */,
 				2C1B74ED1F4699BE0000E71A /* BankCardAddDefaultCell.h */,
 				2C1B74EE1F4699BE0000E71A /* BankCardAddDefaultCell.m */,
-				2CEC594F1F4FD22B006C03F5 /* BankCardAddDefaultCell.xib */,
 				2C1B74F01F469A140000E71A /* BankCardAddHeaderFooterView.h */,
 				2C1B74F11F469A140000E71A /* BankCardAddHeaderFooterView.m */,
 			);
@@ -2916,7 +2916,7 @@
 				2C597DCB1F4C2D6300415EB6 /* SettingDefaultTableCell.m */,
 				2C2E65971F4D143B00681758 /* SettingHomeHeader.h */,
 				2C2E65981F4D143B00681758 /* SettingHomeHeader.m */,
-				2C1D88D61F4FBB23006A4F00 /* SettingHomeHeader.xib */,
+				2CEC59F51F50135F006C03F5 /* SettingHomeHeader.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -3744,7 +3744,7 @@
 				2C8BB7971F30859C00E2D75F /* HomeFooterContainer.m */,
 				2C8BB7911F30859C00E2D75F /* HomeFooterCollectionCell.h */,
 				2C8BB7921F30859C00E2D75F /* HomeFooterCollectionCell.m */,
-				2CEC58ED1F4FD19B006C03F5 /* HomeFooterCollectionCell.xib */,
+				2CEC59E71F50100B006C03F5 /* HomeFooterCollectionCell.xib */,
 				2C8BB7941F30859C00E2D75F /* HomeFooterCollectionLayout.h */,
 				2C8BB7951F30859C00E2D75F /* HomeFooterCollectionLayout.m */,
 			);
@@ -3758,7 +3758,7 @@
 				2C8BB79F1F30859C00E2D75F /* HomeHeaderContainer.m */,
 				2C8BB7991F30859C00E2D75F /* HomeHeaderCollectionCell.h */,
 				2C8BB79A1F30859C00E2D75F /* HomeHeaderCollectionCell.m */,
-				2CEC58E61F4FD188006C03F5 /* HomeHeaderCollectionCell.xib */,
+				2CEC59E51F500FDD006C03F5 /* HomeHeaderCollectionCell.xib */,
 				2C8BB79C1F30859C00E2D75F /* HomeHeaderCollectionLayout.h */,
 				2C8BB79D1F30859C00E2D75F /* HomeHeaderCollectionLayout.m */,
 			);
@@ -3911,7 +3911,7 @@
 			children = (
 				2C8DE5B41F2AD8B3009B3AE2 /* DiscoveryRoadShowListCell.h */,
 				2C8DE5B51F2AD8B3009B3AE2 /* DiscoveryRoadShowListCell.m */,
-				2CEC59101F4FD1D7006C03F5 /* DiscoveryRoadShowListCell.xib */,
+				2CEC59F11F501314006C03F5 /* DiscoveryRoadShowListCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -3921,7 +3921,7 @@
 			children = (
 				2C8DE5B11F2AD8A0009B3AE2 /* DiscoveryNewsListCell.h */,
 				2C8DE5B21F2AD8A0009B3AE2 /* DiscoveryNewsListCell.m */,
-				2CEC59091F4FD1CD006C03F5 /* DiscoveryNewsListCell.xib */,
+				2CEC59EF1F501058006C03F5 /* DiscoveryNewsListCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -4276,15 +4276,15 @@
 				2CA639111F4AD9B000C39562 /* WithDrawDepositBaseCell.m */,
 				2CA639131F4ADCC400C39562 /* WithDrawDepositAddBankCell.h */,
 				2CA639141F4ADCC400C39562 /* WithDrawDepositAddBankCell.m */,
-				2CEC591E1F4FD1F1006C03F5 /* WithDrawDepositAddBankCell.xib */,
+				2CEC59F71F501380006C03F5 /* WithDrawDepositAddBankCell.xib */,
+				2CEC59F81F501380006C03F5 /* WithDrawDepositHomeHeader.xib */,
+				2CEC59F91F501380006C03F5 /* WithDrawDepositSumCell.xib */,
 				2CA639161F4ADD5300C39562 /* WithDrawDepositSumCell.h */,
 				2CA639171F4ADD5300C39562 /* WithDrawDepositSumCell.m */,
-				2CEC59251F4FD1F8006C03F5 /* WithDrawDepositSumCell.xib */,
 				2CA639351F4AEAC300C39562 /* WithDrawDepositHeaderFooterView.h */,
 				2CA639361F4AEAC300C39562 /* WithDrawDepositHeaderFooterView.m */,
 				2C4D35C81F4C05F00082BB36 /* WithDrawDepositHomeHeader.h */,
 				2C4D35C91F4C05F00082BB36 /* WithDrawDepositHomeHeader.m */,
-				2CEC592C1F4FD1FF006C03F5 /* WithDrawDepositHomeHeader.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -4616,7 +4616,7 @@
 				2CAF42EB1F28273300ABCA5E /* CellContentView */,
 				2CAF42F21F28273300ABCA5E /* ProductListCell.h */,
 				2CAF42F31F28273300ABCA5E /* ProductListCell.m */,
-				2CEC58F41F4FD1A4006C03F5 /* ProductListCell.xib */,
+				2CEC59E91F50101F006C03F5 /* ProductListCell.xib */,
 				2CCBE45B1F32CB61006C4018 /* ProductListCellHeaderView.h */,
 				2CCBE45C1F32CB61006C4018 /* ProductListCellHeaderView.m */,
 			);
@@ -4938,9 +4938,9 @@
 			children = (
 				2CB4F60D1F42897000FF98C9 /* ContractListHeader.h */,
 				2CB4F60E1F42897000FF98C9 /* ContractListHeader.m */,
+				2CEC5A0B1F50146F006C03F5 /* ContractListCell.xib */,
 				2CB4F6101F42982800FF98C9 /* ContractListCell.h */,
 				2CB4F6111F42982800FF98C9 /* ContractListCell.m */,
-				2CEC59561F4FD236006C03F5 /* ContractListCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -5063,13 +5063,13 @@
 				2CD896B11F45323F008F7C73 /* ContarctApplyBaseCell.m */,
 				2CB4F6511F42F5A300FF98C9 /* ContractApplyAddAddressCell.h */,
 				2CB4F6521F42F5A300FF98C9 /* ContractApplyAddAddressCell.m */,
-				2CEC595D1F4FD23E006C03F5 /* ContractApplyAddAddressCell.xib */,
 				2CB4F6481F42F52200FF98C9 /* ContractApplyInfoCell.h */,
 				2CB4F6491F42F52200FF98C9 /* ContractApplyInfoCell.m */,
-				2CEC59651F4FD247006C03F5 /* ContractApplyInfoCell.xib */,
 				2CB4F64B1F42F56300FF98C9 /* ContractApplyProductNameCell.h */,
+				2CEC5A051F501464006C03F5 /* ContractApplyAddAddressCell.xib */,
+				2CEC5A061F501464006C03F5 /* ContractApplyInfoCell.xib */,
+				2CEC5A071F501464006C03F5 /* ContractApplyProductNameCell.xib */,
 				2CB4F64C1F42F56300FF98C9 /* ContractApplyProductNameCell.m */,
-				2CEC596C1F4FD24E006C03F5 /* ContractApplyProductNameCell.xib */,
 				2CB4F64E1F42F58800FF98C9 /* ContractApplyProductResultCell.h */,
 				2CB4F64F1F42F58800FF98C9 /* ContractApplyProductResultCell.m */,
 			);
@@ -5143,7 +5143,7 @@
 				2CCBE4821F3415F2006C4018 /* MineHomeHeaderCollectionLayout.m */,
 				2CCBE4841F3417A5006C4018 /* MineHeaderCollectionCell.h */,
 				2CCBE4851F3417A5006C4018 /* MineHeaderCollectionCell.m */,
-				2CEC59171F4FD1E2006C03F5 /* MineHeaderCollectionCell.xib */,
+				2CEC59F31F50134D006C03F5 /* MineHeaderCollectionCell.xib */,
 			);
 			path = Header;
 			sourceTree = "<group>";
@@ -5331,8 +5331,8 @@
 			isa = PBXGroup;
 			children = (
 				2CCC85C01F3AEF4D0009FC1C /* ProductFilterResultCell.h */,
+				2CEC59EB1F501032006C03F5 /* ProductFilterResultCell.xib */,
 				2CCC85C11F3AEF4D0009FC1C /* ProductFilterResultCell.m */,
-				2CEC58FB1F4FD1AD006C03F5 /* ProductFilterResultCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -5478,18 +5478,18 @@
 			children = (
 				A216E32A1F48098800EBBD32 /* AddressPikerView.h */,
 				A216E32B1F48098800EBBD32 /* AddressPikerView.m */,
-				2CEC59731F4FD263006C03F5 /* AddressPikerView.xib */,
 				2CD896C51F453B09008F7C73 /* ContractAddAddressBaseCell.h */,
 				2CD896C61F453B09008F7C73 /* ContractAddAddressBaseCell.m */,
 				2CD896C81F453BE0008F7C73 /* ConAddressRightInputCell.h */,
 				2CD896C91F453BE0008F7C73 /* ConAddressRightInputCell.m */,
-				2CEC597A1F4FD26C006C03F5 /* ConAddressRightInputCell.xib */,
 				2CD896CE1F453C34008F7C73 /* ConAddressMiddleLabelCell.h */,
 				2CD896CF1F453C34008F7C73 /* ConAddressMiddleLabelCell.m */,
-				2CEC59811F4FD27B006C03F5 /* ConAddressMiddleLabelCell.xib */,
+				2CEC59FD1F501459006C03F5 /* AddressPikerView.xib */,
+				2CEC59FE1F501459006C03F5 /* ConAddressBottomInputCell.xib */,
+				2CEC59FF1F501459006C03F5 /* ConAddressMiddleLabelCell.xib */,
+				2CEC5A001F501459006C03F5 /* ConAddressRightInputCell.xib */,
 				2CD896CB1F453C11008F7C73 /* ConAddressBottomInputCell.h */,
 				2CD896CC1F453C11008F7C73 /* ConAddressBottomInputCell.m */,
-				2CEC59881F4FD284006C03F5 /* ConAddressBottomInputCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -5797,7 +5797,7 @@
 				A2A71C681F3F200700577E45 /* ProductSearchHotReusableHeader.m */,
 				2CF8B53F1F3D46B8003B8520 /* ProductSearchResultCell.h */,
 				2CF8B5401F3D46B8003B8520 /* ProductSearchResultCell.m */,
-				2CEC59021F4FD1C3006C03F5 /* ProductSearchResultCell.xib */,
+				2CEC59ED1F501046006C03F5 /* ProductSearchResultCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -6066,68 +6066,68 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CEC59F21F501314006C03F5 /* DiscoveryRoadShowListCell.xib in Resources */,
 				2C859D021F31EB2E00B86575 /* ZLPhotoLib.bundle in Resources */,
-				2CEC59781F4FD26C006C03F5 /* ConAddressRightInputCell.xib in Resources */,
 				2C85E3331F2EC6E500ADD360 /* Oder.storyboard in Resources */,
 				2C300F7C1F2F32BF00DD440E /* Settings.storyboard in Resources */,
+				2CEC5A011F501459006C03F5 /* AddressPikerView.xib in Resources */,
 				2C7A34511F2F64DA004DD566 /* BankCardManager.storyboard in Resources */,
-				2CEC58F91F4FD1AD006C03F5 /* ProductFilterResultCell.xib in Resources */,
+				2CEC59F01F501058006C03F5 /* DiscoveryNewsListCell.xib in Resources */,
 				2CEC59DF1F500534006C03F5 /* loading_2.gif in Resources */,
 				2C4411BE1F21981E00C453EF /* LaunchScreen.storyboard in Resources */,
-				2CEC58F21F4FD1A4006C03F5 /* ProductListCell.xib in Resources */,
+				2CEC5A131F50148E006C03F5 /* BankCardListAddCell.xib in Resources */,
 				2C431E111F29C6B200858C12 /* ProductFilter.storyboard in Resources */,
-				2CEC59711F4FD263006C03F5 /* AddressPikerView.xib in Resources */,
+				2CEC5A091F501464006C03F5 /* ContractApplyInfoCell.xib in Resources */,
 				2C431E0F1F29C59C00858C12 /* Message.storyboard in Resources */,
 				2C7A34591F2F685B004DD566 /* UseAgreement.storyboard in Resources */,
+				2CEC59FC1F501380006C03F5 /* WithDrawDepositSumCell.xib in Resources */,
+				2CEC5A021F501459006C03F5 /* ConAddressBottomInputCell.xib in Resources */,
 				2C300F8D1F2F3D4700DD440E /* Profile.storyboard in Resources */,
+				2CEC5A041F501459006C03F5 /* ConAddressRightInputCell.xib in Resources */,
+				2CEC59F41F50134D006C03F5 /* MineHeaderCollectionCell.xib in Resources */,
 				2C7A34531F2F6590004DD566 /* MyReward.storyboard in Resources */,
-				2CEC59861F4FD284006C03F5 /* ConAddressBottomInputCell.xib in Resources */,
+				2CEC59EC1F501032006C03F5 /* ProductFilterResultCell.xib in Resources */,
 				2C300F931F2F3E9F00DD440E /* GestureSet.storyboard in Resources */,
-				2CEC59231F4FD1F8006C03F5 /* WithDrawDepositSumCell.xib in Resources */,
-				2CEC58E41F4FD188006C03F5 /* HomeHeaderCollectionCell.xib in Resources */,
 				2C1BFEBF1F2978C500665A71 /* Discovery.storyboard in Resources */,
-				2CEC594D1F4FD22B006C03F5 /* BankCardAddDefaultCell.xib in Resources */,
-				2CEC593F1F4FD218006C03F5 /* BankCardListDefaultCell.xib in Resources */,
-				2CEC59001F4FD1C3006C03F5 /* ProductSearchResultCell.xib in Resources */,
 				2C7A344D1F2F633C004DD566 /* CumulateInvest.storyboard in Resources */,
+				2CEC59F61F50135F006C03F5 /* SettingHomeHeader.xib in Resources */,
 				2C8DE59E1F29FE80009B3AE2 /* Product.storyboard in Resources */,
+				2CEC5A0C1F50146F006C03F5 /* ContractListCell.xib in Resources */,
 				2C8DE5A61F29FFBF009B3AE2 /* ProductSearch.storyboard in Resources */,
 				2C300F971F2F3F9F00DD440E /* ProfessionAuthen.storyboard in Resources */,
+				2CEC5A141F50148E006C03F5 /* BankCardListDefaultCell.xib in Resources */,
+				2CEC5A101F50147A006C03F5 /* BankPickerView.xib in Resources */,
+				2CEC5A0A1F501464006C03F5 /* ContractApplyProductNameCell.xib in Resources */,
 				2C8BB7BF1F315DD000E2D75F /* HomeFooterWeb.storyboard in Resources */,
 				2C7A344F1F2F63BE004DD566 /* CapitalRecord.storyboard in Resources */,
-				2CEC590E1F4FD1D7006C03F5 /* DiscoveryRoadShowListCell.xib in Resources */,
 				2C4411BB1F21981E00C453EF /* Assets.xcassets in Resources */,
 				2CEC59CA1F5004B7006C03F5 /* TJSNormalBundle.bundle in Resources */,
 				2CEC59311F4FD206006C03F5 /* CumulateInvestHeader.xib in Resources */,
-				2CEC597F1F4FD27B006C03F5 /* ConAddressMiddleLabelCell.xib in Resources */,
+				2CEC59FB1F501380006C03F5 /* WithDrawDepositHomeHeader.xib in Resources */,
 				2C4412991F22007D00C453EF /* TJSThemeConfig.strings in Resources */,
-				2CEC592A1F4FD1FF006C03F5 /* WithDrawDepositHomeHeader.xib in Resources */,
 				2CEC59E01F500534006C03F5 /* loading_3.gif in Resources */,
+				2CEC5A0F1F50147A006C03F5 /* BankCardAddDefaultCell.xib in Resources */,
 				2C7A345B1F2F68E6004DD566 /* Feedback.storyboard in Resources */,
-				2CEC59381F4FD20C006C03F5 /* BankCardListAddCell.xib in Resources */,
-				2CEC59631F4FD247006C03F5 /* ContractApplyInfoCell.xib in Resources */,
+				2CEC59EE1F501046006C03F5 /* ProductSearchResultCell.xib in Resources */,
+				2CEC5A081F501464006C03F5 /* ContractApplyAddAddressCell.xib in Resources */,
 				2C300F951F2F3F1200DD440E /* FindWithDrawCode.storyboard in Resources */,
-				2C1D88D41F4FBB23006A4F00 /* SettingHomeHeader.xib in Resources */,
-				2CEC58EB1F4FD19B006C03F5 /* HomeFooterCollectionCell.xib in Resources */,
 				2C7A345D1F2F69CF004DD566 /* AboutMe.storyboard in Resources */,
-				2CEC596A1F4FD24E006C03F5 /* ContractApplyProductNameCell.xib in Resources */,
+				2CEC59FA1F501380006C03F5 /* WithDrawDepositAddBankCell.xib in Resources */,
 				2C7A344B1F2F61C1004DD566 /* WithDarwDeposit.storyboard in Resources */,
 				2C801BD71F233F46009F82F7 /* Mine.storyboard in Resources */,
-				2CEC59541F4FD236006C03F5 /* ContractListCell.xib in Resources */,
-				2CEC59071F4FD1CD006C03F5 /* DiscoveryNewsListCell.xib in Resources */,
-				2CEC591C1F4FD1F1006C03F5 /* WithDrawDepositAddBankCell.xib in Resources */,
-				2CEC595B1F4FD23E006C03F5 /* ContractApplyAddAddressCell.xib in Resources */,
+				2CEC59E81F50100B006C03F5 /* HomeFooterCollectionCell.xib in Resources */,
 				2C300F911F2F3E1000DD440E /* MLoginCode.storyboard in Resources */,
-				2CEC59151F4FD1E2006C03F5 /* MineHeaderCollectionCell.xib in Resources */,
 				2C7A34551F2F66AF004DD566 /* Collection.storyboard in Resources */,
 				2C4411B91F21981E00C453EF /* Main.storyboard in Resources */,
 				2C1BFEBD1F29779100665A71 /* Home.storyboard in Resources */,
+				2CEC59EA1F50101F006C03F5 /* ProductListCell.xib in Resources */,
 				2CEC59DD1F500534006C03F5 /* loading@3x.gif in Resources */,
+				2CEC59E61F500FDD006C03F5 /* HomeHeaderCollectionCell.xib in Resources */,
 				2CEC59DE1F500534006C03F5 /* loading_1.gif in Resources */,
 				2CEC59DC1F500534006C03F5 /* loading@2x.gif in Resources */,
 				2C7A34571F2F673D004DD566 /* ContractApply.storyboard in Resources */,
+				2CEC5A031F501459006C03F5 /* ConAddressMiddleLabelCell.xib in Resources */,
 				2C8BB7BD1F315D2800E2D75F /* HomeHeaderWeb.storyboard in Resources */,
-				2CEC59461F4FD223006C03F5 /* BankPickerView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -6754,14 +6754,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		2C1D88D61F4FBB23006A4F00 /* SettingHomeHeader.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2C1D88D51F4FBB23006A4F00 /* Base */,
-			);
-			name = SettingHomeHeader.xib;
-			sourceTree = "<group>";
-		};
 		2C4411B71F21981E00C453EF /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -6778,196 +6770,12 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		2CEC58E61F4FD188006C03F5 /* HomeHeaderCollectionCell.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2CEC58E51F4FD188006C03F5 /* Base */,
-			);
-			name = HomeHeaderCollectionCell.xib;
-			sourceTree = "<group>";
-		};
-		2CEC58ED1F4FD19B006C03F5 /* HomeFooterCollectionCell.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2CEC58EC1F4FD19B006C03F5 /* Base */,
-			);
-			name = HomeFooterCollectionCell.xib;
-			sourceTree = "<group>";
-		};
-		2CEC58F41F4FD1A4006C03F5 /* ProductListCell.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2CEC58F31F4FD1A4006C03F5 /* Base */,
-			);
-			name = ProductListCell.xib;
-			sourceTree = "<group>";
-		};
-		2CEC58FB1F4FD1AD006C03F5 /* ProductFilterResultCell.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2CEC58FA1F4FD1AD006C03F5 /* Base */,
-			);
-			name = ProductFilterResultCell.xib;
-			sourceTree = "<group>";
-		};
-		2CEC59021F4FD1C3006C03F5 /* ProductSearchResultCell.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2CEC59011F4FD1C3006C03F5 /* Base */,
-			);
-			name = ProductSearchResultCell.xib;
-			sourceTree = "<group>";
-		};
-		2CEC59091F4FD1CD006C03F5 /* DiscoveryNewsListCell.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2CEC59081F4FD1CD006C03F5 /* Base */,
-			);
-			name = DiscoveryNewsListCell.xib;
-			sourceTree = "<group>";
-		};
-		2CEC59101F4FD1D7006C03F5 /* DiscoveryRoadShowListCell.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2CEC590F1F4FD1D7006C03F5 /* Base */,
-			);
-			name = DiscoveryRoadShowListCell.xib;
-			sourceTree = "<group>";
-		};
-		2CEC59171F4FD1E2006C03F5 /* MineHeaderCollectionCell.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2CEC59161F4FD1E2006C03F5 /* Base */,
-			);
-			name = MineHeaderCollectionCell.xib;
-			sourceTree = "<group>";
-		};
-		2CEC591E1F4FD1F1006C03F5 /* WithDrawDepositAddBankCell.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2CEC591D1F4FD1F1006C03F5 /* Base */,
-			);
-			name = WithDrawDepositAddBankCell.xib;
-			sourceTree = "<group>";
-		};
-		2CEC59251F4FD1F8006C03F5 /* WithDrawDepositSumCell.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2CEC59241F4FD1F8006C03F5 /* Base */,
-			);
-			name = WithDrawDepositSumCell.xib;
-			sourceTree = "<group>";
-		};
-		2CEC592C1F4FD1FF006C03F5 /* WithDrawDepositHomeHeader.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2CEC592B1F4FD1FF006C03F5 /* Base */,
-			);
-			name = WithDrawDepositHomeHeader.xib;
-			sourceTree = "<group>";
-		};
 		2CEC59331F4FD206006C03F5 /* CumulateInvestHeader.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				2CEC59321F4FD206006C03F5 /* Base */,
 			);
 			name = CumulateInvestHeader.xib;
-			sourceTree = "<group>";
-		};
-		2CEC593A1F4FD20C006C03F5 /* BankCardListAddCell.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2CEC59391F4FD20C006C03F5 /* Base */,
-			);
-			name = BankCardListAddCell.xib;
-			sourceTree = "<group>";
-		};
-		2CEC59411F4FD218006C03F5 /* BankCardListDefaultCell.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2CEC59401F4FD218006C03F5 /* Base */,
-			);
-			name = BankCardListDefaultCell.xib;
-			sourceTree = "<group>";
-		};
-		2CEC59481F4FD223006C03F5 /* BankPickerView.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2CEC59471F4FD223006C03F5 /* Base */,
-			);
-			name = BankPickerView.xib;
-			sourceTree = "<group>";
-		};
-		2CEC594F1F4FD22B006C03F5 /* BankCardAddDefaultCell.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2CEC594E1F4FD22B006C03F5 /* Base */,
-			);
-			name = BankCardAddDefaultCell.xib;
-			sourceTree = "<group>";
-		};
-		2CEC59561F4FD236006C03F5 /* ContractListCell.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2CEC59551F4FD236006C03F5 /* Base */,
-			);
-			name = ContractListCell.xib;
-			sourceTree = "<group>";
-		};
-		2CEC595D1F4FD23E006C03F5 /* ContractApplyAddAddressCell.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2CEC595C1F4FD23E006C03F5 /* Base */,
-			);
-			name = ContractApplyAddAddressCell.xib;
-			sourceTree = "<group>";
-		};
-		2CEC59651F4FD247006C03F5 /* ContractApplyInfoCell.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2CEC59641F4FD247006C03F5 /* Base */,
-			);
-			name = ContractApplyInfoCell.xib;
-			sourceTree = "<group>";
-		};
-		2CEC596C1F4FD24E006C03F5 /* ContractApplyProductNameCell.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2CEC596B1F4FD24E006C03F5 /* Base */,
-			);
-			name = ContractApplyProductNameCell.xib;
-			sourceTree = "<group>";
-		};
-		2CEC59731F4FD263006C03F5 /* AddressPikerView.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2CEC59721F4FD263006C03F5 /* Base */,
-			);
-			name = AddressPikerView.xib;
-			sourceTree = "<group>";
-		};
-		2CEC597A1F4FD26C006C03F5 /* ConAddressRightInputCell.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2CEC59791F4FD26C006C03F5 /* Base */,
-			);
-			name = ConAddressRightInputCell.xib;
-			sourceTree = "<group>";
-		};
-		2CEC59811F4FD27B006C03F5 /* ConAddressMiddleLabelCell.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2CEC59801F4FD27B006C03F5 /* Base */,
-			);
-			name = ConAddressMiddleLabelCell.xib;
-			sourceTree = "<group>";
-		};
-		2CEC59881F4FD284006C03F5 /* ConAddressBottomInputCell.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2CEC59871F4FD284006C03F5 /* Base */,
-			);
-			name = ConAddressBottomInputCell.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
