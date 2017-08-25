@@ -41,6 +41,8 @@
 
 /** 4. category **/
 
+#import "NSBundle+TianJiCloud.h"
+
 #import "UIViewController+StackLevel.h"
 #import "UIViewController+RouteParams.h"
 

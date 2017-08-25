@@ -59,7 +59,6 @@
 		2C1D88D01F4FB9C0006A4F00 /* AppDelegate+TJSKeyboardSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1D88CF1F4FB9C0006A4F00 /* AppDelegate+TJSKeyboardSetting.m */; };
 		2C1D88D31F4FBA4E006A4F00 /* AppDelegate+TJSSocialSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1D88D21F4FBA4E006A4F00 /* AppDelegate+TJSSocialSetting.m */; };
 		2C1D88D41F4FBB23006A4F00 /* SettingHomeHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C1D88D61F4FBB23006A4F00 /* SettingHomeHeader.xib */; };
-		2C1D88DC1F4FBE11006A4F00 /* NSBundle+TianJiCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1D88DB1F4FBE11006A4F00 /* NSBundle+TianJiCloud.m */; };
 		2C2E65991F4D143B00681758 /* SettingHomeHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2E65981F4D143B00681758 /* SettingHomeHeader.m */; };
 		2C300F7C1F2F32BF00DD440E /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C300F7B1F2F32BF00DD440E /* Settings.storyboard */; };
 		2C300F7F1F2F3C3C00DD440E /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C300F7E1F2F3C3C00DD440E /* ProfileViewController.m */; };
@@ -551,6 +550,18 @@
 		2CEC59781F4FD26C006C03F5 /* ConAddressRightInputCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC597A1F4FD26C006C03F5 /* ConAddressRightInputCell.xib */; };
 		2CEC597F1F4FD27B006C03F5 /* ConAddressMiddleLabelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC59811F4FD27B006C03F5 /* ConAddressMiddleLabelCell.xib */; };
 		2CEC59861F4FD284006C03F5 /* ConAddressBottomInputCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC59881F4FD284006C03F5 /* ConAddressBottomInputCell.xib */; };
+		2CEC59C81F4FF6E8006C03F5 /* NSBundle+TianJiCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CEC59C71F4FF6E8006C03F5 /* NSBundle+TianJiCloud.m */; };
+		2CEC59CA1F5004B7006C03F5 /* TJSNormalBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC59C91F5004B7006C03F5 /* TJSNormalBundle.bundle */; };
+		2CEC59D11F500516006C03F5 /* loading@2x.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC59CC1F500516006C03F5 /* loading@2x.gif */; };
+		2CEC59D21F500516006C03F5 /* loading@3x.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC59CD1F500516006C03F5 /* loading@3x.gif */; };
+		2CEC59D31F500516006C03F5 /* loading_1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC59CE1F500516006C03F5 /* loading_1.gif */; };
+		2CEC59D41F500516006C03F5 /* loading_2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC59CF1F500516006C03F5 /* loading_2.gif */; };
+		2CEC59D51F500516006C03F5 /* loading_3.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC59D01F500516006C03F5 /* loading_3.gif */; };
+		2CEC59DC1F500534006C03F5 /* loading@2x.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC59D71F500534006C03F5 /* loading@2x.gif */; };
+		2CEC59DD1F500534006C03F5 /* loading@3x.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC59D81F500534006C03F5 /* loading@3x.gif */; };
+		2CEC59DE1F500534006C03F5 /* loading_1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC59D91F500534006C03F5 /* loading_1.gif */; };
+		2CEC59DF1F500534006C03F5 /* loading_2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC59DA1F500534006C03F5 /* loading_2.gif */; };
+		2CEC59E01F500534006C03F5 /* loading_3.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC59DB1F500534006C03F5 /* loading_3.gif */; };
 		2CF8B53E1F3D469F003B8520 /* ProductSearchHotCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF8B53D1F3D469F003B8520 /* ProductSearchHotCell.m */; };
 		2CF8B5411F3D46B8003B8520 /* ProductSearchResultCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF8B5401F3D46B8003B8520 /* ProductSearchResultCell.m */; };
 		2CF8B5451F3D48B0003B8520 /* ProductSearchListCellFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF8B5441F3D48B0003B8520 /* ProductSearchListCellFactory.m */; };
@@ -716,9 +727,6 @@
 		2C1D88D11F4FBA4E006A4F00 /* AppDelegate+TJSSocialSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+TJSSocialSetting.h"; sourceTree = "<group>"; };
 		2C1D88D21F4FBA4E006A4F00 /* AppDelegate+TJSSocialSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+TJSSocialSetting.m"; sourceTree = "<group>"; };
 		2C1D88D51F4FBB23006A4F00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SettingHomeHeader.xib; sourceTree = "<group>"; };
-		2C1D88D81F4FBB36006A4F00 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/SettingHomeHeader.strings; sourceTree = "<group>"; };
-		2C1D88DA1F4FBE11006A4F00 /* NSBundle+TianJiCloud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+TianJiCloud.h"; sourceTree = "<group>"; };
-		2C1D88DB1F4FBE11006A4F00 /* NSBundle+TianJiCloud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+TianJiCloud.m"; sourceTree = "<group>"; };
 		2C2E65971F4D143B00681758 /* SettingHomeHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingHomeHeader.h; sourceTree = "<group>"; };
 		2C2E65981F4D143B00681758 /* SettingHomeHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingHomeHeader.m; sourceTree = "<group>"; };
 		2C300F7B1F2F32BF00DD440E /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
@@ -1693,137 +1701,43 @@
 		2CEC58CE1F4FCDE7006C03F5 /* UITextField+PlaceHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+PlaceHolder.m"; sourceTree = "<group>"; };
 		2CEC58CF1F4FCDE7006C03F5 /* UITextView+EditRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+EditRect.h"; sourceTree = "<group>"; };
 		2CEC58D01F4FCDE7006C03F5 /* UITextView+EditRect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+EditRect.m"; sourceTree = "<group>"; };
-		2CEC58DD1F4FCF08006C03F5 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/SettingHomeHeader.strings; sourceTree = "<group>"; };
-		2CEC58DE1F4FCF09006C03F5 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
-		2CEC58DF1F4FCF09006C03F5 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		2CEC58E11F4FCF2B006C03F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
-		2CEC58E31F4FCF30006C03F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		2CEC58E51F4FD188006C03F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/HomeHeaderCollectionCell.xib; sourceTree = "<group>"; };
-		2CEC58E81F4FD18A006C03F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/HomeHeaderCollectionCell.strings; sourceTree = "<group>"; };
-		2CEC58EA1F4FD18C006C03F5 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/HomeHeaderCollectionCell.strings; sourceTree = "<group>"; };
 		2CEC58EC1F4FD19B006C03F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/HomeFooterCollectionCell.xib; sourceTree = "<group>"; };
-		2CEC58EF1F4FD19C006C03F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/HomeFooterCollectionCell.strings; sourceTree = "<group>"; };
-		2CEC58F11F4FD19E006C03F5 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/HomeFooterCollectionCell.strings; sourceTree = "<group>"; };
 		2CEC58F31F4FD1A4006C03F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ProductListCell.xib; sourceTree = "<group>"; };
-		2CEC58F61F4FD1A6006C03F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/ProductListCell.strings; sourceTree = "<group>"; };
-		2CEC58F81F4FD1A7006C03F5 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/ProductListCell.strings; sourceTree = "<group>"; };
 		2CEC58FA1F4FD1AD006C03F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ProductFilterResultCell.xib; sourceTree = "<group>"; };
-		2CEC58FD1F4FD1AF006C03F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/ProductFilterResultCell.strings; sourceTree = "<group>"; };
-		2CEC58FF1F4FD1B0006C03F5 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/ProductFilterResultCell.strings; sourceTree = "<group>"; };
 		2CEC59011F4FD1C3006C03F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ProductSearchResultCell.xib; sourceTree = "<group>"; };
-		2CEC59041F4FD1C4006C03F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/ProductSearchResultCell.strings; sourceTree = "<group>"; };
-		2CEC59061F4FD1C5006C03F5 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/ProductSearchResultCell.strings; sourceTree = "<group>"; };
 		2CEC59081F4FD1CD006C03F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/DiscoveryNewsListCell.xib; sourceTree = "<group>"; };
-		2CEC590B1F4FD1CF006C03F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/DiscoveryNewsListCell.strings; sourceTree = "<group>"; };
-		2CEC590D1F4FD1D1006C03F5 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/DiscoveryNewsListCell.strings; sourceTree = "<group>"; };
 		2CEC590F1F4FD1D7006C03F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/DiscoveryRoadShowListCell.xib; sourceTree = "<group>"; };
-		2CEC59121F4FD1DA006C03F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/DiscoveryRoadShowListCell.strings; sourceTree = "<group>"; };
-		2CEC59141F4FD1DB006C03F5 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/DiscoveryRoadShowListCell.strings; sourceTree = "<group>"; };
 		2CEC59161F4FD1E2006C03F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MineHeaderCollectionCell.xib; sourceTree = "<group>"; };
-		2CEC59191F4FD1E3006C03F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MineHeaderCollectionCell.strings; sourceTree = "<group>"; };
-		2CEC591B1F4FD1E5006C03F5 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/MineHeaderCollectionCell.strings; sourceTree = "<group>"; };
 		2CEC591D1F4FD1F1006C03F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/WithDrawDepositAddBankCell.xib; sourceTree = "<group>"; };
-		2CEC59201F4FD1F3006C03F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/WithDrawDepositAddBankCell.strings; sourceTree = "<group>"; };
-		2CEC59221F4FD1F4006C03F5 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/WithDrawDepositAddBankCell.strings; sourceTree = "<group>"; };
 		2CEC59241F4FD1F8006C03F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/WithDrawDepositSumCell.xib; sourceTree = "<group>"; };
-		2CEC59271F4FD1FA006C03F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/WithDrawDepositSumCell.strings; sourceTree = "<group>"; };
-		2CEC59291F4FD1FB006C03F5 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/WithDrawDepositSumCell.strings; sourceTree = "<group>"; };
 		2CEC592B1F4FD1FF006C03F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/WithDrawDepositHomeHeader.xib; sourceTree = "<group>"; };
-		2CEC592E1F4FD201006C03F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/WithDrawDepositHomeHeader.strings; sourceTree = "<group>"; };
-		2CEC59301F4FD201006C03F5 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/WithDrawDepositHomeHeader.strings; sourceTree = "<group>"; };
 		2CEC59321F4FD206006C03F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/CumulateInvestHeader.xib; sourceTree = "<group>"; };
-		2CEC59351F4FD207006C03F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/CumulateInvestHeader.strings; sourceTree = "<group>"; };
-		2CEC59371F4FD208006C03F5 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/CumulateInvestHeader.strings; sourceTree = "<group>"; };
 		2CEC59391F4FD20C006C03F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/BankCardListAddCell.xib; sourceTree = "<group>"; };
-		2CEC593C1F4FD20E006C03F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/BankCardListAddCell.strings; sourceTree = "<group>"; };
-		2CEC593E1F4FD20F006C03F5 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/BankCardListAddCell.strings; sourceTree = "<group>"; };
 		2CEC59401F4FD218006C03F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/BankCardListDefaultCell.xib; sourceTree = "<group>"; };
-		2CEC59431F4FD21B006C03F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/BankCardListDefaultCell.strings; sourceTree = "<group>"; };
-		2CEC59451F4FD21C006C03F5 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/BankCardListDefaultCell.strings; sourceTree = "<group>"; };
 		2CEC59471F4FD223006C03F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/BankPickerView.xib; sourceTree = "<group>"; };
-		2CEC594A1F4FD224006C03F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/BankPickerView.strings; sourceTree = "<group>"; };
-		2CEC594C1F4FD226006C03F5 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/BankPickerView.strings; sourceTree = "<group>"; };
 		2CEC594E1F4FD22B006C03F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/BankCardAddDefaultCell.xib; sourceTree = "<group>"; };
-		2CEC59511F4FD230006C03F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/BankCardAddDefaultCell.strings; sourceTree = "<group>"; };
-		2CEC59531F4FD231006C03F5 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/BankCardAddDefaultCell.strings; sourceTree = "<group>"; };
 		2CEC59551F4FD236006C03F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ContractListCell.xib; sourceTree = "<group>"; };
-		2CEC59581F4FD238006C03F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/ContractListCell.strings; sourceTree = "<group>"; };
-		2CEC595A1F4FD23A006C03F5 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/ContractListCell.strings; sourceTree = "<group>"; };
 		2CEC595C1F4FD23E006C03F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ContractApplyAddAddressCell.xib; sourceTree = "<group>"; };
-		2CEC595F1F4FD240006C03F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/ContractApplyAddAddressCell.strings; sourceTree = "<group>"; };
-		2CEC59611F4FD241006C03F5 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/ContractApplyAddAddressCell.strings; sourceTree = "<group>"; };
 		2CEC59641F4FD247006C03F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ContractApplyInfoCell.xib; sourceTree = "<group>"; };
-		2CEC59671F4FD249006C03F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/ContractApplyInfoCell.strings; sourceTree = "<group>"; };
-		2CEC59691F4FD24A006C03F5 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/ContractApplyInfoCell.strings; sourceTree = "<group>"; };
 		2CEC596B1F4FD24E006C03F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ContractApplyProductNameCell.xib; sourceTree = "<group>"; };
-		2CEC596E1F4FD250006C03F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/ContractApplyProductNameCell.strings; sourceTree = "<group>"; };
-		2CEC59701F4FD250006C03F5 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/ContractApplyProductNameCell.strings; sourceTree = "<group>"; };
 		2CEC59721F4FD263006C03F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/AddressPikerView.xib; sourceTree = "<group>"; };
-		2CEC59751F4FD267006C03F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/AddressPikerView.strings; sourceTree = "<group>"; };
-		2CEC59771F4FD268006C03F5 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/AddressPikerView.strings; sourceTree = "<group>"; };
 		2CEC59791F4FD26C006C03F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ConAddressRightInputCell.xib; sourceTree = "<group>"; };
-		2CEC597C1F4FD26F006C03F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/ConAddressRightInputCell.strings; sourceTree = "<group>"; };
-		2CEC597E1F4FD270006C03F5 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/ConAddressRightInputCell.strings; sourceTree = "<group>"; };
 		2CEC59801F4FD27B006C03F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ConAddressMiddleLabelCell.xib; sourceTree = "<group>"; };
-		2CEC59831F4FD27D006C03F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/ConAddressMiddleLabelCell.strings; sourceTree = "<group>"; };
-		2CEC59851F4FD27F006C03F5 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/ConAddressMiddleLabelCell.strings; sourceTree = "<group>"; };
 		2CEC59871F4FD284006C03F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ConAddressBottomInputCell.xib; sourceTree = "<group>"; };
-		2CEC598A1F4FD286006C03F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/ConAddressBottomInputCell.strings; sourceTree = "<group>"; };
-		2CEC598C1F4FD287006C03F5 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/ConAddressBottomInputCell.strings; sourceTree = "<group>"; };
-		2CEC598D1F4FD43A006C03F5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/HomeHeaderCollectionCell.strings"; sourceTree = "<group>"; };
-		2CEC598E1F4FD43A006C03F5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/HomeFooterCollectionCell.strings"; sourceTree = "<group>"; };
-		2CEC598F1F4FD43A006C03F5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/ProductListCell.strings"; sourceTree = "<group>"; };
-		2CEC59901F4FD43A006C03F5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/ProductFilterResultCell.strings"; sourceTree = "<group>"; };
-		2CEC59911F4FD43A006C03F5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/ProductSearchResultCell.strings"; sourceTree = "<group>"; };
-		2CEC59921F4FD43A006C03F5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/DiscoveryNewsListCell.strings"; sourceTree = "<group>"; };
-		2CEC59931F4FD43A006C03F5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/DiscoveryRoadShowListCell.strings"; sourceTree = "<group>"; };
-		2CEC59941F4FD43B006C03F5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/MineHeaderCollectionCell.strings"; sourceTree = "<group>"; };
-		2CEC59961F4FD43B006C03F5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/WithDrawDepositAddBankCell.strings"; sourceTree = "<group>"; };
-		2CEC59971F4FD43B006C03F5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/WithDrawDepositSumCell.strings"; sourceTree = "<group>"; };
-		2CEC59981F4FD43B006C03F5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/WithDrawDepositHomeHeader.strings"; sourceTree = "<group>"; };
-		2CEC59991F4FD43B006C03F5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/CumulateInvestHeader.strings"; sourceTree = "<group>"; };
-		2CEC599A1F4FD43B006C03F5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/BankCardListAddCell.strings"; sourceTree = "<group>"; };
-		2CEC599B1F4FD43C006C03F5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/BankCardListDefaultCell.strings"; sourceTree = "<group>"; };
-		2CEC599C1F4FD43C006C03F5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/BankPickerView.strings"; sourceTree = "<group>"; };
-		2CEC599D1F4FD43C006C03F5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/BankCardAddDefaultCell.strings"; sourceTree = "<group>"; };
-		2CEC599E1F4FD43C006C03F5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/ContractListCell.strings"; sourceTree = "<group>"; };
-		2CEC599F1F4FD43C006C03F5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/ContractApplyAddAddressCell.strings"; sourceTree = "<group>"; };
-		2CEC59A01F4FD43C006C03F5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/ContractApplyInfoCell.strings"; sourceTree = "<group>"; };
-		2CEC59A11F4FD43C006C03F5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/ContractApplyProductNameCell.strings"; sourceTree = "<group>"; };
-		2CEC59A21F4FD43D006C03F5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/AddressPikerView.strings"; sourceTree = "<group>"; };
-		2CEC59A31F4FD43D006C03F5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/ConAddressRightInputCell.strings"; sourceTree = "<group>"; };
-		2CEC59A41F4FD43D006C03F5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/ConAddressMiddleLabelCell.strings"; sourceTree = "<group>"; };
-		2CEC59A51F4FD43D006C03F5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/ConAddressBottomInputCell.strings"; sourceTree = "<group>"; };
-		2CEC59A61F4FD43D006C03F5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
-		2CEC59A71F4FD43D006C03F5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
-		2CEC59A91F4FD492006C03F5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/SettingHomeHeader.strings"; sourceTree = "<group>"; };
-		2CEC59AA1F4FD4D0006C03F5 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/HomeHeaderCollectionCell.strings"; sourceTree = "<group>"; };
-		2CEC59AB1F4FD4D0006C03F5 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/HomeFooterCollectionCell.strings"; sourceTree = "<group>"; };
-		2CEC59AC1F4FD4D1006C03F5 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/ProductListCell.strings"; sourceTree = "<group>"; };
-		2CEC59AD1F4FD4D1006C03F5 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/ProductFilterResultCell.strings"; sourceTree = "<group>"; };
-		2CEC59AE1F4FD4D1006C03F5 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/ProductSearchResultCell.strings"; sourceTree = "<group>"; };
-		2CEC59AF1F4FD4D1006C03F5 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/DiscoveryNewsListCell.strings"; sourceTree = "<group>"; };
-		2CEC59B01F4FD4D1006C03F5 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/DiscoveryRoadShowListCell.strings"; sourceTree = "<group>"; };
-		2CEC59B11F4FD4D1006C03F5 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/MineHeaderCollectionCell.strings"; sourceTree = "<group>"; };
-		2CEC59B21F4FD4D1006C03F5 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/SettingHomeHeader.strings"; sourceTree = "<group>"; };
-		2CEC59B31F4FD4D2006C03F5 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/WithDrawDepositAddBankCell.strings"; sourceTree = "<group>"; };
-		2CEC59B41F4FD4D2006C03F5 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/WithDrawDepositSumCell.strings"; sourceTree = "<group>"; };
-		2CEC59B51F4FD4D2006C03F5 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/WithDrawDepositHomeHeader.strings"; sourceTree = "<group>"; };
-		2CEC59B61F4FD4D2006C03F5 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/CumulateInvestHeader.strings"; sourceTree = "<group>"; };
-		2CEC59B71F4FD4D2006C03F5 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/BankCardListAddCell.strings"; sourceTree = "<group>"; };
-		2CEC59B81F4FD4D2006C03F5 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/BankCardListDefaultCell.strings"; sourceTree = "<group>"; };
-		2CEC59B91F4FD4D3006C03F5 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/BankPickerView.strings"; sourceTree = "<group>"; };
-		2CEC59BA1F4FD4D3006C03F5 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/BankCardAddDefaultCell.strings"; sourceTree = "<group>"; };
-		2CEC59BB1F4FD4D3006C03F5 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/ContractListCell.strings"; sourceTree = "<group>"; };
-		2CEC59BC1F4FD4D3006C03F5 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/ContractApplyAddAddressCell.strings"; sourceTree = "<group>"; };
-		2CEC59BD1F4FD4D3006C03F5 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/ContractApplyInfoCell.strings"; sourceTree = "<group>"; };
-		2CEC59BE1F4FD4D3006C03F5 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/ContractApplyProductNameCell.strings"; sourceTree = "<group>"; };
-		2CEC59BF1F4FD4D4006C03F5 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/AddressPikerView.strings"; sourceTree = "<group>"; };
-		2CEC59C01F4FD4D4006C03F5 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/ConAddressRightInputCell.strings"; sourceTree = "<group>"; };
-		2CEC59C11F4FD4D4006C03F5 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/ConAddressMiddleLabelCell.strings"; sourceTree = "<group>"; };
-		2CEC59C21F4FD4D4006C03F5 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/ConAddressBottomInputCell.strings"; sourceTree = "<group>"; };
-		2CEC59C31F4FD4D4006C03F5 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main.strings"; sourceTree = "<group>"; };
-		2CEC59C41F4FD4D4006C03F5 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		2CEC59C61F4FF6E8006C03F5 /* NSBundle+TianJiCloud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+TianJiCloud.h"; sourceTree = "<group>"; };
+		2CEC59C71F4FF6E8006C03F5 /* NSBundle+TianJiCloud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+TianJiCloud.m"; sourceTree = "<group>"; };
+		2CEC59C91F5004B7006C03F5 /* TJSNormalBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TJSNormalBundle.bundle; sourceTree = "<group>"; };
+		2CEC59CC1F500516006C03F5 /* loading@2x.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "loading@2x.gif"; sourceTree = "<group>"; };
+		2CEC59CD1F500516006C03F5 /* loading@3x.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "loading@3x.gif"; sourceTree = "<group>"; };
+		2CEC59CE1F500516006C03F5 /* loading_1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading_1.gif; sourceTree = "<group>"; };
+		2CEC59CF1F500516006C03F5 /* loading_2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading_2.gif; sourceTree = "<group>"; };
+		2CEC59D01F500516006C03F5 /* loading_3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading_3.gif; sourceTree = "<group>"; };
+		2CEC59D71F500534006C03F5 /* loading@2x.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "loading@2x.gif"; sourceTree = "<group>"; };
+		2CEC59D81F500534006C03F5 /* loading@3x.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "loading@3x.gif"; sourceTree = "<group>"; };
+		2CEC59D91F500534006C03F5 /* loading_1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading_1.gif; sourceTree = "<group>"; };
+		2CEC59DA1F500534006C03F5 /* loading_2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading_2.gif; sourceTree = "<group>"; };
+		2CEC59DB1F500534006C03F5 /* loading_3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading_3.gif; sourceTree = "<group>"; };
 		2CEE1E1A1F45919500FEE9BD /* ContractAddAddressConfigProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContractAddAddressConfigProtocol.h; sourceTree = "<group>"; };
 		2CEE1E1B1F459AA200FEE9BD /* AddressSelectedConfigProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddressSelectedConfigProtocol.h; sourceTree = "<group>"; };
 		2CF8B53C1F3D469F003B8520 /* ProductSearchHotCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductSearchHotCell.h; sourceTree = "<group>"; };
@@ -2165,15 +2079,6 @@
 			path = Discovery;
 			sourceTree = "<group>";
 		};
-		2C1D88D91F4FBDFF006A4F00 /* NSBundle */ = {
-			isa = PBXGroup;
-			children = (
-				2C1D88DA1F4FBE11006A4F00 /* NSBundle+TianJiCloud.h */,
-				2C1D88DB1F4FBE11006A4F00 /* NSBundle+TianJiCloud.m */,
-			);
-			path = NSBundle;
-			sourceTree = "<group>";
-		};
 		2C431DE31F299A9600858C12 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -2364,6 +2269,7 @@
 		2C4411E31F219A5300C453EF /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				2CEC59C51F4FF6E8006C03F5 /* NSBundle */,
 				2C4412641F21E11D00C453EF /* NSMutableAttributedString */,
 				2C44125A1F21DEF500C453EF /* NSObject */,
 				2C4411E41F219A5300C453EF /* NSString */,
@@ -2383,7 +2289,6 @@
 		2C4411E71F219A5300C453EF /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				2C1D88D91F4FBDFF006A4F00 /* NSBundle */,
 				2C4411EB1F219A5300C453EF /* UIDevice */,
 				2C4C1BD21F38135600002166 /* UIApplication */,
 				2C4412561F21DD8100C453EF /* UIWindow */,
@@ -2468,6 +2373,7 @@
 		2C4411FA1F219A5300C453EF /* NetworkAPIs */ = {
 			isa = PBXGroup;
 			children = (
+				2CEC59CB1F500516006C03F5 /* loading */,
 				2CAF427B1F26EAC900ABCA5E /* AppVersion */,
 				2CAF426A1F26DEDE00ABCA5E /* Product */,
 				2CAF426C1F26DEEF00ABCA5E /* Mine */,
@@ -2479,6 +2385,8 @@
 		2C4411FB1F219A5300C453EF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2CEC59D61F500534006C03F5 /* loading */,
+				2CEC59C91F5004B7006C03F5 /* TJSNormalBundle.bundle */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -5870,6 +5778,39 @@
 			path = UITextField;
 			sourceTree = "<group>";
 		};
+		2CEC59C51F4FF6E8006C03F5 /* NSBundle */ = {
+			isa = PBXGroup;
+			children = (
+				2CEC59C61F4FF6E8006C03F5 /* NSBundle+TianJiCloud.h */,
+				2CEC59C71F4FF6E8006C03F5 /* NSBundle+TianJiCloud.m */,
+			);
+			path = NSBundle;
+			sourceTree = "<group>";
+		};
+		2CEC59CB1F500516006C03F5 /* loading */ = {
+			isa = PBXGroup;
+			children = (
+				2CEC59CC1F500516006C03F5 /* loading@2x.gif */,
+				2CEC59CD1F500516006C03F5 /* loading@3x.gif */,
+				2CEC59CE1F500516006C03F5 /* loading_1.gif */,
+				2CEC59CF1F500516006C03F5 /* loading_2.gif */,
+				2CEC59D01F500516006C03F5 /* loading_3.gif */,
+			);
+			path = loading;
+			sourceTree = "<group>";
+		};
+		2CEC59D61F500534006C03F5 /* loading */ = {
+			isa = PBXGroup;
+			children = (
+				2CEC59D71F500534006C03F5 /* loading@2x.gif */,
+				2CEC59D81F500534006C03F5 /* loading@3x.gif */,
+				2CEC59D91F500534006C03F5 /* loading_1.gif */,
+				2CEC59DA1F500534006C03F5 /* loading_2.gif */,
+				2CEC59DB1F500534006C03F5 /* loading_3.gif */,
+			);
+			path = loading;
+			sourceTree = "<group>";
+		};
 		2CF8B53B1F3D4682003B8520 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -6129,9 +6070,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
-				ja,
 			);
 			mainGroup = 2C44119F1F21981E00C453EF;
 			productRefGroup = 2C4411A91F21981E00C453EF /* Products */;
@@ -6152,16 +6091,21 @@
 			files = (
 				2C859D021F31EB2E00B86575 /* ZLPhotoLib.bundle in Resources */,
 				2CEC59781F4FD26C006C03F5 /* ConAddressRightInputCell.xib in Resources */,
+				2CEC59D21F500516006C03F5 /* loading@3x.gif in Resources */,
 				2C85E3331F2EC6E500ADD360 /* Oder.storyboard in Resources */,
 				2C300F7C1F2F32BF00DD440E /* Settings.storyboard in Resources */,
 				2C7A34511F2F64DA004DD566 /* BankCardManager.storyboard in Resources */,
 				2CEC58F91F4FD1AD006C03F5 /* ProductFilterResultCell.xib in Resources */,
+				2CEC59D41F500516006C03F5 /* loading_2.gif in Resources */,
+				2CEC59DF1F500534006C03F5 /* loading_2.gif in Resources */,
 				2C4411BE1F21981E00C453EF /* LaunchScreen.storyboard in Resources */,
 				2CEC58F21F4FD1A4006C03F5 /* ProductListCell.xib in Resources */,
+				2CEC59D11F500516006C03F5 /* loading@2x.gif in Resources */,
 				2C431E111F29C6B200858C12 /* ProductFilter.storyboard in Resources */,
 				2CEC59711F4FD263006C03F5 /* AddressPikerView.xib in Resources */,
 				2C431E0F1F29C59C00858C12 /* Message.storyboard in Resources */,
 				2C7A34591F2F685B004DD566 /* UseAgreement.storyboard in Resources */,
+				2CEC59D51F500516006C03F5 /* loading_3.gif in Resources */,
 				2C300F8D1F2F3D4700DD440E /* Profile.storyboard in Resources */,
 				2C7A34531F2F6590004DD566 /* MyReward.storyboard in Resources */,
 				2CEC59861F4FD284006C03F5 /* ConAddressBottomInputCell.xib in Resources */,
@@ -6180,10 +6124,13 @@
 				2C7A344F1F2F63BE004DD566 /* CapitalRecord.storyboard in Resources */,
 				2CEC590E1F4FD1D7006C03F5 /* DiscoveryRoadShowListCell.xib in Resources */,
 				2C4411BB1F21981E00C453EF /* Assets.xcassets in Resources */,
+				2CEC59CA1F5004B7006C03F5 /* TJSNormalBundle.bundle in Resources */,
 				2CEC59311F4FD206006C03F5 /* CumulateInvestHeader.xib in Resources */,
 				2CEC597F1F4FD27B006C03F5 /* ConAddressMiddleLabelCell.xib in Resources */,
+				2CEC59D31F500516006C03F5 /* loading_1.gif in Resources */,
 				2C4412991F22007D00C453EF /* TJSThemeConfig.strings in Resources */,
 				2CEC592A1F4FD1FF006C03F5 /* WithDrawDepositHomeHeader.xib in Resources */,
+				2CEC59E01F500534006C03F5 /* loading_3.gif in Resources */,
 				2C7A345B1F2F68E6004DD566 /* Feedback.storyboard in Resources */,
 				2CEC59381F4FD20C006C03F5 /* BankCardListAddCell.xib in Resources */,
 				2CEC59631F4FD247006C03F5 /* ContractApplyInfoCell.xib in Resources */,
@@ -6203,6 +6150,9 @@
 				2C7A34551F2F66AF004DD566 /* Collection.storyboard in Resources */,
 				2C4411B91F21981E00C453EF /* Main.storyboard in Resources */,
 				2C1BFEBD1F29779100665A71 /* Home.storyboard in Resources */,
+				2CEC59DD1F500534006C03F5 /* loading@3x.gif in Resources */,
+				2CEC59DE1F500534006C03F5 /* loading_1.gif in Resources */,
+				2CEC59DC1F500534006C03F5 /* loading@2x.gif in Resources */,
 				2C7A34571F2F673D004DD566 /* ContractApply.storyboard in Resources */,
 				2C8BB7BD1F315D2800E2D75F /* HomeHeaderWeb.storyboard in Resources */,
 				2CEC59461F4FD223006C03F5 /* BankPickerView.xib in Resources */,
@@ -6481,7 +6431,6 @@
 				2CCC85BC1F3AEF1D0009FC1C /* FilterResultNetworkTool.m in Sources */,
 				2C85E32E1F2EC60700ADD360 /* MyOrderContainerController.m in Sources */,
 				2C8DE6021F2AEB06009B3AE2 /* DiscoveryNewsInfo.m in Sources */,
-				2C1D88DC1F4FBE11006A4F00 /* NSBundle+TianJiCloud.m in Sources */,
 				A28956951F3CA22A002D6845 /* ProductSearchHotLayout.m in Sources */,
 				2C597DC11F4C2CB900415EB6 /* SettingHomeDataSourceImpl.m in Sources */,
 				2CCC85AF1F3AEE3A0009FC1C /* TJSProductFilterConfigurator.m in Sources */,
@@ -6639,6 +6588,7 @@
 				2CD897191F4548E2008F7C73 /* AddressManageCellFactory.m in Sources */,
 				2C4D35E91F4C25860082BB36 /* CumulativeInvestTableAdapter.m in Sources */,
 				2CE5422E1F4EA52300205993 /* RegistApi.m in Sources */,
+				2CEC59C81F4FF6E8006C03F5 /* NSBundle+TianJiCloud.m in Sources */,
 				2CAF43071F2828C200ABCA5E /* TJSProductListDataSourceImpl.m in Sources */,
 				A292B26A1F39F8470086E03E /* CapitalRecordInfo.m in Sources */,
 				2C859D001F31EB2E00B86575 /* ZLPhotoPickerGroupTableViewCell.m in Sources */,
@@ -6836,10 +6786,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				2C1D88D51F4FBB23006A4F00 /* Base */,
-				2C1D88D81F4FBB36006A4F00 /* en */,
-				2CEC58DD1F4FCF08006C03F5 /* ja */,
-				2CEC59A91F4FD492006C03F5 /* zh-Hans */,
-				2CEC59B21F4FD4D1006C03F5 /* zh-Hant */,
 			);
 			name = SettingHomeHeader.xib;
 			sourceTree = "<group>";
@@ -6848,10 +6794,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				2C4411B81F21981E00C453EF /* Base */,
-				2CEC58DE1F4FCF09006C03F5 /* ja */,
-				2CEC58E11F4FCF2B006C03F5 /* en */,
-				2CEC59A61F4FD43D006C03F5 /* zh-Hans */,
-				2CEC59C31F4FD4D4006C03F5 /* zh-Hant */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -6860,10 +6802,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				2C4411BD1F21981E00C453EF /* Base */,
-				2CEC58DF1F4FCF09006C03F5 /* ja */,
-				2CEC58E31F4FCF30006C03F5 /* en */,
-				2CEC59A71F4FD43D006C03F5 /* zh-Hans */,
-				2CEC59C41F4FD4D4006C03F5 /* zh-Hant */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -6872,10 +6810,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				2CEC58E51F4FD188006C03F5 /* Base */,
-				2CEC58E81F4FD18A006C03F5 /* en */,
-				2CEC58EA1F4FD18C006C03F5 /* ja */,
-				2CEC598D1F4FD43A006C03F5 /* zh-Hans */,
-				2CEC59AA1F4FD4D0006C03F5 /* zh-Hant */,
 			);
 			name = HomeHeaderCollectionCell.xib;
 			sourceTree = "<group>";
@@ -6884,10 +6818,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				2CEC58EC1F4FD19B006C03F5 /* Base */,
-				2CEC58EF1F4FD19C006C03F5 /* en */,
-				2CEC58F11F4FD19E006C03F5 /* ja */,
-				2CEC598E1F4FD43A006C03F5 /* zh-Hans */,
-				2CEC59AB1F4FD4D0006C03F5 /* zh-Hant */,
 			);
 			name = HomeFooterCollectionCell.xib;
 			sourceTree = "<group>";
@@ -6896,10 +6826,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				2CEC58F31F4FD1A4006C03F5 /* Base */,
-				2CEC58F61F4FD1A6006C03F5 /* en */,
-				2CEC58F81F4FD1A7006C03F5 /* ja */,
-				2CEC598F1F4FD43A006C03F5 /* zh-Hans */,
-				2CEC59AC1F4FD4D1006C03F5 /* zh-Hant */,
 			);
 			name = ProductListCell.xib;
 			sourceTree = "<group>";
@@ -6908,10 +6834,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				2CEC58FA1F4FD1AD006C03F5 /* Base */,
-				2CEC58FD1F4FD1AF006C03F5 /* en */,
-				2CEC58FF1F4FD1B0006C03F5 /* ja */,
-				2CEC59901F4FD43A006C03F5 /* zh-Hans */,
-				2CEC59AD1F4FD4D1006C03F5 /* zh-Hant */,
 			);
 			name = ProductFilterResultCell.xib;
 			sourceTree = "<group>";
@@ -6920,10 +6842,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				2CEC59011F4FD1C3006C03F5 /* Base */,
-				2CEC59041F4FD1C4006C03F5 /* en */,
-				2CEC59061F4FD1C5006C03F5 /* ja */,
-				2CEC59911F4FD43A006C03F5 /* zh-Hans */,
-				2CEC59AE1F4FD4D1006C03F5 /* zh-Hant */,
 			);
 			name = ProductSearchResultCell.xib;
 			sourceTree = "<group>";
@@ -6932,10 +6850,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				2CEC59081F4FD1CD006C03F5 /* Base */,
-				2CEC590B1F4FD1CF006C03F5 /* en */,
-				2CEC590D1F4FD1D1006C03F5 /* ja */,
-				2CEC59921F4FD43A006C03F5 /* zh-Hans */,
-				2CEC59AF1F4FD4D1006C03F5 /* zh-Hant */,
 			);
 			name = DiscoveryNewsListCell.xib;
 			sourceTree = "<group>";
@@ -6944,10 +6858,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				2CEC590F1F4FD1D7006C03F5 /* Base */,
-				2CEC59121F4FD1DA006C03F5 /* en */,
-				2CEC59141F4FD1DB006C03F5 /* ja */,
-				2CEC59931F4FD43A006C03F5 /* zh-Hans */,
-				2CEC59B01F4FD4D1006C03F5 /* zh-Hant */,
 			);
 			name = DiscoveryRoadShowListCell.xib;
 			sourceTree = "<group>";
@@ -6956,10 +6866,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				2CEC59161F4FD1E2006C03F5 /* Base */,
-				2CEC59191F4FD1E3006C03F5 /* en */,
-				2CEC591B1F4FD1E5006C03F5 /* ja */,
-				2CEC59941F4FD43B006C03F5 /* zh-Hans */,
-				2CEC59B11F4FD4D1006C03F5 /* zh-Hant */,
 			);
 			name = MineHeaderCollectionCell.xib;
 			sourceTree = "<group>";
@@ -6968,10 +6874,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				2CEC591D1F4FD1F1006C03F5 /* Base */,
-				2CEC59201F4FD1F3006C03F5 /* en */,
-				2CEC59221F4FD1F4006C03F5 /* ja */,
-				2CEC59961F4FD43B006C03F5 /* zh-Hans */,
-				2CEC59B31F4FD4D2006C03F5 /* zh-Hant */,
 			);
 			name = WithDrawDepositAddBankCell.xib;
 			sourceTree = "<group>";
@@ -6980,10 +6882,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				2CEC59241F4FD1F8006C03F5 /* Base */,
-				2CEC59271F4FD1FA006C03F5 /* en */,
-				2CEC59291F4FD1FB006C03F5 /* ja */,
-				2CEC59971F4FD43B006C03F5 /* zh-Hans */,
-				2CEC59B41F4FD4D2006C03F5 /* zh-Hant */,
 			);
 			name = WithDrawDepositSumCell.xib;
 			sourceTree = "<group>";
@@ -6992,10 +6890,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				2CEC592B1F4FD1FF006C03F5 /* Base */,
-				2CEC592E1F4FD201006C03F5 /* en */,
-				2CEC59301F4FD201006C03F5 /* ja */,
-				2CEC59981F4FD43B006C03F5 /* zh-Hans */,
-				2CEC59B51F4FD4D2006C03F5 /* zh-Hant */,
 			);
 			name = WithDrawDepositHomeHeader.xib;
 			sourceTree = "<group>";
@@ -7004,10 +6898,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				2CEC59321F4FD206006C03F5 /* Base */,
-				2CEC59351F4FD207006C03F5 /* en */,
-				2CEC59371F4FD208006C03F5 /* ja */,
-				2CEC59991F4FD43B006C03F5 /* zh-Hans */,
-				2CEC59B61F4FD4D2006C03F5 /* zh-Hant */,
 			);
 			name = CumulateInvestHeader.xib;
 			sourceTree = "<group>";
@@ -7016,10 +6906,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				2CEC59391F4FD20C006C03F5 /* Base */,
-				2CEC593C1F4FD20E006C03F5 /* en */,
-				2CEC593E1F4FD20F006C03F5 /* ja */,
-				2CEC599A1F4FD43B006C03F5 /* zh-Hans */,
-				2CEC59B71F4FD4D2006C03F5 /* zh-Hant */,
 			);
 			name = BankCardListAddCell.xib;
 			sourceTree = "<group>";
@@ -7028,10 +6914,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				2CEC59401F4FD218006C03F5 /* Base */,
-				2CEC59431F4FD21B006C03F5 /* en */,
-				2CEC59451F4FD21C006C03F5 /* ja */,
-				2CEC599B1F4FD43C006C03F5 /* zh-Hans */,
-				2CEC59B81F4FD4D2006C03F5 /* zh-Hant */,
 			);
 			name = BankCardListDefaultCell.xib;
 			sourceTree = "<group>";
@@ -7040,10 +6922,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				2CEC59471F4FD223006C03F5 /* Base */,
-				2CEC594A1F4FD224006C03F5 /* en */,
-				2CEC594C1F4FD226006C03F5 /* ja */,
-				2CEC599C1F4FD43C006C03F5 /* zh-Hans */,
-				2CEC59B91F4FD4D3006C03F5 /* zh-Hant */,
 			);
 			name = BankPickerView.xib;
 			sourceTree = "<group>";
@@ -7052,10 +6930,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				2CEC594E1F4FD22B006C03F5 /* Base */,
-				2CEC59511F4FD230006C03F5 /* en */,
-				2CEC59531F4FD231006C03F5 /* ja */,
-				2CEC599D1F4FD43C006C03F5 /* zh-Hans */,
-				2CEC59BA1F4FD4D3006C03F5 /* zh-Hant */,
 			);
 			name = BankCardAddDefaultCell.xib;
 			sourceTree = "<group>";
@@ -7064,10 +6938,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				2CEC59551F4FD236006C03F5 /* Base */,
-				2CEC59581F4FD238006C03F5 /* en */,
-				2CEC595A1F4FD23A006C03F5 /* ja */,
-				2CEC599E1F4FD43C006C03F5 /* zh-Hans */,
-				2CEC59BB1F4FD4D3006C03F5 /* zh-Hant */,
 			);
 			name = ContractListCell.xib;
 			sourceTree = "<group>";
@@ -7076,10 +6946,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				2CEC595C1F4FD23E006C03F5 /* Base */,
-				2CEC595F1F4FD240006C03F5 /* en */,
-				2CEC59611F4FD241006C03F5 /* ja */,
-				2CEC599F1F4FD43C006C03F5 /* zh-Hans */,
-				2CEC59BC1F4FD4D3006C03F5 /* zh-Hant */,
 			);
 			name = ContractApplyAddAddressCell.xib;
 			sourceTree = "<group>";
@@ -7088,10 +6954,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				2CEC59641F4FD247006C03F5 /* Base */,
-				2CEC59671F4FD249006C03F5 /* en */,
-				2CEC59691F4FD24A006C03F5 /* ja */,
-				2CEC59A01F4FD43C006C03F5 /* zh-Hans */,
-				2CEC59BD1F4FD4D3006C03F5 /* zh-Hant */,
 			);
 			name = ContractApplyInfoCell.xib;
 			sourceTree = "<group>";
@@ -7100,10 +6962,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				2CEC596B1F4FD24E006C03F5 /* Base */,
-				2CEC596E1F4FD250006C03F5 /* en */,
-				2CEC59701F4FD250006C03F5 /* ja */,
-				2CEC59A11F4FD43C006C03F5 /* zh-Hans */,
-				2CEC59BE1F4FD4D3006C03F5 /* zh-Hant */,
 			);
 			name = ContractApplyProductNameCell.xib;
 			sourceTree = "<group>";
@@ -7112,10 +6970,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				2CEC59721F4FD263006C03F5 /* Base */,
-				2CEC59751F4FD267006C03F5 /* en */,
-				2CEC59771F4FD268006C03F5 /* ja */,
-				2CEC59A21F4FD43D006C03F5 /* zh-Hans */,
-				2CEC59BF1F4FD4D4006C03F5 /* zh-Hant */,
 			);
 			name = AddressPikerView.xib;
 			sourceTree = "<group>";
@@ -7124,10 +6978,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				2CEC59791F4FD26C006C03F5 /* Base */,
-				2CEC597C1F4FD26F006C03F5 /* en */,
-				2CEC597E1F4FD270006C03F5 /* ja */,
-				2CEC59A31F4FD43D006C03F5 /* zh-Hans */,
-				2CEC59C01F4FD4D4006C03F5 /* zh-Hant */,
 			);
 			name = ConAddressRightInputCell.xib;
 			sourceTree = "<group>";
@@ -7136,10 +6986,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				2CEC59801F4FD27B006C03F5 /* Base */,
-				2CEC59831F4FD27D006C03F5 /* en */,
-				2CEC59851F4FD27F006C03F5 /* ja */,
-				2CEC59A41F4FD43D006C03F5 /* zh-Hans */,
-				2CEC59C11F4FD4D4006C03F5 /* zh-Hant */,
 			);
 			name = ConAddressMiddleLabelCell.xib;
 			sourceTree = "<group>";
@@ -7148,10 +6994,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				2CEC59871F4FD284006C03F5 /* Base */,
-				2CEC598A1F4FD286006C03F5 /* en */,
-				2CEC598C1F4FD287006C03F5 /* ja */,
-				2CEC59A51F4FD43D006C03F5 /* zh-Hans */,
-				2CEC59C21F4FD4D4006C03F5 /* zh-Hant */,
 			);
 			name = ConAddressBottomInputCell.xib;
 			sourceTree = "<group>";

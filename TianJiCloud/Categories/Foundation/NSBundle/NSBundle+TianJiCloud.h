@@ -10,4 +10,7 @@
 
 @interface NSBundle (TianJiCloud)
 
+NSString * TJSLocalizedString(NSString *key);
+
+
 @end
