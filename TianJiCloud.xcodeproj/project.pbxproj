@@ -552,11 +552,6 @@
 		2CEC59861F4FD284006C03F5 /* ConAddressBottomInputCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC59881F4FD284006C03F5 /* ConAddressBottomInputCell.xib */; };
 		2CEC59C81F4FF6E8006C03F5 /* NSBundle+TianJiCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CEC59C71F4FF6E8006C03F5 /* NSBundle+TianJiCloud.m */; };
 		2CEC59CA1F5004B7006C03F5 /* TJSNormalBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC59C91F5004B7006C03F5 /* TJSNormalBundle.bundle */; };
-		2CEC59D11F500516006C03F5 /* loading@2x.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC59CC1F500516006C03F5 /* loading@2x.gif */; };
-		2CEC59D21F500516006C03F5 /* loading@3x.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC59CD1F500516006C03F5 /* loading@3x.gif */; };
-		2CEC59D31F500516006C03F5 /* loading_1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC59CE1F500516006C03F5 /* loading_1.gif */; };
-		2CEC59D41F500516006C03F5 /* loading_2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC59CF1F500516006C03F5 /* loading_2.gif */; };
-		2CEC59D51F500516006C03F5 /* loading_3.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC59D01F500516006C03F5 /* loading_3.gif */; };
 		2CEC59DC1F500534006C03F5 /* loading@2x.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC59D71F500534006C03F5 /* loading@2x.gif */; };
 		2CEC59DD1F500534006C03F5 /* loading@3x.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC59D81F500534006C03F5 /* loading@3x.gif */; };
 		2CEC59DE1F500534006C03F5 /* loading_1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC59D91F500534006C03F5 /* loading_1.gif */; };
@@ -1728,11 +1723,6 @@
 		2CEC59C61F4FF6E8006C03F5 /* NSBundle+TianJiCloud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+TianJiCloud.h"; sourceTree = "<group>"; };
 		2CEC59C71F4FF6E8006C03F5 /* NSBundle+TianJiCloud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+TianJiCloud.m"; sourceTree = "<group>"; };
 		2CEC59C91F5004B7006C03F5 /* TJSNormalBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TJSNormalBundle.bundle; sourceTree = "<group>"; };
-		2CEC59CC1F500516006C03F5 /* loading@2x.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "loading@2x.gif"; sourceTree = "<group>"; };
-		2CEC59CD1F500516006C03F5 /* loading@3x.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "loading@3x.gif"; sourceTree = "<group>"; };
-		2CEC59CE1F500516006C03F5 /* loading_1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading_1.gif; sourceTree = "<group>"; };
-		2CEC59CF1F500516006C03F5 /* loading_2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading_2.gif; sourceTree = "<group>"; };
-		2CEC59D01F500516006C03F5 /* loading_3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading_3.gif; sourceTree = "<group>"; };
 		2CEC59D71F500534006C03F5 /* loading@2x.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "loading@2x.gif"; sourceTree = "<group>"; };
 		2CEC59D81F500534006C03F5 /* loading@3x.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "loading@3x.gif"; sourceTree = "<group>"; };
 		2CEC59D91F500534006C03F5 /* loading_1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading_1.gif; sourceTree = "<group>"; };
@@ -2373,7 +2363,6 @@
 		2C4411FA1F219A5300C453EF /* NetworkAPIs */ = {
 			isa = PBXGroup;
 			children = (
-				2CEC59CB1F500516006C03F5 /* loading */,
 				2CAF427B1F26EAC900ABCA5E /* AppVersion */,
 				2CAF426A1F26DEDE00ABCA5E /* Product */,
 				2CAF426C1F26DEEF00ABCA5E /* Mine */,
@@ -5787,18 +5776,6 @@
 			path = NSBundle;
 			sourceTree = "<group>";
 		};
-		2CEC59CB1F500516006C03F5 /* loading */ = {
-			isa = PBXGroup;
-			children = (
-				2CEC59CC1F500516006C03F5 /* loading@2x.gif */,
-				2CEC59CD1F500516006C03F5 /* loading@3x.gif */,
-				2CEC59CE1F500516006C03F5 /* loading_1.gif */,
-				2CEC59CF1F500516006C03F5 /* loading_2.gif */,
-				2CEC59D01F500516006C03F5 /* loading_3.gif */,
-			);
-			path = loading;
-			sourceTree = "<group>";
-		};
 		2CEC59D61F500534006C03F5 /* loading */ = {
 			isa = PBXGroup;
 			children = (
@@ -6091,21 +6068,17 @@
 			files = (
 				2C859D021F31EB2E00B86575 /* ZLPhotoLib.bundle in Resources */,
 				2CEC59781F4FD26C006C03F5 /* ConAddressRightInputCell.xib in Resources */,
-				2CEC59D21F500516006C03F5 /* loading@3x.gif in Resources */,
 				2C85E3331F2EC6E500ADD360 /* Oder.storyboard in Resources */,
 				2C300F7C1F2F32BF00DD440E /* Settings.storyboard in Resources */,
 				2C7A34511F2F64DA004DD566 /* BankCardManager.storyboard in Resources */,
 				2CEC58F91F4FD1AD006C03F5 /* ProductFilterResultCell.xib in Resources */,
-				2CEC59D41F500516006C03F5 /* loading_2.gif in Resources */,
 				2CEC59DF1F500534006C03F5 /* loading_2.gif in Resources */,
 				2C4411BE1F21981E00C453EF /* LaunchScreen.storyboard in Resources */,
 				2CEC58F21F4FD1A4006C03F5 /* ProductListCell.xib in Resources */,
-				2CEC59D11F500516006C03F5 /* loading@2x.gif in Resources */,
 				2C431E111F29C6B200858C12 /* ProductFilter.storyboard in Resources */,
 				2CEC59711F4FD263006C03F5 /* AddressPikerView.xib in Resources */,
 				2C431E0F1F29C59C00858C12 /* Message.storyboard in Resources */,
 				2C7A34591F2F685B004DD566 /* UseAgreement.storyboard in Resources */,
-				2CEC59D51F500516006C03F5 /* loading_3.gif in Resources */,
 				2C300F8D1F2F3D4700DD440E /* Profile.storyboard in Resources */,
 				2C7A34531F2F6590004DD566 /* MyReward.storyboard in Resources */,
 				2CEC59861F4FD284006C03F5 /* ConAddressBottomInputCell.xib in Resources */,
@@ -6127,7 +6100,6 @@
 				2CEC59CA1F5004B7006C03F5 /* TJSNormalBundle.bundle in Resources */,
 				2CEC59311F4FD206006C03F5 /* CumulateInvestHeader.xib in Resources */,
 				2CEC597F1F4FD27B006C03F5 /* ConAddressMiddleLabelCell.xib in Resources */,
-				2CEC59D31F500516006C03F5 /* loading_1.gif in Resources */,
 				2C4412991F22007D00C453EF /* TJSThemeConfig.strings in Resources */,
 				2CEC592A1F4FD1FF006C03F5 /* WithDrawDepositHomeHeader.xib in Resources */,
 				2CEC59E01F500534006C03F5 /* loading_3.gif in Resources */,
