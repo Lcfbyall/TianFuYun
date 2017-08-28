@@ -8,3 +8,5 @@
 
 
 "CFBundleDisplayName" = "TianJiCloud";
+"NSCameraUsageDescription" = "天富云想使用您的摄像头";
+"NSPhotoLibraryUsageDescription" = "天富云想使用您的相册";
