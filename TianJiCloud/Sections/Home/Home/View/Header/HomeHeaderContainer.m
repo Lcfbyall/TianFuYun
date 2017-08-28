@@ -36,29 +36,6 @@ static NSString *identifier     = @"HomeHeaderCollectionCell";
 
 @implementation HomeHeaderContainer
 
-
-#pragma mark - UIView(UIViewHierarchy)
-
-- (void)didMoveToSuperview{
-
-    NSInteger itemRow = Sections/2 * self.webItems.count;
-    
-    NSIndexPath *indexPath = [NSIndexPath indexPathForItem:itemRow inSection:0];
-    
-    [self p_scrollToItemAtIndexPath:indexPath];
-}
-
-- (void)didMoveToWindow{
-
-}
-
-- (void)didAddSubview:(UIView *)subview{
-
-
-
-}
-
-
 #pragma mark -
 
 + (instancetype)headerContainer{
@@ -67,11 +44,22 @@ static NSString *identifier     = @"HomeHeaderCollectionCell";
     container.frame = CGRectMake(0, 0, SCREEN_WIDTH, containerHeight + Margin);
     container.backgroundColor = ThemeService.weak_color_00;
     
-    container.webItems        = [HomeHeaderConfig webItems];
+    container.webItems = [HomeHeaderConfig webItems];
     
-    container.productItems    = [HomeHeaderConfig productHomeItems];
+    container.productItems = [HomeHeaderConfig productHomeItems];
     
-    [container p_addCollectionview];
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+    
+        HomeHeaderCollectionLayout *layout = [[HomeHeaderCollectionLayout alloc]init];
+        layout.delegate = container;
+        layout.interMargin = 10;
+        layout.insets = UIEdgeInsetsMake(Margin, Margin, Margin, Margin);
+        [layout calculateLayoutAttributes];
+        dispatch_async(dispatch_get_main_queue(), ^{
+        
+            [container p_addCollectionviewWithLayout:layout];
+        });
+    });
     
     [container p_addProductItems];
     
@@ -81,15 +69,10 @@ static NSString *identifier     = @"HomeHeaderCollectionCell";
 
 #pragma mark - addSubViews
 
-- (void)p_addCollectionview{
+- (void)p_addCollectionviewWithLayout:(HomeHeaderCollectionLayout *)layout{
 
     self.collectionView = ({
-        
-        HomeHeaderCollectionLayout *layout =  [[HomeHeaderCollectionLayout alloc]init];
-        layout.delegate = self;
-        layout.interMargin = 10;
-        layout.insets   = UIEdgeInsetsMake(Margin, Margin, Margin, Margin);
-        
+    
         UICollectionView  *collectionView = [[UICollectionView alloc]initWithFrame:CGRectZero collectionViewLayout:layout];
         collectionView.backgroundColor = ThemeService.main_color_00;
         collectionView.dataSource = self;
@@ -150,7 +133,6 @@ static NSString *identifier     = @"HomeHeaderCollectionCell";
 }
 
 
-
 #pragma mark - <UICollectionViewDataSource>
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
@@ -196,7 +178,6 @@ static NSString *identifier     = @"HomeHeaderCollectionCell";
     
     return [self collectionView:collectionView numberOfItemsInSection:section];
 }
-
 
 - (CGSize)collectionView:(UICollectionView *)collectionView
                   layout:(HomeHeaderCollectionLayout *)collectionViewLayout
@@ -246,7 +227,7 @@ static NSString *identifier     = @"HomeHeaderCollectionCell";
                      withVelocity:(CGPoint)velocity
               targetContentOffset:(inout CGPoint *)targetContentOffset NS_AVAILABLE_IOS(5_0){
 
-    NSLog(@"2.将要停止拖动，也就是手指将要放开");
+     NSLog(@"2.将要停止拖动，也就是手指将要放开");
     
      //向左拖动，去右边
      BOOL left;
@@ -257,15 +238,11 @@ static NSString *identifier     = @"HomeHeaderCollectionCell";
      }else if(velocity.x < 0){
          
        left = YES;
-         
-         
      }else{
      
         //根据位置决定停止在哪个item
-         //[_collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:1 inSection:0] atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally animated:YES];
-     
+         [_collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:1 inSection:0] atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally animated:YES];
      }
-
 }
 
 //3.已经停止拖动，也就是手指已经放开
@@ -286,10 +263,9 @@ static NSString *identifier     = @"HomeHeaderCollectionCell";
 
     NSLog(@"5.已经结束减速");
     
-    //[_collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:1 inSection:0] atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally animated:YES];
+    [_collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:1 inSection:0] atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally animated:YES];
 }
 
- 
 //6.停止滑动
 // called when setContentOffset/scrollRectVisible:animated: finishes. not called if not animating
 - (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView{

@@ -19,11 +19,7 @@
 - (void)prepareLayout{
     [super prepareLayout];
     
-
-
 }
-
-
 
 - (nullable NSArray<__kindof UICollectionViewLayoutAttributes *> *)layoutAttributesForElementsInRect:(CGRect)rect{
 
@@ -87,7 +83,6 @@
 
     return layoutAttribute;
 }
-
 
 - (nullable UICollectionViewLayoutAttributes *)layoutAttributesForSupplementaryViewOfKind:(NSString *)elementKind atIndexPath:(NSIndexPath *)indexPath{
 
