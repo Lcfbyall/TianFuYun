@@ -10,4 +10,9 @@
 
 @implementation AppDelegate (TJSNetworkMonitor)
 
++ (void)load{
+
+    
+}
+
 @end

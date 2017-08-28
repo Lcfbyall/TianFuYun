@@ -11,6 +11,11 @@
 
 @implementation AppDelegate (TJSKeyboardSetting)
 
++ (void)load{
+
+    [self IQKeyboardManagersettings];
+}
+
 //IQKeyboardManager
 + (void)IQKeyboardManagersettings
 {

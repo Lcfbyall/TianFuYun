@@ -10,4 +10,9 @@
 
 @implementation AppDelegate (TJSSocialSetting)
 
++ (void)load{
+
+
+}
+
 @end

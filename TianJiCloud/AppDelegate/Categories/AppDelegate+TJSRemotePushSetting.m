@@ -10,4 +10,9 @@
 
 @implementation AppDelegate (TJSRemotePushSetting)
 
++ (void)load{
+
+    
+}
+
 @end
