@@ -14,6 +14,10 @@
 
 - (void)configItems;
 
+- (MineHomeCellInfo *)balance;
+
+- (void)configBalance;
+
 @property(nonatomic,strong,readonly)NSMutableArray *items;
 
 @end

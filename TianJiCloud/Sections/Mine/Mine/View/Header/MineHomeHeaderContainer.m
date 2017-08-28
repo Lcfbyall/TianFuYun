@@ -24,6 +24,10 @@ static NSString *identifier = @"MineHeaderCollectionCell";
 
 @property (nonatomic,strong)TJSPageControl *pageControl;
 
+@property (nonatomic,strong)NSArray *dadaSource;
+
+@property (nonatomic,assign)BOOL hideSum;
+
 @end
 
 
@@ -116,6 +120,7 @@ static NSString *identifier = @"MineHeaderCollectionCell";
 }
 
 
+
 #pragma mark - <UICollectionViewDataSource>
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
@@ -125,7 +130,7 @@ static NSString *identifier = @"MineHeaderCollectionCell";
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
     
-    return 2;
+    return self.dadaSource.count;
 }
 
 - (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
@@ -133,7 +138,7 @@ static NSString *identifier = @"MineHeaderCollectionCell";
     MineHeaderCollectionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:identifier forIndexPath:indexPath];
 
     
-    [cell tjs_bindDataToCellWithValue:nil];
+    [cell tjs_bindDataToCellWithValue:@[self.dadaSource[indexPath.item],@(self.hideSum)]];
     
     return cell;
 }
@@ -195,6 +200,21 @@ static NSString *identifier = @"MineHeaderCollectionCell";
     }
 }
 
+- (void)tjs_bindDataToCellWithValue:(id)value{
+
+    self.dadaSource = [value firstObject];
+    
+    self.hideSum = [[value lastObject] boolValue];
+    
+    [self.collectionView reloadData];
+}
+
+- (void)hideOrShowMoney:(BOOL)hide{
+  
+    _hideSum = hide;
+    
+    [self.collectionView reloadData];
+}
 
 @end
 

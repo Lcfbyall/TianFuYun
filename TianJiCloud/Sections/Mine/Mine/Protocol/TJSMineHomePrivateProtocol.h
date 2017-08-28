@@ -17,9 +17,11 @@
 
 @optional
 
-
 - (NSArray *)items;
 
+- (NSArray *)headerDatas;
+
+- (void)hideOrShowMoney:(BOOL)hide callback:(void (^)(void))callback;
 @end
 
 
@@ -27,8 +29,11 @@
 @protocol TJSMineHomeLayoutDelegate <NSObject>
 
 @optional
+
 - (void)onRefresh;
+
 @end
+
 @protocol TJSMineHomeLayout <NSObject>
 
 
@@ -37,6 +42,8 @@
 - (void)remove:(NSArray <NSIndexPath *> *)indexPaths;
 
 - (void)reloadTable;
+
+- (void)reloadTableHeader;
 
 - (void)beginRefresh;
 

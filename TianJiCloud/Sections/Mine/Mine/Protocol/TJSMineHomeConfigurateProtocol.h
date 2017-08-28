@@ -26,11 +26,18 @@
 //
 - (NSArray *)items;
 
+- (NSArray *)headerDatas;
+
+- (void)reloadTableHeader;
+
 - (void)onViewWillAppear;
 
 - (void)onViewDidDisappear;
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView;
+
+- (void)hideOrShowMoney:(BOOL)hide;
+
 
 @end
 

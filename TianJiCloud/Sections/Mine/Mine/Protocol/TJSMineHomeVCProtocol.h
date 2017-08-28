@@ -14,7 +14,7 @@
 
 - (void)onTapLeftBarBtnToSettingList:(id)sender;
 
-- (void)onTapRightBarBtnToHideSum:(id)sender;
+- (void)onTapRightBarBtnToHideOrShowSum:(id)sender;
 
 @end
 

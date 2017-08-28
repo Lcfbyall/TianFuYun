@@ -86,7 +86,7 @@ static NSString *const Invest_cell = @"MineHomeInvestCell";
     //第一组
     MineHomeCellInfo *balance = [MineHomeCellInfo new];
     balance.cellClass     = NSClassFromString(Balance_cell);
-    balance.title         = [NSString stringWithFormat:@"%@   %@",Balance_AccoutLeft,@"0.0元"];
+    balance.title         = [NSString stringWithFormat:Balance_AccoutLeft,@"0.0"];
     balance.image         = nil;
     balance.detailTitle   = Balance_WithDraw;
     balance.cellItems     = nil;
@@ -250,8 +250,18 @@ static NSString *const Invest_cell = @"MineHomeInvestCell";
             };
         }
     }];
+    
    _items =  [NSMutableArray arrayWithObjects:first,second,third,fourth, nil];
 }
 
+- (MineHomeCellInfo *)balance{
+  
+    return [[_items firstObject] firstObject];;
+}
+
+- (void)configBalance{
+  
+    self.balance.title  = [NSString stringWithFormat:Balance_AccoutLeft, self.balance.hideTitle? @"****":@"0.0"];
+}
 
 @end

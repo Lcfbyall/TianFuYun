@@ -16,18 +16,6 @@
 
 @implementation TJSMineHomeInteractorImpl
 
-- (instancetype)init{
-    
-    self = [super init];
-    if(self){
-        
-        
-        
-    }
-    
-    return self;
-}
-
 
 #pragma mark - <TJSMineHomeInteractor>
 
@@ -38,11 +26,40 @@
     return  [dataSource items];
 }
 
+- (NSArray *)headerDatas{
+  
+    return self.dataSource.headerDatas;
+}
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
     
     [self.layout scrollViewDidScroll:scrollView];
 }
+
+- (void)reloadTableHeader{
+    
+    [self.layout reloadTableHeader];
+}
+
+- (void)onViewWillAppear{
+
+    
+}
+
+- (void)onViewDidDisappear{
+
+
+}
+
+- (void)hideOrShowMoney:(BOOL)hide{
+
+    [self.dataSource hideOrShowMoney:hide callback:^{
+        
+        [self.layout reloadTable];
+        [self.layout reloadTableHeader];
+    }];
+}
+
 
 #pragma mark - TJSMineHomeLayoutDelegate
 //下拉刷新

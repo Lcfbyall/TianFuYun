@@ -57,4 +57,21 @@
     [super updateConstraints];
 }
 
+
+#pragma mark - <TJSBaseCollectionReusableViewProtocol>
+
+- (void)tjs_bindDataToCellWithValue:(id)value{
+
+    NSArray *datas = [(NSArray *)value firstObject];
+    
+    self.titleL.text = [datas firstObject];
+    
+    self.moneyL.text = [[value lastObject] boolValue]?@"****":[datas lastObject];
+}
+
+
+
 @end
+
+
+

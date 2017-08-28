@@ -16,6 +16,8 @@
 
 @property (nonatomic,copy)   NSString *title;
 
+@property (nonatomic,assign) BOOL hideTitle;
+
 @property (nonatomic,copy)   NSString *image;
 
 @property (nonatomic,copy)   NSString *detailTitle;

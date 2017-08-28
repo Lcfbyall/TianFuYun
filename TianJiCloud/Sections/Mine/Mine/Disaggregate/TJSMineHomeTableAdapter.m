@@ -49,20 +49,21 @@ static NSString *const headerFooterIdentifier = @"MineHomeHeaderFooterIdentifier
 
     _tableView.backgroundColor = ThemeService.weak_color_00;
     _tableView.tableFooterView = [UIView new];
-    
+    _tableView.tableHeaderView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 0, CGFLOAT_MIN)];
+    _tableView.tableFooterView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 0, CGFLOAT_MIN)];
+    _tableView.sectionHeaderHeight=0;
     [_tableView registerClass:[UITableViewHeaderFooterView class] forHeaderFooterViewReuseIdentifier:headerFooterIdentifier];
-    
     
     _headerContainer = [MineHomeHeaderContainer headerContainer];
     _headerContainer.tjs_origin = CGPointMake(0, -_headerContainer.tjs_height);
     _tableView.contentInset = UIEdgeInsetsMake(_headerContainer.tjs_height, 0, 0, 0);
     [_tableView addSubview:_headerContainer];
     
-    
-    _tableView.tableHeaderView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 0, CGFLOAT_MIN)];
-    _tableView.tableFooterView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 0, CGFLOAT_MIN)];
-    _tableView.sectionHeaderHeight=0;
-    
+    WEAK_SELF(self);
+    [_tableView tjs_headerWithRefreshingBlock:^(UITableView *tableView) {
+        STRONG_SELF(self);
+        [self.headerContainer tjs_bindDataToCellWithValue:self.interactor.headerDatas];
+    }];
 }
 
 
@@ -157,8 +158,8 @@ static NSString *const headerFooterIdentifier = @"MineHomeHeaderFooterIdentifier
     return 10;
 }
 
-#pragma mark - <UITableViewDataSourcePrefetching>
 
+#pragma mark - <UITableViewDataSourcePrefetching>
 
 
 #pragma mark - <UIScrollViewDelegate>

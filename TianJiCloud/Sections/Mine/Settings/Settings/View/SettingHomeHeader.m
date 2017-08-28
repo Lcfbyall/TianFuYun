@@ -8,6 +8,7 @@
 
 #import "SettingHomeHeader.h"
 #import "UIImageView+TJSWebCache.h"
+#import "UIButton+ContentRect.h"
 
 #define Height ([[UIScreen mainScreen] bounds].size.width * 1032/1242.0)
 
@@ -136,8 +137,6 @@
         
     }else{
     
-      
-    
     }
    
 }
@@ -158,9 +157,7 @@
     
     self.vertifyBtn.selected = [[values lastObject] boolValue];
     
-    
-    //self.icon.image = [UIImage tjs_imageWithColor:[UIColor redColor] size:CGSizeMake(100, 40) cornerRadius:20];
-
+    self.uploadIconBtn.tjs_intrinsicOffset = UIOffsetMake(10, 5);
 }
 
 

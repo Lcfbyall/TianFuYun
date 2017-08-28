@@ -7,10 +7,9 @@
 //
 
 #import "MineHomeVCConfig.h"
-
 #import "MineViewController.h"
 #import "UIImage+Resizeable.h"
-
+#import "UIImage+Combination.h"
 
 @interface MineHomeVCConfig ()
 
@@ -40,8 +39,6 @@
 - (void)setup:(MineViewController *)vc{
 
     _vc = vc;
-
-    
     _vc.params =  [UINavigationBar translucentWhiteTint];
     
     
@@ -58,17 +55,17 @@
 
 - (NSArray <UIBarButtonItem *> *)tjs_leftBarButtonItems{
     
-    //user_setup
+    NSString *leftBarBtnImage = @"manager";
+    UIImage *img = IMAGEOriginal(leftBarBtnImage);
+    //UIImage *img_sub = IMAGEOriginal(@"user_setup");
+    UIImage *conbineImg = img;//[img tjs_combinateWithImage:img_sub size:CGSizeMake(40, 40) subrect:CGRectMake(12,12,18,18)];
+    
     WEAK_SELF(self);
-    NSString *leftBarBtnImage  = @"avatar";
-    UIImage *img = [[IMAGE(leftBarBtnImage) tjs_drawInSize:CGSizeMake(30, 30)] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    UIBarButtonItem *leftItem  = [[UIBarButtonItem alloc] bk_initWithImage:img style:UIBarButtonItemStylePlain handler:^(id sender) {
+    UIBarButtonItem *leftItem  = [[UIBarButtonItem alloc] bk_initWithImage:conbineImg style:UIBarButtonItemStylePlain handler:^(id sender) {
         STRONG_SELF(self);
         if(self){
-            
             if([self.vc conformsToProtocol:@protocol(MineHomeVCConfig)] &&
                [self.vc respondsToSelector:@selector(onTapLeftBarBtnToSettingList:)]){
-                
                 [self.vc onTapLeftBarBtnToSettingList:sender];
             }
         }
@@ -82,24 +79,36 @@
 
 - (NSArray <UIBarButtonItem *> *)tjs_rightBarButtonItems{
     
-    //show_money  显示金额
-    //hide_money  隐藏金额
+    NSString *rightBarBtnImage = @"hide_money";
+    NSString *rightBarTitle = @"隐藏金额";
+    NSString *rightBarBtnImage_sel = @"show_money";
+    NSString *rightBarTitle_sel = @"显示金额";
+    UIImage *img = [[IMAGE(rightBarBtnImage) tjs_drawInSize:CGSizeMake(17, 14)] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    UIImage *img_sel = [[IMAGE(rightBarBtnImage_sel) tjs_drawInSize:CGSizeMake(17, 14)] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn.frame = CGRectMake(0, 0,100, 40);
+    btn.titleLabel.font = [UIFont systemFontOfSize:13.0f];
+    [btn setTitleColor:ThemeService.origin_color_00 forState:UIControlStateNormal];
+    [btn setTitleColor:ThemeService.text_color_02 forState:UIControlStateHighlighted];
+    [btn setTitle:rightBarTitle forState:UIControlStateNormal];
+    [btn setTitle:rightBarTitle_sel forState:UIControlStateSelected];
+    [btn setImage:img forState:UIControlStateNormal];
+    [btn setImage:img_sel forState:UIControlStateSelected];
+    
+    [btn tjs_imageTitleHorizontalAlignmentWithSpace:5];
     WEAK_SELF(self);
-    NSString *rightBarBtnImage  = @"avatar";
-    UIImage *img = [[IMAGE(rightBarBtnImage) tjs_drawInSize:CGSizeMake(30, 30)] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] bk_initWithImage:img style:UIBarButtonItemStylePlain handler:^(id sender) {
+    [btn addBlockForControlEvents:UIControlEventTouchUpInside block:^(id   _Nonnull sender) {
         STRONG_SELF(self);
         if(self){
-            
+            ((UIButton *)sender).selected = !((UIButton *)sender).selected;
             if([self.vc conformsToProtocol:@protocol(MineHomeVCConfig)] &&
-               [self.vc respondsToSelector:@selector(onTapRightBarBtnToHideSum:)]){
-                
-                [self.vc onTapRightBarBtnToHideSum:sender];
+               [self.vc respondsToSelector:@selector(onTapRightBarBtnToHideOrShowSum:)]){
+                [self.vc onTapRightBarBtnToHideOrShowSum:sender];
             }
         }
     }];
     
-    
+    UIBarButtonItem *rightItem = [[UIBarButtonItem alloc]initWithCustomView:btn];
     NSArray *rightBarButtonItems = _vc.navigationItem.rightBarButtonItems?:[NSArray array];
     NSMutableArray *mutable = [rightBarButtonItems mutableCopy];
     [mutable addObject:rightItem];

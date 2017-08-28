@@ -39,9 +39,9 @@
 
 
 //5. Mine
-"total_EarnedAmount"       = "Earned(¥)";
-"pending_commissionAmount" = "Pending(¥)";
-"account_balance:"         = "Balance:";
+"total_EarnedAmount"       = "Earned($)";
+"pending_commissionAmount" = "Pending($)";
+"account_balance:"         = "Balance:  %@$";
 "withDrawDeposit"          = "WithDraw";
 "my_order"                 = "MyOrders";
 "my_allOrders"             = "AllOrder";

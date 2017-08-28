@@ -42,6 +42,11 @@
     [self.tableView reloadData];
 }
 
+- (void)reloadTableHeader{
+
+    [self.tableView tjs_reloadTableHeader];
+}
+
 - (void)beginRefresh{
     
     [self.tableView.mj_header beginRefreshing];

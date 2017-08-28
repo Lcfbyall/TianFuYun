@@ -96,9 +96,10 @@
                                     animated:YES];
 }
 
-- (void)onTapRightBarBtnToHideSum:(id)sender{
-
-
+- (void)onTapRightBarBtnToHideOrShowSum:(id)sender{
+  
+    [self.interactor hideOrShowMoney:((UIButton *)sender).selected];
+   
 }
 
 @end

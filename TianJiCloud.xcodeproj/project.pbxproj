@@ -289,6 +289,9 @@
 		2C8BB7BD1F315D2800E2D75F /* HomeHeaderWeb.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C8BB7BC1F315D2800E2D75F /* HomeHeaderWeb.storyboard */; };
 		2C8BB7BF1F315DD000E2D75F /* HomeFooterWeb.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C8BB7BE1F315DD000E2D75F /* HomeFooterWeb.storyboard */; };
 		2C8BB7C91F31BB9F00E2D75F /* ProductContainerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8BB7C81F31BB9F00E2D75F /* ProductContainerController.m */; };
+		2C8CD0FD1F53BA9700F9654D /* UIImage+Combination.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD0FC1F53BA9700F9654D /* UIImage+Combination.m */; };
+		2C8CD1001F53C2F800F9654D /* UIImage+NamedWithSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD0FF1F53C2F800F9654D /* UIImage+NamedWithSize.m */; };
+		2C8CD1041F53FCA400F9654D /* UITableView+TJSTableHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD1031F53FCA400F9654D /* UITableView+TJSTableHeader.m */; };
 		2C8DE57E1F29D484009B3AE2 /* TJSHomeListConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE57D1F29D484009B3AE2 /* TJSHomeListConfigurator.m */; };
 		2C8DE5811F29D4F7009B3AE2 /* TJSHomeListTableAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE5801F29D4F7009B3AE2 /* TJSHomeListTableAdapter.m */; };
 		2C8DE5841F29D509009B3AE2 /* TJSHomeListInteractorImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE5831F29D509009B3AE2 /* TJSHomeListInteractorImpl.m */; };
@@ -1195,6 +1198,12 @@
 		2C8BB7BE1F315DD000E2D75F /* HomeFooterWeb.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HomeFooterWeb.storyboard; sourceTree = "<group>"; };
 		2C8BB7C71F31BB9F00E2D75F /* ProductContainerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductContainerController.h; sourceTree = "<group>"; };
 		2C8BB7C81F31BB9F00E2D75F /* ProductContainerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductContainerController.m; sourceTree = "<group>"; };
+		2C8CD0FB1F53BA9700F9654D /* UIImage+Combination.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Combination.h"; sourceTree = "<group>"; };
+		2C8CD0FC1F53BA9700F9654D /* UIImage+Combination.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Combination.m"; sourceTree = "<group>"; };
+		2C8CD0FE1F53C2F800F9654D /* UIImage+NamedWithSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+NamedWithSize.h"; sourceTree = "<group>"; };
+		2C8CD0FF1F53C2F800F9654D /* UIImage+NamedWithSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+NamedWithSize.m"; sourceTree = "<group>"; };
+		2C8CD1021F53FCA400F9654D /* UITableView+TJSTableHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+TJSTableHeader.h"; sourceTree = "<group>"; };
+		2C8CD1031F53FCA400F9654D /* UITableView+TJSTableHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+TJSTableHeader.m"; sourceTree = "<group>"; };
 		2C8DE57C1F29D484009B3AE2 /* TJSHomeListConfigurator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSHomeListConfigurator.h; sourceTree = "<group>"; };
 		2C8DE57D1F29D484009B3AE2 /* TJSHomeListConfigurator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSHomeListConfigurator.m; sourceTree = "<group>"; };
 		2C8DE57F1F29D4F7009B3AE2 /* TJSHomeListTableAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSHomeListTableAdapter.h; sourceTree = "<group>"; };
@@ -2305,6 +2314,7 @@
 				2CEC58B51F4FCDE7006C03F5 /* UIControl */,
 				2C89AD761F2C5136005C29AC /* UISearchBar */,
 				2C4412601F21E06C00C453EF /* UITextView */,
+				2C8CD1011F53FB5000F9654D /* UITableView */,
 				2C4412611F21E08E00C453EF /* UIView */,
 				2C88F68E1F4EBBCB009CF23E /* UIImageView */,
 				2C4412621F21E0AA00C453EF /* UILabel */,
@@ -2347,6 +2357,10 @@
 				2C4412811F21EA8900C453EF /* UIImage+Retinted.m */,
 				2C85E3B51F2F302900ADD360 /* UIImage+Resizeable.h */,
 				2C85E3B61F2F302900ADD360 /* UIImage+Resizeable.m */,
+				2C8CD0FB1F53BA9700F9654D /* UIImage+Combination.h */,
+				2C8CD0FC1F53BA9700F9654D /* UIImage+Combination.m */,
+				2C8CD0FE1F53C2F800F9654D /* UIImage+NamedWithSize.h */,
+				2C8CD0FF1F53C2F800F9654D /* UIImage+NamedWithSize.m */,
 			);
 			path = UIImage;
 			sourceTree = "<group>";
@@ -3809,6 +3823,15 @@
 			path = ProductList/Container;
 			sourceTree = "<group>";
 		};
+		2C8CD1011F53FB5000F9654D /* UITableView */ = {
+			isa = PBXGroup;
+			children = (
+				2C8CD1021F53FCA400F9654D /* UITableView+TJSTableHeader.h */,
+				2C8CD1031F53FCA400F9654D /* UITableView+TJSTableHeader.m */,
+			);
+			path = UITableView;
+			sourceTree = "<group>";
+		};
 		2C8DE57A1F29D406009B3AE2 /* Disaggregate */ = {
 			isa = PBXGroup;
 			children = (
@@ -5155,11 +5178,11 @@
 			children = (
 				2CCBE4781F331D91006C4018 /* MineHomeHeaderContainer.h */,
 				2CCBE4791F331D91006C4018 /* MineHomeHeaderContainer.m */,
-				2CCBE4811F3415F2006C4018 /* MineHomeHeaderCollectionLayout.h */,
-				2CCBE4821F3415F2006C4018 /* MineHomeHeaderCollectionLayout.m */,
 				2CCBE4841F3417A5006C4018 /* MineHeaderCollectionCell.h */,
 				2CCBE4851F3417A5006C4018 /* MineHeaderCollectionCell.m */,
 				2CEC59F31F50134D006C03F5 /* MineHeaderCollectionCell.xib */,
+				2CCBE4811F3415F2006C4018 /* MineHomeHeaderCollectionLayout.h */,
+				2CCBE4821F3415F2006C4018 /* MineHomeHeaderCollectionLayout.m */,
 			);
 			path = Header;
 			sourceTree = "<group>";
@@ -6305,6 +6328,7 @@
 				2C8BB7B81F315CA600E2D75F /* HomeHeaderWebController.m in Sources */,
 				2CCBE4831F3415F2006C4018 /* MineHomeHeaderCollectionLayout.m in Sources */,
 				2CD8970D1F45480B008F7C73 /* AddressManageInteractorImpl.m in Sources */,
+				2C8CD1041F53FCA400F9654D /* UITableView+TJSTableHeader.m in Sources */,
 				2C4D35D81F4C23B10082BB36 /* CumulativeInvestDefaultContentConfig.m in Sources */,
 				2C859CEB1F31EB2E00B86575 /* ZLCameraView.m in Sources */,
 				2C859CE01F31EB2E00B86575 /* DACircularProgressView.m in Sources */,
@@ -6579,6 +6603,7 @@
 				2C4C1CAF1F394E9500002166 /* FeedBackContainerConfig.m in Sources */,
 				2CD897191F4548E2008F7C73 /* AddressManageCellFactory.m in Sources */,
 				2C4D35E91F4C25860082BB36 /* CumulativeInvestTableAdapter.m in Sources */,
+				2C8CD0FD1F53BA9700F9654D /* UIImage+Combination.m in Sources */,
 				2CE5422E1F4EA52300205993 /* RegistApi.m in Sources */,
 				2CEC59C81F4FF6E8006C03F5 /* NSBundle+TianJiCloud.m in Sources */,
 				2CAF43071F2828C200ABCA5E /* TJSProductListDataSourceImpl.m in Sources */,
@@ -6683,6 +6708,7 @@
 				2C4C1CA21F39497900002166 /* TJSInvestPieChart.m in Sources */,
 				2CAF43061F2828C200ABCA5E /* TJSProductListConfigurator.m in Sources */,
 				2C4C1C951F3948E800002166 /* PNGenericChart.m in Sources */,
+				2C8CD1001F53C2F800F9654D /* UIImage+NamedWithSize.m in Sources */,
 				2C83C71E1F39B9C9004034CA /* PersonalMessageController.m in Sources */,
 				A292B26D1F39F8570086E03E /* CapitalRecordInfoModel.m in Sources */,
 				2C88F6971F4EC434009CF23E /* TJSActionSheet.m in Sources */,

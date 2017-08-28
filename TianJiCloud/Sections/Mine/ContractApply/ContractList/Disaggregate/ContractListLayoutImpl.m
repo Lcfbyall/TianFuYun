@@ -56,25 +56,17 @@
 - (void)setupRefreshControl{
     
     WEAK_SELF(self);
-    
     self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
-        
         STRONG_SELF(self);
-        
         if(self){
-            
             if ([self.delegate respondsToSelector:@selector(onRefresh)])
             {
                 [self.delegate onRefresh];
             }
-            
         }
-        
     }];
     
-    
     self.tableView.mj_header.ignoredScrollViewContentInsetTop = 16;
-    
 }
 
 

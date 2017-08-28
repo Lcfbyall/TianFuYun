@@ -53,6 +53,8 @@
 
 #import "UIImage+FromColor.h"
 #import "UIImage+Resizeable.h"
+#import "UIImage+Combination.h"
+#import "UIImage+NamedWithSize.h"
 
 #import "UIColor+HEX.h"
 #import "UIColor+TJSiOS7Colors.h"
@@ -61,6 +63,8 @@
 #import "UIButton+BackgroundColor.h"
 #import "UIButton+IBInspectableState.h"
 #import "UIButton+CommitStyle.h"
+
+#import "UITableView+TJSTableHeader.h"
 
 
 /** 5. vender **/

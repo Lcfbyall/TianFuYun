@@ -40,9 +40,10 @@ forCellReuseIdentifier:(Str(cellClass))];
 //UIStoryboard
 #define LOAD_Storyboard(name,identifier) [[UIStoryboard storyboardWithName:name bundle:nil] instantiateViewControllerWithIdentifier:identifier]
 //获取图片资源
-#define IMAGE(imageName) [UIImage imageNamed:[NSString stringWithFormat:@"%@",imageName]]
-
-#define IMAGEOriginal(imageName) [IMAGE(imageName) imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]
+#define IMAGE(imageName) [UIImage imageNamed:imageName]
+#define IMAGESize(imageName,imgsize) [UIImage tjs_imageNamed:imageName size:imgsize]
+#define IMAGEOriginal(imageName)  [UIImage tjs_imageNamed:imageName renderingMode:UIImageRenderingModeAlwaysOriginal]
+#define IMAGEOriginalSize(imageName,imgsize) [UIImage tjs_imageNamed:imageName size:imgsize  renderingMode:UIImageRenderingModeAlwaysOriginal]
 
 
 

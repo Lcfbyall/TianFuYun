@@ -16,4 +16,8 @@
 
 - (void)p_scrollViewDidScroll:(UIScrollView *)scrollView;
 
+- (void)tjs_bindDataToCellWithValue:(id)value;
+
+- (void)hideOrShowMoney:(BOOL)hide;
+
 @end

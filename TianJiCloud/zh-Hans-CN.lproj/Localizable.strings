@@ -37,13 +37,13 @@
 
 //4. Discovery
 "discovery_title_newsInformation" = "新闻资讯";
-"discovery_title_newsInformation" = "路演视频";
+"discovery_title_roadShowVedio" = "路演视频";
 
 
 //5. Mine
 "total_EarnedAmount"       = "累计赚取金额(元)";
 "pending_commissionAmount" = "待结算佣金(元)";
-"account_balance:"         = "账户余额:";
+"account_balance:"         = "账户余额:  %@元";
 "withDrawDeposit"          = "提现";
 "my_order"                 = "我的订单";
 "my_allOrders"             = "全部订单";
