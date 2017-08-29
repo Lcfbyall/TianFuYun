@@ -19,7 +19,7 @@
 
 + (instancetype)NetworkMonitorManager {
     
-    static StatisticManager * instance = nil;
+    static NetworkMonitorManager * instance = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         instance = [[self alloc] init];

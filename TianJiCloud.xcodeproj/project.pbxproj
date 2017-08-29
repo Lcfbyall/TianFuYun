@@ -299,6 +299,19 @@
 		2C8CD1251F55491900F9654D /* NetworkMonitorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD1241F55491900F9654D /* NetworkMonitorManager.m */; };
 		2C8CD1281F55493600F9654D /* KeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD1271F55493600F9654D /* KeyboardManager.m */; };
 		2C8CD12C1F554BA900F9654D /* RootControllerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD12B1F554BA900F9654D /* RootControllerManager.m */; };
+		2C8CD1301F55508900F9654D /* NewsInfomationListApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD12F1F55508900F9654D /* NewsInfomationListApi.m */; };
+		2C8CD1331F5550C400F9654D /* RoadShowListApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD1321F5550C400F9654D /* RoadShowListApi.m */; };
+		2C8CD1361F55518C00F9654D /* ProductFilterApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD1351F55518C00F9654D /* ProductFilterApi.m */; };
+		2C8CD13A1F5551E400F9654D /* ProductDetailConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD1391F5551E400F9654D /* ProductDetailConfig.m */; };
+		2C8CD13D1F5552F100F9654D /* ProductDetailFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD13C1F5552F100F9654D /* ProductDetailFooter.m */; };
+		2C8CD13F1F5552FC00F9654D /* ProductDetailFooter.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C8CD13E1F5552FC00F9654D /* ProductDetailFooter.xib */; };
+		2C8CD1421F5553A700F9654D /* ProductShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD1411F5553A700F9654D /* ProductShareView.m */; };
+		2C8CD1441F5553B100F9654D /* ProductShareView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C8CD1431F5553B100F9654D /* ProductShareView.xib */; };
+		2C8CD1481F5566DC00F9654D /* ProductShareItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD1471F5566DC00F9654D /* ProductShareItem.m */; };
+		2C8CD14F1F55728000F9654D /* ProductDetailConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD14E1F55728000F9654D /* ProductDetailConfigurator.m */; };
+		2C8CD1521F55729500F9654D /* ProductDetailInteractorImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD1511F55729500F9654D /* ProductDetailInteractorImpl.m */; };
+		2C8CD1551F55730E00F9654D /* ProductDetailLayoutImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD1541F55730E00F9654D /* ProductDetailLayoutImpl.m */; };
+		2C8CD1581F55731F00F9654D /* ProductDetailDataSourceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD1571F55731F00F9654D /* ProductDetailDataSourceImpl.m */; };
 		2C8DE57E1F29D484009B3AE2 /* TJSHomeListConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE57D1F29D484009B3AE2 /* TJSHomeListConfigurator.m */; };
 		2C8DE5811F29D4F7009B3AE2 /* TJSHomeListTableAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE5801F29D4F7009B3AE2 /* TJSHomeListTableAdapter.m */; };
 		2C8DE5841F29D509009B3AE2 /* TJSHomeListInteractorImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE5831F29D509009B3AE2 /* TJSHomeListInteractorImpl.m */; };
@@ -824,7 +837,6 @@
 		2C4412AC1F22031600C453EF /* TJSHudAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSHudAlert.m; sourceTree = "<group>"; };
 		2C4412AE1F2205B900C453EF /* TJSConstKeyForNetworkDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TJSConstKeyForNetworkDefine.h; sourceTree = "<group>"; };
 		2C4412AF1F2206A500C453EF /* TJSConstKeyForNotificaitonDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TJSConstKeyForNotificaitonDefine.h; sourceTree = "<group>"; };
-		2C4412B01F22075600C453EF /* TJSConstKeyFor3DAppKeyDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TJSConstKeyFor3DAppKeyDefine.h; sourceTree = "<group>"; };
 		2C4412B11F22077A00C453EF /* TJSConstKeyForRouteParamsDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TJSConstKeyForRouteParamsDefine.h; sourceTree = "<group>"; };
 		2C4412B21F2207CD00C453EF /* TJSLoginStateUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSLoginStateUtil.h; sourceTree = "<group>"; };
 		2C4412B31F2207CD00C453EF /* TJSLoginStateUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSLoginStateUtil.m; sourceTree = "<group>"; };
@@ -1221,6 +1233,34 @@
 		2C8CD1271F55493600F9654D /* KeyboardManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyboardManager.m; sourceTree = "<group>"; };
 		2C8CD12A1F554BA900F9654D /* RootControllerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootControllerManager.h; sourceTree = "<group>"; };
 		2C8CD12B1F554BA900F9654D /* RootControllerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootControllerManager.m; sourceTree = "<group>"; };
+		2C8CD12E1F55508900F9654D /* NewsInfomationListApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsInfomationListApi.h; sourceTree = "<group>"; };
+		2C8CD12F1F55508900F9654D /* NewsInfomationListApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsInfomationListApi.m; sourceTree = "<group>"; };
+		2C8CD1311F5550C400F9654D /* RoadShowListApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoadShowListApi.h; sourceTree = "<group>"; };
+		2C8CD1321F5550C400F9654D /* RoadShowListApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoadShowListApi.m; sourceTree = "<group>"; };
+		2C8CD1341F55518C00F9654D /* ProductFilterApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductFilterApi.h; sourceTree = "<group>"; };
+		2C8CD1351F55518C00F9654D /* ProductFilterApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductFilterApi.m; sourceTree = "<group>"; };
+		2C8CD1381F5551E400F9654D /* ProductDetailConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductDetailConfig.h; sourceTree = "<group>"; };
+		2C8CD1391F5551E400F9654D /* ProductDetailConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductDetailConfig.m; sourceTree = "<group>"; };
+		2C8CD13B1F5552F100F9654D /* ProductDetailFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductDetailFooter.h; sourceTree = "<group>"; };
+		2C8CD13C1F5552F100F9654D /* ProductDetailFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductDetailFooter.m; sourceTree = "<group>"; };
+		2C8CD13E1F5552FC00F9654D /* ProductDetailFooter.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductDetailFooter.xib; sourceTree = "<group>"; };
+		2C8CD1401F5553A700F9654D /* ProductShareView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductShareView.h; sourceTree = "<group>"; };
+		2C8CD1411F5553A700F9654D /* ProductShareView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductShareView.m; sourceTree = "<group>"; };
+		2C8CD1431F5553B100F9654D /* ProductShareView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductShareView.xib; sourceTree = "<group>"; };
+		2C8CD1461F5566DC00F9654D /* ProductShareItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductShareItem.h; sourceTree = "<group>"; };
+		2C8CD1471F5566DC00F9654D /* ProductShareItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductShareItem.m; sourceTree = "<group>"; };
+		2C8CD1491F55696C00F9654D /* SocialManagerDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SocialManagerDefine.h; sourceTree = "<group>"; };
+		2C8CD14D1F55728000F9654D /* ProductDetailConfigurator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductDetailConfigurator.h; sourceTree = "<group>"; };
+		2C8CD14E1F55728000F9654D /* ProductDetailConfigurator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductDetailConfigurator.m; sourceTree = "<group>"; };
+		2C8CD1501F55729500F9654D /* ProductDetailInteractorImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductDetailInteractorImpl.h; sourceTree = "<group>"; };
+		2C8CD1511F55729500F9654D /* ProductDetailInteractorImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductDetailInteractorImpl.m; sourceTree = "<group>"; };
+		2C8CD1531F55730E00F9654D /* ProductDetailLayoutImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductDetailLayoutImpl.h; sourceTree = "<group>"; };
+		2C8CD1541F55730E00F9654D /* ProductDetailLayoutImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductDetailLayoutImpl.m; sourceTree = "<group>"; };
+		2C8CD1561F55731F00F9654D /* ProductDetailDataSourceImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductDetailDataSourceImpl.h; sourceTree = "<group>"; };
+		2C8CD1571F55731F00F9654D /* ProductDetailDataSourceImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductDetailDataSourceImpl.m; sourceTree = "<group>"; };
+		2C8CD15C1F55736000F9654D /* ProductDetailProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductDetailProtocol.h; sourceTree = "<group>"; };
+		2C8CD15D1F55737500F9654D /* ProductDetailConfigurateProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductDetailConfigurateProtocol.h; sourceTree = "<group>"; };
+		2C8CD15E1F5573C900F9654D /* ProductDetailPrivateProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductDetailPrivateProtocol.h; sourceTree = "<group>"; };
 		2C8DE57C1F29D484009B3AE2 /* TJSHomeListConfigurator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSHomeListConfigurator.h; sourceTree = "<group>"; };
 		2C8DE57D1F29D484009B3AE2 /* TJSHomeListConfigurator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSHomeListConfigurator.m; sourceTree = "<group>"; };
 		2C8DE57F1F29D4F7009B3AE2 /* TJSHomeListTableAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSHomeListTableAdapter.h; sourceTree = "<group>"; };
@@ -2068,10 +2108,10 @@
 			children = (
 				A216E3271F48097100EBBD32 /* BankPickerView.h */,
 				A216E3281F48097100EBBD32 /* BankPickerView.m */,
+				2CEC5A0E1F50147A006C03F5 /* BankPickerView.xib */,
 				2C1B74EA1F4699A50000E71A /* BankCardAddBaseTableCell.h */,
 				2C1B74EB1F4699A50000E71A /* BankCardAddBaseTableCell.m */,
 				2CEC5A0D1F50147A006C03F5 /* BankCardAddDefaultCell.xib */,
-				2CEC5A0E1F50147A006C03F5 /* BankPickerView.xib */,
 				2C1B74ED1F4699BE0000E71A /* BankCardAddDefaultCell.h */,
 				2C1B74EE1F4699BE0000E71A /* BankCardAddDefaultCell.m */,
 				2C1B74F01F469A140000E71A /* BankCardAddHeaderFooterView.h */,
@@ -2234,15 +2274,15 @@
 		2C4411AA1F21981E00C453EF /* TianJiCloud */ = {
 			isa = PBXGroup;
 			children = (
-				2C801BA31F233F46009F82F7 /* Sections */,
-				2C4411FC1F219A5300C453EF /* Service */,
-				2C4411E21F219A5300C453EF /* Categories */,
-				2C4411FD1F219A5300C453EF /* Tools */,
-				2C4411FA1F219A5300C453EF /* NetworkAPIs */,
-				2C4411FB1F219A5300C453EF /* Resources */,
-				2C4411FE1F219A5300C453EF /* Vender */,
-				2C4411F61F219A5300C453EF /* Macro&Const */,
 				2CAF431B1F282D7C00ABCA5E /* View */,
+				2C4411FD1F219A5300C453EF /* Tools */,
+				2C4411FE1F219A5300C453EF /* Vender */,
+				2C4411FC1F219A5300C453EF /* Service */,
+				2C801BA31F233F46009F82F7 /* Sections */,
+				2C4411FB1F219A5300C453EF /* Resources */,
+				2C4411E21F219A5300C453EF /* Categories */,
+				2C4411FA1F219A5300C453EF /* NetworkAPIs */,
+				2C4411F61F219A5300C453EF /* Macro&Const */,
 				2C4411B71F21981E00C453EF /* Main.storyboard */,
 				2C4411BC1F21981E00C453EF /* LaunchScreen.storyboard */,
 				2C4411BA1F21981E00C453EF /* Assets.xcassets */,
@@ -2392,7 +2432,6 @@
 				2C4411F71F219A5300C453EF /* TJSConstKeyDefine.h */,
 				2C4412AE1F2205B900C453EF /* TJSConstKeyForNetworkDefine.h */,
 				2C4412AF1F2206A500C453EF /* TJSConstKeyForNotificaitonDefine.h */,
-				2C4412B01F22075600C453EF /* TJSConstKeyFor3DAppKeyDefine.h */,
 				2C4412B11F22077A00C453EF /* TJSConstKeyForRouteParamsDefine.h */,
 				2C4412B51F2208F700C453EF /* TJSApiParamasKeyDefine.h */,
 			);
@@ -2402,6 +2441,7 @@
 		2C4411FA1F219A5300C453EF /* NetworkAPIs */ = {
 			isa = PBXGroup;
 			children = (
+				2C8CD12D1F55502500F9654D /* Discovery */,
 				2CAF427B1F26EAC900ABCA5E /* AppVersion */,
 				2CAF426A1F26DEDE00ABCA5E /* Product */,
 				2CAF426C1F26DEEF00ABCA5E /* Mine */,
@@ -3836,6 +3876,7 @@
 			children = (
 				2C8CD1111F55034200F9654D /* SocailManager.h */,
 				2C8CD1121F55034200F9654D /* SocailManager.m */,
+				2C8CD1491F55696C00F9654D /* SocialManagerDefine.h */,
 			);
 			path = SocailService;
 			sourceTree = "<group>";
@@ -3905,6 +3946,71 @@
 			path = RootController;
 			sourceTree = "<group>";
 		};
+		2C8CD12D1F55502500F9654D /* Discovery */ = {
+			isa = PBXGroup;
+			children = (
+				2C8CD12E1F55508900F9654D /* NewsInfomationListApi.h */,
+				2C8CD12F1F55508900F9654D /* NewsInfomationListApi.m */,
+				2C8CD1311F5550C400F9654D /* RoadShowListApi.h */,
+				2C8CD1321F5550C400F9654D /* RoadShowListApi.m */,
+			);
+			path = Discovery;
+			sourceTree = "<group>";
+		};
+		2C8CD1371F5551BA00F9654D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2C8CD1401F5553A700F9654D /* ProductShareView.h */,
+				2C8CD1411F5553A700F9654D /* ProductShareView.m */,
+				2C8CD1431F5553B100F9654D /* ProductShareView.xib */,
+				2C8CD13B1F5552F100F9654D /* ProductDetailFooter.h */,
+				2C8CD13C1F5552F100F9654D /* ProductDetailFooter.m */,
+				2C8CD13E1F5552FC00F9654D /* ProductDetailFooter.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2C8CD1451F5566A800F9654D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2C8CD1461F5566DC00F9654D /* ProductShareItem.h */,
+				2C8CD1471F5566DC00F9654D /* ProductShareItem.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2C8CD14A1F55712C00F9654D /* Disaggregate */ = {
+			isa = PBXGroup;
+			children = (
+				2C8CD14D1F55728000F9654D /* ProductDetailConfigurator.h */,
+				2C8CD14E1F55728000F9654D /* ProductDetailConfigurator.m */,
+				2C8CD1501F55729500F9654D /* ProductDetailInteractorImpl.h */,
+				2C8CD1511F55729500F9654D /* ProductDetailInteractorImpl.m */,
+				2C8CD1561F55731F00F9654D /* ProductDetailDataSourceImpl.h */,
+				2C8CD1571F55731F00F9654D /* ProductDetailDataSourceImpl.m */,
+				2C8CD1531F55730E00F9654D /* ProductDetailLayoutImpl.h */,
+				2C8CD1541F55730E00F9654D /* ProductDetailLayoutImpl.m */,
+			);
+			path = Disaggregate;
+			sourceTree = "<group>";
+		};
+		2C8CD14B1F55715000F9654D /* NetworkTool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NetworkTool;
+			sourceTree = "<group>";
+		};
+		2C8CD14C1F55717000F9654D /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				2C8CD15C1F55736000F9654D /* ProductDetailProtocol.h */,
+				2C8CD15D1F55737500F9654D /* ProductDetailConfigurateProtocol.h */,
+				2C8CD15E1F5573C900F9654D /* ProductDetailPrivateProtocol.h */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
 		2C8DE57A1F29D406009B3AE2 /* Disaggregate */ = {
 			isa = PBXGroup;
 			children = (
@@ -3946,6 +4052,11 @@
 		2C8DE5971F29FA50009B3AE2 /* ProductDetail */ = {
 			isa = PBXGroup;
 			children = (
+				2C8CD14C1F55717000F9654D /* Protocol */,
+				2C8CD14B1F55715000F9654D /* NetworkTool */,
+				2C8CD14A1F55712C00F9654D /* Disaggregate */,
+				2C8CD1451F5566A800F9654D /* Model */,
+				2C8CD1371F5551BA00F9654D /* View */,
 				2C8DE5981F29FA75009B3AE2 /* Config */,
 				2C8DE5991F29FA75009B3AE2 /* Controller */,
 			);
@@ -3955,6 +4066,8 @@
 		2C8DE5981F29FA75009B3AE2 /* Config */ = {
 			isa = PBXGroup;
 			children = (
+				2C8CD1381F5551E400F9654D /* ProductDetailConfig.h */,
+				2C8CD1391F5551E400F9654D /* ProductDetailConfig.m */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -4558,6 +4671,8 @@
 				2CF8B5541F3DA324003B8520 /* ProductSearchApi.m */,
 				2CF8B5551F3DA324003B8520 /* ProductSearchHotApi.h */,
 				2CF8B5561F3DA324003B8520 /* ProductSearchHotApi.m */,
+				2C8CD1341F55518C00F9654D /* ProductFilterApi.h */,
+				2C8CD1351F55518C00F9654D /* ProductFilterApi.m */,
 			);
 			path = Product;
 			sourceTree = "<group>";
@@ -5590,13 +5705,13 @@
 			children = (
 				A216E32A1F48098800EBBD32 /* AddressPikerView.h */,
 				A216E32B1F48098800EBBD32 /* AddressPikerView.m */,
+				2CEC59FD1F501459006C03F5 /* AddressPikerView.xib */,
 				2CD896C51F453B09008F7C73 /* ContractAddAddressBaseCell.h */,
 				2CD896C61F453B09008F7C73 /* ContractAddAddressBaseCell.m */,
 				2CD896C81F453BE0008F7C73 /* ConAddressRightInputCell.h */,
 				2CD896C91F453BE0008F7C73 /* ConAddressRightInputCell.m */,
 				2CD896CE1F453C34008F7C73 /* ConAddressMiddleLabelCell.h */,
 				2CD896CF1F453C34008F7C73 /* ConAddressMiddleLabelCell.m */,
-				2CEC59FD1F501459006C03F5 /* AddressPikerView.xib */,
 				2CEC59FE1F501459006C03F5 /* ConAddressBottomInputCell.xib */,
 				2CEC59FF1F501459006C03F5 /* ConAddressMiddleLabelCell.xib */,
 				2CEC5A001F501459006C03F5 /* ConAddressRightInputCell.xib */,
@@ -6199,6 +6314,7 @@
 				2CEC5A021F501459006C03F5 /* ConAddressBottomInputCell.xib in Resources */,
 				2C300F8D1F2F3D4700DD440E /* Profile.storyboard in Resources */,
 				2CEC5A041F501459006C03F5 /* ConAddressRightInputCell.xib in Resources */,
+				2C8CD1441F5553B100F9654D /* ProductShareView.xib in Resources */,
 				2CEC59F41F50134D006C03F5 /* MineHeaderCollectionCell.xib in Resources */,
 				2C7A34531F2F6590004DD566 /* MyReward.storyboard in Resources */,
 				2CEC59EC1F501032006C03F5 /* ProductFilterResultCell.xib in Resources */,
@@ -6223,6 +6339,7 @@
 				2CEC5A0F1F50147A006C03F5 /* BankCardAddDefaultCell.xib in Resources */,
 				2C7A345B1F2F68E6004DD566 /* Feedback.storyboard in Resources */,
 				2CEC59EE1F501046006C03F5 /* ProductSearchResultCell.xib in Resources */,
+				2C8CD13F1F5552FC00F9654D /* ProductDetailFooter.xib in Resources */,
 				2CEC5A081F501464006C03F5 /* ContractApplyAddAddressCell.xib in Resources */,
 				2CEC5A241F50170D006C03F5 /* Localizable.strings in Resources */,
 				2C300F951F2F3F1200DD440E /* FindWithDrawCode.storyboard in Resources */,
@@ -6372,6 +6489,7 @@
 				2C4C1C931F3948E800002166 /* PNChartLabel.m in Sources */,
 				A2FE0A8C1F38B4B400E678E5 /* MyFavVCConfig.m in Sources */,
 				2C89AD791F2C5155005C29AC /* UISearchBar+TJSBlock.m in Sources */,
+				2C8CD1361F55518C00F9654D /* ProductFilterApi.m in Sources */,
 				2C859CF11F31EB2E00B86575 /* ZLPhotoPickerBrowserPhotoImageView.m in Sources */,
 				2CA639181F4ADD5400C39562 /* WithDrawDepositSumCell.m in Sources */,
 				2C44123C1F21D27700C453EF /* GVUserDefaults.m in Sources */,
@@ -6412,6 +6530,7 @@
 				2C4D35E51F4C25860082BB36 /* CumulativeInvestConfigurator.m in Sources */,
 				2C1B74C61F4694FF0000E71A /* BankCardListAddCell.m in Sources */,
 				2C89AD741F2B5C81005C29AC /* DiscoNewsDetailController.m in Sources */,
+				2C8CD13A1F5551E400F9654D /* ProductDetailConfig.m in Sources */,
 				2CD896E01F453D33008F7C73 /* ContractAddAddressInteractorImpl.m in Sources */,
 				2C83C7221F39BA14004034CA /* PlatformAnnounceCell.m in Sources */,
 				2C8BB7AC1F30878A00E2D75F /* HomeWebClickItem.m in Sources */,
@@ -6446,6 +6565,7 @@
 				2C859CEA1F31EB2E00B86575 /* ZLCameraImageView.m in Sources */,
 				2C4C1C131F384A4900002166 /* TJSMyOrderListLayoutImpl.m in Sources */,
 				2CCBE47A1F331D91006C4018 /* MineHomeHeaderContainer.m in Sources */,
+				2C8CD1581F55731F00F9654D /* ProductDetailDataSourceImpl.m in Sources */,
 				2CE542281F4EA4E900205993 /* LogoutApi.m in Sources */,
 				2C8CD1131F55034200F9654D /* SocailManager.m in Sources */,
 				2CD896D01F453C34008F7C73 /* ConAddressMiddleLabelCell.m in Sources */,
@@ -6453,8 +6573,10 @@
 				2C4412A51F2201FF00C453EF /* TJSAnimatingRequestAccessory.m in Sources */,
 				2C44123F1F21D2A600C453EF /* GVUserDefaults+TJSGlobalProperties.m in Sources */,
 				2CD8974E1F457B96008F7C73 /* AddressSelectedConfigurator.m in Sources */,
+				2C8CD1301F55508900F9654D /* NewsInfomationListApi.m in Sources */,
 				2CD897121F454839008F7C73 /* AddressManageCellModel.m in Sources */,
 				2C597DC31F4C2CB900415EB6 /* SettingHomeLayoutImpl.m in Sources */,
+				2C8CD14F1F55728000F9654D /* ProductDetailConfigurator.m in Sources */,
 				2C1B74E31F4698A30000E71A /* BankCardAddCellLayoutConfig.m in Sources */,
 				2CD8970E1F45480B008F7C73 /* AddressManageLayoutImpl.m in Sources */,
 				2C4412591F21DDA900C453EF /* UIWindow+Transition.m in Sources */,
@@ -6576,6 +6698,7 @@
 				2CA638FE1F4AD37700C39562 /* WithDrawDepositRecord.m in Sources */,
 				2CAF42DE1F281B8600ABCA5E /* ProductListNetworkTool.m in Sources */,
 				2CCC85C81F3AF5A20009FC1C /* ProductFilterItem.m in Sources */,
+				2C8CD1421F5553A700F9654D /* ProductShareView.m in Sources */,
 				2C4C1CB91F39570400002166 /* FeedbackHistoryController.m in Sources */,
 				2CB4F6561F43048000FF98C9 /* ContractApplyNetworkTool.m in Sources */,
 				2C859CF61F31EB2E00B86575 /* ZLPhotoPickerDatas.m in Sources */,
@@ -6601,6 +6724,7 @@
 				2C859CF71F31EB2E00B86575 /* ZLPhotoPickerGroup.m in Sources */,
 				2C4D35E61F4C25860082BB36 /* CumulativeInvestDataSourceImpl.m in Sources */,
 				2CCC85B01F3AEE3A0009FC1C /* TJSProductFilterDataSourceImpl.m in Sources */,
+				2C8CD1481F5566DC00F9654D /* ProductShareItem.m in Sources */,
 				2C85E3A41F2F1AF900ADD360 /* TJSMineHomeDefaultCellContentConfig.m in Sources */,
 				2C1B74E61F4698A30000E71A /* BankCardAddDefaultContentConfig.m in Sources */,
 				2CEC58D71F4FCDE7006C03F5 /* UIButton+TJSWebCache.m in Sources */,
@@ -6645,6 +6769,7 @@
 				2C4412041F219A5300C453EF /* UIImage+FromColor.m in Sources */,
 				2CAF42851F27261A00ABCA5E /* TJSProductDeleteApi.m in Sources */,
 				2C8BB7BB1F315CB500E2D75F /* HomeFooterWebController.m in Sources */,
+				2C8CD1551F55730E00F9654D /* ProductDetailLayoutImpl.m in Sources */,
 				2C597DC41F4C2CB900415EB6 /* SettingHomeTableAdapter.m in Sources */,
 				2CAF43081F2828C200ABCA5E /* TJSProductListInteractorImpl.m in Sources */,
 				A292B2641F39F81D0086E03E /* CapitalRecordConfigurator.m in Sources */,
@@ -6695,6 +6820,7 @@
 				2CAF42F51F28273300ABCA5E /* ProductListCellContentView.m in Sources */,
 				2CD897511F457B96008F7C73 /* AddressSelectedLayoutImpl.m in Sources */,
 				2C8DE60C1F2B15F3009B3AE2 /* TJSDiscoNewsListVCConfig.m in Sources */,
+				2C8CD13D1F5552F100F9654D /* ProductDetailFooter.m in Sources */,
 				2C83C72C1F39BB46004034CA /* HistoryRewardsController.m in Sources */,
 				2C85E3581F2ECDA200ADD360 /* CapitalRecordContainer.m in Sources */,
 				2CAF43111F2829B300ABCA5E /* TJSAppInfo.m in Sources */,
@@ -6723,6 +6849,7 @@
 				2C4412A91F2201FF00C453EF /* TJWUrlArgumentsFilter.m in Sources */,
 				2C859CFF1F31EB2E00B86575 /* ZLPhotoPickerFooterCollectionReusableView.m in Sources */,
 				2C8DE5B31F2AD8A0009B3AE2 /* DiscoveryNewsListCell.m in Sources */,
+				2C8CD1331F5550C400F9654D /* RoadShowListApi.m in Sources */,
 				2C859CFC1F31EB2E00B86575 /* ZLPhotoPickerViewController.m in Sources */,
 				2C8BB7B51F3088E200E2D75F /* HomeFooterConfig.m in Sources */,
 				2C85E37D1F2F031600ADD360 /* TJSMineHomeTableAdapter.m in Sources */,
@@ -6811,6 +6938,7 @@
 				2CEC58D61F4FCDE7006C03F5 /* UIButton+ImageTitleEdgeInset.m in Sources */,
 				2CD896971F442765008F7C73 /* ContractApplyContentConfigFactory.m in Sources */,
 				2C8DE6181F2B43A8009B3AE2 /* DiscoveryRoadShowLayout.m in Sources */,
+				2C8CD1521F55729500F9654D /* ProductDetailInteractorImpl.m in Sources */,
 				2CE542411F4EA85400205993 /* UpLoadIconAPi.m in Sources */,
 				2CCBE4931F34207C006C4018 /* TJSBaseTableViewCell.m in Sources */,
 				2C859CEF1F31EB2E00B86575 /* ZLPhotoPickerBrowserViewController+SignlePhotoBrowser.m in Sources */,
@@ -7047,7 +7175,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = G4MUNEEJKB;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/TianJiCloud/PrefixHeader.pch";
 				INFOPLIST_FILE = TianJiCloud/Info.plist;

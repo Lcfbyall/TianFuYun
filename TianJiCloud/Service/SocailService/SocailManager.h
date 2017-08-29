@@ -9,23 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import <UMSocialCore/UMSocialCore.h>
-
-static NSString * _Nullable const kShareTitle   = @"shareTitle";
-static NSString * _Nullable const kShareContent = @"shareContent";
-static NSString * _Nullable const kShareImage   = @"shareImage";
-static NSString * _Nullable const kShareUrl     = @"shareUrl";
-
-
-typedef void(^TJSShareResultCompletion)(_Nullable id);
-
-
-#pragma mark - share type
-typedef NS_ENUM(NSInteger, TJSSharePlatType) {
-    
-    TJSSharePlatTypeWechatSession = UMSocialPlatformType_WechatSession,  // 微信好友
-    TJSSharePlatTypeWechatTimeLine = UMSocialPlatformType_WechatTimeLine, // 微信朋友圈
-    TJSSharePlatTypeQQ = UMSocialPlatformType_QQ,  // QQ好友
-};
+#import "SocialManagerDefine.h"
 
 
 @interface SocailManager : NSObject<TJSAppService>

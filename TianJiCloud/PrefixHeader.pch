@@ -20,7 +20,6 @@
 #import "TJSConstKeyDefine.h"
 #import "TJSConstKeyForNetworkDefine.h"
 #import "TJSConstKeyForNotificaitonDefine.h"
-#import "TJSConstKeyFor3DAppKeyDefine.h"
 #import "TJSConstKeyForRouteParamsDefine.h"
 #import "TJSApiParamasKeyDefine.h"
 
@@ -29,6 +28,12 @@
 
 #import "TJSAppDelegate.h"
 #import "TJSAppServiceManager.h"
+#import "RootControllerManager.h"
+#import "SocailManager.h"
+#import "PushManager.h"
+#import "StatisticManager.h"
+#import "NetworkMonitorManager.h"
+#import "KeyboardManager.h"
 #import "TJSHudAlert.h"
 #import "TJSSystemAlertMaker.h"
 #import "TJSThemeService.h"
@@ -44,28 +49,21 @@
 /** 4. category **/
 
 #import "NSBundle+TianJiCloud.h"
-
 #import "UIViewController+StackLevel.h"
 #import "UIViewController+RouteParams.h"
-
 #import "UISearchBar+TJSBlock.h"
-
 #import "UIView+TJSFrame.h"
 #import "UIView+TJSViewController.h"
-
 #import "UIImage+FromColor.h"
 #import "UIImage+Resizeable.h"
 #import "UIImage+Combination.h"
 #import "UIImage+NamedWithSize.h"
-
 #import "UIColor+HEX.h"
 #import "UIColor+TJSiOS7Colors.h"
-
 #import "UIButton+ImageTitleEdgeInset.h"
 #import "UIButton+BackgroundColor.h"
 #import "UIButton+IBInspectableState.h"
 #import "UIButton+CommitStyle.h"
-
 #import "UITableView+TJSTableHeader.h"
 
 

@@ -7,8 +7,13 @@
 //
 
 #import "TJSProductDetailController.h"
+#import "ProductDetailConfig.h"
 
 @interface TJSProductDetailController ()
+
+@property (nonatomic,strong)ProductDetailConfig *config;
+
+
 
 @end
 
@@ -17,21 +22,47 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    [self setupConfig];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+    
+    
+    
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+#pragma mark - config
+
+- (void)setupConfig{
+  
+    _config = [[ProductDetailConfig alloc]init];
+    
+    [_config setup:self];
 }
-*/
+
+- (void)setupConfigurator{
+  
+    
+}
+
+#pragma mark - <TJSBaseVCConfig>
+
+- (void)tjs_configBaseView{
+
+  
+}
+
+- (UIView *)tjs_listView{
+  
+    return self.tjs_wkWebView;
+
+}
+
 
 @end

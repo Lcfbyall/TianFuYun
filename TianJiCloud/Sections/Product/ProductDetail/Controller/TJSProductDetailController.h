@@ -7,6 +7,7 @@
 //
 
 #import "TJSBaseWebViewController.h"
+#import "ProductDetailConfigurateProtocol.h"
 
 @interface TJSProductDetailController : TJSBaseWebViewController
 

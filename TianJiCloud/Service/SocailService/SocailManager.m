@@ -9,16 +9,6 @@
 #import "SocailManager.h"
 
 
-// 友盟 appKey
-static NSString *const kUMengAppKey = @"58da1f154ad1562e8f000ea6";
-// 友盟分享相关的 appId 、 appKey
-static NSString *const kQQAppKey = @"1106069346";
-static NSString *const kQQAppSecret = @"RdYutqqdbKFNyfud";
-static NSString *const kWechatAppKey = @"wx62fb2dd6a4567204";
-static NSString *const kWechatAppSecret = @"a4853851fcbd48b46b0d4cb462ff2f84";
-static NSString *const kShareBasicUrl = @"https://www.tjjf.com";
-
-
 @implementation SocailManager
 
 + (instancetype)sharedManager {
