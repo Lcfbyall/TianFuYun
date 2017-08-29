@@ -10,6 +10,8 @@
 
 @interface TJSAlertHandleUtil : NSObject
 
++ (void)alertHandleWhenNetNotReachable;
+
 + (void)alertHandleCallManager;
 
 + (void)alertHandleWhenCallNotAvailableOnSimulator;

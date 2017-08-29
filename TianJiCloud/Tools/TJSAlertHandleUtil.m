@@ -17,6 +17,15 @@
 
 @implementation TJSAlertHandleUtil
 
++ (void)alertHandleWhenNetNotReachable {
+    
+    ALERT.title(@"出错啦!").message(@"当前无网络连接,请检查您的网络环境").action(@"确定",^(UIAlertAction *action){
+        
+        
+    }).show();
+    
+}
+
 + (void)alertHandleCallManager{
   
     NSString *title = @"联系专属服务经理";
