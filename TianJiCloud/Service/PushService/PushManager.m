@@ -55,25 +55,24 @@ typedef NS_ENUM(NSInteger, TJSPushType) {
 }
 
 
-
 #pragma mark - Public
 
 // 初始化个推sdk
-+ (void)startGeTuiSDK{
+- (void)startGeTuiSDK{
 
     [GeTuiSdk startSdkWithAppId:kGtAppId appKey:kGtAppKey appSecret:kGtAppSecret delegate:[PushManager sharedManager]];
-    [PushManager registerUserNotification];
+    [[PushManager sharedManager] registerUserNotification];
 }
 
 // 重置红点个数
-+ (void)resetBadge{
+- (void)resetBadge{
 
     [GeTuiSdk resetBadge];
     [[UIApplication sharedApplication] setApplicationIconBadgeNumber:0];
 }
 
 // 设置红点个数
-+ (void)setBadge:(NSInteger)badge{
+- (void)setBadge:(NSInteger)badge{
 
     [GeTuiSdk setBadge:badge];
     [[UIApplication sharedApplication] setApplicationIconBadgeNumber:badge];
@@ -83,7 +82,7 @@ typedef NS_ENUM(NSInteger, TJSPushType) {
 
 #pragma mark - Private
 
-+ (void)registerUserNotification {
+- (void)registerUserNotification {
     
     UIUserNotificationType types = UIUserNotificationTypeAlert | UIUserNotificationTypeBadge | UIUserNotificationTypeSound;
     
@@ -92,15 +91,21 @@ typedef NS_ENUM(NSInteger, TJSPushType) {
     [[UIApplication sharedApplication] registerUserNotificationSettings:settings];
 }
 
-+ (void)registerDeviceToken:(NSString *)token {
+- (void)registerDeviceToken:(NSString *)token {
     
     [GeTuiSdk registerDeviceToken:token];
 }
 
 
-#pragma mark - <UIApplicationDelegate>
+
+#pragma mark - <TJSAppService>
+
+TJS_EXPORT_SERVICE(@"PushService")
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    [[PushManager sharedManager] startGeTuiSDK];
     
     return YES;
 }
@@ -118,7 +123,7 @@ typedef NS_ENUM(NSInteger, TJSPushType) {
     token = [token stringByReplacingOccurrencesOfString:@" " withString:@""];
     NSLog(@"deviceToken = %@", token);
     
-    [PushManager registerDeviceToken:token];
+    [[PushManager sharedManager] registerDeviceToken:token];
 }
 
 /*
@@ -128,7 +133,7 @@ typedef NS_ENUM(NSInteger, TJSPushType) {
     
     NSInteger badge = [userInfo[@"aps"][@"badge"] integerValue];
     
-    [PushManager setBadge:badge];
+    [[PushManager sharedManager] setBadge:badge];
     
     NSString *payLoad = userInfo[@"aps"][@"category"];
     

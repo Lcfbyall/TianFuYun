@@ -22,18 +22,17 @@ typedef void(^TJSShareResultCompletion)(_Nullable id);
 #pragma mark - share type
 typedef NS_ENUM(NSInteger, TJSSharePlatType) {
     
-    TJSSharePlatTypeWechatSession = UMSocialPlatformType_WechatSession,                    // 微信好友
-    TJSSharePlatTypeWechatTimeLine = UMSocialPlatformType_WechatTimeLine,                   // 微信朋友圈
-    TJSSharePlatTypeQQ = UMSocialPlatformType_QQ,                               // QQ好友
+    TJSSharePlatTypeWechatSession = UMSocialPlatformType_WechatSession,  // 微信好友
+    TJSSharePlatTypeWechatTimeLine = UMSocialPlatformType_WechatTimeLine, // 微信朋友圈
+    TJSSharePlatTypeQQ = UMSocialPlatformType_QQ,  // QQ好友
 };
 
-@interface SocailManager : NSObject<UIApplicationDelegate>
 
-- (instancetype _Nullable )init NS_UNAVAILABLE;
+@interface SocailManager : NSObject<TJSAppService>
 
-+ (void)startUmengShareSDK;
+- (instancetype _Nullable)init NS_UNAVAILABLE;
 
-+ (void)shareToPlatform:(UMSocialPlatformType)platformType
+- (void)shareToPlatform:(UMSocialPlatformType)platformType
                paramDic:(NSDictionary *_Nullable)paramDic
              completion:(TJSShareResultCompletion _Nullable )completion;
 

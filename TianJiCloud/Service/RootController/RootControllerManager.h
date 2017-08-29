@@ -1,5 +1,5 @@
 //
-//  FMDBManager.h
+//  RootControllerManager.h
 //  TianJiCloud
 //
 //  Created by 朱鹏 on 2017/8/29.
@@ -8,9 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface FMDBManager : NSObject
+@interface RootControllerManager : NSObject<TJSAppService>
 
 - (instancetype _Nullable)init NS_UNAVAILABLE;
-
 
 @end

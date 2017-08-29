@@ -9,8 +9,9 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@interface StatisticManager : NSObject<UIApplicationDelegate>
+@interface StatisticManager : NSObject
 
+- (instancetype _Nullable)init NS_UNAVAILABLE;
 
 
 @end

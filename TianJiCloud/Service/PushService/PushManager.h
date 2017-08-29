@@ -9,16 +9,18 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@interface PushManager : NSObject<UIApplicationDelegate>
+@interface PushManager : NSObject<TJSAppService>
+
+- (instancetype _Nullable)init NS_UNAVAILABLE;
 
 // 初始化个推sdk
-+ (void)startGeTuiSDK;
+- (void)startGeTuiSDK;
 
 // 重置红点个数
-+ (void)resetBadge;
+- (void)resetBadge;
 
 // 设置红点个数
-+ (void)setBadge:(NSInteger)badge;
+- (void)setBadge:(NSInteger)badge;
 
 
 

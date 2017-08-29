@@ -1,18 +1,19 @@
 //
-//  AppDelegate+TJSKeyboardSetting.m
+//  KeyboardManager.m
 //  TianJiCloud
 //
-//  Created by 朱鹏 on 2017/8/25.
+//  Created by 朱鹏 on 2017/8/29.
 //  Copyright © 2017年 TianJiMoney. All rights reserved.
 //
 
-#import "AppDelegate+TJSKeyboardSetting.h"
+#import "KeyboardManager.h"
 #import "IQKeyboardManager.h"
 
-@implementation AppDelegate (TJSKeyboardSetting)
+
+@implementation KeyboardManager
 
 + (void)load{
-
+    
     [self IQKeyboardManagersettings];
 }
 

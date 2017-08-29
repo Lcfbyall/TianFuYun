@@ -1,5 +1,5 @@
 //
-//  FMDBManager.h
+//  KeyboardManager.h
 //  TianJiCloud
 //
 //  Created by 朱鹏 on 2017/8/29.
@@ -8,9 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface FMDBManager : NSObject
-
-- (instancetype _Nullable)init NS_UNAVAILABLE;
-
+@interface KeyboardManager : NSObject
 
 @end

@@ -11,13 +11,11 @@
 
 // 友盟 appKey
 static NSString *const kUMengAppKey = @"58da1f154ad1562e8f000ea6";
-
 // 友盟分享相关的 appId 、 appKey
 static NSString *const kQQAppKey = @"1106069346";
 static NSString *const kQQAppSecret = @"RdYutqqdbKFNyfud";
 static NSString *const kWechatAppKey = @"wx62fb2dd6a4567204";
 static NSString *const kWechatAppSecret = @"a4853851fcbd48b46b0d4cb462ff2f84";
-
 static NSString *const kShareBasicUrl = @"https://www.tjjf.com";
 
 
@@ -34,7 +32,7 @@ static NSString *const kShareBasicUrl = @"https://www.tjjf.com";
     return instance;
 }
 
-+ (void)startUmengShareSDK {
+- (void)startUmengShareSDK {
     
     [[UMSocialManager defaultManager] openLog:YES];
     
@@ -42,10 +40,12 @@ static NSString *const kShareBasicUrl = @"https://www.tjjf.com";
     
     [[UMSocialManager defaultManager] setUmSocialAppSecret:@""];
     
-    [SocailManager configUSharePlatforms];
+    [[SocailManager sharedManager] configUSharePlatforms];
 }
 
-+ (void)configUSharePlatforms {
+
+
+- (void)configUSharePlatforms {
 
     /* 设置微信的appKey和appSecret */
     [[UMSocialManager defaultManager] setPlaform:UMSocialPlatformType_WechatSession appKey:kWechatAppKey appSecret:kWechatAppSecret redirectURL:kShareBasicUrl];
@@ -58,10 +58,9 @@ static NSString *const kShareBasicUrl = @"https://www.tjjf.com";
 
 }
 
-+ (void)shareToPlatform:(UMSocialPlatformType)platformType
+- (void)shareToPlatform:(UMSocialPlatformType)platformType
                paramDic:(NSDictionary *)paramDic
              completion:(TJSShareResultCompletion)completion{
-    
     
     //创建分享消息对象
     UMSocialMessageObject *messageObject = [UMSocialMessageObject messageObject];
@@ -91,10 +90,16 @@ static NSString *const kShareBasicUrl = @"https://www.tjjf.com";
 }
 
 
-#pragma mark - <UIApplicationDelegate>
+
+
+#pragma mark - <TJSAppService>
+
+TJS_EXPORT_SERVICE(@"SocialService")
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
+    [[SocailManager sharedManager] startUmengShareSDK];
+    
     return YES;
 }
 

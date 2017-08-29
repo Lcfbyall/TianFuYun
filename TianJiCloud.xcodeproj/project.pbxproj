@@ -56,8 +56,6 @@
 		2C1B750A1F46C1100000E71A /* BankCardAddNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B75091F46C1100000E71A /* BankCardAddNetworkTool.m */; };
 		2C1BFEBD1F29779100665A71 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C1BFEBC1F29779100665A71 /* Home.storyboard */; };
 		2C1BFEBF1F2978C500665A71 /* Discovery.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C1BFEBE1F2978C500665A71 /* Discovery.storyboard */; };
-		2C1D88D01F4FB9C0006A4F00 /* AppDelegate+TJSKeyboardSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1D88CF1F4FB9C0006A4F00 /* AppDelegate+TJSKeyboardSetting.m */; };
-		2C1D88D31F4FBA4E006A4F00 /* AppDelegate+TJSSocialSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1D88D21F4FBA4E006A4F00 /* AppDelegate+TJSSocialSetting.m */; };
 		2C2E65991F4D143B00681758 /* SettingHomeHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2E65981F4D143B00681758 /* SettingHomeHeader.m */; };
 		2C300F7C1F2F32BF00DD440E /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C300F7B1F2F32BF00DD440E /* Settings.storyboard */; };
 		2C300F7F1F2F3C3C00DD440E /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C300F7E1F2F3C3C00DD440E /* ProfileViewController.m */; };
@@ -86,7 +84,6 @@
 		2C4412041F219A5300C453EF /* UIImage+FromColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4411F01F219A5300C453EF /* UIImage+FromColor.m */; };
 		2C4412051F219A5300C453EF /* UIImage+Stretchable.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4411F21F219A5300C453EF /* UIImage+Stretchable.m */; };
 		2C4412061F219A5300C453EF /* UINavigationBar+StyleConfigure.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4411F51F219A5300C453EF /* UINavigationBar+StyleConfigure.m */; };
-		2C4412311F21AA5900C453EF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C44122F1F21AA5900C453EF /* AppDelegate.m */; };
 		2C44123C1F21D27700C453EF /* GVUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C44123B1F21D27600C453EF /* GVUserDefaults.m */; };
 		2C44123F1F21D2A600C453EF /* GVUserDefaults+TJSGlobalProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C44123E1F21D2A600C453EF /* GVUserDefaults+TJSGlobalProperties.m */; };
 		2C4412431F21D36200C453EF /* TJSEnumValueService.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4412421F21D36200C453EF /* TJSEnumValueService.m */; };
@@ -297,6 +294,11 @@
 		2C8CD1131F55034200F9654D /* SocailManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD1121F55034200F9654D /* SocailManager.m */; };
 		2C8CD1161F55035100F9654D /* StatisticManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD1151F55035100F9654D /* StatisticManager.m */; };
 		2C8CD1191F55035E00F9654D /* PushManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD1181F55035E00F9654D /* PushManager.m */; };
+		2C8CD11F1F55469D00F9654D /* TJSAppServiceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD11C1F55469D00F9654D /* TJSAppServiceManager.m */; };
+		2C8CD1201F55469D00F9654D /* TJSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD11E1F55469D00F9654D /* TJSAppDelegate.m */; };
+		2C8CD1251F55491900F9654D /* NetworkMonitorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD1241F55491900F9654D /* NetworkMonitorManager.m */; };
+		2C8CD1281F55493600F9654D /* KeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD1271F55493600F9654D /* KeyboardManager.m */; };
+		2C8CD12C1F554BA900F9654D /* RootControllerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD12B1F554BA900F9654D /* RootControllerManager.m */; };
 		2C8DE57E1F29D484009B3AE2 /* TJSHomeListConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE57D1F29D484009B3AE2 /* TJSHomeListConfigurator.m */; };
 		2C8DE5811F29D4F7009B3AE2 /* TJSHomeListTableAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE5801F29D4F7009B3AE2 /* TJSHomeListTableAdapter.m */; };
 		2C8DE5841F29D509009B3AE2 /* TJSHomeListInteractorImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE5831F29D509009B3AE2 /* TJSHomeListInteractorImpl.m */; };
@@ -518,9 +520,6 @@
 		2CE542481F4EA9BA00205993 /* ModifyWithDrawCodeApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE542471F4EA9BA00205993 /* ModifyWithDrawCodeApi.m */; };
 		2CE5424B1F4EAA0900205993 /* ProfessionVertifyApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE5424A1F4EAA0900205993 /* ProfessionVertifyApi.m */; };
 		2CE85D091F4EE18200666DE4 /* TJSSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE85D081F4EE18200666DE4 /* TJSSegmentedControl.m */; };
-		2CEC58AE1F4FCCCB006C03F5 /* AppDelegate+TJSStatisticsSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CEC58AD1F4FCCCB006C03F5 /* AppDelegate+TJSStatisticsSetting.m */; };
-		2CEC58B11F4FCCDC006C03F5 /* AppDelegate+TJSRemotePushSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CEC58B01F4FCCDC006C03F5 /* AppDelegate+TJSRemotePushSetting.m */; };
-		2CEC58B41F4FCD3A006C03F5 /* AppDelegate+TJSNetworkMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CEC58B31F4FCD3A006C03F5 /* AppDelegate+TJSNetworkMonitor.m */; };
 		2CEC58D11F4FCDE7006C03F5 /* UIButton+BackgroundColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CEC58B81F4FCDE7006C03F5 /* UIButton+BackgroundColor.m */; };
 		2CEC58D21F4FCDE7006C03F5 /* UIButton+CommitStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CEC58BA1F4FCDE7006C03F5 /* UIButton+CommitStyle.m */; };
 		2CEC58D31F4FCDE7006C03F5 /* UIButton+ContentRect.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CEC58BC1F4FCDE7006C03F5 /* UIButton+ContentRect.m */; };
@@ -726,10 +725,6 @@
 		2C1B75091F46C1100000E71A /* BankCardAddNetworkTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankCardAddNetworkTool.m; sourceTree = "<group>"; };
 		2C1BFEBC1F29779100665A71 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		2C1BFEBE1F2978C500665A71 /* Discovery.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Discovery.storyboard; sourceTree = "<group>"; };
-		2C1D88CE1F4FB9C0006A4F00 /* AppDelegate+TJSKeyboardSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+TJSKeyboardSetting.h"; sourceTree = "<group>"; };
-		2C1D88CF1F4FB9C0006A4F00 /* AppDelegate+TJSKeyboardSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+TJSKeyboardSetting.m"; sourceTree = "<group>"; };
-		2C1D88D11F4FBA4E006A4F00 /* AppDelegate+TJSSocialSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+TJSSocialSetting.h"; sourceTree = "<group>"; };
-		2C1D88D21F4FBA4E006A4F00 /* AppDelegate+TJSSocialSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+TJSSocialSetting.m"; sourceTree = "<group>"; };
 		2C2E65971F4D143B00681758 /* SettingHomeHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingHomeHeader.h; sourceTree = "<group>"; };
 		2C2E65981F4D143B00681758 /* SettingHomeHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingHomeHeader.m; sourceTree = "<group>"; };
 		2C300F7B1F2F32BF00DD440E /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
@@ -780,8 +775,6 @@
 		2C4411F51F219A5300C453EF /* UINavigationBar+StyleConfigure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+StyleConfigure.m"; sourceTree = "<group>"; };
 		2C4411F71F219A5300C453EF /* TJSConstKeyDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSConstKeyDefine.h; sourceTree = "<group>"; };
 		2C4411F81F219A5300C453EF /* TJSToolMacroDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSToolMacroDefine.h; sourceTree = "<group>"; };
-		2C44122E1F21AA5900C453EF /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		2C44122F1F21AA5900C453EF /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		2C44123A1F21D27600C453EF /* GVUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GVUserDefaults.h; sourceTree = "<group>"; };
 		2C44123B1F21D27600C453EF /* GVUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GVUserDefaults.m; sourceTree = "<group>"; };
 		2C44123D1F21D2A600C453EF /* GVUserDefaults+TJSGlobalProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GVUserDefaults+TJSGlobalProperties.h"; sourceTree = "<group>"; };
@@ -1218,6 +1211,16 @@
 		2C8CD1151F55035100F9654D /* StatisticManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatisticManager.m; sourceTree = "<group>"; };
 		2C8CD1171F55035E00F9654D /* PushManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushManager.h; sourceTree = "<group>"; };
 		2C8CD1181F55035E00F9654D /* PushManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushManager.m; sourceTree = "<group>"; };
+		2C8CD11B1F55469D00F9654D /* TJSAppServiceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSAppServiceManager.h; sourceTree = "<group>"; };
+		2C8CD11C1F55469D00F9654D /* TJSAppServiceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSAppServiceManager.m; sourceTree = "<group>"; };
+		2C8CD11D1F55469D00F9654D /* TJSAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSAppDelegate.h; sourceTree = "<group>"; };
+		2C8CD11E1F55469D00F9654D /* TJSAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSAppDelegate.m; sourceTree = "<group>"; };
+		2C8CD1231F55491900F9654D /* NetworkMonitorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkMonitorManager.h; sourceTree = "<group>"; };
+		2C8CD1241F55491900F9654D /* NetworkMonitorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkMonitorManager.m; sourceTree = "<group>"; };
+		2C8CD1261F55493600F9654D /* KeyboardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyboardManager.h; sourceTree = "<group>"; };
+		2C8CD1271F55493600F9654D /* KeyboardManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyboardManager.m; sourceTree = "<group>"; };
+		2C8CD12A1F554BA900F9654D /* RootControllerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootControllerManager.h; sourceTree = "<group>"; };
+		2C8CD12B1F554BA900F9654D /* RootControllerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootControllerManager.m; sourceTree = "<group>"; };
 		2C8DE57C1F29D484009B3AE2 /* TJSHomeListConfigurator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSHomeListConfigurator.h; sourceTree = "<group>"; };
 		2C8DE57D1F29D484009B3AE2 /* TJSHomeListConfigurator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSHomeListConfigurator.m; sourceTree = "<group>"; };
 		2C8DE57F1F29D4F7009B3AE2 /* TJSHomeListTableAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSHomeListTableAdapter.h; sourceTree = "<group>"; };
@@ -1689,12 +1692,6 @@
 		2CE5424A1F4EAA0900205993 /* ProfessionVertifyApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfessionVertifyApi.m; sourceTree = "<group>"; };
 		2CE85D071F4EE18200666DE4 /* TJSSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSSegmentedControl.h; sourceTree = "<group>"; };
 		2CE85D081F4EE18200666DE4 /* TJSSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSSegmentedControl.m; sourceTree = "<group>"; };
-		2CEC58AC1F4FCCCB006C03F5 /* AppDelegate+TJSStatisticsSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+TJSStatisticsSetting.h"; sourceTree = "<group>"; };
-		2CEC58AD1F4FCCCB006C03F5 /* AppDelegate+TJSStatisticsSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+TJSStatisticsSetting.m"; sourceTree = "<group>"; };
-		2CEC58AF1F4FCCDC006C03F5 /* AppDelegate+TJSRemotePushSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+TJSRemotePushSetting.h"; sourceTree = "<group>"; };
-		2CEC58B01F4FCCDC006C03F5 /* AppDelegate+TJSRemotePushSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+TJSRemotePushSetting.m"; sourceTree = "<group>"; };
-		2CEC58B21F4FCD3A006C03F5 /* AppDelegate+TJSNetworkMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+TJSNetworkMonitor.h"; sourceTree = "<group>"; };
-		2CEC58B31F4FCD3A006C03F5 /* AppDelegate+TJSNetworkMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+TJSNetworkMonitor.m"; sourceTree = "<group>"; };
 		2CEC58B71F4FCDE7006C03F5 /* UIButton+BackgroundColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+BackgroundColor.h"; sourceTree = "<group>"; };
 		2CEC58B81F4FCDE7006C03F5 /* UIButton+BackgroundColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+BackgroundColor.m"; sourceTree = "<group>"; };
 		2CEC58B91F4FCDE7006C03F5 /* UIButton+CommitStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+CommitStyle.h"; sourceTree = "<group>"; };
@@ -2237,7 +2234,6 @@
 		2C4411AA1F21981E00C453EF /* TianJiCloud */ = {
 			isa = PBXGroup;
 			children = (
-				2C44122D1F21AA5900C453EF /* AppDelegate */,
 				2C801BA31F233F46009F82F7 /* Sections */,
 				2C4411FC1F219A5300C453EF /* Service */,
 				2C4411E21F219A5300C453EF /* Categories */,
@@ -2430,14 +2426,18 @@
 				2C4412AA1F22023E00C453EF /* HudAlert */,
 				2C4412481F21D40300C453EF /* SystemAlert */,
 				2C8CD10D1F55031F00F9654D /* FMDBService */,
+				2C8CD1291F554B7C00F9654D /* RootController */,
+				2C8CD10C1F5502F400F9654D /* PushService */,
 				2C8CD10A1F5502F400F9654D /* SocailService */,
 				2C8CD10B1F5502F400F9654D /* StatisticService */,
-				2C8CD10C1F5502F400F9654D /* PushService */,
+				2C8CD1211F5548FB00F9654D /* NetworkMonitor */,
+				2C8CD1221F5548FB00F9654D /* KeyboardService */,
 				2C8CD1061F54FE4200F9654D /* EmptyDataSet */,
 				2C4412941F22002000C453EF /* TJSThemeService */,
 				2C801BE91F25884E009F82F7 /* StoreService */,
 				2C4412391F21B56D00C453EF /* GVUserDefaults */,
 				2C4412901F21EE5700C453EF /* TJSDownLoaderService */,
+				2C8CD11A1F55464D00F9654D /* AppDelegateService */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -2465,33 +2465,6 @@
 				2C859C871F31EB2E00B86575 /* View */,
 			);
 			path = Vender;
-			sourceTree = "<group>";
-		};
-		2C44122D1F21AA5900C453EF /* AppDelegate */ = {
-			isa = PBXGroup;
-			children = (
-				2C44122E1F21AA5900C453EF /* AppDelegate.h */,
-				2C44122F1F21AA5900C453EF /* AppDelegate.m */,
-				2C4412301F21AA5900C453EF /* Categories */,
-			);
-			path = AppDelegate;
-			sourceTree = "<group>";
-		};
-		2C4412301F21AA5900C453EF /* Categories */ = {
-			isa = PBXGroup;
-			children = (
-				2C1D88D11F4FBA4E006A4F00 /* AppDelegate+TJSSocialSetting.h */,
-				2C1D88D21F4FBA4E006A4F00 /* AppDelegate+TJSSocialSetting.m */,
-				2CEC58AC1F4FCCCB006C03F5 /* AppDelegate+TJSStatisticsSetting.h */,
-				2CEC58AD1F4FCCCB006C03F5 /* AppDelegate+TJSStatisticsSetting.m */,
-				2C1D88CE1F4FB9C0006A4F00 /* AppDelegate+TJSKeyboardSetting.h */,
-				2C1D88CF1F4FB9C0006A4F00 /* AppDelegate+TJSKeyboardSetting.m */,
-				2CEC58AF1F4FCCDC006C03F5 /* AppDelegate+TJSRemotePushSetting.h */,
-				2CEC58B01F4FCCDC006C03F5 /* AppDelegate+TJSRemotePushSetting.m */,
-				2CEC58B21F4FCD3A006C03F5 /* AppDelegate+TJSNetworkMonitor.h */,
-				2CEC58B31F4FCD3A006C03F5 /* AppDelegate+TJSNetworkMonitor.m */,
-			);
-			path = Categories;
 			sourceTree = "<group>";
 		};
 		2C4412391F21B56D00C453EF /* GVUserDefaults */ = {
@@ -3892,6 +3865,44 @@
 				2C8CD10F1F55033400F9654D /* FMDBManager.m */,
 			);
 			path = FMDBService;
+			sourceTree = "<group>";
+		};
+		2C8CD11A1F55464D00F9654D /* AppDelegateService */ = {
+			isa = PBXGroup;
+			children = (
+				2C8CD11B1F55469D00F9654D /* TJSAppServiceManager.h */,
+				2C8CD11C1F55469D00F9654D /* TJSAppServiceManager.m */,
+				2C8CD11D1F55469D00F9654D /* TJSAppDelegate.h */,
+				2C8CD11E1F55469D00F9654D /* TJSAppDelegate.m */,
+			);
+			path = AppDelegateService;
+			sourceTree = "<group>";
+		};
+		2C8CD1211F5548FB00F9654D /* NetworkMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				2C8CD1231F55491900F9654D /* NetworkMonitorManager.h */,
+				2C8CD1241F55491900F9654D /* NetworkMonitorManager.m */,
+			);
+			path = NetworkMonitor;
+			sourceTree = "<group>";
+		};
+		2C8CD1221F5548FB00F9654D /* KeyboardService */ = {
+			isa = PBXGroup;
+			children = (
+				2C8CD1261F55493600F9654D /* KeyboardManager.h */,
+				2C8CD1271F55493600F9654D /* KeyboardManager.m */,
+			);
+			path = KeyboardService;
+			sourceTree = "<group>";
+		};
+		2C8CD1291F554B7C00F9654D /* RootController */ = {
+			isa = PBXGroup;
+			children = (
+				2C8CD12A1F554BA900F9654D /* RootControllerManager.h */,
+				2C8CD12B1F554BA900F9654D /* RootControllerManager.m */,
+			);
+			path = RootController;
 			sourceTree = "<group>";
 		};
 		2C8DE57A1F29D406009B3AE2 /* Disaggregate */ = {
@@ -6315,6 +6326,7 @@
 				2C027D161F3C7C71001D7EB6 /* ProductFilterResultDataSourceImpl.m in Sources */,
 				2C83C7281F39BA4C004034CA /* AllActivityTableCell.m in Sources */,
 				2CB4F60A1F42849100FF98C9 /* MyFavListLayoutImpl.m in Sources */,
+				2C8CD1201F55469D00F9654D /* TJSAppDelegate.m in Sources */,
 				2CD897501F457B96008F7C73 /* AddressSelectedInteractorImpl.m in Sources */,
 				2CEC58D81F4FCDE7006C03F5 /* UIButton+TouchAreaInsets.m in Sources */,
 				2C4D35E71F4C25860082BB36 /* CumulativeInvestInteractorImpl.m in Sources */,
@@ -6337,13 +6349,13 @@
 				2C7A34601F2F80F7004DD566 /* MineHomeCellInfo.m in Sources */,
 				2CD896CA1F453BE0008F7C73 /* ConAddressRightInputCell.m in Sources */,
 				2C85E3731F2EDB1000ADD360 /* TJSBaseControllerConfig.m in Sources */,
-				2C1D88D31F4FBA4E006A4F00 /* AppDelegate+TJSSocialSetting.m in Sources */,
 				2C4C1C2A1F386DA100002166 /* TJSAppSoreUtil.m in Sources */,
 				2C8DE58D1F29E081009B3AE2 /* TJSHomeListDataSourceImpl.m in Sources */,
 				2CE542371F4EA68100205993 /* GetVertifyCodeApi.m in Sources */,
 				2C027D191F3C7C80001D7EB6 /* ProductFilterResultLayoutImpl.m in Sources */,
 				2CD8971B1F4548E2008F7C73 /* AddressManageContentConfigFactory.m in Sources */,
 				2CD8970C1F45480B008F7C73 /* AddressManageDataSourceImpl.m in Sources */,
+				2C8CD1281F55493600F9654D /* KeyboardManager.m in Sources */,
 				2CB4F5F01F41C3BB00FF98C9 /* MyContractListStoreTool.m in Sources */,
 				2CE542451F4EA99300205993 /* SetWithDarwCodeApi.m in Sources */,
 				2C4D35CA1F4C05F00082BB36 /* WithDrawDepositHomeHeader.m in Sources */,
@@ -6386,6 +6398,7 @@
 				2CB4F63F1F42F26500FF98C9 /* ContractApplyTableAdapter.m in Sources */,
 				2C597DBB1F4C2CB900415EB6 /* SettingHomeCellFactory.m in Sources */,
 				2CCBE4A41F344A98006C4018 /* MineHomeCellItem.m in Sources */,
+				2C8CD12C1F554BA900F9654D /* RootControllerManager.m in Sources */,
 				2C8BB7B81F315CA600E2D75F /* HomeHeaderWebController.m in Sources */,
 				2CCBE4831F3415F2006C4018 /* MineHomeHeaderCollectionLayout.m in Sources */,
 				2CD8970D1F45480B008F7C73 /* AddressManageInteractorImpl.m in Sources */,
@@ -6504,7 +6517,6 @@
 				2CD897311F457619008F7C73 /* AddressSelectedBaseCell.m in Sources */,
 				2CD897401F457B55008F7C73 /* AddressSelectedCellFactory.m in Sources */,
 				2CB4F63E1F42F26500FF98C9 /* ContractApplyLayoutImpl.m in Sources */,
-				2C4412311F21AA5900C453EF /* AppDelegate.m in Sources */,
 				2CB4F61F1F42A02400FF98C9 /* AddressSelectController.m in Sources */,
 				2CB4F6531F42F5A300FF98C9 /* ContractApplyAddAddressCell.m in Sources */,
 				2CCC85BC1F3AEF1D0009FC1C /* FilterResultNetworkTool.m in Sources */,
@@ -6592,7 +6604,6 @@
 				2C85E3A41F2F1AF900ADD360 /* TJSMineHomeDefaultCellContentConfig.m in Sources */,
 				2C1B74E61F4698A30000E71A /* BankCardAddDefaultContentConfig.m in Sources */,
 				2CEC58D71F4FCDE7006C03F5 /* UIButton+TJSWebCache.m in Sources */,
-				2CEC58B11F4FCCDC006C03F5 /* AppDelegate+TJSRemotePushSetting.m in Sources */,
 				2CD8974F1F457B96008F7C73 /* AddressSelectedDataSourceImpl.m in Sources */,
 				2C85E3A71F2F1BEB00ADD360 /* MineHomeDefaultCell.m in Sources */,
 				2CB4F6121F42982800FF98C9 /* ContractListCell.m in Sources */,
@@ -6630,7 +6641,6 @@
 				2C85E3971F2F155700ADD360 /* MineHomeBaseTableCell.m in Sources */,
 				2C1B74BC1F4694FF0000E71A /* BankCardListDefaultContentConfig.m in Sources */,
 				2C85E38C1F2F09F100ADD360 /* TJSMineHomeCellLayoutConfig.m in Sources */,
-				2C1D88D01F4FB9C0006A4F00 /* AppDelegate+TJSKeyboardSetting.m in Sources */,
 				2C597DBE1F4C2CB900415EB6 /* SettingHomeContentConfigFactory.m in Sources */,
 				2C4412041F219A5300C453EF /* UIImage+FromColor.m in Sources */,
 				2CAF42851F27261A00ABCA5E /* TJSProductDeleteApi.m in Sources */,
@@ -6655,6 +6665,8 @@
 				2CCC85D61F3B0CC20009FC1C /* ProductFilterStoreTool.m in Sources */,
 				2C859CF91F31EB2E00B86575 /* ZLNavigationController.m in Sources */,
 				2C4412051F219A5300C453EF /* UIImage+Stretchable.m in Sources */,
+				2C8CD11F1F55469D00F9654D /* TJSAppServiceManager.m in Sources */,
+				2C8CD1251F55491900F9654D /* NetworkMonitorManager.m in Sources */,
 				2C4411AD1F21981E00C453EF /* main.m in Sources */,
 				2CD897581F458537008F7C73 /* ConAddressMiddleLabelContentConfig.m in Sources */,
 				2CCBE4681F330597006C4018 /* DiscoveryVCConfig.m in Sources */,
@@ -6694,7 +6706,6 @@
 				2CB4F57E1F41905500FF98C9 /* InvestProductController.m in Sources */,
 				2C8DE5841F29D509009B3AE2 /* TJSHomeListInteractorImpl.m in Sources */,
 				2CCBE45D1F32CB61006C4018 /* ProductListCellHeaderView.m in Sources */,
-				2CEC58AE1F4FCCCB006C03F5 /* AppDelegate+TJSStatisticsSetting.m in Sources */,
 				2C85E39E1F2F1A5800ADD360 /* TJSMineHomeInvestCellContentConfig.m in Sources */,
 				2CB4F6501F42F58800FF98C9 /* ContractApplyProductResultCell.m in Sources */,
 				A292B2771F39F92D0086E03E /* CapitalRecordVCConfig.m in Sources */,
@@ -6736,7 +6747,6 @@
 				2C1B74BB1F4694FF0000E71A /* BankCardListContentConfigFactory.m in Sources */,
 				2C027D241F3C8296001D7EB6 /* ProductSearchInteractorImpl.m in Sources */,
 				2C1B75041F469E5A0000E71A /* BankCardAddTableAdapter.m in Sources */,
-				2CEC58B41F4FCD3A006C03F5 /* AppDelegate+TJSNetworkMonitor.m in Sources */,
 				2CAF430A1F2828C200ABCA5E /* TJSProductListTableAdapter.m in Sources */,
 				2CB4F5771F418FFB00FF98C9 /* CumulateInvestStoreTool.m in Sources */,
 				2CE5424B1F4EAA0900205993 /* ProfessionVertifyApi.m in Sources */,

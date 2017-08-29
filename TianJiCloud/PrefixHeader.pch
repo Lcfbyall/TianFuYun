@@ -27,6 +27,8 @@
 
 /** 2. Service **/
 
+#import "TJSAppDelegate.h"
+#import "TJSAppServiceManager.h"
 #import "TJSHudAlert.h"
 #import "TJSSystemAlertMaker.h"
 #import "TJSThemeService.h"

@@ -1,19 +1,31 @@
 //
-//  AppDelegate+TJSNetworkMonitor.m
+//  NetworkMonitorManager.m
 //  TianJiCloud
 //
-//  Created by 朱鹏 on 2017/8/25.
+//  Created by 朱鹏 on 2017/8/29.
 //  Copyright © 2017年 TianJiMoney. All rights reserved.
 //
 
-#import "AppDelegate+TJSNetworkMonitor.h"
+#import "NetworkMonitorManager.h"
 #import "AFNetworkReachabilityManager.h"
 
-@implementation AppDelegate (TJSNetworkMonitor)
+
+@implementation NetworkMonitorManager
 
 + (void)load{
-
+    
     [self monitorAFNetworkReachability];
+}
+
++ (instancetype)NetworkMonitorManager {
+    
+    static StatisticManager * instance = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        instance = [[self alloc] init];
+    });
+    
+    return instance;
 }
 
 + (void)monitorAFNetworkReachability{

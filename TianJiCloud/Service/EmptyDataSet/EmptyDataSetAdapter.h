@@ -10,6 +10,8 @@
 
 @interface EmptyDataSetAdapter : NSObject
 
-+ (instancetype)adapterWithScrollView:(UIScrollView *)scrollView;
+- (instancetype _Nullable)init NS_UNAVAILABLE;
+
++ (instancetype _Nullable )adapterWithScrollView:(UIScrollView *_Nullable)scrollView;
 
 @end
