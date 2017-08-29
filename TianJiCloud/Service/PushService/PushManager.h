@@ -7,7 +7,19 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-@interface PushManager : NSObject
+@interface PushManager : NSObject<UIApplicationDelegate>
+
+// 初始化个推sdk
++ (void)startGeTuiSDK;
+
+// 重置红点个数
++ (void)resetBadge;
+
+// 设置红点个数
++ (void)setBadge:(NSInteger)badge;
+
+
 
 @end

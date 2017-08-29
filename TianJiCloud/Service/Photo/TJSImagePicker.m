@@ -13,23 +13,19 @@
 #import "UIDevice+CurrentArg.h"
 
 
-static NSString  *const TJMPhotoRequestLoading    = @"请稍后";
-
-static NSString *const TJMIPhoneSimulator         = @"模拟器中无法打开照相机,请在真机中使用";
-static NSString *const TJMDeviceNotAvailable      = @"设备不支持";
-
-
-static NSString *const TJMCameraUnuseful          = @"无法使用相机";
-static NSString *const TJMPleaseSettingCamera     = @"请在iPhone的""设置-隐私-相机""中允许访问相机";
-static NSString *const TJMCameraSure              = @"确定";
-
-
-static NSString *const TJMPhotoUnuseful           = @"无法打开相册";
-static NSString *const TJMPleaseSettingPhoto      = @"请在iPhone的""设置-隐私-照片""中允许访问相册";
-static NSString *const TJMPhotoSure               = @"确定";
+static NSString *const TJMPhotoRequestLoading = @"请稍后";
+static NSString *const TJMIPhoneSimulator     = @"模拟器中无法打开照相机,请在真机中使用";
+static NSString *const TJMDeviceNotAvailable  = @"设备不支持";
+static NSString *const TJMCameraUnuseful      = @"无法使用相机";
+static NSString *const TJMPleaseSettingCamera = @"请在iPhone的""设置-隐私-相机""中允许访问相机";
+static NSString *const TJMCameraSure          = @"确定";
+static NSString *const TJMPhotoUnuseful       = @"无法打开相册";
+static NSString *const TJMPleaseSettingPhoto  = @"请在iPhone的""设置-隐私-照片""中允许访问相册";
+static NSString *const TJMPhotoSure           = @"确定";
 
 
 static  TJSImagePicker *imagePikerSevice;
+
 @interface TJSImagePicker ()<UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 
 @property (nonatomic,strong)UIImagePickerController *imagePickerController;

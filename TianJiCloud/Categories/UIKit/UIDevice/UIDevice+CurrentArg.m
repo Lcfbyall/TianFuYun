@@ -24,8 +24,8 @@
     NSString *languageCode = [LOCAL_COMPONENT objectForKey:@"kCFLocaleLanguageCodeKey"];
     NSString *regionCode   = [LOCAL_COMPONENT objectForKey:@"kCFLocaleScriptCodeKey"];
     
-    NSString *LA = [[NSLocale currentLocale] objectForKey:NSLocaleCountryCode];
-    NSString *RE = [[NSLocale currentLocale] objectForKey:NSLocaleLanguageCode];
+    //NSString *LA = [[NSLocale currentLocale] objectForKey:NSLocaleCountryCode];
+    //NSString *RE = [[NSLocale currentLocale] objectForKey:NSLocaleLanguageCode];
     
     if ([languageCode isEqualToString:@"zh"])
     {

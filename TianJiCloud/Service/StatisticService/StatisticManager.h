@@ -7,7 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-@interface StatisticManager : NSObject
+@interface StatisticManager : NSObject<UIApplicationDelegate>
+
+
 
 @end

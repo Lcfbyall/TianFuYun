@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate+TJSSocialSetting.h"
+#import "SocailManager.h"
+
 
 @implementation AppDelegate (TJSSocialSetting)
 
@@ -14,5 +16,7 @@
 
 
 }
+
+
 
 @end

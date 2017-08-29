@@ -48,7 +48,7 @@ NSString * TJSLocalizedString(NSString *key){
                                  bundle:(NSBundle *)bundle{
         
     // iOS9后 zh-Hans-CN
-    NSString *CU =  [UIDevice currentDevice].tjs_getPreferredLanguage;
+   // NSString *CU =  [UIDevice currentDevice].tjs_getPreferredLanguage;
     
     
     if(bundle == nil) bundle = [NSBundle tjs_normalBundle];
