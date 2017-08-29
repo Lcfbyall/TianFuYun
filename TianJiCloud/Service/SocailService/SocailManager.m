@@ -93,9 +93,9 @@ static NSString *const kShareBasicUrl = @"https://www.tjjf.com";
 
 #pragma mark - <UIApplicationDelegate>
 
-- (void)applicationDidFinishLaunching:(UIApplication *)application{
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
-
+    return YES;
 }
 
 // 仅支持iOS9以上系统，iOS8及以下系统不会回调

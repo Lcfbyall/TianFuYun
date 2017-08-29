@@ -100,9 +100,9 @@ typedef NS_ENUM(NSInteger, TJSPushType) {
 
 #pragma mark - <UIApplicationDelegate>
 
-- (void)applicationDidFinishLaunching:(UIApplication *)application{
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    
+    return YES;
 }
 
 

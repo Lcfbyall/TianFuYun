@@ -19,13 +19,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TianJiCloud/Service/SocailService/SocailManager.m"
-            timestampString = "525668800.733326"
+            filePath = "TianJiCloud/AppDelegate/AppDelegate.m"
+            timestampString = "525671306.409588"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "97"
-            endingLineNumber = "97"
-            landmarkName = "-applicationDidFinishLaunching:"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "-application:didFinishLaunchingWithOptions:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -36,12 +36,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TianJiCloud/Service/PushService/PushManager.m"
-            timestampString = "525670922.150478"
+            timestampString = "525671337.29118"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "104"
-            endingLineNumber = "104"
-            landmarkName = "-applicationDidFinishLaunching:"
+            startingLineNumber = "105"
+            endingLineNumber = "105"
+            landmarkName = "-application:didFinishLaunchingWithOptions:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
