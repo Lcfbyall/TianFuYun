@@ -292,6 +292,11 @@
 		2C8CD0FD1F53BA9700F9654D /* UIImage+Combination.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD0FC1F53BA9700F9654D /* UIImage+Combination.m */; };
 		2C8CD1001F53C2F800F9654D /* UIImage+NamedWithSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD0FF1F53C2F800F9654D /* UIImage+NamedWithSize.m */; };
 		2C8CD1041F53FCA400F9654D /* UITableView+TJSTableHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD1031F53FCA400F9654D /* UITableView+TJSTableHeader.m */; };
+		2C8CD1091F54FFC000F9654D /* EmptyDataSetAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD1081F54FFC000F9654D /* EmptyDataSetAdapter.m */; };
+		2C8CD1101F55033400F9654D /* FMDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD10F1F55033400F9654D /* FMDBManager.m */; };
+		2C8CD1131F55034200F9654D /* SocailManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD1121F55034200F9654D /* SocailManager.m */; };
+		2C8CD1161F55035100F9654D /* StatisticManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD1151F55035100F9654D /* StatisticManager.m */; };
+		2C8CD1191F55035E00F9654D /* PushManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD1181F55035E00F9654D /* PushManager.m */; };
 		2C8DE57E1F29D484009B3AE2 /* TJSHomeListConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE57D1F29D484009B3AE2 /* TJSHomeListConfigurator.m */; };
 		2C8DE5811F29D4F7009B3AE2 /* TJSHomeListTableAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE5801F29D4F7009B3AE2 /* TJSHomeListTableAdapter.m */; };
 		2C8DE5841F29D509009B3AE2 /* TJSHomeListInteractorImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE5831F29D509009B3AE2 /* TJSHomeListInteractorImpl.m */; };
@@ -1203,6 +1208,16 @@
 		2C8CD0FF1F53C2F800F9654D /* UIImage+NamedWithSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+NamedWithSize.m"; sourceTree = "<group>"; };
 		2C8CD1021F53FCA400F9654D /* UITableView+TJSTableHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+TJSTableHeader.h"; sourceTree = "<group>"; };
 		2C8CD1031F53FCA400F9654D /* UITableView+TJSTableHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+TJSTableHeader.m"; sourceTree = "<group>"; };
+		2C8CD1071F54FFC000F9654D /* EmptyDataSetAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmptyDataSetAdapter.h; sourceTree = "<group>"; };
+		2C8CD1081F54FFC000F9654D /* EmptyDataSetAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmptyDataSetAdapter.m; sourceTree = "<group>"; };
+		2C8CD10E1F55033400F9654D /* FMDBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDBManager.h; sourceTree = "<group>"; };
+		2C8CD10F1F55033400F9654D /* FMDBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDBManager.m; sourceTree = "<group>"; };
+		2C8CD1111F55034200F9654D /* SocailManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocailManager.h; sourceTree = "<group>"; };
+		2C8CD1121F55034200F9654D /* SocailManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocailManager.m; sourceTree = "<group>"; };
+		2C8CD1141F55035100F9654D /* StatisticManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatisticManager.h; sourceTree = "<group>"; };
+		2C8CD1151F55035100F9654D /* StatisticManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatisticManager.m; sourceTree = "<group>"; };
+		2C8CD1171F55035E00F9654D /* PushManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushManager.h; sourceTree = "<group>"; };
+		2C8CD1181F55035E00F9654D /* PushManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushManager.m; sourceTree = "<group>"; };
 		2C8DE57C1F29D484009B3AE2 /* TJSHomeListConfigurator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSHomeListConfigurator.h; sourceTree = "<group>"; };
 		2C8DE57D1F29D484009B3AE2 /* TJSHomeListConfigurator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSHomeListConfigurator.m; sourceTree = "<group>"; };
 		2C8DE57F1F29D4F7009B3AE2 /* TJSHomeListTableAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSHomeListTableAdapter.h; sourceTree = "<group>"; };
@@ -2410,6 +2425,10 @@
 		2C4411FC1F219A5300C453EF /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				2C8CD10D1F55031F00F9654D /* FMDBService */,
+				2C8CD10A1F5502F400F9654D /* SocailService */,
+				2C8CD10B1F5502F400F9654D /* StatisticService */,
+				2C8CD10C1F5502F400F9654D /* PushService */,
 				2C8CD1061F54FE4200F9654D /* EmptyDataSet */,
 				2C4412941F22002000C453EF /* TJSThemeService */,
 				2C801BE91F25884E009F82F7 /* StoreService */,
@@ -3833,8 +3852,46 @@
 		2C8CD1061F54FE4200F9654D /* EmptyDataSet */ = {
 			isa = PBXGroup;
 			children = (
+				2C8CD1071F54FFC000F9654D /* EmptyDataSetAdapter.h */,
+				2C8CD1081F54FFC000F9654D /* EmptyDataSetAdapter.m */,
 			);
 			path = EmptyDataSet;
+			sourceTree = "<group>";
+		};
+		2C8CD10A1F5502F400F9654D /* SocailService */ = {
+			isa = PBXGroup;
+			children = (
+				2C8CD1111F55034200F9654D /* SocailManager.h */,
+				2C8CD1121F55034200F9654D /* SocailManager.m */,
+			);
+			path = SocailService;
+			sourceTree = "<group>";
+		};
+		2C8CD10B1F5502F400F9654D /* StatisticService */ = {
+			isa = PBXGroup;
+			children = (
+				2C8CD1141F55035100F9654D /* StatisticManager.h */,
+				2C8CD1151F55035100F9654D /* StatisticManager.m */,
+			);
+			path = StatisticService;
+			sourceTree = "<group>";
+		};
+		2C8CD10C1F5502F400F9654D /* PushService */ = {
+			isa = PBXGroup;
+			children = (
+				2C8CD1171F55035E00F9654D /* PushManager.h */,
+				2C8CD1181F55035E00F9654D /* PushManager.m */,
+			);
+			path = PushService;
+			sourceTree = "<group>";
+		};
+		2C8CD10D1F55031F00F9654D /* FMDBService */ = {
+			isa = PBXGroup;
+			children = (
+				2C8CD10E1F55033400F9654D /* FMDBManager.h */,
+				2C8CD10F1F55033400F9654D /* FMDBManager.m */,
+			);
+			path = FMDBService;
 			sourceTree = "<group>";
 		};
 		2C8DE57A1F29D406009B3AE2 /* Disaggregate */ = {
@@ -6377,6 +6434,7 @@
 				2C4C1C131F384A4900002166 /* TJSMyOrderListLayoutImpl.m in Sources */,
 				2CCBE47A1F331D91006C4018 /* MineHomeHeaderContainer.m in Sources */,
 				2CE542281F4EA4E900205993 /* LogoutApi.m in Sources */,
+				2C8CD1131F55034200F9654D /* SocailManager.m in Sources */,
 				2CD896D01F453C34008F7C73 /* ConAddressMiddleLabelCell.m in Sources */,
 				2C8DE59C1F29FC51009B3AE2 /* TJSProductDetailController.m in Sources */,
 				2C4412A51F2201FF00C453EF /* TJSAnimatingRequestAccessory.m in Sources */,
@@ -6395,6 +6453,7 @@
 				2CB4F5781F418FFB00FF98C9 /* CumulateInvestBarCell.m in Sources */,
 				2CB4F63B1F42F26500FF98C9 /* ContractApplyConfigurator.m in Sources */,
 				2C85E3891F2F09D100ADD360 /* TJSMineHomeCellFactory.m in Sources */,
+				2C8CD1101F55033400F9654D /* FMDBManager.m in Sources */,
 				2CD897411F457B55008F7C73 /* AddressSelectedCellLayoutConfig.m in Sources */,
 				2C88F69B1F4EC73E009CF23E /* TJSImagePicker.m in Sources */,
 				2C83C7051F39B80A004034CA /* ProductListStoreTool.m in Sources */,
@@ -6553,6 +6612,7 @@
 				2C859CEC1F31EB2E00B86575 /* ZLCameraViewController.m in Sources */,
 				2CD896BD1F453A05008F7C73 /* AdressEditNetworkTool.m in Sources */,
 				2C1B74C31F4694FF0000E71A /* BankCardInfo.m in Sources */,
+				2C8CD1191F55035E00F9654D /* PushManager.m in Sources */,
 				2CEC58D41F4FCDE7006C03F5 /* UIButton+CountDown.m in Sources */,
 				2C83C7251F39BA30004034CA /* PersonalMessageCell.m in Sources */,
 				2C859CF01F31EB2E00B86575 /* ZLPhotoPickerBrowserViewController.m in Sources */,
@@ -6720,6 +6780,7 @@
 				2C1B74BA1F4694FF0000E71A /* BankCardListConfig.m in Sources */,
 				2C8BB7A21F30859C00E2D75F /* HomeFooterCollectionLayout.m in Sources */,
 				2CAF42D61F281B8600ABCA5E /* TJSBaseProductListContentConfig.m in Sources */,
+				2C8CD1091F54FFC000F9654D /* EmptyDataSetAdapter.m in Sources */,
 				2CD897421F457B55008F7C73 /* AddressSelectedContentConfigFactory.m in Sources */,
 				2CA639301F4AE9D000C39562 /* WithDrawDepositCellLayoutConfig.m in Sources */,
 				2C4C1C101F384A3B00002166 /* TJSMyOrderListDataSourceImpl.m in Sources */,
@@ -6746,6 +6807,7 @@
 				2C4C1C0D1F384A2500002166 /* TJSMyOrderListInteractorImpl.m in Sources */,
 				2CAF427A1F26EAA600ABCA5E /* AppVersionNetworkTool.m in Sources */,
 				2CF8B5411F3D46B8003B8520 /* ProductSearchResultCell.m in Sources */,
+				2C8CD1161F55035100F9654D /* StatisticManager.m in Sources */,
 				2C4C1C891F3948E100002166 /* PNPieChartDataItem.m in Sources */,
 				2CCBE46D1F3312D4006C4018 /* DiscoRoadShowVideoDetailController.m in Sources */,
 				2CD896FD1F454458008F7C73 /* AddressManageConfig.m in Sources */,

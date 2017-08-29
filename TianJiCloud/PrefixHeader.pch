@@ -32,7 +32,7 @@
 #import "TJSThemeService.h"
 #import "GVUserDefaults.h"
 #import "GVUserDefaults+TJSGlobalProperties.h"
-
+#import "EmptyDataSetAdapter.h"
 
 /** 3. Util **/
 
