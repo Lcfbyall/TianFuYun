@@ -111,7 +111,7 @@
 		2C4412B41F2207CD00C453EF /* TJSLoginStateUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4412B31F2207CD00C453EF /* TJSLoginStateUtil.m */; };
 		2C44776A1F41461200ED8685 /* ProductInfoSearchModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4477691F41461200ED8685 /* ProductInfoSearchModel.m */; };
 		2C4C1BD11F380DFE00002166 /* MyOrderListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C1BD01F380DFE00002166 /* MyOrderListViewController.m */; };
-		2C4C1BD51F38143B00002166 /* UIApplication+TJSAppVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C1BD41F38143B00002166 /* UIApplication+TJSAppVersion.m */; };
+		2C4C1BD51F38143B00002166 /* UIApplication+TJSInfoDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C1BD41F38143B00002166 /* UIApplication+TJSInfoDictionary.m */; };
 		2C4C1BD81F381AF300002166 /* MineHomeCellBalanceItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C1BD71F381AF200002166 /* MineHomeCellBalanceItem.m */; };
 		2C4C1BFE1F3846F600002166 /* MyOrderListTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C1BFD1F3846F600002166 /* MyOrderListTableCell.m */; };
 		2C4C1C011F38476900002166 /* MyOrderInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C1C001F38476900002166 /* MyOrderInfo.m */; };
@@ -312,6 +312,9 @@
 		2C8CD1521F55729500F9654D /* ProductDetailInteractorImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD1511F55729500F9654D /* ProductDetailInteractorImpl.m */; };
 		2C8CD1551F55730E00F9654D /* ProductDetailLayoutImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD1541F55730E00F9654D /* ProductDetailLayoutImpl.m */; };
 		2C8CD1581F55731F00F9654D /* ProductDetailDataSourceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD1571F55731F00F9654D /* ProductDetailDataSourceImpl.m */; };
+		2C8CD1611F564B1800F9654D /* UIApplication+TJSAppstore.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD1601F564B1800F9654D /* UIApplication+TJSAppstore.m */; };
+		2C8CD1641F564B6C00F9654D /* UIApplication+JSAppSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD1631F564B6C00F9654D /* UIApplication+JSAppSetting.m */; };
+		2C8CD1671F564C5700F9654D /* UIApplication+TJSAppAppearence.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD1661F564C5700F9654D /* UIApplication+TJSAppAppearence.m */; };
 		2C8DE57E1F29D484009B3AE2 /* TJSHomeListConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE57D1F29D484009B3AE2 /* TJSHomeListConfigurator.m */; };
 		2C8DE5811F29D4F7009B3AE2 /* TJSHomeListTableAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE5801F29D4F7009B3AE2 /* TJSHomeListTableAdapter.m */; };
 		2C8DE5841F29D509009B3AE2 /* TJSHomeListInteractorImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE5831F29D509009B3AE2 /* TJSHomeListInteractorImpl.m */; };
@@ -845,8 +848,8 @@
 		2C4477691F41461200ED8685 /* ProductInfoSearchModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductInfoSearchModel.m; sourceTree = "<group>"; };
 		2C4C1BCF1F380DFE00002166 /* MyOrderListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyOrderListViewController.h; sourceTree = "<group>"; };
 		2C4C1BD01F380DFE00002166 /* MyOrderListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyOrderListViewController.m; sourceTree = "<group>"; };
-		2C4C1BD31F38143B00002166 /* UIApplication+TJSAppVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+TJSAppVersion.h"; sourceTree = "<group>"; };
-		2C4C1BD41F38143B00002166 /* UIApplication+TJSAppVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+TJSAppVersion.m"; sourceTree = "<group>"; };
+		2C4C1BD31F38143B00002166 /* UIApplication+TJSInfoDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+TJSInfoDictionary.h"; sourceTree = "<group>"; };
+		2C4C1BD41F38143B00002166 /* UIApplication+TJSInfoDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+TJSInfoDictionary.m"; sourceTree = "<group>"; };
 		2C4C1BD61F381AF200002166 /* MineHomeCellBalanceItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineHomeCellBalanceItem.h; sourceTree = "<group>"; };
 		2C4C1BD71F381AF200002166 /* MineHomeCellBalanceItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineHomeCellBalanceItem.m; sourceTree = "<group>"; };
 		2C4C1BFC1F3846F600002166 /* MyOrderListTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyOrderListTableCell.h; sourceTree = "<group>"; };
@@ -1261,6 +1264,12 @@
 		2C8CD15C1F55736000F9654D /* ProductDetailProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductDetailProtocol.h; sourceTree = "<group>"; };
 		2C8CD15D1F55737500F9654D /* ProductDetailConfigurateProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductDetailConfigurateProtocol.h; sourceTree = "<group>"; };
 		2C8CD15E1F5573C900F9654D /* ProductDetailPrivateProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductDetailPrivateProtocol.h; sourceTree = "<group>"; };
+		2C8CD15F1F564B1800F9654D /* UIApplication+TJSAppstore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+TJSAppstore.h"; sourceTree = "<group>"; };
+		2C8CD1601F564B1800F9654D /* UIApplication+TJSAppstore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+TJSAppstore.m"; sourceTree = "<group>"; };
+		2C8CD1621F564B6C00F9654D /* UIApplication+TJSAppSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+TJSAppSetting.h"; sourceTree = "<group>"; };
+		2C8CD1631F564B6C00F9654D /* UIApplication+JSAppSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+JSAppSetting.m"; sourceTree = "<group>"; };
+		2C8CD1651F564C5700F9654D /* UIApplication+TJSAppAppearence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+TJSAppAppearence.h"; sourceTree = "<group>"; };
+		2C8CD1661F564C5700F9654D /* UIApplication+TJSAppAppearence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+TJSAppAppearence.m"; sourceTree = "<group>"; };
 		2C8DE57C1F29D484009B3AE2 /* TJSHomeListConfigurator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSHomeListConfigurator.h; sourceTree = "<group>"; };
 		2C8DE57D1F29D484009B3AE2 /* TJSHomeListConfigurator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSHomeListConfigurator.m; sourceTree = "<group>"; };
 		2C8DE57F1F29D4F7009B3AE2 /* TJSHomeListTableAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSHomeListTableAdapter.h; sourceTree = "<group>"; };
@@ -2722,8 +2731,14 @@
 		2C4C1BD21F38135600002166 /* UIApplication */ = {
 			isa = PBXGroup;
 			children = (
-				2C4C1BD31F38143B00002166 /* UIApplication+TJSAppVersion.h */,
-				2C4C1BD41F38143B00002166 /* UIApplication+TJSAppVersion.m */,
+				2C4C1BD31F38143B00002166 /* UIApplication+TJSInfoDictionary.h */,
+				2C4C1BD41F38143B00002166 /* UIApplication+TJSInfoDictionary.m */,
+				2C8CD15F1F564B1800F9654D /* UIApplication+TJSAppstore.h */,
+				2C8CD1601F564B1800F9654D /* UIApplication+TJSAppstore.m */,
+				2C8CD1621F564B6C00F9654D /* UIApplication+TJSAppSetting.h */,
+				2C8CD1631F564B6C00F9654D /* UIApplication+JSAppSetting.m */,
+				2C8CD1651F564C5700F9654D /* UIApplication+TJSAppAppearence.h */,
+				2C8CD1661F564C5700F9654D /* UIApplication+TJSAppAppearence.m */,
 			);
 			path = UIApplication;
 			sourceTree = "<group>";
@@ -6496,6 +6511,7 @@
 				2CCC85D31F3B0CAA0009FC1C /* ProductFilterNetworkTool.m in Sources */,
 				2CAF42DD1F281B8600ABCA5E /* ProductDeleteNetworkTool.m in Sources */,
 				2C4C1BD11F380DFE00002166 /* MyOrderListViewController.m in Sources */,
+				2C8CD1611F564B1800F9654D /* UIApplication+TJSAppstore.m in Sources */,
 				2CD8970B1F45480B008F7C73 /* AddressManageConfigurator.m in Sources */,
 				2C027D1C1F3C7C92001D7EB6 /* ProductFilterResultTableAdapter.m in Sources */,
 				2C83C71F1F39B9C9004034CA /* PlatformAnnounceController.m in Sources */,
@@ -6817,6 +6833,7 @@
 				2CB4F65F1F43052E00FF98C9 /* ContractDetailNetworkTool.m in Sources */,
 				2C4C1C881F3948E100002166 /* PNPieChart.m in Sources */,
 				2CD896FA1F45435F008F7C73 /* AdressManageNetworkTool.m in Sources */,
+				2C8CD1641F564B6C00F9654D /* UIApplication+JSAppSetting.m in Sources */,
 				2CAF42F51F28273300ABCA5E /* ProductListCellContentView.m in Sources */,
 				2CD897511F457B96008F7C73 /* AddressSelectedLayoutImpl.m in Sources */,
 				2C8DE60C1F2B15F3009B3AE2 /* TJSDiscoNewsListVCConfig.m in Sources */,
@@ -6854,7 +6871,7 @@
 				2C8BB7B51F3088E200E2D75F /* HomeFooterConfig.m in Sources */,
 				2C85E37D1F2F031600ADD360 /* TJSMineHomeTableAdapter.m in Sources */,
 				2CD8969B1F4427C2008F7C73 /* ContractApplyAddAddressContentConfig.m in Sources */,
-				2C4C1BD51F38143B00002166 /* UIApplication+TJSAppVersion.m in Sources */,
+				2C4C1BD51F38143B00002166 /* UIApplication+TJSInfoDictionary.m in Sources */,
 				2CB4F5E31F41C3BB00FF98C9 /* MyContractViewController.m in Sources */,
 				2C4412671F21E17200C453EF /* NSMutableAttributedString+Formated.m in Sources */,
 				2CD896EE1F453F8C008F7C73 /* ContractAddAddressContentConfigFactory.m in Sources */,
@@ -6902,6 +6919,7 @@
 				2CAF426F1F26E01E00ABCA5E /* TJSProductListApi.m in Sources */,
 				2C1B74BD1F4694FF0000E71A /* BackCardManagerController.m in Sources */,
 				2C4C1CA81F394BDC00002166 /* FeedbackContainerController.m in Sources */,
+				2C8CD1671F564C5700F9654D /* UIApplication+TJSAppAppearence.m in Sources */,
 				2C85E3B71F2F302900ADD360 /* UIImage+Resizeable.m in Sources */,
 				2C8DE5CC1F2AE3BC009B3AE2 /* DiscoNewsListController.m in Sources */,
 				2CD896A41F442824008F7C73 /* ContractApplyPResultContentConfig.m in Sources */,

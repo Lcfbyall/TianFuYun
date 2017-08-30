@@ -7,7 +7,7 @@
 //
 
 #import "MineHomeCellInfoModel.h"
-#import "UIApplication+TJSAppVersion.h"
+#import "UIApplication+TJSInfoDictionary.h"
 
 
 //

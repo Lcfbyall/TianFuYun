@@ -1,5 +1,5 @@
 //
-//  UIApplication+TJSAppVersion.h
+//  UIApplication+TJSInfoDictionary.h
 //  TianJiCloud
 //
 //  Created by 朱鹏 on 2017/8/7.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIApplication (TJSAppVersion)
+@interface UIApplication (TJSInfoDictionary)
 
 + (NSString *)tjs_appverison;
 

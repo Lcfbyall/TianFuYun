@@ -8,5 +8,5 @@
 
 
 "CFBundleDisplayName" = "天富云";
-"NSCameraUsageDescription" = "天富云想使用您的摄像头";
-"NSPhotoLibraryUsageDescription" = "天富云想使用您的相册";
+"NSCameraUsageDescription" = "是否允许此App使用你的相机？";
+"NSPhotoLibraryUsageDescription" = "是否允许此App访问你的媒体资料库";

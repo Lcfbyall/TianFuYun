@@ -223,12 +223,13 @@ static  TJSImagePicker *imagePikerSevice;
         
         UINavigationBar  *Bar;
         UIBarButtonItem  *BarItem;
+        
         if (IOS9_OR_LATER){
-            
             Bar       = [UINavigationBar appearanceWhenContainedInInstancesOfClasses:@[[UIImagePickerController class]]];
             
             BarItem   = [UIBarButtonItem appearanceWhenContainedInInstancesOfClasses:@[[UIImagePickerController class]]];
         }else{
+            
             #pragma clang diagnostic push
             #pragma clang diagnostic ignored "-Wdeprecated-declarations"
             

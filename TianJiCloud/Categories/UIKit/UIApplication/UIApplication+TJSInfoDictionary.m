@@ -1,15 +1,15 @@
 //
-//  UIApplication+TJSAppVersion.m
+//  UIApplication+TJSInfoDictionary.m
 //  TianJiCloud
 //
 //  Created by 朱鹏 on 2017/8/7.
 //  Copyright © 2017年 TianJiMoney. All rights reserved.
 //
 
-#import "UIApplication+TJSAppVersion.h"
+#import "UIApplication+TJSInfoDictionary.h"
 
 
-@implementation UIApplication (TJSAppVersion)
+@implementation UIApplication (TJSInfoDictionary)
 
 + (NSString *)tjs_bundleIdentifier{
     NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];
@@ -74,8 +74,32 @@
 
 }
 
+//获取实际使用的LaunchImage图片
++ (NSString *)tjs_launchImageName
+{
+    UIWindow *keyWindow = [[UIApplication sharedApplication] keyWindow];
+    CGSize viewSize     = keyWindow.bounds.size;
+    // 竖屏
+    NSString *viewOrientation = @"Portrait";
+    NSString *launchImageName = nil;
+    NSArray* imagesDict = [[[NSBundle mainBundle] infoDictionary] valueForKey:@"UILaunchImages"];
+    for (NSDictionary* dict in imagesDict)
+    {
+        CGSize imageSize = CGSizeFromString(dict[@"UILaunchImageSize"]);
+        if (CGSizeEqualToSize(imageSize, viewSize) && [viewOrientation isEqualToString:dict[@"UILaunchImageOrientation"]])
+        {
+            launchImageName = dict[@"UILaunchImageName"];
+        }
+    }
+    return launchImageName;
+}
 
 
+/*
+ UIImage *image =  [UIImage imageNamed:@"AppIcon60x60"];
+
+ NSString *app_icon   = [[infoDictionary objectForKey:@"CFBundleIcons.CFBundlePrimaryIcon.CFBundleIconFiles"] lastObject];
+*/
 
 
 /*
