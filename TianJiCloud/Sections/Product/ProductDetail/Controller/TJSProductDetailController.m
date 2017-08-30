@@ -14,7 +14,6 @@
 @property (nonatomic,strong)ProductDetailConfig *config;
 
 
-
 @end
 
 @implementation TJSProductDetailController

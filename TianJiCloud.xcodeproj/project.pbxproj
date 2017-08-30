@@ -2310,8 +2310,8 @@
 				2CAF431B1F282D7C00ABCA5E /* View */,
 				2C4411FD1F219A5300C453EF /* Tools */,
 				2C4411FE1F219A5300C453EF /* Vender */,
-				2C4411FC1F219A5300C453EF /* Service */,
 				2C801BA31F233F46009F82F7 /* Sections */,
+				2C4411FC1F219A5300C453EF /* Service */,
 				2C4411FB1F219A5300C453EF /* Resources */,
 				2C4411E21F219A5300C453EF /* Categories */,
 				2C4411FA1F219A5300C453EF /* NetworkAPIs */,
@@ -4131,13 +4131,13 @@
 		2C8DE5971F29FA50009B3AE2 /* ProductDetail */ = {
 			isa = PBXGroup;
 			children = (
+				2C8DE5991F29FA75009B3AE2 /* Controller */,
 				2C8CD14C1F55717000F9654D /* Protocol */,
 				2C8CD14B1F55715000F9654D /* NetworkTool */,
 				2C8CD14A1F55712C00F9654D /* Disaggregate */,
 				2C8CD1451F5566A800F9654D /* Model */,
 				2C8CD1371F5551BA00F9654D /* View */,
 				2C8DE5981F29FA75009B3AE2 /* Config */,
-				2C8DE5991F29FA75009B3AE2 /* Controller */,
 			);
 			path = ProductDetail;
 			sourceTree = "<group>";

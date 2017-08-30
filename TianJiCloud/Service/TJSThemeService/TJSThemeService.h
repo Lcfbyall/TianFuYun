@@ -26,7 +26,6 @@
 - (UIColor *)main_color_01;  //橙色
 - (UIColor *)main_color_02;
 
-
 //文字
 - (UIColor *)text_color_00;
 - (UIColor *)text_color_01;
@@ -47,11 +46,8 @@
 // 按钮禁用文字颜色
 - (UIColor *)btn_color_05;
 
-
 // 页面最底层背景 变强
 - (UIColor *)weak_color_00; /**< efeff4 */
-
-
 
 
 #pragma mark - Font

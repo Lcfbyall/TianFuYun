@@ -7,6 +7,7 @@
 //
 
 #import "TJSDownLoaderManager.h"
+#import "AFNetworking.h"
 
 @implementation TJSDownLoaderManager
 

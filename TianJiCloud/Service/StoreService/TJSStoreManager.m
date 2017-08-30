@@ -7,6 +7,12 @@
 //
 
 #import "TJSStoreManager.h"
+#import "LKDBHelper.h"
+
+@interface TJSStoreManager ()
+
+
+@end
 
 @implementation TJSStoreManager
 
