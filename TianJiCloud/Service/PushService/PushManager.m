@@ -10,22 +10,17 @@
 #import "GeTuiSdk.h"
 #import <UserNotifications/UserNotifications.h>
 
-
 // push config
 #ifndef __OPTIMIZE__
-
 //Debug
 #define kGtAppId      @"izeW72zPen6dGC9TwejdQA"
 #define kGtAppKey     @"Z1UZ3ggEv88hPZ7KB8SIF6"
 #define kGtAppSecret  @"Kbwv3SSx7c6N0IDtTE0KA"
-
 #else
-
 //Release
 #define kGtAppId      @"m3srbgfBwa9b6mEBk5JBt7"
 #define kGtAppKey     @"QFThVGQbfu9b1lHvBaqfp5"
 #define kGtAppSecret  @"uPmN0KS6e06TLgiN5PbJ89"
-
 #endif
 
 

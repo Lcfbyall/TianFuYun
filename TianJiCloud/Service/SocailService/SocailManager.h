@@ -16,7 +16,7 @@
 
 - (instancetype _Nullable)init NS_UNAVAILABLE;
 
-- (void)shareToPlatform:(UMSocialPlatformType)platformType
+- (void)shareToPlatform:(TJSSharePlatType)platformType
                paramDic:(NSDictionary *_Nullable)paramDic
              completion:(TJSShareResultCompletion _Nullable )completion;
 

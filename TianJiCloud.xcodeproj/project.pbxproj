@@ -315,6 +315,14 @@
 		2C8CD1611F564B1800F9654D /* UIApplication+TJSAppstore.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD1601F564B1800F9654D /* UIApplication+TJSAppstore.m */; };
 		2C8CD1641F564B6C00F9654D /* UIApplication+JSAppSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD1631F564B6C00F9654D /* UIApplication+JSAppSetting.m */; };
 		2C8CD1671F564C5700F9654D /* UIApplication+TJSAppAppearence.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD1661F564C5700F9654D /* UIApplication+TJSAppAppearence.m */; };
+		2C8CD16A1F56A52900F9654D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD1691F56A52900F9654D /* AppDelegate.m */; };
+		2C8CD17C1F56BA2E00F9654D /* WXApiRequestHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD1791F56BA2E00F9654D /* WXApiRequestHandler.m */; };
+		2C8CD17D1F56BA2E00F9654D /* WXApiResponseHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD17B1F56BA2E00F9654D /* WXApiResponseHandler.m */; };
+		2C8CD1801F56BA3500F9654D /* WXApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD17F1F56BA3500F9654D /* WXApiManager.m */; };
+		2C8CD1881F56C00200F9654D /* GetMessageFromWXResp+responseWithTextOrMediaMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD1831F56C00200F9654D /* GetMessageFromWXResp+responseWithTextOrMediaMessage.m */; };
+		2C8CD1891F56C00200F9654D /* SendMessageToWXReq+requestWithTextOrMediaMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD1851F56C00200F9654D /* SendMessageToWXReq+requestWithTextOrMediaMessage.m */; };
+		2C8CD18A1F56C00200F9654D /* WXMediaMessage+messageConstruct.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD1871F56C00200F9654D /* WXMediaMessage+messageConstruct.m */; };
+		2C8CD18D1F56C59600F9654D /* AliApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD18C1F56C59600F9654D /* AliApiManager.m */; };
 		2C8DE57E1F29D484009B3AE2 /* TJSHomeListConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE57D1F29D484009B3AE2 /* TJSHomeListConfigurator.m */; };
 		2C8DE5811F29D4F7009B3AE2 /* TJSHomeListTableAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE5801F29D4F7009B3AE2 /* TJSHomeListTableAdapter.m */; };
 		2C8DE5841F29D509009B3AE2 /* TJSHomeListInteractorImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE5831F29D509009B3AE2 /* TJSHomeListInteractorImpl.m */; };
@@ -1270,6 +1278,22 @@
 		2C8CD1631F564B6C00F9654D /* UIApplication+JSAppSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+JSAppSetting.m"; sourceTree = "<group>"; };
 		2C8CD1651F564C5700F9654D /* UIApplication+TJSAppAppearence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+TJSAppAppearence.h"; sourceTree = "<group>"; };
 		2C8CD1661F564C5700F9654D /* UIApplication+TJSAppAppearence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+TJSAppAppearence.m"; sourceTree = "<group>"; };
+		2C8CD1681F56A52900F9654D /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2C8CD1691F56A52900F9654D /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2C8CD1781F56BA2E00F9654D /* WXApiRequestHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiRequestHandler.h; sourceTree = "<group>"; };
+		2C8CD1791F56BA2E00F9654D /* WXApiRequestHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXApiRequestHandler.m; sourceTree = "<group>"; };
+		2C8CD17A1F56BA2E00F9654D /* WXApiResponseHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiResponseHandler.h; sourceTree = "<group>"; };
+		2C8CD17B1F56BA2E00F9654D /* WXApiResponseHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXApiResponseHandler.m; sourceTree = "<group>"; };
+		2C8CD17E1F56BA3500F9654D /* WXApiManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiManager.h; sourceTree = "<group>"; };
+		2C8CD17F1F56BA3500F9654D /* WXApiManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXApiManager.m; sourceTree = "<group>"; };
+		2C8CD1821F56C00200F9654D /* GetMessageFromWXResp+responseWithTextOrMediaMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GetMessageFromWXResp+responseWithTextOrMediaMessage.h"; sourceTree = "<group>"; };
+		2C8CD1831F56C00200F9654D /* GetMessageFromWXResp+responseWithTextOrMediaMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GetMessageFromWXResp+responseWithTextOrMediaMessage.m"; sourceTree = "<group>"; };
+		2C8CD1841F56C00200F9654D /* SendMessageToWXReq+requestWithTextOrMediaMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SendMessageToWXReq+requestWithTextOrMediaMessage.h"; sourceTree = "<group>"; };
+		2C8CD1851F56C00200F9654D /* SendMessageToWXReq+requestWithTextOrMediaMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SendMessageToWXReq+requestWithTextOrMediaMessage.m"; sourceTree = "<group>"; };
+		2C8CD1861F56C00200F9654D /* WXMediaMessage+messageConstruct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WXMediaMessage+messageConstruct.h"; sourceTree = "<group>"; };
+		2C8CD1871F56C00200F9654D /* WXMediaMessage+messageConstruct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WXMediaMessage+messageConstruct.m"; sourceTree = "<group>"; };
+		2C8CD18B1F56C59600F9654D /* AliApiManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliApiManager.h; sourceTree = "<group>"; };
+		2C8CD18C1F56C59600F9654D /* AliApiManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliApiManager.m; sourceTree = "<group>"; };
 		2C8DE57C1F29D484009B3AE2 /* TJSHomeListConfigurator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSHomeListConfigurator.h; sourceTree = "<group>"; };
 		2C8DE57D1F29D484009B3AE2 /* TJSHomeListConfigurator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSHomeListConfigurator.m; sourceTree = "<group>"; };
 		2C8DE57F1F29D4F7009B3AE2 /* TJSHomeListTableAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSHomeListTableAdapter.h; sourceTree = "<group>"; };
@@ -2292,12 +2316,14 @@
 				2C4411E21F219A5300C453EF /* Categories */,
 				2C4411FA1F219A5300C453EF /* NetworkAPIs */,
 				2C4411F61F219A5300C453EF /* Macro&Const */,
-				2C4411B71F21981E00C453EF /* Main.storyboard */,
+				2C8CD1681F56A52900F9654D /* AppDelegate.h */,
+				2C8CD1691F56A52900F9654D /* AppDelegate.m */,
 				2C4411BC1F21981E00C453EF /* LaunchScreen.storyboard */,
-				2C4411BA1F21981E00C453EF /* Assets.xcassets */,
-				2CEC5A1C1F50164E006C03F5 /* Info.plist */,
+				2C4411B71F21981E00C453EF /* Main.storyboard */,
 				2CEC5A361F501D32006C03F5 /* InfoPlist.strings */,
 				2CEC5A261F50170D006C03F5 /* Localizable.strings */,
+				2CEC5A1C1F50164E006C03F5 /* Info.plist */,
+				2C4411BA1F21981E00C453EF /* Assets.xcassets */,
 				2C4411AB1F21981E00C453EF /* Supporting Files */,
 			);
 			path = TianJiCloud;
@@ -2476,6 +2502,8 @@
 				2C4412481F21D40300C453EF /* SystemAlert */,
 				2C8CD10D1F55031F00F9654D /* FMDBService */,
 				2C8CD1291F554B7C00F9654D /* RootController */,
+				2C8CD16D1F56B9EC00F9654D /* AlipayManger */,
+				2C8CD16E1F56B9ED00F9654D /* WeixinManager */,
 				2C8CD10C1F5502F400F9654D /* PushService */,
 				2C8CD10A1F5502F400F9654D /* SocailService */,
 				2C8CD10B1F5502F400F9654D /* StatisticService */,
@@ -4024,6 +4052,42 @@
 				2C8CD15E1F5573C900F9654D /* ProductDetailPrivateProtocol.h */,
 			);
 			path = Protocol;
+			sourceTree = "<group>";
+		};
+		2C8CD16D1F56B9EC00F9654D /* AlipayManger */ = {
+			isa = PBXGroup;
+			children = (
+				2C8CD18B1F56C59600F9654D /* AliApiManager.h */,
+				2C8CD18C1F56C59600F9654D /* AliApiManager.m */,
+			);
+			path = AlipayManger;
+			sourceTree = "<group>";
+		};
+		2C8CD16E1F56B9ED00F9654D /* WeixinManager */ = {
+			isa = PBXGroup;
+			children = (
+				2C8CD17E1F56BA3500F9654D /* WXApiManager.h */,
+				2C8CD17F1F56BA3500F9654D /* WXApiManager.m */,
+				2C8CD1781F56BA2E00F9654D /* WXApiRequestHandler.h */,
+				2C8CD1791F56BA2E00F9654D /* WXApiRequestHandler.m */,
+				2C8CD17A1F56BA2E00F9654D /* WXApiResponseHandler.h */,
+				2C8CD17B1F56BA2E00F9654D /* WXApiResponseHandler.m */,
+				2C8CD1811F56C00200F9654D /* Category */,
+			);
+			path = WeixinManager;
+			sourceTree = "<group>";
+		};
+		2C8CD1811F56C00200F9654D /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				2C8CD1861F56C00200F9654D /* WXMediaMessage+messageConstruct.h */,
+				2C8CD1871F56C00200F9654D /* WXMediaMessage+messageConstruct.m */,
+				2C8CD1841F56C00200F9654D /* SendMessageToWXReq+requestWithTextOrMediaMessage.h */,
+				2C8CD1851F56C00200F9654D /* SendMessageToWXReq+requestWithTextOrMediaMessage.m */,
+				2C8CD1821F56C00200F9654D /* GetMessageFromWXResp+responseWithTextOrMediaMessage.h */,
+				2C8CD1831F56C00200F9654D /* GetMessageFromWXResp+responseWithTextOrMediaMessage.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 		2C8DE57A1F29D406009B3AE2 /* Disaggregate */ = {
@@ -6489,6 +6553,7 @@
 				2CD8970C1F45480B008F7C73 /* AddressManageDataSourceImpl.m in Sources */,
 				2C8CD1281F55493600F9654D /* KeyboardManager.m in Sources */,
 				2CB4F5F01F41C3BB00FF98C9 /* MyContractListStoreTool.m in Sources */,
+				2C8CD17D1F56BA2E00F9654D /* WXApiResponseHandler.m in Sources */,
 				2CE542451F4EA99300205993 /* SetWithDarwCodeApi.m in Sources */,
 				2C4D35CA1F4C05F00082BB36 /* WithDrawDepositHomeHeader.m in Sources */,
 				2CD896E11F453D33008F7C73 /* ContractAddAddressLayoutImpl.m in Sources */,
@@ -6554,6 +6619,7 @@
 				2CB4F6081F42849100FF98C9 /* MyFavListDataSourceImpl.m in Sources */,
 				2CD897521F457B96008F7C73 /* AddressSelectedTableAdapter.m in Sources */,
 				2C85E3AD1F2F1C1D00ADD360 /* MineHomeInvestCell.m in Sources */,
+				2C8CD18A1F56C00200F9654D /* WXMediaMessage+messageConstruct.m in Sources */,
 				2CB4F5761F418FFB00FF98C9 /* CumulateInvestNetworkTool.m in Sources */,
 				2C8DE5B61F2AD8B3009B3AE2 /* DiscoveryRoadShowListCell.m in Sources */,
 				2CCC85AB1F3AEE3A0009FC1C /* ProducFilterVCConfig.m in Sources */,
@@ -6677,6 +6743,7 @@
 				2CB4F63D1F42F26500FF98C9 /* ContractApplyInteractorImpl.m in Sources */,
 				2C4412A71F2201FF00C453EF /* TJSBaseRequest.m in Sources */,
 				2C8BB7C91F31BB9F00E2D75F /* ProductContainerController.m in Sources */,
+				2C8CD1891F56C00200F9654D /* SendMessageToWXReq+requestWithTextOrMediaMessage.m in Sources */,
 				2C2E65991F4D143B00681758 /* SettingHomeHeader.m in Sources */,
 				2C4412521F21DABC00C453EF /* UIViewController+StackLevel.m in Sources */,
 				2C8DE57E1F29D484009B3AE2 /* TJSHomeListConfigurator.m in Sources */,
@@ -6685,6 +6752,7 @@
 				2C89AD871F2C9A90005C29AC /* UISearchBar+CommanStyle.m in Sources */,
 				2C8DE5A41F29FF89009B3AE2 /* ProductSearchController.m in Sources */,
 				2C027D081F3BF848001D7EB6 /* ProductFilterReusableSectionHeader.m in Sources */,
+				2C8CD1881F56C00200F9654D /* GetMessageFromWXResp+responseWithTextOrMediaMessage.m in Sources */,
 				2CF8B5611F3DBAAD003B8520 /* ProductSearchListCellLayoutConfig.m in Sources */,
 				2C8DE5F81F2AE9D0009B3AE2 /* DiscoveryNewsNetworkTool.m in Sources */,
 				2C44125D1F21DF3600C453EF /* NSObject+Swizzle.m in Sources */,
@@ -6758,6 +6826,7 @@
 				2C1B74E21F4698A30000E71A /* BankCardAddCellFactory.m in Sources */,
 				2CB4F5721F418FFB00FF98C9 /* CumulativeInvestConfig.m in Sources */,
 				2CB4F6151F4298E900FF98C9 /* ContractListCellFactory.m in Sources */,
+				2C8CD1801F56BA3500F9654D /* WXApiManager.m in Sources */,
 				2C859CF51F31EB2E00B86575 /* ZLPhotoAssets.m in Sources */,
 				2C85E3B01F2F1C2B00ADD360 /* MineHomeBalanceCell.m in Sources */,
 				2C859CEC1F31EB2E00B86575 /* ZLCameraViewController.m in Sources */,
@@ -6785,6 +6854,7 @@
 				2C4412041F219A5300C453EF /* UIImage+FromColor.m in Sources */,
 				2CAF42851F27261A00ABCA5E /* TJSProductDeleteApi.m in Sources */,
 				2C8BB7BB1F315CB500E2D75F /* HomeFooterWebController.m in Sources */,
+				2C8CD17C1F56BA2E00F9654D /* WXApiRequestHandler.m in Sources */,
 				2C8CD1551F55730E00F9654D /* ProductDetailLayoutImpl.m in Sources */,
 				2C597DC41F4C2CB900415EB6 /* SettingHomeTableAdapter.m in Sources */,
 				2CAF43081F2828C200ABCA5E /* TJSProductListInteractorImpl.m in Sources */,
@@ -6906,6 +6976,7 @@
 				2C4D35D71F4C23B10082BB36 /* CumulativeInvestContentConfigFactory.m in Sources */,
 				2C8DE5F41F2AE849009B3AE2 /* TJSDiscoNewsListAdapter.m in Sources */,
 				2CEC58DC1F4FCDE7006C03F5 /* UITextView+EditRect.m in Sources */,
+				2C8CD18D1F56C59600F9654D /* AliApiManager.m in Sources */,
 				A28956981F3CA25E002D6845 /* ProductSearchResultLayout.m in Sources */,
 				2CCBE4A51F344A98006C4018 /* MineHomeCellIvestItem.m in Sources */,
 				2C300F7F1F2F3C3C00DD440E /* ProfileViewController.m in Sources */,
@@ -6948,6 +7019,7 @@
 				2C4C1C9E1F39493400002166 /* PNLineChartData.m in Sources */,
 				2C801BD21F233F46009F82F7 /* TJSBaseNavigationController.m in Sources */,
 				2CAF42D41F281B8600ABCA5E /* TJSProductListImageContentConfig.m in Sources */,
+				2C8CD16A1F56A52900F9654D /* AppDelegate.m in Sources */,
 				2CD8972E1F457604008F7C73 /* AddressSelectedDefaultCell.m in Sources */,
 				2C4C1C261F38568D00002166 /* TJSMyOrderListCellContentConfig.m in Sources */,
 				2C859CF41F31EB2E00B86575 /* ZLPhotoPickerCustomToolBarView.m in Sources */,

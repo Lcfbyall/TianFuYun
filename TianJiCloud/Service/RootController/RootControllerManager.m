@@ -25,7 +25,6 @@
 
 TJS_EXPORT_SERVICE(@"RootController")
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     TJSAppDelegate *appdelegate = (TJSAppDelegate *)[UIApplication sharedApplication].delegate;

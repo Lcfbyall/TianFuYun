@@ -13,7 +13,7 @@ target "TianJiCloud" do
     pod 'UMengUShare/Social/WeChat'
     pod 'UMengUShare/Social/QQ'
     
-
+    pod 'LKDBHelper'
 
     pod 'YYModel'
     pod 'YYCategories'

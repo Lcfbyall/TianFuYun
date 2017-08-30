@@ -8,6 +8,9 @@
 
 #import "SocailManager.h"
 
+@interface SocailManager ()
+
+@end
 
 @implementation SocailManager
 
@@ -48,7 +51,7 @@
 
 }
 
-- (void)shareToPlatform:(UMSocialPlatformType)platformType
+- (void)shareToPlatform:(TJSSharePlatType)platformType
                paramDic:(NSDictionary *)paramDic
              completion:(TJSShareResultCompletion)completion{
     
@@ -65,7 +68,7 @@
     messageObject.shareObject = shareObject;
     
     //调用分享接口
-    [[UMSocialManager defaultManager] shareToPlatform:platformType messageObject:messageObject currentViewController:[UIViewController tjs_currentController] completion:^(id data, NSError *error) {
+    [[UMSocialManager defaultManager] shareToPlatform:(UMSocialPlatformType)platformType messageObject:messageObject currentViewController:[UIViewController tjs_currentController] completion:^(id data, NSError *error) {
         
         if (error) {
             
@@ -95,7 +98,9 @@ TJS_EXPORT_SERVICE(@"SocialService")
 
 // 仅支持iOS9以上系统，iOS8及以下系统不会回调
 // no equiv. notification. return NO if the application can't open for some reason
-- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey, id> *)options NS_AVAILABLE_IOS(9_0){
+- (BOOL)application:(UIApplication *)app
+            openURL:(NSURL *)url
+            options:(NSDictionary<UIApplicationOpenURLOptionsKey, id> *)options NS_AVAILABLE_IOS(9_0){
     
     /*
      *  获得从sso或者web端回调到本app的回调
@@ -114,7 +119,8 @@ TJS_EXPORT_SERVICE(@"SocialService")
 
 
 //2.0开始，9.0废弃，支持目前所有iOS系统
-- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url NS_DEPRECATED_IOS(2_0, 9_0, "Please use application:openURL:options:") __TVOS_PROHIBITED{
+- (BOOL)application:(UIApplication *)application
+      handleOpenURL:(NSURL *)url NS_DEPRECATED_IOS(2_0, 9_0, "Please use application:openURL:options:") __TVOS_PROHIBITED{
 
     /*
      *  获得从sso或者web端回调到本app的回调
@@ -129,7 +135,10 @@ TJS_EXPORT_SERVICE(@"SocialService")
 }
 
 //4.2开始，9.0废弃，支持目前所有iOS系统
-- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(nullable NSString *)sourceApplication annotation:(id)annotation NS_DEPRECATED_IOS(4_2, 9_0, "Please use application:openURL:options:") __TVOS_PROHIBITED{
+- (BOOL)application:(UIApplication *)application
+            openURL:(NSURL *)url
+  sourceApplication:(nullable NSString *)sourceApplication
+         annotation:(id)annotation NS_DEPRECATED_IOS(4_2, 9_0, "Please use application:openURL:options:") __TVOS_PROHIBITED{
 
     /*
      *  获得从sso或者web端回调到本app的回调
