@@ -10,6 +10,8 @@ target "TianJiCloud" do
 
     pod 'GTSDK', '1.6.2.0-noidfa'
 
+    pod 'AlipaySDK-2.0'
+
     pod 'UMengUShare/UI'
     pod 'UMengUShare/Social/Sina'
     pod 'UMengUShare/Social/WeChat'

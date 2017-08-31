@@ -153,6 +153,9 @@
 		2C4D35E81F4C25860082BB36 /* CumulativeInvestLayoutImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4D35E21F4C25860082BB36 /* CumulativeInvestLayoutImpl.m */; };
 		2C4D35E91F4C25860082BB36 /* CumulativeInvestTableAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4D35E41F4C25860082BB36 /* CumulativeInvestTableAdapter.m */; };
 		2C4D35EC1F4C26E50082BB36 /* CumulateInvestHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4D35EB1F4C26E50082BB36 /* CumulateInvestHeader.m */; };
+		2C562A6A1F57F1C300835984 /* AlipayOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C562A671F57F1C300835984 /* AlipayOrder.m */; };
+		2C562A6B1F57F1C300835984 /* APAuthV2Info.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C562A691F57F1C300835984 /* APAuthV2Info.m */; };
+		2C562A6E1F57F1E500835984 /* APWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C562A6D1F57F1E500835984 /* APWebViewController.m */; };
 		2C597DBA1F4C2CB900415EB6 /* MineSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C597DA01F4C2CB900415EB6 /* MineSettingViewController.m */; };
 		2C597DBB1F4C2CB900415EB6 /* SettingHomeCellFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C597DA31F4C2CB900415EB6 /* SettingHomeCellFactory.m */; };
 		2C597DBC1F4C2CB900415EB6 /* SettingHomeCellLayoutConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C597DA51F4C2CB900415EB6 /* SettingHomeCellLayoutConfig.m */; };
@@ -198,8 +201,6 @@
 		2C83C7281F39BA4C004034CA /* AllActivityTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C83C7271F39BA4C004034CA /* AllActivityTableCell.m */; };
 		2C83C72C1F39BB46004034CA /* HistoryRewardsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C83C72B1F39BB46004034CA /* HistoryRewardsController.m */; };
 		2C83C7301F39BD27004034CA /* RewardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C83C72F1F39BD27004034CA /* RewardViewController.m */; };
-		2C859CE01F31EB2E00B86575 /* DACircularProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C859C8A1F31EB2E00B86575 /* DACircularProgressView.m */; };
-		2C859CE11F31EB2E00B86575 /* DALabeledCircularProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C859C8C1F31EB2E00B86575 /* DALabeledCircularProgressView.m */; };
 		2C859CE21F31EB2E00B86575 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C859C8F1F31EB2E00B86575 /* MBProgressHUD.m */; };
 		2C859CE31F31EB2E00B86575 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C859C921F31EB2E00B86575 /* UIView+Frame.m */; };
 		2C859CE41F31EB2E00B86575 /* YZDisplayTitleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C859C941F31EB2E00B86575 /* YZDisplayTitleLabel.m */; };
@@ -321,7 +322,7 @@
 		2C8CD1881F56C00200F9654D /* GetMessageFromWXResp+responseWithTextOrMediaMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD1831F56C00200F9654D /* GetMessageFromWXResp+responseWithTextOrMediaMessage.m */; };
 		2C8CD1891F56C00200F9654D /* SendMessageToWXReq+requestWithTextOrMediaMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD1851F56C00200F9654D /* SendMessageToWXReq+requestWithTextOrMediaMessage.m */; };
 		2C8CD18A1F56C00200F9654D /* WXMediaMessage+messageConstruct.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD1871F56C00200F9654D /* WXMediaMessage+messageConstruct.m */; };
-		2C8CD18D1F56C59600F9654D /* AliApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD18C1F56C59600F9654D /* AliApiManager.m */; };
+		2C8CD18D1F56C59600F9654D /* AlipayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD18C1F56C59600F9654D /* AlipayManager.m */; };
 		2C8CD1E71F57A7BD00F9654D /* .project in Resources */ = {isa = PBXBuildFile; fileRef = 2C8CD1971F57A7BD00F9654D /* .project */; };
 		2C8CD1E81F57A7BD00F9654D /* common.css in Resources */ = {isa = PBXBuildFile; fileRef = 2C8CD1991F57A7BD00F9654D /* common.css */; };
 		2C8CD1E91F57A7BD00F9654D /* conduct_detail.css in Resources */ = {isa = PBXBuildFile; fileRef = 2C8CD19B1F57A7BD00F9654D /* conduct_detail.css */; };
@@ -1022,6 +1023,13 @@
 		2C4D35E41F4C25860082BB36 /* CumulativeInvestTableAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CumulativeInvestTableAdapter.m; sourceTree = "<group>"; };
 		2C4D35EA1F4C26E50082BB36 /* CumulateInvestHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CumulateInvestHeader.h; sourceTree = "<group>"; };
 		2C4D35EB1F4C26E50082BB36 /* CumulateInvestHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CumulateInvestHeader.m; sourceTree = "<group>"; };
+		2C562A651F57ED5900835984 /* AlipayManagerDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlipayManagerDefine.h; sourceTree = "<group>"; };
+		2C562A661F57F1C300835984 /* AlipayOrder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlipayOrder.h; sourceTree = "<group>"; };
+		2C562A671F57F1C300835984 /* AlipayOrder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlipayOrder.m; sourceTree = "<group>"; };
+		2C562A681F57F1C300835984 /* APAuthV2Info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APAuthV2Info.h; sourceTree = "<group>"; };
+		2C562A691F57F1C300835984 /* APAuthV2Info.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APAuthV2Info.m; sourceTree = "<group>"; };
+		2C562A6C1F57F1E500835984 /* APWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APWebViewController.h; sourceTree = "<group>"; };
+		2C562A6D1F57F1E500835984 /* APWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APWebViewController.m; sourceTree = "<group>"; };
 		2C597D9F1F4C2CB900415EB6 /* MineSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineSettingViewController.h; sourceTree = "<group>"; };
 		2C597DA01F4C2CB900415EB6 /* MineSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineSettingViewController.m; sourceTree = "<group>"; };
 		2C597DA21F4C2CB900415EB6 /* SettingHomeCellFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingHomeCellFactory.h; sourceTree = "<group>"; };
@@ -1104,10 +1112,6 @@
 		2C83C72B1F39BB46004034CA /* HistoryRewardsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryRewardsController.m; sourceTree = "<group>"; };
 		2C83C72E1F39BD27004034CA /* RewardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RewardViewController.h; sourceTree = "<group>"; };
 		2C83C72F1F39BD27004034CA /* RewardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RewardViewController.m; sourceTree = "<group>"; };
-		2C859C891F31EB2E00B86575 /* DACircularProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DACircularProgressView.h; sourceTree = "<group>"; };
-		2C859C8A1F31EB2E00B86575 /* DACircularProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DACircularProgressView.m; sourceTree = "<group>"; };
-		2C859C8B1F31EB2E00B86575 /* DALabeledCircularProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DALabeledCircularProgressView.h; sourceTree = "<group>"; };
-		2C859C8C1F31EB2E00B86575 /* DALabeledCircularProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DALabeledCircularProgressView.m; sourceTree = "<group>"; };
 		2C859C8E1F31EB2E00B86575 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		2C859C8F1F31EB2E00B86575 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		2C859C911F31EB2E00B86575 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
@@ -1360,8 +1364,8 @@
 		2C8CD1851F56C00200F9654D /* SendMessageToWXReq+requestWithTextOrMediaMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SendMessageToWXReq+requestWithTextOrMediaMessage.m"; sourceTree = "<group>"; };
 		2C8CD1861F56C00200F9654D /* WXMediaMessage+messageConstruct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WXMediaMessage+messageConstruct.h"; sourceTree = "<group>"; };
 		2C8CD1871F56C00200F9654D /* WXMediaMessage+messageConstruct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WXMediaMessage+messageConstruct.m"; sourceTree = "<group>"; };
-		2C8CD18B1F56C59600F9654D /* AliApiManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliApiManager.h; sourceTree = "<group>"; };
-		2C8CD18C1F56C59600F9654D /* AliApiManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliApiManager.m; sourceTree = "<group>"; };
+		2C8CD18B1F56C59600F9654D /* AlipayManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlipayManager.h; sourceTree = "<group>"; };
+		2C8CD18C1F56C59600F9654D /* AlipayManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlipayManager.m; sourceTree = "<group>"; };
 		2C8CD1971F57A7BD00F9654D /* .project */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = .project; sourceTree = "<group>"; };
 		2C8CD1991F57A7BD00F9654D /* common.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = common.css; sourceTree = "<group>"; };
 		2C8CD19B1F57A7BD00F9654D /* conduct_detail.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = conduct_detail.css; sourceTree = "<group>"; };
@@ -3383,23 +3387,11 @@
 				2C4C1C8A1F3948E800002166 /* PNChart */,
 				2C4C1C961F39493400002166 /* PNLineChart */,
 				2C4C1C831F3948E100002166 /* PNPieChart */,
-				2C859C881F31EB2E00B86575 /* DACircularProgress */,
 				2C859C8D1F31EB2E00B86575 /* MBProgressHUD */,
 				2C859C901F31EB2E00B86575 /* YZDisplayViewController */,
 				2C859C9A1F31EB2E00B86575 /* ZLPhotoLib */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		2C859C881F31EB2E00B86575 /* DACircularProgress */ = {
-			isa = PBXGroup;
-			children = (
-				2C859C891F31EB2E00B86575 /* DACircularProgressView.h */,
-				2C859C8A1F31EB2E00B86575 /* DACircularProgressView.m */,
-				2C859C8B1F31EB2E00B86575 /* DALabeledCircularProgressView.h */,
-				2C859C8C1F31EB2E00B86575 /* DALabeledCircularProgressView.m */,
-			);
-			path = DACircularProgress;
 			sourceTree = "<group>";
 		};
 		2C859C8D1F31EB2E00B86575 /* MBProgressHUD */ = {
@@ -4201,8 +4193,15 @@
 		2C8CD16D1F56B9EC00F9654D /* AlipayManger */ = {
 			isa = PBXGroup;
 			children = (
-				2C8CD18B1F56C59600F9654D /* AliApiManager.h */,
-				2C8CD18C1F56C59600F9654D /* AliApiManager.m */,
+				2C8CD18B1F56C59600F9654D /* AlipayManager.h */,
+				2C8CD18C1F56C59600F9654D /* AlipayManager.m */,
+				2C562A661F57F1C300835984 /* AlipayOrder.h */,
+				2C562A671F57F1C300835984 /* AlipayOrder.m */,
+				2C562A681F57F1C300835984 /* APAuthV2Info.h */,
+				2C562A691F57F1C300835984 /* APAuthV2Info.m */,
+				2C562A6C1F57F1E500835984 /* APWebViewController.h */,
+				2C562A6D1F57F1E500835984 /* APWebViewController.m */,
+				2C562A651F57ED5900835984 /* AlipayManagerDefine.h */,
 			);
 			path = AlipayManger;
 			sourceTree = "<group>";
@@ -7008,6 +7007,7 @@
 				2C1B74BF1F4694FF0000E71A /* BankCardListDataSourceImpl.m in Sources */,
 				2C027D0B1F3BFA28001D7EB6 /* TJSBaseCollectionReusableView.m in Sources */,
 				2C4C1C1F1F38531F00002166 /* TJSMyOrderListCellLayoutConfig.m in Sources */,
+				2C562A6E1F57F1E500835984 /* APWebViewController.m in Sources */,
 				2CEC58D31F4FCDE7006C03F5 /* UIButton+ContentRect.m in Sources */,
 				2C4D35D61F4C23B10082BB36 /* CumulativeInvestCellLayoutConfig.m in Sources */,
 				2CE542241F4EA4A100205993 /* LogoutNetworkTool.m in Sources */,
@@ -7029,7 +7029,6 @@
 				2C8CD1041F53FCA400F9654D /* UITableView+TJSTableHeader.m in Sources */,
 				2C4D35D81F4C23B10082BB36 /* CumulativeInvestDefaultContentConfig.m in Sources */,
 				2C859CEB1F31EB2E00B86575 /* ZLCameraView.m in Sources */,
-				2C859CE01F31EB2E00B86575 /* DACircularProgressView.m in Sources */,
 				2CD8969E1F4427E8008F7C73 /* ContractApplyInfoContentConfig.m in Sources */,
 				2C4D35EC1F4C26E50082BB36 /* CumulateInvestHeader.m in Sources */,
 				2C859CE31F31EB2E00B86575 /* UIView+Frame.m in Sources */,
@@ -7151,6 +7150,7 @@
 				2C85E32E1F2EC60700ADD360 /* MyOrderContainerController.m in Sources */,
 				2C8DE6021F2AEB06009B3AE2 /* DiscoveryNewsInfo.m in Sources */,
 				A28956951F3CA22A002D6845 /* ProductSearchHotLayout.m in Sources */,
+				2C562A6A1F57F1C300835984 /* AlipayOrder.m in Sources */,
 				2C597DC11F4C2CB900415EB6 /* SettingHomeDataSourceImpl.m in Sources */,
 				2CCC85AF1F3AEE3A0009FC1C /* TJSProductFilterConfigurator.m in Sources */,
 				2CB4F5E21F41C3BB00FF98C9 /* ContractListConfig.m in Sources */,
@@ -7393,7 +7393,6 @@
 				2CF8B5581F3DA324003B8520 /* ProductSearchHotApi.m in Sources */,
 				2CD896C71F453B09008F7C73 /* ContractAddAddressBaseCell.m in Sources */,
 				2C8DE5EE1F2AE7D0009B3AE2 /* TJSDiscoNewsConfigurator.m in Sources */,
-				2C859CE11F31EB2E00B86575 /* DALabeledCircularProgressView.m in Sources */,
 				2CE542481F4EA9BA00205993 /* ModifyWithDrawCodeApi.m in Sources */,
 				2C4C1C9F1F39493400002166 /* PNLineChartDataItem.m in Sources */,
 				2CD8971A1F4548E2008F7C73 /* AddressManageCellLayoutConfig.m in Sources */,
@@ -7402,7 +7401,7 @@
 				2C4D35D71F4C23B10082BB36 /* CumulativeInvestContentConfigFactory.m in Sources */,
 				2C8DE5F41F2AE849009B3AE2 /* TJSDiscoNewsListAdapter.m in Sources */,
 				2CEC58DC1F4FCDE7006C03F5 /* UITextView+EditRect.m in Sources */,
-				2C8CD18D1F56C59600F9654D /* AliApiManager.m in Sources */,
+				2C8CD18D1F56C59600F9654D /* AlipayManager.m in Sources */,
 				A28956981F3CA25E002D6845 /* ProductSearchResultLayout.m in Sources */,
 				2CCBE4A51F344A98006C4018 /* MineHomeCellIvestItem.m in Sources */,
 				2C300F7F1F2F3C3C00DD440E /* ProfileViewController.m in Sources */,
@@ -7430,6 +7429,7 @@
 				2C88F6971F4EC434009CF23E /* TJSActionSheet.m in Sources */,
 				2C85E39B1F2F1A3100ADD360 /* TJSMineHomeOrderCellContentConfig.m in Sources */,
 				2C1B74BA1F4694FF0000E71A /* BankCardListConfig.m in Sources */,
+				2C562A6B1F57F1C300835984 /* APAuthV2Info.m in Sources */,
 				2C8BB7A21F30859C00E2D75F /* HomeFooterCollectionLayout.m in Sources */,
 				2CAF42D61F281B8600ABCA5E /* TJSBaseProductListContentConfig.m in Sources */,
 				2C8CD1091F54FFC000F9654D /* EmptyDataSetAdapter.m in Sources */,
@@ -7679,9 +7679,11 @@
 				INFOPLIST_FILE = TianJiCloud/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = TianJiMoney.TianJiCloud;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				VALID_ARCHS = "arm64 armv7s";
 			};
 			name = Debug;
 		};
@@ -7697,9 +7699,11 @@
 				INFOPLIST_FILE = TianJiCloud/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = TianJiMoney.TianJiCloud;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				VALID_ARCHS = "arm64 armv7s";
 			};
 			name = Release;
 		};
