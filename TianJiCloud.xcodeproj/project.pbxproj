@@ -156,6 +156,7 @@
 		2C562A6A1F57F1C300835984 /* AlipayOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C562A671F57F1C300835984 /* AlipayOrder.m */; };
 		2C562A6B1F57F1C300835984 /* APAuthV2Info.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C562A691F57F1C300835984 /* APAuthV2Info.m */; };
 		2C562A6E1F57F1E500835984 /* APWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C562A6D1F57F1E500835984 /* APWebViewController.m */; };
+		2C562A721F57F7EF00835984 /* ZFPlayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C562A711F57F7EF00835984 /* ZFPlayerManager.m */; };
 		2C597DBA1F4C2CB900415EB6 /* MineSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C597DA01F4C2CB900415EB6 /* MineSettingViewController.m */; };
 		2C597DBB1F4C2CB900415EB6 /* SettingHomeCellFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C597DA31F4C2CB900415EB6 /* SettingHomeCellFactory.m */; };
 		2C597DBC1F4C2CB900415EB6 /* SettingHomeCellLayoutConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C597DA51F4C2CB900415EB6 /* SettingHomeCellLayoutConfig.m */; };
@@ -1030,6 +1031,8 @@
 		2C562A691F57F1C300835984 /* APAuthV2Info.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APAuthV2Info.m; sourceTree = "<group>"; };
 		2C562A6C1F57F1E500835984 /* APWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APWebViewController.h; sourceTree = "<group>"; };
 		2C562A6D1F57F1E500835984 /* APWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APWebViewController.m; sourceTree = "<group>"; };
+		2C562A701F57F7EF00835984 /* ZFPlayerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFPlayerManager.h; sourceTree = "<group>"; };
+		2C562A711F57F7EF00835984 /* ZFPlayerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFPlayerManager.m; sourceTree = "<group>"; };
 		2C597D9F1F4C2CB900415EB6 /* MineSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineSettingViewController.h; sourceTree = "<group>"; };
 		2C597DA01F4C2CB900415EB6 /* MineSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineSettingViewController.m; sourceTree = "<group>"; };
 		2C597DA21F4C2CB900415EB6 /* SettingHomeCellFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingHomeCellFactory.h; sourceTree = "<group>"; };
@@ -2644,6 +2647,7 @@
 			isa = PBXGroup;
 			children = (
 				2C88F6981F4EC735009CF23E /* Photo */,
+				2C562A6F1F57F7DC00835984 /* ZFPlayerService */,
 				2C4412401F21D34900C453EF /* EnumValue */,
 				2C4412AA1F22023E00C453EF /* HudAlert */,
 				2C4412481F21D40300C453EF /* SystemAlert */,
@@ -3092,6 +3096,15 @@
 			children = (
 			);
 			path = Protocol;
+			sourceTree = "<group>";
+		};
+		2C562A6F1F57F7DC00835984 /* ZFPlayerService */ = {
+			isa = PBXGroup;
+			children = (
+				2C562A701F57F7EF00835984 /* ZFPlayerManager.h */,
+				2C562A711F57F7EF00835984 /* ZFPlayerManager.m */,
+			);
+			path = ZFPlayerService;
 			sourceTree = "<group>";
 		};
 		2C597D9E1F4C2CB900415EB6 /* Controller */ = {
@@ -7254,6 +7267,7 @@
 				2CB4F6151F4298E900FF98C9 /* ContractListCellFactory.m in Sources */,
 				2C8CD1801F56BA3500F9654D /* WXApiManager.m in Sources */,
 				2C859CF51F31EB2E00B86575 /* ZLPhotoAssets.m in Sources */,
+				2C562A721F57F7EF00835984 /* ZFPlayerManager.m in Sources */,
 				2C85E3B01F2F1C2B00ADD360 /* MineHomeBalanceCell.m in Sources */,
 				2C859CEC1F31EB2E00B86575 /* ZLCameraViewController.m in Sources */,
 				2CD896BD1F453A05008F7C73 /* AdressEditNetworkTool.m in Sources */,
