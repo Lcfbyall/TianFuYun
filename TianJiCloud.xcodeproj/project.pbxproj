@@ -157,6 +157,10 @@
 		2C562A6B1F57F1C300835984 /* APAuthV2Info.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C562A691F57F1C300835984 /* APAuthV2Info.m */; };
 		2C562A6E1F57F1E500835984 /* APWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C562A6D1F57F1E500835984 /* APWebViewController.m */; };
 		2C562A721F57F7EF00835984 /* ZFPlayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C562A711F57F7EF00835984 /* ZFPlayerManager.m */; };
+		2C562A761F580FF700835984 /* HealthKitService.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C562A751F580FF700835984 /* HealthKitService.m */; };
+		2C562A7A1F58108C00835984 /* TJSSystemSoundService.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C562A791F58108C00835984 /* TJSSystemSoundService.m */; };
+		2C562A7F1F58116500835984 /* AddressBookService.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C562A7E1F58116500835984 /* AddressBookService.m */; };
+		2C562A831F58118D00835984 /* ContactsService.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C562A821F58118D00835984 /* ContactsService.m */; };
 		2C597DBA1F4C2CB900415EB6 /* MineSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C597DA01F4C2CB900415EB6 /* MineSettingViewController.m */; };
 		2C597DBB1F4C2CB900415EB6 /* SettingHomeCellFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C597DA31F4C2CB900415EB6 /* SettingHomeCellFactory.m */; };
 		2C597DBC1F4C2CB900415EB6 /* SettingHomeCellLayoutConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C597DA51F4C2CB900415EB6 /* SettingHomeCellLayoutConfig.m */; };
@@ -1033,6 +1037,14 @@
 		2C562A6D1F57F1E500835984 /* APWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APWebViewController.m; sourceTree = "<group>"; };
 		2C562A701F57F7EF00835984 /* ZFPlayerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFPlayerManager.h; sourceTree = "<group>"; };
 		2C562A711F57F7EF00835984 /* ZFPlayerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFPlayerManager.m; sourceTree = "<group>"; };
+		2C562A741F580FF700835984 /* HealthKitService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HealthKitService.h; sourceTree = "<group>"; };
+		2C562A751F580FF700835984 /* HealthKitService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HealthKitService.m; sourceTree = "<group>"; };
+		2C562A781F58108C00835984 /* TJSSystemSoundService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSSystemSoundService.h; sourceTree = "<group>"; };
+		2C562A791F58108C00835984 /* TJSSystemSoundService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSSystemSoundService.m; sourceTree = "<group>"; };
+		2C562A7D1F58116500835984 /* AddressBookService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressBookService.h; sourceTree = "<group>"; };
+		2C562A7E1F58116500835984 /* AddressBookService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressBookService.m; sourceTree = "<group>"; };
+		2C562A811F58118D00835984 /* ContactsService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsService.h; sourceTree = "<group>"; };
+		2C562A821F58118D00835984 /* ContactsService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsService.m; sourceTree = "<group>"; };
 		2C597D9F1F4C2CB900415EB6 /* MineSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineSettingViewController.h; sourceTree = "<group>"; };
 		2C597DA01F4C2CB900415EB6 /* MineSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineSettingViewController.m; sourceTree = "<group>"; };
 		2C597DA21F4C2CB900415EB6 /* SettingHomeCellFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingHomeCellFactory.h; sourceTree = "<group>"; };
@@ -2646,12 +2658,12 @@
 		2C4411FC1F219A5300C453EF /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				2C562A771F58107800835984 /* Audio */,
 				2C88F6981F4EC735009CF23E /* Photo */,
+				2C562A801F58118100835984 /* Contacts */,
+				2C562A7C1F58113200835984 /* AddressBook */,
+				2C562A731F580FD000835984 /* HealthKitService */,
 				2C562A6F1F57F7DC00835984 /* ZFPlayerService */,
-				2C4412401F21D34900C453EF /* EnumValue */,
-				2C4412AA1F22023E00C453EF /* HudAlert */,
-				2C4412481F21D40300C453EF /* SystemAlert */,
-				2C8CD10D1F55031F00F9654D /* FMDBService */,
 				2C8CD1291F554B7C00F9654D /* RootController */,
 				2C8CD16D1F56B9EC00F9654D /* AlipayManger */,
 				2C8CD16E1F56B9ED00F9654D /* WeixinManager */,
@@ -2662,8 +2674,12 @@
 				2C8CD1221F5548FB00F9654D /* KeyboardService */,
 				2C8CD1061F54FE4200F9654D /* EmptyDataSet */,
 				2C4412941F22002000C453EF /* TJSThemeService */,
+				2C8CD10D1F55031F00F9654D /* FMDBService */,
 				2C801BE91F25884E009F82F7 /* StoreService */,
 				2C4412391F21B56D00C453EF /* GVUserDefaults */,
+				2C4412401F21D34900C453EF /* EnumValue */,
+				2C4412AA1F22023E00C453EF /* HudAlert */,
+				2C4412481F21D40300C453EF /* SystemAlert */,
 				2C4412901F21EE5700C453EF /* TJSDownLoaderService */,
 				2C8CD11A1F55464D00F9654D /* AppDelegateService */,
 			);
@@ -3105,6 +3121,42 @@
 				2C562A711F57F7EF00835984 /* ZFPlayerManager.m */,
 			);
 			path = ZFPlayerService;
+			sourceTree = "<group>";
+		};
+		2C562A731F580FD000835984 /* HealthKitService */ = {
+			isa = PBXGroup;
+			children = (
+				2C562A741F580FF700835984 /* HealthKitService.h */,
+				2C562A751F580FF700835984 /* HealthKitService.m */,
+			);
+			path = HealthKitService;
+			sourceTree = "<group>";
+		};
+		2C562A771F58107800835984 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				2C562A781F58108C00835984 /* TJSSystemSoundService.h */,
+				2C562A791F58108C00835984 /* TJSSystemSoundService.m */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		2C562A7C1F58113200835984 /* AddressBook */ = {
+			isa = PBXGroup;
+			children = (
+				2C562A7D1F58116500835984 /* AddressBookService.h */,
+				2C562A7E1F58116500835984 /* AddressBookService.m */,
+			);
+			path = AddressBook;
+			sourceTree = "<group>";
+		};
+		2C562A801F58118100835984 /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				2C562A811F58118D00835984 /* ContactsService.h */,
+				2C562A821F58118D00835984 /* ContactsService.m */,
+			);
+			path = Contacts;
 			sourceTree = "<group>";
 		};
 		2C597D9E1F4C2CB900415EB6 /* Controller */ = {
@@ -6972,6 +7024,7 @@
 				2CB4F63C1F42F26500FF98C9 /* ContractApplyDataSourceImpl.m in Sources */,
 				2C44124B1F21D42600C453EF /* TJSAlertController.m in Sources */,
 				2C859CF31F31EB2E00B86575 /* ZLPhotoPickerBrowserPhotoView.m in Sources */,
+				2C562A831F58118D00835984 /* ContactsService.m in Sources */,
 				2CCBE4651F330572006C4018 /* DiscoveryViewController.m in Sources */,
 				A2FE0A891F38B47000E678E5 /* MyFavViewController.m in Sources */,
 				2CCBE4961F3421F1006C4018 /* TJSPageControl.m in Sources */,
@@ -7147,6 +7200,7 @@
 				2C88F6911F4EBBFD009CF23E /* UIImageView+TJSWebCache.m in Sources */,
 				2C4412021F219A5300C453EF /* UIColor+HEX.m in Sources */,
 				2C83C7301F39BD27004034CA /* RewardViewController.m in Sources */,
+				2C562A7F1F58116500835984 /* AddressBookService.m in Sources */,
 				2C85E3771F2F02A200ADD360 /* TJSMineHomeConfigurator.m in Sources */,
 				2CD896C11F453A3B008F7C73 /* ContractAddAddressConfig.m in Sources */,
 				2C859CFA1F31EB2E00B86575 /* ZLPhotoPickerAssetsViewController.m in Sources */,
@@ -7327,6 +7381,7 @@
 				2C83C70D1F39B871004034CA /* RoadShowListStoreTool.m in Sources */,
 				2CA6390F1F4AD86600C39562 /* WithDrawBankSelectController.m in Sources */,
 				2C859CF21F31EB2E00B86575 /* ZLPhotoPickerBrowserPhotoScrollView.m in Sources */,
+				2C562A7A1F58108C00835984 /* TJSSystemSoundService.m in Sources */,
 				2C4C1CAF1F394E9500002166 /* FeedBackContainerConfig.m in Sources */,
 				2CD897191F4548E2008F7C73 /* AddressManageCellFactory.m in Sources */,
 				2C4D35E91F4C25860082BB36 /* CumulativeInvestTableAdapter.m in Sources */,
@@ -7448,6 +7503,7 @@
 				2CAF42D61F281B8600ABCA5E /* TJSBaseProductListContentConfig.m in Sources */,
 				2C8CD1091F54FFC000F9654D /* EmptyDataSetAdapter.m in Sources */,
 				2CD897421F457B55008F7C73 /* AddressSelectedContentConfigFactory.m in Sources */,
+				2C562A761F580FF700835984 /* HealthKitService.m in Sources */,
 				2CA639301F4AE9D000C39562 /* WithDrawDepositCellLayoutConfig.m in Sources */,
 				2C4C1C101F384A3B00002166 /* TJSMyOrderListDataSourceImpl.m in Sources */,
 				2C597DD21F4C2F2300415EB6 /* SettingHomeConfig.m in Sources */,

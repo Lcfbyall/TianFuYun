@@ -37,6 +37,11 @@
     return  [dataSource items];
 }
 
+- (UICollectionViewLayout *)collectionViewLayout{
+ 
+    return self.dataSource.collectionViewLayout;
+}
+
 
 #pragma mark - <TJSDiscoNewsLayoutDelegate>
 

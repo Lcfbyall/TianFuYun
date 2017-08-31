@@ -14,11 +14,7 @@
 
 @implementation ProductFilterCollLayout
 
-- (void)prepareLayout{
-    [super prepareLayout];
 
-
-}
 
 - (nullable NSArray<__kindof UICollectionViewLayoutAttributes *> *)layoutAttributesForElementsInRect:(CGRect)rect{
     

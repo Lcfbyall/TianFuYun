@@ -54,7 +54,6 @@ minimumLineSpacingForSectionAtIndex:(NSInteger)section;
 
 @property (nonatomic,assign) CGFloat collectionViewWidth;
 
-- (void)calculateLayoutAttributes;
 
 @property (nonatomic,weak) id<TJSBaseCollectionViewLayoutDelegate> delegate;
 
@@ -64,6 +63,8 @@ minimumLineSpacingForSectionAtIndex:(NSInteger)section;
 
 @property (strong, nonatomic) NSMutableArray *layoutInfo;
 @property (nonatomic,strong) NSMutableDictionary *layoutInfoDic;
+
+- (void)calculateLayoutAttributes;
 
 
 - (CGSize)sizeForItemAtIndexPath:(NSIndexPath *)indexPath;

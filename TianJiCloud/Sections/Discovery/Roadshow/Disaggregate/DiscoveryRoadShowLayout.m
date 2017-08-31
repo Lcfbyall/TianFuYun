@@ -18,31 +18,6 @@
 
 #pragma mark - UICollectionViewLayout
 
-- (void)prepareLayout{
-    
-    [super prepareLayout];
-    
-    self.layoutInfo = [NSMutableArray array];
-    
-    NSIndexPath *indexPath;
-    
-    NSInteger numSections = [self.collectionView numberOfSections];
-    for(NSInteger section = 0; section < numSections; section++) {
-        
-        NSInteger numItems = [self.collectionView numberOfItemsInSection:section];
-        
-        for(NSInteger item = 0; item < numItems; item++){
-            
-            indexPath = [NSIndexPath indexPathForItem:item inSection:section];
-            
-            UICollectionViewLayoutAttributes *attrs = [self layoutAttributesForItemAtIndexPath:indexPath];
-            
-            //供layoutAttributesForElementsInRect使用
-            
-            [self.layoutInfo addObject:attrs];
-        }
-    }
-}
 
 
 - (nullable NSArray<__kindof UICollectionViewLayoutAttributes *> *)layoutAttributesForElementsInRect:(CGRect)rect{
@@ -107,6 +82,53 @@
 - (BOOL)shouldInvalidateLayoutForBoundsChange:(CGRect)oldBounds
 {
     return YES;
+}
+
+- (CGSize)collectionViewContentSize{
+    
+    CGFloat maxHeight = 0;
+    UICollectionViewLayoutAttributes *attributes = [self.layoutInfo lastObject];
+    maxHeight = attributes.frame.origin.y + attributes.frame.size.height + 15;
+    
+    return CGSizeMake(self.collectionView.frame.size.width, maxHeight);
+}
+
+
+
+- (void)calculateLayoutAttributes{
+    
+    [self.layoutInfo removeAllObjects];
+    self.layoutInfo = nil;
+    self.layoutInfo = [NSMutableArray array];
+    [self.layoutInfoDic removeAllObjects];
+    self.layoutInfoDic = nil;
+    self.layoutInfoDic = [NSMutableDictionary dictionary];
+
+    @autoreleasepool {
+        
+
+        NSIndexPath *indexPath;
+        
+        NSInteger numSections = [self.delegate numberOfSectionsInCollectionView:self.collectionView layout:self];
+        for(NSInteger section = 0; section < numSections; section++) {
+            
+            NSInteger numItems = [self.delegate collectionView:self.collectionView numberOfItemsInSection:section layout:self];
+            
+            for(NSInteger item = 0; item < numItems; item++){
+                
+                indexPath = [NSIndexPath indexPathForItem:item inSection:section];
+                
+                UICollectionViewLayoutAttributes *attrs = [self layoutAttributesForItemAtIndexPath:indexPath];
+                
+                //供layoutAttributesForElementsInRect使用
+                
+                [self.layoutInfo addObject:attrs];
+                [self.layoutInfoDic setObject:attrs forKey:indexPath];
+            }
+        }
+        
+    }
+
 }
 
 

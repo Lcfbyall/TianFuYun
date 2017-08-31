@@ -38,21 +38,28 @@ static NSString *identifier = @"HomeFooterCollectionCell";
     
     container.items = [HomeFooterConfig items];
     
-    [container addCollectionview];
     
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        
+        HomeFooterCollectionLayout *layout = [[HomeFooterCollectionLayout alloc]init];
+        layout.delegate = container;
+        layout.interMargin = 10;
+        layout.insets = UIEdgeInsetsMake(Margin, Margin, Margin, Margin);
+        [layout calculateLayoutAttributes];
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            
+            [container p_addCollectionviewWithLayout:layout];
+        });
+    });
+
     
     return container;
 }
 
-- (void)addCollectionview{
+- (void)p_addCollectionviewWithLayout:(HomeFooterCollectionLayout *)layout{
     
     self.collectionView = ({
-        
-        HomeFooterCollectionLayout *layout =  [[HomeFooterCollectionLayout alloc]init];
-        
-        layout.delegate = self;
-        layout.interMargin = 10;
-        layout.insets   = UIEdgeInsetsMake(Margin, Margin, Margin, Margin);
         
         UICollectionView  *collectionView = [[UICollectionView alloc]initWithFrame:CGRectZero collectionViewLayout:layout];
         collectionView.backgroundColor    = ThemeService.main_color_00;

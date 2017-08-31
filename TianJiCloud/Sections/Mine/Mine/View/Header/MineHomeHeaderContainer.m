@@ -40,6 +40,7 @@ static NSString *identifier = @"MineHeaderCollectionCell";
     MineHomeHeaderContainer *container = [[MineHomeHeaderContainer alloc]init];
     
     container.frame = CGRectMake(0, 0, SCREEN_WIDTH, Height);
+    
     container.backgroundColor = ThemeService.weak_color_00;
    
     [container p_addSubViews];
@@ -75,9 +76,10 @@ static NSString *identifier = @"MineHeaderCollectionCell";
         layout.delegate = self;
         layout.interMargin = 0;
         layout.insets   = UIEdgeInsetsMake(Margin, Margin, Margin, Margin);
+
         
         UICollectionView  *collectionView = [[UICollectionView alloc]initWithFrame:CGRectZero collectionViewLayout:layout];
-        collectionView.backgroundColor = [UIColor clearColor];
+        collectionView.backgroundColor = [UIColor redColor];
         collectionView.dataSource = self;
         collectionView.delegate   = self;
         collectionView.pagingEnabled = YES;
@@ -96,6 +98,7 @@ static NSString *identifier = @"MineHeaderCollectionCell";
             make.edges.mas_equalTo(UIEdgeInsetsMake(0, 0, 0 , 0));
         }];
         
+
         collectionView;
     });
     
@@ -118,7 +121,7 @@ static NSString *identifier = @"MineHeaderCollectionCell";
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
     
-    return 1;
+    return self.dadaSource.count?1:0;
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
@@ -130,6 +133,7 @@ static NSString *identifier = @"MineHeaderCollectionCell";
     
     MineHeaderCollectionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:identifier forIndexPath:indexPath];
 
+    
     
     [cell tjs_bindDataToCellWithValue:@[self.dadaSource[indexPath.item],@(self.hideSum)]];
     
@@ -163,8 +167,13 @@ static NSString *identifier = @"MineHeaderCollectionCell";
                   layout:(MineHomeHeaderCollectionLayout *)collectionViewLayout
   sizeForItemAtIndexPath:(NSIndexPath *)indexPat{
     
+    NSLog(@"%@",NSStringFromCGSize(self.bounds.size));
+    
+    return self.bounds.size;
     
     return self.collectionView.bounds.size;
+    
+    return CGSizeMake(SCREEN_WIDTH, Height);
 }
 
 
@@ -175,7 +184,6 @@ static NSString *identifier = @"MineHeaderCollectionCell";
     
     NSLog(@"1.将要开始拖动");
 }
-
 
 
 #pragma mark - Public
@@ -199,14 +207,30 @@ static NSString *identifier = @"MineHeaderCollectionCell";
     
     self.hideSum = [[value lastObject] boolValue];
     
-    [self.collectionView reloadData];
+    [self p_reloadCollectionView];
 }
 
 - (void)hideOrShowMoney:(BOOL)hide{
   
     _hideSum = hide;
     
-    [self.collectionView reloadData];
+    [self p_reloadCollectionView];
+}
+
+- (void)p_reloadCollectionView{
+
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^
+                   {
+       dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+           
+           [(MineHomeHeaderCollectionLayout *)self.collectionView.collectionViewLayout calculateLayoutAttributes];
+           
+           dispatch_async(dispatch_get_main_queue(), ^{
+               
+               [self.collectionView reloadData];
+           });
+       });
+   });
 }
 
 @end

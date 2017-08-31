@@ -19,6 +19,9 @@
 
 - (NSArray *)items;
 
+- (UICollectionViewLayout *)collectionViewLayout;
+
+
 @end
 
 

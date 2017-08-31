@@ -16,10 +16,7 @@
 
 @implementation ProductSearchHotLayout
 
-- (void)prepareLayout{
-    [super prepareLayout];
-    
-}
+
 
 - (nullable NSArray<__kindof UICollectionViewLayoutAttributes *> *)layoutAttributesForElementsInRect:(CGRect)rect{
 
@@ -34,8 +31,6 @@
 
     return allAttributes;
 }
-
-
 
 - (nullable UICollectionViewLayoutAttributes *)layoutAttributesForItemAtIndexPath:(NSIndexPath *)indexPath{
 
@@ -151,7 +146,6 @@
 
             indexPath = [NSIndexPath indexPathWithIndex:section];
             UICollectionViewLayoutAttributes *headerAtt = [self layoutAttributesForSupplementaryViewOfKind:UICollectionElementKindSectionHeader atIndexPath:indexPath];
-
             [self.layoutInfo addObject:headerAtt];
             [self.layoutInfoDic setObject:headerAtt forKey:indexPath];
 

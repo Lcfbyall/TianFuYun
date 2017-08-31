@@ -28,6 +28,9 @@
 //
 - (NSArray *)items;
 
+- (UICollectionViewLayout *)collectionViewLayout;
+
+
 - (void)onViewWillAppear;
 
 - (void)onViewDidDisappear;

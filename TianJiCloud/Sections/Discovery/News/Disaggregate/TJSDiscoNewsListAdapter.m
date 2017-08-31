@@ -31,18 +31,26 @@ static NSString *identifier = @"DiscoveryNewsListCell";
     if(self){
     
         _collectionView = collectionView;
-        
-        
-        [self registerElementForCollecitonView];
+    
     }
     
     return self;
 }
 
+
+//只会赋值一次
+- (void)setInteractor:(id<TJSDiscoveryNewsListInteractor>)interactor{
+    
+    _interactor = interactor;
+    
+    [self registerElementForCollecitonView];
+}
+
 - (void)registerElementForCollecitonView{
     
     //
-    DiscoveryNewsCollectLayout *layout =  [[DiscoveryNewsCollectLayout alloc]init];
+    DiscoveryNewsCollectLayout *layout =  (DiscoveryNewsCollectLayout *)self.interactor.collectionViewLayout;
+    layout.collectionViewWidth = SCREEN_WIDTH;
     layout.delegate = self;
     
     _collectionView.collectionViewLayout = layout;

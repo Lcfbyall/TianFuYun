@@ -55,6 +55,7 @@ static NSString *identifier     = @"HomeHeaderCollectionCell";
         layout.interMargin = 10;
         layout.insets = UIEdgeInsetsMake(Margin, Margin, Margin, Margin);
         [layout calculateLayoutAttributes];
+        
         dispatch_async(dispatch_get_main_queue(), ^{
         
             [container p_addCollectionviewWithLayout:layout];
@@ -101,6 +102,7 @@ static NSString *identifier     = @"HomeHeaderCollectionCell";
   
     WEAK_SELF(self);
     [self.productItems enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        
         STRONG_SELF(self);
         HomeProductClickItem *item = (HomeProductClickItem *)obj;
         CGFloat itemW = self.bounds.size.width/(CGFloat)column;
@@ -131,7 +133,6 @@ static NSString *identifier     = @"HomeHeaderCollectionCell";
 
    [self.collectionView vk_callSelector:@selector(scrollToItemAtIndexPath:atScrollPosition:animated:) error:nil,indexPath,UICollectionViewScrollPositionCenteredHorizontally,NO];
 }
-
 
 #pragma mark - <UICollectionViewDataSource>
 

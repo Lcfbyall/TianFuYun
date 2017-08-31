@@ -14,11 +14,7 @@
 
 @implementation ProductSearchResultLayout
 
-- (void)prepareLayout{
-    [super prepareLayout];
-    
-    
-}
+
 
 #pragma mark - Public
 

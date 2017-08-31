@@ -9,12 +9,16 @@
 #import "TJSDiscoNewsDataSorceImpl.h"
 
 #import "DiscoveryNewsInfoModel.h"
-
 #import "DiscoveryNewsNetworkTool.h"
+#import "DiscoveryNewsCollectLayout.h"
+
 
 @interface TJSDiscoNewsDataSorceImpl ()
 
 @property (nonatomic, strong) NSMutableArray *items;
+
+@property (nonatomic,strong) UICollectionViewLayout *layout;
+
 
 @end
 
@@ -52,24 +56,33 @@
         
     }];
     
-    
-    
-    
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^
+
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^
                    {
                        
-           STRONG_SELF(self);
-           if(self){
-               
-               NSArray *news = @[];
-               NSError *error    = nil;;
-               
-               if(callback){
-                   
-                   callback(news,error);
-               }
-           }
+           //计算布局
+           dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
            
+               [(TJSBaseCollectionViewLayout *)self.layout calculateLayoutAttributes];
+               
+               dispatch_async(dispatch_get_main_queue(), ^{
+               
+                   STRONG_SELF(self);
+                   if(self){
+                       
+                       NSArray *news = @[];
+                       NSError *error    = nil;;
+                       
+                       if(callback){
+                           
+                           callback(news,error);
+                       }
+                   }
+               
+               });
+           
+           });
+    
        });
 
 }
@@ -96,6 +109,15 @@
     return _items;
 }
 
+- (UICollectionViewLayout *)collectionViewLayout{
+    
+    if(_layout == nil){
+        
+        _layout = [[DiscoveryNewsCollectLayout alloc]init];
+    }
+    
+    return _layout;
+}
 
 
 @end
