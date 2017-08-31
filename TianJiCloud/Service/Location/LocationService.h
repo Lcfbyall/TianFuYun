@@ -1,5 +1,5 @@
 //
-//  ZFPlayerManager.h
+//  LocationService.h
 //  TianJiCloud
 //
 //  Created by 朱鹏 on 2017/8/31.
@@ -7,10 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ZFPlayer.h"
+#import <MapKit/MapKit.h>
+#import <CoreLocation/CoreLocation.h>
 
-@interface ZFPlayerManager : NSObject
-
+@interface LocationService : NSObject
 
 
 

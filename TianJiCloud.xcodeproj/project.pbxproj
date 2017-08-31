@@ -161,6 +161,7 @@
 		2C562A7A1F58108C00835984 /* TJSSystemSoundService.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C562A791F58108C00835984 /* TJSSystemSoundService.m */; };
 		2C562A7F1F58116500835984 /* AddressBookService.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C562A7E1F58116500835984 /* AddressBookService.m */; };
 		2C562A831F58118D00835984 /* ContactsService.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C562A821F58118D00835984 /* ContactsService.m */; };
+		2C562A871F58132500835984 /* LocationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C562A861F58132500835984 /* LocationService.m */; };
 		2C597DBA1F4C2CB900415EB6 /* MineSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C597DA01F4C2CB900415EB6 /* MineSettingViewController.m */; };
 		2C597DBB1F4C2CB900415EB6 /* SettingHomeCellFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C597DA31F4C2CB900415EB6 /* SettingHomeCellFactory.m */; };
 		2C597DBC1F4C2CB900415EB6 /* SettingHomeCellLayoutConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C597DA51F4C2CB900415EB6 /* SettingHomeCellLayoutConfig.m */; };
@@ -1045,6 +1046,8 @@
 		2C562A7E1F58116500835984 /* AddressBookService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressBookService.m; sourceTree = "<group>"; };
 		2C562A811F58118D00835984 /* ContactsService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsService.h; sourceTree = "<group>"; };
 		2C562A821F58118D00835984 /* ContactsService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsService.m; sourceTree = "<group>"; };
+		2C562A851F58132500835984 /* LocationService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationService.h; sourceTree = "<group>"; };
+		2C562A861F58132500835984 /* LocationService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationService.m; sourceTree = "<group>"; };
 		2C597D9F1F4C2CB900415EB6 /* MineSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineSettingViewController.h; sourceTree = "<group>"; };
 		2C597DA01F4C2CB900415EB6 /* MineSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineSettingViewController.m; sourceTree = "<group>"; };
 		2C597DA21F4C2CB900415EB6 /* SettingHomeCellFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingHomeCellFactory.h; sourceTree = "<group>"; };
@@ -2660,6 +2663,7 @@
 			children = (
 				2C562A771F58107800835984 /* Audio */,
 				2C88F6981F4EC735009CF23E /* Photo */,
+				2C562A841F58130400835984 /* Location */,
 				2C562A801F58118100835984 /* Contacts */,
 				2C562A7C1F58113200835984 /* AddressBook */,
 				2C562A731F580FD000835984 /* HealthKitService */,
@@ -3157,6 +3161,15 @@
 				2C562A821F58118D00835984 /* ContactsService.m */,
 			);
 			path = Contacts;
+			sourceTree = "<group>";
+		};
+		2C562A841F58130400835984 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				2C562A851F58132500835984 /* LocationService.h */,
+				2C562A861F58132500835984 /* LocationService.m */,
+			);
+			path = Location;
 			sourceTree = "<group>";
 		};
 		2C597D9E1F4C2CB900415EB6 /* Controller */ = {
@@ -7050,6 +7063,7 @@
 				2C859CEE1F31EB2E00B86575 /* ZLPhotoRect.m in Sources */,
 				2CF8B5451F3D48B0003B8520 /* ProductSearchListCellFactory.m in Sources */,
 				2CD896E21F453D33008F7C73 /* ContractAddAddressTableAdapter.m in Sources */,
+				2C562A871F58132500835984 /* LocationService.m in Sources */,
 				A2A71C691F3F200700577E45 /* ProductSearchHotReusableHeader.m in Sources */,
 				2C1B74C51F4694FF0000E71A /* BankCardListNetworkTool.m in Sources */,
 				2CB4F60B1F42849100FF98C9 /* MyFavListTableAdapter.m in Sources */,
