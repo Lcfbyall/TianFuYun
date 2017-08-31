@@ -28,7 +28,6 @@ target "TianJiCloud" do
     pod 'DZNEmptyDataSet'
     pod 'WZLBadge'
     pod 'TZImagePickerController'
-    pod 'MWPhotoBrowser'
     pod 'ZFPlayer'    
 
     pod 'IQKeyboardManager'
