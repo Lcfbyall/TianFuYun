@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'EB54B44C1810AA50E7875F50B0CEB7D0'
+               BlueprintIdentifier = '725D2DB00CD334379D5BB04C1792186A'
                BlueprintName = 'Pods-TianJiCloud'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libPods-TianJiCloud.a'>

@@ -1,0 +1,110 @@
+.tipMask {
+	width: 90%;
+	position: fixed;
+	height: 2.0rem;
+	left: 50%;
+	top: 50%;
+	margin: -1.0rem 0 0 -45%;
+	text-align: center;
+	filter:alpha(opacity=0);  
+    -moz-opacity:0;  
+    -khtml-opacity: 0;  
+    opacity: 0; 
+    pointer-events: none;
+}
+
+.tipMask p {
+	height: 0.8rem;
+	margin-top: 0.6rem;
+	line-height: 0.8rem;
+	padding: 0 0.3rem;
+	color: #fff;
+	background-color: rgba(0,0,0,0.7);
+	display: inline-block;
+	border-radius: 3px;
+
+}
+
+.tipMaskShow {
+	animation: showTips 0.5s;
+	-moz-animation: showTips 0.5s;
+	-webkit-animation: showTips 0.5s;
+	-o-animation: showTips 0.5s;
+	filter:alpha(opacity=1);  
+    -moz-opacity:1;  
+    -khtml-opacity: 1;  
+    opacity: 1; 
+}
+
+
+@keyframes showTips
+{
+	0%   {
+		transform: scale(1);  
+        opacity: 1;
+	}
+	
+	50%  {
+		transform: scale(1.1);  
+        opacity: 1;
+	}
+	
+	100% {
+		transform: scale(1);  
+        opacity: 1;
+	}
+}
+
+@-moz-keyframes showTips 
+{
+	0%   {
+		transform: scale(1);  
+        opacity: 1;
+	}
+	
+	50%  {
+		transform: scale(1.2);  
+        opacity: 1;
+	}
+	
+	100% {
+		transform: scale(1);  
+        opacity: 1;
+	}
+}
+
+@-webkit-keyframes showTips 
+{
+	0%   {
+		transform: scale(1);  
+        opacity: 1;
+	}
+	
+	50%  {
+		transform: scale(1.2);  
+        opacity: 1;
+	}
+	
+	100% {
+		transform: scale(1);  
+        opacity: 1;
+	}
+}
+
+@-o-keyframes showTips
+{
+	0%   {
+		transform: scale(1);  
+        opacity: 1;
+	}
+	
+	50%  {
+		transform: scale(1.2);  
+        opacity: 1;
+	}
+	
+	100% {
+		transform: scale(1);  
+        opacity: 1;
+	}
+}

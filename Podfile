@@ -6,6 +6,8 @@ platform :ios, '8.0'
 target "TianJiCloud" do
     
     pod 'YTKNetwork', '~> 2.0.3'
+    pod 'YTKKeyValueStore'
+
     pod 'GTSDK', '1.6.2.0-noidfa'
 
     pod 'UMengUShare/UI'
@@ -22,9 +24,13 @@ target "TianJiCloud" do
     pod 'Masonry'
     pod 'MJRefresh'
     pod 'SDCycleScrollView', '~> 1.64'
+    pod 'DACircularProgress'
     pod 'DZNEmptyDataSet'
     pod 'WZLBadge'
-    
+    pod 'TZImagePickerController'
+    pod 'MWPhotoBrowser'
+    pod 'ZFPlayer'    
+
     pod 'IQKeyboardManager'
     
     inhibit_all_warnings!

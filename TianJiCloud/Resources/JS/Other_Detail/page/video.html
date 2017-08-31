@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="common.css"/>
+		<link rel="stylesheet" type="text/css" href="video.css"/>
+	</head>
+	<body>
+		<div class="container">
+		<!--视频播放器-->	
+			<div class="video-player" data-open="0">
+				<div class="video-back"><a href=""></a></div>
+				<video >
+					<source src="vediodemo.mp4" type="video/mp4" codecs="avc1.42E01E,mp4a.40.2"></source>
+				</video>
+				<div class="video-toplay">
+					<img src="lists_video_time_def@3x.png" alt=""/>
+				</div>
+			</div>
+		<!--视频简介-->
+			<div class="video-introduce video-content">
+				<h3 class="font-38">大疆最小自拍无人机Spark发布，比Mavic Pro还好用？</h3>
+				<p class="play-time font-24">
+					<span>54312</span>次播放 / <span>03‘51”</span>
+				</p>
+				<div class="video-function">
+					<div id="zanBlock" class="video-like" data-open="0">
+						<img src="icn_good.png" alt=""/>
+						<p class="font-26">顶<span id="goodText">152</span></p>
+					</div>
+					<div id="noGood" class="video-stamp" data-open="0">
+						<img src="icn_bad.png" alt=""/>
+						<p class="font-26">踩<span id="nogoodText">23</span></p>
+					</div>
+					<div class="video-reward">
+						<img src="icn_money.png" alt=""/>
+						<p class="font-26">打赏</p>
+					</div>
+				</div>
+				<div class="video-author">
+					<img class="float-left" src="" alt="头像"/>
+					<p class="float-left font-28">爱范儿科技</p>
+					<span class="float-right font-26">关注</span>
+					<div class="clear"></div>
+				</div>
+			</div>
+			<hr />
+		<!--更多资讯-->
+			<div class="video-news video-content">
+				<ul  class="news-list">
+					<a href="">
+						<li class="news">
+							<dl class="float-left news-content">
+								<dt class="font-32 news-title">谷歌启动聚焦Ai 新型风投计划</dt>
+								<dd class="font-24 news-author">爱范儿科技<span class="font-22">906万</span></dd>
+							</dl>
+							<div class="float-right news-img">
+								<img src="" alt=""/>
+								<span>033:11</span>
+							</div>
+							<div class="clear"></div>
+						</li>
+					</a>
+					<a href="">
+						<li class="news">
+							<dl class="float-left news-content">
+								<dt class="font-32 news-title">谷歌启动聚焦Ai 新型风投计划</dt>
+								<dd class="font-24 news-author">爱范儿科技<span class="font-22">906万</span></dd>
+							</dl>
+							<div class="float-right news-img">
+								<img src="" alt=""/>
+								<span>033:11</span>
+							</div>
+							<div class="clear"></div>
+						</li>
+					</a>
+					<a href="">
+						<li class="news">
+							<dl class="float-left news-content">
+								<dt class="font-32 news-title">谷歌启动聚焦Ai 新型风投计划新型风投计划新型风投计划新型风投计划</dt>
+								<dd class="font-24 news-author">爱范儿科技<span class="font-22">906万</span></dd>
+							</dl>
+							<div class="float-right news-img">
+								<img src="" alt=""/>
+								<span>033:11</span>
+							</div>
+							<div class="clear"></div>
+	 					</li>
+ 					</a>
+				</ul>
+				<div class="news-more">
+					<p class="font-26">查看更多</p>
+				</div>
+			</div>
+			<hr />
+		<!--热门评论-->
+			<div class="hot-comment video-content">
+				<h3 class="text-center font-26">热门评论 <b> / </b> <span>全新评论</span></h3>
+				<ul id="comment-ul">
+					<li>
+						<div class="float-left comment-img">
+							<img src="" alt="头像"/>
+						</div>
+						<div class="float-left comment-content">
+							<div class="comment-author">
+								<span>缘道</span>
+								<div class="float-right commont-like" data-open="0">369</div>
+							</div>
+							<p class="font-30">谷歌启动聚焦A谷歌启动聚焦A谷歌启动聚焦A谷歌启动聚焦A谷歌启动聚焦A谷歌启动聚焦A</p>
+							<div class="reply-time font-24">
+								今天15:22 · 29条回复
+							</div>
+						</div>
+						<div class="clear"></div>
+					</li>
+					<li>
+						<div class="float-left comment-img">
+							<img src="" alt="头像"/>
+						</div>
+						<div class="float-left comment-content">
+							<div class="comment-author">
+								<span>缘道</span>
+								<div class="float-right commont-like" data-open="0">782</div>
+							</div>
+							<p class="font-30">谷歌启动聚焦A谷歌启动聚焦A谷歌启动聚焦A谷歌启动聚焦A谷歌启动聚焦A谷歌启动聚焦A</p>
+							<div class="reply-time font-24">
+								今天15:22 · 29条回复
+							</div>
+						</div>
+						<div class="clear"></div>
+					</li>
+				</ul>
+			</div>
+					
+		<!--底部-->
+			<div class="footer">
+				<input id="inputComment" class="float-left" type="text" placeholder="发表高见..." />
+				<div class="float-right function-button">
+					<img id="publish-click" src="news_ico_comme_def@2x.png"/>
+					<img src="news_ico_colle_def@2x.png"/>
+					<img src="news_ico_share_def@2x.png"/>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="jquery-1.9.1.min.js" ></script>
+	<script type="text/javascript" src="html5media.min.js" ></script>
+	<script type="text/javascript" src="vedio.js" ></script>
+</html>
