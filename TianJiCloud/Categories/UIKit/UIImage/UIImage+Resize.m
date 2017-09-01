@@ -10,13 +10,14 @@
 // Private helper methods
 @interface UIImage ()
 
+/*
 - (UIImage *)resizedImage:(CGSize)newSize
                 transform:(CGAffineTransform)transform
            drawTransposed:(BOOL)transpose
      interpolationQuality:(CGInterpolationQuality)quality;
 
 - (CGAffineTransform)transformForOrientation:(CGSize)newSize;
-
+*/
 @end
 
 @implementation UIImage (Resize)
@@ -155,7 +156,7 @@
 - (CGAffineTransform)transformForOrientation:(CGSize)newSize {
     CGAffineTransform transform = CGAffineTransformIdentity;
     
-    switch (self.imageOrientation) {
+    switch ((NSInteger)self.imageOrientation) {
         case UIImageOrientationDown:           // EXIF = 3
         case UIImageOrientationDownMirrored:   // EXIF = 4
             transform = CGAffineTransformTranslate(transform, newSize.width, newSize.height);
@@ -175,7 +176,7 @@
             break;
     }
     
-    switch (self.imageOrientation) {
+    switch ((NSInteger)self.imageOrientation) {
         case UIImageOrientationUpMirrored:     // EXIF = 2
         case UIImageOrientationDownMirrored:   // EXIF = 4
             transform = CGAffineTransformTranslate(transform, newSize.width, 0);
