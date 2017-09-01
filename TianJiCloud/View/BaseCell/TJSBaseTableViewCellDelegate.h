@@ -18,6 +18,8 @@
 - (BOOL)onLongPressCell:(id)value
                  inView:(UIView *)view;
 
+- (void)onTapControl:(UIControl *)control value:(id)value;
+
 
 @end
 

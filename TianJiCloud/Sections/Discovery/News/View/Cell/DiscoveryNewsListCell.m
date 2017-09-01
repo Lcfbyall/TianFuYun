@@ -37,6 +37,15 @@
 }
 
 
+#pragma mark - <TJSBaseCollectionReusableViewProtocol>
+
+- (void)tjs_bindDataToCellWithValue:(id)value{
+    
+    
+    
+}
+
+
 /*
  - (void)setHighlighted:(BOOL)highlighted{
      [super setHighlighted:highlighted];

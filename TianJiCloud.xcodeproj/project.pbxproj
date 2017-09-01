@@ -118,6 +118,7 @@
 		2C4591911F5908C600D0A798 /* DiscoRoadShowInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4591901F5908C600D0A798 /* DiscoRoadShowInfoModel.m */; };
 		2C4591941F5908CE00D0A798 /* DiscoRoadShowInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4591931F5908CE00D0A798 /* DiscoRoadShowInfo.m */; };
 		2C4591971F590A1600D0A798 /* DiscoRoadShowConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4591961F590A1600D0A798 /* DiscoRoadShowConfig.m */; };
+		2C45919A1F59374F00D0A798 /* DiscoVideoResolution.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4591991F59374F00D0A798 /* DiscoVideoResolution.m */; };
 		2C4C1BD11F380DFE00002166 /* MyOrderListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C1BD01F380DFE00002166 /* MyOrderListViewController.m */; };
 		2C4C1BD51F38143B00002166 /* UIApplication+TJSInfoDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C1BD41F38143B00002166 /* UIApplication+TJSInfoDictionary.m */; };
 		2C4C1BD81F381AF300002166 /* MineHomeCellBalanceItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C1BD71F381AF200002166 /* MineHomeCellBalanceItem.m */; };
@@ -958,6 +959,8 @@
 		2C4591931F5908CE00D0A798 /* DiscoRoadShowInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoRoadShowInfo.m; sourceTree = "<group>"; };
 		2C4591951F590A1600D0A798 /* DiscoRoadShowConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoRoadShowConfig.h; sourceTree = "<group>"; };
 		2C4591961F590A1600D0A798 /* DiscoRoadShowConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoRoadShowConfig.m; sourceTree = "<group>"; };
+		2C4591981F59374F00D0A798 /* DiscoVideoResolution.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoVideoResolution.h; sourceTree = "<group>"; };
+		2C4591991F59374F00D0A798 /* DiscoVideoResolution.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoVideoResolution.m; sourceTree = "<group>"; };
 		2C4C1BCF1F380DFE00002166 /* MyOrderListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyOrderListViewController.h; sourceTree = "<group>"; };
 		2C4C1BD01F380DFE00002166 /* MyOrderListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyOrderListViewController.m; sourceTree = "<group>"; };
 		2C4C1BD31F38143B00002166 /* UIApplication+TJSInfoDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+TJSInfoDictionary.h"; sourceTree = "<group>"; };
@@ -4953,6 +4956,8 @@
 			children = (
 				2C4591921F5908CE00D0A798 /* DiscoRoadShowInfo.h */,
 				2C4591931F5908CE00D0A798 /* DiscoRoadShowInfo.m */,
+				2C4591981F59374F00D0A798 /* DiscoVideoResolution.h */,
+				2C4591991F59374F00D0A798 /* DiscoVideoResolution.m */,
 				2C45918F1F5908C600D0A798 /* DiscoRoadShowInfoModel.h */,
 				2C4591901F5908C600D0A798 /* DiscoRoadShowInfoModel.m */,
 			);
@@ -7538,6 +7543,7 @@
 				2C4D35D71F4C23B10082BB36 /* CumulativeInvestContentConfigFactory.m in Sources */,
 				2C8DE5F41F2AE849009B3AE2 /* TJSDiscoNewsListAdapter.m in Sources */,
 				2CEC58DC1F4FCDE7006C03F5 /* UITextView+EditRect.m in Sources */,
+				2C45919A1F59374F00D0A798 /* DiscoVideoResolution.m in Sources */,
 				2C8CD18D1F56C59600F9654D /* AlipayManager.m in Sources */,
 				A28956981F3CA25E002D6845 /* ProductSearchResultLayout.m in Sources */,
 				2CCBE4A51F344A98006C4018 /* MineHomeCellIvestItem.m in Sources */,

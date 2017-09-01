@@ -10,4 +10,23 @@
 
 @implementation DiscoRoadShowInfo
 
+//NSObject+YYModel
++ (NSDictionary *)modelCustomPropertyMapper {
+    
+    return @{
+             @"showid": @"id",
+             @"video_description":@"description",
+             
+             };
+}
+
+//NSObject+YYModel
++ (NSDictionary *)modelContainerPropertyGenericClass{
+ 
+ return  @{@"playInfo":[DiscoVideoResolution class]};
+    
+}
+
+
+
 @end

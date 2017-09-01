@@ -7,7 +7,10 @@
 //
 
 #import "TJSBaseCollectionViewCell.h"
+#import "DiscoRoadShowInfoModel.h"
 
 @interface DiscoveryRoadShowListCell : TJSBaseCollectionViewCell
+
+@property (nonatomic,assign) NSInteger videoFatherTag;
 
 @end

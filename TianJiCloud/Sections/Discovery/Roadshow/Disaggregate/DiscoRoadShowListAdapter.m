@@ -85,7 +85,10 @@ static NSString *identifier = @"DiscoveryRoadShowListCell";
     
     //cell 的 delegate 给 vc ,self.cellDelegate就是vc
     [(DiscoveryRoadShowListCell *)cell setDelegate:self.cellDelegate];
-
+    model.scrollView       = collectionView;
+    model.indexPath        = indexPath;
+    model.fatherViewTag    = cell.videoFatherTag;
+    
     [cell tjs_bindDataToCellWithValue:model];
     
     return cell;
@@ -104,8 +107,6 @@ static NSString *identifier = @"DiscoveryRoadShowListCell";
     [cell.delegate onTapCell:model];
 
 }
-
-
 
 
 #pragma mark - <TJSBaseCollectionViewLayoutDelegate>
