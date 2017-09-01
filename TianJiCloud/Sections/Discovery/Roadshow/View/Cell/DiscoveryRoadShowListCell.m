@@ -96,4 +96,13 @@
    return self.videoImage.tag;
 }
 
+
+- (void)layoutSubviews{
+    [super layoutSubviews];
+    
+    NSLog(@"%@",NSStringFromCGRect(self.videoImage.frame));
+    
+}
+
+
 @end

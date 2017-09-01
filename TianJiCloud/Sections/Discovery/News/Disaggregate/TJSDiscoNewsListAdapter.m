@@ -126,7 +126,7 @@ static NSString *identifier = @"DiscoveryNewsListCell";
 
     UIEdgeInsets insets = [self collectionView:collectionView layout:collectionViewLayout insetForSectionAtIndex:indexPat.section];
     
-    CGFloat width = collectionView.bounds.size.width -insets.left-insets.right;
+    CGFloat width = collectionViewLayout.collectionViewWidth -insets.left-insets.right;
     CGFloat height= width * 5/12.0 + 40;
     
     return CGSizeMake(width,height);

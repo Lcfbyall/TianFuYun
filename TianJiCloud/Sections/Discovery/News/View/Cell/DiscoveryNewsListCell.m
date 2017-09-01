@@ -63,6 +63,13 @@
 }
 
 
+- (void)layoutSubviews{
+    [super layoutSubviews];
+
+    NSLog(@"%@",NSStringFromCGRect(self.newsImage.frame));
+}
+
+
 /*
  - (void)setHighlighted:(BOOL)highlighted{
      [super setHighlighted:highlighted];

@@ -13,20 +13,17 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="LHz-XH-rPb" customClass="DiscoveryRoadShowListCell">
-            <rect key="frame" x="0.0" y="0.0" width="391" height="230"/>
+            <rect key="frame" x="0.0" y="0.0" width="357" height="201"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="391" height="230"/>
+                <rect key="frame" x="0.0" y="0.0" width="357" height="201"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2cx-ah-3LG">
-                        <rect key="frame" x="0.0" y="0.0" width="391" height="163"/>
-                        <constraints>
-                            <constraint firstAttribute="width" secondItem="2cx-ah-3LG" secondAttribute="height" multiplier="12:5" id="Fqw-cW-3bf"/>
-                        </constraints>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2cx-ah-3LG">
+                        <rect key="frame" x="0.0" y="0.0" width="357" height="149"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="杠杆下的时间管理才是富人的财富管理？" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qgr-Hp-Adc">
-                        <rect key="frame" x="8" y="173" width="221" height="20"/>
+                        <rect key="frame" x="8" y="159" width="221" height="20"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="20" id="p3v-dG-XiU"/>
                         </constraints>
@@ -35,7 +32,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017 - 07 - 24" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yiX-nq-zt3">
-                        <rect key="frame" x="283" y="173" width="100" height="20"/>
+                        <rect key="frame" x="249" y="159" width="100" height="20"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="20" id="8i5-ss-H2x"/>
                             <constraint firstAttribute="width" constant="100" id="Ng9-IB-rck"/>
@@ -51,17 +48,18 @@
                 <constraint firstItem="2cx-ah-3LG" firstAttribute="leading" secondItem="LHz-XH-rPb" secondAttribute="leading" id="Kjx-4N-Aqy"/>
                 <constraint firstItem="2cx-ah-3LG" firstAttribute="top" secondItem="LHz-XH-rPb" secondAttribute="top" id="MfC-pf-x9A"/>
                 <constraint firstItem="yiX-nq-zt3" firstAttribute="top" secondItem="qgr-Hp-Adc" secondAttribute="top" id="RZH-5c-Raq"/>
+                <constraint firstItem="2cx-ah-3LG" firstAttribute="height" secondItem="LHz-XH-rPb" secondAttribute="width" multiplier="5:12" id="aqR-QO-WKo"/>
                 <constraint firstAttribute="trailing" secondItem="2cx-ah-3LG" secondAttribute="trailing" id="sEg-uc-3l0"/>
                 <constraint firstItem="yiX-nq-zt3" firstAttribute="top" secondItem="2cx-ah-3LG" secondAttribute="bottom" constant="10" id="wlp-2i-oRx"/>
                 <constraint firstAttribute="trailing" secondItem="yiX-nq-zt3" secondAttribute="trailing" constant="8" id="zWR-SR-es5"/>
             </constraints>
-            <size key="customSize" width="391" height="230"/>
+            <size key="customSize" width="357" height="201"/>
             <connections>
                 <outlet property="videoImage" destination="2cx-ah-3LG" id="waT-09-jgy"/>
                 <outlet property="videoTimeL" destination="yiX-nq-zt3" id="UWx-cD-Woz"/>
                 <outlet property="videoTitleL" destination="qgr-Hp-Adc" id="jVz-bb-jOT"/>
             </connections>
-            <point key="canvasLocation" x="106.5" y="25"/>
+            <point key="canvasLocation" x="89.5" y="-2.5"/>
         </collectionViewCell>
     </objects>
 </document>

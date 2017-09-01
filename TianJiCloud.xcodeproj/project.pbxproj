@@ -2450,11 +2450,11 @@
 			children = (
 				2C83C7061F39B831004034CA /* Store */,
 				2C8DE5C11F2AE3BC009B3AE2 /* Controller */,
+				2C8DE5C41F2AE3BC009B3AE2 /* Disaggregate */,
 				2C8DE6091F2B15C0009B3AE2 /* Config */,
 				2C8DE6061F2B0FA7009B3AE2 /* Protocol */,
 				2C8DE5FC1F2AEAC9009B3AE2 /* Model */,
 				2C8DE5F51F2AE99D009B3AE2 /* NetworkTool */,
-				2C8DE5C41F2AE3BC009B3AE2 /* Disaggregate */,
 				2C8DE5AD1F2AD82E009B3AE2 /* View */,
 			);
 			path = News;
