@@ -8,8 +8,6 @@
 
 #import "TJSBaseCollectionViewCell.h"
 
-#import "TJSDiscoNewListCellProtocol.h"
-
 @interface DiscoveryNewsListCell : TJSBaseCollectionViewCell
 
 

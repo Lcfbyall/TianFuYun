@@ -65,6 +65,7 @@ static NSString *const ProductSearchVC      = @"ProductSearchController";
 static NSString *const DiscoryNewsListVC    = @"DiscoNewsListController";
 static NSString *const DiscoryNewsDetailVC  = @"DiscoNewsDetailController";
 static NSString *const DiscoryRoadShowListVC = @"DiscoRoadShowListController";
+static NSString *const DiscoryRoadShowDetailVC = @"DiscoRoadShowDetailController";
 
 
 #pragma mark - Setting identifier

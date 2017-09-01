@@ -41,39 +41,27 @@
     if(layoutAttribute.representedElementCategory == UICollectionElementCategoryCell)
     {
         
-        if(indexPath.item == 0){
+        if(indexPath.section == 0){
             
-            /*
-            CGSize size =  CGSizeMake(SCREEN_WIDTH-30, (375-30)*invite_itemRatio);
-            CGFloat X = 15;
-            CGFloat Y = 15;
-            CGFloat W = size.width;
-            CGFloat H = size.height;
-            layoutAttribute.frame=CGRectMake(X, Y, W, H);
-            */
-        }else{
+            CGSize size = [self.delegate collectionView:self.collectionView
+                                                 layout:self
+                                 sizeForItemAtIndexPath:indexPath];
+            UIEdgeInsets insets = [self.delegate collectionView:self.collectionView layout:self insetForSectionAtIndex:indexPath.section];
             
-            /*
-            UICollectionViewLayoutAttributes *firstAtt = [self layoutAttributesForItemAtIndexPath:[NSIndexPath indexPathForItem:0 inSection:indexPath.section]];
-            
-            CGSize sizeSecond = CGSizeMake((SCREEN_WIDTH-30)/2.0, invite_itemHeight);
-            CGFloat X = 15;
-            CGFloat Y = 15;
-            CGFloat W = sizeSecond.width;
-            CGFloat H = sizeSecond.height;
-            
-            CGFloat firstY = firstAtt.frame.origin.y;
-            CGFloat firstH = firstAtt.frame.size.height;
-            CGFloat firstB = firstY+firstH;
-            
-            layoutAttribute.frame=
-            CGRectMake(
-                       X+(W+1)*((indexPath.item-1)%2),
-                       (firstB+Y)+(H+1)*((indexPath.item-1)/2),
-                       W,
-                       H);
-             */
+            if(indexPath.item == 0 ){
+                
+                layoutAttribute.frame = CGRectMake(insets.left, insets.top, size.width, size.height);
+                
+            }else{
+                
+                UICollectionViewLayoutAttributes *lastAttribute = [self layoutAttributesForItemAtIndexPath:[NSIndexPath indexPathForItem:indexPath.item-1 inSection:indexPath.section]];
+                
+                
+                layoutAttribute.frame = CGRectMake(insets.left, lastAttribute.frame.origin.y + lastAttribute.frame.size.height + insets.top, size.width, size.height);
+                
+            }
         }
+        
     }
     return layoutAttribute;
 

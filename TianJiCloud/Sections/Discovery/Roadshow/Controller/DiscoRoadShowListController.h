@@ -7,7 +7,9 @@
 //
 
 #import "TJSBaseViewController.h"
+#import "DiscoRoadShowListConfigurateProtocol.h"
 
-@interface DiscoRoadShowListController : TJSBaseViewController
+@interface DiscoRoadShowListController : TJSBaseViewController<DiscoRoadShowListInteractorDelegate,TJSBaseCollectionViewCellDelegate>
+
 
 @end

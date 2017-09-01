@@ -1,5 +1,5 @@
 //
-//  TJSDiscoNewsListAdapter.h
+//  DiscoRoadShowListAdapter.h
 //  TianJiCloud
 //
 //  Created by 朱鹏 on 17/7/28.
@@ -8,16 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
-#import "TJSDiscoNewsListConfigurateProtocol.h"
-#import "TJSDiscoNewsListPrivateProtocol.h"
+#import "DiscoRoadShowListConfigurateProtocol.h"
+#import "DiscoRoadShowListPrivateProtocol.h"
 
-@interface TJSDiscoNewsListAdapter : NSObject<UICollectionViewDataSource,UICollectionViewDelegate>
+@interface DiscoRoadShowListAdapter : NSObject<UICollectionViewDataSource,UICollectionViewDelegate>
 
 
 - (instancetype)initWithCollectionView:(UICollectionView *)collectionView;
 
 
-@property (nonatomic,weak) id<TJSDiscoveryNewsListInteractor> interactor;
+@property (nonatomic,weak) id<DiscoRoadShowListInteractor> interactor;
 
 @property (nonatomic,weak) id<TJSBaseCollectionViewCellDelegate> cellDelegate;
 

@@ -109,6 +109,15 @@
 		2C4412AD1F22031600C453EF /* TJSHudAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4412AC1F22031600C453EF /* TJSHudAlert.m */; };
 		2C4412B41F2207CD00C453EF /* TJSLoginStateUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4412B31F2207CD00C453EF /* TJSLoginStateUtil.m */; };
 		2C44776A1F41461200ED8685 /* ProductInfoSearchModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4477691F41461200ED8685 /* ProductInfoSearchModel.m */; };
+		2C45917C1F58F4B500D0A798 /* DiscoRoadShowConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C45917B1F58F4B500D0A798 /* DiscoRoadShowConfigurator.m */; };
+		2C4591851F58F5BE00D0A798 /* DiscoRoadShowDataSorceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C45917E1F58F5BE00D0A798 /* DiscoRoadShowDataSorceImpl.m */; };
+		2C4591861F58F5BE00D0A798 /* DiscoRoadShowInteracotImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4591801F58F5BE00D0A798 /* DiscoRoadShowInteracotImpl.m */; };
+		2C4591871F58F5BE00D0A798 /* DiscoRoadShowLayoutImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4591821F58F5BE00D0A798 /* DiscoRoadShowLayoutImpl.m */; };
+		2C4591881F58F5BE00D0A798 /* DiscoRoadShowListAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4591841F58F5BE00D0A798 /* DiscoRoadShowListAdapter.m */; };
+		2C45918E1F59076D00D0A798 /* DiscoRoadShowNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C45918D1F59076D00D0A798 /* DiscoRoadShowNetworkTool.m */; };
+		2C4591911F5908C600D0A798 /* DiscoRoadShowInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4591901F5908C600D0A798 /* DiscoRoadShowInfoModel.m */; };
+		2C4591941F5908CE00D0A798 /* DiscoRoadShowInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4591931F5908CE00D0A798 /* DiscoRoadShowInfo.m */; };
+		2C4591971F590A1600D0A798 /* DiscoRoadShowConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4591961F590A1600D0A798 /* DiscoRoadShowConfig.m */; };
 		2C4C1BD11F380DFE00002166 /* MyOrderListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C1BD01F380DFE00002166 /* MyOrderListViewController.m */; };
 		2C4C1BD51F38143B00002166 /* UIApplication+TJSInfoDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C1BD41F38143B00002166 /* UIApplication+TJSInfoDictionary.m */; };
 		2C4C1BD81F381AF300002166 /* MineHomeCellBalanceItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C1BD71F381AF200002166 /* MineHomeCellBalanceItem.m */; };
@@ -521,7 +530,7 @@
 		2CCBE45D1F32CB61006C4018 /* ProductListCellHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCBE45C1F32CB61006C4018 /* ProductListCellHeaderView.m */; };
 		2CCBE4651F330572006C4018 /* DiscoveryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCBE4641F330572006C4018 /* DiscoveryViewController.m */; };
 		2CCBE4681F330597006C4018 /* DiscoveryVCConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCBE4671F330597006C4018 /* DiscoveryVCConfig.m */; };
-		2CCBE46D1F3312D4006C4018 /* DiscoRoadShowVideoDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCBE46C1F3312D4006C4018 /* DiscoRoadShowVideoDetailController.m */; };
+		2CCBE46D1F3312D4006C4018 /* DiscoRoadShowDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCBE46C1F3312D4006C4018 /* DiscoRoadShowDetailController.m */; };
 		2CCBE47A1F331D91006C4018 /* MineHomeHeaderContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCBE4791F331D91006C4018 /* MineHomeHeaderContainer.m */; };
 		2CCBE4801F333386006C4018 /* UINavigationBar+Awesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCBE47F1F333386006C4018 /* UINavigationBar+Awesome.m */; };
 		2CCBE4831F3415F2006C4018 /* MineHomeHeaderCollectionLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCBE4821F3415F2006C4018 /* MineHomeHeaderCollectionLayout.m */; };
@@ -929,6 +938,26 @@
 		2C4412B51F2208F700C453EF /* TJSApiParamasKeyDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TJSApiParamasKeyDefine.h; sourceTree = "<group>"; };
 		2C4477681F41461200ED8685 /* ProductInfoSearchModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductInfoSearchModel.h; sourceTree = "<group>"; };
 		2C4477691F41461200ED8685 /* ProductInfoSearchModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductInfoSearchModel.m; sourceTree = "<group>"; };
+		2C45917A1F58F4B500D0A798 /* DiscoRoadShowConfigurator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoRoadShowConfigurator.h; sourceTree = "<group>"; };
+		2C45917B1F58F4B500D0A798 /* DiscoRoadShowConfigurator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoRoadShowConfigurator.m; sourceTree = "<group>"; };
+		2C45917D1F58F5BE00D0A798 /* DiscoRoadShowDataSorceImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoRoadShowDataSorceImpl.h; sourceTree = "<group>"; };
+		2C45917E1F58F5BE00D0A798 /* DiscoRoadShowDataSorceImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoRoadShowDataSorceImpl.m; sourceTree = "<group>"; };
+		2C45917F1F58F5BE00D0A798 /* DiscoRoadShowInteracotImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoRoadShowInteracotImpl.h; sourceTree = "<group>"; };
+		2C4591801F58F5BE00D0A798 /* DiscoRoadShowInteracotImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoRoadShowInteracotImpl.m; sourceTree = "<group>"; };
+		2C4591811F58F5BE00D0A798 /* DiscoRoadShowLayoutImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoRoadShowLayoutImpl.h; sourceTree = "<group>"; };
+		2C4591821F58F5BE00D0A798 /* DiscoRoadShowLayoutImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoRoadShowLayoutImpl.m; sourceTree = "<group>"; };
+		2C4591831F58F5BE00D0A798 /* DiscoRoadShowListAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoRoadShowListAdapter.h; sourceTree = "<group>"; };
+		2C4591841F58F5BE00D0A798 /* DiscoRoadShowListAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoRoadShowListAdapter.m; sourceTree = "<group>"; };
+		2C45918A1F58F68800D0A798 /* DiscoRoadShowListConfigurateProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoRoadShowListConfigurateProtocol.h; sourceTree = "<group>"; };
+		2C45918B1F58F68800D0A798 /* DiscoRoadShowListPrivateProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoRoadShowListPrivateProtocol.h; sourceTree = "<group>"; };
+		2C45918C1F59076D00D0A798 /* DiscoRoadShowNetworkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoRoadShowNetworkTool.h; sourceTree = "<group>"; };
+		2C45918D1F59076D00D0A798 /* DiscoRoadShowNetworkTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoRoadShowNetworkTool.m; sourceTree = "<group>"; };
+		2C45918F1F5908C600D0A798 /* DiscoRoadShowInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoRoadShowInfoModel.h; sourceTree = "<group>"; };
+		2C4591901F5908C600D0A798 /* DiscoRoadShowInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoRoadShowInfoModel.m; sourceTree = "<group>"; };
+		2C4591921F5908CE00D0A798 /* DiscoRoadShowInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoRoadShowInfo.h; sourceTree = "<group>"; };
+		2C4591931F5908CE00D0A798 /* DiscoRoadShowInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoRoadShowInfo.m; sourceTree = "<group>"; };
+		2C4591951F590A1600D0A798 /* DiscoRoadShowConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoRoadShowConfig.h; sourceTree = "<group>"; };
+		2C4591961F590A1600D0A798 /* DiscoRoadShowConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoRoadShowConfig.m; sourceTree = "<group>"; };
 		2C4C1BCF1F380DFE00002166 /* MyOrderListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyOrderListViewController.h; sourceTree = "<group>"; };
 		2C4C1BD01F380DFE00002166 /* MyOrderListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyOrderListViewController.m; sourceTree = "<group>"; };
 		2C4C1BD31F38143B00002166 /* UIApplication+TJSInfoDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+TJSInfoDictionary.h"; sourceTree = "<group>"; };
@@ -1266,7 +1295,6 @@
 		2C88F69A1F4EC73E009CF23E /* TJSImagePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSImagePicker.m; sourceTree = "<group>"; };
 		2C89AD721F2B5C81005C29AC /* DiscoNewsDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoNewsDetailController.h; sourceTree = "<group>"; };
 		2C89AD731F2B5C81005C29AC /* DiscoNewsDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoNewsDetailController.m; sourceTree = "<group>"; };
-		2C89AD751F2B5D8E005C29AC /* TJSDiscoNewListCellProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TJSDiscoNewListCellProtocol.h; sourceTree = "<group>"; };
 		2C89AD771F2C5155005C29AC /* UISearchBar+TJSBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISearchBar+TJSBlock.h"; sourceTree = "<group>"; };
 		2C89AD781F2C5155005C29AC /* UISearchBar+TJSBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISearchBar+TJSBlock.m"; sourceTree = "<group>"; };
 		2C89AD7A1F2C7C2B005C29AC /* TJSProductListVCProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TJSProductListVCProtocol.h; sourceTree = "<group>"; };
@@ -1717,8 +1745,8 @@
 		2CCBE4661F330597006C4018 /* DiscoveryVCConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoveryVCConfig.h; sourceTree = "<group>"; };
 		2CCBE4671F330597006C4018 /* DiscoveryVCConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoveryVCConfig.m; sourceTree = "<group>"; };
 		2CCBE46A1F330E0E006C4018 /* TJSDiscoveryVCProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TJSDiscoveryVCProtocol.h; sourceTree = "<group>"; };
-		2CCBE46B1F3312D4006C4018 /* DiscoRoadShowVideoDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoRoadShowVideoDetailController.h; sourceTree = "<group>"; };
-		2CCBE46C1F3312D4006C4018 /* DiscoRoadShowVideoDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoRoadShowVideoDetailController.m; sourceTree = "<group>"; };
+		2CCBE46B1F3312D4006C4018 /* DiscoRoadShowDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoRoadShowDetailController.h; sourceTree = "<group>"; };
+		2CCBE46C1F3312D4006C4018 /* DiscoRoadShowDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoRoadShowDetailController.m; sourceTree = "<group>"; };
 		2CCBE4781F331D91006C4018 /* MineHomeHeaderContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineHomeHeaderContainer.h; sourceTree = "<group>"; };
 		2CCBE4791F331D91006C4018 /* MineHomeHeaderContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineHomeHeaderContainer.m; sourceTree = "<group>"; };
 		2CCBE47E1F333386006C4018 /* UINavigationBar+Awesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+Awesome.h"; sourceTree = "<group>"; };
@@ -4868,7 +4896,6 @@
 			children = (
 				2C8DE6071F2B10F8009B3AE2 /* TJSDiscoNewsListConfigurateProtocol.h */,
 				2C8DE6081F2B11A0009B3AE2 /* TJSDiscoNewsListPrivateProtocol.h */,
-				2C89AD751F2B5D8E005C29AC /* TJSDiscoNewListCellProtocol.h */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -4885,6 +4912,8 @@
 		2C8DE60D1F2B43A8009B3AE2 /* Config */ = {
 			isa = PBXGroup;
 			children = (
+				2C4591951F590A1600D0A798 /* DiscoRoadShowConfig.h */,
+				2C4591961F590A1600D0A798 /* DiscoRoadShowConfig.m */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -4894,8 +4923,8 @@
 			children = (
 				2C8DE60F1F2B43A8009B3AE2 /* DiscoRoadShowListController.h */,
 				2C8DE6101F2B43A8009B3AE2 /* DiscoRoadShowListController.m */,
-				2CCBE46B1F3312D4006C4018 /* DiscoRoadShowVideoDetailController.h */,
-				2CCBE46C1F3312D4006C4018 /* DiscoRoadShowVideoDetailController.m */,
+				2CCBE46B1F3312D4006C4018 /* DiscoRoadShowDetailController.h */,
+				2CCBE46C1F3312D4006C4018 /* DiscoRoadShowDetailController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -4905,6 +4934,16 @@
 			children = (
 				2C8DE6121F2B43A8009B3AE2 /* DiscoveryRoadShowLayout.h */,
 				2C8DE6131F2B43A8009B3AE2 /* DiscoveryRoadShowLayout.m */,
+				2C45917A1F58F4B500D0A798 /* DiscoRoadShowConfigurator.h */,
+				2C45917B1F58F4B500D0A798 /* DiscoRoadShowConfigurator.m */,
+				2C45917F1F58F5BE00D0A798 /* DiscoRoadShowInteracotImpl.h */,
+				2C4591801F58F5BE00D0A798 /* DiscoRoadShowInteracotImpl.m */,
+				2C45917D1F58F5BE00D0A798 /* DiscoRoadShowDataSorceImpl.h */,
+				2C45917E1F58F5BE00D0A798 /* DiscoRoadShowDataSorceImpl.m */,
+				2C4591811F58F5BE00D0A798 /* DiscoRoadShowLayoutImpl.h */,
+				2C4591821F58F5BE00D0A798 /* DiscoRoadShowLayoutImpl.m */,
+				2C4591831F58F5BE00D0A798 /* DiscoRoadShowListAdapter.h */,
+				2C4591841F58F5BE00D0A798 /* DiscoRoadShowListAdapter.m */,
 			);
 			path = Disaggregate;
 			sourceTree = "<group>";
@@ -4912,6 +4951,10 @@
 		2C8DE6141F2B43A8009B3AE2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2C4591921F5908CE00D0A798 /* DiscoRoadShowInfo.h */,
+				2C4591931F5908CE00D0A798 /* DiscoRoadShowInfo.m */,
+				2C45918F1F5908C600D0A798 /* DiscoRoadShowInfoModel.h */,
+				2C4591901F5908C600D0A798 /* DiscoRoadShowInfoModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -4919,6 +4962,8 @@
 		2C8DE6151F2B43A8009B3AE2 /* NetworkTool */ = {
 			isa = PBXGroup;
 			children = (
+				2C45918C1F59076D00D0A798 /* DiscoRoadShowNetworkTool.h */,
+				2C45918D1F59076D00D0A798 /* DiscoRoadShowNetworkTool.m */,
 			);
 			path = NetworkTool;
 			sourceTree = "<group>";
@@ -4926,6 +4971,8 @@
 		2C8DE6161F2B43A8009B3AE2 /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
+				2C45918A1F58F68800D0A798 /* DiscoRoadShowListConfigurateProtocol.h */,
+				2C45918B1F58F68800D0A798 /* DiscoRoadShowListPrivateProtocol.h */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -7022,6 +7069,7 @@
 				2CCC85AC1F3AEE3A0009FC1C /* ProductFilterController.m in Sources */,
 				2C859CE51F31EB2E00B86575 /* YZDisplayViewController.m in Sources */,
 				2C027D161F3C7C71001D7EB6 /* ProductFilterResultDataSourceImpl.m in Sources */,
+				2C4591971F590A1600D0A798 /* DiscoRoadShowConfig.m in Sources */,
 				2C83C7281F39BA4C004034CA /* AllActivityTableCell.m in Sources */,
 				2CB4F60A1F42849100FF98C9 /* MyFavListLayoutImpl.m in Sources */,
 				2C8CD1201F55469D00F9654D /* TJSAppDelegate.m in Sources */,
@@ -7040,6 +7088,7 @@
 				2C562A831F58118D00835984 /* ContactsService.m in Sources */,
 				2CCBE4651F330572006C4018 /* DiscoveryViewController.m in Sources */,
 				A2FE0A891F38B47000E678E5 /* MyFavViewController.m in Sources */,
+				2C4591941F5908CE00D0A798 /* DiscoRoadShowInfo.m in Sources */,
 				2CCBE4961F3421F1006C4018 /* TJSPageControl.m in Sources */,
 				2C859CED1F31EB2E00B86575 /* ZLPhotoPickerBrowserPhoto.m in Sources */,
 				2CF8B5681F3DC6F9003B8520 /* ProductHotCellContentConfig.m in Sources */,
@@ -7073,6 +7122,7 @@
 				2C4C1C931F3948E800002166 /* PNChartLabel.m in Sources */,
 				A2FE0A8C1F38B4B400E678E5 /* MyFavVCConfig.m in Sources */,
 				2C89AD791F2C5155005C29AC /* UISearchBar+TJSBlock.m in Sources */,
+				2C4591851F58F5BE00D0A798 /* DiscoRoadShowDataSorceImpl.m in Sources */,
 				2C8CD1361F55518C00F9654D /* ProductFilterApi.m in Sources */,
 				2C859CF11F31EB2E00B86575 /* ZLPhotoPickerBrowserPhotoImageView.m in Sources */,
 				2CA639181F4ADD5400C39562 /* WithDrawDepositSumCell.m in Sources */,
@@ -7243,9 +7293,12 @@
 				2C8BB7AF1F3087BA00E2D75F /* HomeProductClickItem.m in Sources */,
 				2CE5422B1F4EA51500205993 /* LoginApi.m in Sources */,
 				2CB4F5EA1F41C3BB00FF98C9 /* ContractInfoModel.m in Sources */,
+				2C4591881F58F5BE00D0A798 /* DiscoRoadShowListAdapter.m in Sources */,
+				2C45918E1F59076D00D0A798 /* DiscoRoadShowNetworkTool.m in Sources */,
 				2CCBE4801F333386006C4018 /* UINavigationBar+Awesome.m in Sources */,
 				2CAF430E1F28294E00ABCA5E /* TJSProductListCellFactory.m in Sources */,
 				2CB4F63D1F42F26500FF98C9 /* ContractApplyInteractorImpl.m in Sources */,
+				2C4591861F58F5BE00D0A798 /* DiscoRoadShowInteracotImpl.m in Sources */,
 				2C4412A71F2201FF00C453EF /* TJSBaseRequest.m in Sources */,
 				2C8BB7C91F31BB9F00E2D75F /* ProductContainerController.m in Sources */,
 				2C8CD1891F56C00200F9654D /* SendMessageToWXReq+requestWithTextOrMediaMessage.m in Sources */,
@@ -7430,6 +7483,7 @@
 				2CCBE45D1F32CB61006C4018 /* ProductListCellHeaderView.m in Sources */,
 				2C85E39E1F2F1A5800ADD360 /* TJSMineHomeInvestCellContentConfig.m in Sources */,
 				2CB4F6501F42F58800FF98C9 /* ContractApplyProductResultCell.m in Sources */,
+				2C4591871F58F5BE00D0A798 /* DiscoRoadShowLayoutImpl.m in Sources */,
 				A292B2771F39F92D0086E03E /* CapitalRecordVCConfig.m in Sources */,
 				2CA639371F4AEAC300C39562 /* WithDrawDepositHeaderFooterView.m in Sources */,
 				A2ACF5F31F4B3B06007BADB9 /* WithDrawDepositLayoutImpl.m in Sources */,
@@ -7521,6 +7575,7 @@
 				2CA639301F4AE9D000C39562 /* WithDrawDepositCellLayoutConfig.m in Sources */,
 				2C4C1C101F384A3B00002166 /* TJSMyOrderListDataSourceImpl.m in Sources */,
 				2C597DD21F4C2F2300415EB6 /* SettingHomeConfig.m in Sources */,
+				2C4591911F5908C600D0A798 /* DiscoRoadShowInfoModel.m in Sources */,
 				2C1B74F21F469A140000E71A /* BankCardAddHeaderFooterView.m in Sources */,
 				2CAF42F61F28273300ABCA5E /* ProductListCellImageContentView.m in Sources */,
 				2C1B750A1F46C1100000E71A /* BankCardAddNetworkTool.m in Sources */,
@@ -7547,12 +7602,13 @@
 				2CF8B5411F3D46B8003B8520 /* ProductSearchResultCell.m in Sources */,
 				2C8CD1161F55035100F9654D /* StatisticManager.m in Sources */,
 				2C4C1C891F3948E100002166 /* PNPieChartDataItem.m in Sources */,
-				2CCBE46D1F3312D4006C4018 /* DiscoRoadShowVideoDetailController.m in Sources */,
+				2CCBE46D1F3312D4006C4018 /* DiscoRoadShowDetailController.m in Sources */,
 				2CD896FD1F454458008F7C73 /* AddressManageConfig.m in Sources */,
 				2C027D211F3C827F001D7EB6 /* ProductSearchConfigurator.m in Sources */,
 				2C8BB7B21F3088D600E2D75F /* HomeHeaderConfig.m in Sources */,
 				2CD897341F4576ED008F7C73 /* AddressSelectedConfig.m in Sources */,
 				2CD897431F457B55008F7C73 /* AddressSelectedDefaultContentConfig.m in Sources */,
+				2C45917C1F58F4B500D0A798 /* DiscoRoadShowConfigurator.m in Sources */,
 				2C85E33E1F2ECB1300ADD360 /* UseAgreementController.m in Sources */,
 				2C8BB7A31F30859C00E2D75F /* HomeFooterContainer.m in Sources */,
 				2C597DBF1F4C2CB900415EB6 /* SettingHomeDefaultContentConfig.m in Sources */,

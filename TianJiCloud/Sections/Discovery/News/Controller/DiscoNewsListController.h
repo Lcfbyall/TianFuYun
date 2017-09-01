@@ -9,8 +9,7 @@
 #import "TJSBaseViewController.h"
 
 #import "TJSDiscoNewsListConfigurateProtocol.h"
-#import "TJSDiscoNewListCellProtocol.h"
 
-@interface DiscoNewsListController : TJSBaseViewController<TJSDiscoveryNewsListInteractorDelegate,TJSDiscoNewListCellDelegate>
+@interface DiscoNewsListController : TJSBaseViewController<TJSDiscoveryNewsListInteractorDelegate,TJSBaseCollectionViewCellDelegate>
 
 @end

@@ -44,13 +44,10 @@
     {
         if(indexPath.section == 0){
 
-            CGSize size         = [self.delegate collectionView:self.collectionView
+            CGSize size = [self.delegate collectionView:self.collectionView
                                                          layout:self
                                          sizeForItemAtIndexPath:indexPath];
-            
             UIEdgeInsets insets = [self.delegate collectionView:self.collectionView layout:self insetForSectionAtIndex:indexPath.section];
-
-
             
             if(indexPath.item == 0 ){
                 
