@@ -10,4 +10,20 @@
 
 @implementation DiscoveryNewsInfoModel
 
++ (NSMutableArray <DiscoveryNewsInfoModel *>*)configModelWithNewsInfos:(NSArray <DiscoveryNewsInfo *>*)newsInfos{
+
+    NSMutableArray *newsInfoModels = [NSMutableArray array];
+    [newsInfos enumerateObjectsUsingBlock:^(DiscoveryNewsInfo * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+       
+        DiscoveryNewsInfoModel *model = [DiscoveryNewsInfoModel new];
+        DiscoveryNewsInfo *newsInfo = (DiscoveryNewsInfo *)obj;
+        
+        model.newsInfo = newsInfo;
+        
+        [newsInfoModels addObject:model];
+    }];
+
+    return newsInfoModels;
+}
+
 @end

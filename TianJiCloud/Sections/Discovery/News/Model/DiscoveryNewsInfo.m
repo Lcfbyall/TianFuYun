@@ -10,4 +10,12 @@
 
 @implementation DiscoveryNewsInfo
 
+//NSObject+YYModel
++ (NSDictionary *)modelCustomPropertyMapper {
+    
+    return @{
+             @"newsid": @"id",
+             };
+}
+
 @end

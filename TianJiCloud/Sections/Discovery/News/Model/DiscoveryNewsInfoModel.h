@@ -7,7 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "DiscoveryNewsInfo.h"
+
 
 @interface DiscoveryNewsInfoModel : NSObject
+
+@property (nonatomic,strong)DiscoveryNewsInfo *newsInfo;
+
++ (NSMutableArray <DiscoveryNewsInfoModel *>*)configModelWithNewsInfos:(NSArray <DiscoveryNewsInfo *>*)newsInfos;
 
 @end

@@ -119,6 +119,9 @@
 		2C4591941F5908CE00D0A798 /* DiscoRoadShowInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4591931F5908CE00D0A798 /* DiscoRoadShowInfo.m */; };
 		2C4591971F590A1600D0A798 /* DiscoRoadShowConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4591961F590A1600D0A798 /* DiscoRoadShowConfig.m */; };
 		2C45919A1F59374F00D0A798 /* DiscoVideoResolution.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4591991F59374F00D0A798 /* DiscoVideoResolution.m */; };
+		2C4591A11F59689B00D0A798 /* UIImage+Alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C45919C1F59689B00D0A798 /* UIImage+Alpha.m */; };
+		2C4591A21F59689B00D0A798 /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C45919E1F59689B00D0A798 /* UIImage+Resize.m */; };
+		2C4591A31F59689B00D0A798 /* UIImage+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4591A01F59689B00D0A798 /* UIImage+RoundedCorner.m */; };
 		2C4C1BD11F380DFE00002166 /* MyOrderListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C1BD01F380DFE00002166 /* MyOrderListViewController.m */; };
 		2C4C1BD51F38143B00002166 /* UIApplication+TJSInfoDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C1BD41F38143B00002166 /* UIApplication+TJSInfoDictionary.m */; };
 		2C4C1BD81F381AF300002166 /* MineHomeCellBalanceItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C1BD71F381AF200002166 /* MineHomeCellBalanceItem.m */; };
@@ -961,6 +964,12 @@
 		2C4591961F590A1600D0A798 /* DiscoRoadShowConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoRoadShowConfig.m; sourceTree = "<group>"; };
 		2C4591981F59374F00D0A798 /* DiscoVideoResolution.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoVideoResolution.h; sourceTree = "<group>"; };
 		2C4591991F59374F00D0A798 /* DiscoVideoResolution.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoVideoResolution.m; sourceTree = "<group>"; };
+		2C45919B1F59689B00D0A798 /* UIImage+Alpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Alpha.h"; sourceTree = "<group>"; };
+		2C45919C1F59689B00D0A798 /* UIImage+Alpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Alpha.m"; sourceTree = "<group>"; };
+		2C45919D1F59689B00D0A798 /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resize.h"; sourceTree = "<group>"; };
+		2C45919E1F59689B00D0A798 /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resize.m"; sourceTree = "<group>"; };
+		2C45919F1F59689B00D0A798 /* UIImage+RoundedCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RoundedCorner.h"; sourceTree = "<group>"; };
+		2C4591A01F59689B00D0A798 /* UIImage+RoundedCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RoundedCorner.m"; sourceTree = "<group>"; };
 		2C4C1BCF1F380DFE00002166 /* MyOrderListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyOrderListViewController.h; sourceTree = "<group>"; };
 		2C4C1BD01F380DFE00002166 /* MyOrderListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyOrderListViewController.m; sourceTree = "<group>"; };
 		2C4C1BD31F38143B00002166 /* UIApplication+TJSInfoDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+TJSInfoDictionary.h"; sourceTree = "<group>"; };
@@ -2625,6 +2634,12 @@
 		2C4411EE1F219A5300C453EF /* UIImage */ = {
 			isa = PBXGroup;
 			children = (
+				2C45919B1F59689B00D0A798 /* UIImage+Alpha.h */,
+				2C45919C1F59689B00D0A798 /* UIImage+Alpha.m */,
+				2C45919D1F59689B00D0A798 /* UIImage+Resize.h */,
+				2C45919E1F59689B00D0A798 /* UIImage+Resize.m */,
+				2C45919F1F59689B00D0A798 /* UIImage+RoundedCorner.h */,
+				2C4591A01F59689B00D0A798 /* UIImage+RoundedCorner.m */,
 				2C4411EF1F219A5300C453EF /* UIImage+FromColor.h */,
 				2C4411F01F219A5300C453EF /* UIImage+FromColor.m */,
 				2C4411F11F219A5300C453EF /* UIImage+Stretchable.h */,
@@ -4886,10 +4901,10 @@
 		2C8DE5FC1F2AEAC9009B3AE2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				2C8DE5FD1F2AEAF6009B3AE2 /* DiscoveryNewsInfoModel.h */,
-				2C8DE5FE1F2AEAF6009B3AE2 /* DiscoveryNewsInfoModel.m */,
 				2C8DE6001F2AEB06009B3AE2 /* DiscoveryNewsInfo.h */,
 				2C8DE6011F2AEB06009B3AE2 /* DiscoveryNewsInfo.m */,
+				2C8DE5FD1F2AEAF6009B3AE2 /* DiscoveryNewsInfoModel.h */,
+				2C8DE5FE1F2AEAF6009B3AE2 /* DiscoveryNewsInfoModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -7066,6 +7081,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C4C1C941F3948E800002166 /* PNColor.m in Sources */,
+				2C4591A21F59689B00D0A798 /* UIImage+Resize.m in Sources */,
 				2C1B74E41F4698A30000E71A /* BankCardAddConfig.m in Sources */,
 				2CAF42D81F281B8600ABCA5E /* ProductListVCConfig.m in Sources */,
 				2CD896A11F442806008F7C73 /* ContractApplyPNameContentConfig.m in Sources */,
@@ -7391,6 +7407,7 @@
 				2C1B74E21F4698A30000E71A /* BankCardAddCellFactory.m in Sources */,
 				2CB4F5721F418FFB00FF98C9 /* CumulativeInvestConfig.m in Sources */,
 				2CB4F6151F4298E900FF98C9 /* ContractListCellFactory.m in Sources */,
+				2C4591A11F59689B00D0A798 /* UIImage+Alpha.m in Sources */,
 				2C8CD1801F56BA3500F9654D /* WXApiManager.m in Sources */,
 				2C859CF51F31EB2E00B86575 /* ZLPhotoAssets.m in Sources */,
 				2C562A721F57F7EF00835984 /* ZFPlayerManager.m in Sources */,
@@ -7458,6 +7475,7 @@
 				2CD897191F4548E2008F7C73 /* AddressManageCellFactory.m in Sources */,
 				2C4D35E91F4C25860082BB36 /* CumulativeInvestTableAdapter.m in Sources */,
 				2C8CD0FD1F53BA9700F9654D /* UIImage+Combination.m in Sources */,
+				2C4591A31F59689B00D0A798 /* UIImage+RoundedCorner.m in Sources */,
 				2CE5422E1F4EA52300205993 /* RegistApi.m in Sources */,
 				2CEC59C81F4FF6E8006C03F5 /* NSBundle+TianJiCloud.m in Sources */,
 				2CAF43071F2828C200ABCA5E /* TJSProductListDataSourceImpl.m in Sources */,

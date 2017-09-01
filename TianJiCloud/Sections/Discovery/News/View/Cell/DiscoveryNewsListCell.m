@@ -7,6 +7,7 @@
 //
 
 #import "DiscoveryNewsListCell.h"
+#import "UIImageView+TJSWebCache.h"
 
 @interface DiscoveryNewsListCell ()
 
@@ -15,6 +16,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *newsTitleL;
 
 @property (weak, nonatomic) IBOutlet UILabel *newsTimeL;
+
+@property (nonatomic,strong) DiscoveryNewsInfoModel *model;
 
 @end
 
@@ -30,10 +33,17 @@
 
 - (void)setSubViews{
   
-    _newsImage.image = IMAGE(@"about_commsion_3");
-
     self.selectedBackgroundView = [UIView new];
-    self.selectedBackgroundView.backgroundColor = ThemeService.weak_color_00; 
+    self.selectedBackgroundView.backgroundColor = ThemeService.weak_color_00;
+
+    self.newsImage.contentMode = UIViewContentModeScaleAspectFill;
+
+    self.newsTitleL.textColor = ThemeService.text_color_01;
+    self.newsTitleL.font = [UIFont systemFontOfSize:13.0f];
+    
+    self.newsTimeL.textColor = ThemeService.text_color_01;
+    self.newsTimeL.font = [UIFont systemFontOfSize:13.0f];
+    
 }
 
 
@@ -41,7 +51,14 @@
 
 - (void)tjs_bindDataToCellWithValue:(id)value{
     
+    DiscoveryNewsInfoModel *model = (DiscoveryNewsInfoModel * )value;
+    self.model = model;
     
+    [self.newsImage tjs_setImageWithURL:[NSURL URLWithString:model.newsInfo.coverForFeed ]placeholderImage:IMAGE(@"about_commsion_3")];
+    
+    self.newsTitleL.text = model.newsInfo.title;
+    
+//    self.newsTitleL.text = 
     
 }
 

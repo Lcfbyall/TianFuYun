@@ -40,6 +40,15 @@
     
     self.videoImage.tag = 2017;
     self.videoImage.userInteractionEnabled = YES;
+    self.videoImage.contentMode = UIViewContentModeScaleAspectFill;
+    
+    self.videoTitleL.textColor = ThemeService.text_color_01;
+    self.videoTitleL.font = [UIFont systemFontOfSize:13.0f];
+    
+    self.videoTimeL.textColor = ThemeService.text_color_01;
+    self.videoTimeL.font = [UIFont systemFontOfSize:13.0f];
+
+    
     self.playBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     UIImage *btnimg = IMAGE(@"videoPlayBtn");
     [self.playBtn setImage:btnimg forState:UIControlStateNormal];
@@ -74,7 +83,9 @@
     
     [self.videoImage tjs_setImageWithURL:[NSURL URLWithString:model.showInfo.coverForFeed] placeholderImage:IMAGE(@"about_risk_3")];
     
+    self.videoTitleL.text = model.showInfo.title;
     
+//    self.videoTimeL.text = 
 }
 
 

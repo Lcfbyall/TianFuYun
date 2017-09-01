@@ -62,6 +62,8 @@
                        
            //计算布局
            dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+               
+               [self p_fetchData];
            
                [(TJSBaseCollectionViewLayout *)self.layout calculateLayoutAttributes];
                
@@ -87,24 +89,30 @@
 
 }
 
+
+- (void)p_fetchData {
+    
+    NSMutableArray *infos = [NSMutableArray array];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"videoData" ofType:@"json"];
+    NSData *data = [NSData dataWithContentsOfFile:path];
+    NSDictionary *rootDict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];
+    NSArray *videoList = [rootDict objectForKey:@"videoList"];
+    NSInteger originIndex = arc4random_uniform(10);
+    NSInteger maxIndex = originIndex + arc4random_uniform(15) + 5;
+    for (NSInteger index = originIndex; index < maxIndex; index ++ ) {
+        
+        NSDictionary *dataDic = videoList[index];
+        DiscoveryNewsInfo *model = [DiscoveryNewsInfo yy_modelWithJSON:dataDic];
+        
+        [infos addObject:model];
+    }
+    
+    _items = [DiscoveryNewsInfoModel configModelWithNewsInfos:infos];
+}
+
+
 //
 - (NSArray *)items{
-    
-    if(!_items || !_items.count){
-        
-        _items =  [NSMutableArray arrayWithObjects:
-                   
-                   [DiscoveryNewsInfoModel new],
-                   [DiscoveryNewsInfoModel new],
-                   [DiscoveryNewsInfoModel new],
-                   [DiscoveryNewsInfoModel new],
-                   [DiscoveryNewsInfoModel new],
-                   [DiscoveryNewsInfoModel new],
-                   [DiscoveryNewsInfoModel new],
-                   [DiscoveryNewsInfoModel new],
-                   [DiscoveryNewsInfoModel new],
-                   nil];
-    }
     
     return _items;
 }

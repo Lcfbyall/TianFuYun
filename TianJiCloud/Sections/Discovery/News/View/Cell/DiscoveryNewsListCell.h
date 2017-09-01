@@ -7,9 +7,10 @@
 //
 
 #import "TJSBaseCollectionViewCell.h"
+#import "DiscoveryNewsInfoModel.h"
+
 
 @interface DiscoveryNewsListCell : TJSBaseCollectionViewCell
-
 
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *aspectForIamge;
 
