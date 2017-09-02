@@ -19,6 +19,15 @@
 
 #pragma mark - <TJSMineHomeInteractor>
 
+- (void)loadDatas:(void (^)(void))callback{
+  
+    [self.dataSource loadDatas:^{
+       
+        if(callback)callback();
+        
+    }];
+}
+
 - (NSArray *)items{
 
     id<TJSMineHomeDataSource> dataSource = self.dataSource;
@@ -29,6 +38,11 @@
 - (NSArray *)headerDatas{
   
     return self.dataSource.headerDatas;
+}
+
+- (UICollectionViewLayout *)headerLayout{
+ 
+    return self.dataSource.headerLayout;
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
@@ -62,10 +76,15 @@
 
 
 #pragma mark - TJSMineHomeLayoutDelegate
+
 //下拉刷新
 - (void)onRefresh{
 
-
+    [self loadDatas:^{
+        
+        [self.layout reloadTable];
+        [self.layout reloadTableHeader];
+    }];
 }
 
 @end

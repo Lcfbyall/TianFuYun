@@ -42,10 +42,10 @@
     self.videoImage.userInteractionEnabled = YES;
     self.videoImage.contentMode = UIViewContentModeScaleAspectFill;
     
-    self.videoTitleL.textColor = ThemeService.text_color_01;
+    self.videoTitleL.textColor = ThemeService.origin_color_00;
     self.videoTitleL.font = [UIFont systemFontOfSize:13.0f];
     
-    self.videoTimeL.textColor = ThemeService.text_color_01;
+    self.videoTimeL.textColor = ThemeService.origin_color_00;
     self.videoTimeL.font = [UIFont systemFontOfSize:13.0f];
 
     

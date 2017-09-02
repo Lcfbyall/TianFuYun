@@ -89,6 +89,7 @@ static  TJSImagePicker *imagePikerSevice;
     imagePikerSevice.completionHandler = complete;
     
      [TJSHudAlert showLoadingViewInView:[UIViewController tjs_currentController].view];
+    
     [imagePikerSevice requestAccessForMediaCompleteHandler:^(BOOL granted) {
         
          [TJSHudAlert  dimissLoadingView];
@@ -115,6 +116,7 @@ static  TJSImagePicker *imagePikerSevice;
 - (void)requestAccessForMediaCompleteHandler:(void(^)(BOOL granted))complete{
 
     AVAuthorizationStatus authStatus = [AVCaptureDevice authorizationStatusForMediaType:AVMediaTypeVideo];
+    
      //Requests access to the underlying hardware for the media type, showing a dialog to the user if necessary.
     if(authStatus == AVAuthorizationStatusNotDetermined)
     {

@@ -26,7 +26,9 @@
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="QL1-vd-bqA">
                             <rect key="frame" x="187" y="-45" width="90" height="90"/>
                             <constraints>
+                                <constraint firstAttribute="width" constant="90" id="0ED-AX-60h"/>
                                 <constraint firstAttribute="width" secondItem="QL1-vd-bqA" secondAttribute="height" multiplier="1:1" id="9EM-GG-Ien"/>
+                                <constraint firstAttribute="height" constant="90" id="cvH-11-SAe"/>
                             </constraints>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="朱鹏" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oJJ-Jt-Pbw">

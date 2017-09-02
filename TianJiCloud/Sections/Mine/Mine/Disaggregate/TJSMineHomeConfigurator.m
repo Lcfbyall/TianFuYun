@@ -64,8 +64,7 @@
     
     //5.
     //自动刷新
-    [layoutImpl reloadTable];
-    [layoutImpl reloadTableHeader];
+    [_interactor onRefresh];
 }
 
 

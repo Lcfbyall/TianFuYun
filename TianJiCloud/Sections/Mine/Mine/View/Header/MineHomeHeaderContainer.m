@@ -22,11 +22,9 @@ static NSString *identifier = @"MineHeaderCollectionCell";
 
 @property (nonatomic,strong) UICollectionView *collectionView;
 
+@property (nonatomic,strong) MineHomeHeaderCollectionLayout *layout;
+
 @property (nonatomic,strong)TJSPageControl *pageControl;
-
-@property (nonatomic,strong)NSArray *dadaSource;
-
-@property (nonatomic,assign)BOOL hideSum;
 
 @end
 
@@ -42,12 +40,18 @@ static NSString *identifier = @"MineHeaderCollectionCell";
     container.frame = CGRectMake(0, 0, SCREEN_WIDTH, Height);
     
     container.backgroundColor = ThemeService.weak_color_00;
-   
-    [container p_addSubViews];
 
     return container;
 }
 
+- (void)setInteractor:(id<TJSMineHomeInteractor>)interactor{
+ 
+    _interactor = interactor;
+    
+    _layout = (MineHomeHeaderCollectionLayout *)interactor.headerLayout;
+    
+    [self p_addSubViews];
+}
 
 #pragma mark - addSubViews
 
@@ -72,14 +76,12 @@ static NSString *identifier = @"MineHeaderCollectionCell";
     
     self.collectionView = ({
         
-        MineHomeHeaderCollectionLayout *layout =  [[MineHomeHeaderCollectionLayout alloc]init];
-        layout.delegate = self;
-        layout.interMargin = 0;
-        layout.insets   = UIEdgeInsetsMake(Margin, Margin, Margin, Margin);
+        self.layout.delegate = self;
+        self.layout.interMargin = 0;
+        self.layout.insets   = UIEdgeInsetsMake(Margin, Margin, Margin, Margin);
 
-        
-        UICollectionView  *collectionView = [[UICollectionView alloc]initWithFrame:CGRectZero collectionViewLayout:layout];
-        collectionView.backgroundColor = [UIColor redColor];
+        UICollectionView  *collectionView = [[UICollectionView alloc]initWithFrame:CGRectZero collectionViewLayout:self.interactor.headerLayout];
+        collectionView.backgroundColor = [UIColor clearColor];
         collectionView.dataSource = self;
         collectionView.delegate   = self;
         collectionView.pagingEnabled = YES;
@@ -95,8 +97,11 @@ static NSString *identifier = @"MineHeaderCollectionCell";
     
         [collectionView mas_makeConstraints:^(MASConstraintMaker *make) {
             
-            make.edges.mas_equalTo(UIEdgeInsetsMake(0, 0, 0 , 0));
+            make.bottom.mas_equalTo(0);
+            make.width.mas_equalTo(SCREEN_WIDTH);
+            make.height.mas_equalTo(Height);
         }];
+        
         
 
         collectionView;
@@ -121,21 +126,23 @@ static NSString *identifier = @"MineHeaderCollectionCell";
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
     
-    return self.dadaSource.count?1:0;
+    NSArray *dataSource = [self.interactor.headerDatas firstObject];
+    
+    return dataSource.count?1:0;
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
     
-    return self.dadaSource.count;
+     NSArray *dataSource = [self.interactor.headerDatas firstObject];
+    return dataSource.count;
 }
 
 - (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     
     MineHeaderCollectionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:identifier forIndexPath:indexPath];
-
-    
-    
-    [cell tjs_bindDataToCellWithValue:@[self.dadaSource[indexPath.item],@(self.hideSum)]];
+    NSArray *dataSource = [self.interactor.headerDatas firstObject];
+    NSNumber *hide = [self.interactor.headerDatas lastObject];
+    [cell tjs_bindDataToCellWithValue:@[dataSource[indexPath.item],hide]];
     
     return cell;
 }
@@ -201,36 +208,11 @@ static NSString *identifier = @"MineHeaderCollectionCell";
     }
 }
 
-- (void)tjs_bindDataToCellWithValue:(id)value{
 
-    self.dadaSource = [value firstObject];
-    
-    self.hideSum = [[value lastObject] boolValue];
-    
-    [self p_reloadCollectionView];
-}
+- (void)tjs_reloadTableHeader{
 
-- (void)hideOrShowMoney:(BOOL)hide{
-  
-    _hideSum = hide;
-    
-    [self p_reloadCollectionView];
-}
+  [self.collectionView reloadData];
 
-- (void)p_reloadCollectionView{
-
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^
-                   {
-       dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-           
-           [(MineHomeHeaderCollectionLayout *)self.collectionView.collectionViewLayout calculateLayoutAttributes];
-           
-           dispatch_async(dispatch_get_main_queue(), ^{
-               
-               [self.collectionView reloadData];
-           });
-       });
-   });
 }
 
 @end

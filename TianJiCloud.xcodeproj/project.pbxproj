@@ -122,6 +122,7 @@
 		2C4591A11F59689B00D0A798 /* UIImage+Alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C45919C1F59689B00D0A798 /* UIImage+Alpha.m */; };
 		2C4591A21F59689B00D0A798 /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C45919E1F59689B00D0A798 /* UIImage+Resize.m */; };
 		2C4591A31F59689B00D0A798 /* UIImage+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4591A01F59689B00D0A798 /* UIImage+RoundedCorner.m */; };
+		2C4591A61F5AED4B00D0A798 /* MineHomeNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4591A51F5AED4B00D0A798 /* MineHomeNetworkTool.m */; };
 		2C4C1BD11F380DFE00002166 /* MyOrderListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C1BD01F380DFE00002166 /* MyOrderListViewController.m */; };
 		2C4C1BD51F38143B00002166 /* UIApplication+TJSInfoDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C1BD41F38143B00002166 /* UIApplication+TJSInfoDictionary.m */; };
 		2C4C1BD81F381AF300002166 /* MineHomeCellBalanceItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C1BD71F381AF200002166 /* MineHomeCellBalanceItem.m */; };
@@ -970,6 +971,8 @@
 		2C45919E1F59689B00D0A798 /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resize.m"; sourceTree = "<group>"; };
 		2C45919F1F59689B00D0A798 /* UIImage+RoundedCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RoundedCorner.h"; sourceTree = "<group>"; };
 		2C4591A01F59689B00D0A798 /* UIImage+RoundedCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RoundedCorner.m"; sourceTree = "<group>"; };
+		2C4591A41F5AED4B00D0A798 /* MineHomeNetworkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineHomeNetworkTool.h; sourceTree = "<group>"; };
+		2C4591A51F5AED4B00D0A798 /* MineHomeNetworkTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineHomeNetworkTool.m; sourceTree = "<group>"; };
 		2C4C1BCF1F380DFE00002166 /* MyOrderListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyOrderListViewController.h; sourceTree = "<group>"; };
 		2C4C1BD01F380DFE00002166 /* MyOrderListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyOrderListViewController.m; sourceTree = "<group>"; };
 		2C4C1BD31F38143B00002166 /* UIApplication+TJSInfoDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+TJSInfoDictionary.h"; sourceTree = "<group>"; };
@@ -3790,6 +3793,8 @@
 		2C85E2AE1F2EBDFE00ADD360 /* NetworkTool */ = {
 			isa = PBXGroup;
 			children = (
+				2C4591A41F5AED4B00D0A798 /* MineHomeNetworkTool.h */,
+				2C4591A51F5AED4B00D0A798 /* MineHomeNetworkTool.m */,
 			);
 			path = NetworkTool;
 			sourceTree = "<group>";
@@ -7452,6 +7457,7 @@
 				2C8DE5FB1F2AEA59009B3AE2 /* TJSDiscoNewsDataSorceImpl.m in Sources */,
 				2CE542341F4EA64400205993 /* FindLoginPasswordApi.m in Sources */,
 				2C597DBA1F4C2CB900415EB6 /* MineSettingViewController.m in Sources */,
+				2C4591A61F5AED4B00D0A798 /* MineHomeNetworkTool.m in Sources */,
 				2CCBE4A61F344A98006C4018 /* MineHomeCellOrderItem.m in Sources */,
 				2C4412B41F2207CD00C453EF /* TJSLoginStateUtil.m in Sources */,
 				A292B27A1F39FBC10086E03E /* TJSBaseDisplayContainer.m in Sources */,

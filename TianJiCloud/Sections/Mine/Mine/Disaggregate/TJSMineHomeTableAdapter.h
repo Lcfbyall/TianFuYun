@@ -12,7 +12,6 @@
 
 @interface TJSMineHomeTableAdapter : NSObject<UITableViewDelegate,UITableViewDataSource>
 
-
 @property (nonatomic,weak) id<TJSMineHomeInteractor> interactor;
 
 @property (nonatomic,weak) id<TJSBaseTableViewCellDelegate> cellDelegate;

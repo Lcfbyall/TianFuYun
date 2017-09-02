@@ -17,9 +17,13 @@
 
 @optional
 
+- (void)loadDatas:(void (^)(void))callback;
+
 - (NSArray *)items;
 
 - (NSArray *)headerDatas;
+
+- (UICollectionViewLayout *)headerLayout;
 
 - (void)hideOrShowMoney:(BOOL)hide callback:(void (^)(void))callback;
 @end

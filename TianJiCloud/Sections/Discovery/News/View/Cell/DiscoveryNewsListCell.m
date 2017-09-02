@@ -38,10 +38,10 @@
 
     self.newsImage.contentMode = UIViewContentModeScaleAspectFill;
 
-    self.newsTitleL.textColor = ThemeService.text_color_01;
+    self.newsTitleL.textColor = ThemeService.origin_color_00;
     self.newsTitleL.font = [UIFont systemFontOfSize:13.0f];
     
-    self.newsTimeL.textColor = ThemeService.text_color_01;
+    self.newsTimeL.textColor = ThemeService.origin_color_00;
     self.newsTimeL.font = [UIFont systemFontOfSize:13.0f];
     
 }

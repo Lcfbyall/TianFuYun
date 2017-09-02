@@ -36,12 +36,17 @@ static NSString *const headerFooterIdentifier = @"MineHomeHeaderFooterIdentifier
         _cellFactory = [[TJSMineHomeCellFactory alloc]init];
         
         _tableView   = tableView;
-        
-        [self setupTableView];
     }
     return self;
 }
 
+
+- (void)setInteractor:(id<TJSMineHomeInteractor>)interactor{
+  
+    _interactor = interactor;
+    
+    [self setupTableView];
+}
 
 #pragma mark - Private
 
@@ -58,11 +63,12 @@ static NSString *const headerFooterIdentifier = @"MineHomeHeaderFooterIdentifier
     _headerContainer.tjs_origin = CGPointMake(0, -_headerContainer.tjs_height);
     _tableView.contentInset = UIEdgeInsetsMake(_headerContainer.tjs_height, 0, 0, 0);
     [_tableView addSubview:_headerContainer];
-    
+    _headerContainer.interactor = self.interactor;
+
     WEAK_SELF(self);
     [_tableView tjs_headerWithRefreshingBlock:^(UITableView *tableView) {
         STRONG_SELF(self);
-        [self.headerContainer tjs_bindDataToCellWithValue:self.interactor.headerDatas];
+        [self.headerContainer tjs_reloadTableHeader];
     }];
 }
 

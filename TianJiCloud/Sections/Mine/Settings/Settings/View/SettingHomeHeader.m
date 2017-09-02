@@ -52,8 +52,9 @@
  
     [super awakeFromNib];
     
-    self.icon.layer.cornerRadius = self.icon.tjs_height/2.0;
+    self.icon.layer.cornerRadius = 90/2.0;
     self.icon.layer.masksToBounds = YES;
+    self.icon.contentMode = UIViewContentModeScaleAspectFill;
     
     self.nameL.textColor = ThemeService.text_color_01;
     self.nameL.font = [UIFont systemFontOfSize:17.0f];

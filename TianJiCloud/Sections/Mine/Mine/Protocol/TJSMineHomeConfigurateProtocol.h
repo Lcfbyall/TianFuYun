@@ -23,10 +23,14 @@
 
 @optional
 
+- (void)loadDatas:(void (^)(void))callback;
+
 //
 - (NSArray *)items;
 
 - (NSArray *)headerDatas;
+
+- (UICollectionViewLayout *)headerLayout;
 
 - (void)reloadTableHeader;
 

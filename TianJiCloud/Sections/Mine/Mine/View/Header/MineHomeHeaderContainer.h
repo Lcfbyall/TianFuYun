@@ -9,6 +9,7 @@
 
 #import <UIKit/UIKit.h>
 
+#import "TJSMineHomeConfigurateProtocol.h"
 
 @interface MineHomeHeaderContainer : UIView
 
@@ -16,8 +17,10 @@
 
 - (void)p_scrollViewDidScroll:(UIScrollView *)scrollView;
 
-- (void)tjs_bindDataToCellWithValue:(id)value;
-
 - (void)hideOrShowMoney:(BOOL)hide;
+
+- (void)tjs_reloadTableHeader;
+
+@property (nonatomic,weak) id<TJSMineHomeInteractor> interactor;
 
 @end
