@@ -8,8 +8,13 @@
 
 #import "LocationService.h"
 
+@interface LocationService ()
+
+
+@end
 
 @implementation LocationService
+
 
 
 

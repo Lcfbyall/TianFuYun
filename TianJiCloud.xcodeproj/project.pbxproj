@@ -123,6 +123,8 @@
 		2C4591A21F59689B00D0A798 /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C45919E1F59689B00D0A798 /* UIImage+Resize.m */; };
 		2C4591A31F59689B00D0A798 /* UIImage+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4591A01F59689B00D0A798 /* UIImage+RoundedCorner.m */; };
 		2C4591A61F5AED4B00D0A798 /* MineHomeNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4591A51F5AED4B00D0A798 /* MineHomeNetworkTool.m */; };
+		2C4591AB1F5CECD000D0A798 /* CalendarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4591AA1F5CECD000D0A798 /* CalendarManager.m */; };
+		2C4591AE1F5CECE400D0A798 /* QRCodeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4591AD1F5CECE400D0A798 /* QRCodeManager.m */; };
 		2C4C1BD11F380DFE00002166 /* MyOrderListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C1BD01F380DFE00002166 /* MyOrderListViewController.m */; };
 		2C4C1BD51F38143B00002166 /* UIApplication+TJSInfoDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C1BD41F38143B00002166 /* UIApplication+TJSInfoDictionary.m */; };
 		2C4C1BD81F381AF300002166 /* MineHomeCellBalanceItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C1BD71F381AF200002166 /* MineHomeCellBalanceItem.m */; };
@@ -973,6 +975,10 @@
 		2C4591A01F59689B00D0A798 /* UIImage+RoundedCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RoundedCorner.m"; sourceTree = "<group>"; };
 		2C4591A41F5AED4B00D0A798 /* MineHomeNetworkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineHomeNetworkTool.h; sourceTree = "<group>"; };
 		2C4591A51F5AED4B00D0A798 /* MineHomeNetworkTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineHomeNetworkTool.m; sourceTree = "<group>"; };
+		2C4591A91F5CECD000D0A798 /* CalendarManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarManager.h; sourceTree = "<group>"; };
+		2C4591AA1F5CECD000D0A798 /* CalendarManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarManager.m; sourceTree = "<group>"; };
+		2C4591AC1F5CECE400D0A798 /* QRCodeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeManager.h; sourceTree = "<group>"; };
+		2C4591AD1F5CECE400D0A798 /* QRCodeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeManager.m; sourceTree = "<group>"; };
 		2C4C1BCF1F380DFE00002166 /* MyOrderListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyOrderListViewController.h; sourceTree = "<group>"; };
 		2C4C1BD01F380DFE00002166 /* MyOrderListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyOrderListViewController.m; sourceTree = "<group>"; };
 		2C4C1BD31F38143B00002166 /* UIApplication+TJSInfoDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+TJSInfoDictionary.h"; sourceTree = "<group>"; };
@@ -2713,9 +2719,12 @@
 				2C562A771F58107800835984 /* Audio */,
 				2C88F6981F4EC735009CF23E /* Photo */,
 				2C562A841F58130400835984 /* Location */,
+				2C4591A81F5CEBE500D0A798 /* QRCode */,
 				2C562A801F58118100835984 /* Contacts */,
+				2C4591A71F5CE8FF00D0A798 /* Calendar */,
 				2C562A7C1F58113200835984 /* AddressBook */,
 				2C562A731F580FD000835984 /* HealthKitService */,
+				2C8CD1221F5548FB00F9654D /* KeyboardService */,
 				2C562A6F1F57F7DC00835984 /* ZFPlayerService */,
 				2C8CD1291F554B7C00F9654D /* RootController */,
 				2C8CD16D1F56B9EC00F9654D /* AlipayManger */,
@@ -2724,7 +2733,6 @@
 				2C8CD10A1F5502F400F9654D /* SocailService */,
 				2C8CD10B1F5502F400F9654D /* StatisticService */,
 				2C8CD1211F5548FB00F9654D /* NetworkMonitor */,
-				2C8CD1221F5548FB00F9654D /* KeyboardService */,
 				2C8CD1061F54FE4200F9654D /* EmptyDataSet */,
 				2C4412941F22002000C453EF /* TJSThemeService */,
 				2C8CD10D1F55031F00F9654D /* FMDBService */,
@@ -2930,6 +2938,24 @@
 				2C4477691F41461200ED8685 /* ProductInfoSearchModel.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		2C4591A71F5CE8FF00D0A798 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				2C4591A91F5CECD000D0A798 /* CalendarManager.h */,
+				2C4591AA1F5CECD000D0A798 /* CalendarManager.m */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		2C4591A81F5CEBE500D0A798 /* QRCode */ = {
+			isa = PBXGroup;
+			children = (
+				2C4591AC1F5CECE400D0A798 /* QRCodeManager.h */,
+				2C4591AD1F5CECE400D0A798 /* QRCodeManager.m */,
+			);
+			path = QRCode;
 			sourceTree = "<group>";
 		};
 		2C4C1BCB1F380CED00002166 /* Config */ = {
@@ -7380,6 +7406,7 @@
 				2C859CE41F31EB2E00B86575 /* YZDisplayTitleLabel.m in Sources */,
 				2C8CD2311F57A8F100F9654D /* UIImageView+TJSIndicatorForAFNetworking.m in Sources */,
 				2CB4F5E41F41C3BB00FF98C9 /* ContractListConfigurator.m in Sources */,
+				2C4591AE1F5CECE400D0A798 /* QRCodeManager.m in Sources */,
 				2C1B74C41F4694FF0000E71A /* BankCardInfoModel.m in Sources */,
 				2CD896ED1F453F8C008F7C73 /* ContractAddAddressCellLayoutConfig.m in Sources */,
 				2CAF42D51F281B8600ABCA5E /* TJSProductListTextContentConfig.m in Sources */,
@@ -7459,6 +7486,7 @@
 				2C597DBA1F4C2CB900415EB6 /* MineSettingViewController.m in Sources */,
 				2C4591A61F5AED4B00D0A798 /* MineHomeNetworkTool.m in Sources */,
 				2CCBE4A61F344A98006C4018 /* MineHomeCellOrderItem.m in Sources */,
+				2C4591AB1F5CECD000D0A798 /* CalendarManager.m in Sources */,
 				2C4412B41F2207CD00C453EF /* TJSLoginStateUtil.m in Sources */,
 				A292B27A1F39FBC10086E03E /* TJSBaseDisplayContainer.m in Sources */,
 				2C83C71C1F39B9C9004034CA /* AllActivityViewController.m in Sources */,

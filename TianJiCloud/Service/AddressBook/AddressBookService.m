@@ -8,6 +8,11 @@
 
 #import "AddressBookService.h"
 
+@interface AddressBookService ()
+
+
+@end
+
 @implementation AddressBookService
 
 @end

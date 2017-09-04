@@ -8,5 +8,25 @@
 
 
 "CFBundleDisplayName" = "天富云";
-"NSCameraUsageDescription" = "是否允许此App使用你的相机？";
-"NSPhotoLibraryUsageDescription" = "是否允许此App访问你的媒体资料库";
+
+//Private
+"NFCReaderUsageDescription"      = "允许访问NFC吗？";
+"NSAppleMusicUsageDescription"   = "允许访问媒体库吗？";
+"NSBluetoothPeripheralUsageDescription" = "允许访问蓝牙吗？";
+"NSCalendarsUsageDescription"    = "允许访问日历吗？";
+"NSCameraUsageDescription"       = "允许访问相机吗？";
+"NSContactsUsageDescription"     = "允许访问通讯录吗？";
+"NSHealthShareUsageDescription"  = "允许访问健康分享吗？";
+"NSHealthUpdateUsageDescription" = "允许访问健康更新吗?";
+"NSHomeKitUsageDescription"      = "允许访问家庭吗?";
+"NSLocationAlwaysUsageDescription"    = "允许一直访问您的位置吗？";
+"NSLocationUsageDescription"     = "允许访问您的位置吗？";
+"NSLocationWhenInUseUsageDescription" = "允许在使用期间访问您的位置吗？";
+"NSMicrophoneUsageDescription"   = "允许访问麦克风吗？";
+"NSMotionUsageDescription"       = "允许访问运动与健身吗？";
+"NSPhotoLibraryAddUsageDescription"   = "允许保存图片到相册吗？";
+"NSPhotoLibraryUsageDescription" = "允许访问相册吗？";
+"NSRemindersUsageDescription"    = "允许访问提醒事项吗？";
+"NSSiriUsageDescription"         = "允许访问Siri吗？";
+"NSSpeechRecognitionUsageDescription" = "允许访问语音识别吗？";
+"NSVideoSubscriberAccountUsageDescription" = "允许访问视频认证吗？";

@@ -8,6 +8,13 @@
 
 #import "ContactsService.h"
 
+@interface ContactsService ()
+
+
+@end
+
 @implementation ContactsService
+
+
 
 @end
