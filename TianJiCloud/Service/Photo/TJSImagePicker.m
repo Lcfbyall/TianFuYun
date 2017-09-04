@@ -7,8 +7,11 @@
 //
 
 #import "TJSImagePicker.h"
-#import <AVFoundation/AVFoundation.h>
+#import <AVFoundation/AVCaptureDevice.h>
+#import <AVFoundation/AVMediaFormat.h>
 #import <MobileCoreServices/UTCoreTypes.h>
+#import <Photos/PHPhotoLibrary.h>
+
 #import "TJSHudAlert.h"
 #import "UIDevice+CurrentArg.h"
 
@@ -40,16 +43,17 @@ static  TJSImagePicker *imagePikerSevice;
 {
     imagePikerSevice = [[TJSImagePicker alloc]init];
     imagePikerSevice.completionHandler = complete;
-    
-    
     [TJSHudAlert showLoadingViewInView:[UIViewController tjs_currentController].view];
-    [imagePikerSevice requestAccessForMediaCompleteHandler:^(BOOL granted) {
+    UIImagePickerControllerSourceType type = UIImagePickerControllerSourceTypeCamera;
+    
+    [imagePikerSevice requestAccessForMediaType:type
+                                completeHandler:^(BOOL granted) {
         
         [TJSHudAlert  dimissLoadingView];
         
         if(granted){
 
-            [imagePikerSevice openMediaType:UIImagePickerControllerSourceTypeCamera];
+            [imagePikerSevice openMediaType:type];
         }else{
             
             [imagePikerSevice openCameraSystemSetting];
@@ -63,16 +67,17 @@ static  TJSImagePicker *imagePikerSevice;
 {
     imagePikerSevice = [[TJSImagePicker alloc]init];
     imagePikerSevice.completionHandler = complete;
+    [TJSHudAlert showLoadingViewInView:[UIViewController tjs_currentController].view];
+    UIImagePickerControllerSourceType type = UIImagePickerControllerSourceTypePhotoLibrary;
     
-     [TJSHudAlert showLoadingViewInView:[UIViewController tjs_currentController].view];
-    
-    [imagePikerSevice requestAccessForMediaCompleteHandler:^(BOOL granted) {
+    [imagePikerSevice requestAccessForMediaType:type
+                                completeHandler:^(BOOL granted) {
         
-         [TJSHudAlert  dimissLoadingView];
+        [TJSHudAlert  dimissLoadingView];
         
         if(granted){
         
-            [imagePikerSevice openMediaType:UIImagePickerControllerSourceTypePhotoLibrary];
+            [imagePikerSevice openMediaType:type];
 
         }else{
            
@@ -87,16 +92,17 @@ static  TJSImagePicker *imagePikerSevice;
 
     imagePikerSevice = [[TJSImagePicker alloc]init];
     imagePikerSevice.completionHandler = complete;
+    [TJSHudAlert showLoadingViewInView:[UIViewController tjs_currentController].view];
+    UIImagePickerControllerSourceType type = UIImagePickerControllerSourceTypeSavedPhotosAlbum;
     
-     [TJSHudAlert showLoadingViewInView:[UIViewController tjs_currentController].view];
-    
-    [imagePikerSevice requestAccessForMediaCompleteHandler:^(BOOL granted) {
+    [imagePikerSevice requestAccessForMediaType:type
+                                completeHandler:^(BOOL granted) {
         
          [TJSHudAlert  dimissLoadingView];
         
         if(granted){
             
-            [imagePikerSevice openMediaType:UIImagePickerControllerSourceTypeSavedPhotosAlbum];
+            [imagePikerSevice openMediaType:type];
             
         }else{
             
@@ -106,50 +112,84 @@ static  TJSImagePicker *imagePikerSevice;
 }
 
 
-#pragma mark private method
-/*
- AVAuthorizationStatusNotDetermined = 0,// 未进行授权选择
- AVAuthorizationStatusRestricted,　　　　// 未授权，且用户无法更新，如家长控制情况下
- AVAuthorizationStatusDenied,　　　　　　 // 用户拒绝App使用
- AVAuthorizationStatusAuthorized,　　　　// 已授权，可使用
- */
-- (void)requestAccessForMediaCompleteHandler:(void(^)(BOOL granted))complete{
 
-    AVAuthorizationStatus authStatus = [AVCaptureDevice authorizationStatusForMediaType:AVMediaTypeVideo];
+#pragma mark private method
+
+- (void)requestAccessForMediaType:(UIImagePickerControllerSourceType)type
+                  completeHandler:(void(^)(BOOL granted))complete{
+
     
-     //Requests access to the underlying hardware for the media type, showing a dialog to the user if necessary.
-    if(authStatus == AVAuthorizationStatusNotDetermined)
-    {
-        [AVCaptureDevice requestAccessForMediaType:AVMediaTypeVideo completionHandler:^(BOOL granted)
-         {
-             dispatch_async(dispatch_get_main_queue(), ^{
-                 
+    /*
+     AVAuthorizationStatusNotDetermined = 0,// 未进行授权选择
+     AVAuthorizationStatusRestricted,　　　　// 未授权，且用户无法更新，如家长控制情况下
+     AVAuthorizationStatusDenied,　　　　　　 // 用户拒绝App使用
+     AVAuthorizationStatusAuthorized,　　　　// 已授权，可使用
+     */
+    
+    if(type == UIImagePickerControllerSourceTypeCamera){
+    
+        AVAuthorizationStatus authStatus = [AVCaptureDevice authorizationStatusForMediaType:AVMediaTypeVideo];
+        //Requests access to the underlying hardware for the media type, showing a dialog to the user if necessary.
+        if(authStatus == AVAuthorizationStatusNotDetermined){
+            
+            [AVCaptureDevice requestAccessForMediaType:AVMediaTypeVideo completionHandler:^(BOOL granted)
+             {
+                 dispatch_async(dispatch_get_main_queue(), ^{
+                     
                      if(complete)complete(granted);
-             });
-         }];
-    }
-    else if ((authStatus == AVAuthorizationStatusRestricted ||
-              authStatus == AVAuthorizationStatusDenied) &&
-             IOS7_OR_LATER)
-    {
+                 });
+             }];
+            
+        }else if ((authStatus == AVAuthorizationStatusRestricted ||
+                  authStatus == AVAuthorizationStatusDenied) &&
+                 IOS7_OR_LATER){
+            
+            dispatch_async(dispatch_get_main_queue(), ^{
+                if(complete)complete(NO);
+            });
+            
+        }else{
+            
+            dispatch_async(dispatch_get_main_queue(), ^{
+                if(complete)complete(YES);
+            });
+        }
         
-        dispatch_async(dispatch_get_main_queue(), ^{
-           if(complete)complete(NO);
-        });
-    }
-    else
-    {
+    }else{
+    
+       PHAuthorizationStatus authStatus = [PHPhotoLibrary authorizationStatus];
+        if(authStatus == PHAuthorizationStatusNotDetermined){
         
-        dispatch_async(dispatch_get_main_queue(), ^{
-           if(complete)complete(YES);
-        });
+            //点击允许／不允许之后
+            [PHPhotoLibrary requestAuthorization:^(PHAuthorizationStatus status) {
+               
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    BOOL granted = (status==PHAuthorizationStatusAuthorized)?1:0;
+                    if(complete)complete(granted);
+                });
+            }];
+        
+        }else if (authStatus == PHAuthorizationStatusDenied ||
+                  authStatus == PHAuthorizationStatusRestricted){
+        
+            dispatch_async(dispatch_get_main_queue(), ^{
+                if(complete)complete(NO);
+            });
+        }else{
+        
+            dispatch_async(dispatch_get_main_queue(), ^{
+                
+                if(complete)complete(YES);
+            });
+        }
     }
-  
 }
+
 - (void)openMediaType:(UIImagePickerControllerSourceType)type{
     
     UIImagePickerControllerSourceType sourceType = type;
-    if ([UIImagePickerController isSourceTypeAvailable:type])
+    
+    if ([UIImagePickerController isSourceTypeAvailable:sourceType])
     {
         self.imagePickerController.sourceType = sourceType;
         //设置图像选取控制器的类型为静态图像
@@ -159,7 +199,7 @@ static  TJSImagePicker *imagePikerSevice;
             self.imagePickerController.modalPresentationStyle = UIModalPresentationOverCurrentContext;
         }
         
-        if(type==UIImagePickerControllerSourceTypeCamera){
+        if(sourceType==UIImagePickerControllerSourceTypeCamera){
          
             //self.imagePickerController.allowsEditing = YES;
             //self.imagePickerController.allowsImageEditing =YES;
@@ -175,8 +215,7 @@ static  TJSImagePicker *imagePikerSevice;
         
         [[UIViewController tjs_currentController] presentViewController:self.imagePickerController animated:YES completion:nil];
         
-    }
-    else
+    }else
     {
         if(type==UIImagePickerControllerSourceTypeCamera){
             
@@ -199,6 +238,8 @@ static  TJSImagePicker *imagePikerSevice;
         }
     }
 }
+
+
 - (void)openCameraSystemSetting{
 
     [self showAlert:TJMCameraUnuseful
@@ -343,6 +384,7 @@ static  TJSImagePicker *imagePikerSevice;
 #pragma mark  savePhotoErrorSEL
 
 - (void)image:(UIImage*)image didFinishSavingWithError:(NSError*)error contextInfo:(void*)contextInfo{
+      
     if (!error) {
         NSLog(@"picture saved with no error.");
     }
@@ -358,8 +400,7 @@ static  TJSImagePicker *imagePikerSevice;
 - (void)showAlert:(NSString *)title
           message:(NSString *)message
              sure:(NSString *)sure{
-    
-    
+
     ALERT.title(title).message(message).actionButtonColor(UIColorFromHEX(0x007AFF)).action(sure,NULL).show();
 }
 

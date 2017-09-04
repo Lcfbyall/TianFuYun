@@ -1,5 +1,5 @@
 //
-//  AddressBookService.h
+//  HealthKitManager.h
 //  TianJiCloud
 //
 //  Created by 朱鹏 on 2017/8/31.
@@ -7,9 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <AddressBook/AddressBook.h>
-#import <AddressBookUI/AddressBookUI.h>
+#import <HealthKit/HealthKit.h>
+#import <HealthKitUI/HealthKitUI.h>
 
-@interface AddressBookService : NSObject
+@interface HealthKitManager : NSObject
+
+
 
 @end

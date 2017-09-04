@@ -21,8 +21,12 @@
 @property (nonatomic,assign) UITableViewCellSelectionStyle selectionStyle;
 
 @property (nonatomic,copy)   NSString *target;
-
 @property (nonatomic,strong) NSDictionary *targetParams;
+
+@property (nonatomic,copy) NSString *leftImage;
+@property (nonatomic,copy) NSString *leftValue;
+@property (nonatomic,copy) NSString *rightPlaceHolder;
+@property (nonatomic,copy) NSString *rightValue;
 
 @property (nonatomic,copy) void (^cellOperation)(id obj1,id obj2);
 

@@ -143,10 +143,10 @@ static NSString *const headerFooterIdentifier = @"SettingHomeListHeaderIdentifie
     _header = [SettingHomeHeader headerWithUpload:^(id sender) {
         STRONG_SELF(self);
         [self.interactor presentImageAcitonSheet:^(id value) {
-            NSLog(@"图片获取成功");
+         
             [self updateHeaderWithImage:(UIImage *)value];
             [self.interactor uploadIcon:value block:^(id result) {
-                NSLog(@"图片上传成功");
+                
             }];
         }];
     }];

@@ -46,7 +46,7 @@
         
     } failureBlock:^(__kindof NSString * _Nullable msg, NSString * _Nullable code) {
         
-        NSLog(@"%@",msg);
+       
         fail?fail(msg):nil;
         
         //        if(!msg && !code){

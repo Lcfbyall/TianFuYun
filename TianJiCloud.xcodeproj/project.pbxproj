@@ -173,11 +173,11 @@
 		2C562A6B1F57F1C300835984 /* APAuthV2Info.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C562A691F57F1C300835984 /* APAuthV2Info.m */; };
 		2C562A6E1F57F1E500835984 /* APWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C562A6D1F57F1E500835984 /* APWebViewController.m */; };
 		2C562A721F57F7EF00835984 /* ZFPlayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C562A711F57F7EF00835984 /* ZFPlayerManager.m */; };
-		2C562A761F580FF700835984 /* HealthKitService.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C562A751F580FF700835984 /* HealthKitService.m */; };
+		2C562A761F580FF700835984 /* HealthKitManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C562A751F580FF700835984 /* HealthKitManager.m */; };
 		2C562A7A1F58108C00835984 /* TJSSystemSoundService.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C562A791F58108C00835984 /* TJSSystemSoundService.m */; };
-		2C562A7F1F58116500835984 /* AddressBookService.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C562A7E1F58116500835984 /* AddressBookService.m */; };
-		2C562A831F58118D00835984 /* ContactsService.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C562A821F58118D00835984 /* ContactsService.m */; };
-		2C562A871F58132500835984 /* LocationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C562A861F58132500835984 /* LocationService.m */; };
+		2C562A7F1F58116500835984 /* AddressBookManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C562A7E1F58116500835984 /* AddressBookManager.m */; };
+		2C562A831F58118D00835984 /* ContactsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C562A821F58118D00835984 /* ContactsManager.m */; };
+		2C562A871F58132500835984 /* LocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C562A861F58132500835984 /* LocationManager.m */; };
 		2C597DBA1F4C2CB900415EB6 /* MineSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C597DA01F4C2CB900415EB6 /* MineSettingViewController.m */; };
 		2C597DBB1F4C2CB900415EB6 /* SettingHomeCellFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C597DA31F4C2CB900415EB6 /* SettingHomeCellFactory.m */; };
 		2C597DBC1F4C2CB900415EB6 /* SettingHomeCellLayoutConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C597DA51F4C2CB900415EB6 /* SettingHomeCellLayoutConfig.m */; };
@@ -1088,16 +1088,16 @@
 		2C562A6D1F57F1E500835984 /* APWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APWebViewController.m; sourceTree = "<group>"; };
 		2C562A701F57F7EF00835984 /* ZFPlayerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFPlayerManager.h; sourceTree = "<group>"; };
 		2C562A711F57F7EF00835984 /* ZFPlayerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFPlayerManager.m; sourceTree = "<group>"; };
-		2C562A741F580FF700835984 /* HealthKitService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HealthKitService.h; sourceTree = "<group>"; };
-		2C562A751F580FF700835984 /* HealthKitService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HealthKitService.m; sourceTree = "<group>"; };
+		2C562A741F580FF700835984 /* HealthKitManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HealthKitManager.h; sourceTree = "<group>"; };
+		2C562A751F580FF700835984 /* HealthKitManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HealthKitManager.m; sourceTree = "<group>"; };
 		2C562A781F58108C00835984 /* TJSSystemSoundService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSSystemSoundService.h; sourceTree = "<group>"; };
 		2C562A791F58108C00835984 /* TJSSystemSoundService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSSystemSoundService.m; sourceTree = "<group>"; };
-		2C562A7D1F58116500835984 /* AddressBookService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressBookService.h; sourceTree = "<group>"; };
-		2C562A7E1F58116500835984 /* AddressBookService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressBookService.m; sourceTree = "<group>"; };
-		2C562A811F58118D00835984 /* ContactsService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsService.h; sourceTree = "<group>"; };
-		2C562A821F58118D00835984 /* ContactsService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsService.m; sourceTree = "<group>"; };
-		2C562A851F58132500835984 /* LocationService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationService.h; sourceTree = "<group>"; };
-		2C562A861F58132500835984 /* LocationService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationService.m; sourceTree = "<group>"; };
+		2C562A7D1F58116500835984 /* AddressBookManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressBookManager.h; sourceTree = "<group>"; };
+		2C562A7E1F58116500835984 /* AddressBookManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressBookManager.m; sourceTree = "<group>"; };
+		2C562A811F58118D00835984 /* ContactsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsManager.h; sourceTree = "<group>"; };
+		2C562A821F58118D00835984 /* ContactsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsManager.m; sourceTree = "<group>"; };
+		2C562A851F58132500835984 /* LocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationManager.h; sourceTree = "<group>"; };
+		2C562A861F58132500835984 /* LocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationManager.m; sourceTree = "<group>"; };
 		2C597D9F1F4C2CB900415EB6 /* MineSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineSettingViewController.h; sourceTree = "<group>"; };
 		2C597DA01F4C2CB900415EB6 /* MineSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineSettingViewController.m; sourceTree = "<group>"; };
 		2C597DA21F4C2CB900415EB6 /* SettingHomeCellFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingHomeCellFactory.h; sourceTree = "<group>"; };
@@ -2356,9 +2356,9 @@
 				2CEC5A0E1F50147A006C03F5 /* BankPickerView.xib */,
 				2C1B74EA1F4699A50000E71A /* BankCardAddBaseTableCell.h */,
 				2C1B74EB1F4699A50000E71A /* BankCardAddBaseTableCell.m */,
-				2CEC5A0D1F50147A006C03F5 /* BankCardAddDefaultCell.xib */,
 				2C1B74ED1F4699BE0000E71A /* BankCardAddDefaultCell.h */,
 				2C1B74EE1F4699BE0000E71A /* BankCardAddDefaultCell.m */,
+				2CEC5A0D1F50147A006C03F5 /* BankCardAddDefaultCell.xib */,
 				2C1B74F01F469A140000E71A /* BankCardAddHeaderFooterView.h */,
 				2C1B74F11F469A140000E71A /* BankCardAddHeaderFooterView.m */,
 			);
@@ -3205,8 +3205,8 @@
 		2C562A731F580FD000835984 /* HealthKitService */ = {
 			isa = PBXGroup;
 			children = (
-				2C562A741F580FF700835984 /* HealthKitService.h */,
-				2C562A751F580FF700835984 /* HealthKitService.m */,
+				2C562A741F580FF700835984 /* HealthKitManager.h */,
+				2C562A751F580FF700835984 /* HealthKitManager.m */,
 			);
 			path = HealthKitService;
 			sourceTree = "<group>";
@@ -3223,8 +3223,8 @@
 		2C562A7C1F58113200835984 /* AddressBook */ = {
 			isa = PBXGroup;
 			children = (
-				2C562A7D1F58116500835984 /* AddressBookService.h */,
-				2C562A7E1F58116500835984 /* AddressBookService.m */,
+				2C562A7D1F58116500835984 /* AddressBookManager.h */,
+				2C562A7E1F58116500835984 /* AddressBookManager.m */,
 			);
 			path = AddressBook;
 			sourceTree = "<group>";
@@ -3232,8 +3232,8 @@
 		2C562A801F58118100835984 /* Contacts */ = {
 			isa = PBXGroup;
 			children = (
-				2C562A811F58118D00835984 /* ContactsService.h */,
-				2C562A821F58118D00835984 /* ContactsService.m */,
+				2C562A811F58118D00835984 /* ContactsManager.h */,
+				2C562A821F58118D00835984 /* ContactsManager.m */,
 			);
 			path = Contacts;
 			sourceTree = "<group>";
@@ -3241,8 +3241,8 @@
 		2C562A841F58130400835984 /* Location */ = {
 			isa = PBXGroup;
 			children = (
-				2C562A851F58132500835984 /* LocationService.h */,
-				2C562A861F58132500835984 /* LocationService.m */,
+				2C562A851F58132500835984 /* LocationManager.h */,
+				2C562A861F58132500835984 /* LocationManager.m */,
 			);
 			path = Location;
 			sourceTree = "<group>";
@@ -5898,15 +5898,15 @@
 			children = (
 				2CD896B01F45323F008F7C73 /* ContarctApplyBaseCell.h */,
 				2CD896B11F45323F008F7C73 /* ContarctApplyBaseCell.m */,
-				2CB4F6511F42F5A300FF98C9 /* ContractApplyAddAddressCell.h */,
-				2CB4F6521F42F5A300FF98C9 /* ContractApplyAddAddressCell.m */,
 				2CB4F6481F42F52200FF98C9 /* ContractApplyInfoCell.h */,
 				2CB4F6491F42F52200FF98C9 /* ContractApplyInfoCell.m */,
-				2CB4F64B1F42F56300FF98C9 /* ContractApplyProductNameCell.h */,
-				2CEC5A051F501464006C03F5 /* ContractApplyAddAddressCell.xib */,
 				2CEC5A061F501464006C03F5 /* ContractApplyInfoCell.xib */,
-				2CEC5A071F501464006C03F5 /* ContractApplyProductNameCell.xib */,
+				2CB4F6511F42F5A300FF98C9 /* ContractApplyAddAddressCell.h */,
+				2CB4F6521F42F5A300FF98C9 /* ContractApplyAddAddressCell.m */,
+				2CEC5A051F501464006C03F5 /* ContractApplyAddAddressCell.xib */,
+				2CB4F64B1F42F56300FF98C9 /* ContractApplyProductNameCell.h */,
 				2CB4F64C1F42F56300FF98C9 /* ContractApplyProductNameCell.m */,
+				2CEC5A071F501464006C03F5 /* ContractApplyProductNameCell.xib */,
 				2CB4F64E1F42F58800FF98C9 /* ContractApplyProductResultCell.h */,
 				2CB4F64F1F42F58800FF98C9 /* ContractApplyProductResultCell.m */,
 			);
@@ -6320,13 +6320,13 @@
 				2CD896C61F453B09008F7C73 /* ContractAddAddressBaseCell.m */,
 				2CD896C81F453BE0008F7C73 /* ConAddressRightInputCell.h */,
 				2CD896C91F453BE0008F7C73 /* ConAddressRightInputCell.m */,
+				2CEC5A001F501459006C03F5 /* ConAddressRightInputCell.xib */,
 				2CD896CE1F453C34008F7C73 /* ConAddressMiddleLabelCell.h */,
 				2CD896CF1F453C34008F7C73 /* ConAddressMiddleLabelCell.m */,
-				2CEC59FE1F501459006C03F5 /* ConAddressBottomInputCell.xib */,
 				2CEC59FF1F501459006C03F5 /* ConAddressMiddleLabelCell.xib */,
-				2CEC5A001F501459006C03F5 /* ConAddressRightInputCell.xib */,
 				2CD896CB1F453C11008F7C73 /* ConAddressBottomInputCell.h */,
 				2CD896CC1F453C11008F7C73 /* ConAddressBottomInputCell.m */,
+				2CEC59FE1F501459006C03F5 /* ConAddressBottomInputCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -7137,7 +7137,7 @@
 				2CB4F63C1F42F26500FF98C9 /* ContractApplyDataSourceImpl.m in Sources */,
 				2C44124B1F21D42600C453EF /* TJSAlertController.m in Sources */,
 				2C859CF31F31EB2E00B86575 /* ZLPhotoPickerBrowserPhotoView.m in Sources */,
-				2C562A831F58118D00835984 /* ContactsService.m in Sources */,
+				2C562A831F58118D00835984 /* ContactsManager.m in Sources */,
 				2CCBE4651F330572006C4018 /* DiscoveryViewController.m in Sources */,
 				A2FE0A891F38B47000E678E5 /* MyFavViewController.m in Sources */,
 				2C4591941F5908CE00D0A798 /* DiscoRoadShowInfo.m in Sources */,
@@ -7164,7 +7164,7 @@
 				2C859CEE1F31EB2E00B86575 /* ZLPhotoRect.m in Sources */,
 				2CF8B5451F3D48B0003B8520 /* ProductSearchListCellFactory.m in Sources */,
 				2CD896E21F453D33008F7C73 /* ContractAddAddressTableAdapter.m in Sources */,
-				2C562A871F58132500835984 /* LocationService.m in Sources */,
+				2C562A871F58132500835984 /* LocationManager.m in Sources */,
 				A2A71C691F3F200700577E45 /* ProductSearchHotReusableHeader.m in Sources */,
 				2C1B74C51F4694FF0000E71A /* BankCardListNetworkTool.m in Sources */,
 				2CB4F60B1F42849100FF98C9 /* MyFavListTableAdapter.m in Sources */,
@@ -7316,7 +7316,7 @@
 				2C88F6911F4EBBFD009CF23E /* UIImageView+TJSWebCache.m in Sources */,
 				2C4412021F219A5300C453EF /* UIColor+HEX.m in Sources */,
 				2C83C7301F39BD27004034CA /* RewardViewController.m in Sources */,
-				2C562A7F1F58116500835984 /* AddressBookService.m in Sources */,
+				2C562A7F1F58116500835984 /* AddressBookManager.m in Sources */,
 				2C85E3771F2F02A200ADD360 /* TJSMineHomeConfigurator.m in Sources */,
 				2CD896C11F453A3B008F7C73 /* ContractAddAddressConfig.m in Sources */,
 				2C859CFA1F31EB2E00B86575 /* ZLPhotoPickerAssetsViewController.m in Sources */,
@@ -7629,7 +7629,7 @@
 				2CAF42D61F281B8600ABCA5E /* TJSBaseProductListContentConfig.m in Sources */,
 				2C8CD1091F54FFC000F9654D /* EmptyDataSetAdapter.m in Sources */,
 				2CD897421F457B55008F7C73 /* AddressSelectedContentConfigFactory.m in Sources */,
-				2C562A761F580FF700835984 /* HealthKitService.m in Sources */,
+				2C562A761F580FF700835984 /* HealthKitManager.m in Sources */,
 				2CA639301F4AE9D000C39562 /* WithDrawDepositCellLayoutConfig.m in Sources */,
 				2C4C1C101F384A3B00002166 /* TJSMyOrderListDataSourceImpl.m in Sources */,
 				2C597DD21F4C2F2300415EB6 /* SettingHomeConfig.m in Sources */,

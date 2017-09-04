@@ -183,7 +183,6 @@ TJS_EXPORT_SERVICE(@"PushService")
     
     NSString *token = [[deviceToken description] stringByTrimmingCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"<>"]];
     token = [token stringByReplacingOccurrencesOfString:@" " withString:@""];
-    NSLog(@"deviceToken = %@", token);
     
     [[PushManager sharedManager] registerDeviceToken:token];
 }
@@ -351,8 +350,7 @@ TJS_EXPORT_SERVICE(@"PushService")
 - (void)GeTuiSdkDidRegisterClient:(NSString *)clientId{
     
     if (clientId) {
-        NSLog(@"GeTui Cid = %@", clientId);
-        
+     
         // TODO: cid保存本地
         //[GVUserDefaults standardUserDefaults].clientId = clientId;
     }

@@ -23,7 +23,6 @@
     
     AddressManageCellModel *model = (AddressManageCellModel *)value;
     
-    NSLog(@"%@",model);
 }
 
 @end

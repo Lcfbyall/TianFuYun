@@ -84,17 +84,17 @@
     
         searchBar.searchBarTextDidChange = ^(UISearchBar *searchBar, NSString *searchText) {
             
-            NSLog(@"searchBarTextDidChange");
+            
         };
         
         searchBar.searchBarSearchButtonClicked = ^(UISearchBar *searchBar) {
             
-            NSLog(@"searchBarSearchButtonClicked");
+          
         };
         
         searchBar.searchBarCancelButtonClicked = ^(UISearchBar *searchBar) {
             
-            NSLog(@"searchBarCancelButtonClicked");
+         
             
         };
     }];

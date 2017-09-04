@@ -28,7 +28,7 @@
         NSMutableArray *modelArray = [NSMutableArray array];
         for (NSDictionary *dic in data) {
             
-            NSLog(@"%@",dic);
+            
         }
         
         success?success(modelArray.count?modelArray:nil):nil;
@@ -36,7 +36,7 @@
         
     } failureBlock:^(__kindof NSString * _Nullable msg, NSString * _Nullable code) {
         
-        NSLog(@"%@",msg);
+        
         fail?fail(msg):nil;
     }];
 

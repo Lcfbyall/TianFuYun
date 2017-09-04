@@ -18,6 +18,8 @@
 
 @implementation ContractAddAddressConfig
 
+#pragma mark - Public
+
 - (void)setup:(AddAdressViewController *)vc{
 
     _vc = vc;
@@ -25,9 +27,14 @@
     _vc.title = @"新增地址";
 }
 
+- (void)updateRightBarButtonItem{
+ 
+    UIBarButtonItem *rightBarBtn = [self.vc.navigationItem.rightBarButtonItems firstObject];
+    rightBarBtn.enabled = !rightBarBtn.enabled;
+}
+
 
 #pragma mark - <TJSBaseVCProtocol>
-
 
 - (NSArray <UIBarButtonItem *> *)tjs_rightBarButtonItems{
     

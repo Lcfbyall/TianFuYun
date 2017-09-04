@@ -66,7 +66,7 @@
 - (void)layoutSubviews{
     [super layoutSubviews];
 
-    NSLog(@"%@",NSStringFromCGRect(self.newsImage.frame));
+ 
 }
 
 

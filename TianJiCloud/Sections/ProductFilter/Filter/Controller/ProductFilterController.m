@@ -28,7 +28,7 @@
 @implementation ProductFilterController
 
 - (void)dealloc {
-    NSLog(@"%@-释放了",self.class);
+   
 }
 
 - (void)viewDidLoad {

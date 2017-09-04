@@ -30,7 +30,6 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 
-    
     [self setupConfig];
     
     [self setupConfigurator];
@@ -43,6 +42,8 @@
     
 }
 
+
+#pragma mark - <setupConfig>
 
 - (void)setupConfig{
  
@@ -89,16 +90,27 @@
        [UIViewController tjs_popViewControllerAnimated:YES];
        
    }];
-    
 }
 
-#pragma  maek - <TJSBaseTableViewCellDelegate>
+
+#pragma mark - <ContractAddAddressInteractorDelegate>
+
+- (void)updateCommitBtn{
+ 
+    //禁止／开启提交按钮
+    [self.config updateRightBarButtonItem];
+}
+
+#pragma mark - <TJSBaseTableViewCellDelegate>
 
 - (BOOL)onTapCell:(id)value{
 
+    //弹出区域选择器
+    [self.interactor showRegion];
 
     return YES;
 }
 
-
 @end
+
+

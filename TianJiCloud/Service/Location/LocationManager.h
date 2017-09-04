@@ -1,5 +1,5 @@
 //
-//  ContactsService.h
+//  LocationManager.h
 //  TianJiCloud
 //
 //  Created by 朱鹏 on 2017/8/31.
@@ -7,9 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <Contacts/Contacts.h>
-#import <ContactsUI/ContactsUI.h>
+#import <MapKit/MapKit.h>
+#import <CoreLocation/CoreLocation.h>
 
-@interface ContactsService : NSObject
+@interface LocationManager : NSObject
+
+
 
 @end

@@ -159,7 +159,7 @@
         NSString *ivarName = [NSString stringWithCString:ivar_getName(ivar) encoding:NSUTF8StringEncoding];
         
         //_style  _title _backgroundColor _handler _handler _backgroundEffect
-        NSLog(@"%@",ivarName);
+        
         
     }
     

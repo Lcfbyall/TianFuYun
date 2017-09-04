@@ -7,9 +7,13 @@
 //
 
 #import "TJSBaseTableViewCell.h"
+#import "ContractInfoApplyModel.h"
 
 @interface ContarctApplyBaseCell : TJSBaseTableViewCell
 
+@property (nonatomic,strong) ContractInfoApplyModel *model;
+
+@property (nonatomic,copy) void (^valueChangedBlock)(id sender);
 
 
 @end

@@ -100,8 +100,7 @@
 - (void)layoutSubviews{
     [super layoutSubviews];
     
-    NSLog(@"%@",NSStringFromCGRect(self.videoImage.frame));
-    
+
 }
 
 

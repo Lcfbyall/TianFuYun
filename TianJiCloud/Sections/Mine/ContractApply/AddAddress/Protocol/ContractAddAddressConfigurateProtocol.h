@@ -13,6 +13,7 @@
 
 @optional
 
+- (void)updateCommitBtn;
 
 @end
 
@@ -20,10 +21,22 @@
 
 @optional
 
+- (void)loadAddres:(void (^)(id, NSError *))callback;
+
 - (void)saveAddress:(void (^)(id, NSError *))callback;
 
-
 - (NSArray *)items;
+
+//
+- (void)showRegion;
+
+- (NSArray *)regions;
+
+- (void)fillingRegion:(NSString *)region;
+
+- (NSInteger)regionIndex;
+
+- (BOOL)canCommit;
 
 @end
 

@@ -17,8 +17,39 @@
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Gt6-YT-TsC" id="PQK-Z6-Cnh">
                 <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tth-2v-0gx">
+                        <rect key="frame" x="16" y="11" width="42" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="srK-uJ-X7q"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6dn-1a-VLy">
+                        <rect key="frame" x="91" y="6.5" width="251" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="fA6-P9-5fT"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="6dn-1a-VLy" secondAttribute="trailing" constant="33" id="8bW-5b-pCq"/>
+                    <constraint firstItem="6dn-1a-VLy" firstAttribute="leading" secondItem="PQK-Z6-Cnh" secondAttribute="leading" constant="91" id="RvE-2W-vsy"/>
+                    <constraint firstItem="Tth-2v-0gx" firstAttribute="centerY" secondItem="PQK-Z6-Cnh" secondAttribute="centerY" id="b7L-94-U7Y"/>
+                    <constraint firstItem="Tth-2v-0gx" firstAttribute="leading" secondItem="PQK-Z6-Cnh" secondAttribute="leading" constant="16" id="l4D-wl-LgY"/>
+                    <constraint firstItem="6dn-1a-VLy" firstAttribute="centerY" secondItem="Tth-2v-0gx" secondAttribute="centerY" id="sbF-B2-XtE"/>
+                </constraints>
             </tableViewCellContentView>
-            <point key="canvasLocation" x="44" y="-44"/>
+            <connections>
+                <outlet property="leftL" destination="Tth-2v-0gx" id="HCa-Qk-BSx"/>
+                <outlet property="rightL" destination="6dn-1a-VLy" id="oMg-JL-EAI"/>
+            </connections>
+            <point key="canvasLocation" x="43.5" y="-44"/>
         </tableViewCell>
     </objects>
 </document>

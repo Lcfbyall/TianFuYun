@@ -7,7 +7,6 @@
 //
 
 #import "ContractAddAddressBaseCell.h"
-
 #import "ContractAddAddressCellModel.h"
 
 @implementation ContractAddAddressBaseCell

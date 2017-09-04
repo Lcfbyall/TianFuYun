@@ -84,7 +84,7 @@
             [self.vc.navigationController.navigationBar endEditing:YES];
         };
         searchBar.searchBarTextDidEndEditing = ^(UISearchBar *searchBar){
-          NSLog(@"哈哈");
+         
         };
     }];
     return bgView;

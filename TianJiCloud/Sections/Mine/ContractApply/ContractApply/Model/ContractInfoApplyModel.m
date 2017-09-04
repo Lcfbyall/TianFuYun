@@ -16,7 +16,9 @@
     add.cellClass = @"ContractApplyAddAddressCell";
     add.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     add.selectionStyle= UITableViewCellSelectionStyleDefault;
-    add.target = @"AddAdressViewController";
+    add.leftImage = @"add";
+    add.leftValue = @"新增地址";
+    add.target = AddAdressVC;
     add.targetParams = nil;
     WEAK_SELF(add);
     add.cellOperation = ^(id obj1, id obj2) {
@@ -28,6 +30,9 @@
     product.cellClass = @"ContractApplyProductNameCell";
     product.accessoryType = UITableViewCellAccessoryNone;
     product.selectionStyle= UITableViewCellSelectionStyleNone;
+    product.leftValue = @"产品名称";
+    product.rightPlaceHolder = @"请输入产品名称";
+    
     
     return [NSArray arrayWithObjects:@[add],@[product], nil];
 }

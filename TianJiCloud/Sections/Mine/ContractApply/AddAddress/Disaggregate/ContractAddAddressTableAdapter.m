@@ -8,8 +8,8 @@
 
 #import "ContractAddAddressTableAdapter.h"
 #import "ContractAddAddressCellFactory.h"
-
 #import "ContractAddAddressCellModel.h"
+#import "ContractAddAddressBaseCell.h"
 
 static NSString *const headerFooterIdentifier = @"ContractAddAddressListHeaderIdentifier";
 @interface ContractAddAddressTableAdapter ()
@@ -31,13 +31,17 @@ static NSString *const headerFooterIdentifier = @"ContractAddAddressListHeaderId
         _tableView = tableView;
         
         _cellFactory = [[ContractAddAddressCellFactory alloc]init];
-        
-        [self setupTableView];
     }
     
     return self;
 }
 
+- (void)setInteractor:(id<ContractAddAddressInteractor>)interactor{
+
+    _interactor = interactor;
+    
+    [self setupTableView];
+}
 
 - (void)setupTableView{
     
@@ -46,6 +50,11 @@ static NSString *const headerFooterIdentifier = @"ContractAddAddressListHeaderId
     _tableView.tableFooterView = [UIView new];
     
     [_tableView registerClass:[UITableViewHeaderFooterView class] forHeaderFooterViewReuseIdentifier:headerFooterIdentifier];
+}
+
+- (void)updateCommitBtn{
+
+
 }
 
 
@@ -64,9 +73,19 @@ static NSString *const headerFooterIdentifier = @"ContractAddAddressListHeaderId
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     ContractAddAddressCellModel *model = [self.interactor.items objectAtIndex:indexPath.row];
+    ContractAddAddressBaseCell *cell =  (ContractAddAddressBaseCell *)[_cellFactory cellInTable:tableView forMineInfoModel:model];
     
-    return (UITableViewCell *)[_cellFactory cellInTable:tableView forMineInfoModel:model];
+    [cell setDelegate:self.cellDelegate];
     
+    [cell tjs_bindDataToCellWithValue:model];
+    
+    WEAK_SELF(self);
+    cell.valueChangedBlock = ^(id sender) {
+        STRONG_SELF(self);
+        [self updateCommitBtn];
+    };
+    
+    return cell;
 }
 
 
@@ -88,8 +107,16 @@ static NSString *const headerFooterIdentifier = @"ContractAddAddressListHeaderId
     
     ContractAddAddressCellModel *model = [self.interactor.items objectAtIndex:indexPath.row];
     
-    if(model.cellOperation) model.cellOperation(nil, nil);
+    if(![model.leftValue isEqualToString:@"区域"]) return;
+
+    TJSBaseTableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
     
+    if([cell.delegate conformsToProtocol:@protocol(TJSBaseTableViewCellDelegate)] && [cell.delegate respondsToSelector:@selector(onTapCell:)]){
+        
+        [tableView.tjs_viewController.view endEditing:YES];
+        
+        [cell.delegate onTapCell:nil];
+    }
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{

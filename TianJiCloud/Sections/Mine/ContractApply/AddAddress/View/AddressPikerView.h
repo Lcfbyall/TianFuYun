@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AddressPikerView : UIView
+@interface AddressPikerView : UIControl
+
++ (instancetype)showWithDatas:(NSArray *)datas
+                   defaultRow:(NSInteger)defaultRow
+                         done:(void (^)(NSInteger row))done;
+
+- (void)show;
+
+- (void)dismiss;
 
 @end

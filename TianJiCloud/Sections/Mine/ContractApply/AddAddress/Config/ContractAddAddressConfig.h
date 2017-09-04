@@ -15,4 +15,6 @@
 
 - (void)setup:(AddAdressViewController *)vc;
 
+- (void)updateRightBarButtonItem;
+
 @end

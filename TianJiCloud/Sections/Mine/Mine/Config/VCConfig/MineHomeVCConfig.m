@@ -46,7 +46,7 @@
     UIColor *a = RGB(254, 239, 93);
     NSString *hex = a.hexString;
     NSString *hexa = a.hexStringWithAlpha;
-    NSLog(@"");
+  
     */   
 }
 

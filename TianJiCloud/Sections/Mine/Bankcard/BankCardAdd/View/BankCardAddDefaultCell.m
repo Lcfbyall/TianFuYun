@@ -38,7 +38,6 @@
 - (void)tjs_bindDataToCellWithValue:(id)value{
     [super tjs_bindDataToCellWithValue:value];
     
-
     BankCardAddCellInfoModel *model = (BankCardAddCellInfoModel *)value;
     _titleL.text = model.title;
     _textField.placeholder = model.placeHolder;

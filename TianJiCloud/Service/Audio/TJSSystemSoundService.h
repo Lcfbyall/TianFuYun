@@ -8,6 +8,18 @@
 
 #import <Foundation/Foundation.h>
 
+//只支持30秒以内的CAF、AIF和使用PCM或IMA/ADPCM数据的WAV
+
 @interface TJSSystemSoundService : NSObject
+
++ (void)playSoundWithFileName:(NSString *)fileName fileType:(NSString *)fileType;
+
++ (void)playSoundWithFilePath:(NSString *)filePath;
+
++ (void)playSoundWithFileUrl:(NSURL *)url;
+
++ (void)playReceiveNotification;
+
++ (void)playSystemShake;
 
 @end

@@ -68,7 +68,7 @@
     [[NSScanner scannerWithString:rString] scanHexInt:&r];
     [[NSScanner scannerWithString:gString] scanHexInt:&g];
     [[NSScanner scannerWithString:bString] scanHexInt:&b];
-    ////NSLog(@"%f:::%f:::%f",((float) r / 255.0f),((float) g / 255.0f),((float) b / 255.0f));
+  
     
     return SF_COLOR(((float)r / 255.0f),((float)g / 255.0f),((float)b / 255.0f), 1);
 }

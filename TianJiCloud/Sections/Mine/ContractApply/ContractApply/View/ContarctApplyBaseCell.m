@@ -11,6 +11,8 @@
 
 @interface ContarctApplyBaseCell ()
 
+
+
 @end
 
 @implementation ContarctApplyBaseCell

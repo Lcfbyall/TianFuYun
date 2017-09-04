@@ -174,8 +174,7 @@ static NSString *identifier = @"MineHeaderCollectionCell";
                   layout:(MineHomeHeaderCollectionLayout *)collectionViewLayout
   sizeForItemAtIndexPath:(NSIndexPath *)indexPat{
     
-    NSLog(@"%@",NSStringFromCGSize(self.bounds.size));
-    
+
     return self.bounds.size;
     
     return self.collectionView.bounds.size;

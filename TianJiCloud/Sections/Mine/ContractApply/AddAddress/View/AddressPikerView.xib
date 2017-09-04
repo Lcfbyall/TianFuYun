@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16D30" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -15,18 +15,47 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fnk-60-kS1">
-                    <rect key="frame" x="0.0" y="451" width="375" height="216"/>
-                    <color key="backgroundColor" red="1" green="0.19762800620000001" blue="0.10879697000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                </pickerView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="573-FX-VY0">
+                    <rect key="frame" x="0.0" y="401" width="375" height="266"/>
+                    <subviews>
+                        <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fnk-60-kS1">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="216"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="216" id="J7x-2j-rn6"/>
+                                <constraint firstAttribute="height" constant="216" id="NLG-1E-ZxM"/>
+                            </constraints>
+                        </pickerView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EcI-cI-3J2">
+                            <rect key="frame" x="0.0" y="216" width="375" height="50"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.2119198263" green="1" blue="0.42678443760000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="fnk-60-kS1" firstAttribute="leading" secondItem="573-FX-VY0" secondAttribute="leading" id="7iC-Dq-d4g"/>
+                        <constraint firstItem="EcI-cI-3J2" firstAttribute="leading" secondItem="573-FX-VY0" secondAttribute="leading" id="PBw-vz-Jvf"/>
+                        <constraint firstAttribute="trailing" secondItem="fnk-60-kS1" secondAttribute="trailing" id="Vrj-kU-GL3"/>
+                        <constraint firstItem="fnk-60-kS1" firstAttribute="top" secondItem="573-FX-VY0" secondAttribute="top" id="WBo-r1-AhC"/>
+                        <constraint firstAttribute="trailing" secondItem="EcI-cI-3J2" secondAttribute="trailing" id="gD5-8I-7LX"/>
+                        <constraint firstAttribute="bottom" secondItem="EcI-cI-3J2" secondAttribute="bottom" id="iaD-o0-5to"/>
+                        <constraint firstItem="EcI-cI-3J2" firstAttribute="top" secondItem="fnk-60-kS1" secondAttribute="bottom" id="l5w-aR-FRi"/>
+                        <constraint firstAttribute="height" constant="266" id="tH1-ZS-XHs"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="fnk-60-kS1" secondAttribute="trailing" id="7IZ-P0-HB8"/>
-                <constraint firstItem="fnk-60-kS1" firstAttribute="leading" secondItem="c3S-Xa-sBT" secondAttribute="leading" id="VEL-Jl-fVB"/>
-                <constraint firstAttribute="bottom" secondItem="fnk-60-kS1" secondAttribute="bottom" id="XYw-2S-ctL"/>
+                <constraint firstAttribute="trailing" secondItem="573-FX-VY0" secondAttribute="trailing" id="q5K-KP-xHP"/>
+                <constraint firstItem="573-FX-VY0" firstAttribute="leading" secondItem="c3S-Xa-sBT" secondAttribute="leading" id="rXy-Uh-oHT"/>
+                <constraint firstAttribute="bottom" secondItem="573-FX-VY0" secondAttribute="bottom" id="vhb-B9-sBR"/>
             </constraints>
-            <point key="canvasLocation" x="-103" y="34"/>
+            <connections>
+                <outlet property="contaniner" destination="573-FX-VY0" id="uz0-7j-o8u"/>
+                <outlet property="doneBtn" destination="EcI-cI-3J2" id="Q2M-ev-eOj"/>
+                <outlet property="piker" destination="fnk-60-kS1" id="FmW-fQ-ogc"/>
+            </connections>
+            <point key="canvasLocation" x="-103.5" y="33.5"/>
         </view>
     </objects>
 </document>

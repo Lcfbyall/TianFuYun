@@ -57,7 +57,7 @@
     __weak APWebViewController* wself = self;
     BOOL isIntercepted = [[AlipaySDK defaultService] payInterceptorWithUrl:[request.URL absoluteString] fromScheme:@"alisdkdemo" callback:^(NSDictionary *result) {
         // 处理支付结果
-        NSLog(@"%@", result);
+ 
         // isProcessUrlPay 代表 支付宝已经处理该URL
         if ([result[@"isProcessUrlPay"] boolValue]) {
             // returnUrl 代表 第三方App需要跳转的成功页URL
@@ -97,7 +97,7 @@
         __weak APWebViewController* wself = self;
         [[AlipaySDK defaultService] payUrlOrder:urlOrder fromScheme:@"alisdkdemo" callback:^(NSDictionary* result) {
             // 处理支付结果
-            NSLog(@"%@", result);
+            
             // isProcessUrlPay 代表 支付宝已经处理该URL
             if ([result[@"isProcessUrlPay"] boolValue]) {
                 

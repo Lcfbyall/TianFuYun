@@ -17,8 +17,6 @@
 
 - (void)p_scrollViewDidScroll:(UIScrollView *)scrollView;
 
-- (void)hideOrShowMoney:(BOOL)hide;
-
 - (void)tjs_reloadTableHeader;
 
 @property (nonatomic,weak) id<TJSMineHomeInteractor> interactor;
