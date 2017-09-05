@@ -12,13 +12,7 @@
 //http://www.cocoachina.com/ios/20161125/18181.html
 @implementation NetworkMonitorManager
 
-+ (void)load{
-    
-    [self requestForAuthorize];
-    [self monitorAFNetworkReachability];
-}
-
-+ (instancetype)NetworkMonitorManager {
++ (instancetype)sharedManager {
     
     static NetworkMonitorManager * instance = nil;
     static dispatch_once_t onceToken;
@@ -33,7 +27,7 @@
 
 #pragma mark - 请求权限
 
-+ (void)requestForAuthorize{
+- (void)requestForAuthorize{
 
     CTCellularData *cellularData = [[CTCellularData alloc]init];
     
@@ -48,7 +42,7 @@
     };
 }
 
-+ (void)handleState:(CTCellularDataRestrictedState)state{
+- (void)handleState:(CTCellularDataRestrictedState)state{
  
     if(state== kCTCellularDataRestrictedStateUnknown){
         
@@ -68,7 +62,7 @@
     }
 }
 
-+ (void)monitorAFNetworkReachability{
+- (void)monitorAFNetworkReachability{
     
     [[AFNetworkReachabilityManager sharedManager] startMonitoring];
     [[AFNetworkReachabilityManager sharedManager] setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
@@ -80,6 +74,19 @@
             [TJSAlertHandleUtil alertHandleWhenNetNotReachable];
         }
     }];
+}
+
+
+#pragma mark - <TJSAppService>
+
+TJS_EXPORT_SERVICE(@"NetworkMonitorManager");
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions{
+
+    [self requestForAuthorize];
+    [self monitorAFNetworkReachability];
+
+    return YES;
 }
 
 @end

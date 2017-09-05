@@ -29,10 +29,18 @@
 #pragma mark - <CumulativeInvestLayoutDelegate>
 
 - (void)onRefresh{
-
-    [self.layout reloadTable];
     
-    [self.layout endRefresh];
+    WEAK_SELF(self);
+    [self loadInvest:^(id result, NSError *error) {
+        
+        STRONG_SELF(self);
+        
+        [self.layout reloadTable];
+        
+        [self.layout endRefresh];
+        
+    }];
+
 }
 
 @end

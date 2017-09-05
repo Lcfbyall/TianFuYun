@@ -12,7 +12,7 @@
 
 + (void)alertHandleWhenNetNotReachable;
 
-+ (void)alertHandleCallManager;
++ (void)alertHandleCallManager:(NSString *)name;
 
 + (void)alertHandleWhenCallNotAvailableOnSimulator;
 

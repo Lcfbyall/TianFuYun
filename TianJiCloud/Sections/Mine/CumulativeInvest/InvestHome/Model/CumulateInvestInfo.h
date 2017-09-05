@@ -10,4 +10,12 @@
 
 @interface CumulateInvestInfo : NSObject
 
+@property (nonatomic,assign) NSInteger investId;
+
+@property (nonatomic,copy) NSString *name;
+
+@property (nonatomic,copy) NSString *sum;
+
 @end
+
+

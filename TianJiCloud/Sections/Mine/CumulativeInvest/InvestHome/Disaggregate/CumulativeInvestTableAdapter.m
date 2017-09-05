@@ -8,7 +8,7 @@
 
 #import "CumulativeInvestTableAdapter.h"
 #import "CumulativeInvestCellFactory.h"
-
+#import "CumulateInvestHeader.h"
 #import "CumulateInvestInfoModel.h"
 
 static NSString *const headerFooterIdentifier = @"CumulativeInvestListHeaderIdentifier";
@@ -30,20 +30,26 @@ static NSString *const headerFooterIdentifier = @"CumulativeInvestListHeaderIden
         _tableView = tableView;
         
         _cellFactory = [[CumulativeInvestCellFactory alloc]init];
-        
-        [self setupTableView];
     }
     
     return self;
 }
 
+- (void)setInteractor:(id<CumulativeInvestInteractor>)interactor{
+
+    _interactor = interactor;
+    
+    [self setupTableView];
+}
 
 - (void)setupTableView{
     
   
     _tableView.backgroundColor = ThemeService.weak_color_00;
     
+    _tableView.tableHeaderView = [CumulateInvestHeader header];
     _tableView.tableFooterView = [UIView new];
+    _tableView.contentInset = UIEdgeInsetsMake(16, 0, 0, 0);
 
     [_tableView registerClass:[UITableViewHeaderFooterView class] forHeaderFooterViewReuseIdentifier:headerFooterIdentifier];
 }
@@ -65,8 +71,11 @@ static NSString *const headerFooterIdentifier = @"CumulativeInvestListHeaderIden
     
     CumulateInvestInfoModel *model = [self.interactor.items objectAtIndex:indexPath.row];
     
-    return (UITableViewCell *)[_cellFactory cellInTable:tableView forMineInfoModel:model];
+    TJSBaseTableViewCell *cell = (TJSBaseTableViewCell *)[_cellFactory cellInTable:tableView forMineInfoModel:model];
     
+    [cell tjs_bindDataToCellWithValue:model];
+    
+    return cell;
 }
 
 
@@ -90,19 +99,6 @@ static NSString *const headerFooterIdentifier = @"CumulativeInvestListHeaderIden
     
     if(model.cellOperation) model.cellOperation(nil, nil);
     
-}
-
-- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
-    
-    return 10;
-}
-
-- (nullable UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
-    
-    UITableViewHeaderFooterView *header = [tableView dequeueReusableHeaderFooterViewWithIdentifier:headerFooterIdentifier];
-    header.contentView.backgroundColor = ThemeService.weak_color_00;
-    
-    return header;
 }
 
 

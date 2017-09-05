@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NetworkMonitorManager : NSObject
+@interface NetworkMonitorManager : NSObject<TJSAppService>
 
 - (instancetype _Nullable)init NS_UNAVAILABLE;
 

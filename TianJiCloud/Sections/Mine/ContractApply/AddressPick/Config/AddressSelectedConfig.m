@@ -25,6 +25,18 @@
     _vc.title = @"选择地址";
 }
 
+
+#pragma mark - <ContractVCConfig>
+
+- (void)applyButtonConfig:(UIButton *)btn{
+    
+    [btn tjs_bottomBtnStyle];
+    
+    btn.tjs_titleNormal = @"新增地址";
+    
+}
+
+
 #pragma mark - <TJSNavigationConfig>
 
 - (NSArray <UIBarButtonItem *> *)tjs_rightBarButtonItems{

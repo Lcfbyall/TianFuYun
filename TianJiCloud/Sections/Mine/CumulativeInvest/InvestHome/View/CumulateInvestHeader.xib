@@ -12,11 +12,36 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="I5w-ih-Ha0" customClass="CumulateInvestHeader">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="225"/>
+            <rect key="frame" x="0.0" y="0.0" width="299" height="200"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="累计投资\n0.00万" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hNu-Al-gQT">
+                    <rect key="frame" x="16" y="12" width="91" height="41"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="91" id="PFa-l0-f2v"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X80-DI-PRo">
+                    <rect key="frame" x="0.0" y="68.5" width="299" height="1"/>
+                    <color key="backgroundColor" red="0.79607843140000001" green="0.79607843140000001" blue="0.80392156859999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="JLU-jB-QYu"/>
+                    </constraints>
+                </view>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="X80-DI-PRo" firstAttribute="leading" secondItem="I5w-ih-Ha0" secondAttribute="leading" id="4nx-kF-VSU"/>
+                <constraint firstItem="hNu-Al-gQT" firstAttribute="leading" secondItem="I5w-ih-Ha0" secondAttribute="leading" constant="16" id="JOY-Td-Wcb"/>
+                <constraint firstAttribute="trailing" secondItem="X80-DI-PRo" secondAttribute="trailing" id="Lc5-ud-GBQ"/>
+                <constraint firstItem="hNu-Al-gQT" firstAttribute="top" secondItem="I5w-ih-Ha0" secondAttribute="top" constant="12" id="N6t-Jv-laK"/>
+                <constraint firstItem="X80-DI-PRo" firstAttribute="top" secondItem="hNu-Al-gQT" secondAttribute="bottom" constant="15.5" id="wyF-vO-Y6B"/>
+            </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="-141.5" y="-90.5"/>
+            <point key="canvasLocation" x="-179.5" y="-103"/>
         </view>
     </objects>
 </document>

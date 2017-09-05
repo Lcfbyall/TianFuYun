@@ -7,9 +7,9 @@
 //
 
 #import "TJSBaseTableViewCell.h"
+#import "CumulateInvestInfoModel.h"
 
 @interface CumulateInvestDefaultCell : TJSBaseTableViewCell
-
 
 
 @end

@@ -445,6 +445,8 @@
 		2C9115F51F5E789F00C315D6 /* CLLocation+YCLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9115F41F5E789F00C315D6 /* CLLocation+YCLocation.m */; };
 		2C9115F81F5E80ED00C315D6 /* CLPlacemark+YCPlacemark.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9115F71F5E80ED00C315D6 /* CLPlacemark+YCPlacemark.m */; };
 		2C9115FC1F5E8E0900C315D6 /* EventKitManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9115FB1F5E8E0900C315D6 /* EventKitManager.m */; };
+		2C9115FE1F5E9C4F00C315D6 /* AddressSelectedDefaultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C9115FD1F5E9C4F00C315D6 /* AddressSelectedDefaultCell.xib */; };
+		2C9116001F5EA1FF00C315D6 /* AddressManageDefaultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C9115FF1F5EA1FF00C315D6 /* AddressManageDefaultCell.xib */; };
 		2CA553081F43E1CB0095ECC1 /* RewardVCConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA553071F43E1CB0095ECC1 /* RewardVCConfig.m */; };
 		2CA5530F1F43EA7B0095ECC1 /* HistoryRewardConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA5530E1F43EA7B0095ECC1 /* HistoryRewardConfig.m */; };
 		2CA638FD1F4AD37700C39562 /* WithDrawDepositController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA638EB1F4AD37700C39562 /* WithDrawDepositController.m */; };
@@ -496,7 +498,6 @@
 		2CB4F5751F418FFB00FF98C9 /* CumulateInvestInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB4F5651F418FFB00FF98C9 /* CumulateInvestInfoModel.m */; };
 		2CB4F5761F418FFB00FF98C9 /* CumulateInvestNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB4F5681F418FFB00FF98C9 /* CumulateInvestNetworkTool.m */; };
 		2CB4F5771F418FFB00FF98C9 /* CumulateInvestStoreTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB4F56C1F418FFB00FF98C9 /* CumulateInvestStoreTool.m */; };
-		2CB4F5781F418FFB00FF98C9 /* CumulateInvestBarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB4F56F1F418FFB00FF98C9 /* CumulateInvestBarCell.m */; };
 		2CB4F5791F418FFB00FF98C9 /* CumulateInvestDefaultCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB4F5711F418FFB00FF98C9 /* CumulateInvestDefaultCell.m */; };
 		2CB4F57E1F41905500FF98C9 /* InvestProductController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB4F57D1F41905500FF98C9 /* InvestProductController.m */; };
 		2CB4F5E21F41C3BB00FF98C9 /* ContractListConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB4F5B71F41C3BA00FF98C9 /* ContractListConfig.m */; };
@@ -1568,6 +1569,8 @@
 		2C9115F71F5E80ED00C315D6 /* CLPlacemark+YCPlacemark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CLPlacemark+YCPlacemark.m"; sourceTree = "<group>"; };
 		2C9115FA1F5E8E0900C315D6 /* EventKitManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventKitManager.h; sourceTree = "<group>"; };
 		2C9115FB1F5E8E0900C315D6 /* EventKitManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventKitManager.m; sourceTree = "<group>"; };
+		2C9115FD1F5E9C4F00C315D6 /* AddressSelectedDefaultCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddressSelectedDefaultCell.xib; sourceTree = "<group>"; };
+		2C9115FF1F5EA1FF00C315D6 /* AddressManageDefaultCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddressManageDefaultCell.xib; sourceTree = "<group>"; };
 		2CA553061F43E1CB0095ECC1 /* RewardVCConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RewardVCConfig.h; sourceTree = "<group>"; };
 		2CA553071F43E1CB0095ECC1 /* RewardVCConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RewardVCConfig.m; sourceTree = "<group>"; };
 		2CA5530C1F43E20A0095ECC1 /* RewardConfigProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RewardConfigProtocol.h; sourceTree = "<group>"; };
@@ -1678,8 +1681,6 @@
 		2CB4F5681F418FFB00FF98C9 /* CumulateInvestNetworkTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CumulateInvestNetworkTool.m; sourceTree = "<group>"; };
 		2CB4F56B1F418FFB00FF98C9 /* CumulateInvestStoreTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CumulateInvestStoreTool.h; sourceTree = "<group>"; };
 		2CB4F56C1F418FFB00FF98C9 /* CumulateInvestStoreTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CumulateInvestStoreTool.m; sourceTree = "<group>"; };
-		2CB4F56E1F418FFB00FF98C9 /* CumulateInvestBarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CumulateInvestBarCell.h; sourceTree = "<group>"; };
-		2CB4F56F1F418FFB00FF98C9 /* CumulateInvestBarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CumulateInvestBarCell.m; sourceTree = "<group>"; };
 		2CB4F5701F418FFB00FF98C9 /* CumulateInvestDefaultCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CumulateInvestDefaultCell.h; sourceTree = "<group>"; };
 		2CB4F5711F418FFB00FF98C9 /* CumulateInvestDefaultCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CumulateInvestDefaultCell.m; sourceTree = "<group>"; };
 		2CB4F57C1F41905500FF98C9 /* InvestProductController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InvestProductController.h; sourceTree = "<group>"; };
@@ -5617,13 +5618,11 @@
 		2CB4F56D1F418FFB00FF98C9 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				2CB4F56E1F418FFB00FF98C9 /* CumulateInvestBarCell.h */,
-				2CB4F56F1F418FFB00FF98C9 /* CumulateInvestBarCell.m */,
+				2C4D35EA1F4C26E50082BB36 /* CumulateInvestHeader.h */,
+				2C4D35EB1F4C26E50082BB36 /* CumulateInvestHeader.m */,
+				2CEC5A181F501579006C03F5 /* CumulateInvestHeader.xib */,
 				2CB4F5701F418FFB00FF98C9 /* CumulateInvestDefaultCell.h */,
 				2CB4F5711F418FFB00FF98C9 /* CumulateInvestDefaultCell.m */,
-				2C4D35EA1F4C26E50082BB36 /* CumulateInvestHeader.h */,
-				2CEC5A181F501579006C03F5 /* CumulateInvestHeader.xib */,
-				2C4D35EB1F4C26E50082BB36 /* CumulateInvestHeader.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -6420,6 +6419,7 @@
 				2CD897201F4572AE008F7C73 /* AddressManageBaseCell.m */,
 				2CD897221F4572CC008F7C73 /* AddressManageDefaultCell.h */,
 				2CD897231F4572CC008F7C73 /* AddressManageDefaultCell.m */,
+				2C9115FF1F5EA1FF00C315D6 /* AddressManageDefaultCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -6491,6 +6491,7 @@
 				2CD897301F457619008F7C73 /* AddressSelectedBaseCell.m */,
 				2CD8972C1F457604008F7C73 /* AddressSelectedDefaultCell.h */,
 				2CD8972D1F457604008F7C73 /* AddressSelectedDefaultCell.m */,
+				2C9115FD1F5E9C4F00C315D6 /* AddressSelectedDefaultCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -7027,6 +7028,8 @@
 				2C4411B91F21981E00C453EF /* Main.storyboard in Resources */,
 				2C1BFEBD1F29779100665A71 /* Home.storyboard in Resources */,
 				2C8CD1F71F57A7BD00F9654D /* icon_menu.png in Resources */,
+				2C9115FE1F5E9C4F00C315D6 /* AddressSelectedDefaultCell.xib in Resources */,
+				2C9116001F5EA1FF00C315D6 /* AddressManageDefaultCell.xib in Resources */,
 				2C8CD1F41F57A7BD00F9654D /* icn_timed.png in Resources */,
 				2C8CD2011F57A7BD00F9654D /* icn_bad.png in Resources */,
 				2C8CD1F91F57A7BD00F9654D /* conta_ico_call_def@2x.png in Resources */,
@@ -7283,7 +7286,6 @@
 				A2ACF5F41F4B3B06007BADB9 /* WithDrawDepositTableAdapter.m in Sources */,
 				2CA6392F1F4AE9D000C39562 /* WithDrawDepositCellFactory.m in Sources */,
 				2CCC85C21F3AEF4D0009FC1C /* ProductFilterResultCell.m in Sources */,
-				2CB4F5781F418FFB00FF98C9 /* CumulateInvestBarCell.m in Sources */,
 				2CB4F63B1F42F26500FF98C9 /* ContractApplyConfigurator.m in Sources */,
 				2C85E3891F2F09D100ADD360 /* TJSMineHomeCellFactory.m in Sources */,
 				2C8CD1101F55033400F9654D /* FMDBManager.m in Sources */,

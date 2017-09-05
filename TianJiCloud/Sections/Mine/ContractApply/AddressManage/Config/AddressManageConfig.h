@@ -7,10 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "ContractVCConfig.h"
 
 @class AddressManageController;
-@interface AddressManageConfig : NSObject
+@interface AddressManageConfig : NSObject<ContractVCConfig>
 
 - (void)setup:(AddressManageController *)vc;
 

@@ -41,33 +41,28 @@
 
 - (void)loadDatas:(void (^)(void))callback{
     
-    
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^
-                   {
-       dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+   dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+       
+       NSArray *datas = @[@[NSLocalizedString(@"total_EarnedAmount", @"累计赚取金额(元)"),@"0.00"],@[NSLocalizedString(@"pending_commissionAmount", @"待结算佣金(元)"),@"10000"]];
+       
+       NSNumber *hide = @NO;
+       
+       _headerDatas = [NSMutableArray arrayWithObjects:datas,hide, nil];
+       
+       [self.layout calculateLayoutAttributes];
+       
+       _model = [MineHomeCellInfoModel new];
+       
+       [_model configItems];
+       
+       _items = _model.items;
+       
+       dispatch_async(dispatch_get_main_queue(), ^{
            
-           NSArray *datas = @[@[NSLocalizedString(@"total_EarnedAmount", @"累计赚取金额(元)"),@"0.00"],@[NSLocalizedString(@"pending_commissionAmount", @"待结算佣金(元)"),@"10000"]];
-           
-           NSNumber *hide = @NO;
-           
-           _headerDatas = [NSMutableArray arrayWithObjects:datas,hide, nil];
-           
-           [self.layout calculateLayoutAttributes];
-           
-           _model = [MineHomeCellInfoModel new];
-           
-           [_model configItems];
-           
-           _items = _model.items;
-           
-           dispatch_async(dispatch_get_main_queue(), ^{
-               
-               if(callback)callback();
-            
-           });
+           if(callback)callback();
+        
        });
    });
-    
 }
 
 - (NSArray *)items{

@@ -148,25 +148,7 @@
 
 // supercedes -tableView:titleForDeleteConfirmationButtonForRowAtIndexPath: if return value is non-nil
 - (nullable NSArray<UITableViewRowAction *> *)tableView:(UITableView *)tableView editActionsForRowAtIndexPath:(NSIndexPath *)indexPath NS_AVAILABLE_IOS(8_0) __TVOS_PROHIBITED{
-    
-    
-    unsigned int count = 0;
-    Ivar *ivars = class_copyIvarList([UITableViewRowAction class], &count);
-    for(int i =0;i < count;i ++){
-        
-        Ivar ivar = ivars[i];
-        
-        NSString *ivarName = [NSString stringWithCString:ivar_getName(ivar) encoding:NSUTF8StringEncoding];
-        
-        //_style  _title _backgroundColor _handler _handler _backgroundEffect
-        
-        
-    }
-    
-    // 注意手动释放ivars
-    free(ivars);
 
-    
 
      //UITableViewRowAction是iOS8才有的，title不想要打了空格占着大小
      UITableViewRowAction *rowAction = [UITableViewRowAction

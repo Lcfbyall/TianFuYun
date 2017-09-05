@@ -197,7 +197,7 @@ static NSString *const Invest_cell = @"MineHomeInvestCell";
                 //跳转到相应控制器，专属经理直接弹框打电话
                 if(idx==investTypes.count-1){
                    //Allert
-                    [TJSAlertHandleUtil alertHandleCallManager];
+                    [TJSAlertHandleUtil alertHandleCallManager:@"哥哥我很帅"];
                 }else{
                     [UIViewController tjs_pushViewController:item.target params:item.targetParams animated:YES];
                 }

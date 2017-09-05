@@ -7,8 +7,9 @@
 //
 
 #import "CumulativeInvestCellFactory.h"
-
 #import "CumulativeInvestCellLayoutConfig.h"
+#import "CumulateInvestInfoModel.h"
+
 
 @interface CumulativeInvestCellFactory ()
 

@@ -27,6 +27,9 @@
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x1g-nu-ZwA">
                                 <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Ht4-RT-2Ri"/>
+                                </constraints>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -101,19 +104,29 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="omn-0E-7vT">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="617"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s0c-a5-fTn">
+                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="RO6-ps-jbU"/>
+                                </constraints>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="omn-0E-7vT" secondAttribute="trailing" id="3Ow-kx-kvB"/>
-                            <constraint firstAttribute="bottom" secondItem="omn-0E-7vT" secondAttribute="bottom" id="MrK-Ci-HB9"/>
+                            <constraint firstItem="s0c-a5-fTn" firstAttribute="leading" secondItem="Nuh-Cq-rQt" secondAttribute="leading" id="Tdc-bz-SNb"/>
+                            <constraint firstAttribute="trailing" secondItem="s0c-a5-fTn" secondAttribute="trailing" id="UKE-gl-Lzq"/>
+                            <constraint firstAttribute="bottom" secondItem="s0c-a5-fTn" secondAttribute="bottom" id="VNM-uq-wOv"/>
                             <constraint firstItem="omn-0E-7vT" firstAttribute="leading" secondItem="Nuh-Cq-rQt" secondAttribute="leading" id="aVp-wS-sDm"/>
                             <constraint firstItem="omn-0E-7vT" firstAttribute="top" secondItem="Nuh-Cq-rQt" secondAttribute="top" id="cV3-9a-s91"/>
+                            <constraint firstItem="s0c-a5-fTn" firstAttribute="top" secondItem="omn-0E-7vT" secondAttribute="bottom" id="dB9-H9-lyj"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="addBtn" destination="s0c-a5-fTn" id="mqi-0u-cuj"/>
                         <outlet property="addreslist" destination="omn-0E-7vT" id="IPa-AO-Mc3"/>
                         <segue destination="y0v-q0-Ghy" kind="show" identifier="AddressSelectedToAddressManageVC" id="oy1-cf-VJq"/>
                     </connections>
@@ -186,19 +199,29 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="X9U-sP-P9y">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="617"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="idX-bZ-kdO">
+                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="wlW-Jz-m5d"/>
+                                </constraints>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="X9U-sP-P9y" secondAttribute="bottom" id="19x-IA-VJx"/>
                             <constraint firstItem="X9U-sP-P9y" firstAttribute="top" secondItem="yuu-pq-3Hq" secondAttribute="top" id="9DT-ev-7GU"/>
+                            <constraint firstAttribute="bottom" secondItem="idX-bZ-kdO" secondAttribute="bottom" id="a1A-pO-Vi1"/>
+                            <constraint firstItem="idX-bZ-kdO" firstAttribute="leading" secondItem="yuu-pq-3Hq" secondAttribute="leading" id="aRL-5L-qZa"/>
+                            <constraint firstItem="idX-bZ-kdO" firstAttribute="top" secondItem="X9U-sP-P9y" secondAttribute="bottom" id="j55-0f-i2B"/>
                             <constraint firstAttribute="trailing" secondItem="X9U-sP-P9y" secondAttribute="trailing" id="l09-VL-fuO"/>
+                            <constraint firstAttribute="trailing" secondItem="idX-bZ-kdO" secondAttribute="trailing" id="m1Z-Nr-Fu8"/>
                             <constraint firstItem="X9U-sP-P9y" firstAttribute="leading" secondItem="yuu-pq-3Hq" secondAttribute="leading" id="qgG-AH-v5T"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="addBtn" destination="idX-bZ-kdO" id="fwg-Me-jBa"/>
                         <outlet property="addresslist" destination="X9U-sP-P9y" id="NTF-Rf-Yff"/>
                     </connections>
                 </viewController>

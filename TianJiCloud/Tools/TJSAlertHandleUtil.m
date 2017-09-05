@@ -26,10 +26,10 @@
     
 }
 
-+ (void)alertHandleCallManager{
++ (void)alertHandleCallManager:(NSString *)name{
   
     NSString *title = @"联系专属服务经理";
-    NSString *message = @"哥哥";
+    NSString *message = name;
     UIColor *titleColor = [UIColor darkGrayColor];
     UIColor *messageColor = [UIColor blackColor];
     UIColor *cancelButtonColor = [UIColor darkGrayColor];

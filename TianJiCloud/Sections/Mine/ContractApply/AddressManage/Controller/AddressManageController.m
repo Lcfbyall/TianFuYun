@@ -21,6 +21,8 @@
 @property (weak, nonatomic) IBOutlet UITableView *addresslist;
 
 
+@property (weak, nonatomic) IBOutlet UIButton *addBtn;
+
 @end
 
 
@@ -47,7 +49,7 @@
 - (void)setupConfig{
  
     _config = [[AddressManageConfig alloc]init];
-    
+    [_config applyButtonConfig:self.addBtn];
     [_config setup:self];
 
 }
@@ -70,8 +72,17 @@
     return YES;
 }
 
+
 #pragma mark - <TJSBaseVCConfig>
 
+- (void)tjs_configBaseView{
+    
+    [self.addBtn addBlockForControlEvents:UIControlEventTouchUpInside block:^(id  _Nonnull sender) {
+        
+        [UIViewController tjs_pushViewController:ContractApplyVC animated:YES];
+        
+    }];
+}
 - (UIView *)tjs_listView{
 
     return _addresslist;

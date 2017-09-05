@@ -38,7 +38,13 @@
 
 + (instancetype)header{
 
-    return nil;
+    CumulateInvestHeader *header = [[self alloc]init];
+    
+    header.frame = CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, 222);
+    header.backgroundColor = ThemeService.main_color_02;
+    
+    
+    return header;
 }
 
 @end

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="95" id="fzV-gd-SeL" customClass="AddressSelectedDefaultCell">
+            <rect key="frame" x="0.0" y="0.0" width="424" height="95"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fzV-gd-SeL" id="fAy-mY-PBN">
+                <rect key="frame" x="0.0" y="0.0" width="424" height="94.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="收件人" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1qn-iX-xiH">
+                        <rect key="frame" x="16" y="15" width="52" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="I3y-Uo-TA7"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13588886666" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BLh-TS-V7k">
+                        <rect key="frame" x="232" y="15" width="112" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Js7-7Y-PzQ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="[默认地址]浙江省杭州市" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6gd-Og-LgV">
+                        <rect key="frame" x="16" y="57" width="186" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qnz-dS-Wmd">
+                        <rect key="frame" x="368" y="38.5" width="36" height="36"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="36" id="1bf-1y-hhO"/>
+                            <constraint firstAttribute="height" constant="36" id="Gim-Uf-EX4"/>
+                        </constraints>
+                        <state key="normal" image="noChecked_order"/>
+                        <state key="selected" image="checked_order"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="BLh-TS-V7k" firstAttribute="centerY" secondItem="1qn-iX-xiH" secondAttribute="centerY" id="NNZ-OH-C2c"/>
+                    <constraint firstItem="1qn-iX-xiH" firstAttribute="leading" secondItem="fAy-mY-PBN" secondAttribute="leading" constant="16" id="Rxh-Tc-hw7"/>
+                    <constraint firstAttribute="bottom" secondItem="qnz-dS-Wmd" secondAttribute="bottom" constant="20" id="VcO-ug-vAd"/>
+                    <constraint firstAttribute="trailing" secondItem="BLh-TS-V7k" secondAttribute="trailing" constant="80" id="ksd-rX-mCG"/>
+                    <constraint firstItem="1qn-iX-xiH" firstAttribute="top" secondItem="fAy-mY-PBN" secondAttribute="top" constant="15" id="tEv-A4-UO0"/>
+                    <constraint firstAttribute="trailing" secondItem="qnz-dS-Wmd" secondAttribute="trailing" constant="20" id="zIS-zi-Z5e"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="addressL" destination="6gd-Og-LgV" id="HmJ-Er-dEi"/>
+                <outlet property="mobileL" destination="BLh-TS-V7k" id="8xO-Xo-9Fm"/>
+                <outlet property="pickBtn" destination="qnz-dS-Wmd" id="Kqc-s0-cbY"/>
+                <outlet property="receiptL" destination="1qn-iX-xiH" id="2tm-Jb-fvc"/>
+            </connections>
+            <point key="canvasLocation" x="-123" y="43.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="checked_order" width="18" height="18"/>
+        <image name="noChecked_order" width="18" height="18"/>
+    </resources>
+</document>

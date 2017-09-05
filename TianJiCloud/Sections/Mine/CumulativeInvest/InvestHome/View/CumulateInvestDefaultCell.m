@@ -10,8 +10,26 @@
 
 @implementation CumulateInvestDefaultCell
 
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
+ 
+    self = [super initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:reuseIdentifier];
+    
+    if(self){
+    
+    }
 
+    return self;
+}
 
+- (void)tjs_bindDataToCellWithValue:(id)value{
+ 
+    CumulateInvestInfoModel *model = (CumulateInvestInfoModel *)value;
+    
+    self.textLabel.text = model.text;
+    self.detailTextLabel.text = model.detailText;
+    
+    
+}
 
 
 @end

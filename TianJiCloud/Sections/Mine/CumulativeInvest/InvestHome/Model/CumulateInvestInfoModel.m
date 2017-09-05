@@ -10,4 +10,29 @@
 
 @implementation CumulateInvestInfoModel
 
++ (NSArray <CumulateInvestInfoModel *> *)configWithInvestInfos:(NSArray <CumulateInvestInfo*>*)investInfos{
+ 
+    NSMutableArray *models = [NSMutableArray array];
+    [investInfos enumerateObjectsUsingBlock:^(CumulateInvestInfo * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        
+        CumulateInvestInfoModel *model = [CumulateInvestInfoModel new];
+        model.info = obj;
+        model.cellClass = @"CumulativeInvestDefaultCell";
+        model.cellBgColor = idx%2!=0?ThemeService.origin_color_00:ThemeService.weak_color_00;
+        model.cellSelectedColor = ThemeService.origin_color_00;
+        model.text = obj.name;
+        model.detailText = obj.sum;
+        model.target = InvestProductVC;
+        model.targetParams = @{@"CumulateInvestInfo":obj};
+        WEAK_SELF(model);
+        model.cellOperation = ^(id obj1, id obj2) {
+            STRONG_SELF(model);
+            [UIViewController tjs_pushViewController:model.target params:model.targetParams animated:YES];
+        };
+        [models addObject:model];
+    }];
+    
+    return models;
+}
+
 @end

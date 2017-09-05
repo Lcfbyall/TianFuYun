@@ -21,7 +21,7 @@
    
     [super tjs_bindDataToCellWithValue:value];
     
-    AddressManageCellModel *model = (AddressManageCellModel *)value;
+    //AddressManageCellModel *model = (AddressManageCellModel *)value;
     
 }
 

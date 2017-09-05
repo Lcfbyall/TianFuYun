@@ -12,6 +12,8 @@
 
 + (UIButton *)tjs_commitBtnWithTitle:(NSString *)title;
 
+- (void)tjs_bottomBtnStyle;
+
 - (void)tjs_commitBtnStateConfigWithNormalTitle:(NSString *)title;
 
 

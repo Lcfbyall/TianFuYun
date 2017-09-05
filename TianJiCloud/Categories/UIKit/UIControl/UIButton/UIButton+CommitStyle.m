@@ -26,15 +26,7 @@
 
 - (void)tjs_commitBtnStateConfigWithNormalTitle:(NSString *)title{
     
-    self.tjs_backGroundColorNormal     = ThemeService.btn_color_00;
-    self.tjs_backGroundColorHighlighted= ThemeService.btn_color_01;
-    self.tjs_backGroundColorDisabled   = ThemeService.btn_color_02;
-    
-    self.tjs_titleColorNormal          = ThemeService.btn_color_03;
-    self.tjs_titleColorHighlighted     = ThemeService.btn_color_04;
-    self.tjs_titleColorDisabled        = ThemeService.btn_color_05;
-    
-    self.tjs_titleFontNormal           = [ThemeService pingFangSCMediumWithSize:18.0f];
+    [self tjs_bottomBtnStyle];
     
     if(title){
         
@@ -45,7 +37,18 @@
     self.layer.cornerRadius  = 3;
 }
 
+- (void)tjs_bottomBtnStyle{
 
+    self.tjs_backGroundColorNormal     = ThemeService.btn_color_00;
+    self.tjs_backGroundColorHighlighted= ThemeService.btn_color_01;
+    self.tjs_backGroundColorDisabled   = ThemeService.btn_color_02;
+    
+    self.tjs_titleColorNormal          = ThemeService.btn_color_03;
+    self.tjs_titleColorHighlighted     = ThemeService.btn_color_04;
+    self.tjs_titleColorDisabled        = ThemeService.btn_color_05;
+    
+    self.tjs_titleFontNormal           = [ThemeService pingFangSCMediumWithSize:18.0f];
+}
 
 
 #pragma mark - UITableView FooterView

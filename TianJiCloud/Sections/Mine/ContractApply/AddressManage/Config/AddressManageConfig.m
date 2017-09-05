@@ -26,6 +26,15 @@
 }
 
 
+#pragma mark - <ContractVCConfig>
+
+- (void)applyButtonConfig:(UIButton *)btn{
+    
+    [btn tjs_bottomBtnStyle];
+    
+    btn.tjs_titleNormal = @"新增地址";
+    
+}
 
 
 @end
