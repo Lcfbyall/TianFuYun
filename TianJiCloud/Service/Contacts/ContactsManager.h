@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <Contacts/Contacts.h>
 #import <ContactsUI/ContactsUI.h>
+//Contacts.framework是Apple在 iOS9.0 替代AddressBook.framework的框架
 
 @interface ContactsManager : NSObject
 

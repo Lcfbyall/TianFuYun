@@ -90,7 +90,7 @@ static CGFloat BOTTOM_HEIGHT = 60;
         
         UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, collectionViewY, self.view.zl_width, collectionViewH)
                                                               collectionViewLayout:layout];
-        collectionView.backgroundColor = [UIColor clearColor];
+        collectionView.backgroundColor = ThemeService.main_color_04;
         [collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"cell"];
         collectionView.delegate = self;
         collectionView.dataSource = self;
@@ -177,7 +177,7 @@ static CGFloat BOTTOM_HEIGHT = 60;
     self.preview.frame = self.view.bounds;
     
     ZLCameraView *caramView = [[ZLCameraView alloc] initWithFrame:CGRectMake(0, 40, self.view.zl_width, self.view.zl_height - 40 - BOTTOM_HEIGHT)];
-    caramView.backgroundColor = [UIColor clearColor];
+    caramView.backgroundColor = ThemeService.main_color_04;
     caramView.delegate = self;
     [self.view addSubview:caramView];
     [self.view.layer insertSublayer:self.preview atIndex:0];
@@ -213,7 +213,7 @@ static CGFloat BOTTOM_HEIGHT = 60;
 - (UIButton *) setupButtonWithImageName : (NSString *) imageName andX : (CGFloat ) x{
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     [button setImage:[UIImage ml_imageFromBundleNamed:imageName] forState:UIControlStateNormal];
-    button.backgroundColor = [UIColor clearColor];
+    button.backgroundColor = ThemeService.main_color_04;
     button.zl_width = 50;
     button.zl_y = 0;
     button.zl_height = self.topView.zl_height;
@@ -249,7 +249,7 @@ static CGFloat BOTTOM_HEIGHT = 60;
     
     // 底部View
     UIView *controlView = [[UIView alloc] initWithFrame:CGRectMake(0, self.view.zl_height-BOTTOM_HEIGHT, self.view.zl_width, BOTTOM_HEIGHT)];
-    controlView.backgroundColor = [UIColor clearColor];
+    controlView.backgroundColor = ThemeService.main_color_04;
     self.controlView = controlView;
     
     UIView *contentView = [[UIView alloc] init];

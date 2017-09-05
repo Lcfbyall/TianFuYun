@@ -118,14 +118,14 @@
 - (void)p_addSubviews{
 
     _productNameL = [[UILabel alloc] init];
-    _productNameL.backgroundColor = [UIColor clearColor];
+    _productNameL.backgroundColor = ThemeService.main_color_04;
     _productNameL.opaque = YES;
     _productNameL.font   = [UIFont systemFontOfSize:14.0];
     [_productNameL setTextColor:ThemeService.text_color_01];
     [self.contentView addSubview:_productNameL];
     
     _productStateL = [[UILabel alloc] init];
-    _productStateL.backgroundColor = [UIColor clearColor];
+    _productStateL.backgroundColor = ThemeService.main_color_04;
     _productStateL.opaque = YES;
     _productStateL.font   = [UIFont systemFontOfSize:14.0];
     [_productStateL setTextColor:ThemeService.text_color_01];
@@ -133,7 +133,7 @@
     
 
     _productThresholdL = [[UILabel alloc] init];
-    _productThresholdL.backgroundColor = [UIColor clearColor];
+    _productThresholdL.backgroundColor = ThemeService.main_color_04;
     _productThresholdL.opaque = YES;
     _productThresholdL.font   = [UIFont systemFontOfSize:14.0];
     [_productThresholdL setTextColor:ThemeService.text_color_01];

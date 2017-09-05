@@ -26,7 +26,7 @@
   
     [super awakeFromNib];
 
-    self.contentView.backgroundColor = [UIColor clearColor];
+    self.contentView.backgroundColor = ThemeService.main_color_04;
     self.backgroundView = [UIView new];
     
     self.titleL.font = [UIFont systemFontOfSize:14.0f];

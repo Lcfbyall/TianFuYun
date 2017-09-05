@@ -85,7 +85,7 @@ static NSString *const _identifier = @"toolBarThumbCollectionViewCell";
         
         // CGRectMake(0, 22, 300, 44)
         UICollectionView *toolBarThumbCollectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(10, 0, self.view.zl_width - 100, 44) collectionViewLayout:flowLayout];
-        toolBarThumbCollectionView.backgroundColor = [UIColor clearColor];
+        toolBarThumbCollectionView.backgroundColor = ThemeService.main_color_04;
         toolBarThumbCollectionView.dataSource = self;
         toolBarThumbCollectionView.delegate = self;
         [toolBarThumbCollectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:_identifier];

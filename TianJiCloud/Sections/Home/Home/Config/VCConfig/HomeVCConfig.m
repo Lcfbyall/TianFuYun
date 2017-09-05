@@ -35,7 +35,11 @@
     
     _vc = vc;
     
+    UIColor *clear = [UIColor darkGrayColor];
     
+    NSString *str =  [clear hexStringWithAlpha];
+
+    NSLog(@"%@",str);
 }
 
 
@@ -58,10 +62,8 @@
     }];
     
     NSArray *leftBarButtonItems = _vc.navigationItem.leftBarButtonItems?:[NSArray array];
-    
     NSMutableArray *mutable = [leftBarButtonItems mutableCopy];
     [mutable addObject:leftItem];
-    
     return [mutable copy];
 }
 

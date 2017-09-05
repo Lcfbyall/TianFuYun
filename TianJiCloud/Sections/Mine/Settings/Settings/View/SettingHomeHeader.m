@@ -114,7 +114,7 @@
 + (instancetype)headerWithUpload:(void (^)(id))block{
 
     SettingHomeHeader *header = [[self alloc]init];
-    header.backgroundColor = [UIColor clearColor];
+    header.backgroundColor = ThemeService.main_color_04;
     
     [header.uploadIconBtn addBlockForControlEvents:UIControlEventTouchUpInside block:^(id  _Nonnull sender) {
         if(block)block(sender);

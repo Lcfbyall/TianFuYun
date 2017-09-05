@@ -137,7 +137,7 @@
         
         CAShapeLayer *currentPieLayer =	[self newCircleLayerWithRadius:radius
                                                            borderWidth:borderWidth
-                                                             fillColor:[UIColor clearColor]
+                                                             fillColor:ThemeService.main_color_04
                                                            borderColor:currentItem.color
                                                        startPercentage:startPercentage
                                                          endPercentage:endPercentage];
@@ -172,7 +172,7 @@
           _centerdescripL.attributedText = _centerdesAttString;
         
         [_contentView addSubview:_centerdescripL];
-        _centerdescripL.backgroundColor = [UIColor clearColor];
+        _centerdescripL.backgroundColor = ThemeService.main_color_04;
     }
 
     [self addAnimationIfNeeded];
@@ -225,7 +225,7 @@
     descriptionLabel.textAlignment   = NSTextAlignmentCenter;
     descriptionLabel.center          = center;
     descriptionLabel.alpha           = 0;
-    descriptionLabel.backgroundColor = [UIColor clearColor];
+    descriptionLabel.backgroundColor = ThemeService.main_color_04;
     return descriptionLabel;
 }
 - (void)updateChartData:(NSArray *)items
@@ -289,7 +289,7 @@
     CGFloat borderWidth = _outerCircleRadius - _innerCircleRadius;
     CAShapeLayer *maskLayer = [self newCircleLayerWithRadius:radius
                                                  borderWidth:borderWidth
-                                                   fillColor:[UIColor clearColor]
+                                                   fillColor:ThemeService.main_color_04
                                                  borderColor:[UIColor blackColor]
                                              startPercentage:0
                                                endPercentage:1];
@@ -377,7 +377,7 @@
         
         self.sectorHighlight = [self newCircleLayerWithRadius:_outerCircleRadius + 5
                                                   borderWidth:10
-                                                    fillColor:[UIColor clearColor]
+                                                    fillColor:ThemeService.main_color_04
                                                   borderColor:newColor
                                               startPercentage:startPercentage
                                                 endPercentage:endPercentage];

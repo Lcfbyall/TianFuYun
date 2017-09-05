@@ -351,7 +351,7 @@ static void * TJSUIButtonStateChangedContext = & TJSUIButtonStateChangedContext;
     if (!color) {
         //The color of the layer's border. Defaults to opaque black
         // color = (__bridge id _Nullable)self.layer.borderColor;
-        color = [UIColor clearColor];
+        color = ThemeService.main_color_04;
     }
     return color;
 }

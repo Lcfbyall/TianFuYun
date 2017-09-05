@@ -366,7 +366,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  * Bar background color.
- * Defaults to clear [UIColor clearColor];
+ * Defaults to clear ThemeService.main_color_04;
  */
 @property (nonatomic, strong) UIColor *progressRemainingColor;
 

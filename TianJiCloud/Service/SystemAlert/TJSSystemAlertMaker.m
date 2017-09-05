@@ -23,8 +23,8 @@
         
         
         self.alertController              = [TJSAlertController alertControllerWithTitle:@"" message:@"" preferredStyle:style] ;
-        _alertController.titleColor       = [UIColor blackColor];
-        _alertController.messageColor     = [UIColor blackColor];
+        _alertController.titleColor       = ThemeService.text_color_00;
+        _alertController.messageColor     = ThemeService.text_color_00;
         _alertController.actionColor      = nil;//ThemeService.main_color_00;
         _alertController.cancelColor      = nil;//ThemeService.normal_color_10;
         _alertController.messageAlignment = NSTextAlignmentCenter;

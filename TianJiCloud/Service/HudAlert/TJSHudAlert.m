@@ -78,7 +78,7 @@
     progressHUD.mode = MBProgressHUDModeIndeterminate;
     
     progressHUD.bezelView.style = MBProgressHUDBackgroundStyleSolidColor;
-    progressHUD.bezelView.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:0.6];
+    progressHUD.bezelView.backgroundColor = [ThemeService.origin_color_00 colorWithAlphaComponent:0.6];
     //progressHUD.label.textColor = ThemeService.normal_color_10;
     progressHUD.label.font = [ThemeService pingFangSCRegularWithSize:18.0];
     
@@ -183,7 +183,7 @@
         progressHUD.mode = MBProgressHUDModeCustomView;
     } else {
         progressHUD.mode = MBProgressHUDModeText;
-        progressHUD.bezelView.backgroundColor = [UIColor darkGrayColor];
+        progressHUD.bezelView.backgroundColor = ThemeService.main_color_05;
         progressHUD.bezelView.layer.cornerRadius = 22;   // 设计的是全圆角
     }
     progressHUD.margin = 10;

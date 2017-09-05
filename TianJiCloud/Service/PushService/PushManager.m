@@ -54,6 +54,17 @@ typedef NS_ENUM(NSInteger, TJSPushType) {
 
 #pragma mark - Public
 
++ (BOOL)isRegisteredForRemoteNotifications{
+
+    if (IOS8_OR_LATER) {
+
+        return [[UIApplication sharedApplication] currentUserNotificationSettings].types;
+    }else{
+        
+       return [[UIApplication sharedApplication] isRegisteredForRemoteNotifications];
+    }
+}
+
 // 初始化个推sdk
 - (void)startGeTuiSDK{
 
@@ -174,7 +185,7 @@ TJS_EXPORT_SERVICE(@"PushService")
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    [[PushManager sharedManager] startGeTuiSDK];
+    //[[PushManager sharedManager] startGeTuiSDK];
     
     return YES;
 }

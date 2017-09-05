@@ -16,7 +16,7 @@
 
     if (self) {
         self.font                      = [UIFont boldSystemFontOfSize:11.0f];
-        self.backgroundColor           = [UIColor clearColor];
+        self.backgroundColor           = ThemeService.main_color_04;
         self.textAlignment             = NSTextAlignmentCenter;
         self.userInteractionEnabled    = YES;
         self.adjustsFontSizeToFitWidth = YES;

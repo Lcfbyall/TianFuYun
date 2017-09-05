@@ -49,7 +49,7 @@
 //        __weak typeof(ZLPhotoPickerBrowserPhotoScrollView *)weakScrollView = scrollView;
 //        scrollView.callback = ^(id obj){
 //            [weakScrollView removeFromSuperview];
-//            mainView.backgroundColor = [UIColor clearColor];
+//            mainView.backgroundColor = ThemeService.main_color_04;
 //            imageView.hidden = NO;
 //            [UIView animateWithDuration:.25 animations:^{
 //                imageView.frame = tempF;

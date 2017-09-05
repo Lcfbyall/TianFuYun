@@ -59,6 +59,7 @@
     return [UIColor tjs_colorWithHexString:self.colorDict[@"origin_color_01"]];
 }
 
+//
 - (UIColor *)main_color_00{
 
   return [UIColor tjs_colorWithHexString:self.colorDict[@"main_color_00"]];
@@ -72,6 +73,20 @@
 - (UIColor *)main_color_02{
  
     return [UIColor tjs_colorWithHexString:self.colorDict[@"main_color_02"]];
+}
+- (UIColor *)main_color_03{
+
+     return [UIColor tjs_colorWithHexString:self.colorDict[@"main_color_03"]];
+}
+
+- (UIColor *)main_color_04{
+
+    return [UIColor clearColor];
+}
+
+- (UIColor *)main_color_05{
+  
+    return [UIColor tjs_colorWithHexString:self.colorDict[@"main_color_05"]];
 }
 
 

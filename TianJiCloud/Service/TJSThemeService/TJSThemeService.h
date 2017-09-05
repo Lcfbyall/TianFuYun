@@ -22,9 +22,13 @@
 - (UIColor *)origin_color_01;
 
 //主色：白色
-- (UIColor *)main_color_00;
-- (UIColor *)main_color_01;  //橙色
-- (UIColor *)main_color_02;
+- (UIColor *)main_color_00;  //主色白
+- (UIColor *)main_color_01;  //橙色按钮，标题
+- (UIColor *)main_color_02;  //iOS7蓝
+- (UIColor *)main_color_03;  //警示红
+- (UIColor *)main_color_04;  //透明色
+- (UIColor *)main_color_05;  //darkGrayColor
+
 
 //文字
 - (UIColor *)text_color_00;

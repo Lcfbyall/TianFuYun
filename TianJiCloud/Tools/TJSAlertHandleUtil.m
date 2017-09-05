@@ -31,9 +31,9 @@
     NSString *title = @"联系专属服务经理";
     NSString *message = @"哥哥";
     UIColor *titleColor = [UIColor darkGrayColor];
-    UIColor *messageColor=[UIColor blackColor];
-    UIColor *cancelButtonColor =[UIColor darkGrayColor];
-    UIColor *actionButtonColor =[UIColor brownColor];
+    UIColor *messageColor = [UIColor blackColor];
+    UIColor *cancelButtonColor = [UIColor darkGrayColor];
+    UIColor *actionButtonColor = [UIColor brownColor];
     NSString *cancelAction = @"稍后联系";
     NSString *action= @"拨打电话";
     

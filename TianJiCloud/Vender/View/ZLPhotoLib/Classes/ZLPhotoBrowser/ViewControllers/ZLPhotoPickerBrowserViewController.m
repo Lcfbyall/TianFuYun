@@ -63,7 +63,7 @@ static NSString *_cellIdentifier = @"collectionViewCell";
         collectionView.showsHorizontalScrollIndicator = NO;
         collectionView.showsVerticalScrollIndicator = NO;
         collectionView.pagingEnabled = YES;
-        collectionView.backgroundColor = [UIColor clearColor];
+        collectionView.backgroundColor = ThemeService.main_color_04;
         collectionView.bounces = YES;
         collectionView.delegate = self;
         collectionView.dataSource = self;
@@ -123,7 +123,7 @@ static NSString *_cellIdentifier = @"collectionViewCell";
         pageLabel.textAlignment = NSTextAlignmentCenter;
         pageLabel.userInteractionEnabled = NO;
         pageLabel.translatesAutoresizingMaskIntoConstraints = NO;
-        pageLabel.backgroundColor = [UIColor clearColor];
+        pageLabel.backgroundColor = ThemeService.main_color_04;
         pageLabel.textColor = [UIColor whiteColor];
         [self.view addSubview:pageLabel];
         self.pageLabel = pageLabel;
@@ -505,7 +505,7 @@ static NSString *_cellIdentifier = @"collectionViewCell";
         cell.hidden = NO;
     }
     if (self.photos.count) {
-        //        cell.backgroundColor = [UIColor clearColor];
+        //        cell.backgroundColor = ThemeService.main_color_04;
         
         ZLPhotoPickerBrowserPhoto *photo = self.photos[indexPath.item];
         

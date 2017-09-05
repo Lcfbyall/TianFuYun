@@ -25,7 +25,7 @@
 {
     if (self = [super initWithFrame:frame]) {
         
-        self.backgroundColor = [UIColor clearColor];
+        self.backgroundColor = ThemeService.main_color_04;
         
         self.userInteractionEnabled = YES;
         

@@ -81,7 +81,7 @@ static NSString *identifier = @"MineHeaderCollectionCell";
         self.layout.insets   = UIEdgeInsetsMake(Margin, Margin, Margin, Margin);
 
         UICollectionView  *collectionView = [[UICollectionView alloc]initWithFrame:CGRectZero collectionViewLayout:self.interactor.headerLayout];
-        collectionView.backgroundColor = [UIColor clearColor];
+        collectionView.backgroundColor = ThemeService.main_color_04;
         collectionView.dataSource = self;
         collectionView.delegate   = self;
         collectionView.pagingEnabled = YES;

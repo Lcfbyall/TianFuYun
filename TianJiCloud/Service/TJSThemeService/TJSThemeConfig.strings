@@ -11,9 +11,11 @@
 "origin_color_01" = "#000000";
 
 //主题
-"main_color_00"   = "#ffffff";  //白色：主色调
-"main_color_01"   = "#fd802e";  //橙色 253 128 46
-"main_color_02"   = "#007cf4";  //系统蓝色
+"main_color_00"   = "#ffffff";   //白色：主色调
+"main_color_01"   = "#fd802e";   //橙色 253 128 46
+"main_color_02"   = "#007cf4";   //系统蓝色
+"main_color_03"   = "#ff0000";   //警示红
+"main_color_05"   = "#555555";   //darkGrayColor
 
 //文字
 "text_color_00"   = "#000000";  //一级文字  黑
@@ -25,7 +27,6 @@
 "btn_color_00"    = "#fd802e"; //按钮正常时背景颜色
 "btn_color_01"    = "#929292"; //按钮高亮时背景颜色
 "btn_color_02"    = "#dfdfdf"; //按钮禁用背景颜色
-
 "btn_color_03"    = "#ffffff"; //按钮正常文字颜色
 "btn_color_04"    = "#ffffff"; //按钮高亮文字颜色
 "btn_color_05"    = "#efefef"; //按钮禁用文字颜色
@@ -40,13 +41,7 @@
 "other_color_00"  = "#65ba67";
 
 
-//"light_font" = "PingFangSC-Light";
-//"medium_font" = "PingFangSC-Medium";
-//"regular_font" = "PingFangSC-Regular";
-//"semibold_font" = "PingFangSC-Semibold";
-//"thin_font" = "PingFangSC-Thin";
-//"ultralight_font" = "PingFangSC-Ultralight";
-
+//字体
 "light_font"      = "PingFangSC-Thin";
 "medium_font"     = "PingFangSC-Regular";
 "regular_font"    = "PingFangSC-Light";

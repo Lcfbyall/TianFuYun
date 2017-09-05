@@ -101,7 +101,7 @@ static const CGFloat MBDefaultDetailsLabelFontSize = 12.f;
     _contentColor = isLegacy ? [UIColor whiteColor] : [UIColor colorWithWhite:0.f alpha:0.7f];
     // Transparent background
     self.opaque = NO;
-    self.backgroundColor = [UIColor clearColor];
+    self.backgroundColor = ThemeService.main_color_04;
     // Make it invisible for now
     self.alpha = 0.0f;
     self.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
@@ -315,7 +315,7 @@ static const CGFloat MBDefaultDetailsLabelFontSize = 12.f;
 
     MBBackgroundView *backgroundView = [[MBBackgroundView alloc] initWithFrame:self.bounds];
     backgroundView.style = MBProgressHUDBackgroundStyleSolidColor;
-    backgroundView.backgroundColor = [UIColor clearColor];
+    backgroundView.backgroundColor = ThemeService.main_color_04;
     backgroundView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     backgroundView.alpha = 0.f;
     [self addSubview:backgroundView];
@@ -335,7 +335,7 @@ static const CGFloat MBDefaultDetailsLabelFontSize = 12.f;
     label.textColor = defaultColor;
     label.font = [UIFont boldSystemFontOfSize:MBDefaultLabelFontSize];
     label.opaque = NO;
-    label.backgroundColor = [UIColor clearColor];
+    label.backgroundColor = ThemeService.main_color_04;
     _label = label;
 
     UILabel *detailsLabel = [UILabel new];
@@ -345,7 +345,7 @@ static const CGFloat MBDefaultDetailsLabelFontSize = 12.f;
     detailsLabel.numberOfLines = 0;
     detailsLabel.font = [UIFont boldSystemFontOfSize:MBDefaultDetailsLabelFontSize];
     detailsLabel.opaque = NO;
-    detailsLabel.backgroundColor = [UIColor clearColor];
+    detailsLabel.backgroundColor = ThemeService.main_color_04;
     _detailsLabel = detailsLabel;
 
     UIButton *button = [MBProgressHUDRoundedButton buttonWithType:UIButtonTypeCustom];
@@ -835,7 +835,7 @@ static const CGFloat MBDefaultDetailsLabelFontSize = 12.f;
 - (id)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-        self.backgroundColor = [UIColor clearColor];
+        self.backgroundColor = ThemeService.main_color_04;
         self.opaque = NO;
         _progress = 0.f;
         _annular = NO;
@@ -959,8 +959,8 @@ static const CGFloat MBDefaultDetailsLabelFontSize = 12.f;
         _progress = 0.f;
         _lineColor = [UIColor whiteColor];
         _progressColor = [UIColor whiteColor];
-        _progressRemainingColor = [UIColor clearColor];
-        self.backgroundColor = [UIColor clearColor];
+        _progressRemainingColor = ThemeService.main_color_04;
+        self.backgroundColor = ThemeService.main_color_04;
         self.opaque = NO;
     }
     return self;
@@ -1412,7 +1412,7 @@ static const CGFloat MBDefaultDetailsLabelFontSize = 12.f;
 - (void)setDimBackground:(BOOL)dimBackground {
     MBMainThreadAssert();
     self.backgroundView.style = MBProgressHUDBackgroundStyleSolidColor;
-    self.backgroundView.color = dimBackground ? [UIColor colorWithWhite:0.f alpha:.2f] : [UIColor clearColor];
+    self.backgroundView.color = dimBackground ? [UIColor colorWithWhite:0.f alpha:.2f] : ThemeService.main_color_04;
 }
 
 - (CGSize)size {
@@ -1480,7 +1480,7 @@ static const CGFloat MBDefaultDetailsLabelFontSize = 12.f;
     [super setHighlighted:highlighted];
     
     UIColor *baseColor = [self titleColorForState:UIControlStateSelected];
-    self.backgroundColor = highlighted ? [baseColor colorWithAlphaComponent:0.1f] : [UIColor clearColor];
+    self.backgroundColor = highlighted ? [baseColor colorWithAlphaComponent:0.1f] : ThemeService.main_color_04;
 }
 
 @end

@@ -62,14 +62,6 @@
     [self addSubview:_recipientsL];
     
     
-    /*
-    _adrress.backgroundColor = [UIColor redColor];
-    _adrressTitle.backgroundColor = [UIColor blueColor];
-    _recipients.backgroundColor = [UIColor grayColor];
-    _recipientsL.backgroundColor = [UIColor cyanColor];
-    */
-    
-    
     [_adrress mas_makeConstraints:^(MASConstraintMaker *make) {
        
         make.height.mas_equalTo(20);

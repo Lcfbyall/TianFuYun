@@ -73,7 +73,7 @@
 - (instancetype)initWithFrame:(CGRect)frame collectionViewLayout:(UICollectionViewLayout *)layout{
     if (self = [super initWithFrame:frame collectionViewLayout:layout]) {
         
-        self.backgroundColor = [UIColor clearColor];
+        self.backgroundColor = ThemeService.main_color_04;
         self.dataSource = self;
         self.delegate = self;
         _selectAssets = [NSMutableArray array];

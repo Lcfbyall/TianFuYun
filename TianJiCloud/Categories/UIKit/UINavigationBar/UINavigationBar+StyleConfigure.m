@@ -130,7 +130,7 @@ static UIColor *TintColor    = nil;
  */
 - (void)clearBottomLine {
     
-    [self setBackgroundImage:[UIImage tjs_imageWithColor:[UIColor clearColor]]
+    [self setBackgroundImage:[UIImage tjs_imageWithColor:ThemeService.main_color_04]
               forBarPosition:UIBarPositionAny
                   barMetrics:UIBarMetricsDefault];
     
@@ -141,7 +141,7 @@ static UIColor *TintColor    = nil;
  清除导航栏底部阴影
  */
 - (void)clearShadow {
-    self.layer.shadowColor = [UIColor clearColor].CGColor;
+    self.layer.shadowColor = ThemeService.main_color_04.CGColor;
     self.layer.shadowRadius = 0.f;
     self.layer.shadowOffset = CGSizeMake(0.f, 0.f);
     self.layer.shadowOpacity = 1.f;
@@ -200,7 +200,7 @@ static UIColor *TintColor    = nil;
     @{
       NavigationBarTranslucentKey:@YES,
       NavigationBarTintColor: ThemeService.origin_color_00,
-      NavigationBarBarTintColor:  [UIColor clearColor],
+      NavigationBarBarTintColor:  ThemeService.main_color_04,
       BackBarButtonItemTintColor:ThemeService.origin_color_00,
       AdjustsScrollViewInsets :@NO,
       NavigationTitleTextAttributes:
