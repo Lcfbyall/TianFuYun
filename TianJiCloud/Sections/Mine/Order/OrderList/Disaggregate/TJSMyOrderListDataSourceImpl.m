@@ -7,10 +7,8 @@
 //
 
 #import "TJSMyOrderListDataSourceImpl.h"
-
+#import "OrderListNetworkTool.h"
 #import "MyOrderInfoModel.h"
-//#import "ProductListNetworkTool.h"
-//#import "ProductDeleteNetworkTool.h"
 
 
 @interface TJSMyOrderListDataSourceImpl ()
@@ -39,30 +37,44 @@
 
 - (void)loadOrders:(void (^)(NSArray *, NSError *))callback{
 
-    WEAK_SELF(self);
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^
-                   {
+    [OrderListNetworkTool requestWithParameters:nil successCallback:^(id _Nullable result) {
+        
+        
+    } failCallback:^(id _Nullable error) {
+        
+        
+        
+    }];
+    
+
+    NSArray *orders = [MyOrderInfo defaultOrders];
+    
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+       
+        _items = [[MyOrderInfoModel configWithOrderInfos:orders] mutableCopy];
+
+        dispatch_async(dispatch_get_main_queue(), ^{
+            
+            if(self){
+                
+                NSArray *products = _items;
+                NSError *error    = nil;;
+                
+                if(callback){
                     
-           STRONG_SELF(self);
-           if(self){
-               
-               NSArray *products = @[];
-               NSError *error    = nil;;
-               
-               if(callback){
-                   
-                   callback(products,error);
-               }
-           }
-           
-       });
+                    callback(products,error);
+                }
+            }
+        });
+        
+    });
 
 }
 
 
 - (NSArray *)items{
 
-    return @[@"",@"",@"",@""];
+    return _items;
 }
 
 @end

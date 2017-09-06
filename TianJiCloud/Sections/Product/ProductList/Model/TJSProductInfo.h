@@ -10,8 +10,10 @@
 
 @interface TJSProductInfo : NSObject
 
+@property (nonatomic,assign) NSInteger pid;
+
 @property (nonatomic,copy) NSString *name;
 
-
+@property (nonatomic,copy) NSString *purl;
 
 @end

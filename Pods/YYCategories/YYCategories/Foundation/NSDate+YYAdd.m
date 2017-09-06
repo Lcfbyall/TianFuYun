@@ -89,6 +89,9 @@ YYSYNTH_DUMMY_CLASS(NSDate_YYAdd)
     return [added isToday];
 }
 
+
+#pragma mark - modify
+
 - (NSDate *)dateByAddingYears:(NSInteger)years {
     NSCalendar *calendar =  [NSCalendar currentCalendar];
     NSDateComponents *components = [[NSDateComponents alloc] init];
@@ -133,6 +136,9 @@ YYSYNTH_DUMMY_CLASS(NSDate_YYAdd)
     NSDate *newDate = [NSDate dateWithTimeIntervalSinceReferenceDate:aTimeInterval];
     return newDate;
 }
+
+
+#pragma mark - formate
 
 - (NSString *)stringWithFormat:(NSString *)format {
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];

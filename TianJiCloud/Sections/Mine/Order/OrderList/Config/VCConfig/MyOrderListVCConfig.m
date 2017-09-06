@@ -19,8 +19,9 @@
 
 - (void)setup:(MyOrderListViewController *)vc{
 
+    _vc = vc;
 
-
+   
 }
 
 @end

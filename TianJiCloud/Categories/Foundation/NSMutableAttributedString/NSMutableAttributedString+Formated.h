@@ -46,15 +46,19 @@
 - (NSMutableAttributedString* (^)(UIColor *underLineColor,NSRange range,NSUnderlineStyle style))underLineRange;
 
 
-
-
-
-
 //extensions
 - (void)setTextColor:(UIColor *)textColor occurenceOfString:(NSString*)separator;
 - (void)setFont:(UIFont *)font occurenceOfString:(NSString*)separator;
+
 - (void)setTextColor:(UIColor *)textColor afterOccurenceOfString:(NSString*)separator;
 - (void)setFont:(UIFont *)font afterOccurenceOfString:(NSString*)separator;
+
+- (void)setTextColor:(UIColor *)textColor formerOccurenceOfString:(NSString*)separator;
+- (void)setFont:(UIFont *)font formerOccurenceOfString:(NSString*)separator;
+
+
+
+
 - (void)setUnderLineColor:(UIColor *)underLineColor
         occurenceOfString:(NSString *)separator
                     style:(NSUnderlineStyle)style;
@@ -64,8 +68,13 @@
 //Chainable extensions
 - (NSMutableAttributedString* (^)(UIColor *textColor,NSString*occurenceString))occurenceTextColor;
 - (NSMutableAttributedString* (^)(UIFont  *font ,     NSString*occurenceString))occurenceFont;
+
 - (NSMutableAttributedString* (^)(UIColor *textColor,NSString*afterString))afterTextColor;
 - (NSMutableAttributedString* (^)(UIFont  *font,     NSString*afterString))afterFont;
+
+- (NSMutableAttributedString* (^)(UIColor *textColor,NSString*formerString))formerTextColor;
+- (NSMutableAttributedString* (^)(UIFont  *font,     NSString*formerString))formerFont;
+
 - (NSMutableAttributedString* (^)(UIColor *underLineColor,NSString *occurenceString,NSUnderlineStyle style))occurenceUnderLine;
 - (NSMutableAttributedString* (^)(UIColor *underLineColor,NSString *afterString,NSUnderlineStyle style))afterUnderLine;
 

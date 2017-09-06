@@ -14,6 +14,8 @@
 #import "MyOrderInfoModel.h"
 #import "MyOrderListTableCell.h"
 
+static NSString *const headerFooterIdentifier = @"TJSMyOrderListFooterIdentifier";
+
 @interface TJSMyOrderListTableAdapter ()
 
 @property (nonatomic,strong) TJSMyOrderListCellFactory *cellFactory;
@@ -34,40 +36,44 @@
         _tableView   = tableView;
     
     }
-    
     return self;
 }
 
+- (void)setInteractor:(id<TJSMyOrderListInteractor>)interactor{
+ 
+    _interactor = interactor;
+    
+    [self setupTableView];
+}
 
 #pragma mark - Private
 
 - (void)setupTableView{
   
     
+    [_tableView registerClass:[UITableViewHeaderFooterView class] forHeaderFooterViewReuseIdentifier:headerFooterIdentifier];
 }
 
 
 #pragma mark - <UITableViewDataSource>
 
-
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 1;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-  
-    
     id<TJSMyOrderListInteractor> interactor = self.interactor;
     
     return [[interactor items] count];
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+   
+    return 1;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
 
     TJSBaseTableViewCell *cell = nil;
     
-    MyOrderInfoModel * info = [[self.interactor items] objectAtIndex:indexPath.row];
+    MyOrderInfoModel * info = [[self.interactor items] objectAtIndex:indexPath.section];
     
     cell = [((TJSMyOrderListCellFactory *)self.cellFactory)
             cellInTable:tableView forOrderInfoModel:info];
@@ -75,7 +81,7 @@
     //cell 的 delegate 给 vc ,self.cellDelegate就是vc
     //[(TJSBaseTableViewCell *)cell setDelegate:self.cellDelegate];
     
-    [cell tjs_bindDataToCellWithValue:info];
+    [(TJSBaseTableViewCell *)cell tjs_bindDataToCellWithValue:info];
 
     return cell;
 }
@@ -87,7 +93,7 @@
 
     CGFloat cellHeight = 0;
     
-    id model = [[self.interactor items] objectAtIndex:indexPath.row];
+    id model = [[self.interactor items] objectAtIndex:indexPath.section];
 
     id <TJSMyOrderListCellLayoutConfig >layoutConfig = [TJSMyOrderListCellLayoutConfig sharedLayoutConfig];
     
@@ -98,16 +104,26 @@
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
     
-    
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
 
-     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    //TJSBaseTableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    //id model = [[self.interactor items] objectAtIndex:indexPath.section];
     
-    [UIViewController tjs_pushViewController:ProductDetailVC params:@{} animated:YES];
+    [UIViewController tjs_pushViewController:ProductDetailVC params:@{@"webUrl":@"http://wandou.im/1ig5qp"} animated:YES];
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
+    
+    UITableViewHeaderFooterView *header = [tableView dequeueReusableHeaderFooterViewWithIdentifier:headerFooterIdentifier];
+    header.contentView.backgroundColor = ThemeService.weak_color_00;
+    return header;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+    return section?16:0;
 }
 
 @end

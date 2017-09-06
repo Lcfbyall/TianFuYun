@@ -30,9 +30,9 @@
     
     [self createWkWebview];
     
-    self.titleName = self.params[@""];
-    [self loadWebWithUrl:self.params[@""]];
-    self.finalUrl  = self.params[@""];
+    self.titleName = self.params[@"titleName"];
+    [self loadWebWithUrl:self.params[@"webUrl"]];
+    self.finalUrl  = self.params[@"webUrl"];
 }
 
 
@@ -50,9 +50,6 @@
     }];
 }
 
-/**
- 添加刷新
- */
 - (void)tjs_configRefreshHeader{
     
     WEAK_SELF(self);
@@ -64,11 +61,8 @@
 }
 
 
-
-
-
-
 #pragma mark - WKScriptMessageHandler Methods
+
 - (void)userContentController:(WKUserContentController *)userContentController didReceiveScriptMessage:(WKScriptMessage *)message {
     
     //这里就是使用高端配置，js调用native的处理地方。我们可以根据name和body，进行桥协议的处理。
@@ -78,6 +72,7 @@
 
 
 #pragma mark - WKNavigationDelegate Methods
+
 - (void)webView:(WKWebView *)webView didStartProvisionalNavigation:(null_unspecified WKNavigation *)navigation {
 }
 
@@ -119,7 +114,6 @@
         return;
     }
 }
-
 
 
 #pragma mark - WKUIDelegate Methods
@@ -168,8 +162,6 @@ initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(NSString * _Nu
 }
 
 
-
-
 #pragma mark - Action Methods
 - (void)clickBackToRecordViewController:(UIBarButtonItem *)barItem {
     [self.navigationController popViewControllerAnimated:YES];
@@ -184,7 +176,6 @@ initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(NSString * _Nu
     }
     [_wkWebView goBack];
 }
-
 
 
 #pragma mark - KVO

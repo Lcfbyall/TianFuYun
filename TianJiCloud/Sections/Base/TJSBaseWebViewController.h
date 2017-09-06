@@ -29,8 +29,8 @@
 
 @end
 
-
-
 @interface TJSBaseWebViewController : TJSBaseViewController <WKUIDelegate,WKNavigationDelegate,WKScriptMessageHandler,TJSBaseWebControllerProtocol>
 
 @end
+
+

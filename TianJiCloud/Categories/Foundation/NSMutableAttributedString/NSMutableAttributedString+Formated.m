@@ -56,12 +56,10 @@
     }
     
 }
-
 - (void)setFont:(UIFont *)font{
     
     [self setFont:font range:NSMakeRange(0, self.length)];
 }
-
 - (void)setFont:(UIFont *)font range:(NSRange)range
 {
     
@@ -73,12 +71,10 @@
     }
     
 }
-
 - (void)setUnderLineColor:(UIColor *)underLineCoolor style:(NSUnderlineStyle)style{
     
     [self setUnderLineColor:underLineCoolor range:NSMakeRange(0, self.length) style:style];
 }
-
 - (void)setUnderLineColor:(UIColor *)underLineCoolor
                     range:(NSRange)range
                     style:(NSUnderlineStyle)style{
@@ -93,6 +89,21 @@
                      value:underLineCoolor
                      range:range];
     }
+}
+
+- (void)setLineSpacing:(CGFloat)lineSpacing{
+
+    [self setLineSpacing:lineSpacing range:NSMakeRange(0, self.length)];
+}
+
+- (void)setLineSpacing:(CGFloat)lineSpacing  range:(NSRange)range{
+    
+    NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
+    paragraphStyle.lineSpacing = lineSpacing;
+
+    [self addAttribute:NSParagraphStyleAttributeName
+                     value:paragraphStyle
+                     range:range];
 }
 
 //chainable base
@@ -151,6 +162,27 @@
     };
 }
 
+- (NSMutableAttributedString* (^)(CGFloat lineSpacing))lineSpacing{
+    
+    return ^id(CGFloat ineSpacing) {
+        
+        [self setLineSpacing:ineSpacing];
+        
+        return self;
+    };
+}
+
+- (NSMutableAttributedString* (^)(CGFloat lineSpacing,NSRange range))lineSpacingRange{
+    
+    return ^id(CGFloat ineSpacing,NSRange range) {
+        
+        [self setLineSpacing:ineSpacing range:range];
+        
+        return self;
+    };
+}
+
+
 
 
 
@@ -169,7 +201,6 @@
         [self setTextColor:textColor range:range];
     }
 }
-
 - (void)setFont:(UIFont *)font occurenceOfString:(NSString*)separator{
     
     NSRange range = [self p_rangeOfString:separator];
@@ -179,7 +210,6 @@
         [self setFont:font range:range];
     }
 }
-
 - (void)setTextColor:(UIColor *)textColor afterOccurenceOfString:(NSString*)separator{
     
     NSRange range = [self p_rangeOfString:separator];
@@ -228,8 +258,31 @@
         [self setUnderLineColor:underLineColor range:range style:style];
     }
 }
+- (void)setTextColor:(UIColor *)textColor formerOccurenceOfString:(NSString*)separator{
 
+    NSRange range = [self p_rangeOfString:separator];
+    
+    if (range.location != NSNotFound)
+    {
+        range.length = range.location;
+        range.location =0;
+        
+        [self setTextColor:textColor range:range];
+    }
+}
+- (void)setFont:(UIFont *)font formerOccurenceOfString:(NSString*)separator{
 
+    NSRange range = [self p_rangeOfString:separator];
+    
+    if (range.location != NSNotFound)
+    {
+        range.length = range.location;
+        range.location =0;
+        
+        [self setFont:font range:range];
+    }
+
+}
 
 
 //Chainable extensions
@@ -255,9 +308,7 @@
     
     return ^id(UIColor *textColor,NSString *afterString){
         
-        
         [self setTextColor:textColor afterOccurenceOfString:afterString];
-        
         
         return self;
     };
@@ -267,36 +318,47 @@
     
     return ^id(UIFont *font,NSString *afterString){
         
-        
         [self setFont:font afterOccurenceOfString:afterString];
         
         return  self;
     };
 }
+- (NSMutableAttributedString* (^)(UIColor *textColor,NSString*formerString))formerTextColor{
 
-
-- (NSMutableAttributedString* (^)(UIColor *,NSString *,NSUnderlineStyle))occurenceUnderLine{
-    
-    return ^id(UIColor *underLineColor,NSString *occurenceString,NSUnderlineStyle style){
+    return ^id(UIColor *textColor,NSString *formerString){
         
-        
-        [self setUnderLineColor:underLineColor occurenceOfString:occurenceString style:style];
-        
+        [self setTextColor:textColor formerOccurenceOfString:formerString];
         
         return self;
     };
 }
 
+- (NSMutableAttributedString* (^)(UIFont  *font,     NSString*formerString))formerFont{
+
+    return ^id(UIFont *font,NSString *formerString){
+        
+        [self setFont:font formerOccurenceOfString:formerString];
+        
+        return  self;
+    };
+}
+- (NSMutableAttributedString* (^)(UIColor *,NSString *,NSUnderlineStyle))occurenceUnderLine{
+    
+    return ^id(UIColor *underLineColor,NSString *occurenceString,NSUnderlineStyle style){
+        
+        [self setUnderLineColor:underLineColor occurenceOfString:occurenceString style:style];
+        
+        return self;
+    };
+}
 - (NSMutableAttributedString* (^)(UIColor *,NSString *,NSUnderlineStyle))afterUnderLine{
     
     return ^id(UIColor *underLineColor,NSString *afterString,NSUnderlineStyle style){
-        
         
         [self setUnderLineColor:underLineColor afterOccurenceOfString:afterString style:style];
         
         return self;
     };
 }
-
 
 @end

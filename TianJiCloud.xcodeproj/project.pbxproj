@@ -447,6 +447,13 @@
 		2C9115FC1F5E8E0900C315D6 /* EventKitManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9115FB1F5E8E0900C315D6 /* EventKitManager.m */; };
 		2C9115FE1F5E9C4F00C315D6 /* AddressSelectedDefaultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C9115FD1F5E9C4F00C315D6 /* AddressSelectedDefaultCell.xib */; };
 		2C9116001F5EA1FF00C315D6 /* AddressManageDefaultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C9115FF1F5EA1FF00C315D6 /* AddressManageDefaultCell.xib */; };
+		2C9116021F5F9D6000C315D6 /* MyOrderListTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C9116011F5F9D6000C315D6 /* MyOrderListTableCell.xib */; };
+		2C9116051F5FCF1400C315D6 /* OrderListNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9116041F5FCF1400C315D6 /* OrderListNetworkTool.m */; };
+		2C9116091F5FD57300C315D6 /* NSDate+TJSFormated.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9116081F5FD57300C315D6 /* NSDate+TJSFormated.m */; };
+		2C91160C1F5FD66F00C315D6 /* NSDate+TJSComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C91160B1F5FD66F00C315D6 /* NSDate+TJSComponent.m */; };
+		2C91160F1F5FD69700C315D6 /* NSDate+TJSDateModify.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C91160E1F5FD69700C315D6 /* NSDate+TJSDateModify.m */; };
+		2C9116121F5FDF2300C315D6 /* NSDate+TJSContrast.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9116111F5FDF2300C315D6 /* NSDate+TJSContrast.m */; };
+		2C9116151F5FE27800C315D6 /* NSDate+TJSInterval.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9116141F5FE27800C315D6 /* NSDate+TJSInterval.m */; };
 		2CA553081F43E1CB0095ECC1 /* RewardVCConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA553071F43E1CB0095ECC1 /* RewardVCConfig.m */; };
 		2CA5530F1F43EA7B0095ECC1 /* HistoryRewardConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA5530E1F43EA7B0095ECC1 /* HistoryRewardConfig.m */; };
 		2CA638FD1F4AD37700C39562 /* WithDrawDepositController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA638EB1F4AD37700C39562 /* WithDrawDepositController.m */; };
@@ -1571,6 +1578,19 @@
 		2C9115FB1F5E8E0900C315D6 /* EventKitManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventKitManager.m; sourceTree = "<group>"; };
 		2C9115FD1F5E9C4F00C315D6 /* AddressSelectedDefaultCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddressSelectedDefaultCell.xib; sourceTree = "<group>"; };
 		2C9115FF1F5EA1FF00C315D6 /* AddressManageDefaultCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddressManageDefaultCell.xib; sourceTree = "<group>"; };
+		2C9116011F5F9D6000C315D6 /* MyOrderListTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyOrderListTableCell.xib; sourceTree = "<group>"; };
+		2C9116031F5FCF1400C315D6 /* OrderListNetworkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderListNetworkTool.h; sourceTree = "<group>"; };
+		2C9116041F5FCF1400C315D6 /* OrderListNetworkTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderListNetworkTool.m; sourceTree = "<group>"; };
+		2C9116071F5FD57300C315D6 /* NSDate+TJSFormated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+TJSFormated.h"; sourceTree = "<group>"; };
+		2C9116081F5FD57300C315D6 /* NSDate+TJSFormated.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+TJSFormated.m"; sourceTree = "<group>"; };
+		2C91160A1F5FD66F00C315D6 /* NSDate+TJSComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+TJSComponent.h"; sourceTree = "<group>"; };
+		2C91160B1F5FD66F00C315D6 /* NSDate+TJSComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+TJSComponent.m"; sourceTree = "<group>"; };
+		2C91160D1F5FD69700C315D6 /* NSDate+TJSDateModify.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+TJSDateModify.h"; sourceTree = "<group>"; };
+		2C91160E1F5FD69700C315D6 /* NSDate+TJSDateModify.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+TJSDateModify.m"; sourceTree = "<group>"; };
+		2C9116101F5FDF2300C315D6 /* NSDate+TJSContrast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+TJSContrast.h"; sourceTree = "<group>"; };
+		2C9116111F5FDF2300C315D6 /* NSDate+TJSContrast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+TJSContrast.m"; sourceTree = "<group>"; };
+		2C9116131F5FE27800C315D6 /* NSDate+TJSInterval.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+TJSInterval.h"; sourceTree = "<group>"; };
+		2C9116141F5FE27800C315D6 /* NSDate+TJSInterval.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+TJSInterval.m"; sourceTree = "<group>"; };
 		2CA553061F43E1CB0095ECC1 /* RewardVCConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RewardVCConfig.h; sourceTree = "<group>"; };
 		2CA553071F43E1CB0095ECC1 /* RewardVCConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RewardVCConfig.m; sourceTree = "<group>"; };
 		2CA5530C1F43E20A0095ECC1 /* RewardConfigProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RewardConfigProtocol.h; sourceTree = "<group>"; };
@@ -2587,6 +2607,7 @@
 		2C4411E31F219A5300C453EF /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				2C9116061F5FD53B00C315D6 /* NSDate */,
 				2CEC59C51F4FF6E8006C03F5 /* NSBundle */,
 				2C4412641F21E11D00C453EF /* NSMutableAttributedString */,
 				2C44125A1F21DEF500C453EF /* NSObject */,
@@ -3018,6 +3039,7 @@
 			children = (
 				2C4C1BFC1F3846F600002166 /* MyOrderListTableCell.h */,
 				2C4C1BFD1F3846F600002166 /* MyOrderListTableCell.m */,
+				2C9116011F5F9D6000C315D6 /* MyOrderListTableCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -3036,6 +3058,8 @@
 		2C4C1BDB1F381CAF00002166 /* NetworkTool */ = {
 			isa = PBXGroup;
 			children = (
+				2C9116031F5FCF1400C315D6 /* OrderListNetworkTool.h */,
+				2C9116041F5FCF1400C315D6 /* OrderListNetworkTool.m */,
 			);
 			path = NetworkTool;
 			sourceTree = "<group>";
@@ -5039,6 +5063,23 @@
 			path = EventKit;
 			sourceTree = "<group>";
 		};
+		2C9116061F5FD53B00C315D6 /* NSDate */ = {
+			isa = PBXGroup;
+			children = (
+				2C9116131F5FE27800C315D6 /* NSDate+TJSInterval.h */,
+				2C9116141F5FE27800C315D6 /* NSDate+TJSInterval.m */,
+				2C9116071F5FD57300C315D6 /* NSDate+TJSFormated.h */,
+				2C9116081F5FD57300C315D6 /* NSDate+TJSFormated.m */,
+				2C91160A1F5FD66F00C315D6 /* NSDate+TJSComponent.h */,
+				2C91160B1F5FD66F00C315D6 /* NSDate+TJSComponent.m */,
+				2C91160D1F5FD69700C315D6 /* NSDate+TJSDateModify.h */,
+				2C91160E1F5FD69700C315D6 /* NSDate+TJSDateModify.m */,
+				2C9116101F5FDF2300C315D6 /* NSDate+TJSContrast.h */,
+				2C9116111F5FDF2300C315D6 /* NSDate+TJSContrast.m */,
+			);
+			path = NSDate;
+			sourceTree = "<group>";
+		};
 		2CA638E71F4AD37700C39562 /* WithDrawHome */ = {
 			isa = PBXGroup;
 			children = (
@@ -6930,6 +6971,7 @@
 				2C8CD1E81F57A7BD00F9654D /* common.css in Resources */,
 				2C8CD1F21F57A7BD00F9654D /* banner.jpg in Resources */,
 				2C8CD20E1F57A7BD00F9654D /* news_ico_comme_pre@2x.png in Resources */,
+				2C9116021F5F9D6000C315D6 /* MyOrderListTableCell.xib in Resources */,
 				2CEC5A011F501459006C03F5 /* AddressPikerView.xib in Resources */,
 				2C8CD21A1F57A7BD00F9654D /* flowplayer.controls.swf in Resources */,
 				2C7A34511F2F64DA004DD566 /* BankCardManager.storyboard in Resources */,
@@ -7143,6 +7185,7 @@
 				2C4D35E71F4C25860082BB36 /* CumulativeInvestInteractorImpl.m in Sources */,
 				2C859CF81F31EB2E00B86575 /* UIViewController+Alert.m in Sources */,
 				2C597DD81F4C358500415EB6 /* UIBarButtonItem+TJSCustom.m in Sources */,
+				2C91160F1F5FD69700C315D6 /* NSDate+TJSDateModify.m in Sources */,
 				2CB4F5EF1F41C3BB00FF98C9 /* ContractAddressListStore.m in Sources */,
 				2C4412821F21EA8900C453EF /* UIImage+Retinted.m in Sources */,
 				2C85E3701F2ED87A00ADD360 /* MineHomeVCConfig.m in Sources */,
@@ -7218,6 +7261,7 @@
 				2C597DBB1F4C2CB900415EB6 /* SettingHomeCellFactory.m in Sources */,
 				2CCBE4A41F344A98006C4018 /* MineHomeCellItem.m in Sources */,
 				2C9115FC1F5E8E0900C315D6 /* EventKitManager.m in Sources */,
+				2C91160C1F5FD66F00C315D6 /* NSDate+TJSComponent.m in Sources */,
 				2C8CD12C1F554BA900F9654D /* RootControllerManager.m in Sources */,
 				2C8BB7B81F315CA600E2D75F /* HomeHeaderWebController.m in Sources */,
 				2CCBE4831F3415F2006C4018 /* MineHomeHeaderCollectionLayout.m in Sources */,
@@ -7542,6 +7586,7 @@
 				2C8DE60C1F2B15F3009B3AE2 /* TJSDiscoNewsListVCConfig.m in Sources */,
 				2C8CD13D1F5552F100F9654D /* ProductDetailFooter.m in Sources */,
 				2C83C72C1F39BB46004034CA /* HistoryRewardsController.m in Sources */,
+				2C9116121F5FDF2300C315D6 /* NSDate+TJSContrast.m in Sources */,
 				2C85E3581F2ECDA200ADD360 /* CapitalRecordContainer.m in Sources */,
 				2CAF43111F2829B300ABCA5E /* TJSAppInfo.m in Sources */,
 				2CB4F5E91F41C3BB00FF98C9 /* ContractInfo.m in Sources */,
@@ -7579,6 +7624,7 @@
 				2CB4F5E31F41C3BB00FF98C9 /* MyContractViewController.m in Sources */,
 				2C4412671F21E17200C453EF /* NSMutableAttributedString+Formated.m in Sources */,
 				2CD896EE1F453F8C008F7C73 /* ContractAddAddressContentConfigFactory.m in Sources */,
+				2C9116091F5FD57300C315D6 /* NSDate+TJSFormated.m in Sources */,
 				2CB4F5791F418FFB00FF98C9 /* CumulateInvestDefaultCell.m in Sources */,
 				2C8DE58A1F29E066009B3AE2 /* TJSHomeListLayoutImpl.m in Sources */,
 				2C83C71D1F39B9C9004034CA /* MessageKindListController.m in Sources */,
@@ -7657,6 +7703,7 @@
 				2C801BD21F233F46009F82F7 /* TJSBaseNavigationController.m in Sources */,
 				2CAF42D41F281B8600ABCA5E /* TJSProductListImageContentConfig.m in Sources */,
 				2C8CD16A1F56A52900F9654D /* AppDelegate.m in Sources */,
+				2C9116051F5FCF1400C315D6 /* OrderListNetworkTool.m in Sources */,
 				2CD8972E1F457604008F7C73 /* AddressSelectedDefaultCell.m in Sources */,
 				2C4C1C261F38568D00002166 /* TJSMyOrderListCellContentConfig.m in Sources */,
 				2C859CF41F31EB2E00B86575 /* ZLPhotoPickerCustomToolBarView.m in Sources */,
@@ -7669,6 +7716,7 @@
 				2CE542411F4EA85400205993 /* UpLoadIconAPi.m in Sources */,
 				2CCBE4931F34207C006C4018 /* TJSBaseTableViewCell.m in Sources */,
 				2C859CEF1F31EB2E00B86575 /* ZLPhotoPickerBrowserViewController+SignlePhotoBrowser.m in Sources */,
+				2C9116151F5FE27800C315D6 /* NSDate+TJSInterval.m in Sources */,
 				2C4C1C0D1F384A2500002166 /* TJSMyOrderListInteractorImpl.m in Sources */,
 				2CAF427A1F26EAA600ABCA5E /* AppVersionNetworkTool.m in Sources */,
 				2CF8B5411F3D46B8003B8520 /* ProductSearchResultCell.m in Sources */,
