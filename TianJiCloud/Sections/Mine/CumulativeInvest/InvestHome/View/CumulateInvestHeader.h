@@ -7,9 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CumulativeInvestConfigurateProtocol.h"
+
 
 @interface CumulateInvestHeader : UIView
 
 + (instancetype)header;
+
+- (void)tjs_reloadTableHeader;
+
+@property (nonatomic,weak) id<CumulativeInvestInteractor> interactor;
+
 
 @end

@@ -36,6 +36,7 @@
 "weak_color_01"   = "#efefef";
 "weak_color_02"   = "#dfdfdf";
 "weak_color_03"   = "#e1e1e1";
+"weak_color_04"   = "#fafafa"; /** 250,250,250 **/
 
 //
 "other_color_00"  = "#65ba67";

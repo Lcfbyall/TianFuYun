@@ -24,6 +24,8 @@
 
 - (NSArray *)items;
 
+- (NSString *)totalInvest;
+
 @end
 
 

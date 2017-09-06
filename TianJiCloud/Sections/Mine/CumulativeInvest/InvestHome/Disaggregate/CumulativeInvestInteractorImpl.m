@@ -25,6 +25,11 @@
     return self.dataSource.items;
 }
 
+- (NSString *)totalInvest{
+  
+    return self.dataSource.totalInvest;
+}
+
 
 #pragma mark - <CumulativeInvestLayoutDelegate>
 

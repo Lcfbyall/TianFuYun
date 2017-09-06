@@ -16,6 +16,9 @@
     
     if(self){
     
+        
+        self.selectedBackgroundView = [UIView new];
+        
     }
 
     return self;
@@ -25,10 +28,20 @@
  
     CumulateInvestInfoModel *model = (CumulateInvestInfoModel *)value;
     
+    self.backgroundView = nil;
+    self.backgroundColor = model.cellBgColor;
+    self.contentView.backgroundColor = model.cellBgColor;
+    self.selectedBackgroundView.backgroundColor = model.cellSelectedColor;
+    self.accessoryType = model.accessoryType;
+    self.selectionStyle = model.selectionStyle;
+    
     self.textLabel.text = model.text;
+    self.textLabel.textColor = model.textColor;
+    self.textLabel.highlightedTextColor = model.highlightedTextColor;
+    
     self.detailTextLabel.text = model.detailText;
-    
-    
+    self.detailTextLabel.textColor = model.detailTextColor;
+    self.detailTextLabel.highlightedTextColor= model.highlightedDetailTextColor;
 }
 
 

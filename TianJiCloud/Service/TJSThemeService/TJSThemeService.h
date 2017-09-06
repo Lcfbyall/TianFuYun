@@ -50,9 +50,12 @@
 // 按钮禁用文字颜色
 - (UIColor *)btn_color_05;
 
-// 页面最底层背景 变强
+// 页面最底层背景 浅 -> 深
 - (UIColor *)weak_color_00; /**< efeff4 */
-
+- (UIColor *)weak_color_01; /**< efefef */
+- (UIColor *)weak_color_02; /**< dfdfdf */
+- (UIColor *)weak_color_03; /**< e1e1e1 */
+- (UIColor *)weak_color_04; /**< fafafa */
 
 #pragma mark - Font
 

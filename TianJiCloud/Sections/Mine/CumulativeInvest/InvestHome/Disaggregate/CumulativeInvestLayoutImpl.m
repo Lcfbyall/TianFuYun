@@ -37,6 +37,7 @@
 
 - (void)reloadTable{
 
+    [self.tableView tjs_reloadTableHeader];
     [self.tableView reloadData];
 }
 

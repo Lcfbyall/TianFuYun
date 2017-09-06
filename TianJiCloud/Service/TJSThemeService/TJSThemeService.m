@@ -140,6 +140,25 @@
     return [UIColor tjs_colorWithHexString:self.colorDict[@"weak_color_00"]];
 }
 
+- (UIColor *)weak_color_01 {
+
+    return [UIColor tjs_colorWithHexString:self.colorDict[@"weak_color_01"]];
+}
+
+- (UIColor *)weak_color_02 {
+    
+    return [UIColor tjs_colorWithHexString:self.colorDict[@"weak_color_02"]];
+}
+
+- (UIColor *)weak_color_03 {
+    
+    return [UIColor tjs_colorWithHexString:self.colorDict[@"weak_color_03"]];
+}
+
+- (UIColor *)weak_color_04 {
+    
+    return [UIColor tjs_colorWithHexString:self.colorDict[@"weak_color_04"]];
+}
 
 
 #pragma mark - Font

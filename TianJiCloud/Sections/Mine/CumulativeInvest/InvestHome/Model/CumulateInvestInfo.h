@@ -12,9 +12,11 @@
 
 @property (nonatomic,assign) NSInteger investId;
 
-@property (nonatomic,copy) NSString *name;
+@property (nonatomic,copy)   NSString  *name;
 
-@property (nonatomic,copy) NSString *sum;
+@property (nonatomic,copy)   NSString  *sum;
+
+@property (nonatomic,strong) UIColor   *color;
 
 @end
 

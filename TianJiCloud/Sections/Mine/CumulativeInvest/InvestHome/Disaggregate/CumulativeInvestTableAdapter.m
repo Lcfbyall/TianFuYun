@@ -16,6 +16,8 @@ static NSString *const headerFooterIdentifier = @"CumulativeInvestListHeaderIden
 
 @property (nonatomic,weak)UITableView *tableView;
 
+@property (nonatomic,weak)CumulateInvestHeader *header;
+
 @property (nonatomic,strong)CumulativeInvestCellFactory *cellFactory;
 
 @end
@@ -44,13 +46,19 @@ static NSString *const headerFooterIdentifier = @"CumulativeInvestListHeaderIden
 
 - (void)setupTableView{
     
-  
-    _tableView.backgroundColor = ThemeService.weak_color_00;
+    WEAK_SELF(self);
+    _header = [CumulateInvestHeader header];
+    _header.interactor = _interactor;
+    [_tableView tjs_headerWithRefreshingBlock:^(UITableView *tableView) {
+        STRONG_SELF(self);
+        [self.header tjs_reloadTableHeader];
+    }];
     
-    _tableView.tableHeaderView = [CumulateInvestHeader header];
+    _tableView.tableHeaderView = _header;
+    _tableView.backgroundColor = ThemeService.weak_color_00;
+    _tableView.separatorStyle  = UITableViewCellSeparatorStyleNone;
     _tableView.tableFooterView = [UIView new];
     _tableView.contentInset = UIEdgeInsetsMake(16, 0, 0, 0);
-
     [_tableView registerClass:[UITableViewHeaderFooterView class] forHeaderFooterViewReuseIdentifier:headerFooterIdentifier];
 }
 

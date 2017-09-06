@@ -35,7 +35,7 @@
     
     _vc = vc;
     
-    UIColor *clear = [UIColor darkGrayColor];
+    UIColor *clear = RGB(250, 250, 250);
     
     NSString *str =  [clear hexStringWithAlpha];
 

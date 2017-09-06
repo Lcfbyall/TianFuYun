@@ -18,8 +18,14 @@
         CumulateInvestInfoModel *model = [CumulateInvestInfoModel new];
         model.info = obj;
         model.cellClass = @"CumulativeInvestDefaultCell";
-        model.cellBgColor = idx%2!=0?ThemeService.origin_color_00:ThemeService.weak_color_00;
+        model.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+        model.selectionStyle = UITableViewCellSelectionStyleDefault;
+        model.cellBgColor = idx%2!=0?ThemeService.origin_color_00:ThemeService.weak_color_04;
         model.cellSelectedColor = ThemeService.origin_color_00;
+        model.textColor = ThemeService.text_color_01;
+        model.highlightedTextColor = ThemeService.text_color_02;
+        model.detailTextColor = ThemeService.text_color_01;
+        model.highlightedDetailTextColor = ThemeService.text_color_02;
         model.text = obj.name;
         model.detailText = obj.sum;
         model.target = InvestProductVC;

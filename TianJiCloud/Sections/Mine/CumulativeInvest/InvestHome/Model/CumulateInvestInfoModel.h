@@ -17,13 +17,25 @@
 //根据情况配置
 @property (nonatomic,copy)   NSString *cellClass;
 
+@property (nonatomic,assign) UITableViewCellAccessoryType accessoryType;
+
+@property (nonatomic,assign) UITableViewCellSelectionStyle selectionStyle;
+
 @property (nonatomic,strong) UIColor  *cellBgColor;
 
 @property (nonatomic,strong) UIColor  *cellSelectedColor;
 
 @property (nonatomic,copy)   NSString *text;
 
+@property (nonatomic,strong) UIColor  *textColor;
+
+@property (nonatomic,strong) UIColor  *highlightedTextColor;
+
 @property (nonatomic,copy)   NSString *detailText;
+
+@property (nonatomic,strong) UIColor  *detailTextColor;
+
+@property (nonatomic,strong) UIColor  *highlightedDetailTextColor;
 
 @property (nonatomic,copy)   NSString *target;
 
