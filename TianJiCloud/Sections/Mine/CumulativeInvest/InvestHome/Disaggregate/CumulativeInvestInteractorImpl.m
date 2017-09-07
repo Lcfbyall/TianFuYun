@@ -30,6 +30,11 @@
     return self.dataSource.totalInvest;
 }
 
+- (NSArray <PNPieChartDataItem *>*)pieItems{
+   
+    return self.dataSource.pieItems;
+}
+
 
 #pragma mark - <CumulativeInvestLayoutDelegate>
 

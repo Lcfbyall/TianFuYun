@@ -40,6 +40,8 @@
 }
 
 
+#pragma mark - base method
+
 //base method
 - (void)setTextColor:(UIColor *)textColor{
     
@@ -90,12 +92,10 @@
                      range:range];
     }
 }
-
 - (void)setLineSpacing:(CGFloat)lineSpacing{
 
     [self setLineSpacing:lineSpacing range:NSMakeRange(0, self.length)];
 }
-
 - (void)setLineSpacing:(CGFloat)lineSpacing  range:(NSRange)range{
     
     NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
@@ -161,7 +161,6 @@
         return self;
     };
 }
-
 - (NSMutableAttributedString* (^)(CGFloat lineSpacing))lineSpacing{
     
     return ^id(CGFloat ineSpacing) {
@@ -171,7 +170,6 @@
         return self;
     };
 }
-
 - (NSMutableAttributedString* (^)(CGFloat lineSpacing,NSRange range))lineSpacingRange{
     
     return ^id(CGFloat ineSpacing,NSRange range) {
@@ -184,7 +182,7 @@
 
 
 
-
+#pragma mark - extensions
 
 //extensions
 - (NSRange)p_rangeOfString:(NSString *)string{
@@ -284,7 +282,6 @@
 
 }
 
-
 //Chainable extensions
 - (NSMutableAttributedString* (^)(UIColor *textColor,NSString*occurenceString))occurenceTextColor{
     
@@ -323,6 +320,7 @@
         return  self;
     };
 }
+
 - (NSMutableAttributedString* (^)(UIColor *textColor,NSString*formerString))formerTextColor{
 
     return ^id(UIColor *textColor,NSString *formerString){

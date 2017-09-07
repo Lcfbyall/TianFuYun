@@ -9,6 +9,7 @@
 #ifndef CumulativeInvestPrivateProtocol_h
 #define CumulativeInvestPrivateProtocol_h
 
+#import "PNPieChartDataItem.h"
 
 @interface CumulativeInvestOperateResult : NSObject
 
@@ -27,6 +28,8 @@
 - (NSArray *)items;
 
 - (NSString *)totalInvest;
+
+- (NSArray <PNPieChartDataItem *>*)pieItems;
 
 @end
 

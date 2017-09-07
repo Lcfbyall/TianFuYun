@@ -10,15 +10,23 @@
 #import "CumulateInvestInfoModel.h"
 #import "UIImage+FromColor.h"
 #import "NSMutableAttributedString+Formated.h"
+#import "TJSInvestPieChart.h"
 
 
 static NSInteger const column = 2;
 
-@interface CumulateInvestHeader ()
+@interface CumulateInvestHeader (){
+ 
+    CGRect pieFrame;
+    NSArray <PNPieChartDataItem *>*pieItems;
+}
 
 @property (weak, nonatomic) IBOutlet UILabel *sumL;
-
 @property (nonatomic,strong) NSMutableArray *btns;
+@property (weak, nonatomic) IBOutlet UIView *separatotLine;
+@property (weak, nonatomic) IBOutlet UIView *pieChartBg;
+@property (weak, nonatomic) TJSInvestPieChart *pieChart;
+
 
 @end
 
@@ -39,6 +47,14 @@ static NSInteger const column = 2;
     return self;
 }
 
+- (void)awakeFromNib{
+    
+    [super awakeFromNib];
+    
+    self.separatotLine.backgroundColor = ThemeService.weak_color_00;
+    
+}
+
 + (instancetype)header{
 
     CumulateInvestHeader *header = [[self alloc]init];
@@ -52,22 +68,52 @@ static NSInteger const column = 2;
     _interactor = interactor;
 }
 
+
+#pragma mark - reloadData
+
 - (void)tjs_reloadTableHeader{
     
+    [self layoutIfNeeded];
+    pieFrame = self.pieChartBg.bounds;
     _sumL.text = self.interactor.totalInvest;
     _sumL.attributedText = MAttWithStr(_sumL.text).textColor(ThemeService.text_color_01).font([UIFont systemFontOfSize:17.0]).afterTextColor(ThemeService.text_color_00,@"\n").afterFont([UIFont systemFontOfSize:30.0f],@"\n");
-
     _btns = [NSMutableArray array];
     [self p_addSubBtns];
+    pieItems = self.interactor.pieItems;
+    [self.pieChart strokeChart];
 }
 
+
 #pragma mark - subViews
+
+- (TJSInvestPieChart *)pieChart
+{
+    if(_pieChart == nil){
+        
+        TJSInvestPieChart *pie  = [[TJSInvestPieChart alloc] initWithFrame:pieFrame items:pieItems];
+        pie.descriptionTextColor         = [UIColor whiteColor];
+        pie.descriptionTextFont          = [UIFont fontWithName:@"Avenir-Medium" size:11.0];
+        pie.descriptionTextShadowColor   = [UIColor clearColor];
+        pie.showAbsoluteValues           = YES;
+        pie.showOnlyValues               = YES;
+        pie.hideValues                   = NO;
+        pie.hidedescription              = YES;
+        pie.showCenterdescription        = YES;
+        pie.shouldHighlightSectorOnTouch = YES;
+        pie.outerCircleRadius            = CGRectGetWidth(pieFrame) / 2;
+        pie.innerCircleRadius            = CGRectGetWidth(pieFrame) / 5;
+        
+        [self.pieChartBg addSubview:(_pieChart=pie)];
+    }
+
+    return _pieChart;
+}
 
 - (void)p_addSubBtns{
     
     [_btns makeObjectsPerformSelector:@selector(removeFromSuperview)];
     [_btns removeAllObjects];
-
+    
     WEAK_SELF(self);
     [self.interactor.items enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         
@@ -76,7 +122,7 @@ static NSInteger const column = 2;
         //找到最长的
         CGFloat itemW = 80;
         CGFloat itemH = 20;
-        CGFloat X     = idx % column * (itemW+10) + 30;
+        CGFloat X     = idx % column * (itemW+10) + 20;
         CGFloat Y     = idx / column * (itemH+10) + 100;
         UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
         btn.frame     = CGRectMake(X, Y, itemW, itemH);
@@ -91,7 +137,6 @@ static NSInteger const column = 2;
         [self addSubview:btn];
         [self.btns addObject:btn];
     }];
-
 }
 
 

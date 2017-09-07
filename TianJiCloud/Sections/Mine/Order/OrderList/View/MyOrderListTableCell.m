@@ -8,6 +8,8 @@
 
 #import "MyOrderListTableCell.h"
 #import "MyOrderInfoModel.h"
+#import "UILabel+TJSEdgeInsets.h"
+#import "CALayer+YYAdd.h"
 
 @interface MyOrderListTableCell ()
 
@@ -29,6 +31,7 @@
 
 @property (nonatomic,strong) UIImage *rightarrow;
 
+@property (nonatomic,strong) CAShapeLayer *borderLayer;
 
 @end
 
@@ -42,6 +45,8 @@
     self.contentBgView.backgroundColor = ThemeService.weak_color_04;
     
     self.rightarrow = IMAGEOriginal(@"dark_arrow");
+    
+    self.orderTypeL.tjs_edgeInsets = UIEdgeInsetsMake(5, 10, 5, 10);
 }
 
 
@@ -50,7 +55,6 @@
 - (void)tjs_bindDataToCellWithValue:(id)value{
 
     MyOrderInfoModel *model = (MyOrderInfoModel *)value;
-    
     self.orderTypeL.attributedText = model.orderType;
     [self.orderName setAttributedTitle:model.orderName forState:UIControlStateNormal];
     [self.orderName setImage:self.rightarrow forState:UIControlStateNormal];
@@ -60,6 +64,29 @@
     self.investorL.attributedText = model.investor;
     self.investmentL.attributedText = model.investment;
     self.orderNumTimeL.attributedText = model.orderNumTime;
+    [self setNeedsLayout];
+    [self layoutIfNeeded];
+    [self.orderTypeL.layer addSublayer:self.borderLayer];
+}
+
+- (CAShapeLayer *)borderLayer{
+
+    if(_borderLayer==nil){
+        
+        UIBezierPath *borderPath = [UIBezierPath bezierPathWithRoundedRect:self.orderTypeL.bounds byRoundingCorners:UIRectCornerTopLeft|UIRectCornerTopRight|UIRectCornerBottomLeft cornerRadii:CGSizeMake(15, 15)];
+        //UIBezierPath *borderPath = [UIBezierPath bezierPathWithRoundedRect:self.orderTypeL.bounds cornerRadius:15];
+        CAShapeLayer *maskLayer = [[CAShapeLayer alloc] init];
+        maskLayer.lineWidth = 1;
+        maskLayer.fillColor = [UIColor clearColor].CGColor;
+        maskLayer.strokeColor = ThemeService.text_color_00.CGColor;
+        maskLayer.path = borderPath.CGPath;
+        
+        _borderLayer = maskLayer;
+    }
+    
+   return _borderLayer;
 }
 
 @end
+
+

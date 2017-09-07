@@ -46,6 +46,7 @@
     
     CGSize orignal = [self tjs_intrinsicContentSize];
     if(!UIOffsetEqualToOffset(self.tjs_intrinsicOffset, UIOffsetMake(0,0))){
+        
         return CGSizeMake(orignal.width+self.tjs_intrinsicOffset.horizontal*2,orignal.height+self.tjs_intrinsicOffset.vertical*2);
     }
     return orignal;

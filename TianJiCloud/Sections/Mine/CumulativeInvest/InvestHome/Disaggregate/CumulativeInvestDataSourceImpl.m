@@ -9,10 +9,13 @@
 #import "CumulativeInvestDataSourceImpl.h"
 #import "CumulateInvestNetworkTool.h"
 #import "CumulateInvestInfoModel.h"
+#import "PNPieChartDataItem.h"
 
 @interface CumulativeInvestDataSourceImpl ()
 
 @property (nonatomic,strong) NSMutableArray *items;
+
+@property (nonatomic,strong) NSMutableArray *pieItems;
 
 @end
 
@@ -61,6 +64,28 @@
     
     _items = [[CumulateInvestInfoModel configWithInvestInfos:infos] mutableCopy];
     
+    PNPieChartDataItem *onePie = [PNPieChartDataItem new];
+    onePie.value = 0.12;
+    onePie.color = RGB(123, 171, 244);
+    
+    PNPieChartDataItem *twoPie = [PNPieChartDataItem new];
+    twoPie.value = 0.34;
+    twoPie.color = RGB(100, 195, 250);
+    
+    PNPieChartDataItem *threePie = [PNPieChartDataItem new];
+    threePie.value = 0.56;
+    threePie.color = RGB(249, 165, 64);
+    
+    PNPieChartDataItem *fourPie = [PNPieChartDataItem new];
+    fourPie.value = 0.78;
+    fourPie.color = RGB(47, 102, 161);
+    
+    PNPieChartDataItem *fivePie = [PNPieChartDataItem new];
+    fivePie.value = 0.99;
+    fivePie.color = RGB(244, 101, 94);
+    
+    _pieItems = [@[onePie,twoPie,threePie,fourPie,fivePie] mutableCopy];
+    
     if(callback)callback(_items,nil);
 }
 
@@ -72,6 +97,11 @@
 - (NSString *)totalInvest{
  
     return [NSString stringWithFormat:@"%@\n%@%@",@"累计投资",@"5.13",@"万"];
+}
+
+- (NSArray <PNPieChartDataItem *>*)pieItems{
+
+    return  _pieItems;
 }
 
 #pragma mark - Private

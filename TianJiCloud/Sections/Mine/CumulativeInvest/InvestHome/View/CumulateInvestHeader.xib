@@ -6,13 +6,14 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="I5w-ih-Ha0" customClass="CumulateInvestHeader">
-            <rect key="frame" x="0.0" y="0.0" width="299" height="200"/>
+            <rect key="frame" x="0.0" y="0.0" width="496" height="261"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hNu-Al-gQT">
@@ -26,26 +27,67 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X80-DI-PRo">
-                    <rect key="frame" x="0.0" y="90.5" width="299" height="1"/>
+                    <rect key="frame" x="0.0" y="90.5" width="496" height="1"/>
                     <color key="backgroundColor" red="0.79607843140000001" green="0.79607843140000001" blue="0.80392156859999997" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="1" id="JLU-jB-QYu"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u8U-4r-Jf5">
+                    <rect key="frame" x="371" y="126.5" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="AkM-8R-ckB"/>
+                        <constraint firstAttribute="width" secondItem="u8U-4r-Jf5" secondAttribute="height" multiplier="1:1" id="RJI-l0-tJB"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Qi-Qu-nkb">
+                    <rect key="frame" x="410" y="91.5" width="22" height="35"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="22" id="DtU-GU-VYr"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ca2-us-5RA">
+                    <rect key="frame" x="410" y="226.5" width="22" height="34.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="22" id="XFB-76-Q6l"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3P2-BI-HdD">
+                    <rect key="frame" x="471" y="157" width="25" height="38.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="38.5" id="Yhh-1v-yli"/>
+                        <constraint firstAttribute="width" constant="25" id="dhg-Gl-zw4"/>
                     </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="X80-DI-PRo" firstAttribute="leading" secondItem="I5w-ih-Ha0" secondAttribute="leading" id="4nx-kF-VSU"/>
+                <constraint firstItem="Ca2-us-5RA" firstAttribute="height" secondItem="5Qi-Qu-nkb" secondAttribute="height" id="FGK-68-vcr"/>
                 <constraint firstItem="hNu-Al-gQT" firstAttribute="leading" secondItem="I5w-ih-Ha0" secondAttribute="leading" constant="16" id="JOY-Td-Wcb"/>
+                <constraint firstItem="u8U-4r-Jf5" firstAttribute="top" secondItem="5Qi-Qu-nkb" secondAttribute="bottom" id="JQ5-0p-q28"/>
                 <constraint firstAttribute="trailing" secondItem="X80-DI-PRo" secondAttribute="trailing" id="Lc5-ud-GBQ"/>
+                <constraint firstItem="Ca2-us-5RA" firstAttribute="top" secondItem="u8U-4r-Jf5" secondAttribute="bottom" id="Mdv-M2-QDs"/>
                 <constraint firstItem="hNu-Al-gQT" firstAttribute="top" secondItem="I5w-ih-Ha0" secondAttribute="top" constant="15" id="N6t-Jv-laK"/>
+                <constraint firstItem="3P2-BI-HdD" firstAttribute="centerY" secondItem="u8U-4r-Jf5" secondAttribute="centerY" id="U0H-Ka-Udh"/>
+                <constraint firstItem="5Qi-Qu-nkb" firstAttribute="centerX" secondItem="u8U-4r-Jf5" secondAttribute="centerX" id="VVX-JD-Ds4"/>
+                <constraint firstAttribute="trailing" secondItem="3P2-BI-HdD" secondAttribute="trailing" id="WP0-R9-4lP"/>
+                <constraint firstAttribute="bottom" secondItem="Ca2-us-5RA" secondAttribute="bottom" id="Y7H-Ks-vga"/>
+                <constraint firstItem="Ca2-us-5RA" firstAttribute="centerX" secondItem="u8U-4r-Jf5" secondAttribute="centerX" id="gTv-2n-MXN"/>
+                <constraint firstItem="5Qi-Qu-nkb" firstAttribute="top" secondItem="X80-DI-PRo" secondAttribute="bottom" id="mZ0-Bp-jAH"/>
+                <constraint firstItem="3P2-BI-HdD" firstAttribute="leading" secondItem="u8U-4r-Jf5" secondAttribute="trailing" id="roU-OS-8UV"/>
                 <constraint firstItem="X80-DI-PRo" firstAttribute="top" secondItem="hNu-Al-gQT" secondAttribute="bottom" constant="15" id="wyF-vO-Y6B"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
+                <outlet property="pieChartBg" destination="u8U-4r-Jf5" id="Afv-AE-boT"/>
+                <outlet property="separatotLine" destination="X80-DI-PRo" id="343-jJ-NeQ"/>
                 <outlet property="sumL" destination="hNu-Al-gQT" id="59b-E3-vfs"/>
             </connections>
-            <point key="canvasLocation" x="-179.5" y="-103"/>
+            <point key="canvasLocation" x="-34" y="-98.5"/>
         </view>
     </objects>
 </document>

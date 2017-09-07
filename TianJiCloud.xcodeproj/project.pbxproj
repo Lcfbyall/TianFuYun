@@ -454,6 +454,7 @@
 		2C91160F1F5FD69700C315D6 /* NSDate+TJSDateModify.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C91160E1F5FD69700C315D6 /* NSDate+TJSDateModify.m */; };
 		2C9116121F5FDF2300C315D6 /* NSDate+TJSContrast.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9116111F5FDF2300C315D6 /* NSDate+TJSContrast.m */; };
 		2C9116151F5FE27800C315D6 /* NSDate+TJSInterval.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9116141F5FE27800C315D6 /* NSDate+TJSInterval.m */; };
+		2C91161D1F60E2FF00C315D6 /* UILabel+TJSEdgeInsets.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C91161C1F60E2FF00C315D6 /* UILabel+TJSEdgeInsets.m */; };
 		2CA553081F43E1CB0095ECC1 /* RewardVCConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA553071F43E1CB0095ECC1 /* RewardVCConfig.m */; };
 		2CA5530F1F43EA7B0095ECC1 /* HistoryRewardConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA5530E1F43EA7B0095ECC1 /* HistoryRewardConfig.m */; };
 		2CA638FD1F4AD37700C39562 /* WithDrawDepositController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA638EB1F4AD37700C39562 /* WithDrawDepositController.m */; };
@@ -1591,6 +1592,8 @@
 		2C9116111F5FDF2300C315D6 /* NSDate+TJSContrast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+TJSContrast.m"; sourceTree = "<group>"; };
 		2C9116131F5FE27800C315D6 /* NSDate+TJSInterval.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+TJSInterval.h"; sourceTree = "<group>"; };
 		2C9116141F5FE27800C315D6 /* NSDate+TJSInterval.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+TJSInterval.m"; sourceTree = "<group>"; };
+		2C91161B1F60E2FF00C315D6 /* UILabel+TJSEdgeInsets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+TJSEdgeInsets.h"; sourceTree = "<group>"; };
+		2C91161C1F60E2FF00C315D6 /* UILabel+TJSEdgeInsets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+TJSEdgeInsets.m"; sourceTree = "<group>"; };
 		2CA553061F43E1CB0095ECC1 /* RewardVCConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RewardVCConfig.h; sourceTree = "<group>"; };
 		2CA553071F43E1CB0095ECC1 /* RewardVCConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RewardVCConfig.m; sourceTree = "<group>"; };
 		2CA5530C1F43E20A0095ECC1 /* RewardConfigProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RewardConfigProtocol.h; sourceTree = "<group>"; };
@@ -2546,11 +2549,11 @@
 		2C4411AA1F21981E00C453EF /* TianJiCloud */ = {
 			isa = PBXGroup;
 			children = (
-				2CAF431B1F282D7C00ABCA5E /* View */,
-				2C4411FD1F219A5300C453EF /* Tools */,
-				2C4411FE1F219A5300C453EF /* Vender */,
 				2C801BA31F233F46009F82F7 /* Sections */,
 				2C4411FC1F219A5300C453EF /* Service */,
+				2C4411FE1F219A5300C453EF /* Vender */,
+				2C4411FD1F219A5300C453EF /* Tools */,
+				2CAF431B1F282D7C00ABCA5E /* View */,
 				2C4411FB1F219A5300C453EF /* Resources */,
 				2C4411E21F219A5300C453EF /* Categories */,
 				2C4411FA1F219A5300C453EF /* NetworkAPIs */,
@@ -2885,6 +2888,8 @@
 		2C4412621F21E0AA00C453EF /* UILabel */ = {
 			isa = PBXGroup;
 			children = (
+				2C91161B1F60E2FF00C315D6 /* UILabel+TJSEdgeInsets.h */,
+				2C91161C1F60E2FF00C315D6 /* UILabel+TJSEdgeInsets.m */,
 			);
 			path = UILabel;
 			sourceTree = "<group>";
@@ -7677,6 +7682,7 @@
 				2CF8B55B1F3DA3D7003B8520 /* ProductSearchHotNetworkTool.m in Sources */,
 				2C4C1CA21F39497900002166 /* TJSInvestPieChart.m in Sources */,
 				2CAF43061F2828C200ABCA5E /* TJSProductListConfigurator.m in Sources */,
+				2C91161D1F60E2FF00C315D6 /* UILabel+TJSEdgeInsets.m in Sources */,
 				2C4C1C951F3948E800002166 /* PNGenericChart.m in Sources */,
 				2C8CD1001F53C2F800F9654D /* UIImage+NamedWithSize.m in Sources */,
 				2C83C71E1F39B9C9004034CA /* PersonalMessageController.m in Sources */,

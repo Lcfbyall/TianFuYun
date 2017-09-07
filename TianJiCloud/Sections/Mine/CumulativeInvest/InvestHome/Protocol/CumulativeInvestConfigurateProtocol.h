@@ -9,6 +9,8 @@
 #ifndef CumulativeInvestConfigurateProtocol_h
 #define CumulativeInvestConfigurateProtocol_h
 
+#import "PNPieChartDataItem.h"
+
 @protocol CumulativeInvestInteractorDelegate <NSObject>
 
 @optional
@@ -25,6 +27,8 @@
 - (NSArray *)items;
 
 - (NSString *)totalInvest;
+
+- (NSArray <PNPieChartDataItem *>*)pieItems;
 
 @end
 
