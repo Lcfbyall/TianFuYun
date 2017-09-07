@@ -58,7 +58,6 @@
 		2C1BFEBF1F2978C500665A71 /* Discovery.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C1BFEBE1F2978C500665A71 /* Discovery.storyboard */; };
 		2C2E65991F4D143B00681758 /* SettingHomeHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2E65981F4D143B00681758 /* SettingHomeHeader.m */; };
 		2C300F7C1F2F32BF00DD440E /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C300F7B1F2F32BF00DD440E /* Settings.storyboard */; };
-		2C300F7F1F2F3C3C00DD440E /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C300F7E1F2F3C3C00DD440E /* ProfileViewController.m */; };
 		2C300F821F2F3C5F00DD440E /* ModifyLogPasswordController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C300F811F2F3C5F00DD440E /* ModifyLogPasswordController.m */; };
 		2C300F851F2F3C7E00DD440E /* GesturePasswordController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C300F841F2F3C7E00DD440E /* GesturePasswordController.m */; };
 		2C300F881F2F3C9900DD440E /* FindWithDrawPasswordController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C300F871F2F3C9900DD440E /* FindWithDrawPasswordController.m */; };
@@ -455,6 +454,12 @@
 		2C9116121F5FDF2300C315D6 /* NSDate+TJSContrast.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9116111F5FDF2300C315D6 /* NSDate+TJSContrast.m */; };
 		2C9116151F5FE27800C315D6 /* NSDate+TJSInterval.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9116141F5FE27800C315D6 /* NSDate+TJSInterval.m */; };
 		2C91161D1F60E2FF00C315D6 /* UILabel+TJSEdgeInsets.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C91161C1F60E2FF00C315D6 /* UILabel+TJSEdgeInsets.m */; };
+		2C9116261F6132CA00C315D6 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9116251F6132CA00C315D6 /* ProfileViewController.m */; };
+		2C9116291F61330300C315D6 /* ProfileIdentityControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9116281F61330300C315D6 /* ProfileIdentityControllerViewController.m */; };
+		2C91162C1F61331D00C315D6 /* SexTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C91162B1F61331D00C315D6 /* SexTool.m */; };
+		2C91162F1F61333B00C315D6 /* ProfileMobileController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C91162E1F61333B00C315D6 /* ProfileMobileController.m */; };
+		2C9116321F61336000C315D6 /* ProfileServiceRegion.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9116311F61336000C315D6 /* ProfileServiceRegion.m */; };
+		2C9116351F61337E00C315D6 /* ProfileAddressController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9116341F61337E00C315D6 /* ProfileAddressController.m */; };
 		2CA553081F43E1CB0095ECC1 /* RewardVCConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA553071F43E1CB0095ECC1 /* RewardVCConfig.m */; };
 		2CA5530F1F43EA7B0095ECC1 /* HistoryRewardConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA5530E1F43EA7B0095ECC1 /* HistoryRewardConfig.m */; };
 		2CA638FD1F4AD37700C39562 /* WithDrawDepositController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA638EB1F4AD37700C39562 /* WithDrawDepositController.m */; };
@@ -856,8 +861,6 @@
 		2C2E65971F4D143B00681758 /* SettingHomeHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingHomeHeader.h; sourceTree = "<group>"; };
 		2C2E65981F4D143B00681758 /* SettingHomeHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingHomeHeader.m; sourceTree = "<group>"; };
 		2C300F7B1F2F32BF00DD440E /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
-		2C300F7D1F2F3C3C00DD440E /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
-		2C300F7E1F2F3C3C00DD440E /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
 		2C300F801F2F3C5F00DD440E /* ModifyLogPasswordController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModifyLogPasswordController.h; sourceTree = "<group>"; };
 		2C300F811F2F3C5F00DD440E /* ModifyLogPasswordController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModifyLogPasswordController.m; sourceTree = "<group>"; };
 		2C300F831F2F3C7E00DD440E /* GesturePasswordController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GesturePasswordController.h; sourceTree = "<group>"; };
@@ -1594,6 +1597,18 @@
 		2C9116141F5FE27800C315D6 /* NSDate+TJSInterval.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+TJSInterval.m"; sourceTree = "<group>"; };
 		2C91161B1F60E2FF00C315D6 /* UILabel+TJSEdgeInsets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+TJSEdgeInsets.h"; sourceTree = "<group>"; };
 		2C91161C1F60E2FF00C315D6 /* UILabel+TJSEdgeInsets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+TJSEdgeInsets.m"; sourceTree = "<group>"; };
+		2C9116241F6132CA00C315D6 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		2C9116251F6132CA00C315D6 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		2C9116271F61330300C315D6 /* ProfileIdentityControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileIdentityControllerViewController.h; sourceTree = "<group>"; };
+		2C9116281F61330300C315D6 /* ProfileIdentityControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileIdentityControllerViewController.m; sourceTree = "<group>"; };
+		2C91162A1F61331D00C315D6 /* SexTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SexTool.h; sourceTree = "<group>"; };
+		2C91162B1F61331D00C315D6 /* SexTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SexTool.m; sourceTree = "<group>"; };
+		2C91162D1F61333B00C315D6 /* ProfileMobileController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileMobileController.h; sourceTree = "<group>"; };
+		2C91162E1F61333B00C315D6 /* ProfileMobileController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileMobileController.m; sourceTree = "<group>"; };
+		2C9116301F61336000C315D6 /* ProfileServiceRegion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileServiceRegion.h; sourceTree = "<group>"; };
+		2C9116311F61336000C315D6 /* ProfileServiceRegion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileServiceRegion.m; sourceTree = "<group>"; };
+		2C9116331F61337E00C315D6 /* ProfileAddressController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileAddressController.h; sourceTree = "<group>"; };
+		2C9116341F61337E00C315D6 /* ProfileAddressController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileAddressController.m; sourceTree = "<group>"; };
 		2CA553061F43E1CB0095ECC1 /* RewardVCConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RewardVCConfig.h; sourceTree = "<group>"; };
 		2CA553071F43E1CB0095ECC1 /* RewardVCConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RewardVCConfig.m; sourceTree = "<group>"; };
 		2CA5530C1F43E20A0095ECC1 /* RewardConfigProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RewardConfigProtocol.h; sourceTree = "<group>"; };
@@ -4007,8 +4022,12 @@
 			isa = PBXGroup;
 			children = (
 				2C300F8C1F2F3D4700DD440E /* Profile.storyboard */,
-				2C300F7D1F2F3C3C00DD440E /* ProfileViewController.h */,
-				2C300F7E1F2F3C3C00DD440E /* ProfileViewController.m */,
+				2C9116231F6132CA00C315D6 /* Profile */,
+				2C9116221F6132CA00C315D6 /* Identity */,
+				2C9116211F6132CA00C315D6 /* Sex */,
+				2C9116201F6132CA00C315D6 /* Mobile */,
+				2C91161F1F6132CA00C315D6 /* Region */,
+				2C91161E1F6132CA00C315D6 /* Address */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -5083,6 +5102,60 @@
 				2C9116111F5FDF2300C315D6 /* NSDate+TJSContrast.m */,
 			);
 			path = NSDate;
+			sourceTree = "<group>";
+		};
+		2C91161E1F6132CA00C315D6 /* Address */ = {
+			isa = PBXGroup;
+			children = (
+				2C9116331F61337E00C315D6 /* ProfileAddressController.h */,
+				2C9116341F61337E00C315D6 /* ProfileAddressController.m */,
+			);
+			path = Address;
+			sourceTree = "<group>";
+		};
+		2C91161F1F6132CA00C315D6 /* Region */ = {
+			isa = PBXGroup;
+			children = (
+				2C9116301F61336000C315D6 /* ProfileServiceRegion.h */,
+				2C9116311F61336000C315D6 /* ProfileServiceRegion.m */,
+			);
+			path = Region;
+			sourceTree = "<group>";
+		};
+		2C9116201F6132CA00C315D6 /* Mobile */ = {
+			isa = PBXGroup;
+			children = (
+				2C91162D1F61333B00C315D6 /* ProfileMobileController.h */,
+				2C91162E1F61333B00C315D6 /* ProfileMobileController.m */,
+			);
+			path = Mobile;
+			sourceTree = "<group>";
+		};
+		2C9116211F6132CA00C315D6 /* Sex */ = {
+			isa = PBXGroup;
+			children = (
+				2C91162A1F61331D00C315D6 /* SexTool.h */,
+				2C91162B1F61331D00C315D6 /* SexTool.m */,
+			);
+			path = Sex;
+			sourceTree = "<group>";
+		};
+		2C9116221F6132CA00C315D6 /* Identity */ = {
+			isa = PBXGroup;
+			children = (
+				2C9116271F61330300C315D6 /* ProfileIdentityControllerViewController.h */,
+				2C9116281F61330300C315D6 /* ProfileIdentityControllerViewController.m */,
+			);
+			path = Identity;
+			sourceTree = "<group>";
+		};
+		2C9116231F6132CA00C315D6 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				2C9116241F6132CA00C315D6 /* ProfileViewController.h */,
+				2C9116251F6132CA00C315D6 /* ProfileViewController.m */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 		2CA638E71F4AD37700C39562 /* WithDrawHome */ = {
@@ -7236,6 +7309,7 @@
 				A2FE0A8C1F38B4B400E678E5 /* MyFavVCConfig.m in Sources */,
 				2C89AD791F2C5155005C29AC /* UISearchBar+TJSBlock.m in Sources */,
 				2C4591851F58F5BE00D0A798 /* DiscoRoadShowDataSorceImpl.m in Sources */,
+				2C9116351F61337E00C315D6 /* ProfileAddressController.m in Sources */,
 				2C8CD1361F55518C00F9654D /* ProductFilterApi.m in Sources */,
 				2C859CF11F31EB2E00B86575 /* ZLPhotoPickerBrowserPhotoImageView.m in Sources */,
 				2CA639181F4ADD5400C39562 /* WithDrawDepositSumCell.m in Sources */,
@@ -7289,6 +7363,7 @@
 				2CD897521F457B96008F7C73 /* AddressSelectedTableAdapter.m in Sources */,
 				2C85E3AD1F2F1C1D00ADD360 /* MineHomeInvestCell.m in Sources */,
 				2C8CD18A1F56C00200F9654D /* WXMediaMessage+messageConstruct.m in Sources */,
+				2C91162F1F61333B00C315D6 /* ProfileMobileController.m in Sources */,
 				2CB4F5761F418FFB00FF98C9 /* CumulateInvestNetworkTool.m in Sources */,
 				2C8DE5B61F2AD8B3009B3AE2 /* DiscoveryRoadShowListCell.m in Sources */,
 				2CCC85AB1F3AEE3A0009FC1C /* ProducFilterVCConfig.m in Sources */,
@@ -7321,6 +7396,7 @@
 				2CD896D01F453C34008F7C73 /* ConAddressMiddleLabelCell.m in Sources */,
 				2C8DE59C1F29FC51009B3AE2 /* TJSProductDetailController.m in Sources */,
 				2C4412A51F2201FF00C453EF /* TJSAnimatingRequestAccessory.m in Sources */,
+				2C9116321F61336000C315D6 /* ProfileServiceRegion.m in Sources */,
 				2C44123F1F21D2A600C453EF /* GVUserDefaults+TJSGlobalProperties.m in Sources */,
 				2CD8974E1F457B96008F7C73 /* AddressSelectedConfigurator.m in Sources */,
 				2C8CD1301F55508900F9654D /* NewsInfomationListApi.m in Sources */,
@@ -7345,6 +7421,7 @@
 				2C859CFE1F31EB2E00B86575 /* ZLPhotoPickerCollectionViewCell.m in Sources */,
 				2C85E3AA1F2F1C0000ADD360 /* MineHomeOrderCell.m in Sources */,
 				2CA639121F4AD9B000C39562 /* WithDrawDepositBaseCell.m in Sources */,
+				2C9116291F61330300C315D6 /* ProfileIdentityControllerViewController.m in Sources */,
 				2CD896EC1F453F8C008F7C73 /* ContractAddAddressCellFactory.m in Sources */,
 				2C4C1C011F38476900002166 /* MyOrderInfo.m in Sources */,
 				2C431DEB1F299A9600858C12 /* HomeVCConfig.m in Sources */,
@@ -7365,6 +7442,7 @@
 				2C027D041F3B3075001D7EB6 /* FeedBackCommitApi.m in Sources */,
 				2CB4F6071F42849100FF98C9 /* MyFavListConfigurator.m in Sources */,
 				2CCC85D01F3B0B650009FC1C /* ProductFilterCollectionCell.m in Sources */,
+				2C9116261F6132CA00C315D6 /* ProfileViewController.m in Sources */,
 				2C4412A61F2201FF00C453EF /* TJSBaseRequest+TJSSingleRequestBlock.m in Sources */,
 				2C801BD61F233F46009F82F7 /* TJSRootTabBarController.m in Sources */,
 				2C027D2D1F3C82D7001D7EB6 /* ProductSearchTableAdapter.m in Sources */,
@@ -7387,6 +7465,7 @@
 				2C89AD801F2C7E39005C29AC /* ProductSearchVCConfig.m in Sources */,
 				2CEC58DB1F4FCDE7006C03F5 /* UITextField+PlaceHolder.m in Sources */,
 				2CD897311F457619008F7C73 /* AddressSelectedBaseCell.m in Sources */,
+				2C91162C1F61331D00C315D6 /* SexTool.m in Sources */,
 				2CD897401F457B55008F7C73 /* AddressSelectedCellFactory.m in Sources */,
 				2CB4F63E1F42F26500FF98C9 /* ContractApplyLayoutImpl.m in Sources */,
 				2CB4F61F1F42A02400FF98C9 /* AddressSelectController.m in Sources */,
@@ -7664,7 +7743,6 @@
 				2C8CD18D1F56C59600F9654D /* AlipayManager.m in Sources */,
 				A28956981F3CA25E002D6845 /* ProductSearchResultLayout.m in Sources */,
 				2CCBE4A51F344A98006C4018 /* MineHomeCellIvestItem.m in Sources */,
-				2C300F7F1F2F3C3C00DD440E /* ProfileViewController.m in Sources */,
 				2C1B74D41F4698050000E71A /* BankCardAddViewController.m in Sources */,
 				2CB4F5E61F41C3BB00FF98C9 /* ContractListInteractorImpl.m in Sources */,
 				2C83C70A1F39B85B004034CA /* NewsListStoreTool.m in Sources */,

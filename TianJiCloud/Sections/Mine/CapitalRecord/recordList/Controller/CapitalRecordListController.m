@@ -18,7 +18,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 
-    self.view.backgroundColor = ThemeService.main_color_01;
+    self.view.backgroundColor = ThemeService.origin_color_00;
 
 }
 
