@@ -241,6 +241,11 @@ static NSString *const Invest_cell = @"MineHomeInvestCell";
             info.targetParams = @{@"webUrl":@"http://wandou.im/1ig5qp"};
         }
         
+        if([info.target isEqualToString:UseAgreementVC]){
+            
+            info.targetParams = @{@"webUrl":@"http://wandou.im/1ig5qp"};
+        }
+        
         if(idx==fourthTitles.count-1){
             
             NSString *appverison = [UIApplication tjs_appverison];
@@ -249,11 +254,12 @@ static NSString *const Invest_cell = @"MineHomeInvestCell";
             info.accessoryType = UITableViewCellAccessoryNone;
             info.cellOperation = NULL;
         }else{
+            
             info.detailTitle = nil;
             info.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
             info.cellOperation = ^(id obj1, id obj2) {
                 STRONG_SELF(info);
-                [UIViewController tjs_pushViewController:info.target animated:YES];
+                [UIViewController tjs_pushViewController:info.target params:info.targetParams animated:YES];
             };
         }
     }];
