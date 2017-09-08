@@ -19,7 +19,7 @@
     // Do something before all other app services
     // ...
     
-    
+
     
     
     // TJSAppDelegate (the super) does not implement -application:didFinishLaunchingWithOptions: actually.
