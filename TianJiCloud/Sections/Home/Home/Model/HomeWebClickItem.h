@@ -10,6 +10,8 @@
 
 @interface HomeWebClickItem : NSObject
 
+@property (nonatomic,copy) NSString *webUrl;
+
 @property (nonatomic,copy) NSString *title;
 
 @property (nonatomic,copy) NSString *subTitle;

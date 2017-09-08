@@ -233,7 +233,14 @@ static NSString *const Invest_cell = @"MineHomeInvestCell";
         info.image = [fourthImages objectAtIndex:idx];
         info.target= [fourthTargets objectAtIndex:idx];
         info.selectionStyle= UITableViewCellSelectionStyleDefault;
+        
         WEAK_SELF(info);
+        
+        if([info.target isEqualToString:AboutMeVC]){
+          
+            info.targetParams = @{@"webUrl":@"http://wandou.im/1ig5qp"};
+        }
+        
         if(idx==fourthTitles.count-1){
             
             NSString *appverison = [UIApplication tjs_appverison];

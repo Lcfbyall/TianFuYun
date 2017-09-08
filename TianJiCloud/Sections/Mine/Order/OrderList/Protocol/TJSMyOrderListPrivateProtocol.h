@@ -32,7 +32,8 @@
 - (void)deleteOrders:(NSArray <MyOrderInfoModel *> *)orders
               callback:(void (^)(BOOL success, NSError *error))callback;
 //
-- (NSArray *)items;
+- (NSArray<MyOrderInfoModel *> *)items;
+
 - (TJSMyOrderListOperateResult *)deleteModel:(MyOrderInfoModel *)model;
 - (TJSMyOrderListOperateResult *)deleteModels:(NSArray<MyOrderInfoModel *> *)models;
 

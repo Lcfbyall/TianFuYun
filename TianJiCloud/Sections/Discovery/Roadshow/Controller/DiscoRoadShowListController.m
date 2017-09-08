@@ -82,7 +82,7 @@
 
 - (BOOL)onTapCell:(id)value{
 
-    [UIViewController tjs_pushViewController:DiscoryRoadShowDetailVC params:@{} animated:YES];
+    [UIViewController tjs_pushViewController:DiscoryRoadShowDetailVC params:@{@"webUrl":@"http://wandou.im/1ig5qp"} animated:YES];
   
     return YES;
 }

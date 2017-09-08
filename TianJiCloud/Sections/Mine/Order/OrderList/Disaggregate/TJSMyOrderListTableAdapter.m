@@ -7,10 +7,8 @@
 //
 
 #import "TJSMyOrderListTableAdapter.h"
-
 #import "TJSMyOrderListCellFactory.h"
 #import "TJSMyOrderListCellLayoutConfig.h"
-
 #import "MyOrderInfoModel.h"
 #import "MyOrderListTableCell.h"
 
@@ -79,7 +77,7 @@ static NSString *const headerFooterIdentifier = @"TJSMyOrderListFooterIdentifier
             cellInTable:tableView forOrderInfoModel:info];
     
     //cell 的 delegate 给 vc ,self.cellDelegate就是vc
-    //[(TJSBaseTableViewCell *)cell setDelegate:self.cellDelegate];
+    [(TJSBaseTableViewCell *)cell setDelegate:self.cellDelegate];
     
     [(TJSBaseTableViewCell *)cell tjs_bindDataToCellWithValue:info];
 
@@ -93,9 +91,9 @@ static NSString *const headerFooterIdentifier = @"TJSMyOrderListFooterIdentifier
 
     CGFloat cellHeight = 0;
     
-    id model = [[self.interactor items] objectAtIndex:indexPath.section];
+    MyOrderInfoModel *model = [[self.interactor items] objectAtIndex:indexPath.section];
 
-    id <TJSMyOrderListCellLayoutConfig >layoutConfig = [TJSMyOrderListCellLayoutConfig sharedLayoutConfig];
+    id <TJSBaseCellLayoutConfig >layoutConfig = [TJSMyOrderListCellLayoutConfig sharedLayoutConfig];
     
     cellHeight = [layoutConfig contentSize:model cellWidth:SCREEN_WIDTH].height;
     
@@ -110,9 +108,13 @@ static NSString *const headerFooterIdentifier = @"TJSMyOrderListFooterIdentifier
 
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    //id model = [[self.interactor items] objectAtIndex:indexPath.section];
+    MyOrderInfoModel *model = [[self.interactor items] objectAtIndex:indexPath.section];
+    MyOrderListTableCell *cell =  [tableView cellForRowAtIndexPath:indexPath];
     
-    [UIViewController tjs_pushViewController:ProductDetailVC params:@{@"webUrl":@"http://wandou.im/1ig5qp"} animated:YES];
+    if([cell.delegate conformsToProtocol:@protocol(TJSBaseTableViewCellDelegate)] && [cell.delegate respondsToSelector:@selector(onTapCell:)]){
+        
+        [cell.delegate onTapCell:model];
+    }
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{

@@ -1024,10 +1024,8 @@
 		2C4C1C1E1F38531F00002166 /* TJSMyOrderListCellLayoutConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSMyOrderListCellLayoutConfig.m; sourceTree = "<group>"; };
 		2C4C1C201F38535A00002166 /* TJSMyBaseOrderListCellContentConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSMyBaseOrderListCellContentConfig.h; sourceTree = "<group>"; };
 		2C4C1C211F38535A00002166 /* TJSMyBaseOrderListCellContentConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSMyBaseOrderListCellContentConfig.m; sourceTree = "<group>"; };
-		2C4C1C231F3854DF00002166 /* TJSMyOrderListCellLayoutProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TJSMyOrderListCellLayoutProtocol.h; sourceTree = "<group>"; };
 		2C4C1C241F38568D00002166 /* TJSMyOrderListCellContentConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSMyOrderListCellContentConfig.h; sourceTree = "<group>"; };
 		2C4C1C251F38568D00002166 /* TJSMyOrderListCellContentConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSMyOrderListCellContentConfig.m; sourceTree = "<group>"; };
-		2C4C1C271F3860C800002166 /* TJSMyOrderListCellProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TJSMyOrderListCellProtocol.h; sourceTree = "<group>"; };
 		2C4C1C281F386DA100002166 /* TJSAppSoreUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSAppSoreUtil.h; sourceTree = "<group>"; };
 		2C4C1C291F386DA100002166 /* TJSAppSoreUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSAppSoreUtil.m; sourceTree = "<group>"; };
 		2C4C1C2B1F386DF400002166 /* TJSAlertHandleUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSAlertHandleUtil.h; sourceTree = "<group>"; };
@@ -3097,8 +3095,6 @@
 				2C4C1C171F384AFB00002166 /* TJSMyOrderListVCProtocol.h */,
 				2C4C1C181F384B5100002166 /* TJSMyOrderListConfigurateProtocol.h */,
 				2C4C1C191F384B9E00002166 /* TJSMyOrderListPrivateProtocol.h */,
-				2C4C1C271F3860C800002166 /* TJSMyOrderListCellProtocol.h */,
-				2C4C1C231F3854DF00002166 /* TJSMyOrderListCellLayoutProtocol.h */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";

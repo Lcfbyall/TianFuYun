@@ -114,9 +114,12 @@ static NSString *identifier = @"HomeFooterCollectionCell";
 
     [collectionView deselectItemAtIndexPath:indexPath animated:YES];
     
-    NSString *targetVC = ((HomeWebClickItem *)self.items[indexPath.item]).target;
+    HomeWebClickItem *item = ((HomeWebClickItem *)self.items[indexPath.item]);
+    NSString *targetVC = item.target;
+    NSString *webUrl = item.webUrl;
     
-    [UIViewController tjs_pushViewController:targetVC params:@{} animated:YES];
+    
+    [UIViewController tjs_pushViewController:targetVC params:@{@"webUrl":webUrl} animated:YES];
 
 }
 

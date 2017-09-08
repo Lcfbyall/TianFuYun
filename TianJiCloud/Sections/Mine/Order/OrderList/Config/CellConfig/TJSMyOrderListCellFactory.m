@@ -17,7 +17,7 @@
 - (TJSBaseTableViewCell *)cellInTable:(UITableView*)tableView
                      forOrderInfoModel:(id)model{
 
-    id<TJSMyOrderListCellLayoutConfig> layoutConfig =[TJSMyOrderListCellLayoutConfig sharedLayoutConfig];
+    id<TJSBaseCellLayoutConfig> layoutConfig =[TJSMyOrderListCellLayoutConfig sharedLayoutConfig];
     
     NSString *_identifier = [layoutConfig cellContent:model];
     

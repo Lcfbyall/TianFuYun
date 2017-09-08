@@ -9,6 +9,7 @@
 #ifndef TJSMyOrderListConfigurateProtocol_h
 #define TJSMyOrderListConfigurateProtocol_h
 
+#import "MyOrderInfoModel.h"
 
 @protocol TJSMyOrderListInteractorDelegate <NSObject>
 
@@ -23,7 +24,7 @@
 
 - (void)loadOrders:(void (^)(NSArray *orders, NSError *error))callback;
 
-- (NSArray *)items;
+- (NSArray<MyOrderInfoModel *> *)items;
 
 - (void)onViewWillAppear;
 

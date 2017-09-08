@@ -82,9 +82,9 @@
 
 #pragma mark - <MyOrderListCellDelegate>
 
-- (BOOL)onTapCell:(id)obj{
+- (BOOL)onTapCell:(MyOrderInfoModel *)obj{
     
-    
+    [UIViewController tjs_pushViewController:ProductDetailVC params:@{@"webUrl":@"http://wandou.im/1ig5qp"} animated:YES];
 
     return YES;
 }

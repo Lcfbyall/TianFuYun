@@ -34,6 +34,10 @@ static NSString *const ProductVC   = @"ProductContainerController";
 static NSString *const DiscoveryVC = @"DiscoveryViewController";
 static NSString *const MineVC      = @"MineViewController";
 
+#pragma mark - Home 
+
+static NSString *const HomeHeaderWebVC =  @"HomeHeaderWebController";
+static NSString *const HomeFooterWebVC =  @"HomeFooterWebController";
 
 ////////////////////////////////
 #pragma mark - MessageVC identifier
@@ -48,16 +52,15 @@ static NSString *const AllActivityListVC    = @"AllActivityViewController";
 static NSString *const ProductFilterVC      = @"ProductFilterController";
 static NSString *const ProductFilterResultVC = @"ProductFilterResultController";
 
-
 #pragma mark - ProductDetailVC identifier
 
 static NSString *const ProductListVC        = @"ProductListViewController";
 static NSString *const ProductDetailVC      = @"TJSProductDetailController";
 
-
 #pragma mark - ProductSearchVC identifier
 
 static NSString *const ProductSearchVC      = @"ProductSearchController";
+
 
 
 #pragma mark - DiscoveryVC identifier

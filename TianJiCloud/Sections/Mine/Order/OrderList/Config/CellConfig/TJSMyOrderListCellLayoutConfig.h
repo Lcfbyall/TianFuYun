@@ -8,9 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-#import "TJSMyOrderListCellLayoutProtocol.h"
-
-@interface TJSMyOrderListCellLayoutConfig : NSObject<TJSMyOrderListCellLayoutConfig>
+@interface TJSMyOrderListCellLayoutConfig : NSObject<TJSBaseCellLayoutConfig>
 
 + (instancetype)sharedLayoutConfig;
 

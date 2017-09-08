@@ -10,9 +10,8 @@
 
 #import "TJSMyOrderListVCProtocol.h"
 #import "TJSMyOrderListConfigurateProtocol.h"
-#import "TJSMyOrderListCellProtocol.h"
 
-@interface MyOrderListViewController : TJSBaseViewController<MyOrderVCConfig,TJSMyOrderListInteractorDelegate,MyOrderListCellDelegate>
+@interface MyOrderListViewController : TJSBaseViewController<MyOrderVCConfig,TJSMyOrderListInteractorDelegate,TJSBaseTableViewCellDelegate>
 
 
 

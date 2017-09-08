@@ -51,7 +51,7 @@
     
     
     _tableAdapter.interactor   = _interactor;
-    //_tableAdapter.cellDelegate = vc;
+    _tableAdapter.cellDelegate = vc;
     
     
     //3.

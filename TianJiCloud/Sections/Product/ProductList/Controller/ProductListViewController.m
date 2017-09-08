@@ -65,7 +65,6 @@
     _configurator = [[TJSProductListConfigurator alloc]init];
     
     [_configurator setup:self];
-
 }
 
 
@@ -74,10 +73,7 @@
 
 - (BOOL)onTapCell:(id)event{
     
-    [UIViewController tjs_pushViewController:ProductDetailVC
-                          params:@{}
-                        animated:YES];
-    
+    [UIViewController tjs_pushViewController:ProductDetailVC params:@{@"webUrl":@"http://wandou.im/1ig5qp"} animated:YES];
     
     return YES;
 }

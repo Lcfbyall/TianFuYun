@@ -9,15 +9,13 @@
 #import <Foundation/Foundation.h>
 
 #import "TJSMyOrderListConfigurateProtocol.h"
-//#import "TJSProductListCellProtocol.h"
-
 
 @interface TJSMyOrderListTableAdapter : NSObject<UITableViewDelegate,UITableViewDataSource>
 
 
 @property (nonatomic,weak) id<TJSMyOrderListInteractor> interactor;
 
-//@property (nonatomic,weak) id<TJSProductListCellDelegate> cellDelegate;
+@property (nonatomic,weak) id<TJSBaseTableViewCellDelegate> cellDelegate;
 
 
 - (instancetype)initWithTableView:(UITableView *)tableView;

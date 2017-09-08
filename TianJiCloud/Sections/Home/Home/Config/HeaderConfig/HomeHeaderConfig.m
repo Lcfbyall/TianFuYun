@@ -15,25 +15,30 @@
 
 + (NSArray *)webItems{
 
+    static NSString *const webUrl = @"http://wandou.im/1ig5qp";
+    
     HomeWebClickItem *first   = [HomeWebClickItem new];
-    first.title    = @"";
-    first.subTitle = @"";
-    first.imgUrl   = @"about_risk_4";
-    first.target   = @"HomeHeaderWebController";
+    first.webUrl    = webUrl;
+    first.title     = @"";
+    first.subTitle  = @"";
+    first.imgUrl    = @"about_risk_4";
+    first.target    = HomeHeaderWebVC;
     first.pushAllowed = NO;
     
     HomeWebClickItem  *second = [HomeWebClickItem new];
+    second.webUrl    = webUrl;
     second.title    = @"";
     second.subTitle = @"";
     second.imgUrl   = @"about_risk_4";
-    second.target   = @"HomeHeaderWebController";
+    second.target   = HomeHeaderWebVC;
     second.pushAllowed = NO;
     
     HomeWebClickItem  *third  = [HomeWebClickItem new];
-    third.title    = @"";
-    third.subTitle = @"";
-    third.imgUrl   = @"about_risk_4";
-    third.target   = @"HomeHeaderWebController";
+    third.webUrl    = webUrl;
+    third.title     = @"";
+    third.subTitle  = @"";
+    third.imgUrl    = @"about_risk_4";
+    third.target    = HomeHeaderWebVC;
     third.pushAllowed = NO;
     
     return @[first,second,third];
