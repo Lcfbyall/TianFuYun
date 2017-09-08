@@ -16,7 +16,7 @@
 }
 
 - (void)dealloc {
-    NSLog(@"weakScriptMessageHandler dealloc");
+    //NSLog(@"weakScriptMessageHandler dealloc");
 }
 
 @end

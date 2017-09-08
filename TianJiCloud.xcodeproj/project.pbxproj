@@ -4200,11 +4200,11 @@
 			children = (
 				2C8BB79E1F30859C00E2D75F /* HomeHeaderContainer.h */,
 				2C8BB79F1F30859C00E2D75F /* HomeHeaderContainer.m */,
+				2C8BB79C1F30859C00E2D75F /* HomeHeaderCollectionLayout.h */,
+				2C8BB79D1F30859C00E2D75F /* HomeHeaderCollectionLayout.m */,
 				2C8BB7991F30859C00E2D75F /* HomeHeaderCollectionCell.h */,
 				2C8BB79A1F30859C00E2D75F /* HomeHeaderCollectionCell.m */,
 				2CEC59E51F500FDD006C03F5 /* HomeHeaderCollectionCell.xib */,
-				2C8BB79C1F30859C00E2D75F /* HomeHeaderCollectionLayout.h */,
-				2C8BB79D1F30859C00E2D75F /* HomeHeaderCollectionLayout.m */,
 			);
 			path = Header;
 			sourceTree = "<group>";

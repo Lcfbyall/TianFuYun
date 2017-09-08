@@ -188,7 +188,7 @@ static NSString *identifier = @"MineHeaderCollectionCell";
 //1.将要开始拖动
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView{
     
-    NSLog(@"1.将要开始拖动");
+    //NSLog(@"1.将要开始拖动");
 }
 
 

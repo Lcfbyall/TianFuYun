@@ -53,6 +53,7 @@ static NSString *identifier     = @"HomeHeaderCollectionCell";
         HomeHeaderCollectionLayout *layout = [[HomeHeaderCollectionLayout alloc]init];
         layout.delegate = container;
         layout.interMargin = 10;
+        layout.collectionViewWidth = container.frame.size.width;
         layout.insets = UIEdgeInsetsMake(Margin, Margin, Margin, Margin);
         [layout calculateLayoutAttributes];
         
@@ -220,7 +221,7 @@ static NSString *identifier     = @"HomeHeaderCollectionCell";
 //1.将要开始拖动
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView{
 
-   NSLog(@"1.将要开始拖动");
+//   NSLog(@"1.将要开始拖动");
 }
 
 //2.将要停止拖动，也就是手指将要放开
@@ -228,7 +229,7 @@ static NSString *identifier     = @"HomeHeaderCollectionCell";
                      withVelocity:(CGPoint)velocity
               targetContentOffset:(inout CGPoint *)targetContentOffset NS_AVAILABLE_IOS(5_0){
 
-     NSLog(@"2.将要停止拖动，也就是手指将要放开");
+//     NSLog(@"2.将要停止拖动，也就是手指将要放开");
     
      //向左拖动，去右边
      BOOL left;
@@ -242,7 +243,7 @@ static NSString *identifier     = @"HomeHeaderCollectionCell";
      }else{
      
         //根据位置决定停止在哪个item
-         [_collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:1 inSection:0] atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally animated:YES];
+        // [_collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:1 inSection:0] atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally animated:YES];
      }
 }
 
@@ -250,28 +251,28 @@ static NSString *identifier     = @"HomeHeaderCollectionCell";
 - (void)scrollViewDidEndDragging:(UIScrollView *)scrollView
                   willDecelerate:(BOOL)decelerate{
 
-    NSLog(@"3.已经停止拖动，也就是手指已经放开");
+//    NSLog(@"3.已经停止拖动，也就是手指已经放开");
 }
 
 //4.将要开始减速
 - (void)scrollViewWillBeginDecelerating:(UIScrollView *)scrollView{
  
-    NSLog(@"4.将要开始减速");
+//    NSLog(@"4.将要开始减速");
 }
 
 //5.已经结束减速
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
 
-    NSLog(@"5.已经结束减速");
+//    NSLog(@"5.已经结束减速");
     
-    [_collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:1 inSection:0] atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally animated:YES];
+    //[_collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:1 inSection:0] atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally animated:YES];
 }
 
 //6.停止滑动
 // called when setContentOffset/scrollRectVisible:animated: finishes. not called if not animating
 - (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView{
 
-    NSLog(@"6.停止滑动");
+//    NSLog(@"6.停止滑动");
 }
 
 

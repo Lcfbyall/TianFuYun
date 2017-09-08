@@ -35,11 +35,11 @@
     
     _vc = vc;
     
-    UIColor *clear = RGB(250, 250, 250);
+    //UIColor *clear = RGB(250, 250, 250);
     
-    NSString *str =  [clear hexStringWithAlpha];
+    //NSString *str =  [clear hexStringWithAlpha];
 
-    NSLog(@"%@",str);
+    //NSLog(@"%@",str);
 }
 
 

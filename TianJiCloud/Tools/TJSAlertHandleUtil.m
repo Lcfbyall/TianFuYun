@@ -83,7 +83,7 @@
         
     }).cancelAction(@"取消",^(UIAlertAction *action){
         
-        NSLog(@"取消了");
+        //NSLog(@"取消了");
         
     }).actionButtonColor(ThemeService.text_color_01).cancelButtonColor([UIColor redColor]).show();
 }

@@ -134,7 +134,7 @@ TJS_EXPORT_SERVICE(@"AlipayService")
     //将商品信息拼接成字符串
     NSString *orderInfo = [order orderInfoEncoded:NO];
     NSString *orderInfoEncoded = [order orderInfoEncoded:YES];
-    NSLog(@"orderSpec = %@",orderInfo);
+    //NSLog(@"orderSpec = %@",orderInfo);
     
     
     
@@ -161,7 +161,7 @@ TJS_EXPORT_SERVICE(@"AlipayService")
         
         // NOTE: 调用支付结果开始支付
         [[AlipaySDK defaultService] payOrder:orderString fromScheme:appScheme callback:^(NSDictionary *resultDic) {
-            NSLog(@"reslut = %@",resultDic);
+            //NSLog(@"reslut = %@",resultDic);
         }];
     }
     */
@@ -226,7 +226,7 @@ TJS_EXPORT_SERVICE(@"AlipayService")
     
     // 将授权信息拼接成字符串
     NSString *authInfoStr = [authInfo description];
-    NSLog(@"authInfoStr = %@",authInfoStr);
+    //NSLog(@"authInfoStr = %@",authInfoStr);
     
     // 获取私钥并将商户信息签名,外部商户可以根据情况存放私钥和签名,只需要遵循RSA签名规范,并将签名字符串base64编码和UrlEncode
     NSString *signedString = nil;
@@ -246,7 +246,7 @@ TJS_EXPORT_SERVICE(@"AlipayService")
                                          fromScheme:appScheme
                                            callback:^(NSDictionary *resultDic) {
            
-           NSLog(@"result = %@",resultDic);
+           //NSLog(@"result = %@",resultDic);
            // 解析 auth code
            NSString *result = resultDic[@"result"];
            NSString *authCode = nil;
@@ -259,7 +259,7 @@ TJS_EXPORT_SERVICE(@"AlipayService")
                    }
                }
            }
-           NSLog(@"授权结果 authCode = %@", authCode?:@"");
+           //NSLog(@"授权结果 authCode = %@", authCode?:@"");
        }];
     }
      */
@@ -273,13 +273,13 @@ TJS_EXPORT_SERVICE(@"AlipayService")
         
         // 支付跳转支付宝钱包进行支付，处理支付结果
         [[AlipaySDK defaultService] processOrderWithPaymentResult:url standbyCallback:^(NSDictionary *resultDic) {
-            NSLog(@"result = %@",resultDic);
+            //NSLog(@"result = %@",resultDic);
         }];
         
         // 授权跳转支付宝钱包进行支付，处理支付结果
         [[AlipaySDK defaultService] processAuth_V2Result:url standbyCallback:^(NSDictionary *resultDic) {
             
-            NSLog(@"result = %@",resultDic);
+            //NSLog(@"result = %@",resultDic);
             // 解析 auth code
             NSString *result = resultDic[@"result"];
             NSString *authCode = nil;
@@ -295,7 +295,7 @@ TJS_EXPORT_SERVICE(@"AlipayService")
                     }
                 }
             }
-            NSLog(@"授权结果 authCode = %@", authCode?:@"");
+            //NSLog(@"授权结果 authCode = %@", authCode?:@"");
         }];
     }
      */

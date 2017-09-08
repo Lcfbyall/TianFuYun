@@ -360,10 +360,10 @@ static  TJSImagePicker *imagePikerSevice;
             ALAssetsLibrary* assetsLibrary = [[ALAssetsLibrary alloc] init];
             [assetsLibrary writeVideoAtPathToSavedPhotosAlbum:mediaURL completionBlock:^(NSURL *assetURL, NSError *error) {
                 if (!error) {
-                    NSLog(@"captured video saved with no error.");
+                    //NSLog(@"captured video saved with no error.");
                 }else
                 {
-                    NSLog(@"error occured while saving the video:%@", error);
+                    //NSLog(@"error occured while saving the video:%@", error);
                 }
              }];
           */
@@ -386,11 +386,11 @@ static  TJSImagePicker *imagePikerSevice;
 - (void)image:(UIImage*)image didFinishSavingWithError:(NSError*)error contextInfo:(void*)contextInfo{
       
     if (!error) {
-        NSLog(@"picture saved with no error.");
+        //NSLog(@"picture saved with no error.");
     }
     else
     {
-        NSLog(@"error occured while saving the picture%@", error);
+        //NSLog(@"error occured while saving the picture%@", error);
     }
 }
 
