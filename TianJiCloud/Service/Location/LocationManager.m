@@ -127,7 +127,7 @@
         
         NSString *formattedAddressLines = [addressDictionary[@"FormattedAddressLines"] firstObject];
         
-        //NSLog(@"%@",formattedAddressLines);
+        NSLog(@"%@",formattedAddressLines);
         
     }];
 

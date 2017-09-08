@@ -473,6 +473,8 @@
 		2C91164E1F626E5600C315D6 /* 87x87@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C9116421F626E5600C315D6 /* 87x87@3x.png */; };
 		2C91164F1F626E5600C315D6 /* FeiDan@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C9116431F626E5600C315D6 /* FeiDan@1x.png */; };
 		2C9116531F627F1500C315D6 /* AlternateIconManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9116521F627F1500C315D6 /* AlternateIconManager.m */; };
+		2C91165A1F62954100C315D6 /* UITabBarItem+TJSWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9116591F62954100C315D6 /* UITabBarItem+TJSWebCache.m */; };
+		2C91165D1F62971F00C315D6 /* UIBarButtonItem+TJSWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C91165C1F62971F00C315D6 /* UIBarButtonItem+TJSWebCache.m */; };
 		2CA553081F43E1CB0095ECC1 /* RewardVCConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA553071F43E1CB0095ECC1 /* RewardVCConfig.m */; };
 		2CA5530F1F43EA7B0095ECC1 /* HistoryRewardConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA5530E1F43EA7B0095ECC1 /* HistoryRewardConfig.m */; };
 		2CA638FD1F4AD37700C39562 /* WithDrawDepositController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA638EB1F4AD37700C39562 /* WithDrawDepositController.m */; };
@@ -1634,6 +1636,10 @@
 		2C9116431F626E5600C315D6 /* FeiDan@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FeiDan@1x.png"; sourceTree = "<group>"; };
 		2C9116511F627F1500C315D6 /* AlternateIconManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlternateIconManager.h; sourceTree = "<group>"; };
 		2C9116521F627F1500C315D6 /* AlternateIconManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlternateIconManager.m; sourceTree = "<group>"; };
+		2C9116581F62954100C315D6 /* UITabBarItem+TJSWebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBarItem+TJSWebCache.h"; sourceTree = "<group>"; };
+		2C9116591F62954100C315D6 /* UITabBarItem+TJSWebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBarItem+TJSWebCache.m"; sourceTree = "<group>"; };
+		2C91165B1F62971F00C315D6 /* UIBarButtonItem+TJSWebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+TJSWebCache.h"; sourceTree = "<group>"; };
+		2C91165C1F62971F00C315D6 /* UIBarButtonItem+TJSWebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+TJSWebCache.m"; sourceTree = "<group>"; };
 		2CA553061F43E1CB0095ECC1 /* RewardVCConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RewardVCConfig.h; sourceTree = "<group>"; };
 		2CA553071F43E1CB0095ECC1 /* RewardVCConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RewardVCConfig.m; sourceTree = "<group>"; };
 		2CA5530C1F43E20A0095ECC1 /* RewardConfigProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RewardConfigProtocol.h; sourceTree = "<group>"; };
@@ -2678,6 +2684,7 @@
 				2C44124F1F21D9A900C453EF /* UIViewController */,
 				2C4411F31F219A5300C453EF /* UINavigationBar */,
 				2C4412631F21E0C600C453EF /* UIBarButtonItem */,
+				2C9116541F6292E800C315D6 /* UITabBarItem */,
 				2CEC58B51F4FCDE7006C03F5 /* UIControl */,
 				2C89AD761F2C5136005C29AC /* UISearchBar */,
 				2C4412601F21E06C00C453EF /* UITextView */,
@@ -2941,6 +2948,8 @@
 			children = (
 				2C597DD61F4C358500415EB6 /* UIBarButtonItem+TJSCustom.h */,
 				2C597DD71F4C358500415EB6 /* UIBarButtonItem+TJSCustom.m */,
+				2C91165B1F62971F00C315D6 /* UIBarButtonItem+TJSWebCache.h */,
+				2C91165C1F62971F00C315D6 /* UIBarButtonItem+TJSWebCache.m */,
 			);
 			path = UIBarButtonItem;
 			sourceTree = "<group>";
@@ -5211,6 +5220,15 @@
 			path = AlternateIcon;
 			sourceTree = "<group>";
 		};
+		2C9116541F6292E800C315D6 /* UITabBarItem */ = {
+			isa = PBXGroup;
+			children = (
+				2C9116581F62954100C315D6 /* UITabBarItem+TJSWebCache.h */,
+				2C9116591F62954100C315D6 /* UITabBarItem+TJSWebCache.m */,
+			);
+			path = UITabBarItem;
+			sourceTree = "<group>";
+		};
 		2CA638E71F4AD37700C39562 /* WithDrawHome */ = {
 			isa = PBXGroup;
 			children = (
@@ -7326,6 +7344,7 @@
 				2C027D161F3C7C71001D7EB6 /* ProductFilterResultDataSourceImpl.m in Sources */,
 				2C4591971F590A1600D0A798 /* DiscoRoadShowConfig.m in Sources */,
 				2C83C7281F39BA4C004034CA /* AllActivityTableCell.m in Sources */,
+				2C91165D1F62971F00C315D6 /* UIBarButtonItem+TJSWebCache.m in Sources */,
 				2CB4F60A1F42849100FF98C9 /* MyFavListLayoutImpl.m in Sources */,
 				2C8CD1201F55469D00F9654D /* TJSAppDelegate.m in Sources */,
 				2CD897501F457B96008F7C73 /* AddressSelectedInteractorImpl.m in Sources */,
@@ -7836,6 +7855,7 @@
 				2C8CD1001F53C2F800F9654D /* UIImage+NamedWithSize.m in Sources */,
 				2C83C71E1F39B9C9004034CA /* PersonalMessageController.m in Sources */,
 				A292B26D1F39F8570086E03E /* CapitalRecordInfoModel.m in Sources */,
+				2C91165A1F62954100C315D6 /* UITabBarItem+TJSWebCache.m in Sources */,
 				2C88F6971F4EC434009CF23E /* TJSActionSheet.m in Sources */,
 				2C85E39B1F2F1A3100ADD360 /* TJSMineHomeOrderCellContentConfig.m in Sources */,
 				2C1B74BA1F4694FF0000E71A /* BankCardListConfig.m in Sources */,

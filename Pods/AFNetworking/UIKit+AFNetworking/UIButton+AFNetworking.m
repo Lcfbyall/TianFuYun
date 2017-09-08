@@ -33,7 +33,7 @@
 
 @implementation UIButton (_AFNetworking)
 
-#pragma mark -
+#pragma mark - imageDownloadReceipt
 
 static char AFImageDownloadReceiptNormal;
 static char AFImageDownloadReceiptHighlighted;
@@ -64,7 +64,8 @@ static const char * af_imageDownloadReceiptKeyForState(UIControlState state) {
     objc_setAssociatedObject(self, af_imageDownloadReceiptKeyForState(state), imageDownloadReceipt, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
-#pragma mark -
+
+#pragma mark - backgroundImageDownloadReceipt
 
 static char AFBackgroundImageDownloadReceiptNormal;
 static char AFBackgroundImageDownloadReceiptHighlighted;
@@ -113,7 +114,9 @@ static const char * af_backgroundImageDownloadReceiptKeyForState(UIControlState 
     objc_setAssociatedObject(self, @selector(sharedImageDownloader), imageDownloader, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
-#pragma mark -
+
+
+#pragma mark - setImageForState
 
 - (void)setImageForState:(UIControlState)state
                  withURL:(NSURL *)url
@@ -192,7 +195,8 @@ static const char * af_backgroundImageDownloadReceiptKeyForState(UIControlState 
     }
 }
 
-#pragma mark -
+
+#pragma mark - setBackgroundImageForState
 
 - (void)setBackgroundImageForState:(UIControlState)state
                            withURL:(NSURL *)url
@@ -246,9 +250,12 @@ static const char * af_backgroundImageDownloadReceiptKeyForState(UIControlState 
                    downloadImageForURLRequest:urlRequest
                    withReceiptID:downloadID
                    success:^(NSURLRequest * _Nonnull request, NSHTTPURLResponse * _Nullable response, UIImage * _Nonnull responseObject) {
+                       
                        __strong __typeof(weakSelf)strongSelf = weakSelf;
                        if ([[strongSelf af_backgroundImageDownloadReceiptForState:state].receiptID isEqual:downloadID]) {
+                           
                            if (success) {
+                               
                                success(request, response, responseObject);
                            } else if(responseObject) {
                                [strongSelf setBackgroundImage:responseObject forState:state];
@@ -271,7 +278,10 @@ static const char * af_backgroundImageDownloadReceiptKeyForState(UIControlState 
     }
 }
 
-#pragma mark -
+
+
+
+#pragma mark - cancel
 
 - (void)cancelImageDownloadTaskForState:(UIControlState)state {
     AFImageDownloadReceipt *receipt = [self af_imageDownloadReceiptForState:state];
@@ -289,11 +299,13 @@ static const char * af_backgroundImageDownloadReceiptKeyForState(UIControlState 
     }
 }
 
+
+#pragma mark - isActiveTask
+
 - (BOOL)isActiveTaskURLEqualToURLRequest:(NSURLRequest *)urlRequest forState:(UIControlState)state {
     AFImageDownloadReceipt *receipt = [self af_imageDownloadReceiptForState:state];
     return [receipt.task.originalRequest.URL.absoluteString isEqualToString:urlRequest.URL.absoluteString];
 }
-
 - (BOOL)isActiveBackgroundTaskURLEqualToURLRequest:(NSURLRequest *)urlRequest forState:(UIControlState)state {
     AFImageDownloadReceipt *receipt = [self af_backgroundImageDownloadReceiptForState:state];
     return [receipt.task.originalRequest.URL.absoluteString isEqualToString:urlRequest.URL.absoluteString];

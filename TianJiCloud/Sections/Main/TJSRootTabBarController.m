@@ -67,7 +67,7 @@
                       @"image"    :@"Product_Tab_nor",
                       @"selectedImage":@"Product_Tab_sel",
                     },
-                    
+                   
                     @{
                       @"ProductSB":DiscoverySB,
                       @"ProductNC":DiscoveryNC,
@@ -96,31 +96,26 @@
 
 - (void)p_setupViewControllers{
     
-    
     WEAK_SELF(self);
-    
     __block NSMutableArray *controllersArr = [NSMutableArray array];
     [self.configArr enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         
         STRONG_SELF(self);
         if(self){
-         
             NSDictionary *configDic  = (NSDictionary *)obj;
-            
             TJSBaseNavigationController *naviVC  = (TJSBaseNavigationController *)LOAD_Storyboard(configDic[@"ProductSB"], configDic[@"ProductNC"]);
-            
             naviVC.tabBarItem.title              = configDic[@"title"];
             naviVC.tabBarItem.image              = IMAGEOriginal(configDic[@"image"]);
             naviVC.tabBarItem.selectedImage      = IMAGEOriginal(configDic[@"selectedImage"]);
-            
             [controllersArr addObject:naviVC];
         }
-        
     }];
     
     self.viewControllers = controllersArr;
 }
 
+
+#pragma mark - setupAttributeForTabBarItem
 
 - (void)p_setupAttributeForTabBarItem{
     
@@ -132,12 +127,11 @@
         
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wdeprecated-declarations"
-        
         tabBarItem   = [UITabBarItem appearanceWhenContainedIn:[UIImagePickerController class], nil];
-        
 #pragma clang diagnostic pop
         
     }
+    
     
     [tabBarItem setTitleTextAttributes:
      @{
@@ -163,6 +157,7 @@
     return YES;
     
 }
+
 - (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController{
     
     
@@ -182,4 +177,6 @@
     
     
 }
+
 @end
+

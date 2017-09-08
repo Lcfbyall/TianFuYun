@@ -28,7 +28,7 @@
         NSMutableArray *modelArray = [NSMutableArray array];
         for (NSDictionary *dic in data) {
             
-            
+            NSLog(@"%@",dic);
         }
         
         success?success(modelArray.count?modelArray:nil):nil;
