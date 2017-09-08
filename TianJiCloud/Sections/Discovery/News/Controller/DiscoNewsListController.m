@@ -79,6 +79,7 @@
 - (BOOL)onTapCell:(id)event{
 
     [UIViewController tjs_pushViewController:DiscoryNewsDetailVC
+                                      params:@{@"webUrl":@"http://wandou.im/1ig5qp"}
                      backHandler:^(id  _Nullable obj) {
         
         [((UIViewController *)obj).navigationController popViewControllerAnimated:YES];
