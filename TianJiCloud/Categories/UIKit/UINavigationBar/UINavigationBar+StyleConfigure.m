@@ -21,25 +21,49 @@ static UIColor *TintColor    = nil;
 
 @implementation UINavigationBar (StyleConfigure)
 
-+ (void)initialize{
++ (NSDictionary *)basicStyleWhite{
     
-    if (self == [UINavigationBar self]) {
+    NSDictionary *dic =
+    @{
+      NavigationBarTranslucentKey:@NO,
+      AdjustsScrollViewInsets :@NO,
+      HideNavigationBarKey: @NO,
+      HideBackBarButtonItemKey:@NO,
+      NavigationBarTintColor: ThemeService.origin_color_01,
+      
+      NavigationBarBarTintColor:ThemeService.main_color_00,
+      NavBarBackgroundAlpha:@1,
+      NavigationBarsShadowImage:[UIImage new],
+      BackBarButtonItemTintColor:ThemeService.origin_color_01,
+      NavigationTitleTextAttributes:@{NSForegroundColorAttributeName:ThemeService.origin_color_01,NSFontAttributeName:[UIFont systemFontOfSize:16.0f]}};
     
-        TitleColor   =  ThemeService.origin_color_01;
-        TitleFont    =  [UIFont systemFontOfSize:16.0f];
-        BarTintColor =  ThemeService.main_color_00;
-        TintColor    =  ThemeService.origin_color_01;
-    }
+    return dic;
 }
 
 
-/**
- 项目默认效果
- */
++ (NSDictionary *)translucentWhiteTint{
+    
+    NSDictionary *dic =
+    @{
+      NavigationBarTranslucentKey:@NO,
+      AdjustsScrollViewInsets :@NO,
+      HideNavigationBarKey: @NO,
+      HideBackBarButtonItemKey:@NO,
+      NavigationBarTintColor: ThemeService.main_color_00,
+      NavigationBarBarTintColor:ThemeService.main_color_00,
+      NavBarBackgroundAlpha:@0,
+      NavigationBarsShadowImage:[UIImage new],
+      BackBarButtonItemTintColor:ThemeService.main_color_00,
+      NavigationTitleTextAttributes:@{NSForegroundColorAttributeName:ThemeService.origin_color_01,NSFontAttributeName:[UIFont systemFontOfSize:16.0f]}};
+    
+    return dic;
+}
+
+
+
 - (void)setupStyleBasic{
     
     [self setupStyleBasicWithBarTintColor:ThemeService.main_color_00];
-    
 }
 
 - (void)setupStyleBasicTranslucent{
@@ -63,7 +87,6 @@ static UIColor *TintColor    = nil;
 
 - (void)setupStyleBasicTranslucentWithBarTintColor:(UIColor *)barTintColor{
 
-    
     [self setupStyleWithTitleColor:TitleColor
                          titleFont:TitleFont
                       barTintColor:barTintColor
@@ -72,7 +95,6 @@ static UIColor *TintColor    = nil;
 }
 
 /////
-
 - (void)setupStyleWithTitleColor:(UIColor *)titleColor
                        titleFont:(UIFont *)titleFont
                     barTintColor:(UIColor *)barTintColor
@@ -81,13 +103,10 @@ static UIColor *TintColor    = nil;
 
 
     NSDictionary *titleTextAttributes =
-  
       @{
-        
         NSForegroundColorAttributeName:titleColor,
         NSFontAttributeName:titleFont
-        
-        };
+      };
     
     // 颜色text
     self.titleTextAttributes = titleTextAttributes;
@@ -104,10 +123,6 @@ static UIColor *TintColor    = nil;
     [self clearShadow];
 
 }
-
-
-
-
 
 /**
  设置导航栏底部横线颜色
@@ -148,25 +163,8 @@ static UIColor *TintColor    = nil;
 }
 
 
--(void)tjs_changeNavigationBarBackgroundColor{
-    
-    if ([self respondsToSelector:@selector(setBackgroundImage:forBarMetrics:)]){
-        
-        NSArray *subviews =self.subviews;
-        for (id viewObj in subviews) {
-        
-            NSString *classStr = [NSString stringWithUTF8String:object_getClassName(viewObj)];
-            
-            if ([classStr isEqualToString:@"UIView"]) {
-                
-                UIImageView *imageView=(UIImageView *)viewObj;
-                [self sendSubviewToBack:imageView];
-            }
-        }
-    }
-}
-
 #pragma mark 去除navigationController中navgationBar中的黑线
+
 -(void)tjs_removeLineOfNavigationBar
 {
     if([self respondsToSelector:@selector(setBackgroundImage:forBarMetrics:)])
@@ -192,24 +190,22 @@ static UIColor *TintColor    = nil;
     
 }
 
-
-
-+ (NSDictionary *)translucentWhiteTint{
-  
-    NSDictionary *dic =
-    @{
-      NavigationBarTranslucentKey:@YES,
-      NavigationBarTintColor: ThemeService.origin_color_00,
-      NavigationBarBarTintColor:  ThemeService.main_color_04,
-      BackBarButtonItemTintColor:ThemeService.origin_color_00,
-      AdjustsScrollViewInsets :@NO,
-      NavigationTitleTextAttributes:
-       @{
-          NSForegroundColorAttributeName:ThemeService.origin_color_00,
-          NSFontAttributeName:[UIFont systemFontOfSize:16.0f]
-       }
-    };
-    return dic;
+-(void)tjs_changeNavigationBarBackgroundColor{
+    
+    if ([self respondsToSelector:@selector(setBackgroundImage:forBarMetrics:)]){
+        
+        NSArray *subviews =self.subviews;
+        for (id viewObj in subviews) {
+            
+            NSString *classStr = [NSString stringWithUTF8String:object_getClassName(viewObj)];
+            
+            if ([classStr isEqualToString:@"UIView"]) {
+                
+                UIImageView *imageView=(UIImageView *)viewObj;
+                [self sendSubviewToBack:imageView];
+            }
+        }
+    }
 }
 
 

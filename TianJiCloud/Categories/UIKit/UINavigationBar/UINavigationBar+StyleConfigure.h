@@ -10,10 +10,7 @@
 
 @interface UINavigationBar (StyleConfigure)
 
-
-/**
- 项目默认效果
- */
+/*
 - (void)setupStyleBasic;
 
 - (void)setupStyleBasicTranslucent;
@@ -22,15 +19,17 @@
 
 - (void)setupStyleBasicTranslucentWithBarTintColor:(UIColor *)barTintColor;
 
-
-
 - (void)setupStyleWithTitleColor:(UIColor *)titleColor
                        titleFont:(UIFont *)titleFont
                     barTintColor:(UIColor *)barTintColor
                        tintColor:(UIColor *)tintColor
                      translucent:(BOOL)translucent;
+*/
 
++ (NSDictionary *)basicStyleWhite;
 
 + (NSDictionary *)translucentWhiteTint;
+
+
 
 @end

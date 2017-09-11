@@ -86,7 +86,6 @@
 }
 
 
-
 #pragma mark - <MineHomeVCConfig>
 
 - (void)onTapLeftBarBtnToSettingList:(id)sender{

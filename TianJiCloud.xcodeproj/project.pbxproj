@@ -572,7 +572,7 @@
 		2CCBE4681F330597006C4018 /* DiscoveryVCConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCBE4671F330597006C4018 /* DiscoveryVCConfig.m */; };
 		2CCBE46D1F3312D4006C4018 /* DiscoRoadShowDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCBE46C1F3312D4006C4018 /* DiscoRoadShowDetailController.m */; };
 		2CCBE47A1F331D91006C4018 /* MineHomeHeaderContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCBE4791F331D91006C4018 /* MineHomeHeaderContainer.m */; };
-		2CCBE4801F333386006C4018 /* UINavigationBar+Awesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCBE47F1F333386006C4018 /* UINavigationBar+Awesome.m */; };
+		2CCBE4801F333386006C4018 /* UINavigationBar+TJSBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCBE47F1F333386006C4018 /* UINavigationBar+TJSBackground.m */; };
 		2CCBE4831F3415F2006C4018 /* MineHomeHeaderCollectionLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCBE4821F3415F2006C4018 /* MineHomeHeaderCollectionLayout.m */; };
 		2CCBE4861F3417A5006C4018 /* MineHeaderCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCBE4851F3417A5006C4018 /* MineHeaderCollectionCell.m */; };
 		2CCBE4911F34207C006C4018 /* TJSBaseCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCBE48C1F34207C006C4018 /* TJSBaseCollectionViewCell.m */; };
@@ -656,6 +656,7 @@
 		2CD897551F45851A008F7C73 /* ConAddressRightInputContentConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD897541F45851A008F7C73 /* ConAddressRightInputContentConfig.m */; };
 		2CD897581F458537008F7C73 /* ConAddressMiddleLabelContentConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD897571F458537008F7C73 /* ConAddressMiddleLabelContentConfig.m */; };
 		2CD8975B1F45854A008F7C73 /* ConAddressBottomInputContentConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD8975A1F45854A008F7C73 /* ConAddressBottomInputContentConfig.m */; };
+		2CDB75CF1F669471002909D9 /* WRNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CDB75CE1F669471002909D9 /* WRNavigationBar.m */; };
 		2CE542241F4EA4A100205993 /* LogoutNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE542231F4EA4A100205993 /* LogoutNetworkTool.m */; };
 		2CE542281F4EA4E900205993 /* LogoutApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE542271F4EA4E900205993 /* LogoutApi.m */; };
 		2CE5422B1F4EA51500205993 /* LoginApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE5422A1F4EA51500205993 /* LoginApi.m */; };
@@ -1852,8 +1853,8 @@
 		2CCBE46C1F3312D4006C4018 /* DiscoRoadShowDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoRoadShowDetailController.m; sourceTree = "<group>"; };
 		2CCBE4781F331D91006C4018 /* MineHomeHeaderContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineHomeHeaderContainer.h; sourceTree = "<group>"; };
 		2CCBE4791F331D91006C4018 /* MineHomeHeaderContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineHomeHeaderContainer.m; sourceTree = "<group>"; };
-		2CCBE47E1F333386006C4018 /* UINavigationBar+Awesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+Awesome.h"; sourceTree = "<group>"; };
-		2CCBE47F1F333386006C4018 /* UINavigationBar+Awesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+Awesome.m"; sourceTree = "<group>"; };
+		2CCBE47E1F333386006C4018 /* UINavigationBar+TJSBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+TJSBackground.h"; sourceTree = "<group>"; };
+		2CCBE47F1F333386006C4018 /* UINavigationBar+TJSBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+TJSBackground.m"; sourceTree = "<group>"; };
 		2CCBE4811F3415F2006C4018 /* MineHomeHeaderCollectionLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineHomeHeaderCollectionLayout.h; sourceTree = "<group>"; };
 		2CCBE4821F3415F2006C4018 /* MineHomeHeaderCollectionLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineHomeHeaderCollectionLayout.m; sourceTree = "<group>"; };
 		2CCBE4841F3417A5006C4018 /* MineHeaderCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineHeaderCollectionCell.h; sourceTree = "<group>"; };
@@ -2031,6 +2032,8 @@
 		2CD897571F458537008F7C73 /* ConAddressMiddleLabelContentConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConAddressMiddleLabelContentConfig.m; sourceTree = "<group>"; };
 		2CD897591F45854A008F7C73 /* ConAddressBottomInputContentConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConAddressBottomInputContentConfig.h; sourceTree = "<group>"; };
 		2CD8975A1F45854A008F7C73 /* ConAddressBottomInputContentConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConAddressBottomInputContentConfig.m; sourceTree = "<group>"; };
+		2CDB75CD1F669471002909D9 /* WRNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WRNavigationBar.h; sourceTree = "<group>"; };
+		2CDB75CE1F669471002909D9 /* WRNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WRNavigationBar.m; sourceTree = "<group>"; };
 		2CE542221F4EA4A100205993 /* LogoutNetworkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogoutNetworkTool.h; sourceTree = "<group>"; };
 		2CE542231F4EA4A100205993 /* LogoutNetworkTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogoutNetworkTool.m; sourceTree = "<group>"; };
 		2CE542261F4EA4E900205993 /* LogoutApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogoutApi.h; sourceTree = "<group>"; };
@@ -2472,10 +2475,10 @@
 		2C431DE31F299A9600858C12 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				2C431DE41F299A9600858C12 /* Config */,
 				2C431DE81F299A9600858C12 /* Controller */,
 				2C8DE57B1F29D41F009B3AE2 /* Model */,
 				2C8DE57A1F29D406009B3AE2 /* Disaggregate */,
-				2C431DE41F299A9600858C12 /* Config */,
 				2C8DE5851F29DA8E009B3AE2 /* Protocol */,
 				2C8BB7761F30236F00E2D75F /* View */,
 			);
@@ -2757,8 +2760,8 @@
 			children = (
 				2C4411F41F219A5300C453EF /* UINavigationBar+StyleConfigure.h */,
 				2C4411F51F219A5300C453EF /* UINavigationBar+StyleConfigure.m */,
-				2CCBE47E1F333386006C4018 /* UINavigationBar+Awesome.h */,
-				2CCBE47F1F333386006C4018 /* UINavigationBar+Awesome.m */,
+				2CCBE47E1F333386006C4018 /* UINavigationBar+TJSBackground.h */,
+				2CCBE47F1F333386006C4018 /* UINavigationBar+TJSBackground.m */,
 			);
 			path = UINavigationBar;
 			sourceTree = "<group>";
@@ -3829,6 +3832,7 @@
 		2C859D041F31EB5D00B86575 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				2CDB75CC1F669471002909D9 /* WRNavigationBar */,
 				2C9116621F6638BF00C315D6 /* TZScrollViewPopGesture */,
 				2C8CD2321F57AAE400F9654D /* FDFullscreenPopGesture */,
 				2C859D051F31EB5D00B86575 /* vk_msgSend */,
@@ -3849,8 +3853,8 @@
 		2C85E2A71F2EBDFE00ADD360 /* Config */ = {
 			isa = PBXGroup;
 			children = (
-				2C85E2A81F2EBDFE00ADD360 /* CellConfig */,
 				2C85E2A91F2EBDFE00ADD360 /* VCConfig */,
+				2C85E2A81F2EBDFE00ADD360 /* CellConfig */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -6722,6 +6726,15 @@
 			path = Protocol;
 			sourceTree = "<group>";
 		};
+		2CDB75CC1F669471002909D9 /* WRNavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				2CDB75CD1F669471002909D9 /* WRNavigationBar.h */,
+				2CDB75CE1F669471002909D9 /* WRNavigationBar.m */,
+			);
+			path = WRNavigationBar;
+			sourceTree = "<group>";
+		};
 		2CE542211F4EA46F00205993 /* NetworkTool */ = {
 			isa = PBXGroup;
 			children = (
@@ -7606,7 +7619,7 @@
 				2CB4F5EA1F41C3BB00FF98C9 /* ContractInfoModel.m in Sources */,
 				2C4591881F58F5BE00D0A798 /* DiscoRoadShowListAdapter.m in Sources */,
 				2C45918E1F59076D00D0A798 /* DiscoRoadShowNetworkTool.m in Sources */,
-				2CCBE4801F333386006C4018 /* UINavigationBar+Awesome.m in Sources */,
+				2CCBE4801F333386006C4018 /* UINavigationBar+TJSBackground.m in Sources */,
 				2CAF430E1F28294E00ABCA5E /* TJSProductListCellFactory.m in Sources */,
 				2CB4F63D1F42F26500FF98C9 /* ContractApplyInteractorImpl.m in Sources */,
 				2C4591861F58F5BE00D0A798 /* DiscoRoadShowInteracotImpl.m in Sources */,
@@ -7888,6 +7901,7 @@
 				2C85E39B1F2F1A3100ADD360 /* TJSMineHomeOrderCellContentConfig.m in Sources */,
 				2C1B74BA1F4694FF0000E71A /* BankCardListConfig.m in Sources */,
 				2C562A6B1F57F1C300835984 /* APAuthV2Info.m in Sources */,
+				2CDB75CF1F669471002909D9 /* WRNavigationBar.m in Sources */,
 				2C8BB7A21F30859C00E2D75F /* HomeFooterCollectionLayout.m in Sources */,
 				2CAF42D61F281B8600ABCA5E /* TJSBaseProductListContentConfig.m in Sources */,
 				2C8CD1091F54FFC000F9654D /* EmptyDataSetAdapter.m in Sources */,

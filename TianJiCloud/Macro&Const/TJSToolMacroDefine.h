@@ -24,6 +24,7 @@
 #define IOS8_OR_LATER   ([[[UIDevice currentDevice] systemVersion] compare:@"8.0"  options:NSNumericSearch]!= NSOrderedAscending)
 #define IOS9_OR_LATER   ([[[UIDevice currentDevice] systemVersion] compare:@"9.0"  options:NSNumericSearch]!= NSOrderedAscending)
 #define IOS10_OR_LATER  ([[[UIDevice currentDevice] systemVersion] compare:@"10.0" options:NSNumericSearch]!= NSOrderedAscending)
+#define IOS11_OR_LATER  ([[[UIDevice currentDevice] systemVersion] compare:@"11.0" options:NSNumericSearch]!= NSOrderedAscending)
 
 #define SYSTEM_VERSION_EQUAL_TO(v)                  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedSame)
 #define SYSTEM_VERSION_GREATER_THAN(v)              ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedDescending)

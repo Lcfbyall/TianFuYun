@@ -225,7 +225,8 @@ typedef void (^_FDViewControllerWillAppearInjectBlock)(UIViewController *viewCon
         __strong typeof(weakSelf) strongSelf = weakSelf;
         if (strongSelf) {
             
-            [strongSelf setNavigationBarHidden:viewController.fd_prefersNavigationBarHidden animated:animated];
+            //朱鹏注视
+            //[strongSelf setNavigationBarHidden:viewController.fd_prefersNavigationBarHidden animated:animated];
         }
     };
     
@@ -234,6 +235,7 @@ typedef void (^_FDViewControllerWillAppearInjectBlock)(UIViewController *viewCon
     // stack by pushing, maybe by "-setViewControllers:".
     appearingViewController.fd_willAppearInjectBlock = block;
     UIViewController *disappearingViewController = self.viewControllers.lastObject;
+    
     
     if (disappearingViewController && !disappearingViewController.fd_willAppearInjectBlock) {
         

@@ -20,34 +20,17 @@
 
 @implementation MineHomeVCConfig
 
-#pragma mark -
-
-- (instancetype)init{
-    
-    self = [super init];
-    if(self){
-        
-        
-    }
-    
-    return self;
-}
-
-
 #pragma mark - controller settings
 
 - (void)setup:(MineViewController *)vc{
 
     _vc = vc;
+    
     _vc.params =  [UINavigationBar translucentWhiteTint];
     
+    [_vc tjs_configViewController];
     
-    /*
-    UIColor *a = RGB(254, 239, 93);
-    NSString *hex = a.hexString;
-    NSString *hexa = a.hexStringWithAlpha;
-  
-    */   
+    ((UITableView *)_vc.tjs_listView).contentInset = UIEdgeInsetsMake(-64, 0, 0, 0);
 }
 
 
@@ -57,9 +40,7 @@
     
     NSString *leftBarBtnImage = @"manager";
     UIImage *img = IMAGEOriginal(leftBarBtnImage);
-    //UIImage *img_sub = IMAGEOriginal(@"user_setup");
-    UIImage *conbineImg = img;//[img tjs_combinateWithImage:img_sub size:CGSizeMake(40, 40) subrect:CGRectMake(12,12,18,18)];
-    
+    UIImage *conbineImg = img;
     WEAK_SELF(self);
     UIBarButtonItem *leftItem  = [[UIBarButtonItem alloc] bk_initWithImage:conbineImg style:UIBarButtonItemStylePlain handler:^(id sender) {
         STRONG_SELF(self);
@@ -115,5 +96,5 @@
     return [mutable copy];
 }
 
-
 @end
+

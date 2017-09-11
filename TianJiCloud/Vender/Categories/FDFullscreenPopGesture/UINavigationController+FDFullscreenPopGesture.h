@@ -57,7 +57,8 @@
 /// Indicate this view controller prefers its navigation bar hidden or not,
 /// checked when view controller based navigation bar's appearance is enabled.
 /// Default to NO, bars are more likely to show.
-@property (nonatomic, assign) BOOL fd_prefersNavigationBarHidden;
+// 朱鹏注视
+//@property (nonatomic, assign) BOOL fd_prefersNavigationBarHidden;
 
 /// Max allowed initial distance to left edge when you begin the interactive pop
 /// gesture. 0 by default, which means it will ignore this limit.

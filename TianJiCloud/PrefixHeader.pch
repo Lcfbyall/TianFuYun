@@ -65,7 +65,7 @@
 #import "UIButton+IBInspectableState.h"
 #import "UIButton+CommitStyle.h"
 #import "UITableView+TJSTableHeader.h"
-
+#import "UINavigationBar+TJSBackground.h"
 
 /** 5. vender **/
 
@@ -76,6 +76,7 @@
 #import "UIColor+YYAdd.h"
 #import "UINavigationController+TZPopGesture.h"
 #import "UINavigationController+FDFullscreenPopGesture.h"
+#import "WRNavigationBar.h"
 
 /** 6. Base **/
 

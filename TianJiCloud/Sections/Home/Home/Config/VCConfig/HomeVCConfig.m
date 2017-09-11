@@ -20,26 +20,15 @@
 
 @implementation HomeVCConfig
 
-- (instancetype)init{
-    
-    self = [super init];
-    if(self){
-        
-        
-    }
-    
-    return self;
-}
-
 - (void)setup:(HomeViewController *)vc{
     
     _vc = vc;
     
-    //UIColor *clear = RGB(250, 250, 250);
+    _vc.params = [UINavigationBar basicStyleWhite];
     
-    //NSString *str =  [clear hexStringWithAlpha];
-
-    //NSLog(@"%@",str);
+    [_vc tjs_configViewController];
+    
+    ((UITableView *)_vc.tjs_listView).contentInset = UIEdgeInsetsMake(0, 0, 49, 0);
 }
 
 
