@@ -19,6 +19,7 @@ static NSString * const ID = @"CONTENTCELL";
     UIColor *_norColor;
     UIColor *_selColor;
 }
+
 /**
  *  下标宽度是否等于标题宽度
  */
@@ -55,14 +56,8 @@ static NSString * const ID = @"CONTENTCELL";
  */
 @property (nonatomic, strong) UIFont *titleFont;
 
-/** 整体内容View 包含标题好内容滚动视图 */
-@property (nonatomic, weak) UIView *contentView;
+//朱鹏提到.h了
 
-/** 标题滚动视图 */
-@property (nonatomic, weak) UIScrollView *titleScrollView;
-
-/** 内容滚动视图 */
-@property (nonatomic, weak) UICollectionView *contentScrollView;
 
 /** 所以标题数组 */
 @property (nonatomic, strong) NSMutableArray *titleLabels;

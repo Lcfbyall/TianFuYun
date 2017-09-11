@@ -74,7 +74,8 @@
 #import <BlocksKit/UIBarButtonItem+BlocksKit.h>
 #import "UIControl+YYAdd.h"
 #import "UIColor+YYAdd.h"
-
+#import "UINavigationController+TZPopGesture.h"
+#import "UINavigationController+FDFullscreenPopGesture.h"
 
 /** 6. Base **/
 

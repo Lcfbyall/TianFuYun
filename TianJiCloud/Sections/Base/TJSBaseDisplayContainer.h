@@ -14,6 +14,10 @@
 
 - (void)tjs_setupChildViewControllers;
 
+- (UIScrollView *)titleScroll;
+
+- (UIScrollView *)contentSroll;
+
 @end
 
 

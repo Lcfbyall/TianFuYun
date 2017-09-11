@@ -20,8 +20,10 @@
     // Do any additional setup after loading the view.
 
     [self tjs_setupChildViewControllers];
-}
+    
+    [self tz_addPopGestureToView:self.contentSroll];
 
+}
 
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
@@ -30,7 +32,6 @@
     {
         self.selectIndex = [self.params[@"selectedIndex"] unsignedIntegerValue];
     }
-
 }
 
 
@@ -41,12 +42,22 @@
 
 }
 
+- (UIScrollView *)titleScroll{
+ 
+    return (UIScrollView *)self.titleScroll;
+}
+
+- (UIScrollView *)contentSroll{
+  
+    return (UIScrollView *)self.contentScrollView;
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-
-
 @end
+
+

@@ -49,11 +49,18 @@
     CGPoint beginningLocation = [gestureRecognizer locationInView:gestureRecognizer.view];
     CGFloat maxAllowedInitialDistance = topViewController.fd_interactivePopMaxAllowedInitialDistanceToLeftEdge;
     if (maxAllowedInitialDistance > 0 && beginningLocation.x > maxAllowedInitialDistance) {
+        
         return NO;
     }
     
     // Ignore pan gesture when the navigation controller is currently in transition.
     if ([[self.navigationController valueForKey:@"_isTransitioning"] boolValue]) {
+        
+        return NO;
+    }
+    
+    //朱鹏添加
+    if ([self.navigationController.transitionCoordinator isAnimated]) {
         return NO;
     }
     
@@ -61,13 +68,24 @@
     CGPoint translation = [gestureRecognizer translationInView:gestureRecognizer.view];
     
     if (translation.x <= 0) {
+        
         return NO;
     }
     
     return YES;
 }
 
+/*
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldBeRequiredToFailByGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer {
+    
+    return YES;
+}
+ */
+
 @end
+
+
+//////////////////////////////////////////////////////////
 
 typedef void (^_FDViewControllerWillAppearInjectBlock)(UIViewController *viewController, BOOL animated);
 
@@ -76,8 +94,10 @@ typedef void (^_FDViewControllerWillAppearInjectBlock)(UIViewController *viewCon
 @property (nonatomic, copy) _FDViewControllerWillAppearInjectBlock fd_willAppearInjectBlock;
 
 @end
+
 @implementation UIViewController (FDFullscreenPopGesturePrivate)
 
+//替换 viewWillAppear:
 + (void)load
 {
     static dispatch_once_t onceToken;
@@ -105,7 +125,6 @@ typedef void (^_FDViewControllerWillAppearInjectBlock)(UIViewController *viewCon
     });
 }
 
-
 - (void)fd_viewWillAppear:(BOOL)animated
 {
     // Forward to primary implementation.
@@ -130,8 +149,10 @@ typedef void (^_FDViewControllerWillAppearInjectBlock)(UIViewController *viewCon
 @end
 
 
+
 /////////////////////////////////////////////////////////
 
+// 替换 pushViewController:animated:
 @implementation UINavigationController (FDFullscreenPopGesture)
 
 + (void)load
@@ -161,7 +182,6 @@ typedef void (^_FDViewControllerWillAppearInjectBlock)(UIViewController *viewCon
         }
     });
 }
-
 
 - (void)fd_pushViewController:(UIViewController *)viewController animated:(BOOL)animated
 {
@@ -234,6 +254,9 @@ typedef void (^_FDViewControllerWillAppearInjectBlock)(UIViewController *viewCon
     return delegate;
 }
 
+
+#pragma mark - public 
+
 - (UIPanGestureRecognizer *)fd_fullscreenPopGestureRecognizer
 {
     UIPanGestureRecognizer *panGestureRecognizer = objc_getAssociatedObject(self, _cmd);
@@ -257,6 +280,7 @@ typedef void (^_FDViewControllerWillAppearInjectBlock)(UIViewController *viewCon
     }
     
     self.fd_viewControllerBasedNavigationBarAppearanceEnabled = YES;
+    
     return YES;
 }
 
@@ -268,7 +292,32 @@ typedef void (^_FDViewControllerWillAppearInjectBlock)(UIViewController *viewCon
 
 @end
 
+
+
 @implementation UIViewController (FDFullscreenPopGesture)
+
+/*
+- (void)fd_addPopGestureToView:(UIView *)view {
+    
+    if (!view) return;
+    
+    if (!self.navigationController) {
+        
+        // 在控制器转场的时候，self.navigationController可能是nil,这里用GCD和递归来处理这种情况
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.05 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            
+            [self fd_addPopGestureToView:view];
+        });
+    } else {
+        
+        UIPanGestureRecognizer *pan = self.navigationController.fd_fullscreenPopGestureRecognizer;
+        if (![view.gestureRecognizers containsObject:pan]) {
+            [view addGestureRecognizer:pan];
+        }
+    }
+}
+ */
+
 
 - (BOOL)fd_interactivePopDisabled
 {

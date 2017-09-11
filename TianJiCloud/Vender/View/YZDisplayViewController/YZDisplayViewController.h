@@ -37,7 +37,15 @@ typedef enum : NSUInteger {
 @property (nonatomic, assign) NSUInteger selectIndex;
 
 
+//朱鹏提到.h的
+/** 整体内容View 包含标题好内容滚动视图 */
+@property (nonatomic, weak) UIView *contentView;
 
+/** 标题滚动视图 */
+@property (nonatomic, weak) UIScrollView *titleScrollView;
+
+/** 内容滚动视图 */
+@property (nonatomic, weak) UICollectionView *contentScrollView;
 
 
 
