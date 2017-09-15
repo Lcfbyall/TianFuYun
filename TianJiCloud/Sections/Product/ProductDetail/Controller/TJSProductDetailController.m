@@ -57,9 +57,9 @@
   
 }
 
-- (UIView *)tjs_listView{
+- (UIScrollView *)tjs_listView{
   
-    return self.tjs_wkWebView;
+    return (UIScrollView *)self.tjs_wkWebView;
 
 }
 

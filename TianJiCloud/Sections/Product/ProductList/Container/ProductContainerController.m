@@ -48,6 +48,8 @@
     _vcConfig = [[ProductListVCConfig alloc]init];
     [_vcConfig setup:self];
     
+    self.navigationItem.leftBarButtonItems = [_vcConfig tjs_leftBarButtonItems];
+    
     self.navigationItem.rightBarButtonItems = [_vcConfig tjs_rightBarButtonItems];
     
     self.navigationItem.titleView = [_vcConfig tjs_titleView];
@@ -101,9 +103,10 @@
 }
 
 - (void)onTapSearchBarToProductSearch:(id)sender{
-    
+
+   
     [UIViewController tjs_pushViewController:ProductSearchVC
-                                      params:@{HideBackBarButtonItemKey:@YES}
+                          params:[UINavigationBar basicStyleWhiteWithHideBack]
                                  backHandler:^(id  _Nullable obj) {
          
          [((UIViewController *)obj).navigationController popViewControllerAnimated:YES];

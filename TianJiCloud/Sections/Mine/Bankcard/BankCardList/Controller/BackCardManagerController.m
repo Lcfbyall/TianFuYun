@@ -65,7 +65,7 @@
 
 #pragma mark - <TJSBaseVCConfig>
 
-- (UIView *)tjs_listView{
+- (UIScrollView *)tjs_listView{
  
     return _bankCardList;
 }

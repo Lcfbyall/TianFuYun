@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C01B20A1F6B7DBC0007DC0D /* TJSSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C01B2091F6B7DBC0007DC0D /* TJSSearchBar.m */; };
 		2C027D041F3B3075001D7EB6 /* FeedBackCommitApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C027D031F3B3075001D7EB6 /* FeedBackCommitApi.m */; };
 		2C027D081F3BF848001D7EB6 /* ProductFilterReusableSectionHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C027D071F3BF847001D7EB6 /* ProductFilterReusableSectionHeader.m */; };
 		2C027D0B1F3BFA28001D7EB6 /* TJSBaseCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C027D0A1F3BFA28001D7EB6 /* TJSBaseCollectionReusableView.m */; };
@@ -771,6 +772,8 @@
 
 /* Begin PBXFileReference section */
 		24C0B56EAE3CA4A62571C4DD /* libPods-TianJiCloud.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TianJiCloud.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C01B2081F6B7DBC0007DC0D /* TJSSearchBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TJSSearchBar.h; sourceTree = "<group>"; };
+		2C01B2091F6B7DBC0007DC0D /* TJSSearchBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TJSSearchBar.m; sourceTree = "<group>"; };
 		2C027D021F3B3075001D7EB6 /* FeedBackCommitApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedBackCommitApi.h; sourceTree = "<group>"; };
 		2C027D031F3B3075001D7EB6 /* FeedBackCommitApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedBackCommitApi.m; sourceTree = "<group>"; };
 		2C027D051F3B30A5001D7EB6 /* ProductFilterResultProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductFilterResultProtocol.h; sourceTree = "<group>"; };
@@ -6217,12 +6220,14 @@
 		2CCBE4891F34207C006C4018 /* Comman */ = {
 			isa = PBXGroup;
 			children = (
-				2C4C1CA01F39497900002166 /* TJSInvestPieChart.h */,
-				2C4C1CA11F39497900002166 /* TJSInvestPieChart.m */,
-				2CCBE4941F3421F1006C4018 /* TJSPageControl.h */,
-				2CCBE4951F3421F1006C4018 /* TJSPageControl.m */,
+				2C01B2081F6B7DBC0007DC0D /* TJSSearchBar.h */,
+				2C01B2091F6B7DBC0007DC0D /* TJSSearchBar.m */,
 				2C88F6951F4EC434009CF23E /* TJSActionSheet.h */,
 				2C88F6961F4EC434009CF23E /* TJSActionSheet.m */,
+				2CCBE4941F3421F1006C4018 /* TJSPageControl.h */,
+				2CCBE4951F3421F1006C4018 /* TJSPageControl.m */,
+				2C4C1CA01F39497900002166 /* TJSInvestPieChart.h */,
+				2C4C1CA11F39497900002166 /* TJSInvestPieChart.m */,
 				2CE85D071F4EE18200666DE4 /* TJSSegmentedControl.h */,
 				2CE85D081F4EE18200666DE4 /* TJSSegmentedControl.m */,
 			);
@@ -7097,7 +7102,7 @@
 		2C4411A01F21981E00C453EF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = TianJiMoney;
 				TargetAttributes = {
 					2C4411A71F21981E00C453EF = {
@@ -7920,6 +7925,7 @@
 				2C801BD21F233F46009F82F7 /* TJSBaseNavigationController.m in Sources */,
 				2CAF42D41F281B8600ABCA5E /* TJSProductListImageContentConfig.m in Sources */,
 				2C8CD16A1F56A52900F9654D /* AppDelegate.m in Sources */,
+				2C01B20A1F6B7DBC0007DC0D /* TJSSearchBar.m in Sources */,
 				2C9116051F5FCF1400C315D6 /* OrderListNetworkTool.m in Sources */,
 				2CD8972E1F457604008F7C73 /* AddressSelectedDefaultCell.m in Sources */,
 				2C4C1C261F38568D00002166 /* TJSMyOrderListCellContentConfig.m in Sources */,
@@ -8060,7 +8066,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -8068,7 +8076,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
@@ -8110,7 +8122,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -8118,7 +8132,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;

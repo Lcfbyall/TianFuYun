@@ -75,7 +75,7 @@
     
 }
 
-- (UIView *)tjs_listView{
+- (UIScrollView *)tjs_listView{
     
     return _productListTBView;
 }
@@ -97,7 +97,7 @@
 - (void)onTapSearchBarToProductSearch:(id)sender{
     
     [UIViewController tjs_pushViewController:ProductSearchVC
-                          params:@{HideBackBarButtonItemKey:@YES}
+                          params:[UINavigationBar basicStyleWhiteWithHideBack]
                      backHandler:^(id  _Nullable obj) {
                          
          [((UIViewController *)obj).navigationController popViewControllerAnimated:YES];

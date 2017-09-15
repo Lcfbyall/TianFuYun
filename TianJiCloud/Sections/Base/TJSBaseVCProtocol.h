@@ -22,7 +22,7 @@
 //1.2 网络加载
 - (void)tjs_fetchData;
 
-- (UIView *)tjs_listView;
+- (UIScrollView *)tjs_listView;
 
 @end
 
@@ -31,6 +31,7 @@
 
 @optional
 
+//配置导航栏的所有
 - (void)tjs_configViewController;
 
 //1.是否隐藏导航栏

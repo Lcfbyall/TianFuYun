@@ -61,7 +61,7 @@
 
 #pragma mark - BaseVCConfig
 
-- (UIView *)tjs_listView{
+- (UIScrollView *)tjs_listView{
 
     return _withDrawList;
 }

@@ -280,14 +280,14 @@ NSString * const ExtendedLayoutIncludesOpaqueBars = @"tjsExtendedLayoutIncludesO
             [self respondsToSelector:@selector(tjs_adjustsScrollViewInsets)]) {
             
             adjust = [((TJSBaseViewController *)self) tjs_adjustsScrollViewInsets];
-            
-//            if(IOS11_OR_LATER){
-//                
-//                //self.tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
-//            }else{
-            
+            adjust = NO;
+            if (@available(iOS 11.0, *)) {
+
+                self.tjs_listView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+            }else{
+
                 self.automaticallyAdjustsScrollViewInsets= adjust;
-            //}
+            }
         }
         
         
@@ -311,9 +311,7 @@ NSString * const ExtendedLayoutIncludesOpaqueBars = @"tjsExtendedLayoutIncludesO
             [self respondsToSelector:@selector(tjs_navigationBarShadowImage)]) {
             
             shadowImage = [((TJSBaseViewController *)self) tjs_navigationBarShadowImage];
-            
-            //[self.navigationController.navigationBar setShadowImage:shadowImage];
-            
+
             [self wr_setNavBarShadowImageHidden:YES];
         }
         

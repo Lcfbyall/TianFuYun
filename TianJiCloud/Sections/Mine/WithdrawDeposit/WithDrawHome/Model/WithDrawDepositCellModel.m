@@ -28,8 +28,6 @@
         [UIViewController tjs_pushViewController:first.target animated:YES];
     };
 
-
-
     WithDrawDepositCellModel *second = [WithDrawDepositCellModel new];
     second.sum = @"10000";
     second.total = @"100000";

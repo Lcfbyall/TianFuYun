@@ -28,7 +28,7 @@ typedef NS_ENUM(NSInteger, XGImageOrientation) {
     XGImageOrientationRightMirrored, // vertical flip
 };
 
-typedef void(^codeBlock)();
+typedef void(^codeBlock)(void);
 static CGFloat ZLCameraColletionViewW = 80;
 static CGFloat ZLCameraColletionViewPadding = 20;
 static CGFloat BOTTOM_HEIGHT = 60;

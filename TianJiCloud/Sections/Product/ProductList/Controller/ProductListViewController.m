@@ -52,7 +52,7 @@
     _productListTBView.tableFooterView = [UIView new];
 }
 
-- (UIView *)tjs_listView{
+- (UIScrollView *)tjs_listView{
     
     return _productListTBView;
 }

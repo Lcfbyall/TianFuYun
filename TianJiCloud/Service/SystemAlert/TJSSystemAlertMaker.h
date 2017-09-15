@@ -20,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 typedef void(^TJSSystemAlertActionBlock)(UIAlertAction *action);
 typedef void(^TJSSystemAlertConfigurationBlock)(UITextField *textField);
-typedef UIAlertController  * _Nonnull (^TJSSystemAlertShowBlock)();
+typedef UIAlertController  * _Nonnull (^TJSSystemAlertShowBlock)(void);
 
 
 - (instancetype)initWithStyle:(UIAlertControllerStyle)style;

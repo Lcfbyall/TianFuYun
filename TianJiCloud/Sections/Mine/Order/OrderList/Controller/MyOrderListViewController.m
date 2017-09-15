@@ -68,7 +68,7 @@
     _orderList.tableFooterView = [UIView new];
 }
 
-- (UIView *)tjs_listView{
+- (UIScrollView *)tjs_listView{
 
     return _orderList;
 }

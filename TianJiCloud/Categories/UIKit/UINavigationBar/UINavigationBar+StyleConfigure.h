@@ -28,6 +28,8 @@
 
 + (NSDictionary *)basicStyleWhite;
 
++ (NSDictionary *)basicStyleWhiteWithHideBack;
+
 + (NSDictionary *)translucentWhiteTint;
 
 

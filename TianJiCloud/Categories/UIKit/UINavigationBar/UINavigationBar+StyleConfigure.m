@@ -40,6 +40,24 @@ static UIColor *TintColor    = nil;
     return dic;
 }
 
++ (NSDictionary *)basicStyleWhiteWithHideBack{
+
+    NSDictionary *dic =
+    @{
+      NavigationBarTranslucentKey:@NO,
+      AdjustsScrollViewInsets :@NO,
+      HideNavigationBarKey: @NO,
+      HideBackBarButtonItemKey:@YES,
+      NavigationBarTintColor: ThemeService.origin_color_01,
+
+      NavigationBarBarTintColor:ThemeService.main_color_00,
+      NavBarBackgroundAlpha:@1,
+      NavigationBarsShadowImage:[UIImage new],
+      BackBarButtonItemTintColor:ThemeService.origin_color_01,
+      NavigationTitleTextAttributes:@{NSForegroundColorAttributeName:ThemeService.origin_color_01,NSFontAttributeName:[UIFont systemFontOfSize:16.0f]}};
+
+    return dic;
+}
 
 + (NSDictionary *)translucentWhiteTint{
     

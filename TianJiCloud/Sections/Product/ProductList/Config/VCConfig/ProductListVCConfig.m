@@ -40,6 +40,20 @@
 
 #pragma mark - TJSNavigationConfig
 
+- (NSArray <UIBarButtonItem *> *)tjs_leftBarButtonItems{
+
+    UIBarButtonItem *leftItem  = [[UIBarButtonItem alloc] bk_initWithTitle:@"隐藏" style:UIBarButtonItemStylePlain handler:^(id sender) {
+        
+        
+    }];
+
+    NSArray *leftBarButtonItems = _vc.navigationItem.leftBarButtonItems?:[NSArray array];
+    NSMutableArray *mutable = [leftBarButtonItems mutableCopy];
+    [mutable addObject:leftItem];
+    return [mutable copy];
+}
+
+
 - (NSArray <UIBarButtonItem *> *)tjs_rightBarButtonItems{
     WEAK_SELF(self);
     NSString *rightBarBtnImage  = @"screen";
@@ -65,7 +79,7 @@
 - (UIView *)tjs_titleView{
     
     
-    CGRect frame = CGRectMake(0, 0, SCREEN_WIDTH-80, 35);
+    CGRect frame = CGRectMake(-60, 0, SCREEN_WIDTH-80, 35);
     NSString *placeHolder = NSLocalizedString(@"product_search_home_navi", @"搜索你需要的产品");
     UIView *bgView = [UISearchBar tjs_customStyleWithFrame:frame
                                                placeHolder:placeHolder

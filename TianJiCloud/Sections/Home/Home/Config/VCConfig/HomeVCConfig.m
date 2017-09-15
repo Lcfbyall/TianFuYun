@@ -82,7 +82,7 @@
 - (UIView *)tjs_titleView{
     
    
-    CGRect frame = CGRectMake(0, 0, SCREEN_WIDTH-120, 35);
+    CGRect frame = CGRectMake(-60, 0, SCREEN_WIDTH-120, 35);
     NSString *placeHolder = NSLocalizedString(@"product_search_home_navi", @"搜索你需要的产品");
     UIView *bgView = [UISearchBar tjs_customStyleWithFrame:frame
                               placeHolder:placeHolder

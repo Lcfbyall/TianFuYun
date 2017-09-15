@@ -73,7 +73,7 @@
     }];
 }
 
-- (UIView *)tjs_listView{
+- (UIScrollView *)tjs_listView{
   
     return _addreslist;
 }

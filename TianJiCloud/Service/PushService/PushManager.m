@@ -260,7 +260,7 @@ TJS_EXPORT_SERVICE(@"PushService")
 - (void)application:(UIApplication *)application
     handleActionWithIdentifier:(nullable NSString *)identifier
          forRemoteNotification:(NSDictionary *)userInfo
-             completionHandler:(void(^)())completionHandler NS_DEPRECATED_IOS(8_0, 10_0) __TVOS_PROHIBITED{
+  completionHandler:(void(^)(void))completionHandler NS_DEPRECATED_IOS(8_0, 10_0) __TVOS_PROHIBITED{
     
     if ([identifier isEqualToString:@"ACCEPT_ACTION"]) {
         // Sending a request to the server here
@@ -292,7 +292,7 @@ TJS_EXPORT_SERVICE(@"PushService")
     handleActionWithIdentifier:(nullable NSString *)identifier
          forRemoteNotification:(NSDictionary *)userInfo
               withResponseInfo:(NSDictionary *)responseInfo
-             completionHandler:(void(^)())completionHandler NS_DEPRECATED_IOS(9_0, 10_0) __TVOS_PROHIBITED{
+  completionHandler:(void(^)(void))completionHandler NS_DEPRECATED_IOS(9_0, 10_0) __TVOS_PROHIBITED{
 
 
 }
@@ -316,7 +316,7 @@ TJS_EXPORT_SERVICE(@"PushService")
 
 // The method will be called on the delegate when the user responded to the notification by opening the application, dismissing the notification or choosing a UNNotificationAction. The delegate must be set before the application returns from applicationDidFinishLaunching:.
 //这个代理方法会在用户与你推送的通知进行交互时被调用，包括用户通过通知打开了你的应用，或者点击或者触发了某个 action (我们之后会提到 actionable 的通知)。因为涉及到打开应用的行为，所以实现了这个方法的 delegate 必须在 applicationDidFinishLaunching: 返回前就完成设置，这也是我们之前推荐将 NotificationHandler 尽早进行赋值的理由。
-- (void)userNotificationCenter:(UNUserNotificationCenter *)center didReceiveNotificationResponse:(UNNotificationResponse *)response withCompletionHandler:(void(^)())completionHandler __IOS_AVAILABLE(10.0) __WATCHOS_AVAILABLE(3.0) __TVOS_PROHIBITED{
+- (void)userNotificationCenter:(UNUserNotificationCenter *)center didReceiveNotificationResponse:(UNNotificationResponse *)response withCompletionHandler:(void(^)(void))completionHandler __IOS_AVAILABLE(10.0) __WATCHOS_AVAILABLE(3.0) __TVOS_PROHIBITED{
 
     //点击推送消息后回调 点击通知栏
     
@@ -335,12 +335,12 @@ TJS_EXPORT_SERVICE(@"PushService")
 // Called when your app has been activated by the user selecting an action from a local notification.
 // A nil action identifier indicates the default action.
 // You should call the completion handler as soon as you've finished handling the action.
-- (void)application:(UIApplication *)application handleActionWithIdentifier:(nullable NSString *)identifier forLocalNotification:(UILocalNotification *)notification completionHandler:(void(^)())completionHandler NS_DEPRECATED_IOS(8_0, 10_0) __TVOS_PROHIBITED{
+- (void)application:(UIApplication *)application handleActionWithIdentifier:(nullable NSString *)identifier forLocalNotification:(UILocalNotification *)notification completionHandler:(void(^)(void))completionHandler NS_DEPRECATED_IOS(8_0, 10_0) __TVOS_PROHIBITED{
     
     
 }
 
-- (void)application:(UIApplication *)application handleActionWithIdentifier:(nullable NSString *)identifier forLocalNotification:(UILocalNotification *)notification withResponseInfo:(NSDictionary *)responseInfo completionHandler:(void(^)())completionHandler NS_DEPRECATED_IOS(9_0, 10_0) __TVOS_PROHIBITED{
+- (void)application:(UIApplication *)application handleActionWithIdentifier:(nullable NSString *)identifier forLocalNotification:(UILocalNotification *)notification withResponseInfo:(NSDictionary *)responseInfo completionHandler:(void(^)(void))completionHandler NS_DEPRECATED_IOS(9_0, 10_0) __TVOS_PROHIBITED{
     
     
     
