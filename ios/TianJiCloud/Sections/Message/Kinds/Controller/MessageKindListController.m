@@ -8,6 +8,7 @@
 
 #import "MessageKindListController.h"
 
+
 @interface MessageKindListController ()
 
 

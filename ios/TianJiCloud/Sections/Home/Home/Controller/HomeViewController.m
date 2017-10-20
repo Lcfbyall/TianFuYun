@@ -7,9 +7,13 @@
 //
 
 #import "HomeViewController.h"
-
+#import "MessageKindListController.h"
 #import "HomeVCConfig.h"
 #import "TJSHomeListConfigurator.h"
+
+#import <React/RCTBundleURLProvider.h>
+#import <React/RCTRootView.h>
+
 
 @interface HomeViewController ()
 
@@ -86,7 +90,45 @@
 
 - (void)onTapLeftBarBtnToMessageKindList:(id)sender{
 
-    [UIViewController tjs_pushViewController:MessageKindListVC animated:YES];
+    NSLog(@"High Score Button Pressed");
+    
+    /*
+    NSURL *jsCodeLocation = [NSURL
+                             URLWithString:@"http://localhost:8081/index.bundle?platform=ios"];
+     */
+    
+    NSURL *jsCodeLocation;
+    
+    
+    jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index" fallbackResource:nil];
+    
+    
+    RCTRootView *rootView =
+    [[RCTRootView alloc] initWithBundleURL : jsCodeLocation
+                         moduleName        : @"TianJiCloud"
+                         initialProperties :
+                                     @{
+                                       @"scores" : @[
+                                                       @{
+                                                           @"name" : @"Alex",
+                                                           @"value": @"42"
+                                                        },
+                                                       @{
+                                                           @"name" : @"Joel",
+                                                           @"value": @"10"
+                                                        }
+                                                   ]
+                                       }
+     
+                          launchOptions: nil];
+    
+    
+    MessageKindListController *vc = (MessageKindListController *)[[UIStoryboard storyboardWithName:MainSB bundle:nil] instantiateViewControllerWithIdentifier:MessageKindListVC];
+    vc.view = rootView;
+    [self.navigationController pushViewController:vc animated:YES];
+    
+    
+   // [UIViewController tjs_pushViewController:MessageKindListVC params:@{@"rootView":rootView}  animated:YES];
 }
 
 - (void)onTapRightBarBtnToProductFilter:(id)sender{
