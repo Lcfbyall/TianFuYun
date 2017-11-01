@@ -7,7 +7,7 @@
 //
 
 #import "TJSAppSoreUtil.h"
-#import <AFNetworking.h>
+#import "AFNetworking.h"
 
 static NSString *const TianFuYunAPP_ID     = @"";
 

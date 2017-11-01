@@ -20,7 +20,6 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Headers/Private/AFNetworking/UIProgressView+AFNetworking.h" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Headers/Private/AFNetworking/UIRefreshControl+AFNetworking.h" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Headers/Private/AFNetworking/UIWebView+AFNetworking.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Headers/Private/AlipaySDK-2.0/ANAlipayResultCode.h" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Headers/Private/BlocksKit/A2BlockInvocation.h" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Headers/Private/BlocksKit/A2DynamicDelegate.h" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Headers/Private/BlocksKit/BKMacros.h" afterPath="" />
@@ -64,8 +63,6 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Headers/Private/FMDB/FMDatabasePool.h" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Headers/Private/FMDB/FMDatabaseQueue.h" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Headers/Private/FMDB/FMResultSet.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Headers/Private/GTSDK/GeTuiExtSdk.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Headers/Private/GTSDK/GeTuiSdk.h" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Headers/Private/IQKeyboardManager/IQBarButtonItem.h" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Headers/Private/IQKeyboardManager/IQKeyboardManager.h" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Headers/Private/IQKeyboardManager/IQKeyboardManagerConstants.h" afterPath="" />
@@ -330,16 +327,6 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Headers/Private/TZImagePickerController/TZProgressView.h" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Headers/Private/TZImagePickerController/TZVideoPlayerController.h" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Headers/Private/TZImagePickerController/UIView+Layout.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Headers/Private/UMengUShare/UMSocialQQHandler.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Headers/Private/UMengUShare/UMSocialSinaHandler.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Headers/Private/UMengUShare/UMSocialWechatHandler.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Headers/Private/UMengUShare/WBHttpRequest+WeiboToken.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Headers/Private/UMengUShare/WBHttpRequest.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Headers/Private/UMengUShare/WXApi.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Headers/Private/UMengUShare/WXApiObject.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Headers/Private/UMengUShare/WechatAuthSDK.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Headers/Private/UMengUShare/WeiboSDK+Statistics.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Headers/Private/UMengUShare/WeiboSDK.h" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Headers/Private/WZLBadge/CAAnimation+WAnimation.h" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Headers/Private/WZLBadge/UIBarButtonItem+WZLBadge.h" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Headers/Private/WZLBadge/UITabBarItem+WZLBadge.h" afterPath="" />
@@ -431,7 +418,6 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Headers/Public/AFNetworking/UIProgressView+AFNetworking.h" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Headers/Public/AFNetworking/UIRefreshControl+AFNetworking.h" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Headers/Public/AFNetworking/UIWebView+AFNetworking.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Headers/Public/AlipaySDK-2.0/ANAlipayResultCode.h" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Headers/Public/AlipaySDK-2.0/AlipaySDK/APayAuthInfo.h" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Headers/Public/AlipaySDK-2.0/AlipaySDK/AlipaySDK.h" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Headers/Public/BlocksKit/A2BlockInvocation.h" afterPath="" />
@@ -477,8 +463,6 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Headers/Public/FMDB/FMDatabasePool.h" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Headers/Public/FMDB/FMDatabaseQueue.h" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Headers/Public/FMDB/FMResultSet.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Headers/Public/GTSDK/GeTuiExtSdk.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Headers/Public/GTSDK/GeTuiSdk.h" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Headers/Public/IQKeyboardManager/IQBarButtonItem.h" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Headers/Public/IQKeyboardManager/IQKeyboardManager.h" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Headers/Public/IQKeyboardManager/IQKeyboardManagerConstants.h" afterPath="" />
@@ -768,20 +752,10 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Headers/Public/UMengUShare/UMSocialNetwork/UMSocialTask.h" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Headers/Public/UMengUShare/UMSocialNetwork/UMSocialTaskConfig.h" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Headers/Public/UMengUShare/UMSocialNetwork/UMSocialTaskManager.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Headers/Public/UMengUShare/UMSocialQQHandler.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Headers/Public/UMengUShare/UMSocialSinaHandler.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Headers/Public/UMengUShare/UMSocialWechatHandler.h" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Headers/Public/UMengUShare/UShareUI/UMSocialShareUIConfig.h" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Headers/Public/UMengUShare/UShareUI/UMSocialUIManager.h" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Headers/Public/UMengUShare/UShareUI/UMSocialUIUtility.h" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Headers/Public/UMengUShare/UShareUI/UShareUI.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Headers/Public/UMengUShare/WBHttpRequest+WeiboToken.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Headers/Public/UMengUShare/WBHttpRequest.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Headers/Public/UMengUShare/WXApi.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Headers/Public/UMengUShare/WXApiObject.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Headers/Public/UMengUShare/WechatAuthSDK.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Headers/Public/UMengUShare/WeiboSDK+Statistics.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Headers/Public/UMengUShare/WeiboSDK.h" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Headers/Public/WZLBadge/CAAnimation+WAnimation.h" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Headers/Public/WZLBadge/UIBarButtonItem+WZLBadge.h" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Headers/Public/WZLBadge/UITabBarItem+WZLBadge.h" afterPath="" />
@@ -854,77 +828,122 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Headers/Public/yoga/YGNodeList.h" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Headers/Public/yoga/Yoga-internal.h" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Headers/Public/yoga/Yoga.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/AFNetworking/AFNetworking-dummy.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/AFNetworking/AFNetworking-prefix.pch" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/AFNetworking/AFNetworking.xcconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/BlocksKit/BlocksKit-dummy.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/BlocksKit/BlocksKit-prefix.pch" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/BlocksKit/BlocksKit.xcconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/DACircularProgress/DACircularProgress-dummy.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/DACircularProgress/DACircularProgress-prefix.pch" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/DACircularProgress/DACircularProgress.xcconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/DZNEmptyDataSet/DZNEmptyDataSet-dummy.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/DZNEmptyDataSet/DZNEmptyDataSet-prefix.pch" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/DZNEmptyDataSet/DZNEmptyDataSet.xcconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/FMDB/FMDB-dummy.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/FMDB/FMDB-prefix.pch" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/FMDB/FMDB.xcconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/IQKeyboardManager/IQKeyboardManager-dummy.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/IQKeyboardManager/IQKeyboardManager-prefix.pch" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/IQKeyboardManager/IQKeyboardManager.xcconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/LKDBHelper/LKDBHelper-dummy.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/LKDBHelper/LKDBHelper-prefix.pch" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/LKDBHelper/LKDBHelper.xcconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/MJRefresh/MJRefresh-dummy.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/MJRefresh/MJRefresh-prefix.pch" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/MJRefresh/MJRefresh.xcconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/Masonry/Masonry-dummy.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/Masonry/Masonry-prefix.pch" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/Masonry/Masonry.xcconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-TianJiCloud/Pods-TianJiCloud-acknowledgements.markdown" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-TianJiCloud/Pods-TianJiCloud-acknowledgements.plist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-TianJiCloud/Pods-TianJiCloud-dummy.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-TianJiCloud/Pods-TianJiCloud-frameworks.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-TianJiCloud/Pods-TianJiCloud-resources.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-TianJiCloud/Pods-TianJiCloud.debug.xcconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-TianJiCloud/Pods-TianJiCloud.release.xcconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/React/React-dummy.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/React/React-prefix.pch" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/React/React.xcconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/SDCycleScrollView/SDCycleScrollView-dummy.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/SDCycleScrollView/SDCycleScrollView-prefix.pch" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/SDCycleScrollView/SDCycleScrollView.xcconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/SDWebImage/SDWebImage-dummy.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/SDWebImage/SDWebImage-prefix.pch" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/SDWebImage/SDWebImage.xcconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/TZImagePickerController/TZImagePickerController-dummy.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/TZImagePickerController/TZImagePickerController-prefix.pch" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/TZImagePickerController/TZImagePickerController.xcconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/WZLBadge/WZLBadge-dummy.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/WZLBadge/WZLBadge-prefix.pch" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/WZLBadge/WZLBadge.xcconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/YTKKeyValueStore/YTKKeyValueStore-dummy.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/YTKKeyValueStore/YTKKeyValueStore-prefix.pch" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/YTKKeyValueStore/YTKKeyValueStore.xcconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/YTKNetwork/YTKNetwork-dummy.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/YTKNetwork/YTKNetwork-prefix.pch" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/YTKNetwork/YTKNetwork.xcconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/YYCategories/YYCategories-dummy.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/YYCategories/YYCategories-prefix.pch" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/YYCategories/YYCategories.xcconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/YYModel/YYModel-dummy.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/YYModel/YYModel-prefix.pch" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/YYModel/YYModel.xcconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/ZFPlayer/ZFPlayer-dummy.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/ZFPlayer/ZFPlayer-prefix.pch" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/ZFPlayer/ZFPlayer.xcconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/yoga/yoga-dummy.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/yoga/yoga-prefix.pch" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/yoga/yoga.xcconfig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle/de.lproj/IQKeyboardManager.strings" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle/en.lproj/IQKeyboardManager.strings" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle/es.lproj/IQKeyboardManager.strings" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle/fr.lproj/IQKeyboardManager.strings" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle/zh-Hans/IQKeyboardManager.strings" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle/zh-Hant/IQKeyboardManager.strings" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/Pods/TZImagePickerController/TZImagePickerController/TZImagePickerController/TZImagePickerController.bundle/TableViewArrow@2x.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Podfile" afterPath="$PROJECT_DIR$/ios/Podfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Podfile.lock" afterPath="$PROJECT_DIR$/ios/Podfile.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/IQKeyboardManager/IQKeyboardManager/Categories/IQNSArray+Sort.h" afterPath="$PROJECT_DIR$/ios/Pods/IQKeyboardManager/IQKeyboardManager/Categories/IQNSArray+Sort.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/IQKeyboardManager/IQKeyboardManager/Categories/IQNSArray+Sort.m" afterPath="$PROJECT_DIR$/ios/Pods/IQKeyboardManager/IQKeyboardManager/Categories/IQNSArray+Sort.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/IQKeyboardManager/IQKeyboardManager/Categories/IQUIScrollView+Additions.h" afterPath="$PROJECT_DIR$/ios/Pods/IQKeyboardManager/IQKeyboardManager/Categories/IQUIScrollView+Additions.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/IQKeyboardManager/IQKeyboardManager/Categories/IQUIScrollView+Additions.m" afterPath="$PROJECT_DIR$/ios/Pods/IQKeyboardManager/IQKeyboardManager/Categories/IQUIScrollView+Additions.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/IQKeyboardManager/IQKeyboardManager/Categories/IQUITextFieldView+Additions.h" afterPath="$PROJECT_DIR$/ios/Pods/IQKeyboardManager/IQKeyboardManager/Categories/IQUITextFieldView+Additions.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/IQKeyboardManager/IQKeyboardManager/Categories/IQUITextFieldView+Additions.m" afterPath="$PROJECT_DIR$/ios/Pods/IQKeyboardManager/IQKeyboardManager/Categories/IQUITextFieldView+Additions.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/IQKeyboardManager/IQKeyboardManager/Categories/IQUIView+Hierarchy.h" afterPath="$PROJECT_DIR$/ios/Pods/IQKeyboardManager/IQKeyboardManager/Categories/IQUIView+Hierarchy.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/IQKeyboardManager/IQKeyboardManager/Categories/IQUIView+Hierarchy.m" afterPath="$PROJECT_DIR$/ios/Pods/IQKeyboardManager/IQKeyboardManager/Categories/IQUIView+Hierarchy.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/IQKeyboardManager/IQKeyboardManager/Categories/IQUIViewController+Additions.h" afterPath="$PROJECT_DIR$/ios/Pods/IQKeyboardManager/IQKeyboardManager/Categories/IQUIViewController+Additions.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/IQKeyboardManager/IQKeyboardManager/Categories/IQUIViewController+Additions.m" afterPath="$PROJECT_DIR$/ios/Pods/IQKeyboardManager/IQKeyboardManager/Categories/IQUIViewController+Additions.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/IQKeyboardManager/IQKeyboardManager/Categories/IQUIWindow+Hierarchy.h" afterPath="$PROJECT_DIR$/ios/Pods/IQKeyboardManager/IQKeyboardManager/Categories/IQUIWindow+Hierarchy.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/IQKeyboardManager/IQKeyboardManager/Categories/IQUIWindow+Hierarchy.m" afterPath="$PROJECT_DIR$/ios/Pods/IQKeyboardManager/IQKeyboardManager/Categories/IQUIWindow+Hierarchy.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/IQKeyboardManager/IQKeyboardManager/Constants/IQKeyboardManagerConstants.h" afterPath="$PROJECT_DIR$/ios/Pods/IQKeyboardManager/IQKeyboardManager/Constants/IQKeyboardManagerConstants.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/IQKeyboardManager/IQKeyboardManager/Constants/IQKeyboardManagerConstantsInternal.h" afterPath="$PROJECT_DIR$/ios/Pods/IQKeyboardManager/IQKeyboardManager/Constants/IQKeyboardManagerConstantsInternal.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/IQKeyboardManager/IQKeyboardManager/IQKeyboardManager.h" afterPath="$PROJECT_DIR$/ios/Pods/IQKeyboardManager/IQKeyboardManager/IQKeyboardManager.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/IQKeyboardManager/IQKeyboardManager/IQKeyboardManager.m" afterPath="$PROJECT_DIR$/ios/Pods/IQKeyboardManager/IQKeyboardManager/IQKeyboardManager.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/IQKeyboardManager/IQKeyboardManager/IQKeyboardReturnKeyHandler.h" afterPath="$PROJECT_DIR$/ios/Pods/IQKeyboardManager/IQKeyboardManager/IQKeyboardReturnKeyHandler.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/IQKeyboardManager/IQKeyboardManager/IQKeyboardReturnKeyHandler.m" afterPath="$PROJECT_DIR$/ios/Pods/IQKeyboardManager/IQKeyboardManager/IQKeyboardReturnKeyHandler.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/IQKeyboardManager/IQKeyboardManager/IQTextView/IQTextView.h" afterPath="$PROJECT_DIR$/ios/Pods/IQKeyboardManager/IQKeyboardManager/IQTextView/IQTextView.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/IQKeyboardManager/IQKeyboardManager/IQTextView/IQTextView.m" afterPath="$PROJECT_DIR$/ios/Pods/IQKeyboardManager/IQKeyboardManager/IQTextView/IQTextView.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/IQKeyboardManager/IQKeyboardManager/IQToolbar/IQBarButtonItem.h" afterPath="$PROJECT_DIR$/ios/Pods/IQKeyboardManager/IQKeyboardManager/IQToolbar/IQBarButtonItem.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/IQKeyboardManager/IQKeyboardManager/IQToolbar/IQBarButtonItem.m" afterPath="$PROJECT_DIR$/ios/Pods/IQKeyboardManager/IQKeyboardManager/IQToolbar/IQBarButtonItem.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/IQKeyboardManager/IQKeyboardManager/IQToolbar/IQPreviousNextView.h" afterPath="$PROJECT_DIR$/ios/Pods/IQKeyboardManager/IQKeyboardManager/IQToolbar/IQPreviousNextView.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/IQKeyboardManager/IQKeyboardManager/IQToolbar/IQTitleBarButtonItem.h" afterPath="$PROJECT_DIR$/ios/Pods/IQKeyboardManager/IQKeyboardManager/IQToolbar/IQTitleBarButtonItem.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/IQKeyboardManager/IQKeyboardManager/IQToolbar/IQTitleBarButtonItem.m" afterPath="$PROJECT_DIR$/ios/Pods/IQKeyboardManager/IQKeyboardManager/IQToolbar/IQTitleBarButtonItem.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/IQKeyboardManager/IQKeyboardManager/IQToolbar/IQToolbar.h" afterPath="$PROJECT_DIR$/ios/Pods/IQKeyboardManager/IQKeyboardManager/IQToolbar/IQToolbar.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/IQKeyboardManager/IQKeyboardManager/IQToolbar/IQToolbar.m" afterPath="$PROJECT_DIR$/ios/Pods/IQKeyboardManager/IQKeyboardManager/IQToolbar/IQToolbar.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/IQKeyboardManager/IQKeyboardManager/IQToolbar/IQUIView+IQKeyboardToolbar.h" afterPath="$PROJECT_DIR$/ios/Pods/IQKeyboardManager/IQKeyboardManager/IQToolbar/IQUIView+IQKeyboardToolbar.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/IQKeyboardManager/IQKeyboardManager/IQToolbar/IQUIView+IQKeyboardToolbar.m" afterPath="$PROJECT_DIR$/ios/Pods/IQKeyboardManager/IQKeyboardManager/IQToolbar/IQUIView+IQKeyboardToolbar.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/IQKeyboardManager/README.md" afterPath="$PROJECT_DIR$/ios/Pods/IQKeyboardManager/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/MJRefresh/MJRefresh/Base/MJRefreshBackFooter.m" afterPath="$PROJECT_DIR$/ios/Pods/MJRefresh/MJRefresh/Base/MJRefreshBackFooter.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/MJRefresh/MJRefresh/Base/MJRefreshComponent.h" afterPath="$PROJECT_DIR$/ios/Pods/MJRefresh/MJRefresh/Base/MJRefreshComponent.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/MJRefresh/MJRefresh/Base/MJRefreshComponent.m" afterPath="$PROJECT_DIR$/ios/Pods/MJRefresh/MJRefresh/Base/MJRefreshComponent.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/MJRefresh/MJRefresh/Base/MJRefreshHeader.m" afterPath="$PROJECT_DIR$/ios/Pods/MJRefresh/MJRefresh/Base/MJRefreshHeader.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/MJRefresh/MJRefresh/NSBundle+MJRefresh.m" afterPath="$PROJECT_DIR$/ios/Pods/MJRefresh/MJRefresh/NSBundle+MJRefresh.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/MJRefresh/MJRefresh/UIScrollView+MJExtension.h" afterPath="$PROJECT_DIR$/ios/Pods/MJRefresh/MJRefresh/UIScrollView+MJExtension.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/MJRefresh/MJRefresh/UIScrollView+MJExtension.m" afterPath="$PROJECT_DIR$/ios/Pods/MJRefresh/MJRefresh/UIScrollView+MJExtension.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/MJRefresh/README.md" afterPath="$PROJECT_DIR$/ios/Pods/MJRefresh/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/Manifest.lock" afterPath="$PROJECT_DIR$/ios/Pods/Manifest.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/Masonry/Masonry/MASCompositeConstraint.m" afterPath="$PROJECT_DIR$/ios/Pods/Masonry/Masonry/MASCompositeConstraint.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/Masonry/Masonry/MASConstraint.h" afterPath="$PROJECT_DIR$/ios/Pods/Masonry/Masonry/MASConstraint.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/Masonry/Masonry/MASConstraint.m" afterPath="$PROJECT_DIR$/ios/Pods/Masonry/Masonry/MASConstraint.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/Masonry/Masonry/MASConstraintMaker.h" afterPath="$PROJECT_DIR$/ios/Pods/Masonry/Masonry/MASConstraintMaker.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/Masonry/Masonry/MASConstraintMaker.m" afterPath="$PROJECT_DIR$/ios/Pods/Masonry/Masonry/MASConstraintMaker.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/Masonry/Masonry/MASViewAttribute.h" afterPath="$PROJECT_DIR$/ios/Pods/Masonry/Masonry/MASViewAttribute.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/Masonry/Masonry/MASViewAttribute.m" afterPath="$PROJECT_DIR$/ios/Pods/Masonry/Masonry/MASViewAttribute.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/Masonry/Masonry/MASViewConstraint.h" afterPath="$PROJECT_DIR$/ios/Pods/Masonry/Masonry/MASViewConstraint.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/Masonry/Masonry/MASViewConstraint.m" afterPath="$PROJECT_DIR$/ios/Pods/Masonry/Masonry/MASViewConstraint.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/Masonry/Masonry/NSArray+MASAdditions.h" afterPath="$PROJECT_DIR$/ios/Pods/Masonry/Masonry/NSArray+MASAdditions.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/Masonry/Masonry/NSLayoutConstraint+MASDebugAdditions.m" afterPath="$PROJECT_DIR$/ios/Pods/Masonry/Masonry/NSLayoutConstraint+MASDebugAdditions.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/Masonry/Masonry/View+MASAdditions.h" afterPath="$PROJECT_DIR$/ios/Pods/Masonry/Masonry/View+MASAdditions.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/Masonry/Masonry/View+MASAdditions.m" afterPath="$PROJECT_DIR$/ios/Pods/Masonry/Masonry/View+MASAdditions.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/Masonry/Masonry/View+MASShorthandAdditions.h" afterPath="$PROJECT_DIR$/ios/Pods/Masonry/Masonry/View+MASShorthandAdditions.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/Masonry/README.md" afterPath="$PROJECT_DIR$/ios/Pods/Masonry/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/project.pbxproj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/SDCycleScrollView/README.md" afterPath="$PROJECT_DIR$/ios/Pods/SDCycleScrollView/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/SDCycleScrollView/SDCycleScrollView/Lib/SDCycleScrollView/SDCycleScrollView.h" afterPath="$PROJECT_DIR$/ios/Pods/SDCycleScrollView/SDCycleScrollView/Lib/SDCycleScrollView/SDCycleScrollView.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/SDCycleScrollView/SDCycleScrollView/Lib/SDCycleScrollView/SDCycleScrollView.m" afterPath="$PROJECT_DIR$/ios/Pods/SDCycleScrollView/SDCycleScrollView/Lib/SDCycleScrollView/SDCycleScrollView.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/TZImagePickerController/README.md" afterPath="$PROJECT_DIR$/ios/Pods/TZImagePickerController/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/TZImagePickerController/TZImagePickerController/TZImagePickerController/NSBundle+TZImagePicker.h" afterPath="$PROJECT_DIR$/ios/Pods/TZImagePickerController/TZImagePickerController/TZImagePickerController/NSBundle+TZImagePicker.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/TZImagePickerController/TZImagePickerController/TZImagePickerController/NSBundle+TZImagePicker.m" afterPath="$PROJECT_DIR$/ios/Pods/TZImagePickerController/TZImagePickerController/TZImagePickerController/NSBundle+TZImagePicker.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/TZImagePickerController/TZImagePickerController/TZImagePickerController/TZAssetCell.h" afterPath="$PROJECT_DIR$/ios/Pods/TZImagePickerController/TZImagePickerController/TZImagePickerController/TZAssetCell.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/TZImagePickerController/TZImagePickerController/TZImagePickerController/TZAssetCell.m" afterPath="$PROJECT_DIR$/ios/Pods/TZImagePickerController/TZImagePickerController/TZImagePickerController/TZAssetCell.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/TZImagePickerController/TZImagePickerController/TZImagePickerController/TZAssetModel.h" afterPath="$PROJECT_DIR$/ios/Pods/TZImagePickerController/TZImagePickerController/TZImagePickerController/TZAssetModel.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/TZImagePickerController/TZImagePickerController/TZImagePickerController/TZGifPhotoPreviewController.m" afterPath="$PROJECT_DIR$/ios/Pods/TZImagePickerController/TZImagePickerController/TZImagePickerController/TZGifPhotoPreviewController.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/TZImagePickerController/TZImagePickerController/TZImagePickerController/TZImageManager.h" afterPath="$PROJECT_DIR$/ios/Pods/TZImagePickerController/TZImagePickerController/TZImagePickerController/TZImageManager.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/TZImagePickerController/TZImagePickerController/TZImagePickerController/TZImageManager.m" afterPath="$PROJECT_DIR$/ios/Pods/TZImagePickerController/TZImagePickerController/TZImagePickerController/TZImageManager.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/TZImagePickerController/TZImagePickerController/TZImagePickerController/TZImagePickerController.h" afterPath="$PROJECT_DIR$/ios/Pods/TZImagePickerController/TZImagePickerController/TZImagePickerController/TZImagePickerController.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/TZImagePickerController/TZImagePickerController/TZImagePickerController/TZImagePickerController.m" afterPath="$PROJECT_DIR$/ios/Pods/TZImagePickerController/TZImagePickerController/TZImagePickerController/TZImagePickerController.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/TZImagePickerController/TZImagePickerController/TZImagePickerController/TZPhotoPickerController.h" afterPath="$PROJECT_DIR$/ios/Pods/TZImagePickerController/TZImagePickerController/TZImagePickerController/TZPhotoPickerController.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/TZImagePickerController/TZImagePickerController/TZImagePickerController/TZPhotoPickerController.m" afterPath="$PROJECT_DIR$/ios/Pods/TZImagePickerController/TZImagePickerController/TZImagePickerController/TZPhotoPickerController.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/TZImagePickerController/TZImagePickerController/TZImagePickerController/TZPhotoPreviewCell.h" afterPath="$PROJECT_DIR$/ios/Pods/TZImagePickerController/TZImagePickerController/TZImagePickerController/TZPhotoPreviewCell.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/TZImagePickerController/TZImagePickerController/TZImagePickerController/TZPhotoPreviewCell.m" afterPath="$PROJECT_DIR$/ios/Pods/TZImagePickerController/TZImagePickerController/TZImagePickerController/TZPhotoPreviewCell.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/TZImagePickerController/TZImagePickerController/TZImagePickerController/TZPhotoPreviewController.m" afterPath="$PROJECT_DIR$/ios/Pods/TZImagePickerController/TZImagePickerController/TZImagePickerController/TZPhotoPreviewController.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/TZImagePickerController/TZImagePickerController/TZImagePickerController/TZVideoPlayerController.m" afterPath="$PROJECT_DIR$/ios/Pods/TZImagePickerController/TZImagePickerController/TZImagePickerController/TZVideoPlayerController.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/AFNetworking/AFNetworking.xcconfig" afterPath="$PROJECT_DIR$/ios/Pods/Target Support Files/AFNetworking/AFNetworking.xcconfig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/BlocksKit/BlocksKit.xcconfig" afterPath="$PROJECT_DIR$/ios/Pods/Target Support Files/BlocksKit/BlocksKit.xcconfig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/DACircularProgress/DACircularProgress.xcconfig" afterPath="$PROJECT_DIR$/ios/Pods/Target Support Files/DACircularProgress/DACircularProgress.xcconfig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/DZNEmptyDataSet/DZNEmptyDataSet.xcconfig" afterPath="$PROJECT_DIR$/ios/Pods/Target Support Files/DZNEmptyDataSet/DZNEmptyDataSet.xcconfig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/FMDB/FMDB.xcconfig" afterPath="$PROJECT_DIR$/ios/Pods/Target Support Files/FMDB/FMDB.xcconfig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/IQKeyboardManager/IQKeyboardManager.xcconfig" afterPath="$PROJECT_DIR$/ios/Pods/Target Support Files/IQKeyboardManager/IQKeyboardManager.xcconfig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/LKDBHelper/LKDBHelper.xcconfig" afterPath="$PROJECT_DIR$/ios/Pods/Target Support Files/LKDBHelper/LKDBHelper.xcconfig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/MJRefresh/MJRefresh.xcconfig" afterPath="$PROJECT_DIR$/ios/Pods/Target Support Files/MJRefresh/MJRefresh.xcconfig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/Masonry/Masonry.xcconfig" afterPath="$PROJECT_DIR$/ios/Pods/Target Support Files/Masonry/Masonry.xcconfig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-TianJiCloud/Pods-TianJiCloud-frameworks.sh" afterPath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-TianJiCloud/Pods-TianJiCloud-frameworks.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-TianJiCloud/Pods-TianJiCloud-resources.sh" afterPath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-TianJiCloud/Pods-TianJiCloud-resources.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-TianJiCloud/Pods-TianJiCloud.debug.xcconfig" afterPath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-TianJiCloud/Pods-TianJiCloud.debug.xcconfig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-TianJiCloud/Pods-TianJiCloud.release.xcconfig" afterPath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-TianJiCloud/Pods-TianJiCloud.release.xcconfig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/React/React.xcconfig" afterPath="$PROJECT_DIR$/ios/Pods/Target Support Files/React/React.xcconfig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/SDCycleScrollView/SDCycleScrollView.xcconfig" afterPath="$PROJECT_DIR$/ios/Pods/Target Support Files/SDCycleScrollView/SDCycleScrollView.xcconfig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/SDWebImage/SDWebImage.xcconfig" afterPath="$PROJECT_DIR$/ios/Pods/Target Support Files/SDWebImage/SDWebImage.xcconfig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/TZImagePickerController/TZImagePickerController.xcconfig" afterPath="$PROJECT_DIR$/ios/Pods/Target Support Files/TZImagePickerController/TZImagePickerController.xcconfig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/WZLBadge/WZLBadge.xcconfig" afterPath="$PROJECT_DIR$/ios/Pods/Target Support Files/WZLBadge/WZLBadge.xcconfig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/YTKKeyValueStore/YTKKeyValueStore.xcconfig" afterPath="$PROJECT_DIR$/ios/Pods/Target Support Files/YTKKeyValueStore/YTKKeyValueStore.xcconfig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/YTKNetwork/YTKNetwork.xcconfig" afterPath="$PROJECT_DIR$/ios/Pods/Target Support Files/YTKNetwork/YTKNetwork.xcconfig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/YYCategories/YYCategories.xcconfig" afterPath="$PROJECT_DIR$/ios/Pods/Target Support Files/YYCategories/YYCategories.xcconfig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/YYModel/YYModel.xcconfig" afterPath="$PROJECT_DIR$/ios/Pods/Target Support Files/YYModel/YYModel.xcconfig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/ZFPlayer/ZFPlayer.xcconfig" afterPath="$PROJECT_DIR$/ios/Pods/Target Support Files/ZFPlayer/ZFPlayer.xcconfig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/yoga/yoga.xcconfig" afterPath="$PROJECT_DIR$/ios/Pods/Target Support Files/yoga/yoga.xcconfig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/YTKNetwork/README.md" afterPath="$PROJECT_DIR$/ios/Pods/YTKNetwork/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/YTKNetwork/YTKNetwork/YTKBaseRequest.h" afterPath="$PROJECT_DIR$/ios/Pods/YTKNetwork/YTKNetwork/YTKBaseRequest.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/YTKNetwork/YTKNetwork/YTKNetworkAgent.m" afterPath="$PROJECT_DIR$/ios/Pods/YTKNetwork/YTKNetwork/YTKNetworkAgent.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/Pods/YTKNetwork/YTKNetwork/YTKNetworkPrivate.m" afterPath="$PROJECT_DIR$/ios/Pods/YTKNetwork/YTKNetwork/YTKNetworkPrivate.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/TianJiCloud.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/ios/TianJiCloud.xcodeproj/project.pbxproj" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/TianJiCloud/Sections/Home/Home/Controller/HomeViewController.m" afterPath="$PROJECT_DIR$/ios/TianJiCloud/Sections/Home/Home/Controller/HomeViewController.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/TianJiCloud/Sections/Message/Kinds/Controller/MessageKindListController.m" afterPath="$PROJECT_DIR$/ios/TianJiCloud/Sections/Message/Kinds/Controller/MessageKindListController.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -941,8 +960,8 @@
       <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+            <state relative-caret-position="135">
+              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -960,21 +979,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="App.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/App.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
-              <caret line="2" column="13" lean-forward="true" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AppDelegate.m" pinned="false" current-in-tab="false">
+      <file leaf-file-name="AppDelegate.m" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ios/TianJiCloud/AppDelegate.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+            <state relative-caret-position="153">
+              <caret line="24" column="70" lean-forward="false" selection-start-line="24" selection-start-column="70" selection-end-line="24" selection-end-column="70" />
               <folding />
             </state>
           </provider>
@@ -989,6 +1008,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/index.js" />
+        <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
   </component>
@@ -1004,10 +1024,10 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="321" />
-    <option name="y" value="84" />
-    <option name="width" value="976" />
-    <option name="height" value="719" />
+    <option name="x" value="191" />
+    <option name="y" value="41" />
+    <option name="width" value="1014" />
+    <option name="height" value="725" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -1025,7 +1045,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -1033,11 +1052,23 @@
               <item name="TianJiCloud" type="b2602c69:ProjectViewProjectNode" />
               <item name="TianJiCloud" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="TianJiCloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TianJiCloud" type="462c0819:PsiDirectoryNode" />
+              <item name="ios" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TianJiCloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TianJiCloud" type="462c0819:PsiDirectoryNode" />
+              <item name="ios" type="462c0819:PsiDirectoryNode" />
+              <item name="TianJiCloud" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1078,21 +1109,24 @@
       <updated>1508398784685</updated>
       <workItem from="1508398786379" duration="618000" />
       <workItem from="1508406028342" duration="343000" />
+      <workItem from="1509515656809" duration="429000" />
+      <workItem from="1509516204959" duration="222000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="961000" />
+    <option name="totallyTimeSpent" value="1612000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="321" y="84" width="976" height="719" extended-state="0" />
+    <frame x="191" y="41" width="1014" height="725" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23141362" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25936884" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20192307" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19908117" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1117,7 +1151,6 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/App.js</url>
-          <properties />
         </line-breakpoint>
       </breakpoints>
       <option name="time" value="1" />
@@ -1125,6 +1158,74 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ios/TianJiCloud/AppDelegate.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ios/TianJiCloud/AppDelegate.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" lean-forward="true" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -1159,22 +1260,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ios/TianJiCloud/AppDelegate.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1188,7 +1273,23 @@
     <entry file="file://$PROJECT_DIR$/App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
-          <caret line="2" column="13" lean-forward="true" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ios/TianJiCloud/AppDelegate.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="24" column="70" lean-forward="false" selection-start-line="24" selection-start-column="70" selection-end-line="24" selection-end-column="70" />
           <folding />
         </state>
       </provider>

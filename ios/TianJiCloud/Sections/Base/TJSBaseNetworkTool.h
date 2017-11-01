@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 #import "TJSBaseRequest+TJSSingleRequestBlock.h"
-#import <YYModel.h>
+#import "YYModel.h"
 
 typedef void(^TJSSuccessCompletionBlock)(_Nullable id);
 typedef void(^TJSFailCompletionBlock)(_Nullable id);

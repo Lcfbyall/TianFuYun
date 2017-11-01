@@ -7,7 +7,7 @@
 //
 
 #import "TJSUploadRequest.h"
-#import <AFNetworking.h>
+#import "AFNetworking.h"
 //#import "TJSBaseUrlConfigService.h"
 
 @implementation TJSUploadRequest

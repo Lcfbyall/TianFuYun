@@ -28,19 +28,25 @@ PODS:
     - FMDB/standard (= 2.7.2)
   - FMDB/standard (2.7.2)
   - GTSDK (1.6.2.0-noidfa)
-  - IQKeyboardManager (4.0.10)
+  - IQKeyboardManager (5.0.4)
   - LKDBHelper (2.4.4):
     - LKDBHelper/standard (= 2.4.4)
   - LKDBHelper/standard (2.4.4):
     - FMDB
-  - Masonry (1.0.2)
-  - MJRefresh (3.1.12)
+  - Masonry (1.1.0)
+  - MJRefresh (3.1.14.1)
+  - React/BatchedBridge (0.49.3):
+    - React/Core
+    - React/cxxreact_legacy
   - React/Core (0.49.3):
     - yoga (= 0.49.3.React)
+  - React/cxxreact_legacy (0.49.3):
+    - React/jschelpers_legacy
   - React/DevSupport (0.49.3):
     - React/Core
     - React/RCTWebSocket
   - React/fishhook (0.49.3)
+  - React/jschelpers_legacy (0.49.3)
   - React/RCTBlob (0.49.3):
     - React/Core
   - React/RCTNetwork (0.49.3):
@@ -51,12 +57,12 @@ PODS:
     - React/Core
     - React/fishhook
     - React/RCTBlob
-  - SDCycleScrollView (1.66):
+  - SDCycleScrollView (1.73):
     - SDWebImage (~> 4.0.0)
   - SDWebImage (4.0.0):
     - SDWebImage/Core (= 4.0.0)
   - SDWebImage/Core (4.0.0)
-  - TZImagePickerController (1.8.3)
+  - TZImagePickerController (1.9.3)
   - UMengUShare/Core (6.4.5):
     - UMengUShare/Network
   - UMengUShare/Network (6.4.5)
@@ -81,7 +87,7 @@ PODS:
   - yoga (0.49.3.React)
   - YTKKeyValueStore (0.1.2):
     - FMDB (~> 2.0)
-  - YTKNetwork (2.0.3):
+  - YTKNetwork (2.0.4):
     - AFNetworking (~> 3.0)
   - YYCategories (1.0.4):
     - YYCategories/no-arc (= 1.0.4)
@@ -100,6 +106,7 @@ DEPENDENCIES:
   - LKDBHelper
   - Masonry
   - MJRefresh
+  - React/BatchedBridge (from `../node_modules/react-native`)
   - React/Core (from `../node_modules/react-native`)
   - React/DevSupport (from `../node_modules/react-native`)
   - React/RCTNetwork (from `../node_modules/react-native`)
@@ -133,23 +140,23 @@ SPEC CHECKSUMS:
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
   FMDB: 6198a90e7b6900cfc046e6bc0ef6ebb7be9236aa
   GTSDK: 994039cd51dd7d65125b18ca42136968ef96a236
-  IQKeyboardManager: 593ee99b88381f4b9ccb22bd680f22606351bd41
+  IQKeyboardManager: 1df9c0f147af1681cfb2d9977bc30309d45a7e76
   LKDBHelper: cf467ff69aaf1e13bd4964aca3a79881d54c6d14
-  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
-  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MJRefresh: 238e6a37e2dba12160ee3b79f6d2a2b26abcab42
   React: 5751f5630c58f7ef31a00cf03044878295bceff0
-  SDCycleScrollView: e3ade90e9b3159bec04330b208fbfd81c3f3b671
+  SDCycleScrollView: d0fd5fe40a80918371fd8939214eb3be81033d83
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
-  TZImagePickerController: 8c02d10822404b26c4330cdb79f2e46fb6a61473
+  TZImagePickerController: 079ab986018c22793462e531045a75e366b18252
   UMengUShare: a5711c54e640b04e3048e931d2b88d50f9cfa55c
   WZLBadge: 9ec779dcfd94c825518b395e8315fccaabff1bfa
   yoga: 6e56575501ecea04196f9c9f08b90cf97cd5da24
   YTKKeyValueStore: 4d002941540dd5108fa23009b71e0f2f937f7a0f
-  YTKNetwork: c4b0c29c9d639dc050d475de69ee626d53eac598
+  YTKNetwork: df8a7a5597bda1664a4efaa7ef871a818a887fe0
   YYCategories: 6bcd4314c6661a561410dce4a793379ebd306abd
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
   ZFPlayer: 8a80bf8eb4638b97fbceaefcd3ca9978e9f17c9d
 
-PODFILE CHECKSUM: 0b7d0ea3fcddc76d5f347448528d32df00d0ed04
+PODFILE CHECKSUM: 56f5a0e5baec9fc4395e12943a0e7467051ebf41
 
 COCOAPODS: 1.3.1

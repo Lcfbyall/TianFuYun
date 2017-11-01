@@ -1,49 +1,46 @@
 
-#source 'https://github.com/CocoaPods/Old-Specs.git'
 source 'https://github.com/CocoaPods/Specs.git'
+
+# 对于Swift应用来说下面两句是必须的
 platform :ios, '8.0'
+use_frameworks!
 
 target "TianJiCloud" do
+  
+# Your 'node_modules' directory is probably in the root of your project,
+  # but if not, adjust the `:path` accordingly
+  pod 'React',
+     :path => '../node_modules/react-native', 
+     :subspecs => [
+       'Core',
+       'DevSupport', # Include this to enable In-App Devmenu if RN >= 0.43
+       'RCTText',
+       'RCTNetwork',
+       'RCTWebSocket', # needed for debugging
+       'BatchedBridge',
+            
+       # Add any other subspecs you want to use in your project
+
+      
+  
+]
+
+  # Explicitly include Yoga if you are using RN >= 0.42.0
+  pod 'yoga', :path => '../node_modules/react-native/ReactCommon/yoga'
 
 
-   # 'node_modules'目录一般位于根目录中
-   # 但是如果你的结构不同，那你就要根据实际路径修改下面的`:path`
-   pod 'React', :path => '../node_modules/react-native', :subspecs => [
-    'Core',
-    'DevSupport', # 如果RN版本 >= 0.43，则需要加入此行才能开启开发者菜单
-    'RCTText',
-    'RCTNetwork',
-    'RCTWebSocket', # 这个模块是用于调试功能的
-     # 在这里继续添加你所需要的模块
-    
-    #'jschelpers',
-    #'jschelpers_legacy',
-    
-  ]
-
-  # 如果你的RN版本 >= 0.42.0，则加入下面这行
-  pod "yoga", :path => "../node_modules/react-native/ReactCommon/yoga"
-
-
-    
     pod 'YTKNetwork', '~> 2.0.3'
     pod 'YTKKeyValueStore'
-
     pod 'GTSDK', '1.6.2.0-noidfa'
-
     pod 'AlipaySDK-2.0'
-
     pod 'UMengUShare/UI'
     pod 'UMengUShare/Social/Sina'
     pod 'UMengUShare/Social/WeChat'
     pod 'UMengUShare/Social/QQ'
-    
     pod 'LKDBHelper'
-
     pod 'YYModel'
     pod 'YYCategories'
     pod 'BlocksKit/UIKit', '~> 2.2.5'
-   
     pod 'Masonry'
     pod 'MJRefresh'
     pod 'SDCycleScrollView', '~> 1.64'
@@ -51,10 +48,12 @@ target "TianJiCloud" do
     pod 'DZNEmptyDataSet'
     pod 'WZLBadge'
     pod 'TZImagePickerController'
-    
     pod 'ZFPlayer'    
-
     pod 'IQKeyboardManager'
     
     inhibit_all_warnings!
 end
+
+
+
+

@@ -729,6 +729,7 @@
 		2CF8B5651F3DC3B2003B8520 /* ProductSearchCellContentConfigFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF8B5641F3DC3B2003B8520 /* ProductSearchCellContentConfigFactory.m */; };
 		2CF8B5681F3DC6F9003B8520 /* ProductHotCellContentConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF8B5671F3DC6F9003B8520 /* ProductHotCellContentConfig.m */; };
 		2CF8B56B1F3DC710003B8520 /* ProductSearchCellContentConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF8B56A1F3DC710003B8520 /* ProductSearchCellContentConfig.m */; };
+		9FDD1E4C029FA86F162795A9 /* Pods_TianJiCloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE718EF664E6DD5677F041B5 /* Pods_TianJiCloud.framework */; };
 		A216E3291F48097100EBBD32 /* BankPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = A216E3281F48097100EBBD32 /* BankPickerView.m */; };
 		A216E32C1F48098800EBBD32 /* AddressPikerView.m in Sources */ = {isa = PBXBuildFile; fileRef = A216E32B1F48098800EBBD32 /* AddressPikerView.m */; };
 		A28956951F3CA22A002D6845 /* ProductSearchHotLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A28956941F3CA22A002D6845 /* ProductSearchHotLayout.m */; };
@@ -750,7 +751,6 @@
 		A2ACF5F41F4B3B06007BADB9 /* WithDrawDepositTableAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = A2ACF5EF1F4B3B06007BADB9 /* WithDrawDepositTableAdapter.m */; };
 		A2FE0A891F38B47000E678E5 /* MyFavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2FE0A831F38B47000E678E5 /* MyFavViewController.m */; };
 		A2FE0A8C1F38B4B400E678E5 /* MyFavVCConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = A2FE0A8B1F38B4B400E678E5 /* MyFavVCConfig.m */; };
-		D8B489F6D9BA2D941ED245C3 /* libPods-TianJiCloud.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24C0B56EAE3CA4A62571C4DD /* libPods-TianJiCloud.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -771,7 +771,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		24C0B56EAE3CA4A62571C4DD /* libPods-TianJiCloud.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TianJiCloud.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C01B2081F6B7DBC0007DC0D /* TJSSearchBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TJSSearchBar.h; sourceTree = "<group>"; };
 		2C01B2091F6B7DBC0007DC0D /* TJSSearchBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TJSSearchBar.m; sourceTree = "<group>"; };
 		2C027D021F3B3075001D7EB6 /* FeedBackCommitApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedBackCommitApi.h; sourceTree = "<group>"; };
@@ -1110,6 +1109,8 @@
 		2C4D35E41F4C25860082BB36 /* CumulativeInvestTableAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CumulativeInvestTableAdapter.m; sourceTree = "<group>"; };
 		2C4D35EA1F4C26E50082BB36 /* CumulateInvestHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CumulateInvestHeader.h; sourceTree = "<group>"; };
 		2C4D35EB1F4C26E50082BB36 /* CumulateInvestHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CumulateInvestHeader.m; sourceTree = "<group>"; };
+		2C502DA11F9A04AD003937CA /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C502DA31F9A04BB003937CA /* libyoga.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libyoga.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C562A651F57ED5900835984 /* AlipayManagerDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlipayManagerDefine.h; sourceTree = "<group>"; };
 		2C562A661F57F1C300835984 /* AlipayOrder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlipayOrder.h; sourceTree = "<group>"; };
 		2C562A671F57F1C300835984 /* AlipayOrder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlipayOrder.m; sourceTree = "<group>"; };
@@ -2211,6 +2212,7 @@
 		A2FE0A8A1F38B4B400E678E5 /* MyFavVCConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyFavVCConfig.h; sourceTree = "<group>"; };
 		A2FE0A8B1F38B4B400E678E5 /* MyFavVCConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyFavVCConfig.m; sourceTree = "<group>"; };
 		E0DD7EF282716E8411120566 /* Pods-TianJiCloud.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TianJiCloud.release.xcconfig"; path = "Pods/Target Support Files/Pods-TianJiCloud/Pods-TianJiCloud.release.xcconfig"; sourceTree = "<group>"; };
+		EE718EF664E6DD5677F041B5 /* Pods_TianJiCloud.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TianJiCloud.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2218,7 +2220,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8B489F6D9BA2D941ED245C3 /* libPods-TianJiCloud.a in Frameworks */,
+				9FDD1E4C029FA86F162795A9 /* Pods_TianJiCloud.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -6915,7 +6917,9 @@
 		9E277105A9B5436B9F8117CB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				24C0B56EAE3CA4A62571C4DD /* libPods-TianJiCloud.a */,
+				2C502DA31F9A04BB003937CA /* libyoga.a */,
+				2C502DA11F9A04AD003937CA /* libReact.a */,
+				EE718EF664E6DD5677F041B5 /* Pods_TianJiCloud.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -7332,14 +7336,10 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TianJiCloud/Pods-TianJiCloud-resources.sh",
 				"${PODS_ROOT}/AlipaySDK-2.0/AlipaySDK.bundle",
-				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
-				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
-				"${PODS_ROOT}/TZImagePickerController/TZImagePickerController/TZImagePickerController/TZImagePickerController.bundle",
 				"${PODS_ROOT}/UMengUShare/UShareSDK/UMSocialSDK/UMSocialSDKPromptResources.bundle",
 				"${PODS_ROOT}/UMengUShare/UShareSDK/SocialLibraries/QQ/QQSDK/TencentOpenApi_IOS_Bundle.bundle",
 				"${PODS_ROOT}/UMengUShare/UShareSDK/SocialLibraries/Sina/SinaSDK/WeiboSDK.bundle",
 				"${PODS_ROOT}/UMengUShare/UShareSDK/UMSocialUI/UMSocialSDKResources.bundle",
-				"${PODS_ROOT}/ZFPlayer/ZFPlayer/ZFPlayer.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
@@ -7374,9 +7374,50 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TianJiCloud/Pods-TianJiCloud-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/BlocksKit/BlocksKit.framework",
+				"${BUILT_PRODUCTS_DIR}/DACircularProgress/DACircularProgress.framework",
+				"${BUILT_PRODUCTS_DIR}/DZNEmptyDataSet/DZNEmptyDataSet.framework",
+				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
+				"${BUILT_PRODUCTS_DIR}/LKDBHelper/LKDBHelper.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/React/React.framework",
+				"${BUILT_PRODUCTS_DIR}/SDCycleScrollView/SDCycleScrollView.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/TZImagePickerController/TZImagePickerController.framework",
+				"${BUILT_PRODUCTS_DIR}/WZLBadge/WZLBadge.framework",
+				"${BUILT_PRODUCTS_DIR}/YTKKeyValueStore/YTKKeyValueStore.framework",
+				"${BUILT_PRODUCTS_DIR}/YTKNetwork/YTKNetwork.framework",
+				"${BUILT_PRODUCTS_DIR}/YYCategories/YYCategories.framework",
+				"${BUILT_PRODUCTS_DIR}/YYModel/YYModel.framework",
+				"${BUILT_PRODUCTS_DIR}/ZFPlayer/ZFPlayer.framework",
+				"${BUILT_PRODUCTS_DIR}/yoga/yoga.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BlocksKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DACircularProgress.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DZNEmptyDataSet.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LKDBHelper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/React.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDCycleScrollView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TZImagePickerController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WZLBadge.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YTKKeyValueStore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YTKNetwork.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYCategories.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYModel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZFPlayer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/yoga.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -8183,15 +8224,18 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				DEVELOPMENT_TEAM = G4MUNEEJKB;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/TianJiCloud/PrefixHeader.pch";
 				INFOPLIST_FILE = TianJiCloud/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = TianJiMoney.TianJiCloud;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				USER_HEADER_SEARCH_PATHS = "";
 				VALID_ARCHS = "arm64 armv7s";
 			};
 			name = Debug;
@@ -8203,15 +8247,18 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				DEVELOPMENT_TEAM = G4MUNEEJKB;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/TianJiCloud/PrefixHeader.pch";
 				INFOPLIST_FILE = TianJiCloud/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = TianJiMoney.TianJiCloud;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				USER_HEADER_SEARCH_PATHS = "";
 				VALID_ARCHS = "arm64 armv7s";
 			};
 			name = Release;

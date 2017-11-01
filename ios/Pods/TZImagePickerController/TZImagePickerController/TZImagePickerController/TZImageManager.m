@@ -19,9 +19,9 @@
 
 @implementation TZImageManager
 
-static CGSize AssetGridThumbnailSize;
-static CGFloat TZScreenWidth;
-static CGFloat TZScreenScale;
+CGSize AssetGridThumbnailSize;
+CGFloat TZScreenWidth;
+CGFloat TZScreenScale;
 
 static TZImageManager *manager;
 static dispatch_once_t onceToken;
@@ -34,12 +34,7 @@ static dispatch_once_t onceToken;
             // manager.cachingImageManager.allowsCachingHighQualityImages = YES;
         }
         
-        TZScreenWidth = [UIScreen mainScreen].bounds.size.width;
-        // 测试发现，如果scale在plus真机上取到3.0，内存会增大特别多。故这里写死成2.0
-        TZScreenScale = 2.0;
-        if (TZScreenWidth > 700) {
-            TZScreenScale = 1.5;
-        }
+        [manager configTZScreenWidth];
     });
     return manager;
 }
@@ -55,10 +50,21 @@ static dispatch_once_t onceToken;
 }
 
 - (void)setColumnNumber:(NSInteger)columnNumber {
+    [self configTZScreenWidth];
+
     _columnNumber = columnNumber;
     CGFloat margin = 4;
     CGFloat itemWH = (TZScreenWidth - 2 * margin - 4) / columnNumber - margin;
     AssetGridThumbnailSize = CGSizeMake(itemWH * TZScreenScale, itemWH * TZScreenScale);
+}
+
+- (void)configTZScreenWidth {
+    TZScreenWidth = [UIScreen mainScreen].bounds.size.width;
+    // 测试发现，如果scale在plus真机上取到3.0，内存会增大特别多。故这里写死成2.0
+    TZScreenScale = 2.0;
+    if (TZScreenWidth > 700) {
+        TZScreenScale = 1.5;
+    }
 }
 
 - (ALAssetsLibrary *)assetLibrary {
@@ -130,9 +136,9 @@ static dispatch_once_t onceToken;
         for (PHAssetCollection *collection in smartAlbums) {
             // 有可能是PHCollectionList类的的对象，过滤掉
             if (![collection isKindOfClass:[PHAssetCollection class]]) continue;
-            if ([self isCameraRollAlbum:collection.localizedTitle]) {
+            if ([self isCameraRollAlbum:collection]) {
                 PHFetchResult *fetchResult = [PHAsset fetchAssetsInAssetCollection:collection options:option];
-                model = [self modelWithResult:fetchResult name:collection.localizedTitle];
+                model = [self modelWithResult:fetchResult name:collection.localizedTitle isCameraRoll:YES];
                 if (completion) completion(model);
                 break;
             }
@@ -140,9 +146,9 @@ static dispatch_once_t onceToken;
     } else {
         [self.assetLibrary enumerateGroupsWithTypes:ALAssetsGroupAll usingBlock:^(ALAssetsGroup *group, BOOL *stop) {
             if ([group numberOfAssets] < 1) return;
-            NSString *name = [group valueForProperty:ALAssetsGroupPropertyName];
-            if ([self isCameraRollAlbum:name]) {
-                model = [self modelWithResult:group name:name];
+            if ([self isCameraRollAlbum:group]) {
+                NSString *name = [group valueForProperty:ALAssetsGroupPropertyName];
+                model = [self modelWithResult:group name:name isCameraRoll:YES];
                 if (completion) completion(model);
                 *stop = YES;
             }
@@ -181,11 +187,12 @@ static dispatch_once_t onceToken;
                     }
                 }
                 
-                if ([collection.localizedTitle containsString:@"Deleted"] || [collection.localizedTitle isEqualToString:@"最近删除"]) continue;
-                if ([self isCameraRollAlbum:collection.localizedTitle]) {
-                    [albumArr insertObject:[self modelWithResult:fetchResult name:collection.localizedTitle] atIndex:0];
+                if ([collection.localizedTitle tz_containsString:@"Hidden"] || [collection.localizedTitle isEqualToString:@"已隐藏"]) continue;
+                if ([collection.localizedTitle tz_containsString:@"Deleted"] || [collection.localizedTitle isEqualToString:@"最近删除"]) continue;
+                if ([self isCameraRollAlbum:collection]) {
+                    [albumArr insertObject:[self modelWithResult:fetchResult name:collection.localizedTitle isCameraRoll:YES] atIndex:0];
                 } else {
-                    [albumArr addObject:[self modelWithResult:fetchResult name:collection.localizedTitle]];
+                    [albumArr addObject:[self modelWithResult:fetchResult name:collection.localizedTitle isCameraRoll:NO]];
                 }
             }
         }
@@ -204,16 +211,16 @@ static dispatch_once_t onceToken;
                 }
             }
             
-            if ([self isCameraRollAlbum:name]) {
-                [albumArr insertObject:[self modelWithResult:group name:name] atIndex:0];
+            if ([self isCameraRollAlbum:group]) {
+                [albumArr insertObject:[self modelWithResult:group name:name isCameraRoll:YES] atIndex:0];
             } else if ([name isEqualToString:@"My Photo Stream"] || [name isEqualToString:@"我的照片流"]) {
                 if (albumArr.count) {
-                    [albumArr insertObject:[self modelWithResult:group name:name] atIndex:1];
+                    [albumArr insertObject:[self modelWithResult:group name:name isCameraRoll:NO] atIndex:1];
                 } else {
-                    [albumArr addObject:[self modelWithResult:group name:name]];
+                    [albumArr addObject:[self modelWithResult:group name:name isCameraRoll:NO]];
                 }
             } else {
-                [albumArr addObject:[self modelWithResult:group name:name]];
+                [albumArr addObject:[self modelWithResult:group name:name isCameraRoll:NO]];
             }
         } failureBlock:nil];
     }
@@ -309,24 +316,13 @@ static dispatch_once_t onceToken;
     if (!canSelect) return nil;
     
     TZAssetModel *model;
-    TZAssetModelMediaType type = TZAssetModelMediaTypePhoto;
+    TZAssetModelMediaType type = [self getAssetType:asset];
     if ([asset isKindOfClass:[PHAsset class]]) {
-        PHAsset *phAsset = (PHAsset *)asset;
-        if (phAsset.mediaType == PHAssetMediaTypeVideo)      type = TZAssetModelMediaTypeVideo;
-        else if (phAsset.mediaType == PHAssetMediaTypeAudio) type = TZAssetModelMediaTypeAudio;
-        else if (phAsset.mediaType == PHAssetMediaTypeImage) {
-            if (iOS9_1Later) {
-                // if (asset.mediaSubtypes == PHAssetMediaSubtypePhotoLive) type = TZAssetModelMediaTypeLivePhoto;
-            }
-            // Gif
-            if ([[phAsset valueForKey:@"filename"] hasSuffix:@"GIF"]) {
-                type = TZAssetModelMediaTypePhotoGif;
-            }
-        }
         if (!allowPickingVideo && type == TZAssetModelMediaTypeVideo) return nil;
         if (!allowPickingImage && type == TZAssetModelMediaTypePhoto) return nil;
         if (!allowPickingImage && type == TZAssetModelMediaTypePhotoGif) return nil;
         
+        PHAsset *phAsset = (PHAsset *)asset;
         if (self.hideWhenCanNotSelect) {
             // 过滤掉尺寸不满足要求的图片
             if (![self isPhotoSelectableWithAsset:phAsset]) {
@@ -342,8 +338,7 @@ static dispatch_once_t onceToken;
             return model;
         }
         /// Allow picking video
-        if ([[asset valueForProperty:ALAssetPropertyType] isEqualToString:ALAssetTypeVideo]) {
-            type = TZAssetModelMediaTypeVideo;
+        if (type == TZAssetModelMediaTypeVideo) {
             NSTimeInterval duration = [[asset valueForProperty:ALAssetPropertyDuration] doubleValue];
             NSString *timeLength = [NSString stringWithFormat:@"%0.0f",duration];
             timeLength = [self getNewTimeFromDurationSecond:timeLength.integerValue];
@@ -359,6 +354,29 @@ static dispatch_once_t onceToken;
         }
     }
     return model;
+}
+
+- (TZAssetModelMediaType)getAssetType:(id)asset {
+    TZAssetModelMediaType type = TZAssetModelMediaTypePhoto;
+    if ([asset isKindOfClass:[PHAsset class]]) {
+        PHAsset *phAsset = (PHAsset *)asset;
+        if (phAsset.mediaType == PHAssetMediaTypeVideo)      type = TZAssetModelMediaTypeVideo;
+        else if (phAsset.mediaType == PHAssetMediaTypeAudio) type = TZAssetModelMediaTypeAudio;
+        else if (phAsset.mediaType == PHAssetMediaTypeImage) {
+            if (iOS9_1Later) {
+                // if (asset.mediaSubtypes == PHAssetMediaSubtypePhotoLive) type = TZAssetModelMediaTypeLivePhoto;
+            }
+            // Gif
+            if ([[phAsset valueForKey:@"filename"] hasSuffix:@"GIF"]) {
+                type = TZAssetModelMediaTypePhotoGif;
+            }
+        }
+    } else {
+        if ([[asset valueForProperty:ALAssetPropertyType] isEqualToString:ALAssetTypeVideo]) {
+            type = TZAssetModelMediaTypeVideo;
+        }
+    }
+    return type;
 }
 
 - (NSString *)getNewTimeFromDurationSecond:(NSInteger)duration {
@@ -386,7 +404,9 @@ static dispatch_once_t onceToken;
     for (NSInteger i = 0; i < photos.count; i++) {
         TZAssetModel *model = photos[i];
         if ([model.asset isKindOfClass:[PHAsset class]]) {
-            [[PHImageManager defaultManager] requestImageDataForAsset:model.asset options:nil resultHandler:^(NSData *imageData, NSString *dataUTI, UIImageOrientation orientation, NSDictionary *info) {
+            PHImageRequestOptions *options = [[PHImageRequestOptions alloc] init];
+            options.resizeMode = PHImageRequestOptionsResizeModeFast;
+            [[PHImageManager defaultManager] requestImageDataForAsset:model.asset options:options resultHandler:^(NSData *imageData, NSString *dataUTI, UIImageOrientation orientation, NSDictionary *info) {
                 if (model.type != TZAssetModelMediaTypeVideo) dataLength += imageData.length;
                 assetCount ++;
                 if (assetCount >= photos.count) {
@@ -450,7 +470,7 @@ static dispatch_once_t onceToken;
             CGFloat aspectRatio = phAsset.pixelWidth / (CGFloat)phAsset.pixelHeight;
             CGFloat pixelWidth = photoWidth * TZScreenScale * 1.5;
             // 超宽图片
-            if (aspectRatio > 1) {
+            if (aspectRatio > 1.8) {
                 pixelWidth = pixelWidth * aspectRatio;
             }
             // 超高图片
@@ -713,7 +733,7 @@ static dispatch_once_t onceToken;
         AVAssetExportSession *session = [[AVAssetExportSession alloc]initWithAsset:videoAsset presetName:AVAssetExportPreset640x480];
         
         NSDateFormatter *formater = [[NSDateFormatter alloc] init];
-        [formater setDateFormat:@"yyyy-MM-dd-HH:mm:ss"];
+        [formater setDateFormat:@"yyyy-MM-dd-HH:mm:ss-SSS"];
         NSString *outputPath = [NSHomeDirectory() stringByAppendingFormat:@"/tmp/output-%@.mp4", [formater stringFromDate:[NSDate date]]];
         NSLog(@"video outputPath = %@",outputPath);
         session.outputURL = [NSURL fileURLWithPath:outputPath];
@@ -779,20 +799,16 @@ static dispatch_once_t onceToken;
     }
 }
 
-- (BOOL)isCameraRollAlbum:(NSString *)albumName {
-    NSString *versionStr = [[UIDevice currentDevice].systemVersion stringByReplacingOccurrencesOfString:@"." withString:@""];
-    if (versionStr.length <= 1) {
-        versionStr = [versionStr stringByAppendingString:@"00"];
-    } else if (versionStr.length <= 2) {
-        versionStr = [versionStr stringByAppendingString:@"0"];
+- (BOOL)isCameraRollAlbum:(id)metadata {
+    if ([metadata isKindOfClass:[PHAssetCollection class]]) {
+        return ((PHAssetCollection *)metadata).assetCollectionSubtype == PHAssetCollectionSubtypeSmartAlbumUserLibrary;
     }
-    CGFloat version = versionStr.floatValue;
-    // 目前已知8.0.0 - 8.0.2系统，拍照后的图片会保存在最近添加中
-    if (version >= 800 && version <= 802) {
-        return [albumName isEqualToString:@"最近添加"] || [albumName isEqualToString:@"Recently Added"];
-    } else {
-        return [albumName isEqualToString:@"Camera Roll"] || [albumName isEqualToString:@"相机胶卷"] || [albumName isEqualToString:@"所有照片"] || [albumName isEqualToString:@"All Photos"];
+    if ([metadata isKindOfClass:[ALAssetsGroup class]]) {
+        ALAssetsGroup *group = metadata;
+        return ([[group valueForProperty:ALAssetsGroupPropertyType] intValue] == ALAssetsGroupSavedPhotos);
     }
+    
+    return NO;
 }
 
 - (NSString *)getAssetIdentifier:(id)asset {
@@ -827,10 +843,11 @@ static dispatch_once_t onceToken;
 
 #pragma mark - Private Method
 
-- (TZAlbumModel *)modelWithResult:(id)result name:(NSString *)name{
+- (TZAlbumModel *)modelWithResult:(id)result name:(NSString *)name isCameraRoll:(BOOL)isCameraRoll {
     TZAlbumModel *model = [[TZAlbumModel alloc] init];
     model.result = result;
     model.name = name;
+    model.isCameraRoll = isCameraRoll;
     if ([result isKindOfClass:[PHFetchResult class]]) {
         PHFetchResult *fetchResult = (PHFetchResult *)result;
         model.count = fetchResult.count;

@@ -99,7 +99,6 @@
     
     NSURL *jsCodeLocation;
     
-    
     jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index" fallbackResource:nil];
     
     
@@ -127,7 +126,7 @@
     vc.view = rootView;
     [self.navigationController pushViewController:vc animated:YES];
     
-    
+
    // [UIViewController tjs_pushViewController:MessageKindListVC params:@{@"rootView":rootView}  animated:YES];
 }
 
