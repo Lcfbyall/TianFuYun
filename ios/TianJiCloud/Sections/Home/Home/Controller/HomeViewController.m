@@ -11,6 +11,7 @@
 #import "HomeVCConfig.h"
 #import "TJSHomeListConfigurator.h"
 
+
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
 
@@ -74,6 +75,8 @@
 
 - (void)tjs_configBaseView{
     
+    [super tjs_configBaseView];
+    
     _productListTBView.backgroundColor = ThemeService.weak_color_00;
     _productListTBView.tableFooterView = [UIView new];
     
@@ -92,33 +95,25 @@
 
     NSLog(@"High Score Button Pressed");
     
-    /*
-    NSURL *jsCodeLocation = [NSURL
-                             URLWithString:@"http://localhost:8081/index.bundle?platform=ios"];
-     */
-    
-    NSURL *jsCodeLocation;
-    
-    jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index" fallbackResource:nil];
-    
+   NSURL *jsCodeLocation = [NSURL URLWithString:@"http://localhost:8081/index.bundle?platform=ios"];
     
     RCTRootView *rootView =
     [[RCTRootView alloc] initWithBundleURL : jsCodeLocation
                          moduleName        : @"TianJiCloud"
                          initialProperties :
-                                     @{
-                                       @"scores" : @[
-                                                       @{
-                                                           @"name" : @"Alex",
-                                                           @"value": @"42"
-                                                        },
-                                                       @{
-                                                           @"name" : @"Joel",
-                                                           @"value": @"10"
-                                                        }
-                                                   ]
-                                       }
-     
+     @{
+       @"scores" : @[
+                       @{
+                           @"name" : @"Alex",
+                           @"value": @"42"
+                        },
+                       @{
+                           @"name" : @"Joel",
+                           @"value": @"10"
+                        }
+                   ]
+       }
+
                           launchOptions: nil];
     
     

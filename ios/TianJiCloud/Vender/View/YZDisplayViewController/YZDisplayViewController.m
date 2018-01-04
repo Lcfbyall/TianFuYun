@@ -272,6 +272,8 @@ static NSString * const ID = @"CONTENTCELL";
         
         _titleScrollView = titleScrollView;
         
+        //titleScrollView.backgroundColor = [UIColor yellowColor];
+        
     }
     return _titleScrollView;
 }
@@ -296,15 +298,11 @@ static NSString * const ID = @"CONTENTCELL";
         // 注册cell
         [_contentScrollView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:ID];
     
-        
-        
-        
-        
+    
         _contentScrollView.backgroundColor = self.view.backgroundColor;
         [self.contentView insertSubview:contentScrollView belowSubview:self.titleScrollView];
         
-        
-        
+        //_contentScrollView.backgroundColor = [UIColor cyanColor];
     }
     
     return _contentScrollView;
@@ -321,8 +319,16 @@ static NSString * const ID = @"CONTENTCELL";
         
     }
     
+    //_contentView.backgroundColor = [UIColor blueColor];
+    
     return _contentView;
 }
+
+
+
+
+
+
 
 #pragma mark - 属性setter方法
 - (void)setIsShowTitleScale:(BOOL)isShowTitleScale
@@ -1060,7 +1066,6 @@ static NSString * const ID = @"CONTENTCELL";
     vc.view.frame = CGRectMake(0, 0, self.contentScrollView.yz_width, self.contentScrollView.yz_height);
     
     
-    /*朱鹏注释
     CGFloat bottom = self.tabBarController == nil?0:49;
     CGFloat top = _isfullScreen?CGRectGetMaxY(self.titleScrollView.frame):0;
     
@@ -1069,7 +1074,6 @@ static NSString * const ID = @"CONTENTCELL";
         UITableViewController *tableViewVc = (UITableViewController *)vc;
         tableViewVc.tableView.contentInset = UIEdgeInsetsMake(top, 0, bottom, 0);
     }
-     */
 
     
     [cell.contentView addSubview:vc.view];

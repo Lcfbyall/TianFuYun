@@ -29,13 +29,17 @@ static UIColor *TintColor    = nil;
       AdjustsScrollViewInsets :@NO,
       HideNavigationBarKey: @NO,
       HideBackBarButtonItemKey:@NO,
-      NavigationBarTintColor: ThemeService.origin_color_01,
       
+      NavigationBarTintColor: ThemeService.origin_color_01,
       NavigationBarBarTintColor:ThemeService.main_color_00,
       NavBarBackgroundAlpha:@1,
       NavigationBarsShadowImage:[UIImage new],
+      NavigationBarBackgroundImage:[UIImage tjs_imageWithColor:ThemeService.main_color_04],
       BackBarButtonItemTintColor:ThemeService.origin_color_01,
-      NavigationTitleTextAttributes:@{NSForegroundColorAttributeName:ThemeService.origin_color_01,NSFontAttributeName:[UIFont systemFontOfSize:16.0f]}};
+      
+    NavigationTitleTextAttributes:
+ @{NSForegroundColorAttributeName:ThemeService.origin_color_01,
+   NSFontAttributeName:[UIFont systemFontOfSize:16.0f]}};
     
     return dic;
 }
@@ -48,13 +52,14 @@ static UIColor *TintColor    = nil;
       AdjustsScrollViewInsets :@NO,
       HideNavigationBarKey: @NO,
       HideBackBarButtonItemKey:@YES,
+      
       NavigationBarTintColor: ThemeService.origin_color_01,
-
       NavigationBarBarTintColor:ThemeService.main_color_00,
       NavBarBackgroundAlpha:@1,
       NavigationBarsShadowImage:[UIImage new],
+      NavigationBarBackgroundImage:[UIImage new],
       BackBarButtonItemTintColor:ThemeService.origin_color_01,
-      NavigationTitleTextAttributes:@{NSForegroundColorAttributeName:ThemeService.origin_color_01,NSFontAttributeName:[UIFont systemFontOfSize:16.0f]}};
+NavigationTitleTextAttributes:@{NSForegroundColorAttributeName:ThemeService.origin_color_01,NSFontAttributeName:[UIFont systemFontOfSize:16.0f]}};
 
     return dic;
 }
@@ -63,19 +68,28 @@ static UIColor *TintColor    = nil;
     
     NSDictionary *dic =
     @{
-      NavigationBarTranslucentKey:@NO,
+      NavigationBarTranslucentKey:@YES,
       AdjustsScrollViewInsets :@NO,
-      HideNavigationBarKey: @NO,
+      HideNavigationBarKey: @YES,
       HideBackBarButtonItemKey:@NO,
+      
       NavigationBarTintColor: ThemeService.main_color_00,
       NavigationBarBarTintColor:ThemeService.main_color_00,
       NavBarBackgroundAlpha:@0,
       NavigationBarsShadowImage:[UIImage new],
       BackBarButtonItemTintColor:ThemeService.main_color_00,
-      NavigationTitleTextAttributes:@{NSForegroundColorAttributeName:ThemeService.origin_color_01,NSFontAttributeName:[UIFont systemFontOfSize:16.0f]}};
+ NavigationTitleTextAttributes:@{NSForegroundColorAttributeName:ThemeService.origin_color_01,NSFontAttributeName:[UIFont systemFontOfSize:16.0f]}};
     
     return dic;
 }
+
+
+
+
+
+
+
+
 
 
 
@@ -149,7 +163,7 @@ static UIColor *TintColor    = nil;
  */
 - (void)setBottomLineColor:(UIColor *)color{
     
-    [self setBackgroundImage:[[UIImage alloc] init]
+    [self setBackgroundImage:[UIImage new] 
               forBarPosition:UIBarPositionAny
                   barMetrics:UIBarMetricsDefault];
     

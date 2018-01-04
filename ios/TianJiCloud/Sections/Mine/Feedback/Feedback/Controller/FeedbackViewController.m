@@ -51,7 +51,7 @@
 #pragma mark - <BaseVCConfig>
 
 - (void)tjs_configBaseView{
-
+[super tjs_configBaseView];
     [self.commitBtn addBlockForControlEvents:UIControlEventTouchUpInside block:^(id  _Nonnull sender) {
         [FeedbackCommitNetworkTool requestWithParameters:nil successCallback:^(id _Nullable data) {
         

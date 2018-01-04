@@ -48,17 +48,17 @@ static NSString *identifier     = @"HomeHeaderCollectionCell";
     
     container.productItems = [HomeHeaderConfig productHomeItems];
     
+       
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
     
         HomeHeaderCollectionLayout *layout = [[HomeHeaderCollectionLayout alloc]init];
         layout.delegate = container;
         layout.interMargin = 10;
-        layout.collectionViewWidth = container.frame.size.width;
         layout.insets = UIEdgeInsetsMake(Margin, Margin, Margin, Margin);
         [layout calculateLayoutAttributes];
         
         dispatch_async(dispatch_get_main_queue(), ^{
-        
+            layout.collectionViewWidth = container.frame.size.width;
             [container p_addCollectionviewWithLayout:layout];
         });
     });

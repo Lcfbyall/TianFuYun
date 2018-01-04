@@ -63,7 +63,7 @@
 #pragma mark - <TJSBaseVCConfig>
 
 - (void)tjs_configBaseView{
-    
+    [super tjs_configBaseView];
     _newsCollectionView.backgroundColor = ThemeService.weak_color_00;
 
 }

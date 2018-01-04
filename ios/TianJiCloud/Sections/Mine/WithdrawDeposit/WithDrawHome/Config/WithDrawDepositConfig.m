@@ -27,6 +27,10 @@
     _vc.navigationItem.rightBarButtonItems = [self tjs_rightBarButtonItems];
     
     _vc.params = [UINavigationBar translucentWhiteTint];
+    
+    [_vc tjs_configViewController];
+    
+    //((UITableView *)_vc.tjs_listView).contentInset = UIEdgeInsetsMake(0, 0, 49, 0);
 }
 
 

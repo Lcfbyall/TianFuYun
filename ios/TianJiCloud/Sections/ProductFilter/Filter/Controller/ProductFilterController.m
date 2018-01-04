@@ -70,7 +70,7 @@
 
 #pragma mark - TJSBaseVCConfig
 - (void)tjs_configBaseView{
-    
+    [super tjs_configBaseView];
     WEAK_SELF(self);
     [self.resetBtn addBlockForControlEvents:UIControlEventTouchUpInside block:^(id  _Nonnull sender) {
         STRONG_SELF(self);

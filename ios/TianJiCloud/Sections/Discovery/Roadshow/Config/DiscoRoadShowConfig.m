@@ -23,7 +23,7 @@
     
     _vc.view.backgroundColor = ThemeService.weak_color_00;
     
-    
+
 
 }
 

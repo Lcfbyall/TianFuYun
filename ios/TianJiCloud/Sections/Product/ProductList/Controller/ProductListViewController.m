@@ -7,7 +7,7 @@
 //
 
 #import "ProductListViewController.h"
-
+#import "ProductListVCConfig.h"
 #import "TJSProductListConfigurator.h"
 
 @interface ProductListViewController ()
@@ -15,6 +15,9 @@
 @property (weak, nonatomic)  IBOutlet UITableView *productListTBView;
 
 @property (nonatomic,strong) TJSProductListConfigurator *configurator;
+
+@property (nonatomic,strong) ProductListVCConfig *vcConfig;
+
 
 @property (nonatomic,weak) id<TJSProductListInteractor> interactor;
 
@@ -33,6 +36,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    [self setProductConfig];
+    
     //逻辑配置器安装，在这里把tableView的代理分离出去
     [self setupConfigurator];
     
@@ -47,7 +52,8 @@
 #pragma mark - <TJSBaseVCConfig>
 
 - (void)tjs_configBaseView{
-
+     [super tjs_configBaseView];
+    
     _productListTBView.backgroundColor = ThemeService.weak_color_00;
     _productListTBView.tableFooterView = [UIView new];
 }
@@ -59,6 +65,13 @@
 
 
 #pragma mark - settings
+
+- (void)setProductConfig{
+    
+    _vcConfig = [[ProductListVCConfig alloc]init];
+    [_vcConfig setup:self];
+    
+}
 
 - (void)setupConfigurator{
  

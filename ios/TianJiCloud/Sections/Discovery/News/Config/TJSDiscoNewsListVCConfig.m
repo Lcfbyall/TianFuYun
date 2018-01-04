@@ -23,6 +23,7 @@
     
     _vc = vc;
     
+    //_vc.view.backgroundColor = [UIColor greenColor];
     
 }
 

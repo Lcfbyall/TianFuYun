@@ -24,11 +24,6 @@
     
     _vc = vc;
     
-    _vc.params = [UINavigationBar basicStyleWhite];
-    
-    [_vc tjs_configViewController];
-    
-    ((UITableView *)_vc.tjs_listView).contentInset = UIEdgeInsetsMake(0, 0, 49, 0);
 }
 
 

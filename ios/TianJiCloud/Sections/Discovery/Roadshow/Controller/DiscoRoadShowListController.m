@@ -69,7 +69,7 @@
 
 - (void)tjs_configBaseView{
 
-
+[super tjs_configBaseView];
 }
 
 - (UIScrollView *)tjs_listView{

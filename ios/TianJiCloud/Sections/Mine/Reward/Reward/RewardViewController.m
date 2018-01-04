@@ -47,7 +47,7 @@
 
 - (void)tjs_configBaseView{
 
-
+[super tjs_configBaseView];
     [self.historyBtn addBlockForControlEvents:UIControlEventTouchUpInside block:^(id  _Nonnull sender) {
         
         [UIViewController tjs_pushViewController:HistoryRewardsVC animated:YES];

@@ -584,6 +584,749 @@
 		2CCBE4A41F344A98006C4018 /* MineHomeCellItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCBE49E1F344A98006C4018 /* MineHomeCellItem.m */; };
 		2CCBE4A51F344A98006C4018 /* MineHomeCellIvestItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCBE4A01F344A98006C4018 /* MineHomeCellIvestItem.m */; };
 		2CCBE4A61F344A98006C4018 /* MineHomeCellOrderItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCBE4A21F344A98006C4018 /* MineHomeCellOrderItem.m */; };
+		2CCC5A4C1FAAC87F00F0099A /* ProductContainerVCConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCC5A4B1FAAC87E00F0099A /* ProductContainerVCConfig.m */; };
+		2CCC5AD91FB53B8900F0099A /* PNColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C1C901F3948E800002166 /* PNColor.m */; };
+		2CCC5ADA1FB53B8900F0099A /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C45919E1F59689B00D0A798 /* UIImage+Resize.m */; };
+		2CCC5ADB1FB53B8900F0099A /* BankCardAddConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B74DC1F4698A30000E71A /* BankCardAddConfig.m */; };
+		2CCC5ADC1FB53B8900F0099A /* ProductListVCConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF42B31F281B8600ABCA5E /* ProductListVCConfig.m */; };
+		2CCC5ADD1FB53B8900F0099A /* ContractApplyPNameContentConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD896A01F442806008F7C73 /* ContractApplyPNameContentConfig.m */; };
+		2CCC5ADE1FB53B8900F0099A /* ContarctApplyBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD896B11F45323F008F7C73 /* ContarctApplyBaseCell.m */; };
+		2CCC5ADF1FB53B8900F0099A /* MineHomeCellInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E3B31F2F269D00ADD360 /* MineHomeCellInfoModel.m */; };
+		2CCC5AE01FB53B8900F0099A /* ProductFilterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCC85961F3AEE3A0009FC1C /* ProductFilterController.m */; };
+		2CCC5AE11FB53B8900F0099A /* YZDisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C859C961F31EB2E00B86575 /* YZDisplayViewController.m */; };
+		2CCC5AE21FB53B8900F0099A /* ProductFilterResultDataSourceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C027D151F3C7C71001D7EB6 /* ProductFilterResultDataSourceImpl.m */; };
+		2CCC5AE31FB53B8900F0099A /* DiscoRoadShowConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4591961F590A1600D0A798 /* DiscoRoadShowConfig.m */; };
+		2CCC5AE41FB53B8900F0099A /* AllActivityTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C83C7271F39BA4C004034CA /* AllActivityTableCell.m */; };
+		2CCC5AE51FB53B8900F0099A /* UIBarButtonItem+TJSWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C91165C1F62971F00C315D6 /* UIBarButtonItem+TJSWebCache.m */; };
+		2CCC5AE61FB53B8900F0099A /* MyFavListLayoutImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB4F6011F42849100FF98C9 /* MyFavListLayoutImpl.m */; };
+		2CCC5AE71FB53B8900F0099A /* TJSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD11E1F55469D00F9654D /* TJSAppDelegate.m */; };
+		2CCC5AE81FB53B8900F0099A /* AddressSelectedInteractorImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD897491F457B96008F7C73 /* AddressSelectedInteractorImpl.m */; };
+		2CCC5AE91FB53B8900F0099A /* UIButton+TouchAreaInsets.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CEC58C61F4FCDE7006C03F5 /* UIButton+TouchAreaInsets.m */; };
+		2CCC5AEA1FB53B8900F0099A /* CumulativeInvestInteractorImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4D35E01F4C25860082BB36 /* CumulativeInvestInteractorImpl.m */; };
+		2CCC5AEB1FB53B8900F0099A /* UIViewController+Alert.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C859CCA1F31EB2E00B86575 /* UIViewController+Alert.m */; };
+		2CCC5AEC1FB53B8900F0099A /* UIBarButtonItem+TJSCustom.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C597DD71F4C358500415EB6 /* UIBarButtonItem+TJSCustom.m */; };
+		2CCC5AED1FB53B8900F0099A /* NSDate+TJSDateModify.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C91160E1F5FD69700C315D6 /* NSDate+TJSDateModify.m */; };
+		2CCC5AEE1FB53B8900F0099A /* ContractAddressListStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB4F5D91F41C3BB00FF98C9 /* ContractAddressListStore.m */; };
+		2CCC5AEF1FB53B8900F0099A /* UIImage+Retinted.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4412811F21EA8900C453EF /* UIImage+Retinted.m */; };
+		2CCC5AF01FB53B8900F0099A /* MineHomeVCConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E36F1F2ED87A00ADD360 /* MineHomeVCConfig.m */; };
+		2CCC5AF11FB53B8900F0099A /* ContractAddAddressDataSourceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD896D71F453D33008F7C73 /* ContractAddAddressDataSourceImpl.m */; };
+		2CCC5AF21FB53B8900F0099A /* ContractApplyDataSourceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB4F6341F42F26500FF98C9 /* ContractApplyDataSourceImpl.m */; };
+		2CCC5AF31FB53B8900F0099A /* TJSAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C44124A1F21D42600C453EF /* TJSAlertController.m */; };
+		2CCC5AF41FB53B8900F0099A /* ZLPhotoPickerBrowserPhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C859CBD1F31EB2E00B86575 /* ZLPhotoPickerBrowserPhotoView.m */; };
+		2CCC5AF51FB53B8900F0099A /* ContactsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C562A821F58118D00835984 /* ContactsManager.m */; };
+		2CCC5AF61FB53B8900F0099A /* DiscoveryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCBE4641F330572006C4018 /* DiscoveryViewController.m */; };
+		2CCC5AF71FB53B8900F0099A /* AlternateIconManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9116521F627F1500C315D6 /* AlternateIconManager.m */; };
+		2CCC5AF81FB53B8900F0099A /* MyFavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2FE0A831F38B47000E678E5 /* MyFavViewController.m */; };
+		2CCC5AF91FB53B8900F0099A /* DiscoRoadShowInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4591931F5908CE00D0A798 /* DiscoRoadShowInfo.m */; };
+		2CCC5AFA1FB53B8900F0099A /* TJSPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCBE4951F3421F1006C4018 /* TJSPageControl.m */; };
+		2CCC5AFB1FB53B8900F0099A /* ZLPhotoPickerBrowserPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C859CAF1F31EB2E00B86575 /* ZLPhotoPickerBrowserPhoto.m */; };
+		2CCC5AFC1FB53B8900F0099A /* ProductHotCellContentConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF8B5671F3DC6F9003B8520 /* ProductHotCellContentConfig.m */; };
+		2CCC5AFD1FB53B8900F0099A /* UINavigationBar+StyleConfigure.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4411F51F219A5300C453EF /* UINavigationBar+StyleConfigure.m */; };
+		2CCC5AFE1FB53B8900F0099A /* TJSSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE85D081F4EE18200666DE4 /* TJSSegmentedControl.m */; };
+		2CCC5AFF1FB53B8900F0099A /* MineHomeCellInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7A345F1F2F80F7004DD566 /* MineHomeCellInfo.m */; };
+		2CCC5B001FB53B8900F0099A /* ConAddressRightInputCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD896C91F453BE0008F7C73 /* ConAddressRightInputCell.m */; };
+		2CCC5B011FB53B8900F0099A /* TJSBaseControllerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E3721F2EDB1000ADD360 /* TJSBaseControllerConfig.m */; };
+		2CCC5B021FB53B8900F0099A /* TJSAppSoreUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C1C291F386DA100002166 /* TJSAppSoreUtil.m */; };
+		2CCC5B031FB53B8900F0099A /* TJSHomeListDataSourceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE58C1F29E081009B3AE2 /* TJSHomeListDataSourceImpl.m */; };
+		2CCC5B041FB53B8900F0099A /* GetVertifyCodeApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE542361F4EA68100205993 /* GetVertifyCodeApi.m */; };
+		2CCC5B051FB53B8900F0099A /* ProductFilterResultLayoutImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C027D181F3C7C80001D7EB6 /* ProductFilterResultLayoutImpl.m */; };
+		2CCC5B061FB53B8900F0099A /* AddressManageContentConfigFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD897181F4548E2008F7C73 /* AddressManageContentConfigFactory.m */; };
+		2CCC5B071FB53B8900F0099A /* AddressManageDataSourceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD897041F45480B008F7C73 /* AddressManageDataSourceImpl.m */; };
+		2CCC5B081FB53B8900F0099A /* KeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD1271F55493600F9654D /* KeyboardManager.m */; };
+		2CCC5B091FB53B8900F0099A /* MyContractListStoreTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB4F5DB1F41C3BB00FF98C9 /* MyContractListStoreTool.m */; };
+		2CCC5B0A1FB53B8900F0099A /* WXApiResponseHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD17B1F56BA2E00F9654D /* WXApiResponseHandler.m */; };
+		2CCC5B0B1FB53B8900F0099A /* SetWithDarwCodeApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE542441F4EA99300205993 /* SetWithDarwCodeApi.m */; };
+		2CCC5B0C1FB53B8900F0099A /* WithDrawDepositHomeHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4D35C91F4C05F00082BB36 /* WithDrawDepositHomeHeader.m */; };
+		2CCC5B0D1FB53B8900F0099A /* ContractAddAddressLayoutImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD896DB1F453D33008F7C73 /* ContractAddAddressLayoutImpl.m */; };
+		2CCC5B0E1FB53B8900F0099A /* ZLPhotoRect.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C859CB11F31EB2E00B86575 /* ZLPhotoRect.m */; };
+		2CCC5B0F1FB53B8900F0099A /* ProductSearchListCellFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF8B5441F3D48B0003B8520 /* ProductSearchListCellFactory.m */; };
+		2CCC5B101FB53B8900F0099A /* ContractAddAddressTableAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD896DD1F453D33008F7C73 /* ContractAddAddressTableAdapter.m */; };
+		2CCC5B111FB53B8900F0099A /* LocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C562A861F58132500835984 /* LocationManager.m */; };
+		2CCC5B121FB53B8900F0099A /* ProductSearchHotReusableHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A71C681F3F200700577E45 /* ProductSearchHotReusableHeader.m */; };
+		2CCC5B131FB53B8900F0099A /* BankCardListNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B74AA1F4694FF0000E71A /* BankCardListNetworkTool.m */; };
+		2CCC5B141FB53B8900F0099A /* MyFavListTableAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB4F6031F42849100FF98C9 /* MyFavListTableAdapter.m */; };
+		2CCC5B151FB53B8900F0099A /* TJSAlertHandleUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C1C2C1F386DF400002166 /* TJSAlertHandleUtil.m */; };
+		2CCC5B161FB53B8900F0099A /* BankPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = A216E3281F48097100EBBD32 /* BankPickerView.m */; };
+		2CCC5B171FB53B8900F0099A /* AddressManageDefaultCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD897231F4572CC008F7C73 /* AddressManageDefaultCell.m */; };
+		2CCC5B181FB53B8900F0099A /* PNChartLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C1C8E1F3948E800002166 /* PNChartLabel.m */; };
+		2CCC5B191FB53B8900F0099A /* MyFavVCConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = A2FE0A8B1F38B4B400E678E5 /* MyFavVCConfig.m */; };
+		2CCC5B1A1FB53B8900F0099A /* UISearchBar+TJSBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C89AD781F2C5155005C29AC /* UISearchBar+TJSBlock.m */; };
+		2CCC5B1B1FB53B8900F0099A /* DiscoRoadShowDataSorceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C45917E1F58F5BE00D0A798 /* DiscoRoadShowDataSorceImpl.m */; };
+		2CCC5B1C1FB53B8900F0099A /* ProfileAddressController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9116341F61337E00C315D6 /* ProfileAddressController.m */; };
+		2CCC5B1D1FB53B8900F0099A /* ProductFilterApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD1351F55518C00F9654D /* ProductFilterApi.m */; };
+		2CCC5B1E1FB53B8900F0099A /* ZLPhotoPickerBrowserPhotoImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C859CB91F31EB2E00B86575 /* ZLPhotoPickerBrowserPhotoImageView.m */; };
+		2CCC5B1F1FB53B8900F0099A /* WithDrawDepositSumCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA639171F4ADD5300C39562 /* WithDrawDepositSumCell.m */; };
+		2CCC5B201FB53B8900F0099A /* GVUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C44123B1F21D27600C453EF /* GVUserDefaults.m */; };
+		2CCC5B211FB53B8900F0099A /* ProductFilterNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCC85D21F3B0CAA0009FC1C /* ProductFilterNetworkTool.m */; };
+		2CCC5B221FB53B8900F0099A /* ProductDeleteNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF42BF1F281B8600ABCA5E /* ProductDeleteNetworkTool.m */; };
+		2CCC5B231FB53B8900F0099A /* MyOrderListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C1BD01F380DFE00002166 /* MyOrderListViewController.m */; };
+		2CCC5B241FB53B8900F0099A /* UIApplication+TJSAppstore.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD1601F564B1800F9654D /* UIApplication+TJSAppstore.m */; };
+		2CCC5B251FB53B8900F0099A /* AddressManageConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD897021F45480B008F7C73 /* AddressManageConfigurator.m */; };
+		2CCC5B261FB53B8900F0099A /* ProductFilterResultTableAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C027D1B1F3C7C92001D7EB6 /* ProductFilterResultTableAdapter.m */; };
+		2CCC5B271FB53B8900F0099A /* PlatformAnnounceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C83C71B1F39B9C9004034CA /* PlatformAnnounceController.m */; };
+		2CCC5B281FB53B8900F0099A /* UINavigationController+TZPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9116641F6638BF00C315D6 /* UINavigationController+TZPopGesture.m */; };
+		2CCC5B291FB53B8900F0099A /* BankCardListDataSourceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B749C1F4694FF0000E71A /* BankCardListDataSourceImpl.m */; };
+		2CCC5B2A1FB53B8900F0099A /* TJSBaseCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C027D0A1F3BFA28001D7EB6 /* TJSBaseCollectionReusableView.m */; };
+		2CCC5B2B1FB53B8900F0099A /* TJSMyOrderListCellLayoutConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C1C1E1F38531F00002166 /* TJSMyOrderListCellLayoutConfig.m */; };
+		2CCC5B2C1FB53B8900F0099A /* APWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C562A6D1F57F1E500835984 /* APWebViewController.m */; };
+		2CCC5B2D1FB53B8900F0099A /* UIButton+ContentRect.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CEC58BC1F4FCDE7006C03F5 /* UIButton+ContentRect.m */; };
+		2CCC5B2E1FB53B8900F0099A /* CumulativeInvestCellLayoutConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4D35D01F4C23B10082BB36 /* CumulativeInvestCellLayoutConfig.m */; };
+		2CCC5B2F1FB53B8900F0099A /* LogoutNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE542231F4EA4A100205993 /* LogoutNetworkTool.m */; };
+		2CCC5B301FB53B8900F0099A /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C859C8F1F31EB2E00B86575 /* MBProgressHUD.m */; };
+		2CCC5B311FB53B8900F0099A /* WithDrawDepositInteractorImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = A2ACF5EB1F4B3B06007BADB9 /* WithDrawDepositInteractorImpl.m */; };
+		2CCC5B321FB53B8900F0099A /* BankCardListDefaultCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B74B61F4694FF0000E71A /* BankCardListDefaultCell.m */; };
+		2CCC5B331FB53B8900F0099A /* BankCardListBaseTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B74B41F4694FF0000E71A /* BankCardListBaseTableCell.m */; };
+		2CCC5B341FB53B8900F0099A /* ContractDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB4F6191F429ADF00FF98C9 /* ContractDetailController.m */; };
+		2CCC5B351FB53B8900F0099A /* AboutMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E34C1F2ECC1200ADD360 /* AboutMeViewController.m */; };
+		2CCC5B361FB53B8900F0099A /* ProductSearchNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF8B55D1F3DA438003B8520 /* ProductSearchNetworkTool.m */; };
+		2CCC5B371FB53B8900F0099A /* ProductContainerVCConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCC5A4B1FAAC87E00F0099A /* ProductContainerVCConfig.m */; };
+		2CCC5B381FB53B8900F0099A /* EditProfileInfoApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE5423D1F4EA83200205993 /* EditProfileInfoApi.m */; };
+		2CCC5B391FB53B8900F0099A /* ContractApplyTableAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB4F63A1F42F26500FF98C9 /* ContractApplyTableAdapter.m */; };
+		2CCC5B3A1FB53B8900F0099A /* SettingHomeCellFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C597DA31F4C2CB900415EB6 /* SettingHomeCellFactory.m */; };
+		2CCC5B3B1FB53B8900F0099A /* MineHomeCellItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCBE49E1F344A98006C4018 /* MineHomeCellItem.m */; };
+		2CCC5B3C1FB53B8900F0099A /* EventKitManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9115FB1F5E8E0900C315D6 /* EventKitManager.m */; };
+		2CCC5B3D1FB53B8900F0099A /* NSDate+TJSComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C91160B1F5FD66F00C315D6 /* NSDate+TJSComponent.m */; };
+		2CCC5B3E1FB53B8900F0099A /* RootControllerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD12B1F554BA900F9654D /* RootControllerManager.m */; };
+		2CCC5B3F1FB53B8900F0099A /* HomeHeaderWebController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8BB7B71F315CA600E2D75F /* HomeHeaderWebController.m */; };
+		2CCC5B401FB53B8900F0099A /* MineHomeHeaderCollectionLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCBE4821F3415F2006C4018 /* MineHomeHeaderCollectionLayout.m */; };
+		2CCC5B411FB53B8900F0099A /* AddressManageInteractorImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD897061F45480B008F7C73 /* AddressManageInteractorImpl.m */; };
+		2CCC5B421FB53B8900F0099A /* UITableView+TJSTableHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD1031F53FCA400F9654D /* UITableView+TJSTableHeader.m */; };
+		2CCC5B431FB53B8900F0099A /* CumulativeInvestDefaultContentConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4D35D41F4C23B10082BB36 /* CumulativeInvestDefaultContentConfig.m */; };
+		2CCC5B441FB53B8900F0099A /* ZLCameraView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C859CA81F31EB2E00B86575 /* ZLCameraView.m */; };
+		2CCC5B451FB53B8900F0099A /* ContractApplyInfoContentConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD8969D1F4427E8008F7C73 /* ContractApplyInfoContentConfig.m */; };
+		2CCC5B461FB53B8900F0099A /* CumulateInvestHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4D35EB1F4C26E50082BB36 /* CumulateInvestHeader.m */; };
+		2CCC5B471FB53B8900F0099A /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C859C921F31EB2E00B86575 /* UIView+Frame.m */; };
+		2CCC5B481FB53B8900F0099A /* CumulativeInvestConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4D35DC1F4C25860082BB36 /* CumulativeInvestConfigurator.m */; };
+		2CCC5B491FB53B8900F0099A /* BankCardListAddCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B74B21F4694FF0000E71A /* BankCardListAddCell.m */; };
+		2CCC5B4A1FB53B8900F0099A /* DiscoNewsDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C89AD731F2B5C81005C29AC /* DiscoNewsDetailController.m */; };
+		2CCC5B4B1FB53B8900F0099A /* ProductDetailConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD1391F5551E400F9654D /* ProductDetailConfig.m */; };
+		2CCC5B4C1FB53B8900F0099A /* ContractAddAddressInteractorImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD896D91F453D33008F7C73 /* ContractAddAddressInteractorImpl.m */; };
+		2CCC5B4D1FB53B8900F0099A /* PlatformAnnounceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C83C7211F39BA14004034CA /* PlatformAnnounceCell.m */; };
+		2CCC5B4E1FB53B8900F0099A /* HomeWebClickItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8BB7AB1F30878A00E2D75F /* HomeWebClickItem.m */; };
+		2CCC5B4F1FB53B8900F0099A /* TJSBaseControllerContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE5A81F2ACA75009B3AE2 /* TJSBaseControllerContainer.m */; };
+		2CCC5B501FB53B8900F0099A /* MyFavListDataSourceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB4F5FD1F42849100FF98C9 /* MyFavListDataSourceImpl.m */; };
+		2CCC5B511FB53B8900F0099A /* AddressSelectedTableAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD8974D1F457B96008F7C73 /* AddressSelectedTableAdapter.m */; };
+		2CCC5B521FB53B8900F0099A /* MineHomeInvestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E3AC1F2F1C1D00ADD360 /* MineHomeInvestCell.m */; };
+		2CCC5B531FB53B8900F0099A /* WXMediaMessage+messageConstruct.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD1871F56C00200F9654D /* WXMediaMessage+messageConstruct.m */; };
+		2CCC5B541FB53B8900F0099A /* ProfileMobileController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C91162E1F61333B00C315D6 /* ProfileMobileController.m */; };
+		2CCC5B551FB53B8900F0099A /* CumulateInvestNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB4F5681F418FFB00FF98C9 /* CumulateInvestNetworkTool.m */; };
+		2CCC5B561FB53B8900F0099A /* DiscoveryRoadShowListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE5B51F2AD8B3009B3AE2 /* DiscoveryRoadShowListCell.m */; };
+		2CCC5B571FB53B8900F0099A /* ProducFilterVCConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCC85931F3AEE3A0009FC1C /* ProducFilterVCConfig.m */; };
+		2CCC5B581FB53B8900F0099A /* HomeHeaderContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8BB79F1F30859C00E2D75F /* HomeHeaderContainer.m */; };
+		2CCC5B591FB53B8900F0099A /* UIColor+TJSiOS7Colors.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C89AD831F2C91DE005C29AC /* UIColor+TJSiOS7Colors.m */; };
+		2CCC5B5A1FB53B8900F0099A /* HomeFooterCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8BB7921F30859C00E2D75F /* HomeFooterCollectionCell.m */; };
+		2CCC5B5B1FB53B8900F0099A /* BankCardAddContentConfigFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B74F41F469BDB0000E71A /* BankCardAddContentConfigFactory.m */; };
+		2CCC5B5C1FB53B8900F0099A /* TJSProductListCellLayoutConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF42B01F281B8600ABCA5E /* TJSProductListCellLayoutConfig.m */; };
+		2CCC5B5D1FB53B8900F0099A /* ProductSearchApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF8B5541F3DA324003B8520 /* ProductSearchApi.m */; };
+		2CCC5B5E1FB53B8900F0099A /* ProfesisonAuthenController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C300F8A1F2F3CB100DD440E /* ProfesisonAuthenController.m */; };
+		2CCC5B5F1FB53B8900F0099A /* UIView+TJSFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF43201F28398E00ABCA5E /* UIView+TJSFrame.m */; };
+		2CCC5B601FB53B8900F0099A /* ContractListTableAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB4F5C51F41C3BB00FF98C9 /* ContractListTableAdapter.m */; };
+		2CCC5B611FB53B8900F0099A /* TJSBaseCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF8B54A1F3D9E5C003B8520 /* TJSBaseCollectionViewLayout.m */; };
+		2CCC5B621FB53B8900F0099A /* MineHeaderCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCBE4851F3417A5006C4018 /* MineHeaderCollectionCell.m */; };
+		2CCC5B631FB53B8900F0099A /* TJSDownLoaderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4412921F21FF9C00C453EF /* TJSDownLoaderManager.m */; };
+		2CCC5B641FB53B8900F0099A /* HistoryRewardConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA5530E1F43EA7B0095ECC1 /* HistoryRewardConfig.m */; };
+		2CCC5B651FB53B8900F0099A /* WithDrawDepositConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = A2ACF5E71F4B3B06007BADB9 /* WithDrawDepositConfigurator.m */; };
+		2CCC5B661FB53B8900F0099A /* TJSWeakScriptMessageHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE5931F29F5FF009B3AE2 /* TJSWeakScriptMessageHandler.m */; };
+		2CCC5B671FB53B8900F0099A /* UIViewController+RouteParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4412541F21DBBA00C453EF /* UIViewController+RouteParams.m */; };
+		2CCC5B681FB53B8900F0099A /* UITextView+PlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C44127E1F21E99700C453EF /* UITextView+PlaceHolder.m */; };
+		2CCC5B691FB53B8900F0099A /* BankCardAddDefaultCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B74EE1F4699BE0000E71A /* BankCardAddDefaultCell.m */; };
+		2CCC5B6A1FB53B8900F0099A /* TJSProductInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF43171F2829CF00ABCA5E /* TJSProductInfoModel.m */; };
+		2CCC5B6B1FB53B8900F0099A /* UITextField+LengthLimited.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CEC58CC1F4FCDE7006C03F5 /* UITextField+LengthLimited.m */; };
+		2CCC5B6C1FB53B8900F0099A /* ZLCameraImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C859CA61F31EB2E00B86575 /* ZLCameraImageView.m */; };
+		2CCC5B6D1FB53B8900F0099A /* TJSMyOrderListLayoutImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C1C121F384A4900002166 /* TJSMyOrderListLayoutImpl.m */; };
+		2CCC5B6E1FB53B8900F0099A /* MineHomeHeaderContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCBE4791F331D91006C4018 /* MineHomeHeaderContainer.m */; };
+		2CCC5B6F1FB53B8900F0099A /* ProductDetailDataSourceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD1571F55731F00F9654D /* ProductDetailDataSourceImpl.m */; };
+		2CCC5B701FB53B8900F0099A /* LogoutApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE542271F4EA4E900205993 /* LogoutApi.m */; };
+		2CCC5B711FB53B8900F0099A /* SocailManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD1121F55034200F9654D /* SocailManager.m */; };
+		2CCC5B721FB53B8900F0099A /* ConAddressMiddleLabelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD896CF1F453C34008F7C73 /* ConAddressMiddleLabelCell.m */; };
+		2CCC5B731FB53B8900F0099A /* TJSProductDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE59B1F29FC51009B3AE2 /* TJSProductDetailController.m */; };
+		2CCC5B741FB53B8900F0099A /* TJSAnimatingRequestAccessory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C44129C1F2201FF00C453EF /* TJSAnimatingRequestAccessory.m */; };
+		2CCC5B751FB53B8900F0099A /* ProfileServiceRegion.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9116311F61336000C315D6 /* ProfileServiceRegion.m */; };
+		2CCC5B761FB53B8900F0099A /* GVUserDefaults+TJSGlobalProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C44123E1F21D2A600C453EF /* GVUserDefaults+TJSGlobalProperties.m */; };
+		2CCC5B771FB53B8900F0099A /* AddressSelectedConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD897451F457B96008F7C73 /* AddressSelectedConfigurator.m */; };
+		2CCC5B781FB53B8900F0099A /* NewsInfomationListApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD12F1F55508900F9654D /* NewsInfomationListApi.m */; };
+		2CCC5B791FB53B8900F0099A /* CALayer+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9116601F66289C00C315D6 /* CALayer+Extensions.m */; };
+		2CCC5B7A1FB53B8900F0099A /* AddressManageCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD897111F454839008F7C73 /* AddressManageCellModel.m */; };
+		2CCC5B7B1FB53B8900F0099A /* SettingHomeLayoutImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C597DB41F4C2CB900415EB6 /* SettingHomeLayoutImpl.m */; };
+		2CCC5B7C1FB53B8900F0099A /* ProductDetailConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD14E1F55728000F9654D /* ProductDetailConfigurator.m */; };
+		2CCC5B7D1FB53B8900F0099A /* BankCardAddCellLayoutConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B74DA1F4698A30000E71A /* BankCardAddCellLayoutConfig.m */; };
+		2CCC5B7E1FB53B8900F0099A /* AddressManageLayoutImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD897081F45480B008F7C73 /* AddressManageLayoutImpl.m */; };
+		2CCC5B7F1FB53B8900F0099A /* UIWindow+Transition.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4412581F21DDA900C453EF /* UIWindow+Transition.m */; };
+		2CCC5B801FB53B8900F0099A /* MyOrderListVCConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C1C061F3847C200002166 /* MyOrderListVCConfig.m */; };
+		2CCC5B811FB53B8900F0099A /* TJSStoreManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C83C7011F39B79C004034CA /* TJSStoreManager.m */; };
+		2CCC5B821FB53B8900F0099A /* WithDrawDepositTableAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = A2ACF5EF1F4B3B06007BADB9 /* WithDrawDepositTableAdapter.m */; };
+		2CCC5B831FB53B8900F0099A /* WithDrawDepositCellFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA639261F4AE9D000C39562 /* WithDrawDepositCellFactory.m */; };
+		2CCC5B841FB53B8900F0099A /* ProductFilterResultCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCC85C11F3AEF4D0009FC1C /* ProductFilterResultCell.m */; };
+		2CCC5B851FB53B8900F0099A /* ContractApplyConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB4F6321F42F26500FF98C9 /* ContractApplyConfigurator.m */; };
+		2CCC5B861FB53B8900F0099A /* TJSMineHomeCellFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E3881F2F09D100ADD360 /* TJSMineHomeCellFactory.m */; };
+		2CCC5B871FB53B8900F0099A /* FMDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD10F1F55033400F9654D /* FMDBManager.m */; };
+		2CCC5B881FB53B8900F0099A /* AddressSelectedCellLayoutConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD8973B1F457B55008F7C73 /* AddressSelectedCellLayoutConfig.m */; };
+		2CCC5B891FB53B8900F0099A /* TJSImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C88F69A1F4EC73E009CF23E /* TJSImagePicker.m */; };
+		2CCC5B8A1FB53B8900F0099A /* ProductListStoreTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C83C7041F39B80A004034CA /* ProductListStoreTool.m */; };
+		2CCC5B8B1FB53B8900F0099A /* UISegmentedControl+TJSCustomStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CEC58C91F4FCDE7006C03F5 /* UISegmentedControl+TJSCustomStyle.m */; };
+		2CCC5B8C1FB53B8900F0099A /* ZLPhotoPickerCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C859CD71F31EB2E00B86575 /* ZLPhotoPickerCollectionViewCell.m */; };
+		2CCC5B8D1FB53B8900F0099A /* MineHomeOrderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E3A91F2F1C0000ADD360 /* MineHomeOrderCell.m */; };
+		2CCC5B8E1FB53B8900F0099A /* WithDrawDepositBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA639111F4AD9B000C39562 /* WithDrawDepositBaseCell.m */; };
+		2CCC5B8F1FB53B8900F0099A /* ProfileIdentityControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9116281F61330300C315D6 /* ProfileIdentityControllerViewController.m */; };
+		2CCC5B901FB53B8900F0099A /* ContractAddAddressCellFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD896E71F453F8C008F7C73 /* ContractAddAddressCellFactory.m */; };
+		2CCC5B911FB53B8900F0099A /* MyOrderInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C1C001F38476900002166 /* MyOrderInfo.m */; };
+		2CCC5B921FB53B8900F0099A /* HomeVCConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C431DE71F299A9600858C12 /* HomeVCConfig.m */; };
+		2CCC5B931FB53B8900F0099A /* ProductSearchCellContentConfigFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF8B5641F3DC3B2003B8520 /* ProductSearchCellContentConfigFactory.m */; };
+		2CCC5B941FB53B8900F0099A /* ZLPhotoPickerGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C859CD01F31EB2E00B86575 /* ZLPhotoPickerGroupViewController.m */; };
+		2CCC5B951FB53B8900F0099A /* BankCardAddInteractorImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B74FB1F469E5A0000E71A /* BankCardAddInteractorImpl.m */; };
+		2CCC5B961FB53B8900F0099A /* YZFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C859C991F31EB2E00B86575 /* YZFlowLayout.m */; };
+		2CCC5B971FB53B8900F0099A /* BankCardListInteractorImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B749E1F4694FF0000E71A /* BankCardListInteractorImpl.m */; };
+		2CCC5B981FB53B8900F0099A /* UIDevice+CurrentArg.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4411ED1F219A5300C453EF /* UIDevice+CurrentArg.m */; };
+		2CCC5B991FB53B8900F0099A /* UIButton+CommitStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CEC58BA1F4FCDE7006C03F5 /* UIButton+CommitStyle.m */; };
+		2CCC5B9A1FB53B8900F0099A /* BankCardAddCellInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B74E81F4698C90000E71A /* BankCardAddCellInfoModel.m */; };
+		2CCC5B9B1FB53B8900F0099A /* SettingHomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C597DCE1F4C2DC600415EB6 /* SettingHomeModel.m */; };
+		2CCC5B9C1FB53B8900F0099A /* DiscoRoadShowListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE6101F2B43A8009B3AE2 /* DiscoRoadShowListController.m */; };
+		2CCC5B9D1FB53B8900F0099A /* TJSMineHomeLayoutImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E3851F2F044600ADD360 /* TJSMineHomeLayoutImpl.m */; };
+		2CCC5B9E1FB53B8900F0099A /* CapitalRecordListController.m in Sources */ = {isa = PBXBuildFile; fileRef = A292B2601F39F7DD0086E03E /* CapitalRecordListController.m */; };
+		2CCC5B9F1FB53B8900F0099A /* AddressManageDefaultContentConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD8971D1F4570B3008F7C73 /* AddressManageDefaultContentConfig.m */; };
+		2CCC5BA01FB53B8900F0099A /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E2AC1F2EBDFE00ADD360 /* MineViewController.m */; };
+		2CCC5BA11FB53B8900F0099A /* FeedBackCommitApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C027D031F3B3075001D7EB6 /* FeedBackCommitApi.m */; };
+		2CCC5BA21FB53B8900F0099A /* MyFavListConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB4F5FB1F42849100FF98C9 /* MyFavListConfigurator.m */; };
+		2CCC5BA31FB53B8900F0099A /* ProductFilterCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCC85CF1F3B0B650009FC1C /* ProductFilterCollectionCell.m */; };
+		2CCC5BA41FB53B8900F0099A /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9116251F6132CA00C315D6 /* ProfileViewController.m */; };
+		2CCC5BA51FB53B8900F0099A /* TJSBaseRequest+TJSSingleRequestBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C44129E1F2201FF00C453EF /* TJSBaseRequest+TJSSingleRequestBlock.m */; };
+		2CCC5BA61FB53B8900F0099A /* TJSRootTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C801BB01F233F46009F82F7 /* TJSRootTabBarController.m */; };
+		2CCC5BA71FB53B8900F0099A /* ProductSearchTableAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C027D2C1F3C82D7001D7EB6 /* ProductSearchTableAdapter.m */; };
+		2CCC5BA81FB53B8900F0099A /* ProductSearchHotCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF8B53D1F3D469F003B8520 /* ProductSearchHotCell.m */; };
+		2CCC5BA91FB53B8900F0099A /* ProductFilterResultController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCC85B81F3AEEDE0009FC1C /* ProductFilterResultController.m */; };
+		2CCC5BAA1FB53B8900F0099A /* CapitalRecordNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = A292B26F1F39F88F0086E03E /* CapitalRecordNetworkTool.m */; };
+		2CCC5BAB1FB53B8900F0099A /* AddressPikerView.m in Sources */ = {isa = PBXBuildFile; fileRef = A216E32B1F48098800EBBD32 /* AddressPikerView.m */; };
+		2CCC5BAC1FB53B8900F0099A /* TJSHudAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4412AC1F22031600C453EF /* TJSHudAlert.m */; };
+		2CCC5BAD1FB53B8900F0099A /* TJSHomeListTableAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE5801F29D4F7009B3AE2 /* TJSHomeListTableAdapter.m */; };
+		2CCC5BAE1FB53B8900F0099A /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C431DEA1F299A9600858C12 /* HomeViewController.m */; };
+		2CCC5BAF1FB53B8900F0099A /* UIImageView+TJSWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C88F6901F4EBBFD009CF23E /* UIImageView+TJSWebCache.m */; };
+		2CCC5BB01FB53B8900F0099A /* UIColor+HEX.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4411EA1F219A5300C453EF /* UIColor+HEX.m */; };
+		2CCC5BB11FB53B8900F0099A /* RewardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C83C72F1F39BD27004034CA /* RewardViewController.m */; };
+		2CCC5BB21FB53B8900F0099A /* AddressBookManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C562A7E1F58116500835984 /* AddressBookManager.m */; };
+		2CCC5BB31FB53B8900F0099A /* TJSMineHomeConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E3761F2F02A200ADD360 /* TJSMineHomeConfigurator.m */; };
+		2CCC5BB41FB53B8900F0099A /* ContractAddAddressConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD896C01F453A3B008F7C73 /* ContractAddAddressConfig.m */; };
+		2CCC5BB51FB53B8900F0099A /* ZLPhotoPickerAssetsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C859CCE1F31EB2E00B86575 /* ZLPhotoPickerAssetsViewController.m */; };
+		2CCC5BB61FB53B8900F0099A /* ProductListCellTextContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF42F11F28273300ABCA5E /* ProductListCellTextContentView.m */; };
+		2CCC5BB71FB53B8900F0099A /* ZLPhotoPickerImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C859CDD1F31EB2E00B86575 /* ZLPhotoPickerImageView.m */; };
+		2CCC5BB81FB53B8900F0099A /* ProductSearchVCConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C89AD7F1F2C7E39005C29AC /* ProductSearchVCConfig.m */; };
+		2CCC5BB91FB53B8900F0099A /* UITextField+PlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CEC58CE1F4FCDE7006C03F5 /* UITextField+PlaceHolder.m */; };
+		2CCC5BBA1FB53B8900F0099A /* AddressSelectedBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD897301F457619008F7C73 /* AddressSelectedBaseCell.m */; };
+		2CCC5BBB1FB53B8900F0099A /* SexTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C91162B1F61331D00C315D6 /* SexTool.m */; };
+		2CCC5BBC1FB53B8900F0099A /* AddressSelectedCellFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD897391F457B54008F7C73 /* AddressSelectedCellFactory.m */; };
+		2CCC5BBD1FB53B8900F0099A /* ContractApplyLayoutImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB4F6381F42F26500FF98C9 /* ContractApplyLayoutImpl.m */; };
+		2CCC5BBE1FB53B8900F0099A /* AddressSelectController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB4F61E1F42A02400FF98C9 /* AddressSelectController.m */; };
+		2CCC5BBF1FB53B8900F0099A /* ContractApplyAddAddressCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB4F6521F42F5A300FF98C9 /* ContractApplyAddAddressCell.m */; };
+		2CCC5BC01FB53B8900F0099A /* FilterResultNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCC85BB1F3AEF1D0009FC1C /* FilterResultNetworkTool.m */; };
+		2CCC5BC11FB53B8900F0099A /* MyOrderContainerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E32D1F2EC60700ADD360 /* MyOrderContainerController.m */; };
+		2CCC5BC21FB53B8900F0099A /* DiscoveryNewsInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE6011F2AEB06009B3AE2 /* DiscoveryNewsInfo.m */; };
+		2CCC5BC31FB53B8900F0099A /* ProductSearchHotLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A28956941F3CA22A002D6845 /* ProductSearchHotLayout.m */; };
+		2CCC5BC41FB53B8900F0099A /* AlipayOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C562A671F57F1C300835984 /* AlipayOrder.m */; };
+		2CCC5BC51FB53B8900F0099A /* SettingHomeDataSourceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C597DB01F4C2CB900415EB6 /* SettingHomeDataSourceImpl.m */; };
+		2CCC5BC61FB53B8900F0099A /* TJSProductFilterConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCC859D1F3AEE3A0009FC1C /* TJSProductFilterConfigurator.m */; };
+		2CCC5BC71FB53B8900F0099A /* ContractListConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB4F5B71F41C3BA00FF98C9 /* ContractListConfig.m */; };
+		2CCC5BC81FB53B8900F0099A /* ContractApplyInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB4F6491F42F52200FF98C9 /* ContractApplyInfoCell.m */; };
+		2CCC5BC91FB53B8900F0099A /* ProductFilterItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCC85CA1F3AF5B50009FC1C /* ProductFilterItemModel.m */; };
+		2CCC5BCA1FB53B8900F0099A /* HomeHeaderCollectionLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8BB79D1F30859C00E2D75F /* HomeHeaderCollectionLayout.m */; };
+		2CCC5BCB1FB53B8900F0099A /* ConAddressBottomInputContentConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD8975A1F45854A008F7C73 /* ConAddressBottomInputContentConfig.m */; };
+		2CCC5BCC1FB53B8900F0099A /* BankCardAddLayoutImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B74FD1F469E5A0000E71A /* BankCardAddLayoutImpl.m */; };
+		2CCC5BCD1FB53B8900F0099A /* HomeProductClickItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8BB7AE1F3087BA00E2D75F /* HomeProductClickItem.m */; };
+		2CCC5BCE1FB53B8900F0099A /* LoginApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE5422A1F4EA51500205993 /* LoginApi.m */; };
+		2CCC5BCF1FB53B8900F0099A /* ContractInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB4F5CA1F41C3BB00FF98C9 /* ContractInfoModel.m */; };
+		2CCC5BD01FB53B8900F0099A /* DiscoRoadShowListAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4591841F58F5BE00D0A798 /* DiscoRoadShowListAdapter.m */; };
+		2CCC5BD11FB53B8900F0099A /* DiscoRoadShowNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C45918D1F59076D00D0A798 /* DiscoRoadShowNetworkTool.m */; };
+		2CCC5BD21FB53B8900F0099A /* UINavigationBar+TJSBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCBE47F1F333386006C4018 /* UINavigationBar+TJSBackground.m */; };
+		2CCC5BD31FB53B8900F0099A /* TJSProductListCellFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF430D1F28294E00ABCA5E /* TJSProductListCellFactory.m */; };
+		2CCC5BD41FB53B8900F0099A /* ContractApplyInteractorImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB4F6361F42F26500FF98C9 /* ContractApplyInteractorImpl.m */; };
+		2CCC5BD51FB53B8900F0099A /* DiscoRoadShowInteracotImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4591801F58F5BE00D0A798 /* DiscoRoadShowInteracotImpl.m */; };
+		2CCC5BD61FB53B8900F0099A /* TJSBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4412A01F2201FF00C453EF /* TJSBaseRequest.m */; };
+		2CCC5BD71FB53B8900F0099A /* ProductContainerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8BB7C81F31BB9F00E2D75F /* ProductContainerController.m */; };
+		2CCC5BD81FB53B8900F0099A /* SendMessageToWXReq+requestWithTextOrMediaMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD1851F56C00200F9654D /* SendMessageToWXReq+requestWithTextOrMediaMessage.m */; };
+		2CCC5BD91FB53B8900F0099A /* SettingHomeHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2E65981F4D143B00681758 /* SettingHomeHeader.m */; };
+		2CCC5BDA1FB53B8900F0099A /* UIViewController+StackLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4412511F21DABC00C453EF /* UIViewController+StackLevel.m */; };
+		2CCC5BDB1FB53B8900F0099A /* TJSHomeListConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE57D1F29D484009B3AE2 /* TJSHomeListConfigurator.m */; };
+		2CCC5BDC1FB53B8900F0099A /* IdentificateApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE5423A1F4EA7C300205993 /* IdentificateApi.m */; };
+		2CCC5BDD1FB53B8900F0099A /* TJSBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C801BA91F233F46009F82F7 /* TJSBaseViewController.m */; };
+		2CCC5BDE1FB53B8900F0099A /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD2341F57AB2B00F9654D /* UINavigationController+FDFullscreenPopGesture.m */; };
+		2CCC5BDF1FB53B8900F0099A /* UISearchBar+CommanStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C89AD861F2C9A90005C29AC /* UISearchBar+CommanStyle.m */; };
+		2CCC5BE01FB53B8900F0099A /* ProductSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE5A31F29FF89009B3AE2 /* ProductSearchController.m */; };
+		2CCC5BE11FB53B8900F0099A /* ProductFilterReusableSectionHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C027D071F3BF847001D7EB6 /* ProductFilterReusableSectionHeader.m */; };
+		2CCC5BE21FB53B8900F0099A /* GetMessageFromWXResp+responseWithTextOrMediaMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD1831F56C00200F9654D /* GetMessageFromWXResp+responseWithTextOrMediaMessage.m */; };
+		2CCC5BE31FB53B8900F0099A /* ProductSearchListCellLayoutConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF8B5601F3DBAAD003B8520 /* ProductSearchListCellLayoutConfig.m */; };
+		2CCC5BE41FB53B8900F0099A /* DiscoveryNewsNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE5F71F2AE9D0009B3AE2 /* DiscoveryNewsNetworkTool.m */; };
+		2CCC5BE51FB53B8900F0099A /* NSObject+Swizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C44125C1F21DF3600C453EF /* NSObject+Swizzle.m */; };
+		2CCC5BE61FB53B8900F0099A /* FeedBackVCConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C1CBD1F3958C900002166 /* FeedBackVCConfig.m */; };
+		2CCC5BE71FB53B8900F0099A /* TJSProductFilterLayoutImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCC85A31F3AEE3A0009FC1C /* TJSProductFilterLayoutImpl.m */; };
+		2CCC5BE81FB53B8900F0099A /* TJSMyOrderListTableAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C1C151F384A5600002166 /* TJSMyOrderListTableAdapter.m */; };
+		2CCC5BE91FB53B8900F0099A /* ProductInfoSearchModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4477691F41461200ED8685 /* ProductInfoSearchModel.m */; };
+		2CCC5BEA1FB53B8900F0099A /* WithDrawDepositAddBankCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA639141F4ADCC400C39562 /* WithDrawDepositAddBankCell.m */; };
+		2CCC5BEB1FB53B8900F0099A /* ContractAddAddressCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD896C31F453AAB008F7C73 /* ContractAddAddressCellModel.m */; };
+		2CCC5BEC1FB53B8900F0099A /* CLLocation+YCLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9115F41F5E789F00C315D6 /* CLLocation+YCLocation.m */; };
+		2CCC5BED1FB53B8900F0099A /* ContractApplyCellFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB4F6411F42F34700FF98C9 /* ContractApplyCellFactory.m */; };
+		2CCC5BEE1FB53B8900F0099A /* MyFavListInteractorImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB4F5FF1F42849100FF98C9 /* MyFavListInteractorImpl.m */; };
+		2CCC5BEF1FB53B8900F0099A /* TJSBaseWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE5901F29F4AF009B3AE2 /* TJSBaseWebViewController.m */; };
+		2CCC5BF01FB53B8900F0099A /* TJSBaseNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF42721F26E66500ABCA5E /* TJSBaseNetworkTool.m */; };
+		2CCC5BF11FB53B8900F0099A /* ContractAddressInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD896D21F453C8F008F7C73 /* ContractAddressInfo.m */; };
+		2CCC5BF21FB53B8900F0099A /* CumulativeInvestLayoutImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4D35E21F4C25860082BB36 /* CumulativeInvestLayoutImpl.m */; };
+		2CCC5BF31FB53B8900F0099A /* RewardVCConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA553071F43E1CB0095ECC1 /* RewardVCConfig.m */; };
+		2CCC5BF41FB53B8900F0099A /* CumulativeInvestCellFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4D35CE1F4C23B10082BB36 /* CumulativeInvestCellFactory.m */; };
+		2CCC5BF51FB53B8900F0099A /* TJSDiscoNewsInteracotImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE5F01F2AE82F009B3AE2 /* TJSDiscoNewsInteracotImpl.m */; };
+		2CCC5BF61FB53B8900F0099A /* UIButton+IBInspectableState.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CEC58C01F4FCDE7006C03F5 /* UIButton+IBInspectableState.m */; };
+		2CCC5BF71FB53B8900F0099A /* UITextView+LengthLimited.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C44128A1F21ECA600C453EF /* UITextView+LengthLimited.m */; };
+		2CCC5BF81FB53B8900F0099A /* ZLPhotoPickerCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C859CD51F31EB2E00B86575 /* ZLPhotoPickerCollectionView.m */; };
+		2CCC5BF91FB53B8900F0099A /* TJSBaseMineHomeCellContentConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E3921F2F0B6500ADD360 /* TJSBaseMineHomeCellContentConfig.m */; };
+		2CCC5BFA1FB53B8900F0099A /* BankCardAddConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B74F71F469E5A0000E71A /* BankCardAddConfigurator.m */; };
+		2CCC5BFB1FB53B8900F0099A /* ContractApplyCellLayoutConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD896931F442731008F7C73 /* ContractApplyCellLayoutConfig.m */; };
+		2CCC5BFC1FB53B8900F0099A /* DiscoveryNewsInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE5FE1F2AEAF6009B3AE2 /* DiscoveryNewsInfoModel.m */; };
+		2CCC5BFD1FB53B8900F0099A /* BankCardListTableAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B74A21F4694FF0000E71A /* BankCardListTableAdapter.m */; };
+		2CCC5BFE1FB53B8900F0099A /* WithDrawDepositRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA638F61F4AD37700C39562 /* WithDrawDepositRecord.m */; };
+		2CCC5BFF1FB53B8900F0099A /* ProductListNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF42C11F281B8600ABCA5E /* ProductListNetworkTool.m */; };
+		2CCC5C001FB53B8900F0099A /* ProductFilterItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCC85C71F3AF5A20009FC1C /* ProductFilterItem.m */; };
+		2CCC5C011FB53B8900F0099A /* ProductShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD1411F5553A700F9654D /* ProductShareView.m */; };
+		2CCC5C021FB53B8900F0099A /* FeedbackHistoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C1CB81F39570400002166 /* FeedbackHistoryController.m */; };
+		2CCC5C031FB53B8900F0099A /* ContractApplyNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB4F6551F43048000FF98C9 /* ContractApplyNetworkTool.m */; };
+		2CCC5C041FB53B8900F0099A /* ZLPhotoPickerDatas.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C859CC51F31EB2E00B86575 /* ZLPhotoPickerDatas.m */; };
+		2CCC5C051FB53B8900F0099A /* ProductFilterCollLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCC85991F3AEE3A0009FC1C /* ProductFilterCollLayout.m */; };
+		2CCC5C061FB53B8900F0099A /* MyFavListStoreTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB4F5F41F42844900FF98C9 /* MyFavListStoreTool.m */; };
+		2CCC5C071FB53B8900F0099A /* TJSMobileCallUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C1C2F1F386E3B00002166 /* TJSMobileCallUtil.m */; };
+		2CCC5C081FB53B8900F0099A /* TJSMyOrderListConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C1C091F38496800002166 /* TJSMyOrderListConfigurator.m */; };
+		2CCC5C091FB53B8900F0099A /* BankCardListConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B749A1F4694FF0000E71A /* BankCardListConfigurator.m */; };
+		2CCC5C0A1FB53B8900F0099A /* TJSMineHomeInteractorImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E3791F2F02B800ADD360 /* TJSMineHomeInteractorImpl.m */; };
+		2CCC5C0B1FB53B8900F0099A /* YZDisplayTitleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C859C941F31EB2E00B86575 /* YZDisplayTitleLabel.m */; };
+		2CCC5C0C1FB53B8900F0099A /* UIImageView+TJSIndicatorForAFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD2301F57A8F100F9654D /* UIImageView+TJSIndicatorForAFNetworking.m */; };
+		2CCC5C0D1FB53B8900F0099A /* ContractListConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB4F5BD1F41C3BA00FF98C9 /* ContractListConfigurator.m */; };
+		2CCC5C0E1FB53B8900F0099A /* QRCodeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4591AD1F5CECE400D0A798 /* QRCodeManager.m */; };
+		2CCC5C0F1FB53B8900F0099A /* BankCardInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B74A71F4694FF0000E71A /* BankCardInfoModel.m */; };
+		2CCC5C101FB53B8900F0099A /* ContractAddAddressCellLayoutConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD896E91F453F8C008F7C73 /* ContractAddAddressCellLayoutConfig.m */; };
+		2CCC5C111FB53B8900F0099A /* TJSProductListTextContentConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF42AC1F281B8600ABCA5E /* TJSProductListTextContentConfig.m */; };
+		2CCC5C121FB53B8900F0099A /* TJSBaseTableHeaderFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCBE48E1F34207C006C4018 /* TJSBaseTableHeaderFooterView.m */; };
+		2CCC5C131FB53B8900F0099A /* GesturePasswordController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C300F841F2F3C7E00DD440E /* GesturePasswordController.m */; };
+		2CCC5C141FB53B8900F0099A /* ContractListLayoutImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB4F5C31F41C3BB00FF98C9 /* ContractListLayoutImpl.m */; };
+		2CCC5C151FB53B8900F0099A /* ProductSearchLayoutImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C027D291F3C82C8001D7EB6 /* ProductSearchLayoutImpl.m */; };
+		2CCC5C161FB53B8900F0099A /* CumulateInvestInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB4F5631F418FFB00FF98C9 /* CumulateInvestInfo.m */; };
+		2CCC5C171FB53B8900F0099A /* AddressManageBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD897201F4572AE008F7C73 /* AddressManageBaseCell.m */; };
+		2CCC5C181FB53B8900F0099A /* CLPlacemark+YCPlacemark.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9115F71F5E80ED00C315D6 /* CLPlacemark+YCPlacemark.m */; };
+		2CCC5C191FB53B8900F0099A /* TJSSystemAlertMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C44124D1F21D54400C453EF /* TJSSystemAlertMaker.m */; };
+		2CCC5C1A1FB53B8900F0099A /* ContractApplyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB4F62D1F42D18600FF98C9 /* ContractApplyController.m */; };
+		2CCC5C1B1FB53B8900F0099A /* ZLPhotoPickerGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C859CC71F31EB2E00B86575 /* ZLPhotoPickerGroup.m */; };
+		2CCC5C1C1FB53B8900F0099A /* CumulativeInvestDataSourceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4D35DE1F4C25860082BB36 /* CumulativeInvestDataSourceImpl.m */; };
+		2CCC5C1D1FB53B8900F0099A /* TJSProductFilterDataSourceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCC859F1F3AEE3A0009FC1C /* TJSProductFilterDataSourceImpl.m */; };
+		2CCC5C1E1FB53B8900F0099A /* ProductShareItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD1471F5566DC00F9654D /* ProductShareItem.m */; };
+		2CCC5C1F1FB53B8900F0099A /* TJSMineHomeDefaultCellContentConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E3A31F2F1AF900ADD360 /* TJSMineHomeDefaultCellContentConfig.m */; };
+		2CCC5C201FB53B8900F0099A /* BankCardAddDefaultContentConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B74E01F4698A30000E71A /* BankCardAddDefaultContentConfig.m */; };
+		2CCC5C211FB53B8900F0099A /* UIButton+TJSWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CEC58C41F4FCDE7006C03F5 /* UIButton+TJSWebCache.m */; };
+		2CCC5C221FB53B8900F0099A /* AddressSelectedDataSourceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD897471F457B96008F7C73 /* AddressSelectedDataSourceImpl.m */; };
+		2CCC5C231FB53B8900F0099A /* MineHomeDefaultCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E3A61F2F1BEB00ADD360 /* MineHomeDefaultCell.m */; };
+		2CCC5C241FB53B8900F0099A /* ContractListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB4F6111F42982800FF98C9 /* ContractListCell.m */; };
+		2CCC5C251FB53B8900F0099A /* NSString+StringSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4411E61F219A5300C453EF /* NSString+StringSize.m */; };
+		2CCC5C261FB53B8900F0099A /* ContractListHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB4F60E1F42897000FF98C9 /* ContractListHeader.m */; };
+		2CCC5C271FB53B8900F0099A /* TJSMineHomeDataSourceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E3821F2F042A00ADD360 /* TJSMineHomeDataSourceImpl.m */; };
+		2CCC5C281FB53B8900F0099A /* NSObject+vk_msgSend.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C859D071F31EB6B00B86575 /* NSObject+vk_msgSend.m */; };
+		2CCC5C291FB53B8900F0099A /* UIView+ZLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C859CA11F31EB2E00B86575 /* UIView+ZLExtension.m */; };
+		2CCC5C2A1FB53B8900F0099A /* ModifyLogPasswordController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C300F811F2F3C5F00DD440E /* ModifyLogPasswordController.m */; };
+		2CCC5C2B1FB53B8900F0099A /* TJSProductEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF43131F2829CF00ABCA5E /* TJSProductEvent.m */; };
+		2CCC5C2C1FB53B8900F0099A /* CumulativeInvestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB4F55F1F418FFB00FF98C9 /* CumulativeInvestController.m */; };
+		2CCC5C2D1FB53B8900F0099A /* BankCardAddCellFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B74D81F4698A30000E71A /* BankCardAddCellFactory.m */; };
+		2CCC5C2E1FB53B8900F0099A /* CumulativeInvestConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB4F55C1F418FFB00FF98C9 /* CumulativeInvestConfig.m */; };
+		2CCC5C2F1FB53B8900F0099A /* ContractListCellFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB4F6141F4298E900FF98C9 /* ContractListCellFactory.m */; };
+		2CCC5C301FB53B8900F0099A /* UIImage+Alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C45919C1F59689B00D0A798 /* UIImage+Alpha.m */; };
+		2CCC5C311FB53B8900F0099A /* WXApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD17F1F56BA3500F9654D /* WXApiManager.m */; };
+		2CCC5C321FB53B8900F0099A /* ZLPhotoAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C859CC31F31EB2E00B86575 /* ZLPhotoAssets.m */; };
+		2CCC5C331FB53B8900F0099A /* ZFPlayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C562A711F57F7EF00835984 /* ZFPlayerManager.m */; };
+		2CCC5C341FB53B8900F0099A /* MineHomeBalanceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E3AF1F2F1C2B00ADD360 /* MineHomeBalanceCell.m */; };
+		2CCC5C351FB53B8900F0099A /* ZLCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C859CAA1F31EB2E00B86575 /* ZLCameraViewController.m */; };
+		2CCC5C361FB53B8900F0099A /* AdressEditNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD896B81F453A05008F7C73 /* AdressEditNetworkTool.m */; };
+		2CCC5C371FB53B8900F0099A /* BankCardInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B74A51F4694FF0000E71A /* BankCardInfo.m */; };
+		2CCC5C381FB53B8900F0099A /* PushManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD1181F55035E00F9654D /* PushManager.m */; };
+		2CCC5C391FB53B8900F0099A /* UIButton+CountDown.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CEC58BE1F4FCDE7006C03F5 /* UIButton+CountDown.m */; };
+		2CCC5C3A1FB53B8900F0099A /* PersonalMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C83C7241F39BA30004034CA /* PersonalMessageCell.m */; };
+		2CCC5C3B1FB53B8900F0099A /* ZLPhotoPickerBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C859CB61F31EB2E00B86575 /* ZLPhotoPickerBrowserViewController.m */; };
+		2CCC5C3C1FB53B8900F0099A /* ProductListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF42B91F281B8600ABCA5E /* ProductListViewController.m */; };
+		2CCC5C3D1FB53B8900F0099A /* SettingHomeCellLayoutConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C597DA51F4C2CB900415EB6 /* SettingHomeCellLayoutConfig.m */; };
+		2CCC5C3E1FB53B8900F0099A /* TJSProductListContentConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF42A81F281B8600ABCA5E /* TJSProductListContentConfig.m */; };
+		2CCC5C3F1FB53B8900F0099A /* AddressManageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD896F21F45435F008F7C73 /* AddressManageController.m */; };
+		2CCC5C401FB53B8900F0099A /* ProductSearchDataSourceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C027D261F3C82B1001D7EB6 /* ProductSearchDataSourceImpl.m */; };
+		2CCC5C411FB53B8900F0099A /* TJSUploadRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4412A21F2201FF00C453EF /* TJSUploadRequest.m */; };
+		2CCC5C421FB53B8900F0099A /* ProductFilterResultConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C027D0D1F3C7BAD001D7EB6 /* ProductFilterResultConfigurator.m */; };
+		2CCC5C431FB53B8900F0099A /* TJSBaseCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCBE48C1F34207C006C4018 /* TJSBaseCollectionViewCell.m */; };
+		2CCC5C441FB53B8900F0099A /* MyOrderInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C1C031F38477E00002166 /* MyOrderInfoModel.m */; };
+		2CCC5C451FB53B8900F0099A /* WithDrawDepositConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA639001F4AD41700C39562 /* WithDrawDepositConfig.m */; };
+		2CCC5C461FB53B8900F0099A /* UIImage+ColorAtPixel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4412781F21E83D00C453EF /* UIImage+ColorAtPixel.m */; };
+		2CCC5C471FB53B8900F0099A /* MineHomeBaseTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E3961F2F155700ADD360 /* MineHomeBaseTableCell.m */; };
+		2CCC5C481FB53B8900F0099A /* BankCardListDefaultContentConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B74941F4694FF0000E71A /* BankCardListDefaultContentConfig.m */; };
+		2CCC5C491FB53B8900F0099A /* TJSMineHomeCellLayoutConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E38B1F2F09F100ADD360 /* TJSMineHomeCellLayoutConfig.m */; };
+		2CCC5C4A1FB53B8900F0099A /* SettingHomeContentConfigFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C597DA91F4C2CB900415EB6 /* SettingHomeContentConfigFactory.m */; };
+		2CCC5C4B1FB53B8900F0099A /* UIImage+FromColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4411F01F219A5300C453EF /* UIImage+FromColor.m */; };
+		2CCC5C4C1FB53B8900F0099A /* TJSProductDeleteApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF42841F27261A00ABCA5E /* TJSProductDeleteApi.m */; };
+		2CCC5C4D1FB53B8900F0099A /* HomeFooterWebController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8BB7BA1F315CB500E2D75F /* HomeFooterWebController.m */; };
+		2CCC5C4E1FB53B8900F0099A /* WXApiRequestHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD1791F56BA2E00F9654D /* WXApiRequestHandler.m */; };
+		2CCC5C4F1FB53B8900F0099A /* ProductDetailLayoutImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD1541F55730E00F9654D /* ProductDetailLayoutImpl.m */; };
+		2CCC5C501FB53B8900F0099A /* SettingHomeTableAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C597DB61F4C2CB900415EB6 /* SettingHomeTableAdapter.m */; };
+		2CCC5C511FB53B8900F0099A /* TJSProductListInteractorImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF43011F2828C200ABCA5E /* TJSProductListInteractorImpl.m */; };
+		2CCC5C521FB53B8900F0099A /* CapitalRecordConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = A292B2631F39F81D0086E03E /* CapitalRecordConfigurator.m */; };
+		2CCC5C531FB53B8900F0099A /* MineHomeCellDefaultItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCBE49C1F344A98006C4018 /* MineHomeCellDefaultItem.m */; };
+		2CCC5C541FB53B8900F0099A /* WithDrawDepositDataSourceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = A2ACF5E91F4B3B06007BADB9 /* WithDrawDepositDataSourceImpl.m */; };
+		2CCC5C551FB53B8900F0099A /* ConAddressBottomInputCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD896CC1F453C11008F7C73 /* ConAddressBottomInputCell.m */; };
+		2CCC5C561FB53B8900F0099A /* WithDrawDepositCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA639211F4AE42200C39562 /* WithDrawDepositCellModel.m */; };
+		2CCC5C571FB53B8900F0099A /* TJSProductFilterInteractorImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCC85A11F3AEE3A0009FC1C /* TJSProductFilterInteractorImpl.m */; };
+		2CCC5C581FB53B8900F0099A /* WithDrawDepositController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA638EB1F4AD37700C39562 /* WithDrawDepositController.m */; };
+		2CCC5C591FB53B8900F0099A /* MineHomeCellBalanceItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C1BD71F381AF200002166 /* MineHomeCellBalanceItem.m */; };
+		2CCC5C5A1FB53B8900F0099A /* TJSDiscoNewsDataSorceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE5FA1F2AEA59009B3AE2 /* TJSDiscoNewsDataSorceImpl.m */; };
+		2CCC5C5B1FB53B8900F0099A /* FindLoginPasswordApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE542331F4EA64400205993 /* FindLoginPasswordApi.m */; };
+		2CCC5C5C1FB53B8900F0099A /* MineSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C597DA01F4C2CB900415EB6 /* MineSettingViewController.m */; };
+		2CCC5C5D1FB53B8900F0099A /* MineHomeNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4591A51F5AED4B00D0A798 /* MineHomeNetworkTool.m */; };
+		2CCC5C5E1FB53B8900F0099A /* MineHomeCellOrderItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCBE4A21F344A98006C4018 /* MineHomeCellOrderItem.m */; };
+		2CCC5C5F1FB53B8900F0099A /* TJSLoginStateUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4412B31F2207CD00C453EF /* TJSLoginStateUtil.m */; };
+		2CCC5C601FB53B8900F0099A /* TJSBaseDisplayContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = A292B2791F39FBC10086E03E /* TJSBaseDisplayContainer.m */; };
+		2CCC5C611FB53B8900F0099A /* AllActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C83C7101F39B9C9004034CA /* AllActivityViewController.m */; };
+		2CCC5C621FB53B8900F0099A /* ProductFilterStoreTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCC85D51F3B0CC20009FC1C /* ProductFilterStoreTool.m */; };
+		2CCC5C631FB53B8900F0099A /* ZLNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C859CCC1F31EB2E00B86575 /* ZLNavigationController.m */; };
+		2CCC5C641FB53B8900F0099A /* UIImage+Stretchable.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4411F21F219A5300C453EF /* UIImage+Stretchable.m */; };
+		2CCC5C651FB53B8900F0099A /* TJSAppServiceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD11C1F55469D00F9654D /* TJSAppServiceManager.m */; };
+		2CCC5C661FB53B8900F0099A /* NetworkMonitorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD1241F55491900F9654D /* NetworkMonitorManager.m */; };
+		2CCC5C671FB53B8900F0099A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4411AC1F21981E00C453EF /* main.m */; };
+		2CCC5C681FB53B8900F0099A /* ConAddressMiddleLabelContentConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD897571F458537008F7C73 /* ConAddressMiddleLabelContentConfig.m */; };
+		2CCC5C691FB53B8900F0099A /* DiscoveryVCConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCBE4671F330597006C4018 /* DiscoveryVCConfig.m */; };
+		2CCC5C6A1FB53B8900F0099A /* ContractListDataSourceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB4F5BF1F41C3BB00FF98C9 /* ContractListDataSourceImpl.m */; };
+		2CCC5C6B1FB53B8900F0099A /* FeedbackCommitNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C83C6E41F39AE2F004034CA /* FeedbackCommitNetworkTool.m */; };
+		2CCC5C6C1FB53B8900F0099A /* TJSProductInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF43151F2829CF00ABCA5E /* TJSProductInfo.m */; };
+		2CCC5C6D1FB53B8900F0099A /* RoadShowListStoreTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C83C70C1F39B871004034CA /* RoadShowListStoreTool.m */; };
+		2CCC5C6E1FB53B8900F0099A /* WithDrawBankSelectController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA6390E1F4AD86600C39562 /* WithDrawBankSelectController.m */; };
+		2CCC5C6F1FB53B8900F0099A /* ZLPhotoPickerBrowserPhotoScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C859CBB1F31EB2E00B86575 /* ZLPhotoPickerBrowserPhotoScrollView.m */; };
+		2CCC5C701FB53B8900F0099A /* TJSSystemSoundService.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C562A791F58108C00835984 /* TJSSystemSoundService.m */; };
+		2CCC5C711FB53B8900F0099A /* FeedBackContainerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C1CAE1F394E9500002166 /* FeedBackContainerConfig.m */; };
+		2CCC5C721FB53B8900F0099A /* AddressManageCellFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD897141F4548E2008F7C73 /* AddressManageCellFactory.m */; };
+		2CCC5C731FB53B8900F0099A /* CumulativeInvestTableAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4D35E41F4C25860082BB36 /* CumulativeInvestTableAdapter.m */; };
+		2CCC5C741FB53B8900F0099A /* UIImage+Combination.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD0FC1F53BA9700F9654D /* UIImage+Combination.m */; };
+		2CCC5C751FB53B8900F0099A /* UIImage+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4591A01F59689B00D0A798 /* UIImage+RoundedCorner.m */; };
+		2CCC5C761FB53B8900F0099A /* RegistApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE5422D1F4EA52300205993 /* RegistApi.m */; };
+		2CCC5C771FB53B8900F0099A /* NSBundle+TianJiCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CEC59C71F4FF6E8006C03F5 /* NSBundle+TianJiCloud.m */; };
+		2CCC5C781FB53B8900F0099A /* TJSProductListDataSourceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF42FF1F2828C200ABCA5E /* TJSProductListDataSourceImpl.m */; };
+		2CCC5C791FB53B8900F0099A /* CapitalRecordInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = A292B2691F39F8470086E03E /* CapitalRecordInfo.m */; };
+		2CCC5C7A1FB53B8900F0099A /* ZLPhotoPickerGroupTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C859CDB1F31EB2E00B86575 /* ZLPhotoPickerGroupTableViewCell.m */; };
+		2CCC5C7B1FB53B8900F0099A /* WithDrawDepositContentConfigFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA6392C1F4AE9D000C39562 /* WithDrawDepositContentConfigFactory.m */; };
+		2CCC5C7C1FB53B8900F0099A /* BankCardListAddContentConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B748A1F4694FF0000E71A /* BankCardListAddContentConfig.m */; };
+		2CCC5C7D1FB53B8900F0099A /* SettingHomeInteractorImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C597DB21F4C2CB900415EB6 /* SettingHomeInteractorImpl.m */; };
+		2CCC5C7E1FB53B8900F0099A /* WithDrawDepositNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA6391E1F4AE3BD00C39562 /* WithDrawDepositNetworkTool.m */; };
+		2CCC5C7F1FB53B8900F0099A /* ContractDetailNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB4F65E1F43052E00FF98C9 /* ContractDetailNetworkTool.m */; };
+		2CCC5C801FB53B8900F0099A /* PNPieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C1C851F3948E100002166 /* PNPieChart.m */; };
+		2CCC5C811FB53B8900F0099A /* AdressManageNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD896F61F45435F008F7C73 /* AdressManageNetworkTool.m */; };
+		2CCC5C821FB53B8900F0099A /* UIApplication+JSAppSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD1631F564B6C00F9654D /* UIApplication+JSAppSetting.m */; };
+		2CCC5C831FB53B8900F0099A /* ProductListCellContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF42ED1F28273300ABCA5E /* ProductListCellContentView.m */; };
+		2CCC5C841FB53B8900F0099A /* AddressSelectedLayoutImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD8974B1F457B96008F7C73 /* AddressSelectedLayoutImpl.m */; };
+		2CCC5C851FB53B8900F0099A /* TJSDiscoNewsListVCConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE60B1F2B15F3009B3AE2 /* TJSDiscoNewsListVCConfig.m */; };
+		2CCC5C861FB53B8900F0099A /* ProductDetailFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD13C1F5552F100F9654D /* ProductDetailFooter.m */; };
+		2CCC5C871FB53B8900F0099A /* HistoryRewardsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C83C72B1F39BB46004034CA /* HistoryRewardsController.m */; };
+		2CCC5C881FB53B8900F0099A /* NSDate+TJSContrast.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9116111F5FDF2300C315D6 /* NSDate+TJSContrast.m */; };
+		2CCC5C891FB53B8900F0099A /* CapitalRecordContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E3571F2ECDA200ADD360 /* CapitalRecordContainer.m */; };
+		2CCC5C8A1FB53B8900F0099A /* TJSAppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF43101F2829B300ABCA5E /* TJSAppInfo.m */; };
+		2CCC5C8B1FB53B8900F0099A /* ContractInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB4F5C81F41C3BB00FF98C9 /* ContractInfo.m */; };
+		2CCC5C8C1FB53B8900F0099A /* ProductSearchCellContentConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF8B56A1F3DC710003B8520 /* ProductSearchCellContentConfig.m */; };
+		2CCC5C8D1FB53B8900F0099A /* MyFavNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB4F6061F42849100FF98C9 /* MyFavNetworkTool.m */; };
+		2CCC5C8E1FB53B8900F0099A /* SettingBaseTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C597DC81F4C2D4D00415EB6 /* SettingBaseTableCell.m */; };
+		2CCC5C8F1FB53B8900F0099A /* MyOrderListTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C1BFD1F3846F600002166 /* MyOrderListTableCell.m */; };
+		2CCC5C901FB53B8900F0099A /* InvestProductController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB4F57D1F41905500FF98C9 /* InvestProductController.m */; };
+		2CCC5C911FB53B8900F0099A /* TJSHomeListInteractorImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE5831F29D509009B3AE2 /* TJSHomeListInteractorImpl.m */; };
+		2CCC5C921FB53B8900F0099A /* ProductListCellHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCBE45C1F32CB61006C4018 /* ProductListCellHeaderView.m */; };
+		2CCC5C931FB53B8900F0099A /* TJSMineHomeInvestCellContentConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E39D1F2F1A5800ADD360 /* TJSMineHomeInvestCellContentConfig.m */; };
+		2CCC5C941FB53B8900F0099A /* ContractApplyProductResultCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB4F64F1F42F58800FF98C9 /* ContractApplyProductResultCell.m */; };
+		2CCC5C951FB53B8900F0099A /* DiscoRoadShowLayoutImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4591821F58F5BE00D0A798 /* DiscoRoadShowLayoutImpl.m */; };
+		2CCC5C961FB53B8900F0099A /* CapitalRecordVCConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = A292B2761F39F92D0086E03E /* CapitalRecordVCConfig.m */; };
+		2CCC5C971FB53B8900F0099A /* WithDrawDepositHeaderFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA639361F4AEAC300C39562 /* WithDrawDepositHeaderFooterView.m */; };
+		2CCC5C981FB53B8900F0099A /* WithDrawDepositLayoutImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = A2ACF5ED1F4B3B06007BADB9 /* WithDrawDepositLayoutImpl.m */; };
+		2CCC5C991FB53B8900F0099A /* UIView+TJSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C89AD891F2C9FE5005C29AC /* UIView+TJSViewController.m */; };
+		2CCC5C9A1FB53B8900F0099A /* FilterResultVCConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCC85BE1F3AEF2C0009FC1C /* FilterResultVCConfig.m */; };
+		2CCC5C9B1FB53B8900F0099A /* CumulateInvestInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB4F5651F418FFB00FF98C9 /* CumulateInvestInfoModel.m */; };
+		2CCC5C9C1FB53B8900F0099A /* ProductFilterResultInteractorImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C027D121F3C7C61001D7EB6 /* ProductFilterResultInteractorImpl.m */; };
+		2CCC5C9D1FB53B8900F0099A /* ContractInfoApplyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD896A71F442D99008F7C73 /* ContractInfoApplyModel.m */; };
+		2CCC5C9E1FB53B8900F0099A /* BankCardListCellFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B748C1F4694FF0000E71A /* BankCardListCellFactory.m */; };
+		2CCC5C9F1FB53B8900F0099A /* ConAddressRightInputContentConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD897541F45851A008F7C73 /* ConAddressRightInputContentConfig.m */; };
+		2CCC5CA01FB53B8900F0099A /* ModifyLoginPasswordApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE542301F4EA5FE00205993 /* ModifyLoginPasswordApi.m */; };
+		2CCC5CA11FB53B8900F0099A /* ContractListNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB4F5D31F41C3BB00FF98C9 /* ContractListNetworkTool.m */; };
+		2CCC5CA21FB53B8900F0099A /* TJWUrlArgumentsFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4412A41F2201FF00C453EF /* TJWUrlArgumentsFilter.m */; };
+		2CCC5CA31FB53B8900F0099A /* ZLPhotoPickerFooterCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C859CD91F31EB2E00B86575 /* ZLPhotoPickerFooterCollectionReusableView.m */; };
+		2CCC5CA41FB53B8900F0099A /* DiscoveryNewsListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE5B21F2AD8A0009B3AE2 /* DiscoveryNewsListCell.m */; };
+		2CCC5CA51FB53B8900F0099A /* RoadShowListApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD1321F5550C400F9654D /* RoadShowListApi.m */; };
+		2CCC5CA61FB53B8900F0099A /* ZLPhotoPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C859CD21F31EB2E00B86575 /* ZLPhotoPickerViewController.m */; };
+		2CCC5CA71FB53B8900F0099A /* HomeFooterConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8BB7B41F3088E200E2D75F /* HomeFooterConfig.m */; };
+		2CCC5CA81FB53B8900F0099A /* TJSMineHomeTableAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E37C1F2F031600ADD360 /* TJSMineHomeTableAdapter.m */; };
+		2CCC5CA91FB53B8900F0099A /* ContractApplyAddAddressContentConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD8969A1F4427C2008F7C73 /* ContractApplyAddAddressContentConfig.m */; };
+		2CCC5CAA1FB53B8900F0099A /* UIApplication+TJSInfoDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C1BD41F38143B00002166 /* UIApplication+TJSInfoDictionary.m */; };
+		2CCC5CAB1FB53B8900F0099A /* MyContractViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB4F5BA1F41C3BA00FF98C9 /* MyContractViewController.m */; };
+		2CCC5CAC1FB53B8900F0099A /* NSMutableAttributedString+Formated.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4412661F21E17200C453EF /* NSMutableAttributedString+Formated.m */; };
+		2CCC5CAD1FB53B8900F0099A /* ContractAddAddressContentConfigFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD896EB1F453F8C008F7C73 /* ContractAddAddressContentConfigFactory.m */; };
+		2CCC5CAE1FB53B8900F0099A /* NSDate+TJSFormated.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9116081F5FD57300C315D6 /* NSDate+TJSFormated.m */; };
+		2CCC5CAF1FB53B8900F0099A /* CumulateInvestDefaultCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB4F5711F418FFB00FF98C9 /* CumulateInvestDefaultCell.m */; };
+		2CCC5CB01FB53B8900F0099A /* TJSHomeListLayoutImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE5891F29E066009B3AE2 /* TJSHomeListLayoutImpl.m */; };
+		2CCC5CB11FB53B8900F0099A /* MessageKindListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C83C7151F39B9C9004034CA /* MessageKindListController.m */; };
+		2CCC5CB21FB53B8900F0099A /* FeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C1CB41F3956C300002166 /* FeedbackViewController.m */; };
+		2CCC5CB31FB53B8900F0099A /* TJSEnumValueService.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4412421F21D36200C453EF /* TJSEnumValueService.m */; };
+		2CCC5CB41FB53B8900F0099A /* BankCardAddDataSourceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B74F91F469E5A0000E71A /* BankCardAddDataSourceImpl.m */; };
+		2CCC5CB51FB53B8900F0099A /* TJSProductListLayoutImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF43031F2828C200ABCA5E /* TJSProductListLayoutImpl.m */; };
+		2CCC5CB61FB53B8900F0099A /* UIButton+BackgroundColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CEC58B81F4FCDE7006C03F5 /* UIButton+BackgroundColor.m */; };
+		2CCC5CB71FB53B8900F0099A /* FindWithDrawPasswordController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C300F871F2F3C9900DD440E /* FindWithDrawPasswordController.m */; };
+		2CCC5CB81FB53B8900F0099A /* TJSBaseStoreTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C83C6F81F39B6C2004034CA /* TJSBaseStoreTool.m */; };
+		2CCC5CB91FB53B8900F0099A /* AddressManageTableAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD8970A1F45480B008F7C73 /* AddressManageTableAdapter.m */; };
+		2CCC5CBA1FB53B8900F0099A /* AddAdressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD896BC1F453A05008F7C73 /* AddAdressViewController.m */; };
+		2CCC5CBB1FB53B8900F0099A /* CapitalRecordStoreTool.m in Sources */ = {isa = PBXBuildFile; fileRef = A292B2721F39F8AB0086E03E /* CapitalRecordStoreTool.m */; };
+		2CCC5CBC1FB53B8900F0099A /* BankCardListContentConfigFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B74921F4694FF0000E71A /* BankCardListContentConfigFactory.m */; };
+		2CCC5CBD1FB53B8900F0099A /* ProductSearchInteractorImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C027D231F3C8296001D7EB6 /* ProductSearchInteractorImpl.m */; };
+		2CCC5CBE1FB53B8900F0099A /* BankCardAddTableAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B74FF1F469E5A0000E71A /* BankCardAddTableAdapter.m */; };
+		2CCC5CBF1FB53B8900F0099A /* TJSProductListTableAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF43051F2828C200ABCA5E /* TJSProductListTableAdapter.m */; };
+		2CCC5CC01FB53B8900F0099A /* CumulateInvestStoreTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB4F56C1F418FFB00FF98C9 /* CumulateInvestStoreTool.m */; };
+		2CCC5CC11FB53B8900F0099A /* ProfessionVertifyApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE5424A1F4EAA0900205993 /* ProfessionVertifyApi.m */; };
+		2CCC5CC21FB53B8900F0099A /* ProductSearchHotApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF8B5561F3DA324003B8520 /* ProductSearchHotApi.m */; };
+		2CCC5CC31FB53B8900F0099A /* ContractAddAddressBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD896C61F453B09008F7C73 /* ContractAddAddressBaseCell.m */; };
+		2CCC5CC41FB53B8900F0099A /* TJSDiscoNewsConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE5ED1F2AE7D0009B3AE2 /* TJSDiscoNewsConfigurator.m */; };
+		2CCC5CC51FB53B8900F0099A /* ModifyWithDrawCodeApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE542471F4EA9BA00205993 /* ModifyWithDrawCodeApi.m */; };
+		2CCC5CC61FB53B8900F0099A /* PNLineChartDataItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C1C9C1F39493400002166 /* PNLineChartDataItem.m */; };
+		2CCC5CC71FB53B8900F0099A /* AddressManageCellLayoutConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD897161F4548E2008F7C73 /* AddressManageCellLayoutConfig.m */; };
+		2CCC5CC81FB53B8900F0099A /* DiscoveryNewsCollectLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE5C61F2AE3BC009B3AE2 /* DiscoveryNewsCollectLayout.m */; };
+		2CCC5CC91FB53B8900F0099A /* SettingHomeConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C597DAE1F4C2CB900415EB6 /* SettingHomeConfigurator.m */; };
+		2CCC5CCA1FB53B8900F0099A /* CumulativeInvestContentConfigFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4D35D21F4C23B10082BB36 /* CumulativeInvestContentConfigFactory.m */; };
+		2CCC5CCB1FB53B8900F0099A /* TJSDiscoNewsListAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE5F31F2AE849009B3AE2 /* TJSDiscoNewsListAdapter.m */; };
+		2CCC5CCC1FB53B8900F0099A /* UITextView+EditRect.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CEC58D01F4FCDE7006C03F5 /* UITextView+EditRect.m */; };
+		2CCC5CCD1FB53B8900F0099A /* DiscoVideoResolution.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4591991F59374F00D0A798 /* DiscoVideoResolution.m */; };
+		2CCC5CCE1FB53B8900F0099A /* AlipayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD18C1F56C59600F9654D /* AlipayManager.m */; };
+		2CCC5CCF1FB53B8900F0099A /* ProductSearchResultLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A28956971F3CA25E002D6845 /* ProductSearchResultLayout.m */; };
+		2CCC5CD01FB53B8900F0099A /* MineHomeCellIvestItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCBE4A01F344A98006C4018 /* MineHomeCellIvestItem.m */; };
+		2CCC5CD11FB53B8900F0099A /* BankCardAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B74D31F4698050000E71A /* BankCardAddViewController.m */; };
+		2CCC5CD21FB53B8900F0099A /* ContractListInteractorImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB4F5C11F41C3BB00FF98C9 /* ContractListInteractorImpl.m */; };
+		2CCC5CD31FB53B8900F0099A /* NewsListStoreTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C83C7091F39B85B004034CA /* NewsListStoreTool.m */; };
+		2CCC5CD41FB53B8900F0099A /* AddressSelectedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD8972A1F457587008F7C73 /* AddressSelectedModel.m */; };
+		2CCC5CD51FB53B8900F0099A /* PNLineChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C1C981F39493400002166 /* PNLineChart.m */; };
+		2CCC5CD61FB53B8900F0099A /* WithDrawDepositSumContentConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA6392E1F4AE9D000C39562 /* WithDrawDepositSumContentConfig.m */; };
+		2CCC5CD71FB53B8900F0099A /* TJSMyOrderListCellFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C1C1B1F3852F300002166 /* TJSMyOrderListCellFactory.m */; };
+		2CCC5CD81FB53B8900F0099A /* TJSProductListApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF426E1F26E01E00ABCA5E /* TJSProductListApi.m */; };
+		2CCC5CD91FB53B8900F0099A /* BackCardManagerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B74971F4694FF0000E71A /* BackCardManagerController.m */; };
+		2CCC5CDA1FB53B8900F0099A /* FeedbackContainerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C1CA61F394BDC00002166 /* FeedbackContainerController.m */; };
+		2CCC5CDB1FB53B8900F0099A /* UIApplication+TJSAppAppearence.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD1661F564C5700F9654D /* UIApplication+TJSAppAppearence.m */; };
+		2CCC5CDC1FB53B8900F0099A /* UIImage+Resizeable.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E3B61F2F302900ADD360 /* UIImage+Resizeable.m */; };
+		2CCC5CDD1FB53B8900F0099A /* DiscoNewsListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE5C31F2AE3BC009B3AE2 /* DiscoNewsListController.m */; };
+		2CCC5CDE1FB53B8900F0099A /* ContractApplyPResultContentConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD896A31F442824008F7C73 /* ContractApplyPResultContentConfig.m */; };
+		2CCC5CDF1FB53B8900F0099A /* ProductSearchHotNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF8B55A1F3DA3D7003B8520 /* ProductSearchHotNetworkTool.m */; };
+		2CCC5CE01FB53B8900F0099A /* TJSInvestPieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C1CA11F39497900002166 /* TJSInvestPieChart.m */; };
+		2CCC5CE11FB53B8900F0099A /* TJSProductListConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF42FD1F2828C200ABCA5E /* TJSProductListConfigurator.m */; };
+		2CCC5CE21FB53B8900F0099A /* UILabel+TJSEdgeInsets.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C91161C1F60E2FF00C315D6 /* UILabel+TJSEdgeInsets.m */; };
+		2CCC5CE31FB53B8900F0099A /* PNGenericChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C1C921F3948E800002166 /* PNGenericChart.m */; };
+		2CCC5CE41FB53B8900F0099A /* UIImage+NamedWithSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD0FF1F53C2F800F9654D /* UIImage+NamedWithSize.m */; };
+		2CCC5CE51FB53B8900F0099A /* PersonalMessageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C83C7181F39B9C9004034CA /* PersonalMessageController.m */; };
+		2CCC5CE61FB53B8900F0099A /* CapitalRecordInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A292B26C1F39F8570086E03E /* CapitalRecordInfoModel.m */; };
+		2CCC5CE71FB53B8900F0099A /* UITabBarItem+TJSWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9116591F62954100C315D6 /* UITabBarItem+TJSWebCache.m */; };
+		2CCC5CE81FB53B8900F0099A /* TJSActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C88F6961F4EC434009CF23E /* TJSActionSheet.m */; };
+		2CCC5CE91FB53B8900F0099A /* TJSMineHomeOrderCellContentConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E39A1F2F1A3100ADD360 /* TJSMineHomeOrderCellContentConfig.m */; };
+		2CCC5CEA1FB53B8900F0099A /* BankCardListConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B74901F4694FF0000E71A /* BankCardListConfig.m */; };
+		2CCC5CEB1FB53B8900F0099A /* APAuthV2Info.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C562A691F57F1C300835984 /* APAuthV2Info.m */; };
+		2CCC5CED1FB53B8900F0099A /* HomeFooterCollectionLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8BB7951F30859C00E2D75F /* HomeFooterCollectionLayout.m */; };
+		2CCC5CEE1FB53B8900F0099A /* TJSBaseProductListContentConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF42AE1F281B8600ABCA5E /* TJSBaseProductListContentConfig.m */; };
+		2CCC5CEF1FB53B8900F0099A /* EmptyDataSetAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD1081F54FFC000F9654D /* EmptyDataSetAdapter.m */; };
+		2CCC5CF01FB53B8900F0099A /* AddressSelectedContentConfigFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD8973D1F457B55008F7C73 /* AddressSelectedContentConfigFactory.m */; };
+		2CCC5CF11FB53B8900F0099A /* HealthKitManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C562A751F580FF700835984 /* HealthKitManager.m */; };
+		2CCC5CF21FB53B8900F0099A /* WithDrawDepositCellLayoutConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA639281F4AE9D000C39562 /* WithDrawDepositCellLayoutConfig.m */; };
+		2CCC5CF31FB53B8900F0099A /* TJSMyOrderListDataSourceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C1C0F1F384A3B00002166 /* TJSMyOrderListDataSourceImpl.m */; };
+		2CCC5CF41FB53B8900F0099A /* SettingHomeConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C597DD11F4C2F2300415EB6 /* SettingHomeConfig.m */; };
+		2CCC5CF51FB53B8900F0099A /* DiscoRoadShowInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4591901F5908C600D0A798 /* DiscoRoadShowInfoModel.m */; };
+		2CCC5CF61FB53B8900F0099A /* BankCardAddHeaderFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B74F11F469A140000E71A /* BankCardAddHeaderFooterView.m */; };
+		2CCC5CF71FB53B8900F0099A /* ProductListCellImageContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF42EF1F28273300ABCA5E /* ProductListCellImageContentView.m */; };
+		2CCC5CF81FB53B8900F0099A /* BankCardAddNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B75091F46C1100000E71A /* BankCardAddNetworkTool.m */; };
+		2CCC5CF91FB53B8900F0099A /* CapitalRecordListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A292B2661F39F8390086E03E /* CapitalRecordListCell.m */; };
+		2CCC5CFA1FB53B8900F0099A /* ContractAddAddressConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD896D51F453D33008F7C73 /* ContractAddAddressConfigurator.m */; };
+		2CCC5CFB1FB53B8900F0099A /* PNLineChartData.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C1C9A1F39493400002166 /* PNLineChartData.m */; };
+		2CCC5CFC1FB53B8900F0099A /* TJSBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C801BA61F233F46009F82F7 /* TJSBaseNavigationController.m */; };
+		2CCC5CFD1FB53B8900F0099A /* TJSProductListImageContentConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF42AA1F281B8600ABCA5E /* TJSProductListImageContentConfig.m */; };
+		2CCC5CFE1FB53B8900F0099A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD1691F56A52900F9654D /* AppDelegate.m */; };
+		2CCC5CFF1FB53B8900F0099A /* TJSSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C01B2091F6B7DBC0007DC0D /* TJSSearchBar.m */; };
+		2CCC5D001FB53B8900F0099A /* OrderListNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9116041F5FCF1400C315D6 /* OrderListNetworkTool.m */; };
+		2CCC5D011FB53B8900F0099A /* AddressSelectedDefaultCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD8972D1F457604008F7C73 /* AddressSelectedDefaultCell.m */; };
+		2CCC5D021FB53B8900F0099A /* TJSMyOrderListCellContentConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C1C251F38568D00002166 /* TJSMyOrderListCellContentConfig.m */; };
+		2CCC5D031FB53B8900F0099A /* ZLPhotoPickerCustomToolBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C859CBF1F31EB2E00B86575 /* ZLPhotoPickerCustomToolBarView.m */; };
+		2CCC5D041FB53B8900F0099A /* ContractApplyProductNameCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB4F64C1F42F56300FF98C9 /* ContractApplyProductNameCell.m */; };
+		2CCC5D051FB53B8900F0099A /* HomeHeaderCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8BB79A1F30859C00E2D75F /* HomeHeaderCollectionCell.m */; };
+		2CCC5D061FB53B8900F0099A /* UIButton+ImageTitleEdgeInset.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CEC58C21F4FCDE7006C03F5 /* UIButton+ImageTitleEdgeInset.m */; };
+		2CCC5D071FB53B8900F0099A /* ContractApplyContentConfigFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD896961F442765008F7C73 /* ContractApplyContentConfigFactory.m */; };
+		2CCC5D081FB53B8900F0099A /* DiscoveryRoadShowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE6131F2B43A8009B3AE2 /* DiscoveryRoadShowLayout.m */; };
+		2CCC5D091FB53B8900F0099A /* ProductDetailInteractorImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD1511F55729500F9654D /* ProductDetailInteractorImpl.m */; };
+		2CCC5D0A1FB53B8900F0099A /* UpLoadIconAPi.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE542401F4EA85400205993 /* UpLoadIconAPi.m */; };
+		2CCC5D0B1FB53B8900F0099A /* TJSBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCBE4901F34207C006C4018 /* TJSBaseTableViewCell.m */; };
+		2CCC5D0C1FB53B8900F0099A /* ZLPhotoPickerBrowserViewController+SignlePhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C859CB41F31EB2E00B86575 /* ZLPhotoPickerBrowserViewController+SignlePhotoBrowser.m */; };
+		2CCC5D0D1FB53B8900F0099A /* NSDate+TJSInterval.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9116141F5FE27800C315D6 /* NSDate+TJSInterval.m */; };
+		2CCC5D0E1FB53B8900F0099A /* TJSMyOrderListInteractorImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C1C0C1F384A2500002166 /* TJSMyOrderListInteractorImpl.m */; };
+		2CCC5D0F1FB53B8900F0099A /* AppVersionNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF42791F26EAA600ABCA5E /* AppVersionNetworkTool.m */; };
+		2CCC5D101FB53B8900F0099A /* ProductSearchResultCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF8B5401F3D46B8003B8520 /* ProductSearchResultCell.m */; };
+		2CCC5D111FB53B8900F0099A /* StatisticManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD1151F55035100F9654D /* StatisticManager.m */; };
+		2CCC5D121FB53B8900F0099A /* PNPieChartDataItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C1C871F3948E100002166 /* PNPieChartDataItem.m */; };
+		2CCC5D131FB53B8900F0099A /* DiscoRoadShowDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCBE46C1F3312D4006C4018 /* DiscoRoadShowDetailController.m */; };
+		2CCC5D141FB53B8900F0099A /* AddressManageConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD896FC1F454458008F7C73 /* AddressManageConfig.m */; };
+		2CCC5D151FB53B8900F0099A /* ProductSearchConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C027D201F3C827F001D7EB6 /* ProductSearchConfigurator.m */; };
+		2CCC5D161FB53B8900F0099A /* HomeHeaderConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8BB7B11F3088D600E2D75F /* HomeHeaderConfig.m */; };
+		2CCC5D171FB53B8900F0099A /* AddressSelectedConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD897331F4576ED008F7C73 /* AddressSelectedConfig.m */; };
+		2CCC5D181FB53B8900F0099A /* AddressSelectedDefaultContentConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD8973F1F457B55008F7C73 /* AddressSelectedDefaultContentConfig.m */; };
+		2CCC5D191FB53B8900F0099A /* DiscoRoadShowConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C45917B1F58F4B500D0A798 /* DiscoRoadShowConfigurator.m */; };
+		2CCC5D1A1FB53B8900F0099A /* UseAgreementController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E33D1F2ECB1300ADD360 /* UseAgreementController.m */; };
+		2CCC5D1B1FB53B8900F0099A /* HomeFooterContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8BB7971F30859C00E2D75F /* HomeFooterContainer.m */; };
+		2CCC5D1C1FB53B8900F0099A /* SettingHomeDefaultContentConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C597DAB1F4C2CB900415EB6 /* SettingHomeDefaultContentConfig.m */; };
+		2CCC5D1D1FB53B8900F0099A /* TJSDiscoNewsLayoutImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8DE6041F2AECCD009B3AE2 /* TJSDiscoNewsLayoutImpl.m */; };
+		2CCC5D1E1FB53B8900F0099A /* TJSMineHomeBalanceCellContentConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85E3A01F2F1ACC00ADD360 /* TJSMineHomeBalanceCellContentConfig.m */; };
+		2CCC5D1F1FB53B8900F0099A /* BankCardListLayoutImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B74A01F4694FF0000E71A /* BankCardListLayoutImpl.m */; };
+		2CCC5D201FB53B8900F0099A /* ZLCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C859CA41F31EB2E00B86575 /* ZLCamera.m */; };
+		2CCC5D211FB53B8900F0099A /* TJSThemeService.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4412961F22004500C453EF /* TJSThemeService.m */; };
+		2CCC5D221FB53B8900F0099A /* UIImage+ZLPhotoLib.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C859C9F1F31EB2E00B86575 /* UIImage+ZLPhotoLib.m */; };
+		2CCC5D231FB53B8900F0099A /* ProductListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF42F31F28273300ABCA5E /* ProductListCell.m */; };
+		2CCC5D241FB53B8900F0099A /* TJSMyBaseOrderListCellContentConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C1C211F38535A00002166 /* TJSMyBaseOrderListCellContentConfig.m */; };
+		2CCC5D251FB53B8900F0099A /* SettingDefaultTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C597DCB1F4C2D6300415EB6 /* SettingDefaultTableCell.m */; };
+		2CCC5D261FB53B8900F0099A /* TJSAppVersionApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF427D1F26EAE300ABCA5E /* TJSAppVersionApi.m */; };
+		2CCC5D271FB53B8900F0099A /* TJSProductFilterCollAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCC859B1F3AEE3A0009FC1C /* TJSProductFilterCollAdapter.m */; };
+		2CCC5D281FB53B8900F0099A /* BankCardAddBaseTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B74EB1F4699A50000E71A /* BankCardAddBaseTableCell.m */; };
+		2CCC5D291FB53B8900F0099A /* BankCardListCellLayoutConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B748E1F4694FF0000E71A /* BankCardListCellLayoutConfig.m */; };
+		2CCC5D2B1FB53B8900F0099A /* Pods_TianJiCloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE718EF664E6DD5677F041B5 /* Pods_TianJiCloud.framework */; };
+		2CCC5D2D1FB53B8900F0099A /* DiscoveryRoadShowListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC59F11F501314006C03F5 /* DiscoveryRoadShowListCell.xib */; };
+		2CCC5D2E1FB53B8900F0099A /* CumulateInvestHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC5A181F501579006C03F5 /* CumulateInvestHeader.xib */; };
+		2CCC5D2F1FB53B8900F0099A /* comme_ico_nice_sel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C8CD1A51F57A7BD00F9654D /* comme_ico_nice_sel@2x.png */; };
+		2CCC5D301FB53B8900F0099A /* conduct_list.html in Resources */ = {isa = PBXBuildFile; fileRef = 2C8CD1DD1F57A7BD00F9654D /* conduct_list.html */; };
+		2CCC5D311FB53B8900F0099A /* icn_money.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C8CD1BA1F57A7BD00F9654D /* icn_money.png */; };
+		2CCC5D321FB53B8900F0099A /* jquery-1.9.1.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 2C8CD1D71F57A7BD00F9654D /* jquery-1.9.1.min.js */; };
+		2CCC5D331FB53B8900F0099A /* bg_bottom.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C8CD1A91F57A7BD00F9654D /* bg_bottom.png */; };
+		2CCC5D341FB53B8900F0099A /* ZLPhotoLib.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2C859CDF1F31EB2E00B86575 /* ZLPhotoLib.bundle */; };
+		2CCC5D351FB53B8900F0099A /* Oder.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C85E3321F2EC6E500ADD360 /* Oder.storyboard */; };
+		2CCC5D361FB53B8900F0099A /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C300F7B1F2F32BF00DD440E /* Settings.storyboard */; };
+		2CCC5D371FB53B8900F0099A /* un_comme_ico_nice_unsel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C8CD1CA1F57A7BD00F9654D /* un_comme_ico_nice_unsel@2x.png */; };
+		2CCC5D381FB53B8900F0099A /* common.css in Resources */ = {isa = PBXBuildFile; fileRef = 2C8CD1991F57A7BD00F9654D /* common.css */; };
+		2CCC5D391FB53B8900F0099A /* banner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2C8CD1A81F57A7BD00F9654D /* banner.jpg */; };
+		2CCC5D3A1FB53B8900F0099A /* news_ico_comme_pre@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C8CD1C61F57A7BD00F9654D /* news_ico_comme_pre@2x.png */; };
+		2CCC5D3B1FB53B8900F0099A /* MyOrderListTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C9116011F5F9D6000C315D6 /* MyOrderListTableCell.xib */; };
+		2CCC5D3C1FB53B8900F0099A /* AddressPikerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC59FD1F501459006C03F5 /* AddressPikerView.xib */; };
+		2CCC5D3D1FB53B8900F0099A /* flowplayer.controls.swf in Resources */ = {isa = PBXBuildFile; fileRef = 2C8CD1D41F57A7BD00F9654D /* flowplayer.controls.swf */; };
+		2CCC5D3E1FB53B8900F0099A /* BankCardManager.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C7A34501F2F64DA004DD566 /* BankCardManager.storyboard */; };
+		2CCC5D3F1FB53B8900F0099A /* video_detail.css in Resources */ = {isa = PBXBuildFile; fileRef = 2C8CD1A31F57A7BD00F9654D /* video_detail.css */; };
+		2CCC5D401FB53B8900F0099A /* DiscoveryNewsListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC59EF1F501058006C03F5 /* DiscoveryNewsListCell.xib */; };
+		2CCC5D411FB53B8900F0099A /* FeiDan@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C9116431F626E5600C315D6 /* FeiDan@1x.png */; };
+		2CCC5D421FB53B8900F0099A /* un_comme_ico_nice_sel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C8CD1C91F57A7BD00F9654D /* un_comme_ico_nice_sel@2x.png */; };
+		2CCC5D431FB53B8900F0099A /* comme_ico_nice_unsel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C8CD1A61F57A7BD00F9654D /* comme_ico_nice_unsel@2x.png */; };
+		2CCC5D441FB53B8900F0099A /* icn_vedio_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C8CD1CE1F57A7BD00F9654D /* icn_vedio_1.png */; };
+		2CCC5D451FB53B8900F0099A /* lists_arrow_more_pre@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C8CD1C01F57A7BD00F9654D /* lists_arrow_more_pre@2x.png */; };
+		2CCC5D461FB53B8900F0099A /* loading_2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC59DA1F500534006C03F5 /* loading_2.gif */; };
+		2CCC5D471FB53B8900F0099A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C4411BC1F21981E00C453EF /* LaunchScreen.storyboard */; };
+		2CCC5D481FB53B8900F0099A /* information.html in Resources */ = {isa = PBXBuildFile; fileRef = 2C8CD1E21F57A7BD00F9654D /* information.html */; };
+		2CCC5D491FB53B8900F0099A /* conduct_detail.html in Resources */ = {isa = PBXBuildFile; fileRef = 2C8CD1DB1F57A7BD00F9654D /* conduct_detail.html */; };
+		2CCC5D4A1FB53B8900F0099A /* BankCardListAddCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC5A111F50148E006C03F5 /* BankCardListAddCell.xib */; };
+		2CCC5D4B1FB53B8900F0099A /* detail.html in Resources */ = {isa = PBXBuildFile; fileRef = 2C8CD1DF1F57A7BD00F9654D /* detail.html */; };
+		2CCC5D4C1FB53B8900F0099A /* ProductFilter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C431E101F29C6B200858C12 /* ProductFilter.storyboard */; };
+		2CCC5D4D1FB53B8900F0099A /* comlist.html in Resources */ = {isa = PBXBuildFile; fileRef = 2C8CD1E11F57A7BD00F9654D /* comlist.html */; };
+		2CCC5D4E1FB53B8900F0099A /* nav_ico_sear_pre@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C8CD1AE1F57A7BD00F9654D /* nav_ico_sear_pre@2x.png */; };
+		2CCC5D4F1FB53B8900F0099A /* ContractApplyInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC5A061F501464006C03F5 /* ContractApplyInfoCell.xib */; };
+		2CCC5D501FB53B8900F0099A /* Message.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C431E0E1F29C59C00858C12 /* Message.storyboard */; };
+		2CCC5D511FB53B8900F0099A /* UseAgreement.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C7A34581F2F685B004DD566 /* UseAgreement.storyboard */; };
+		2CCC5D521FB53B8900F0099A /* conduct_search.css in Resources */ = {isa = PBXBuildFile; fileRef = 2C8CD19E1F57A7BD00F9654D /* conduct_search.css */; };
+		2CCC5D531FB53B8900F0099A /* WithDrawDepositSumCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC59F91F501380006C03F5 /* WithDrawDepositSumCell.xib */; };
+		2CCC5D541FB53B8900F0099A /* conduct_index.html in Resources */ = {isa = PBXBuildFile; fileRef = 2C8CD1DC1F57A7BD00F9654D /* conduct_index.html */; };
+		2CCC5D551FB53B8900F0099A /* ConAddressBottomInputCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC59FE1F501459006C03F5 /* ConAddressBottomInputCell.xib */; };
+		2CCC5D561FB53B8900F0099A /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C300F8C1F2F3D4700DD440E /* Profile.storyboard */; };
+		2CCC5D571FB53B8900F0099A /* 40x40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C91163E1F626E5600C315D6 /* 40x40@2x.png */; };
+		2CCC5D581FB53B8900F0099A /* ConAddressRightInputCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC5A001F501459006C03F5 /* ConAddressRightInputCell.xib */; };
+		2CCC5D591FB53B8900F0099A /* ProductShareView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C8CD1431F5553B100F9654D /* ProductShareView.xib */; };
+		2CCC5D5A1FB53B8900F0099A /* MineHeaderCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC59F31F50134D006C03F5 /* MineHeaderCollectionCell.xib */; };
+		2CCC5D5B1FB53B8900F0099A /* icn_user_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C8CD1B61F57A7BD00F9654D /* icn_user_3.png */; };
+		2CCC5D5C1FB53B8900F0099A /* conduct_list.css in Resources */ = {isa = PBXBuildFile; fileRef = 2C8CD19D1F57A7BD00F9654D /* conduct_list.css */; };
+		2CCC5D5D1FB53B8900F0099A /* MyReward.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C7A34521F2F6590004DD566 /* MyReward.storyboard */; };
+		2CCC5D5E1FB53B8900F0099A /* ProductFilterResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC59EB1F501032006C03F5 /* ProductFilterResultCell.xib */; };
+		2CCC5D5F1FB53B8900F0099A /* icn_user_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C8CD1B71F57A7BD00F9654D /* icn_user_4.png */; };
+		2CCC5D601FB53B8900F0099A /* GestureSet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C300F921F2F3E9F00DD440E /* GestureSet.storyboard */; };
+		2CCC5D611FB53B8900F0099A /* vedio_detail.html in Resources */ = {isa = PBXBuildFile; fileRef = 2C8CD1E51F57A7BD00F9654D /* vedio_detail.html */; };
+		2CCC5D621FB53B8900F0099A /* Discovery.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C1BFEBE1F2978C500665A71 /* Discovery.storyboard */; };
+		2CCC5D631FB53B8900F0099A /* CumulateInvest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C7A344C1F2F633C004DD566 /* CumulateInvest.storyboard */; };
+		2CCC5D641FB53B8900F0099A /* SettingHomeHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC5A2B1F50184A006C03F5 /* SettingHomeHeader.xib */; };
+		2CCC5D651FB53B8900F0099A /* Product.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C8DE59D1F29FE80009B3AE2 /* Product.storyboard */; };
+		2CCC5D661FB53B8900F0099A /* lists_arrow_more_pre.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C8CD1BF1F57A7BD00F9654D /* lists_arrow_more_pre.png */; };
+		2CCC5D671FB53B8900F0099A /* ContractListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC5A0B1F50146F006C03F5 /* ContractListCell.xib */; };
+		2CCC5D681FB53B8900F0099A /* vedio.js in Resources */ = {isa = PBXBuildFile; fileRef = 2C8CD1D81F57A7BD00F9654D /* vedio.js */; };
+		2CCC5D691FB53B8900F0099A /* user_ico_follow_def@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C8CD1CB1F57A7BD00F9654D /* user_ico_follow_def@2x.png */; };
+		2CCC5D6A1FB53B8900F0099A /* FeiDan@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C9116381F626E5600C315D6 /* FeiDan@2x.png */; };
+		2CCC5D6B1FB53B8900F0099A /* ProductSearch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C8DE5A51F29FFBF009B3AE2 /* ProductSearch.storyboard */; };
+		2CCC5D6C1FB53B8900F0099A /* ProfessionAuthen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C300F961F2F3F9F00DD440E /* ProfessionAuthen.storyboard */; };
+		2CCC5D6D1FB53B8900F0099A /* BankCardListDefaultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC5A121F50148E006C03F5 /* BankCardListDefaultCell.xib */; };
+		2CCC5D6E1FB53B8900F0099A /* BankPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC5A0E1F50147A006C03F5 /* BankPickerView.xib */; };
+		2CCC5D6F1FB53B8900F0099A /* ContractApplyProductNameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC5A071F501464006C03F5 /* ContractApplyProductNameCell.xib */; };
+		2CCC5D701FB53B8900F0099A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC5A361F501D32006C03F5 /* InfoPlist.strings */; };
+		2CCC5D711FB53B8900F0099A /* HomeFooterWeb.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C8BB7BE1F315DD000E2D75F /* HomeFooterWeb.storyboard */; };
+		2CCC5D721FB53B8900F0099A /* CapitalRecord.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C7A344E1F2F63BD004DD566 /* CapitalRecord.storyboard */; };
+		2CCC5D731FB53B8900F0099A /* 180x180@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C91163C1F626E5600C315D6 /* 180x180@3x.png */; };
+		2CCC5D741FB53B8900F0099A /* conduct_index.css in Resources */ = {isa = PBXBuildFile; fileRef = 2C8CD19C1F57A7BD00F9654D /* conduct_index.css */; };
+		2CCC5D751FB53B8900F0099A /* favData.json in Resources */ = {isa = PBXBuildFile; fileRef = 2C8CD2291F57A7CA00F9654D /* favData.json */; };
+		2CCC5D761FB53B8900F0099A /* news_ico_colle_sel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C8CD1C41F57A7BD00F9654D /* news_ico_colle_sel@2x.png */; };
+		2CCC5D771FB53B8900F0099A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C4411BA1F21981E00C453EF /* Assets.xcassets */; };
+		2CCC5D781FB53B8900F0099A /* detail.js in Resources */ = {isa = PBXBuildFile; fileRef = 2C8CD1D31F57A7BD00F9654D /* detail.js */; };
+		2CCC5D791FB53B8900F0099A /* WithDrawDepositHomeHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC59F81F501380006C03F5 /* WithDrawDepositHomeHeader.xib */; };
+		2CCC5D7A1FB53B8900F0099A /* icn_user_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C8CD1B41F57A7BD00F9654D /* icn_user_1.png */; };
+		2CCC5D7B1FB53B8900F0099A /* 152x152@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C91163A1F626E5600C315D6 /* 152x152@2x.png */; };
+		2CCC5D7C1FB53B8900F0099A /* TJSThemeConfig.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C4412981F22007D00C453EF /* TJSThemeConfig.strings */; };
+		2CCC5D7D1FB53B8900F0099A /* user_ico_follow_pre@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C8CD1CC1F57A7BD00F9654D /* user_ico_follow_pre@2x.png */; };
+		2CCC5D7E1FB53B8900F0099A /* detail.css in Resources */ = {isa = PBXBuildFile; fileRef = 2C8CD1A01F57A7BD00F9654D /* detail.css */; };
+		2CCC5D7F1FB53B8900F0099A /* loading_3.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC59DB1F500534006C03F5 /* loading_3.gif */; };
+		2CCC5D801FB53B8900F0099A /* 167x167@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C91163B1F626E5600C315D6 /* 167x167@2x.png */; };
+		2CCC5D811FB53B8900F0099A /* BankCardAddDefaultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC5A0D1F50147A006C03F5 /* BankCardAddDefaultCell.xib */; };
+		2CCC5D821FB53B8900F0099A /* news_ico_share_pre@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C8CD1C81F57A7BD00F9654D /* news_ico_share_pre@2x.png */; };
+		2CCC5D831FB53B8900F0099A /* Feedback.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C7A345A1F2F68E6004DD566 /* Feedback.storyboard */; };
+		2CCC5D841FB53B8900F0099A /* lists_video_time_def@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C8CD1C21F57A7BD00F9654D /* lists_video_time_def@3x.png */; };
+		2CCC5D851FB53B8900F0099A /* news_ico_colle_def@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C8CD1C31F57A7BD00F9654D /* news_ico_colle_def@2x.png */; };
+		2CCC5D861FB53B8900F0099A /* ProductSearchResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC59ED1F501046006C03F5 /* ProductSearchResultCell.xib */; };
+		2CCC5D871FB53B8900F0099A /* video.html in Resources */ = {isa = PBXBuildFile; fileRef = 2C8CD1E61F57A7BD00F9654D /* video.html */; };
+		2CCC5D881FB53B8900F0099A /* ProductDetailFooter.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C8CD13E1F5552FC00F9654D /* ProductDetailFooter.xib */; };
+		2CCC5D891FB53B8900F0099A /* icn_logo_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C8CD1B31F57A7BD00F9654D /* icn_logo_1.png */; };
+		2CCC5D8A1FB53B8900F0099A /* 80x80@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C9116411F626E5600C315D6 /* 80x80@2x.png */; };
+		2CCC5D8B1FB53B8900F0099A /* 40x40@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C91163D1F626E5600C315D6 /* 40x40@1x.png */; };
+		2CCC5D8C1FB53B8900F0099A /* ContractApplyAddAddressCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC5A051F501464006C03F5 /* ContractApplyAddAddressCell.xib */; };
+		2CCC5D8D1FB53B8900F0099A /* videoData.json in Resources */ = {isa = PBXBuildFile; fileRef = 2C8CD22B1F57A7CA00F9654D /* videoData.json */; };
+		2CCC5D8E1FB53B8900F0099A /* mockData.json in Resources */ = {isa = PBXBuildFile; fileRef = 2C8CD22A1F57A7CA00F9654D /* mockData.json */; };
+		2CCC5D8F1FB53B8900F0099A /* icn_yy_success.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C8CD1AB1F57A7BD00F9654D /* icn_yy_success.png */; };
+		2CCC5D901FB53B8900F0099A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC5A261F50170D006C03F5 /* Localizable.strings */; };
+		2CCC5D911FB53B8900F0099A /* FindWithDrawCode.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C300F941F2F3F1200DD440E /* FindWithDrawCode.storyboard */; };
+		2CCC5D921FB53B8900F0099A /* 87x87@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C9116421F626E5600C315D6 /* 87x87@3x.png */; };
+		2CCC5D931FB53B8900F0099A /* AboutMe.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C7A345C1F2F69CF004DD566 /* AboutMe.storyboard */; };
+		2CCC5D941FB53B8900F0099A /* WithDrawDepositAddBankCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC59F71F501380006C03F5 /* WithDrawDepositAddBankCell.xib */; };
+		2CCC5D951FB53B8900F0099A /* vediodemo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C8CD1D11F57A7BD00F9654D /* vediodemo.mp4 */; };
+		2CCC5D961FB53B8900F0099A /* WithDarwDeposit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C7A344A1F2F61C1004DD566 /* WithDarwDeposit.storyboard */; };
+		2CCC5D971FB53B8900F0099A /* conduct_search.html in Resources */ = {isa = PBXBuildFile; fileRef = 2C8CD1DE1F57A7BD00F9654D /* conduct_search.html */; };
+		2CCC5D981FB53B8900F0099A /* icn_vedio_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C8CD1CF1F57A7BD00F9654D /* icn_vedio_2.png */; };
+		2CCC5D991FB53B8900F0099A /* Mine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C801BB21F233F46009F82F7 /* Mine.storyboard */; };
+		2CCC5D9A1FB53B8900F0099A /* ico_call.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C8CD1AC1F57A7BD00F9654D /* ico_call.png */; };
+		2CCC5D9B1FB53B8900F0099A /* news_ico_comme_def@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C8CD1C51F57A7BD00F9654D /* news_ico_comme_def@2x.png */; };
+		2CCC5D9C1FB53B8900F0099A /* HomeFooterCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC59E71F50100B006C03F5 /* HomeFooterCollectionCell.xib */; };
+		2CCC5D9D1FB53B8900F0099A /* replylist.html in Resources */ = {isa = PBXBuildFile; fileRef = 2C8CD1E31F57A7BD00F9654D /* replylist.html */; };
+		2CCC5D9E1FB53B8900F0099A /* icn_good.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C8CD1B91F57A7BD00F9654D /* icn_good.png */; };
+		2CCC5D9F1FB53B8900F0099A /* .project in Resources */ = {isa = PBXBuildFile; fileRef = 2C8CD1971F57A7BD00F9654D /* .project */; };
+		2CCC5DA01FB53B8900F0099A /* lists_arrow_more_def@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C8CD1BE1F57A7BD00F9654D /* lists_arrow_more_def@2x.png */; };
+		2CCC5DA11FB53B8900F0099A /* conduct_detail.css in Resources */ = {isa = PBXBuildFile; fileRef = 2C8CD19B1F57A7BD00F9654D /* conduct_detail.css */; };
+		2CCC5DA21FB53B8900F0099A /* FeiDan@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C9116391F626E5600C315D6 /* FeiDan@3x.png */; };
+		2CCC5DA31FB53B8900F0099A /* MLoginCode.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C300F901F2F3E1000DD440E /* MLoginCode.storyboard */; };
+		2CCC5DA41FB53B8900F0099A /* 58x58@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C91163F1F626E5600C315D6 /* 58x58@2x.png */; };
+		2CCC5DA51FB53B8900F0099A /* Collection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C7A34541F2F66AF004DD566 /* Collection.storyboard */; };
+		2CCC5DA61FB53B8900F0099A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C4411B71F21981E00C453EF /* Main.storyboard */; };
+		2CCC5DA71FB53B8900F0099A /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C1BFEBC1F29779100665A71 /* Home.storyboard */; };
+		2CCC5DA81FB53B8900F0099A /* icon_menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C8CD1AD1F57A7BD00F9654D /* icon_menu.png */; };
+		2CCC5DA91FB53B8900F0099A /* AddressSelectedDefaultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C9115FD1F5E9C4F00C315D6 /* AddressSelectedDefaultCell.xib */; };
+		2CCC5DAA1FB53B8900F0099A /* AddressManageDefaultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C9115FF1F5EA1FF00C315D6 /* AddressManageDefaultCell.xib */; };
+		2CCC5DAB1FB53B8900F0099A /* icn_timed.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C8CD1AA1F57A7BD00F9654D /* icn_timed.png */; };
+		2CCC5DAC1FB53B8900F0099A /* icn_bad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C8CD1B81F57A7BD00F9654D /* icn_bad.png */; };
+		2CCC5DAD1FB53B8900F0099A /* conta_ico_call_def@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C8CD1AF1F57A7BD00F9654D /* conta_ico_call_def@2x.png */; };
+		2CCC5DAE1FB53B8900F0099A /* video.css in Resources */ = {isa = PBXBuildFile; fileRef = 2C8CD1A11F57A7BD00F9654D /* video.css */; };
+		2CCC5DAF1FB53B8900F0099A /* icn_ad_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C8CD1B11F57A7BD00F9654D /* icn_ad_1.png */; };
+		2CCC5DB01FB53B8900F0099A /* ProductListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC59E91F50101F006C03F5 /* ProductListCell.xib */; };
+		2CCC5DB11FB53B8900F0099A /* icn_vedio_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C8CD1D01F57A7BD00F9654D /* icn_vedio_3.png */; };
+		2CCC5DB21FB53B8900F0099A /* loading@3x.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC59D81F500534006C03F5 /* loading@3x.gif */; };
+		2CCC5DB31FB53B8900F0099A /* HomeHeaderCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC59E51F500FDD006C03F5 /* HomeHeaderCollectionCell.xib */; };
+		2CCC5DB41FB53B8900F0099A /* html5media.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 2C8CD1D61F57A7BD00F9654D /* html5media.min.js */; };
+		2CCC5DB51FB53B8900F0099A /* news_ico_share_def@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C8CD1C71F57A7BD00F9654D /* news_ico_share_def@2x.png */; };
+		2CCC5DB61FB53B8900F0099A /* loading_1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC59D91F500534006C03F5 /* loading_1.gif */; };
+		2CCC5DB71FB53B8900F0099A /* nav_btn_searc_def@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C8CD1BD1F57A7BD00F9654D /* nav_btn_searc_def@2x.png */; };
+		2CCC5DB81FB53B8900F0099A /* flowplayer.swf in Resources */ = {isa = PBXBuildFile; fileRef = 2C8CD1D51F57A7BD00F9654D /* flowplayer.swf */; };
+		2CCC5DB91FB53B8900F0099A /* loading@2x.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC59D71F500534006C03F5 /* loading@2x.gif */; };
+		2CCC5DBA1FB53B8900F0099A /* bg_bottom.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C8CD1BC1F57A7BD00F9654D /* bg_bottom.png */; };
+		2CCC5DBB1FB53B8900F0099A /* ContractApply.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C7A34561F2F673D004DD566 /* ContractApply.storyboard */; };
+		2CCC5DBC1FB53B8900F0099A /* 76x76@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C9116401F626E5600C315D6 /* 76x76@1x.png */; };
+		2CCC5DBD1FB53B8900F0099A /* icn_user_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C8CD1B51F57A7BD00F9654D /* icn_user_2.png */; };
+		2CCC5DBE1FB53B8900F0099A /* ConAddressMiddleLabelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC59FF1F501459006C03F5 /* ConAddressMiddleLabelCell.xib */; };
+		2CCC5DBF1FB53B8900F0099A /* HomeHeaderWeb.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C8BB7BC1F315D2800E2D75F /* HomeHeaderWeb.storyboard */; };
+		2CCC5DC01FB53B8900F0099A /* lists_numb_play_def@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C8CD1C11F57A7BD00F9654D /* lists_numb_play_def@2x.png */; };
+		2CCC5DC11FB53B8900F0099A /* icn_img_news.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C8CD1B21F57A7BD00F9654D /* icn_img_news.png */; };
 		2CCC85AB1F3AEE3A0009FC1C /* ProducFilterVCConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCC85931F3AEE3A0009FC1C /* ProducFilterVCConfig.m */; };
 		2CCC85AC1F3AEE3A0009FC1C /* ProductFilterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCC85961F3AEE3A0009FC1C /* ProductFilterController.m */; };
 		2CCC85AD1F3AEE3A0009FC1C /* ProductFilterCollLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCC85991F3AEE3A0009FC1C /* ProductFilterCollLayout.m */; };
@@ -657,7 +1400,6 @@
 		2CD897551F45851A008F7C73 /* ConAddressRightInputContentConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD897541F45851A008F7C73 /* ConAddressRightInputContentConfig.m */; };
 		2CD897581F458537008F7C73 /* ConAddressMiddleLabelContentConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD897571F458537008F7C73 /* ConAddressMiddleLabelContentConfig.m */; };
 		2CD8975B1F45854A008F7C73 /* ConAddressBottomInputContentConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD8975A1F45854A008F7C73 /* ConAddressBottomInputContentConfig.m */; };
-		2CDB75CF1F669471002909D9 /* WRNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CDB75CE1F669471002909D9 /* WRNavigationBar.m */; };
 		2CE542241F4EA4A100205993 /* LogoutNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE542231F4EA4A100205993 /* LogoutNetworkTool.m */; };
 		2CE542281F4EA4E900205993 /* LogoutApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE542271F4EA4E900205993 /* LogoutApi.m */; };
 		2CE5422B1F4EA51500205993 /* LoginApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE5422A1F4EA51500205993 /* LoginApi.m */; };
@@ -1651,6 +2393,7 @@
 		2C9116601F66289C00C315D6 /* CALayer+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+Extensions.m"; sourceTree = "<group>"; };
 		2C9116631F6638BF00C315D6 /* UINavigationController+TZPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+TZPopGesture.h"; sourceTree = "<group>"; };
 		2C9116641F6638BF00C315D6 /* UINavigationController+TZPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+TZPopGesture.m"; sourceTree = "<group>"; };
+		2C98BE401FFCD18500F8EC83 /* TianJiCloudDev.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TianJiCloudDev.entitlements; sourceTree = "<group>"; };
 		2CA553061F43E1CB0095ECC1 /* RewardVCConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RewardVCConfig.h; sourceTree = "<group>"; };
 		2CA553071F43E1CB0095ECC1 /* RewardVCConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RewardVCConfig.m; sourceTree = "<group>"; };
 		2CA5530C1F43E20A0095ECC1 /* RewardConfigProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RewardConfigProtocol.h; sourceTree = "<group>"; };
@@ -1879,6 +2622,10 @@
 		2CCBE4A01F344A98006C4018 /* MineHomeCellIvestItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineHomeCellIvestItem.m; sourceTree = "<group>"; };
 		2CCBE4A11F344A98006C4018 /* MineHomeCellOrderItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineHomeCellOrderItem.h; sourceTree = "<group>"; };
 		2CCBE4A21F344A98006C4018 /* MineHomeCellOrderItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineHomeCellOrderItem.m; sourceTree = "<group>"; };
+		2CCC5A4A1FAAC87E00F0099A /* ProductContainerVCConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductContainerVCConfig.h; sourceTree = "<group>"; };
+		2CCC5A4B1FAAC87E00F0099A /* ProductContainerVCConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductContainerVCConfig.m; sourceTree = "<group>"; };
+		2CCC5DC71FB53B8900F0099A /* TianJiCloudDev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TianJiCloudDev.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CCC5DC81FB53B8F00F0099A /* TianJiCloudDev.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = TianJiCloudDev.plist; path = "/Users/Ivan/Desktop/TinajiStar_Code/01-Coding/iOS/TianJiCloud/ios/TianJiCloud/TianJiCloudDev.plist"; sourceTree = "<absolute>"; };
 		2CCC85921F3AEE3A0009FC1C /* ProducFilterVCConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProducFilterVCConfig.h; sourceTree = "<group>"; };
 		2CCC85931F3AEE3A0009FC1C /* ProducFilterVCConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProducFilterVCConfig.m; sourceTree = "<group>"; };
 		2CCC85951F3AEE3A0009FC1C /* ProductFilterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductFilterController.h; sourceTree = "<group>"; };
@@ -2036,8 +2783,6 @@
 		2CD897571F458537008F7C73 /* ConAddressMiddleLabelContentConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConAddressMiddleLabelContentConfig.m; sourceTree = "<group>"; };
 		2CD897591F45854A008F7C73 /* ConAddressBottomInputContentConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConAddressBottomInputContentConfig.h; sourceTree = "<group>"; };
 		2CD8975A1F45854A008F7C73 /* ConAddressBottomInputContentConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConAddressBottomInputContentConfig.m; sourceTree = "<group>"; };
-		2CDB75CD1F669471002909D9 /* WRNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WRNavigationBar.h; sourceTree = "<group>"; };
-		2CDB75CE1F669471002909D9 /* WRNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WRNavigationBar.m; sourceTree = "<group>"; };
 		2CE542221F4EA4A100205993 /* LogoutNetworkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogoutNetworkTool.h; sourceTree = "<group>"; };
 		2CE542231F4EA4A100205993 /* LogoutNetworkTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogoutNetworkTool.m; sourceTree = "<group>"; };
 		2CE542261F4EA4E900205993 /* LogoutApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogoutApi.h; sourceTree = "<group>"; };
@@ -2235,6 +2980,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CCC5D2A1FB53B8900F0099A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CCC5D2B1FB53B8900F0099A /* Pods_TianJiCloud.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2587,6 +3340,7 @@
 		2C44119F1F21981E00C453EF = {
 			isa = PBXGroup;
 			children = (
+				2C98BE401FFCD18500F8EC83 /* TianJiCloudDev.entitlements */,
 				2C4411AA1F21981E00C453EF /* TianJiCloud */,
 				2C4411C71F21981E00C453EF /* TianJiCloudTests */,
 				2C4411D21F21981E00C453EF /* TianJiCloudUITests */,
@@ -2602,6 +3356,7 @@
 				2C4411A81F21981E00C453EF /* TianJiCloud.app */,
 				2C4411C41F21981E00C453EF /* TianJiCloudTests.xctest */,
 				2C4411CF1F21981E00C453EF /* TianJiCloudUITests.xctest */,
+				2CCC5DC71FB53B8900F0099A /* TianJiCloudDev.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -2625,6 +3380,7 @@
 				2CEC5A361F501D32006C03F5 /* InfoPlist.strings */,
 				2CEC5A261F50170D006C03F5 /* Localizable.strings */,
 				2CEC5A1C1F50164E006C03F5 /* Info.plist */,
+				2CCC5DC81FB53B8F00F0099A /* TianJiCloudDev.plist */,
 				2C4411BA1F21981E00C453EF /* Assets.xcassets */,
 				2C4411AB1F21981E00C453EF /* Supporting Files */,
 			);
@@ -3837,7 +4593,6 @@
 		2C859D041F31EB5D00B86575 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				2CDB75CC1F669471002909D9 /* WRNavigationBar */,
 				2C9116621F6638BF00C315D6 /* TZScrollViewPopGesture */,
 				2C8CD2321F57AAE400F9654D /* FDFullscreenPopGesture */,
 				2C859D051F31EB5D00B86575 /* vk_msgSend */,
@@ -4283,6 +5038,8 @@
 			children = (
 				2C8BB7C71F31BB9F00E2D75F /* ProductContainerController.h */,
 				2C8BB7C81F31BB9F00E2D75F /* ProductContainerController.m */,
+				2CCC5A4A1FAAC87E00F0099A /* ProductContainerVCConfig.h */,
+				2CCC5A4B1FAAC87E00F0099A /* ProductContainerVCConfig.m */,
 			);
 			name = Container;
 			path = ProductList/Container;
@@ -6733,15 +7490,6 @@
 			path = Protocol;
 			sourceTree = "<group>";
 		};
-		2CDB75CC1F669471002909D9 /* WRNavigationBar */ = {
-			isa = PBXGroup;
-			children = (
-				2CDB75CD1F669471002909D9 /* WRNavigationBar.h */,
-				2CDB75CE1F669471002909D9 /* WRNavigationBar.m */,
-			);
-			path = WRNavigationBar;
-			sourceTree = "<group>";
-		};
 		2CE542211F4EA46F00205993 /* NetworkTool */ = {
 			isa = PBXGroup;
 			children = (
@@ -7100,6 +7848,26 @@
 			productReference = 2C4411CF1F21981E00C453EF /* TianJiCloudUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		2CCC5AD61FB53B8900F0099A /* TianJiCloudDev */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CCC5DC41FB53B8900F0099A /* Build configuration list for PBXNativeTarget "TianJiCloudDev" */;
+			buildPhases = (
+				2CCC5AD71FB53B8900F0099A /* [CP] Check Pods Manifest.lock */,
+				2CCC5AD81FB53B8900F0099A /* Sources */,
+				2CCC5D2A1FB53B8900F0099A /* Frameworks */,
+				2CCC5D2C1FB53B8900F0099A /* Resources */,
+				2CCC5DC21FB53B8900F0099A /* [CP] Embed Pods Frameworks */,
+				2CCC5DC31FB53B8900F0099A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TianJiCloudDev;
+			productName = TianJiCloud;
+			productReference = 2CCC5DC71FB53B8900F0099A /* TianJiCloudDev.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -7131,6 +7899,15 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 2C4411A71F21981E00C453EF;
 					};
+					2CCC5AD61FB53B8900F0099A = {
+						DevelopmentTeam = R2WXJ5V7M3;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
 				};
 			};
 			buildConfigurationList = 2C4411A31F21981E00C453EF /* Build configuration list for PBXProject "TianJiCloud" */;
@@ -7150,6 +7927,7 @@
 				2C4411A71F21981E00C453EF /* TianJiCloud */,
 				2C4411C31F21981E00C453EF /* TianJiCloudTests */,
 				2C4411CE1F21981E00C453EF /* TianJiCloudUITests */,
+				2CCC5AD61FB53B8900F0099A /* TianJiCloudDev */,
 			);
 		};
 /* End PBXProject section */
@@ -7325,10 +8103,262 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2CCC5D2C1FB53B8900F0099A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CCC5D2D1FB53B8900F0099A /* DiscoveryRoadShowListCell.xib in Resources */,
+				2CCC5D2E1FB53B8900F0099A /* CumulateInvestHeader.xib in Resources */,
+				2CCC5D2F1FB53B8900F0099A /* comme_ico_nice_sel@2x.png in Resources */,
+				2CCC5D301FB53B8900F0099A /* conduct_list.html in Resources */,
+				2CCC5D311FB53B8900F0099A /* icn_money.png in Resources */,
+				2CCC5D321FB53B8900F0099A /* jquery-1.9.1.min.js in Resources */,
+				2CCC5D331FB53B8900F0099A /* bg_bottom.png in Resources */,
+				2CCC5D341FB53B8900F0099A /* ZLPhotoLib.bundle in Resources */,
+				2CCC5D351FB53B8900F0099A /* Oder.storyboard in Resources */,
+				2CCC5D361FB53B8900F0099A /* Settings.storyboard in Resources */,
+				2CCC5D371FB53B8900F0099A /* un_comme_ico_nice_unsel@2x.png in Resources */,
+				2CCC5D381FB53B8900F0099A /* common.css in Resources */,
+				2CCC5D391FB53B8900F0099A /* banner.jpg in Resources */,
+				2CCC5D3A1FB53B8900F0099A /* news_ico_comme_pre@2x.png in Resources */,
+				2CCC5D3B1FB53B8900F0099A /* MyOrderListTableCell.xib in Resources */,
+				2CCC5D3C1FB53B8900F0099A /* AddressPikerView.xib in Resources */,
+				2CCC5D3D1FB53B8900F0099A /* flowplayer.controls.swf in Resources */,
+				2CCC5D3E1FB53B8900F0099A /* BankCardManager.storyboard in Resources */,
+				2CCC5D3F1FB53B8900F0099A /* video_detail.css in Resources */,
+				2CCC5D401FB53B8900F0099A /* DiscoveryNewsListCell.xib in Resources */,
+				2CCC5D411FB53B8900F0099A /* FeiDan@1x.png in Resources */,
+				2CCC5D421FB53B8900F0099A /* un_comme_ico_nice_sel@2x.png in Resources */,
+				2CCC5D431FB53B8900F0099A /* comme_ico_nice_unsel@2x.png in Resources */,
+				2CCC5D441FB53B8900F0099A /* icn_vedio_1.png in Resources */,
+				2CCC5D451FB53B8900F0099A /* lists_arrow_more_pre@2x.png in Resources */,
+				2CCC5D461FB53B8900F0099A /* loading_2.gif in Resources */,
+				2CCC5D471FB53B8900F0099A /* LaunchScreen.storyboard in Resources */,
+				2CCC5D481FB53B8900F0099A /* information.html in Resources */,
+				2CCC5D491FB53B8900F0099A /* conduct_detail.html in Resources */,
+				2CCC5D4A1FB53B8900F0099A /* BankCardListAddCell.xib in Resources */,
+				2CCC5D4B1FB53B8900F0099A /* detail.html in Resources */,
+				2CCC5D4C1FB53B8900F0099A /* ProductFilter.storyboard in Resources */,
+				2CCC5D4D1FB53B8900F0099A /* comlist.html in Resources */,
+				2CCC5D4E1FB53B8900F0099A /* nav_ico_sear_pre@2x.png in Resources */,
+				2CCC5D4F1FB53B8900F0099A /* ContractApplyInfoCell.xib in Resources */,
+				2CCC5D501FB53B8900F0099A /* Message.storyboard in Resources */,
+				2CCC5D511FB53B8900F0099A /* UseAgreement.storyboard in Resources */,
+				2CCC5D521FB53B8900F0099A /* conduct_search.css in Resources */,
+				2CCC5D531FB53B8900F0099A /* WithDrawDepositSumCell.xib in Resources */,
+				2CCC5D541FB53B8900F0099A /* conduct_index.html in Resources */,
+				2CCC5D551FB53B8900F0099A /* ConAddressBottomInputCell.xib in Resources */,
+				2CCC5D561FB53B8900F0099A /* Profile.storyboard in Resources */,
+				2CCC5D571FB53B8900F0099A /* 40x40@2x.png in Resources */,
+				2CCC5D581FB53B8900F0099A /* ConAddressRightInputCell.xib in Resources */,
+				2CCC5D591FB53B8900F0099A /* ProductShareView.xib in Resources */,
+				2CCC5D5A1FB53B8900F0099A /* MineHeaderCollectionCell.xib in Resources */,
+				2CCC5D5B1FB53B8900F0099A /* icn_user_3.png in Resources */,
+				2CCC5D5C1FB53B8900F0099A /* conduct_list.css in Resources */,
+				2CCC5D5D1FB53B8900F0099A /* MyReward.storyboard in Resources */,
+				2CCC5D5E1FB53B8900F0099A /* ProductFilterResultCell.xib in Resources */,
+				2CCC5D5F1FB53B8900F0099A /* icn_user_4.png in Resources */,
+				2CCC5D601FB53B8900F0099A /* GestureSet.storyboard in Resources */,
+				2CCC5D611FB53B8900F0099A /* vedio_detail.html in Resources */,
+				2CCC5D621FB53B8900F0099A /* Discovery.storyboard in Resources */,
+				2CCC5D631FB53B8900F0099A /* CumulateInvest.storyboard in Resources */,
+				2CCC5D641FB53B8900F0099A /* SettingHomeHeader.xib in Resources */,
+				2CCC5D651FB53B8900F0099A /* Product.storyboard in Resources */,
+				2CCC5D661FB53B8900F0099A /* lists_arrow_more_pre.png in Resources */,
+				2CCC5D671FB53B8900F0099A /* ContractListCell.xib in Resources */,
+				2CCC5D681FB53B8900F0099A /* vedio.js in Resources */,
+				2CCC5D691FB53B8900F0099A /* user_ico_follow_def@2x.png in Resources */,
+				2CCC5D6A1FB53B8900F0099A /* FeiDan@2x.png in Resources */,
+				2CCC5D6B1FB53B8900F0099A /* ProductSearch.storyboard in Resources */,
+				2CCC5D6C1FB53B8900F0099A /* ProfessionAuthen.storyboard in Resources */,
+				2CCC5D6D1FB53B8900F0099A /* BankCardListDefaultCell.xib in Resources */,
+				2CCC5D6E1FB53B8900F0099A /* BankPickerView.xib in Resources */,
+				2CCC5D6F1FB53B8900F0099A /* ContractApplyProductNameCell.xib in Resources */,
+				2CCC5D701FB53B8900F0099A /* InfoPlist.strings in Resources */,
+				2CCC5D711FB53B8900F0099A /* HomeFooterWeb.storyboard in Resources */,
+				2CCC5D721FB53B8900F0099A /* CapitalRecord.storyboard in Resources */,
+				2CCC5D731FB53B8900F0099A /* 180x180@3x.png in Resources */,
+				2CCC5D741FB53B8900F0099A /* conduct_index.css in Resources */,
+				2CCC5D751FB53B8900F0099A /* favData.json in Resources */,
+				2CCC5D761FB53B8900F0099A /* news_ico_colle_sel@2x.png in Resources */,
+				2CCC5D771FB53B8900F0099A /* Assets.xcassets in Resources */,
+				2CCC5D781FB53B8900F0099A /* detail.js in Resources */,
+				2CCC5D791FB53B8900F0099A /* WithDrawDepositHomeHeader.xib in Resources */,
+				2CCC5D7A1FB53B8900F0099A /* icn_user_1.png in Resources */,
+				2CCC5D7B1FB53B8900F0099A /* 152x152@2x.png in Resources */,
+				2CCC5D7C1FB53B8900F0099A /* TJSThemeConfig.strings in Resources */,
+				2CCC5D7D1FB53B8900F0099A /* user_ico_follow_pre@2x.png in Resources */,
+				2CCC5D7E1FB53B8900F0099A /* detail.css in Resources */,
+				2CCC5D7F1FB53B8900F0099A /* loading_3.gif in Resources */,
+				2CCC5D801FB53B8900F0099A /* 167x167@2x.png in Resources */,
+				2CCC5D811FB53B8900F0099A /* BankCardAddDefaultCell.xib in Resources */,
+				2CCC5D821FB53B8900F0099A /* news_ico_share_pre@2x.png in Resources */,
+				2CCC5D831FB53B8900F0099A /* Feedback.storyboard in Resources */,
+				2CCC5D841FB53B8900F0099A /* lists_video_time_def@3x.png in Resources */,
+				2CCC5D851FB53B8900F0099A /* news_ico_colle_def@2x.png in Resources */,
+				2CCC5D861FB53B8900F0099A /* ProductSearchResultCell.xib in Resources */,
+				2CCC5D871FB53B8900F0099A /* video.html in Resources */,
+				2CCC5D881FB53B8900F0099A /* ProductDetailFooter.xib in Resources */,
+				2CCC5D891FB53B8900F0099A /* icn_logo_1.png in Resources */,
+				2CCC5D8A1FB53B8900F0099A /* 80x80@2x.png in Resources */,
+				2CCC5D8B1FB53B8900F0099A /* 40x40@1x.png in Resources */,
+				2CCC5D8C1FB53B8900F0099A /* ContractApplyAddAddressCell.xib in Resources */,
+				2CCC5D8D1FB53B8900F0099A /* videoData.json in Resources */,
+				2CCC5D8E1FB53B8900F0099A /* mockData.json in Resources */,
+				2CCC5D8F1FB53B8900F0099A /* icn_yy_success.png in Resources */,
+				2CCC5D901FB53B8900F0099A /* Localizable.strings in Resources */,
+				2CCC5D911FB53B8900F0099A /* FindWithDrawCode.storyboard in Resources */,
+				2CCC5D921FB53B8900F0099A /* 87x87@3x.png in Resources */,
+				2CCC5D931FB53B8900F0099A /* AboutMe.storyboard in Resources */,
+				2CCC5D941FB53B8900F0099A /* WithDrawDepositAddBankCell.xib in Resources */,
+				2CCC5D951FB53B8900F0099A /* vediodemo.mp4 in Resources */,
+				2CCC5D961FB53B8900F0099A /* WithDarwDeposit.storyboard in Resources */,
+				2CCC5D971FB53B8900F0099A /* conduct_search.html in Resources */,
+				2CCC5D981FB53B8900F0099A /* icn_vedio_2.png in Resources */,
+				2CCC5D991FB53B8900F0099A /* Mine.storyboard in Resources */,
+				2CCC5D9A1FB53B8900F0099A /* ico_call.png in Resources */,
+				2CCC5D9B1FB53B8900F0099A /* news_ico_comme_def@2x.png in Resources */,
+				2CCC5D9C1FB53B8900F0099A /* HomeFooterCollectionCell.xib in Resources */,
+				2CCC5D9D1FB53B8900F0099A /* replylist.html in Resources */,
+				2CCC5D9E1FB53B8900F0099A /* icn_good.png in Resources */,
+				2CCC5D9F1FB53B8900F0099A /* .project in Resources */,
+				2CCC5DA01FB53B8900F0099A /* lists_arrow_more_def@2x.png in Resources */,
+				2CCC5DA11FB53B8900F0099A /* conduct_detail.css in Resources */,
+				2CCC5DA21FB53B8900F0099A /* FeiDan@3x.png in Resources */,
+				2CCC5DA31FB53B8900F0099A /* MLoginCode.storyboard in Resources */,
+				2CCC5DA41FB53B8900F0099A /* 58x58@2x.png in Resources */,
+				2CCC5DA51FB53B8900F0099A /* Collection.storyboard in Resources */,
+				2CCC5DA61FB53B8900F0099A /* Main.storyboard in Resources */,
+				2CCC5DA71FB53B8900F0099A /* Home.storyboard in Resources */,
+				2CCC5DA81FB53B8900F0099A /* icon_menu.png in Resources */,
+				2CCC5DA91FB53B8900F0099A /* AddressSelectedDefaultCell.xib in Resources */,
+				2CCC5DAA1FB53B8900F0099A /* AddressManageDefaultCell.xib in Resources */,
+				2CCC5DAB1FB53B8900F0099A /* icn_timed.png in Resources */,
+				2CCC5DAC1FB53B8900F0099A /* icn_bad.png in Resources */,
+				2CCC5DAD1FB53B8900F0099A /* conta_ico_call_def@2x.png in Resources */,
+				2CCC5DAE1FB53B8900F0099A /* video.css in Resources */,
+				2CCC5DAF1FB53B8900F0099A /* icn_ad_1.png in Resources */,
+				2CCC5DB01FB53B8900F0099A /* ProductListCell.xib in Resources */,
+				2CCC5DB11FB53B8900F0099A /* icn_vedio_3.png in Resources */,
+				2CCC5DB21FB53B8900F0099A /* loading@3x.gif in Resources */,
+				2CCC5DB31FB53B8900F0099A /* HomeHeaderCollectionCell.xib in Resources */,
+				2CCC5DB41FB53B8900F0099A /* html5media.min.js in Resources */,
+				2CCC5DB51FB53B8900F0099A /* news_ico_share_def@2x.png in Resources */,
+				2CCC5DB61FB53B8900F0099A /* loading_1.gif in Resources */,
+				2CCC5DB71FB53B8900F0099A /* nav_btn_searc_def@2x.png in Resources */,
+				2CCC5DB81FB53B8900F0099A /* flowplayer.swf in Resources */,
+				2CCC5DB91FB53B8900F0099A /* loading@2x.gif in Resources */,
+				2CCC5DBA1FB53B8900F0099A /* bg_bottom.png in Resources */,
+				2CCC5DBB1FB53B8900F0099A /* ContractApply.storyboard in Resources */,
+				2CCC5DBC1FB53B8900F0099A /* 76x76@1x.png in Resources */,
+				2CCC5DBD1FB53B8900F0099A /* icn_user_2.png in Resources */,
+				2CCC5DBE1FB53B8900F0099A /* ConAddressMiddleLabelCell.xib in Resources */,
+				2CCC5DBF1FB53B8900F0099A /* HomeHeaderWeb.storyboard in Resources */,
+				2CCC5DC01FB53B8900F0099A /* lists_numb_play_def@2x.png in Resources */,
+				2CCC5DC11FB53B8900F0099A /* icn_img_news.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
 		1D4C518699CAE60FFBC45A73 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TianJiCloud/Pods-TianJiCloud-resources.sh",
+				"${PODS_ROOT}/AlipaySDK-2.0/AlipaySDK.bundle",
+				"${PODS_ROOT}/UMengUShare/UShareSDK/UMSocialSDK/UMSocialSDKPromptResources.bundle",
+				"${PODS_ROOT}/UMengUShare/UShareSDK/SocialLibraries/QQ/QQSDK/TencentOpenApi_IOS_Bundle.bundle",
+				"${PODS_ROOT}/UMengUShare/UShareSDK/SocialLibraries/Sina/SinaSDK/WeiboSDK.bundle",
+				"${PODS_ROOT}/UMengUShare/UShareSDK/UMSocialUI/UMSocialSDKResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TianJiCloud/Pods-TianJiCloud-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2CCC5AD71FB53B8900F0099A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TianJiCloud-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2CCC5DC21FB53B8900F0099A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TianJiCloud/Pods-TianJiCloud-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/BlocksKit/BlocksKit.framework",
+				"${BUILT_PRODUCTS_DIR}/DACircularProgress/DACircularProgress.framework",
+				"${BUILT_PRODUCTS_DIR}/DZNEmptyDataSet/DZNEmptyDataSet.framework",
+				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
+				"${BUILT_PRODUCTS_DIR}/LKDBHelper/LKDBHelper.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/React/React.framework",
+				"${BUILT_PRODUCTS_DIR}/SDCycleScrollView/SDCycleScrollView.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/TZImagePickerController/TZImagePickerController.framework",
+				"${BUILT_PRODUCTS_DIR}/WZLBadge/WZLBadge.framework",
+				"${BUILT_PRODUCTS_DIR}/YTKKeyValueStore/YTKKeyValueStore.framework",
+				"${BUILT_PRODUCTS_DIR}/YTKNetwork/YTKNetwork.framework",
+				"${BUILT_PRODUCTS_DIR}/YYCategories/YYCategories.framework",
+				"${BUILT_PRODUCTS_DIR}/YYModel/YYModel.framework",
+				"${BUILT_PRODUCTS_DIR}/ZFPlayer/ZFPlayer.framework",
+				"${BUILT_PRODUCTS_DIR}/yoga/yoga.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BlocksKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DACircularProgress.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DZNEmptyDataSet.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LKDBHelper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/React.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDCycleScrollView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TZImagePickerController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WZLBadge.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YTKKeyValueStore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YTKNetwork.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYCategories.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYModel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZFPlayer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/yoga.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TianJiCloud/Pods-TianJiCloud-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2CCC5DC31FB53B8900F0099A /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -7525,6 +8555,7 @@
 				2CB4F61A1F429ADF00FF98C9 /* ContractDetailController.m in Sources */,
 				2C85E34D1F2ECC1200ADD360 /* AboutMeViewController.m in Sources */,
 				2CF8B55E1F3DA438003B8520 /* ProductSearchNetworkTool.m in Sources */,
+				2CCC5A4C1FAAC87F00F0099A /* ProductContainerVCConfig.m in Sources */,
 				2CE5423E1F4EA83200205993 /* EditProfileInfoApi.m in Sources */,
 				2CB4F63F1F42F26500FF98C9 /* ContractApplyTableAdapter.m in Sources */,
 				2C597DBB1F4C2CB900415EB6 /* SettingHomeCellFactory.m in Sources */,
@@ -7961,7 +8992,6 @@
 				2C85E39B1F2F1A3100ADD360 /* TJSMineHomeOrderCellContentConfig.m in Sources */,
 				2C1B74BA1F4694FF0000E71A /* BankCardListConfig.m in Sources */,
 				2C562A6B1F57F1C300835984 /* APAuthV2Info.m in Sources */,
-				2CDB75CF1F669471002909D9 /* WRNavigationBar.m in Sources */,
 				2C8BB7A21F30859C00E2D75F /* HomeFooterCollectionLayout.m in Sources */,
 				2CAF42D61F281B8600ABCA5E /* TJSBaseProductListContentConfig.m in Sources */,
 				2C8CD1091F54FFC000F9654D /* EmptyDataSetAdapter.m in Sources */,
@@ -8039,6 +9069,605 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C4411D41F21981E00C453EF /* TianJiCloudUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CCC5AD81FB53B8900F0099A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CCC5AD91FB53B8900F0099A /* PNColor.m in Sources */,
+				2CCC5ADA1FB53B8900F0099A /* UIImage+Resize.m in Sources */,
+				2CCC5ADB1FB53B8900F0099A /* BankCardAddConfig.m in Sources */,
+				2CCC5ADC1FB53B8900F0099A /* ProductListVCConfig.m in Sources */,
+				2CCC5ADD1FB53B8900F0099A /* ContractApplyPNameContentConfig.m in Sources */,
+				2CCC5ADE1FB53B8900F0099A /* ContarctApplyBaseCell.m in Sources */,
+				2CCC5ADF1FB53B8900F0099A /* MineHomeCellInfoModel.m in Sources */,
+				2CCC5AE01FB53B8900F0099A /* ProductFilterController.m in Sources */,
+				2CCC5AE11FB53B8900F0099A /* YZDisplayViewController.m in Sources */,
+				2CCC5AE21FB53B8900F0099A /* ProductFilterResultDataSourceImpl.m in Sources */,
+				2CCC5AE31FB53B8900F0099A /* DiscoRoadShowConfig.m in Sources */,
+				2CCC5AE41FB53B8900F0099A /* AllActivityTableCell.m in Sources */,
+				2CCC5AE51FB53B8900F0099A /* UIBarButtonItem+TJSWebCache.m in Sources */,
+				2CCC5AE61FB53B8900F0099A /* MyFavListLayoutImpl.m in Sources */,
+				2CCC5AE71FB53B8900F0099A /* TJSAppDelegate.m in Sources */,
+				2CCC5AE81FB53B8900F0099A /* AddressSelectedInteractorImpl.m in Sources */,
+				2CCC5AE91FB53B8900F0099A /* UIButton+TouchAreaInsets.m in Sources */,
+				2CCC5AEA1FB53B8900F0099A /* CumulativeInvestInteractorImpl.m in Sources */,
+				2CCC5AEB1FB53B8900F0099A /* UIViewController+Alert.m in Sources */,
+				2CCC5AEC1FB53B8900F0099A /* UIBarButtonItem+TJSCustom.m in Sources */,
+				2CCC5AED1FB53B8900F0099A /* NSDate+TJSDateModify.m in Sources */,
+				2CCC5AEE1FB53B8900F0099A /* ContractAddressListStore.m in Sources */,
+				2CCC5AEF1FB53B8900F0099A /* UIImage+Retinted.m in Sources */,
+				2CCC5AF01FB53B8900F0099A /* MineHomeVCConfig.m in Sources */,
+				2CCC5AF11FB53B8900F0099A /* ContractAddAddressDataSourceImpl.m in Sources */,
+				2CCC5AF21FB53B8900F0099A /* ContractApplyDataSourceImpl.m in Sources */,
+				2CCC5AF31FB53B8900F0099A /* TJSAlertController.m in Sources */,
+				2CCC5AF41FB53B8900F0099A /* ZLPhotoPickerBrowserPhotoView.m in Sources */,
+				2CCC5AF51FB53B8900F0099A /* ContactsManager.m in Sources */,
+				2CCC5AF61FB53B8900F0099A /* DiscoveryViewController.m in Sources */,
+				2CCC5AF71FB53B8900F0099A /* AlternateIconManager.m in Sources */,
+				2CCC5AF81FB53B8900F0099A /* MyFavViewController.m in Sources */,
+				2CCC5AF91FB53B8900F0099A /* DiscoRoadShowInfo.m in Sources */,
+				2CCC5AFA1FB53B8900F0099A /* TJSPageControl.m in Sources */,
+				2CCC5AFB1FB53B8900F0099A /* ZLPhotoPickerBrowserPhoto.m in Sources */,
+				2CCC5AFC1FB53B8900F0099A /* ProductHotCellContentConfig.m in Sources */,
+				2CCC5AFD1FB53B8900F0099A /* UINavigationBar+StyleConfigure.m in Sources */,
+				2CCC5AFE1FB53B8900F0099A /* TJSSegmentedControl.m in Sources */,
+				2CCC5AFF1FB53B8900F0099A /* MineHomeCellInfo.m in Sources */,
+				2CCC5B001FB53B8900F0099A /* ConAddressRightInputCell.m in Sources */,
+				2CCC5B011FB53B8900F0099A /* TJSBaseControllerConfig.m in Sources */,
+				2CCC5B021FB53B8900F0099A /* TJSAppSoreUtil.m in Sources */,
+				2CCC5B031FB53B8900F0099A /* TJSHomeListDataSourceImpl.m in Sources */,
+				2CCC5B041FB53B8900F0099A /* GetVertifyCodeApi.m in Sources */,
+				2CCC5B051FB53B8900F0099A /* ProductFilterResultLayoutImpl.m in Sources */,
+				2CCC5B061FB53B8900F0099A /* AddressManageContentConfigFactory.m in Sources */,
+				2CCC5B071FB53B8900F0099A /* AddressManageDataSourceImpl.m in Sources */,
+				2CCC5B081FB53B8900F0099A /* KeyboardManager.m in Sources */,
+				2CCC5B091FB53B8900F0099A /* MyContractListStoreTool.m in Sources */,
+				2CCC5B0A1FB53B8900F0099A /* WXApiResponseHandler.m in Sources */,
+				2CCC5B0B1FB53B8900F0099A /* SetWithDarwCodeApi.m in Sources */,
+				2CCC5B0C1FB53B8900F0099A /* WithDrawDepositHomeHeader.m in Sources */,
+				2CCC5B0D1FB53B8900F0099A /* ContractAddAddressLayoutImpl.m in Sources */,
+				2CCC5B0E1FB53B8900F0099A /* ZLPhotoRect.m in Sources */,
+				2CCC5B0F1FB53B8900F0099A /* ProductSearchListCellFactory.m in Sources */,
+				2CCC5B101FB53B8900F0099A /* ContractAddAddressTableAdapter.m in Sources */,
+				2CCC5B111FB53B8900F0099A /* LocationManager.m in Sources */,
+				2CCC5B121FB53B8900F0099A /* ProductSearchHotReusableHeader.m in Sources */,
+				2CCC5B131FB53B8900F0099A /* BankCardListNetworkTool.m in Sources */,
+				2CCC5B141FB53B8900F0099A /* MyFavListTableAdapter.m in Sources */,
+				2CCC5B151FB53B8900F0099A /* TJSAlertHandleUtil.m in Sources */,
+				2CCC5B161FB53B8900F0099A /* BankPickerView.m in Sources */,
+				2CCC5B171FB53B8900F0099A /* AddressManageDefaultCell.m in Sources */,
+				2CCC5B181FB53B8900F0099A /* PNChartLabel.m in Sources */,
+				2CCC5B191FB53B8900F0099A /* MyFavVCConfig.m in Sources */,
+				2CCC5B1A1FB53B8900F0099A /* UISearchBar+TJSBlock.m in Sources */,
+				2CCC5B1B1FB53B8900F0099A /* DiscoRoadShowDataSorceImpl.m in Sources */,
+				2CCC5B1C1FB53B8900F0099A /* ProfileAddressController.m in Sources */,
+				2CCC5B1D1FB53B8900F0099A /* ProductFilterApi.m in Sources */,
+				2CCC5B1E1FB53B8900F0099A /* ZLPhotoPickerBrowserPhotoImageView.m in Sources */,
+				2CCC5B1F1FB53B8900F0099A /* WithDrawDepositSumCell.m in Sources */,
+				2CCC5B201FB53B8900F0099A /* GVUserDefaults.m in Sources */,
+				2CCC5B211FB53B8900F0099A /* ProductFilterNetworkTool.m in Sources */,
+				2CCC5B221FB53B8900F0099A /* ProductDeleteNetworkTool.m in Sources */,
+				2CCC5B231FB53B8900F0099A /* MyOrderListViewController.m in Sources */,
+				2CCC5B241FB53B8900F0099A /* UIApplication+TJSAppstore.m in Sources */,
+				2CCC5B251FB53B8900F0099A /* AddressManageConfigurator.m in Sources */,
+				2CCC5B261FB53B8900F0099A /* ProductFilterResultTableAdapter.m in Sources */,
+				2CCC5B271FB53B8900F0099A /* PlatformAnnounceController.m in Sources */,
+				2CCC5B281FB53B8900F0099A /* UINavigationController+TZPopGesture.m in Sources */,
+				2CCC5B291FB53B8900F0099A /* BankCardListDataSourceImpl.m in Sources */,
+				2CCC5B2A1FB53B8900F0099A /* TJSBaseCollectionReusableView.m in Sources */,
+				2CCC5B2B1FB53B8900F0099A /* TJSMyOrderListCellLayoutConfig.m in Sources */,
+				2CCC5B2C1FB53B8900F0099A /* APWebViewController.m in Sources */,
+				2CCC5B2D1FB53B8900F0099A /* UIButton+ContentRect.m in Sources */,
+				2CCC5B2E1FB53B8900F0099A /* CumulativeInvestCellLayoutConfig.m in Sources */,
+				2CCC5B2F1FB53B8900F0099A /* LogoutNetworkTool.m in Sources */,
+				2CCC5B301FB53B8900F0099A /* MBProgressHUD.m in Sources */,
+				2CCC5B311FB53B8900F0099A /* WithDrawDepositInteractorImpl.m in Sources */,
+				2CCC5B321FB53B8900F0099A /* BankCardListDefaultCell.m in Sources */,
+				2CCC5B331FB53B8900F0099A /* BankCardListBaseTableCell.m in Sources */,
+				2CCC5B341FB53B8900F0099A /* ContractDetailController.m in Sources */,
+				2CCC5B351FB53B8900F0099A /* AboutMeViewController.m in Sources */,
+				2CCC5B361FB53B8900F0099A /* ProductSearchNetworkTool.m in Sources */,
+				2CCC5B371FB53B8900F0099A /* ProductContainerVCConfig.m in Sources */,
+				2CCC5B381FB53B8900F0099A /* EditProfileInfoApi.m in Sources */,
+				2CCC5B391FB53B8900F0099A /* ContractApplyTableAdapter.m in Sources */,
+				2CCC5B3A1FB53B8900F0099A /* SettingHomeCellFactory.m in Sources */,
+				2CCC5B3B1FB53B8900F0099A /* MineHomeCellItem.m in Sources */,
+				2CCC5B3C1FB53B8900F0099A /* EventKitManager.m in Sources */,
+				2CCC5B3D1FB53B8900F0099A /* NSDate+TJSComponent.m in Sources */,
+				2CCC5B3E1FB53B8900F0099A /* RootControllerManager.m in Sources */,
+				2CCC5B3F1FB53B8900F0099A /* HomeHeaderWebController.m in Sources */,
+				2CCC5B401FB53B8900F0099A /* MineHomeHeaderCollectionLayout.m in Sources */,
+				2CCC5B411FB53B8900F0099A /* AddressManageInteractorImpl.m in Sources */,
+				2CCC5B421FB53B8900F0099A /* UITableView+TJSTableHeader.m in Sources */,
+				2CCC5B431FB53B8900F0099A /* CumulativeInvestDefaultContentConfig.m in Sources */,
+				2CCC5B441FB53B8900F0099A /* ZLCameraView.m in Sources */,
+				2CCC5B451FB53B8900F0099A /* ContractApplyInfoContentConfig.m in Sources */,
+				2CCC5B461FB53B8900F0099A /* CumulateInvestHeader.m in Sources */,
+				2CCC5B471FB53B8900F0099A /* UIView+Frame.m in Sources */,
+				2CCC5B481FB53B8900F0099A /* CumulativeInvestConfigurator.m in Sources */,
+				2CCC5B491FB53B8900F0099A /* BankCardListAddCell.m in Sources */,
+				2CCC5B4A1FB53B8900F0099A /* DiscoNewsDetailController.m in Sources */,
+				2CCC5B4B1FB53B8900F0099A /* ProductDetailConfig.m in Sources */,
+				2CCC5B4C1FB53B8900F0099A /* ContractAddAddressInteractorImpl.m in Sources */,
+				2CCC5B4D1FB53B8900F0099A /* PlatformAnnounceCell.m in Sources */,
+				2CCC5B4E1FB53B8900F0099A /* HomeWebClickItem.m in Sources */,
+				2CCC5B4F1FB53B8900F0099A /* TJSBaseControllerContainer.m in Sources */,
+				2CCC5B501FB53B8900F0099A /* MyFavListDataSourceImpl.m in Sources */,
+				2CCC5B511FB53B8900F0099A /* AddressSelectedTableAdapter.m in Sources */,
+				2CCC5B521FB53B8900F0099A /* MineHomeInvestCell.m in Sources */,
+				2CCC5B531FB53B8900F0099A /* WXMediaMessage+messageConstruct.m in Sources */,
+				2CCC5B541FB53B8900F0099A /* ProfileMobileController.m in Sources */,
+				2CCC5B551FB53B8900F0099A /* CumulateInvestNetworkTool.m in Sources */,
+				2CCC5B561FB53B8900F0099A /* DiscoveryRoadShowListCell.m in Sources */,
+				2CCC5B571FB53B8900F0099A /* ProducFilterVCConfig.m in Sources */,
+				2CCC5B581FB53B8900F0099A /* HomeHeaderContainer.m in Sources */,
+				2CCC5B591FB53B8900F0099A /* UIColor+TJSiOS7Colors.m in Sources */,
+				2CCC5B5A1FB53B8900F0099A /* HomeFooterCollectionCell.m in Sources */,
+				2CCC5B5B1FB53B8900F0099A /* BankCardAddContentConfigFactory.m in Sources */,
+				2CCC5B5C1FB53B8900F0099A /* TJSProductListCellLayoutConfig.m in Sources */,
+				2CCC5B5D1FB53B8900F0099A /* ProductSearchApi.m in Sources */,
+				2CCC5B5E1FB53B8900F0099A /* ProfesisonAuthenController.m in Sources */,
+				2CCC5B5F1FB53B8900F0099A /* UIView+TJSFrame.m in Sources */,
+				2CCC5B601FB53B8900F0099A /* ContractListTableAdapter.m in Sources */,
+				2CCC5B611FB53B8900F0099A /* TJSBaseCollectionViewLayout.m in Sources */,
+				2CCC5B621FB53B8900F0099A /* MineHeaderCollectionCell.m in Sources */,
+				2CCC5B631FB53B8900F0099A /* TJSDownLoaderManager.m in Sources */,
+				2CCC5B641FB53B8900F0099A /* HistoryRewardConfig.m in Sources */,
+				2CCC5B651FB53B8900F0099A /* WithDrawDepositConfigurator.m in Sources */,
+				2CCC5B661FB53B8900F0099A /* TJSWeakScriptMessageHandler.m in Sources */,
+				2CCC5B671FB53B8900F0099A /* UIViewController+RouteParams.m in Sources */,
+				2CCC5B681FB53B8900F0099A /* UITextView+PlaceHolder.m in Sources */,
+				2CCC5B691FB53B8900F0099A /* BankCardAddDefaultCell.m in Sources */,
+				2CCC5B6A1FB53B8900F0099A /* TJSProductInfoModel.m in Sources */,
+				2CCC5B6B1FB53B8900F0099A /* UITextField+LengthLimited.m in Sources */,
+				2CCC5B6C1FB53B8900F0099A /* ZLCameraImageView.m in Sources */,
+				2CCC5B6D1FB53B8900F0099A /* TJSMyOrderListLayoutImpl.m in Sources */,
+				2CCC5B6E1FB53B8900F0099A /* MineHomeHeaderContainer.m in Sources */,
+				2CCC5B6F1FB53B8900F0099A /* ProductDetailDataSourceImpl.m in Sources */,
+				2CCC5B701FB53B8900F0099A /* LogoutApi.m in Sources */,
+				2CCC5B711FB53B8900F0099A /* SocailManager.m in Sources */,
+				2CCC5B721FB53B8900F0099A /* ConAddressMiddleLabelCell.m in Sources */,
+				2CCC5B731FB53B8900F0099A /* TJSProductDetailController.m in Sources */,
+				2CCC5B741FB53B8900F0099A /* TJSAnimatingRequestAccessory.m in Sources */,
+				2CCC5B751FB53B8900F0099A /* ProfileServiceRegion.m in Sources */,
+				2CCC5B761FB53B8900F0099A /* GVUserDefaults+TJSGlobalProperties.m in Sources */,
+				2CCC5B771FB53B8900F0099A /* AddressSelectedConfigurator.m in Sources */,
+				2CCC5B781FB53B8900F0099A /* NewsInfomationListApi.m in Sources */,
+				2CCC5B791FB53B8900F0099A /* CALayer+Extensions.m in Sources */,
+				2CCC5B7A1FB53B8900F0099A /* AddressManageCellModel.m in Sources */,
+				2CCC5B7B1FB53B8900F0099A /* SettingHomeLayoutImpl.m in Sources */,
+				2CCC5B7C1FB53B8900F0099A /* ProductDetailConfigurator.m in Sources */,
+				2CCC5B7D1FB53B8900F0099A /* BankCardAddCellLayoutConfig.m in Sources */,
+				2CCC5B7E1FB53B8900F0099A /* AddressManageLayoutImpl.m in Sources */,
+				2CCC5B7F1FB53B8900F0099A /* UIWindow+Transition.m in Sources */,
+				2CCC5B801FB53B8900F0099A /* MyOrderListVCConfig.m in Sources */,
+				2CCC5B811FB53B8900F0099A /* TJSStoreManager.m in Sources */,
+				2CCC5B821FB53B8900F0099A /* WithDrawDepositTableAdapter.m in Sources */,
+				2CCC5B831FB53B8900F0099A /* WithDrawDepositCellFactory.m in Sources */,
+				2CCC5B841FB53B8900F0099A /* ProductFilterResultCell.m in Sources */,
+				2CCC5B851FB53B8900F0099A /* ContractApplyConfigurator.m in Sources */,
+				2CCC5B861FB53B8900F0099A /* TJSMineHomeCellFactory.m in Sources */,
+				2CCC5B871FB53B8900F0099A /* FMDBManager.m in Sources */,
+				2CCC5B881FB53B8900F0099A /* AddressSelectedCellLayoutConfig.m in Sources */,
+				2CCC5B891FB53B8900F0099A /* TJSImagePicker.m in Sources */,
+				2CCC5B8A1FB53B8900F0099A /* ProductListStoreTool.m in Sources */,
+				2CCC5B8B1FB53B8900F0099A /* UISegmentedControl+TJSCustomStyle.m in Sources */,
+				2CCC5B8C1FB53B8900F0099A /* ZLPhotoPickerCollectionViewCell.m in Sources */,
+				2CCC5B8D1FB53B8900F0099A /* MineHomeOrderCell.m in Sources */,
+				2CCC5B8E1FB53B8900F0099A /* WithDrawDepositBaseCell.m in Sources */,
+				2CCC5B8F1FB53B8900F0099A /* ProfileIdentityControllerViewController.m in Sources */,
+				2CCC5B901FB53B8900F0099A /* ContractAddAddressCellFactory.m in Sources */,
+				2CCC5B911FB53B8900F0099A /* MyOrderInfo.m in Sources */,
+				2CCC5B921FB53B8900F0099A /* HomeVCConfig.m in Sources */,
+				2CCC5B931FB53B8900F0099A /* ProductSearchCellContentConfigFactory.m in Sources */,
+				2CCC5B941FB53B8900F0099A /* ZLPhotoPickerGroupViewController.m in Sources */,
+				2CCC5B951FB53B8900F0099A /* BankCardAddInteractorImpl.m in Sources */,
+				2CCC5B961FB53B8900F0099A /* YZFlowLayout.m in Sources */,
+				2CCC5B971FB53B8900F0099A /* BankCardListInteractorImpl.m in Sources */,
+				2CCC5B981FB53B8900F0099A /* UIDevice+CurrentArg.m in Sources */,
+				2CCC5B991FB53B8900F0099A /* UIButton+CommitStyle.m in Sources */,
+				2CCC5B9A1FB53B8900F0099A /* BankCardAddCellInfoModel.m in Sources */,
+				2CCC5B9B1FB53B8900F0099A /* SettingHomeModel.m in Sources */,
+				2CCC5B9C1FB53B8900F0099A /* DiscoRoadShowListController.m in Sources */,
+				2CCC5B9D1FB53B8900F0099A /* TJSMineHomeLayoutImpl.m in Sources */,
+				2CCC5B9E1FB53B8900F0099A /* CapitalRecordListController.m in Sources */,
+				2CCC5B9F1FB53B8900F0099A /* AddressManageDefaultContentConfig.m in Sources */,
+				2CCC5BA01FB53B8900F0099A /* MineViewController.m in Sources */,
+				2CCC5BA11FB53B8900F0099A /* FeedBackCommitApi.m in Sources */,
+				2CCC5BA21FB53B8900F0099A /* MyFavListConfigurator.m in Sources */,
+				2CCC5BA31FB53B8900F0099A /* ProductFilterCollectionCell.m in Sources */,
+				2CCC5BA41FB53B8900F0099A /* ProfileViewController.m in Sources */,
+				2CCC5BA51FB53B8900F0099A /* TJSBaseRequest+TJSSingleRequestBlock.m in Sources */,
+				2CCC5BA61FB53B8900F0099A /* TJSRootTabBarController.m in Sources */,
+				2CCC5BA71FB53B8900F0099A /* ProductSearchTableAdapter.m in Sources */,
+				2CCC5BA81FB53B8900F0099A /* ProductSearchHotCell.m in Sources */,
+				2CCC5BA91FB53B8900F0099A /* ProductFilterResultController.m in Sources */,
+				2CCC5BAA1FB53B8900F0099A /* CapitalRecordNetworkTool.m in Sources */,
+				2CCC5BAB1FB53B8900F0099A /* AddressPikerView.m in Sources */,
+				2CCC5BAC1FB53B8900F0099A /* TJSHudAlert.m in Sources */,
+				2CCC5BAD1FB53B8900F0099A /* TJSHomeListTableAdapter.m in Sources */,
+				2CCC5BAE1FB53B8900F0099A /* HomeViewController.m in Sources */,
+				2CCC5BAF1FB53B8900F0099A /* UIImageView+TJSWebCache.m in Sources */,
+				2CCC5BB01FB53B8900F0099A /* UIColor+HEX.m in Sources */,
+				2CCC5BB11FB53B8900F0099A /* RewardViewController.m in Sources */,
+				2CCC5BB21FB53B8900F0099A /* AddressBookManager.m in Sources */,
+				2CCC5BB31FB53B8900F0099A /* TJSMineHomeConfigurator.m in Sources */,
+				2CCC5BB41FB53B8900F0099A /* ContractAddAddressConfig.m in Sources */,
+				2CCC5BB51FB53B8900F0099A /* ZLPhotoPickerAssetsViewController.m in Sources */,
+				2CCC5BB61FB53B8900F0099A /* ProductListCellTextContentView.m in Sources */,
+				2CCC5BB71FB53B8900F0099A /* ZLPhotoPickerImageView.m in Sources */,
+				2CCC5BB81FB53B8900F0099A /* ProductSearchVCConfig.m in Sources */,
+				2CCC5BB91FB53B8900F0099A /* UITextField+PlaceHolder.m in Sources */,
+				2CCC5BBA1FB53B8900F0099A /* AddressSelectedBaseCell.m in Sources */,
+				2CCC5BBB1FB53B8900F0099A /* SexTool.m in Sources */,
+				2CCC5BBC1FB53B8900F0099A /* AddressSelectedCellFactory.m in Sources */,
+				2CCC5BBD1FB53B8900F0099A /* ContractApplyLayoutImpl.m in Sources */,
+				2CCC5BBE1FB53B8900F0099A /* AddressSelectController.m in Sources */,
+				2CCC5BBF1FB53B8900F0099A /* ContractApplyAddAddressCell.m in Sources */,
+				2CCC5BC01FB53B8900F0099A /* FilterResultNetworkTool.m in Sources */,
+				2CCC5BC11FB53B8900F0099A /* MyOrderContainerController.m in Sources */,
+				2CCC5BC21FB53B8900F0099A /* DiscoveryNewsInfo.m in Sources */,
+				2CCC5BC31FB53B8900F0099A /* ProductSearchHotLayout.m in Sources */,
+				2CCC5BC41FB53B8900F0099A /* AlipayOrder.m in Sources */,
+				2CCC5BC51FB53B8900F0099A /* SettingHomeDataSourceImpl.m in Sources */,
+				2CCC5BC61FB53B8900F0099A /* TJSProductFilterConfigurator.m in Sources */,
+				2CCC5BC71FB53B8900F0099A /* ContractListConfig.m in Sources */,
+				2CCC5BC81FB53B8900F0099A /* ContractApplyInfoCell.m in Sources */,
+				2CCC5BC91FB53B8900F0099A /* ProductFilterItemModel.m in Sources */,
+				2CCC5BCA1FB53B8900F0099A /* HomeHeaderCollectionLayout.m in Sources */,
+				2CCC5BCB1FB53B8900F0099A /* ConAddressBottomInputContentConfig.m in Sources */,
+				2CCC5BCC1FB53B8900F0099A /* BankCardAddLayoutImpl.m in Sources */,
+				2CCC5BCD1FB53B8900F0099A /* HomeProductClickItem.m in Sources */,
+				2CCC5BCE1FB53B8900F0099A /* LoginApi.m in Sources */,
+				2CCC5BCF1FB53B8900F0099A /* ContractInfoModel.m in Sources */,
+				2CCC5BD01FB53B8900F0099A /* DiscoRoadShowListAdapter.m in Sources */,
+				2CCC5BD11FB53B8900F0099A /* DiscoRoadShowNetworkTool.m in Sources */,
+				2CCC5BD21FB53B8900F0099A /* UINavigationBar+TJSBackground.m in Sources */,
+				2CCC5BD31FB53B8900F0099A /* TJSProductListCellFactory.m in Sources */,
+				2CCC5BD41FB53B8900F0099A /* ContractApplyInteractorImpl.m in Sources */,
+				2CCC5BD51FB53B8900F0099A /* DiscoRoadShowInteracotImpl.m in Sources */,
+				2CCC5BD61FB53B8900F0099A /* TJSBaseRequest.m in Sources */,
+				2CCC5BD71FB53B8900F0099A /* ProductContainerController.m in Sources */,
+				2CCC5BD81FB53B8900F0099A /* SendMessageToWXReq+requestWithTextOrMediaMessage.m in Sources */,
+				2CCC5BD91FB53B8900F0099A /* SettingHomeHeader.m in Sources */,
+				2CCC5BDA1FB53B8900F0099A /* UIViewController+StackLevel.m in Sources */,
+				2CCC5BDB1FB53B8900F0099A /* TJSHomeListConfigurator.m in Sources */,
+				2CCC5BDC1FB53B8900F0099A /* IdentificateApi.m in Sources */,
+				2CCC5BDD1FB53B8900F0099A /* TJSBaseViewController.m in Sources */,
+				2CCC5BDE1FB53B8900F0099A /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
+				2CCC5BDF1FB53B8900F0099A /* UISearchBar+CommanStyle.m in Sources */,
+				2CCC5BE01FB53B8900F0099A /* ProductSearchController.m in Sources */,
+				2CCC5BE11FB53B8900F0099A /* ProductFilterReusableSectionHeader.m in Sources */,
+				2CCC5BE21FB53B8900F0099A /* GetMessageFromWXResp+responseWithTextOrMediaMessage.m in Sources */,
+				2CCC5BE31FB53B8900F0099A /* ProductSearchListCellLayoutConfig.m in Sources */,
+				2CCC5BE41FB53B8900F0099A /* DiscoveryNewsNetworkTool.m in Sources */,
+				2CCC5BE51FB53B8900F0099A /* NSObject+Swizzle.m in Sources */,
+				2CCC5BE61FB53B8900F0099A /* FeedBackVCConfig.m in Sources */,
+				2CCC5BE71FB53B8900F0099A /* TJSProductFilterLayoutImpl.m in Sources */,
+				2CCC5BE81FB53B8900F0099A /* TJSMyOrderListTableAdapter.m in Sources */,
+				2CCC5BE91FB53B8900F0099A /* ProductInfoSearchModel.m in Sources */,
+				2CCC5BEA1FB53B8900F0099A /* WithDrawDepositAddBankCell.m in Sources */,
+				2CCC5BEB1FB53B8900F0099A /* ContractAddAddressCellModel.m in Sources */,
+				2CCC5BEC1FB53B8900F0099A /* CLLocation+YCLocation.m in Sources */,
+				2CCC5BED1FB53B8900F0099A /* ContractApplyCellFactory.m in Sources */,
+				2CCC5BEE1FB53B8900F0099A /* MyFavListInteractorImpl.m in Sources */,
+				2CCC5BEF1FB53B8900F0099A /* TJSBaseWebViewController.m in Sources */,
+				2CCC5BF01FB53B8900F0099A /* TJSBaseNetworkTool.m in Sources */,
+				2CCC5BF11FB53B8900F0099A /* ContractAddressInfo.m in Sources */,
+				2CCC5BF21FB53B8900F0099A /* CumulativeInvestLayoutImpl.m in Sources */,
+				2CCC5BF31FB53B8900F0099A /* RewardVCConfig.m in Sources */,
+				2CCC5BF41FB53B8900F0099A /* CumulativeInvestCellFactory.m in Sources */,
+				2CCC5BF51FB53B8900F0099A /* TJSDiscoNewsInteracotImpl.m in Sources */,
+				2CCC5BF61FB53B8900F0099A /* UIButton+IBInspectableState.m in Sources */,
+				2CCC5BF71FB53B8900F0099A /* UITextView+LengthLimited.m in Sources */,
+				2CCC5BF81FB53B8900F0099A /* ZLPhotoPickerCollectionView.m in Sources */,
+				2CCC5BF91FB53B8900F0099A /* TJSBaseMineHomeCellContentConfig.m in Sources */,
+				2CCC5BFA1FB53B8900F0099A /* BankCardAddConfigurator.m in Sources */,
+				2CCC5BFB1FB53B8900F0099A /* ContractApplyCellLayoutConfig.m in Sources */,
+				2CCC5BFC1FB53B8900F0099A /* DiscoveryNewsInfoModel.m in Sources */,
+				2CCC5BFD1FB53B8900F0099A /* BankCardListTableAdapter.m in Sources */,
+				2CCC5BFE1FB53B8900F0099A /* WithDrawDepositRecord.m in Sources */,
+				2CCC5BFF1FB53B8900F0099A /* ProductListNetworkTool.m in Sources */,
+				2CCC5C001FB53B8900F0099A /* ProductFilterItem.m in Sources */,
+				2CCC5C011FB53B8900F0099A /* ProductShareView.m in Sources */,
+				2CCC5C021FB53B8900F0099A /* FeedbackHistoryController.m in Sources */,
+				2CCC5C031FB53B8900F0099A /* ContractApplyNetworkTool.m in Sources */,
+				2CCC5C041FB53B8900F0099A /* ZLPhotoPickerDatas.m in Sources */,
+				2CCC5C051FB53B8900F0099A /* ProductFilterCollLayout.m in Sources */,
+				2CCC5C061FB53B8900F0099A /* MyFavListStoreTool.m in Sources */,
+				2CCC5C071FB53B8900F0099A /* TJSMobileCallUtil.m in Sources */,
+				2CCC5C081FB53B8900F0099A /* TJSMyOrderListConfigurator.m in Sources */,
+				2CCC5C091FB53B8900F0099A /* BankCardListConfigurator.m in Sources */,
+				2CCC5C0A1FB53B8900F0099A /* TJSMineHomeInteractorImpl.m in Sources */,
+				2CCC5C0B1FB53B8900F0099A /* YZDisplayTitleLabel.m in Sources */,
+				2CCC5C0C1FB53B8900F0099A /* UIImageView+TJSIndicatorForAFNetworking.m in Sources */,
+				2CCC5C0D1FB53B8900F0099A /* ContractListConfigurator.m in Sources */,
+				2CCC5C0E1FB53B8900F0099A /* QRCodeManager.m in Sources */,
+				2CCC5C0F1FB53B8900F0099A /* BankCardInfoModel.m in Sources */,
+				2CCC5C101FB53B8900F0099A /* ContractAddAddressCellLayoutConfig.m in Sources */,
+				2CCC5C111FB53B8900F0099A /* TJSProductListTextContentConfig.m in Sources */,
+				2CCC5C121FB53B8900F0099A /* TJSBaseTableHeaderFooterView.m in Sources */,
+				2CCC5C131FB53B8900F0099A /* GesturePasswordController.m in Sources */,
+				2CCC5C141FB53B8900F0099A /* ContractListLayoutImpl.m in Sources */,
+				2CCC5C151FB53B8900F0099A /* ProductSearchLayoutImpl.m in Sources */,
+				2CCC5C161FB53B8900F0099A /* CumulateInvestInfo.m in Sources */,
+				2CCC5C171FB53B8900F0099A /* AddressManageBaseCell.m in Sources */,
+				2CCC5C181FB53B8900F0099A /* CLPlacemark+YCPlacemark.m in Sources */,
+				2CCC5C191FB53B8900F0099A /* TJSSystemAlertMaker.m in Sources */,
+				2CCC5C1A1FB53B8900F0099A /* ContractApplyController.m in Sources */,
+				2CCC5C1B1FB53B8900F0099A /* ZLPhotoPickerGroup.m in Sources */,
+				2CCC5C1C1FB53B8900F0099A /* CumulativeInvestDataSourceImpl.m in Sources */,
+				2CCC5C1D1FB53B8900F0099A /* TJSProductFilterDataSourceImpl.m in Sources */,
+				2CCC5C1E1FB53B8900F0099A /* ProductShareItem.m in Sources */,
+				2CCC5C1F1FB53B8900F0099A /* TJSMineHomeDefaultCellContentConfig.m in Sources */,
+				2CCC5C201FB53B8900F0099A /* BankCardAddDefaultContentConfig.m in Sources */,
+				2CCC5C211FB53B8900F0099A /* UIButton+TJSWebCache.m in Sources */,
+				2CCC5C221FB53B8900F0099A /* AddressSelectedDataSourceImpl.m in Sources */,
+				2CCC5C231FB53B8900F0099A /* MineHomeDefaultCell.m in Sources */,
+				2CCC5C241FB53B8900F0099A /* ContractListCell.m in Sources */,
+				2CCC5C251FB53B8900F0099A /* NSString+StringSize.m in Sources */,
+				2CCC5C261FB53B8900F0099A /* ContractListHeader.m in Sources */,
+				2CCC5C271FB53B8900F0099A /* TJSMineHomeDataSourceImpl.m in Sources */,
+				2CCC5C281FB53B8900F0099A /* NSObject+vk_msgSend.m in Sources */,
+				2CCC5C291FB53B8900F0099A /* UIView+ZLExtension.m in Sources */,
+				2CCC5C2A1FB53B8900F0099A /* ModifyLogPasswordController.m in Sources */,
+				2CCC5C2B1FB53B8900F0099A /* TJSProductEvent.m in Sources */,
+				2CCC5C2C1FB53B8900F0099A /* CumulativeInvestController.m in Sources */,
+				2CCC5C2D1FB53B8900F0099A /* BankCardAddCellFactory.m in Sources */,
+				2CCC5C2E1FB53B8900F0099A /* CumulativeInvestConfig.m in Sources */,
+				2CCC5C2F1FB53B8900F0099A /* ContractListCellFactory.m in Sources */,
+				2CCC5C301FB53B8900F0099A /* UIImage+Alpha.m in Sources */,
+				2CCC5C311FB53B8900F0099A /* WXApiManager.m in Sources */,
+				2CCC5C321FB53B8900F0099A /* ZLPhotoAssets.m in Sources */,
+				2CCC5C331FB53B8900F0099A /* ZFPlayerManager.m in Sources */,
+				2CCC5C341FB53B8900F0099A /* MineHomeBalanceCell.m in Sources */,
+				2CCC5C351FB53B8900F0099A /* ZLCameraViewController.m in Sources */,
+				2CCC5C361FB53B8900F0099A /* AdressEditNetworkTool.m in Sources */,
+				2CCC5C371FB53B8900F0099A /* BankCardInfo.m in Sources */,
+				2CCC5C381FB53B8900F0099A /* PushManager.m in Sources */,
+				2CCC5C391FB53B8900F0099A /* UIButton+CountDown.m in Sources */,
+				2CCC5C3A1FB53B8900F0099A /* PersonalMessageCell.m in Sources */,
+				2CCC5C3B1FB53B8900F0099A /* ZLPhotoPickerBrowserViewController.m in Sources */,
+				2CCC5C3C1FB53B8900F0099A /* ProductListViewController.m in Sources */,
+				2CCC5C3D1FB53B8900F0099A /* SettingHomeCellLayoutConfig.m in Sources */,
+				2CCC5C3E1FB53B8900F0099A /* TJSProductListContentConfig.m in Sources */,
+				2CCC5C3F1FB53B8900F0099A /* AddressManageController.m in Sources */,
+				2CCC5C401FB53B8900F0099A /* ProductSearchDataSourceImpl.m in Sources */,
+				2CCC5C411FB53B8900F0099A /* TJSUploadRequest.m in Sources */,
+				2CCC5C421FB53B8900F0099A /* ProductFilterResultConfigurator.m in Sources */,
+				2CCC5C431FB53B8900F0099A /* TJSBaseCollectionViewCell.m in Sources */,
+				2CCC5C441FB53B8900F0099A /* MyOrderInfoModel.m in Sources */,
+				2CCC5C451FB53B8900F0099A /* WithDrawDepositConfig.m in Sources */,
+				2CCC5C461FB53B8900F0099A /* UIImage+ColorAtPixel.m in Sources */,
+				2CCC5C471FB53B8900F0099A /* MineHomeBaseTableCell.m in Sources */,
+				2CCC5C481FB53B8900F0099A /* BankCardListDefaultContentConfig.m in Sources */,
+				2CCC5C491FB53B8900F0099A /* TJSMineHomeCellLayoutConfig.m in Sources */,
+				2CCC5C4A1FB53B8900F0099A /* SettingHomeContentConfigFactory.m in Sources */,
+				2CCC5C4B1FB53B8900F0099A /* UIImage+FromColor.m in Sources */,
+				2CCC5C4C1FB53B8900F0099A /* TJSProductDeleteApi.m in Sources */,
+				2CCC5C4D1FB53B8900F0099A /* HomeFooterWebController.m in Sources */,
+				2CCC5C4E1FB53B8900F0099A /* WXApiRequestHandler.m in Sources */,
+				2CCC5C4F1FB53B8900F0099A /* ProductDetailLayoutImpl.m in Sources */,
+				2CCC5C501FB53B8900F0099A /* SettingHomeTableAdapter.m in Sources */,
+				2CCC5C511FB53B8900F0099A /* TJSProductListInteractorImpl.m in Sources */,
+				2CCC5C521FB53B8900F0099A /* CapitalRecordConfigurator.m in Sources */,
+				2CCC5C531FB53B8900F0099A /* MineHomeCellDefaultItem.m in Sources */,
+				2CCC5C541FB53B8900F0099A /* WithDrawDepositDataSourceImpl.m in Sources */,
+				2CCC5C551FB53B8900F0099A /* ConAddressBottomInputCell.m in Sources */,
+				2CCC5C561FB53B8900F0099A /* WithDrawDepositCellModel.m in Sources */,
+				2CCC5C571FB53B8900F0099A /* TJSProductFilterInteractorImpl.m in Sources */,
+				2CCC5C581FB53B8900F0099A /* WithDrawDepositController.m in Sources */,
+				2CCC5C591FB53B8900F0099A /* MineHomeCellBalanceItem.m in Sources */,
+				2CCC5C5A1FB53B8900F0099A /* TJSDiscoNewsDataSorceImpl.m in Sources */,
+				2CCC5C5B1FB53B8900F0099A /* FindLoginPasswordApi.m in Sources */,
+				2CCC5C5C1FB53B8900F0099A /* MineSettingViewController.m in Sources */,
+				2CCC5C5D1FB53B8900F0099A /* MineHomeNetworkTool.m in Sources */,
+				2CCC5C5E1FB53B8900F0099A /* MineHomeCellOrderItem.m in Sources */,
+				2CCC5C5F1FB53B8900F0099A /* TJSLoginStateUtil.m in Sources */,
+				2CCC5C601FB53B8900F0099A /* TJSBaseDisplayContainer.m in Sources */,
+				2CCC5C611FB53B8900F0099A /* AllActivityViewController.m in Sources */,
+				2CCC5C621FB53B8900F0099A /* ProductFilterStoreTool.m in Sources */,
+				2CCC5C631FB53B8900F0099A /* ZLNavigationController.m in Sources */,
+				2CCC5C641FB53B8900F0099A /* UIImage+Stretchable.m in Sources */,
+				2CCC5C651FB53B8900F0099A /* TJSAppServiceManager.m in Sources */,
+				2CCC5C661FB53B8900F0099A /* NetworkMonitorManager.m in Sources */,
+				2CCC5C671FB53B8900F0099A /* main.m in Sources */,
+				2CCC5C681FB53B8900F0099A /* ConAddressMiddleLabelContentConfig.m in Sources */,
+				2CCC5C691FB53B8900F0099A /* DiscoveryVCConfig.m in Sources */,
+				2CCC5C6A1FB53B8900F0099A /* ContractListDataSourceImpl.m in Sources */,
+				2CCC5C6B1FB53B8900F0099A /* FeedbackCommitNetworkTool.m in Sources */,
+				2CCC5C6C1FB53B8900F0099A /* TJSProductInfo.m in Sources */,
+				2CCC5C6D1FB53B8900F0099A /* RoadShowListStoreTool.m in Sources */,
+				2CCC5C6E1FB53B8900F0099A /* WithDrawBankSelectController.m in Sources */,
+				2CCC5C6F1FB53B8900F0099A /* ZLPhotoPickerBrowserPhotoScrollView.m in Sources */,
+				2CCC5C701FB53B8900F0099A /* TJSSystemSoundService.m in Sources */,
+				2CCC5C711FB53B8900F0099A /* FeedBackContainerConfig.m in Sources */,
+				2CCC5C721FB53B8900F0099A /* AddressManageCellFactory.m in Sources */,
+				2CCC5C731FB53B8900F0099A /* CumulativeInvestTableAdapter.m in Sources */,
+				2CCC5C741FB53B8900F0099A /* UIImage+Combination.m in Sources */,
+				2CCC5C751FB53B8900F0099A /* UIImage+RoundedCorner.m in Sources */,
+				2CCC5C761FB53B8900F0099A /* RegistApi.m in Sources */,
+				2CCC5C771FB53B8900F0099A /* NSBundle+TianJiCloud.m in Sources */,
+				2CCC5C781FB53B8900F0099A /* TJSProductListDataSourceImpl.m in Sources */,
+				2CCC5C791FB53B8900F0099A /* CapitalRecordInfo.m in Sources */,
+				2CCC5C7A1FB53B8900F0099A /* ZLPhotoPickerGroupTableViewCell.m in Sources */,
+				2CCC5C7B1FB53B8900F0099A /* WithDrawDepositContentConfigFactory.m in Sources */,
+				2CCC5C7C1FB53B8900F0099A /* BankCardListAddContentConfig.m in Sources */,
+				2CCC5C7D1FB53B8900F0099A /* SettingHomeInteractorImpl.m in Sources */,
+				2CCC5C7E1FB53B8900F0099A /* WithDrawDepositNetworkTool.m in Sources */,
+				2CCC5C7F1FB53B8900F0099A /* ContractDetailNetworkTool.m in Sources */,
+				2CCC5C801FB53B8900F0099A /* PNPieChart.m in Sources */,
+				2CCC5C811FB53B8900F0099A /* AdressManageNetworkTool.m in Sources */,
+				2CCC5C821FB53B8900F0099A /* UIApplication+JSAppSetting.m in Sources */,
+				2CCC5C831FB53B8900F0099A /* ProductListCellContentView.m in Sources */,
+				2CCC5C841FB53B8900F0099A /* AddressSelectedLayoutImpl.m in Sources */,
+				2CCC5C851FB53B8900F0099A /* TJSDiscoNewsListVCConfig.m in Sources */,
+				2CCC5C861FB53B8900F0099A /* ProductDetailFooter.m in Sources */,
+				2CCC5C871FB53B8900F0099A /* HistoryRewardsController.m in Sources */,
+				2CCC5C881FB53B8900F0099A /* NSDate+TJSContrast.m in Sources */,
+				2CCC5C891FB53B8900F0099A /* CapitalRecordContainer.m in Sources */,
+				2CCC5C8A1FB53B8900F0099A /* TJSAppInfo.m in Sources */,
+				2CCC5C8B1FB53B8900F0099A /* ContractInfo.m in Sources */,
+				2CCC5C8C1FB53B8900F0099A /* ProductSearchCellContentConfig.m in Sources */,
+				2CCC5C8D1FB53B8900F0099A /* MyFavNetworkTool.m in Sources */,
+				2CCC5C8E1FB53B8900F0099A /* SettingBaseTableCell.m in Sources */,
+				2CCC5C8F1FB53B8900F0099A /* MyOrderListTableCell.m in Sources */,
+				2CCC5C901FB53B8900F0099A /* InvestProductController.m in Sources */,
+				2CCC5C911FB53B8900F0099A /* TJSHomeListInteractorImpl.m in Sources */,
+				2CCC5C921FB53B8900F0099A /* ProductListCellHeaderView.m in Sources */,
+				2CCC5C931FB53B8900F0099A /* TJSMineHomeInvestCellContentConfig.m in Sources */,
+				2CCC5C941FB53B8900F0099A /* ContractApplyProductResultCell.m in Sources */,
+				2CCC5C951FB53B8900F0099A /* DiscoRoadShowLayoutImpl.m in Sources */,
+				2CCC5C961FB53B8900F0099A /* CapitalRecordVCConfig.m in Sources */,
+				2CCC5C971FB53B8900F0099A /* WithDrawDepositHeaderFooterView.m in Sources */,
+				2CCC5C981FB53B8900F0099A /* WithDrawDepositLayoutImpl.m in Sources */,
+				2CCC5C991FB53B8900F0099A /* UIView+TJSViewController.m in Sources */,
+				2CCC5C9A1FB53B8900F0099A /* FilterResultVCConfig.m in Sources */,
+				2CCC5C9B1FB53B8900F0099A /* CumulateInvestInfoModel.m in Sources */,
+				2CCC5C9C1FB53B8900F0099A /* ProductFilterResultInteractorImpl.m in Sources */,
+				2CCC5C9D1FB53B8900F0099A /* ContractInfoApplyModel.m in Sources */,
+				2CCC5C9E1FB53B8900F0099A /* BankCardListCellFactory.m in Sources */,
+				2CCC5C9F1FB53B8900F0099A /* ConAddressRightInputContentConfig.m in Sources */,
+				2CCC5CA01FB53B8900F0099A /* ModifyLoginPasswordApi.m in Sources */,
+				2CCC5CA11FB53B8900F0099A /* ContractListNetworkTool.m in Sources */,
+				2CCC5CA21FB53B8900F0099A /* TJWUrlArgumentsFilter.m in Sources */,
+				2CCC5CA31FB53B8900F0099A /* ZLPhotoPickerFooterCollectionReusableView.m in Sources */,
+				2CCC5CA41FB53B8900F0099A /* DiscoveryNewsListCell.m in Sources */,
+				2CCC5CA51FB53B8900F0099A /* RoadShowListApi.m in Sources */,
+				2CCC5CA61FB53B8900F0099A /* ZLPhotoPickerViewController.m in Sources */,
+				2CCC5CA71FB53B8900F0099A /* HomeFooterConfig.m in Sources */,
+				2CCC5CA81FB53B8900F0099A /* TJSMineHomeTableAdapter.m in Sources */,
+				2CCC5CA91FB53B8900F0099A /* ContractApplyAddAddressContentConfig.m in Sources */,
+				2CCC5CAA1FB53B8900F0099A /* UIApplication+TJSInfoDictionary.m in Sources */,
+				2CCC5CAB1FB53B8900F0099A /* MyContractViewController.m in Sources */,
+				2CCC5CAC1FB53B8900F0099A /* NSMutableAttributedString+Formated.m in Sources */,
+				2CCC5CAD1FB53B8900F0099A /* ContractAddAddressContentConfigFactory.m in Sources */,
+				2CCC5CAE1FB53B8900F0099A /* NSDate+TJSFormated.m in Sources */,
+				2CCC5CAF1FB53B8900F0099A /* CumulateInvestDefaultCell.m in Sources */,
+				2CCC5CB01FB53B8900F0099A /* TJSHomeListLayoutImpl.m in Sources */,
+				2CCC5CB11FB53B8900F0099A /* MessageKindListController.m in Sources */,
+				2CCC5CB21FB53B8900F0099A /* FeedbackViewController.m in Sources */,
+				2CCC5CB31FB53B8900F0099A /* TJSEnumValueService.m in Sources */,
+				2CCC5CB41FB53B8900F0099A /* BankCardAddDataSourceImpl.m in Sources */,
+				2CCC5CB51FB53B8900F0099A /* TJSProductListLayoutImpl.m in Sources */,
+				2CCC5CB61FB53B8900F0099A /* UIButton+BackgroundColor.m in Sources */,
+				2CCC5CB71FB53B8900F0099A /* FindWithDrawPasswordController.m in Sources */,
+				2CCC5CB81FB53B8900F0099A /* TJSBaseStoreTool.m in Sources */,
+				2CCC5CB91FB53B8900F0099A /* AddressManageTableAdapter.m in Sources */,
+				2CCC5CBA1FB53B8900F0099A /* AddAdressViewController.m in Sources */,
+				2CCC5CBB1FB53B8900F0099A /* CapitalRecordStoreTool.m in Sources */,
+				2CCC5CBC1FB53B8900F0099A /* BankCardListContentConfigFactory.m in Sources */,
+				2CCC5CBD1FB53B8900F0099A /* ProductSearchInteractorImpl.m in Sources */,
+				2CCC5CBE1FB53B8900F0099A /* BankCardAddTableAdapter.m in Sources */,
+				2CCC5CBF1FB53B8900F0099A /* TJSProductListTableAdapter.m in Sources */,
+				2CCC5CC01FB53B8900F0099A /* CumulateInvestStoreTool.m in Sources */,
+				2CCC5CC11FB53B8900F0099A /* ProfessionVertifyApi.m in Sources */,
+				2CCC5CC21FB53B8900F0099A /* ProductSearchHotApi.m in Sources */,
+				2CCC5CC31FB53B8900F0099A /* ContractAddAddressBaseCell.m in Sources */,
+				2CCC5CC41FB53B8900F0099A /* TJSDiscoNewsConfigurator.m in Sources */,
+				2CCC5CC51FB53B8900F0099A /* ModifyWithDrawCodeApi.m in Sources */,
+				2CCC5CC61FB53B8900F0099A /* PNLineChartDataItem.m in Sources */,
+				2CCC5CC71FB53B8900F0099A /* AddressManageCellLayoutConfig.m in Sources */,
+				2CCC5CC81FB53B8900F0099A /* DiscoveryNewsCollectLayout.m in Sources */,
+				2CCC5CC91FB53B8900F0099A /* SettingHomeConfigurator.m in Sources */,
+				2CCC5CCA1FB53B8900F0099A /* CumulativeInvestContentConfigFactory.m in Sources */,
+				2CCC5CCB1FB53B8900F0099A /* TJSDiscoNewsListAdapter.m in Sources */,
+				2CCC5CCC1FB53B8900F0099A /* UITextView+EditRect.m in Sources */,
+				2CCC5CCD1FB53B8900F0099A /* DiscoVideoResolution.m in Sources */,
+				2CCC5CCE1FB53B8900F0099A /* AlipayManager.m in Sources */,
+				2CCC5CCF1FB53B8900F0099A /* ProductSearchResultLayout.m in Sources */,
+				2CCC5CD01FB53B8900F0099A /* MineHomeCellIvestItem.m in Sources */,
+				2CCC5CD11FB53B8900F0099A /* BankCardAddViewController.m in Sources */,
+				2CCC5CD21FB53B8900F0099A /* ContractListInteractorImpl.m in Sources */,
+				2CCC5CD31FB53B8900F0099A /* NewsListStoreTool.m in Sources */,
+				2CCC5CD41FB53B8900F0099A /* AddressSelectedModel.m in Sources */,
+				2CCC5CD51FB53B8900F0099A /* PNLineChart.m in Sources */,
+				2CCC5CD61FB53B8900F0099A /* WithDrawDepositSumContentConfig.m in Sources */,
+				2CCC5CD71FB53B8900F0099A /* TJSMyOrderListCellFactory.m in Sources */,
+				2CCC5CD81FB53B8900F0099A /* TJSProductListApi.m in Sources */,
+				2CCC5CD91FB53B8900F0099A /* BackCardManagerController.m in Sources */,
+				2CCC5CDA1FB53B8900F0099A /* FeedbackContainerController.m in Sources */,
+				2CCC5CDB1FB53B8900F0099A /* UIApplication+TJSAppAppearence.m in Sources */,
+				2CCC5CDC1FB53B8900F0099A /* UIImage+Resizeable.m in Sources */,
+				2CCC5CDD1FB53B8900F0099A /* DiscoNewsListController.m in Sources */,
+				2CCC5CDE1FB53B8900F0099A /* ContractApplyPResultContentConfig.m in Sources */,
+				2CCC5CDF1FB53B8900F0099A /* ProductSearchHotNetworkTool.m in Sources */,
+				2CCC5CE01FB53B8900F0099A /* TJSInvestPieChart.m in Sources */,
+				2CCC5CE11FB53B8900F0099A /* TJSProductListConfigurator.m in Sources */,
+				2CCC5CE21FB53B8900F0099A /* UILabel+TJSEdgeInsets.m in Sources */,
+				2CCC5CE31FB53B8900F0099A /* PNGenericChart.m in Sources */,
+				2CCC5CE41FB53B8900F0099A /* UIImage+NamedWithSize.m in Sources */,
+				2CCC5CE51FB53B8900F0099A /* PersonalMessageController.m in Sources */,
+				2CCC5CE61FB53B8900F0099A /* CapitalRecordInfoModel.m in Sources */,
+				2CCC5CE71FB53B8900F0099A /* UITabBarItem+TJSWebCache.m in Sources */,
+				2CCC5CE81FB53B8900F0099A /* TJSActionSheet.m in Sources */,
+				2CCC5CE91FB53B8900F0099A /* TJSMineHomeOrderCellContentConfig.m in Sources */,
+				2CCC5CEA1FB53B8900F0099A /* BankCardListConfig.m in Sources */,
+				2CCC5CEB1FB53B8900F0099A /* APAuthV2Info.m in Sources */,
+				2CCC5CED1FB53B8900F0099A /* HomeFooterCollectionLayout.m in Sources */,
+				2CCC5CEE1FB53B8900F0099A /* TJSBaseProductListContentConfig.m in Sources */,
+				2CCC5CEF1FB53B8900F0099A /* EmptyDataSetAdapter.m in Sources */,
+				2CCC5CF01FB53B8900F0099A /* AddressSelectedContentConfigFactory.m in Sources */,
+				2CCC5CF11FB53B8900F0099A /* HealthKitManager.m in Sources */,
+				2CCC5CF21FB53B8900F0099A /* WithDrawDepositCellLayoutConfig.m in Sources */,
+				2CCC5CF31FB53B8900F0099A /* TJSMyOrderListDataSourceImpl.m in Sources */,
+				2CCC5CF41FB53B8900F0099A /* SettingHomeConfig.m in Sources */,
+				2CCC5CF51FB53B8900F0099A /* DiscoRoadShowInfoModel.m in Sources */,
+				2CCC5CF61FB53B8900F0099A /* BankCardAddHeaderFooterView.m in Sources */,
+				2CCC5CF71FB53B8900F0099A /* ProductListCellImageContentView.m in Sources */,
+				2CCC5CF81FB53B8900F0099A /* BankCardAddNetworkTool.m in Sources */,
+				2CCC5CF91FB53B8900F0099A /* CapitalRecordListCell.m in Sources */,
+				2CCC5CFA1FB53B8900F0099A /* ContractAddAddressConfigurator.m in Sources */,
+				2CCC5CFB1FB53B8900F0099A /* PNLineChartData.m in Sources */,
+				2CCC5CFC1FB53B8900F0099A /* TJSBaseNavigationController.m in Sources */,
+				2CCC5CFD1FB53B8900F0099A /* TJSProductListImageContentConfig.m in Sources */,
+				2CCC5CFE1FB53B8900F0099A /* AppDelegate.m in Sources */,
+				2CCC5CFF1FB53B8900F0099A /* TJSSearchBar.m in Sources */,
+				2CCC5D001FB53B8900F0099A /* OrderListNetworkTool.m in Sources */,
+				2CCC5D011FB53B8900F0099A /* AddressSelectedDefaultCell.m in Sources */,
+				2CCC5D021FB53B8900F0099A /* TJSMyOrderListCellContentConfig.m in Sources */,
+				2CCC5D031FB53B8900F0099A /* ZLPhotoPickerCustomToolBarView.m in Sources */,
+				2CCC5D041FB53B8900F0099A /* ContractApplyProductNameCell.m in Sources */,
+				2CCC5D051FB53B8900F0099A /* HomeHeaderCollectionCell.m in Sources */,
+				2CCC5D061FB53B8900F0099A /* UIButton+ImageTitleEdgeInset.m in Sources */,
+				2CCC5D071FB53B8900F0099A /* ContractApplyContentConfigFactory.m in Sources */,
+				2CCC5D081FB53B8900F0099A /* DiscoveryRoadShowLayout.m in Sources */,
+				2CCC5D091FB53B8900F0099A /* ProductDetailInteractorImpl.m in Sources */,
+				2CCC5D0A1FB53B8900F0099A /* UpLoadIconAPi.m in Sources */,
+				2CCC5D0B1FB53B8900F0099A /* TJSBaseTableViewCell.m in Sources */,
+				2CCC5D0C1FB53B8900F0099A /* ZLPhotoPickerBrowserViewController+SignlePhotoBrowser.m in Sources */,
+				2CCC5D0D1FB53B8900F0099A /* NSDate+TJSInterval.m in Sources */,
+				2CCC5D0E1FB53B8900F0099A /* TJSMyOrderListInteractorImpl.m in Sources */,
+				2CCC5D0F1FB53B8900F0099A /* AppVersionNetworkTool.m in Sources */,
+				2CCC5D101FB53B8900F0099A /* ProductSearchResultCell.m in Sources */,
+				2CCC5D111FB53B8900F0099A /* StatisticManager.m in Sources */,
+				2CCC5D121FB53B8900F0099A /* PNPieChartDataItem.m in Sources */,
+				2CCC5D131FB53B8900F0099A /* DiscoRoadShowDetailController.m in Sources */,
+				2CCC5D141FB53B8900F0099A /* AddressManageConfig.m in Sources */,
+				2CCC5D151FB53B8900F0099A /* ProductSearchConfigurator.m in Sources */,
+				2CCC5D161FB53B8900F0099A /* HomeHeaderConfig.m in Sources */,
+				2CCC5D171FB53B8900F0099A /* AddressSelectedConfig.m in Sources */,
+				2CCC5D181FB53B8900F0099A /* AddressSelectedDefaultContentConfig.m in Sources */,
+				2CCC5D191FB53B8900F0099A /* DiscoRoadShowConfigurator.m in Sources */,
+				2CCC5D1A1FB53B8900F0099A /* UseAgreementController.m in Sources */,
+				2CCC5D1B1FB53B8900F0099A /* HomeFooterContainer.m in Sources */,
+				2CCC5D1C1FB53B8900F0099A /* SettingHomeDefaultContentConfig.m in Sources */,
+				2CCC5D1D1FB53B8900F0099A /* TJSDiscoNewsLayoutImpl.m in Sources */,
+				2CCC5D1E1FB53B8900F0099A /* TJSMineHomeBalanceCellContentConfig.m in Sources */,
+				2CCC5D1F1FB53B8900F0099A /* BankCardListLayoutImpl.m in Sources */,
+				2CCC5D201FB53B8900F0099A /* ZLCamera.m in Sources */,
+				2CCC5D211FB53B8900F0099A /* TJSThemeService.m in Sources */,
+				2CCC5D221FB53B8900F0099A /* UIImage+ZLPhotoLib.m in Sources */,
+				2CCC5D231FB53B8900F0099A /* ProductListCell.m in Sources */,
+				2CCC5D241FB53B8900F0099A /* TJSMyBaseOrderListCellContentConfig.m in Sources */,
+				2CCC5D251FB53B8900F0099A /* SettingDefaultTableCell.m in Sources */,
+				2CCC5D261FB53B8900F0099A /* TJSAppVersionApi.m in Sources */,
+				2CCC5D271FB53B8900F0099A /* TJSProductFilterCollAdapter.m in Sources */,
+				2CCC5D281FB53B8900F0099A /* BankCardAddBaseTableCell.m in Sources */,
+				2CCC5D291FB53B8900F0099A /* BankCardListCellLayoutConfig.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -8309,6 +9938,56 @@
 			};
 			name = Release;
 		};
+		2CCC5DC51FB53B8900F0099A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78C8A77EBFE6464B5B247606 /* Pods-TianJiCloud.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = TianJiCloudDev.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				DEVELOPMENT_TEAM = R2WXJ5V7M3;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/TianJiCloud/PrefixHeader.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/TianJiCloud/TianJiCloudDev.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xinyinxin.BPushDemoTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				USER_HEADER_SEARCH_PATHS = "";
+				VALID_ARCHS = "arm64 armv7s";
+			};
+			name = Debug;
+		};
+		2CCC5DC61FB53B8900F0099A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0DD7EF282716E8411120566 /* Pods-TianJiCloud.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = TianJiCloudDev.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				DEVELOPMENT_TEAM = R2WXJ5V7M3;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/TianJiCloud/PrefixHeader.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/TianJiCloud/TianJiCloudDev.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xinyinxin.BPushDemoTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				USER_HEADER_SEARCH_PATHS = "";
+				VALID_ARCHS = "arm64 armv7s";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -8344,6 +10023,15 @@
 			buildConfigurations = (
 				2C4411DF1F21981E00C453EF /* Debug */,
 				2C4411E01F21981E00C453EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2CCC5DC41FB53B8900F0099A /* Build configuration list for PBXNativeTarget "TianJiCloudDev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CCC5DC51FB53B8900F0099A /* Debug */,
+				2CCC5DC61FB53B8900F0099A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

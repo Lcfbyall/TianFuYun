@@ -53,7 +53,7 @@
 - (void)tjs_configBaseView{
  
     //临时
-    
+    [super tjs_configBaseView];
     WEAK_SELF(self);
     UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] bk_initWithTitle:@"选择地址" style:UIBarButtonItemStylePlain handler:^(id sender) {
         

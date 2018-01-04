@@ -27,6 +27,11 @@
     _vc.navigationItem.leftBarButtonItems = [self tjs_leftBarButtonItems];
 
     _vc.params = [UINavigationBar translucentWhiteTint];
+    
+    [_vc tjs_configViewController];
+    
+    //((UITableView *)_vc.tjs_listView).contentInset = UIEdgeInsetsMake(0, 0, 49, 0);
+    
 }
 
 

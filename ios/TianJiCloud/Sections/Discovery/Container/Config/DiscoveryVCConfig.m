@@ -25,6 +25,9 @@
 - (void)setup:(DiscoveryViewController *)vc{
 
     _vc = vc;
+    
+    //_vc.view.backgroundColor = [UIColor redColor];
+    
 }
 
 
@@ -32,7 +35,6 @@
 
 - (UIView *)tjs_titleView{
 
-    
     NSString *firstSegment = NSLocalizedString(@"discovery_title_newsInformation", @"新闻资讯");
     NSString *secondSegment = NSLocalizedString(@"discovery_title_roadShowVedio", @"路演视频");
     UISegmentedControl *segment = [[UISegmentedControl alloc]initWithItems:@[firstSegment,secondSegment]];

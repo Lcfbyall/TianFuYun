@@ -70,8 +70,8 @@
            }];
 
           [left setTitleTextAttributes:@{NSForegroundColorAttributeName:ThemeService.origin_color_01,NSFontAttributeName :[UIFont systemFontOfSize:16.0]} forState:UIControlStateNormal];
-           [left setTitlePositionAdjustment:UIOffsetMake(0, -60) forBarMetrics:UIBarMetricsDefault];
-           [left setBackgroundVerticalPositionAdjustment:60 forBarMetrics:UIBarMetricsDefault];
+           //[left setTitlePositionAdjustment:UIOffsetMake(0, -60) forBarMetrics:UIBarMetricsDefault];
+           //[left setBackgroundVerticalPositionAdjustment:60 forBarMetrics:UIBarMetricsDefault];
 
            /*
            //

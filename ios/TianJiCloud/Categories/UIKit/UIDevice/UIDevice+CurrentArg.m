@@ -39,6 +39,16 @@
 }
 
 - (NSString *)tjs_phoneModel{
+    
+    
+    /*
+    #import "sys/utsname.h"
+    struct utsname systemInfo;
+    uname(&systemInfo);
+    //机器型号 7p == iPhone9，2
+    NSString *deviceString = [NSString stringWithCString:systemInfo.machine encoding:NSUTF8StringEncoding];
+     */
+    
   
     int mib[2];
     size_t len;

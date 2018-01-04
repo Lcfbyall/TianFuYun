@@ -1,16 +1,16 @@
+
+'use strict';
 import React, { Component } from 'react';
 import {
     Platform,
     StyleSheet,
     Text,
     View,
-    FlatList,
-    SectionList,
 
 } from 'react-native';
 
 
-class RNHighScores extends React.Component {
+export default  class RNHighScores extends React.Component {
 
   render() {
 

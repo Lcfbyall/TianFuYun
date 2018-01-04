@@ -67,7 +67,7 @@
 #pragma mark - 
 
 - (void)tjs_configBaseView{
- 
+ [super tjs_configBaseView];
     
     
 }

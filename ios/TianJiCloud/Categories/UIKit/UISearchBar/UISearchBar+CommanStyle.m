@@ -16,7 +16,8 @@
 
     UIView *bgView = [UIView new];
     
-    UIColor *bgColor = ThemeService.weak_color_00;
+    UIColor *bgColor = [UIColor redColor];//ThemeService.weak_color_00;
+    
     bgView.frame   = frame;
     bgView.backgroundColor     = bgColor;
     bgView.layer.cornerRadius  = frame.size.height/2.0;

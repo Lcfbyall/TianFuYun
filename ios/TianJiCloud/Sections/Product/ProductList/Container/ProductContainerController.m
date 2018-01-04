@@ -8,14 +8,14 @@
 
 #import "ProductContainerController.h"
 #import "ProductListViewController.h"
-#import "ProductListVCConfig.h"
+#import "ProductContainerVCConfig.h"
 
 #import "HomeHeaderConfig.h"
 #import "HomeProductClickItem.h"
 
 @interface ProductContainerController ()
 
-@property (nonatomic,strong) ProductListVCConfig *vcConfig;
+@property (nonatomic,strong) ProductContainerVCConfig *vcConfig;
 
 
 
@@ -45,7 +45,7 @@
 
 - (void)setProductConfig{
     
-    _vcConfig = [[ProductListVCConfig alloc]init];
+    _vcConfig = [[ProductContainerVCConfig alloc]init];
     [_vcConfig setup:self];
     
     self.navigationItem.leftBarButtonItems = [_vcConfig tjs_leftBarButtonItems];
@@ -60,7 +60,7 @@
 
 - (void)tjs_setupChildViewControllers{
 
-    self.isfullScreen = NO;
+    //self.isfullScreen = NO;
     
     [self setUpContentViewFrame:^(UIView *contentView) {
         

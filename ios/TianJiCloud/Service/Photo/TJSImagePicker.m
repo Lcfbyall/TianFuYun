@@ -347,7 +347,7 @@ static  TJSImagePicker *imagePikerSevice;
                 //UIImageWriteToSavedPhotosAlbum(editedImage, self, @selector(image:didFinishSavingWithError:contextInfo:), NULL);
                 
                 dispatch_async(dispatch_get_main_queue(), ^{
-                if(self.completionHandler)self.completionHandler(editedImage);
+                    if(self.completionHandler)self.completionHandler(editedImage);
                 });
             }
         }

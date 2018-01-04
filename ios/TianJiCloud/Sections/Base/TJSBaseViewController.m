@@ -68,8 +68,10 @@ NSString * const ExtendedLayoutIncludesOpaqueBars = @"tjsExtendedLayoutIncludesO
 #pragma mark - <TJSBaseVCConfig>
 
 - (void)tjs_configBaseView{
-
-
+    
+    self.params = [UINavigationBar basicStyleWhite];
+    [self tjs_configViewController];
+    
 }
 
 #pragma mark - <TJSNavigationConfig>
@@ -193,7 +195,7 @@ NSString * const ExtendedLayoutIncludesOpaqueBars = @"tjsExtendedLayoutIncludesO
             [self conformsToProtocol:@protocol(TJSNavigationConfig)] &&
             [self respondsToSelector:@selector(tjs_translucentNavigationBar)]) {
             
-            translucent = [((TJSBaseViewController *)self) tjs_translucentNavigationBar];
+            //translucent = [((TJSBaseViewController *)self) tjs_translucentNavigationBar];
             
             self.navigationController.navigationBar.translucent = translucent;
         }
@@ -206,8 +208,9 @@ NSString * const ExtendedLayoutIncludesOpaqueBars = @"tjsExtendedLayoutIncludesO
             [[self.params allKeys]containsObject:NavigationBarBarTintColor]) {
             
             barTintColor = [((TJSBaseViewController *)self) tjs_navigationBarBarTintColor];
+            
+            self.navigationController.navigationBar.barTintColor = barTintColor;
 
-            [self wr_setNavBarBarTintColor:barTintColor];
         }
         
         //2.1 BarBackgroundAlpha
@@ -218,8 +221,7 @@ NSString * const ExtendedLayoutIncludesOpaqueBars = @"tjsExtendedLayoutIncludesO
             [[self.params allKeys]containsObject:NavBarBackgroundAlpha]) {
             
             alpha = [((TJSBaseViewController *)self) tjs_navBarBackgroundAlpha];
-            
-            [self wr_setNavBarBackgroundAlpha:alpha];
+            self.navigationController.navigationBar.alpha = alpha;
         }
         
         
@@ -234,8 +236,7 @@ NSString * const ExtendedLayoutIncludesOpaqueBars = @"tjsExtendedLayoutIncludesO
                 [self respondsToSelector:@selector(tjs_navigationBarTintColor)]) {
                 
                 tintColor = [((TJSBaseViewController *)self) tjs_navigationBarTintColor];
-                
-                [self wr_setNavBarTintColor:tintColor];
+                self.navigationController.navigationBar.tintColor = tintColor;
             }
             
             
@@ -246,6 +247,8 @@ NSString * const ExtendedLayoutIncludesOpaqueBars = @"tjsExtendedLayoutIncludesO
                 [self respondsToSelector:@selector(tjs_hideBackBarButtonItem)]) {
                 
                 hideBackBarButtonItem = [((TJSBaseViewController *)self) tjs_hideBackBarButtonItem];
+                
+                //self.navigationController.navigationItem sethid
             }
             
             
@@ -257,6 +260,10 @@ NSString * const ExtendedLayoutIncludesOpaqueBars = @"tjsExtendedLayoutIncludesO
                 
                 backItemColor = [((TJSBaseViewController *)self) tjs_backBarButtonItemTintColor];
                 self.navigationController.navigationItem.leftBarButtonItem.tintColor = backItemColor;
+                
+                [self.navigationController.navigationItem.leftBarButtonItem setTitleTextAttributes:
+  @{NSForegroundColorAttributeName:backItemColor,
+            NSFontAttributeName:[UIFont systemFontOfSize:16.0f]} forState:UIControlStateNormal];
             }
         }
         
@@ -268,8 +275,7 @@ NSString * const ExtendedLayoutIncludesOpaqueBars = @"tjsExtendedLayoutIncludesO
             [self respondsToSelector:@selector(tjs_navigaitonBarTitleTextAttributes)]) {
             
             titleTextAttributes = [((TJSBaseViewController *)self) tjs_navigaitonBarTitleTextAttributes];
-            
-            //self.navigationController.navigationBar.titleTextAttributes = titleTextAttributes;
+            self.navigationController.navigationBar.titleTextAttributes = titleTextAttributes;
         }
         
         
@@ -277,15 +283,19 @@ NSString * const ExtendedLayoutIncludesOpaqueBars = @"tjsExtendedLayoutIncludesO
         BOOL adjust = NO;
         if ([self isKindOfClass:[TJSBaseViewController class]]&&
             [self conformsToProtocol:@protocol(TJSNavigationConfig)] &&
-            [self respondsToSelector:@selector(tjs_adjustsScrollViewInsets)]) {
+            [self respondsToSelector:@selector(tjs_adjustsScrollViewInsets)] && 
+            [self conformsToProtocol:@protocol(TJSBaseVCConfig)] &&
+            [self respondsToSelector:@selector(tjs_listView)] ) {
             
             adjust = [((TJSBaseViewController *)self) tjs_adjustsScrollViewInsets];
             adjust = NO;
             if (@available(iOS 11.0, *)) {
-
-                self.tjs_listView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+                if(self.tjs_listView){ 
+                    self.tjs_listView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+                    //self.tjs_listView.contentInset
+                    //self.tjs_listView.adjustedContentInset
+                }
             }else{
-
                 self.automaticallyAdjustsScrollViewInsets= adjust;
             }
         }
@@ -299,8 +309,9 @@ NSString * const ExtendedLayoutIncludesOpaqueBars = @"tjsExtendedLayoutIncludesO
             [[self.params allKeys]containsObject:NavigationBarBackgroundImage]) {
             
             backgroundImage = [((TJSBaseViewController *)self) tjs_navigationBarBackgroundImage];
-        
-            [self wr_setNavBarBackgroundImage:backgroundImage];
+            [self.navigationController.navigationBar setBackgroundImage:backgroundImage
+                      forBarPosition:UIBarPositionAny
+                          barMetrics:UIBarMetricsDefault];
         }
         
         
@@ -311,9 +322,10 @@ NSString * const ExtendedLayoutIncludesOpaqueBars = @"tjsExtendedLayoutIncludesO
             [self respondsToSelector:@selector(tjs_navigationBarShadowImage)]) {
             
             shadowImage = [((TJSBaseViewController *)self) tjs_navigationBarShadowImage];
-
-            [self wr_setNavBarShadowImageHidden:YES];
+            [self.navigationController.navigationBar setShadowImage:shadowImage];
         }
+        
+        
         
         //10.tjd_extendedLayoutIncludesOpaqueBars
         BOOL extendedLayout = NO;;

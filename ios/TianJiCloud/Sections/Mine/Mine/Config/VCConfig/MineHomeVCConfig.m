@@ -27,10 +27,7 @@
     _vc = vc;
     
     _vc.params =  [UINavigationBar translucentWhiteTint];
-    
     [_vc tjs_configViewController];
-    
-    ((UITableView *)_vc.tjs_listView).contentInset = UIEdgeInsetsMake(-64, 0, 0, 0);
 }
 
 

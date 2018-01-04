@@ -76,7 +76,7 @@
 #import "UIColor+YYAdd.h"
 #import "UINavigationController+TZPopGesture.h"
 #import "UINavigationController+FDFullscreenPopGesture.h"
-#import "WRNavigationBar.h"
+//#import "WRNavigationBar.h"
 
 /** 6. Base **/
 
