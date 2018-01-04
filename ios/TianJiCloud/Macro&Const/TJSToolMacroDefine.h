@@ -16,6 +16,10 @@
 #define SCREEN_HEIGHT ([[UIScreen mainScreen] bounds].size.height)
 #define SCREEN_MAX_LENGTH (MAX(SCREEN_WIDTH, SCREEN_HEIGHT))
 
+#define Status_BarHeight [[UIApplication sharedApplication] statusBarFrame].size.height //状态栏高度
+#define Nav_BarHeight 44.0
+#define Tab_BarHeight ([[UIApplication sharedApplication] statusBarFrame].size.height>20?83:49) //底部tabbar高度
+#define Top_Height (Status_BarHeight + Nav_BarHeight) //整个导航栏高度
 
 //2.系统判断
 //字符串是根据ascii  compare 比较字符串的时候是按照 ascii码来比较的 如果你的系统时10.0 的 那么 “9.0”>”10.0”的

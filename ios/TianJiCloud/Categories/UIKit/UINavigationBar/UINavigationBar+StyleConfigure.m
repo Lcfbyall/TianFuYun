@@ -25,7 +25,7 @@ static UIColor *TintColor    = nil;
     
     NSDictionary *dic =
     @{
-      NavigationBarTranslucentKey:@NO,
+      NavigationBarTranslucentKey:@YES,
       AdjustsScrollViewInsets :@NO,
       HideNavigationBarKey: @NO,
       HideBackBarButtonItemKey:@NO,
@@ -34,9 +34,9 @@ static UIColor *TintColor    = nil;
       NavigationBarBarTintColor:ThemeService.main_color_00,
       NavBarBackgroundAlpha:@1,
       NavigationBarsShadowImage:[UIImage new],
-      NavigationBarBackgroundImage:[UIImage tjs_imageWithColor:ThemeService.main_color_04],
-      BackBarButtonItemTintColor:ThemeService.origin_color_01,
+      NavigationBarBackgroundImage:[UIImage tjs_imageWithColor:ThemeService.main_color_00],
       
+      BackBarButtonItemTintColor:ThemeService.origin_color_01,
     NavigationTitleTextAttributes:
  @{NSForegroundColorAttributeName:ThemeService.origin_color_01,
    NSFontAttributeName:[UIFont systemFontOfSize:16.0f]}};
@@ -48,7 +48,7 @@ static UIColor *TintColor    = nil;
 
     NSDictionary *dic =
     @{
-      NavigationBarTranslucentKey:@NO,
+      NavigationBarTranslucentKey:@YES,
       AdjustsScrollViewInsets :@NO,
       HideNavigationBarKey: @NO,
       HideBackBarButtonItemKey:@YES,
@@ -57,7 +57,8 @@ static UIColor *TintColor    = nil;
       NavigationBarBarTintColor:ThemeService.main_color_00,
       NavBarBackgroundAlpha:@1,
       NavigationBarsShadowImage:[UIImage new],
-      NavigationBarBackgroundImage:[UIImage new],
+      NavigationBarBackgroundImage:[UIImage tjs_imageWithColor:ThemeService.main_color_00],
+      
       BackBarButtonItemTintColor:ThemeService.origin_color_01,
 NavigationTitleTextAttributes:@{NSForegroundColorAttributeName:ThemeService.origin_color_01,NSFontAttributeName:[UIFont systemFontOfSize:16.0f]}};
 
@@ -70,15 +71,16 @@ NavigationTitleTextAttributes:@{NSForegroundColorAttributeName:ThemeService.orig
     @{
       NavigationBarTranslucentKey:@YES,
       AdjustsScrollViewInsets :@NO,
-      HideNavigationBarKey: @YES,
+      HideNavigationBarKey: @NO,
       HideBackBarButtonItemKey:@NO,
       
-      NavigationBarTintColor: ThemeService.main_color_00,
-      NavigationBarBarTintColor:ThemeService.main_color_00,
-      NavBarBackgroundAlpha:@0,
+      NavigationBarTintColor: ThemeService.origin_color_01,
+      NavigationBarBarTintColor: ThemeService.main_color_00,
+      NavBarBackgroundAlpha:@1,
       NavigationBarsShadowImage:[UIImage new],
-      BackBarButtonItemTintColor:ThemeService.main_color_00,
- NavigationTitleTextAttributes:@{NSForegroundColorAttributeName:ThemeService.origin_color_01,NSFontAttributeName:[UIFont systemFontOfSize:16.0f]}};
+      NavigationBarBackgroundImage:[UIImage tjs_imageWithColor:ThemeService.main_color_04],
+      
+      BackBarButtonItemTintColor:ThemeService.main_color_00, NavigationTitleTextAttributes:@{NSForegroundColorAttributeName:ThemeService.origin_color_01,NSFontAttributeName:[UIFont systemFontOfSize:16.0f]}};
     
     return dic;
 }
@@ -150,39 +152,8 @@ NavigationTitleTextAttributes:@{NSForegroundColorAttributeName:ThemeService.orig
     // 透明度
     self.translucent  = translucent;
     
-    [self clearBottomLine];
-    
-    [self clearShadow];
-
 }
 
-/**
- 设置导航栏底部横线颜色
- 
- @param color 横线颜色
- */
-- (void)setBottomLineColor:(UIColor *)color{
-    
-    [self setBackgroundImage:[UIImage new] 
-              forBarPosition:UIBarPositionAny
-                  barMetrics:UIBarMetricsDefault];
-    
-    [self setShadowImage:[UIImage tjs_imageWithColor:color size:CGSizeMake(1.f, 0.5f)]];
-    
-}
-
-
-/**
- 清除导航栏底部横线
- */
-- (void)clearBottomLine {
-    
-    [self setBackgroundImage:[UIImage tjs_imageWithColor:ThemeService.main_color_04]
-              forBarPosition:UIBarPositionAny
-                  barMetrics:UIBarMetricsDefault];
-    
-    [self setShadowImage:[UIImage new]];
-}
 
 /**
  清除导航栏底部阴影

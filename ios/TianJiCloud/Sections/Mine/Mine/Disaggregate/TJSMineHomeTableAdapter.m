@@ -61,7 +61,7 @@ static NSString *const headerFooterIdentifier = @"MineHomeHeaderFooterIdentifier
     
     _headerContainer = [MineHomeHeaderContainer headerContainer];
     _headerContainer.tjs_origin = CGPointMake(0, -_headerContainer.tjs_height);
-    _tableView.contentInset = UIEdgeInsetsMake(_headerContainer.tjs_height, 0, 0, 0);
+    _tableView.contentInset = UIEdgeInsetsMake(_headerContainer.tjs_height, 0, Tab_BarHeight, 0);
     [_tableView addSubview:_headerContainer];
     _headerContainer.interactor = self.interactor;
 

@@ -98,7 +98,7 @@
     UIViewController *willShowVC = self.childViewControllers[index];
     if(![willShowVC isViewLoaded])
     {
-        willShowVC.view.frame = CGRectMake(offsetX,0, scrollView.tjs_width,scrollView.tjs_height - (self.tabBarController?(49+64):0));
+        willShowVC.view.frame = CGRectMake(offsetX,Top_Height, scrollView.tjs_width,scrollView.tjs_height - (self.tabBarController?(Tab_BarHeight+Top_Height):0));
         [self.tjs_contentScroll addSubview:willShowVC.view];
     }
 }

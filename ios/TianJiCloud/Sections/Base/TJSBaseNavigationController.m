@@ -31,8 +31,6 @@
     
 }
 
-//push -> viewDidLoad -> viewWillAppear -> willShowViewController
-
 #pragma mark - UINavigationController
 
 - (void)pushViewController:(UIViewController *)viewController
@@ -98,19 +96,47 @@
     [super pushViewController:viewController animated:animated];
 }
 
+- (nullable UIViewController *)popViewControllerAnimated:(BOOL)animated{
+    
+    
+    return  [super popViewControllerAnimated:animated];
+}
+
+
+/*
+ push ->  
+ viewDidLoad(2) -> 
+ viewWillDisappear(1) -> 
+ viewWillAppear(2) -> 
+ willShowViewController(2) -> 
+ viewDidDisappear(1) -> 
+ viewDidAppear(2) -> 
+ didShowViewController(2)
+*/
+  
+/*
+  pop
+  viewWillDisappear(2)
+  viewWillAppear(1)
+  willShowViewController(1)
+  viewDidDisappear(2)
+  viewDidAppear(1)
+  didShowViewController(1)
+*/
 
 #pragma mark - <UINavigationControllerDelegate>
 
 // Called when the navigation controller shows a new top view controller via a push, pop or setting of the view controller stack.
 // 侧滑一点，会调用，放开没有返回还在本界面，但界面设置已经是上一个的了
 - (void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated{
+    
+    [((TJSBaseViewController *)viewController) tjs_configViewController];
 
 }
 
 - (void)navigationController:(UINavigationController *)navigationController didShowViewController:(UIViewController *)viewController animated:(BOOL)animated{
     
- 
-    
+   
     
 }
 

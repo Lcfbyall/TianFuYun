@@ -23,11 +23,13 @@
 
     
     self.delegate            = self;
-    self.tabBar.translucent  = NO;
+    self.tabBar.translucent  = YES;
     
     //选中后的颜色,tabBarItem.setTitleTextAttributes后无效
     //self.tabBar.tintColor = ;
     
+    self.tabBar.shadowImage = [UIImage new];
+    self.tabBar.backgroundImage = [UIImage tjs_imageWithColor:ThemeService.main_color_00];
     
     [self p_setupViewControllers];
     

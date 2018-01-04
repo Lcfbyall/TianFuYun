@@ -25,9 +25,10 @@
 - (void)setup:(MineViewController *)vc{
 
     _vc = vc;
-    
     _vc.params =  [UINavigationBar translucentWhiteTint];
+    
     [_vc tjs_configViewController];
+
 }
 
 

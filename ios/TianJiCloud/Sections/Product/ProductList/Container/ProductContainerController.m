@@ -64,7 +64,7 @@
     
     [self setUpContentViewFrame:^(UIView *contentView) {
         
-        contentView.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT-64-49);
+        contentView.frame = CGRectMake(0, Top_Height, SCREEN_WIDTH, SCREEN_HEIGHT-Top_Height-Tab_BarHeight);
     }];
     
     

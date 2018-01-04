@@ -38,11 +38,14 @@ NSString * const ExtendedLayoutIncludesOpaqueBars = @"tjsExtendedLayoutIncludesO
     
     [self tjs_configBaseView];
     
+    self.params = [UINavigationBar basicStyleWhite];
+    [self tjs_configViewController];
 }
 
 - (void)viewWillAppear:(BOOL)animated{
  
     [super viewWillAppear:animated];
+    
     
 }
 
@@ -68,9 +71,8 @@ NSString * const ExtendedLayoutIncludesOpaqueBars = @"tjsExtendedLayoutIncludesO
 #pragma mark - <TJSBaseVCConfig>
 
 - (void)tjs_configBaseView{
-    
-    self.params = [UINavigationBar basicStyleWhite];
-    [self tjs_configViewController];
+
+    self.view.backgroundColor = ThemeService.weak_color_00;
     
 }
 
@@ -194,9 +196,7 @@ NSString * const ExtendedLayoutIncludesOpaqueBars = @"tjsExtendedLayoutIncludesO
         if ([self isKindOfClass:[TJSBaseViewController class]]&&
             [self conformsToProtocol:@protocol(TJSNavigationConfig)] &&
             [self respondsToSelector:@selector(tjs_translucentNavigationBar)]) {
-            
-            //translucent = [((TJSBaseViewController *)self) tjs_translucentNavigationBar];
-            
+            translucent = [((TJSBaseViewController *)self) tjs_translucentNavigationBar];
             self.navigationController.navigationBar.translucent = translucent;
         }
         

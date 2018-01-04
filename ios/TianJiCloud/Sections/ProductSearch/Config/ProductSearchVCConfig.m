@@ -27,7 +27,7 @@
   
     _vc = vc;
 
-
+   _vc.tjs_listView.contentInset = UIEdgeInsetsMake(Top_Height, 0,0, 0);
 
 }
 

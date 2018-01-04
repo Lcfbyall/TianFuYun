@@ -27,7 +27,6 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    
     [self setHomeConfig];
     
     [self setupConfigurator];
@@ -36,6 +35,21 @@
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     
+}
+
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    
+}
+
+- (void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    
+}
+
+- (void)viewDidDisappear:(BOOL)animated{
+    [super viewDidDisappear:animated];
+    
     
 }
 
@@ -43,8 +57,7 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-    
-    
+
     
 }
 
@@ -75,8 +88,8 @@
 #pragma mark - <TJSBaseVCConfig>
 
 - (void)tjs_configBaseView{
-    
     [super tjs_configBaseView];
+    
     
 }
 

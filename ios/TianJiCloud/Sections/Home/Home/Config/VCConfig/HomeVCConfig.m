@@ -23,7 +23,9 @@
 - (void)setup:(HomeViewController *)vc{
     
     _vc = vc;
+    _vc.tjs_listView.contentInset = UIEdgeInsetsMake(Top_Height, 0, Tab_BarHeight, 0);
     
+
 }
 
 
