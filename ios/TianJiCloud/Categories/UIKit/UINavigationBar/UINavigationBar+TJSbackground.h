@@ -12,13 +12,8 @@
 
 @interface UINavigationBar (TJSBackground)
 
-- (void)tjs_setBackgroundColor:(UIColor *)backgroundColor;
-- (void)tjs_setBackgroundImage:(UIImage *)image;
-
 - (void)tjs_setBackgroundAlpha:(CGFloat)alpha;
-- (void)tjs_setBarButtonItemsAlpha:(CGFloat)alpha;
 - (void)tjs_setTranslationY:(CGFloat)translationY;
-- (void)tjs_reset;
 
 
 @end

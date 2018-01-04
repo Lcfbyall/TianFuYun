@@ -7,6 +7,8 @@
 //
 
 #import "TJSMineHomeLayoutImpl.h"
+#import "TJSBaseViewController.h"
+
 
 @interface TJSMineHomeLayoutImpl ()
 
@@ -67,18 +69,21 @@
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
    
     [scrollView.tjs_viewController.view endEditing:YES];
+    TJSBaseViewController *vc = (TJSBaseViewController *)scrollView.tjs_viewController;
+
+    CGFloat headerH = SCREEN_WIDTH/1.75;
+    CGFloat offset = scrollView.contentOffset.y;
+    CGFloat alpha = -offset/headerH -0.5;
+    if (offset > -headerH) {
+         [vc.navigationController.navigationBar tjs_setBackgroundAlpha:alpha];
+    } else {
+        [vc.navigationController.navigationBar tjs_setBackgroundAlpha:1];
+    }
     
+    NSMutableDictionary *p = [vc.params mutableCopy];
+    [p setObject:@(alpha) forKey:NavBarBackgroundAlpha];
+    vc.params = [p copy];
     
-    /*
-     UIColor * color = UIColorFromHEX(0x007cf4);
-     CGFloat offset = scrollView.contentOffset.y;
-     if (offset > -_headerHeight) {
-     //CGFloat alpha = MIN(1,fabs(offset+_headerHeight) / 64.0);
-     scrollView.tjs_viewController.navigationController.navigationBar.barTintColor = [UIColor redColor];
-     } else {
-     scrollView.tjs_viewController.navigationController.navigationBar.barTintColor = [color colorWithAlphaComponent:1];
-     }
-     */
 }
 
 

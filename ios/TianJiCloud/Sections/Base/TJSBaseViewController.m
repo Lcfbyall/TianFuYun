@@ -101,7 +101,7 @@ NSString * const ExtendedLayoutIncludesOpaqueBars = @"tjsExtendedLayoutIncludesO
   
     NSNumber *alpha = self.params[NavBarBackgroundAlpha];
     
-    return alpha?[alpha boolValue]:1;
+    return alpha?[alpha doubleValue]:1;
 }
 
 - (UIColor *)tjs_navigationBarTintColor{
@@ -200,7 +200,7 @@ NSString * const ExtendedLayoutIncludesOpaqueBars = @"tjsExtendedLayoutIncludesO
             self.navigationController.navigationBar.translucent = translucent;
         }
         
-        //2.barTintColor
+        //2. barTintColor
         UIColor *barTintColor = nil;
         if ([self isKindOfClass:[TJSBaseViewController class]]&&
             [self conformsToProtocol:@protocol(TJSNavigationConfig)] &&
@@ -213,32 +213,20 @@ NSString * const ExtendedLayoutIncludesOpaqueBars = @"tjsExtendedLayoutIncludesO
 
         }
         
-        //2.1 BarBackgroundAlpha
-        CGFloat alpha = 1;
+        //3.tintColor
+        UIColor *tintColor = nil;
         if ([self isKindOfClass:[TJSBaseViewController class]]&&
             [self conformsToProtocol:@protocol(TJSNavigationConfig)] &&
-            [self respondsToSelector:@selector(tjs_navBarBackgroundAlpha)] &&
-            [[self.params allKeys]containsObject:NavBarBackgroundAlpha]) {
+            [self respondsToSelector:@selector(tjs_navigationBarTintColor)]) {
             
-            alpha = [((TJSBaseViewController *)self) tjs_navBarBackgroundAlpha];
-            self.navigationController.navigationBar.alpha = alpha;
+            tintColor = [((TJSBaseViewController *)self) tjs_navigationBarTintColor];
+            self.navigationController.navigationBar.tintColor = tintColor;
         }
         
         
         NSArray *controllers = self.navigationController.viewControllers;
         NSInteger index = [controllers indexOfObject:self];
         if(index){
-            
-            //3.tintColor
-            UIColor *tintColor = nil;
-            if ([self isKindOfClass:[TJSBaseViewController class]]&&
-                [self conformsToProtocol:@protocol(TJSNavigationConfig)] &&
-                [self respondsToSelector:@selector(tjs_navigationBarTintColor)]) {
-                
-                tintColor = [((TJSBaseViewController *)self) tjs_navigationBarTintColor];
-                self.navigationController.navigationBar.tintColor = tintColor;
-            }
-            
             
             //4.hideBackBarButtonItem
             BOOL hideBackBarButtonItem = NO;
@@ -259,9 +247,9 @@ NSString * const ExtendedLayoutIncludesOpaqueBars = @"tjsExtendedLayoutIncludesO
                 [self respondsToSelector:@selector(tjs_backBarButtonItemTintColor)]) {
                 
                 backItemColor = [((TJSBaseViewController *)self) tjs_backBarButtonItemTintColor];
-                self.navigationController.navigationItem.leftBarButtonItem.tintColor = backItemColor;
+            self.navigationController.navigationItem.leftBarButtonItem.tintColor = backItemColor;
                 
-                [self.navigationController.navigationItem.leftBarButtonItem setTitleTextAttributes:
+              [self.navigationController.navigationItem.leftBarButtonItem setTitleTextAttributes:
   @{NSForegroundColorAttributeName:backItemColor,
             NSFontAttributeName:[UIFont systemFontOfSize:16.0f]} forState:UIControlStateNormal];
             }
@@ -311,9 +299,11 @@ NSString * const ExtendedLayoutIncludesOpaqueBars = @"tjsExtendedLayoutIncludesO
             [[self.params allKeys]containsObject:NavigationBarBackgroundImage]) {
             
             backgroundImage = [((TJSBaseViewController *)self) tjs_navigationBarBackgroundImage];
+            
             [self.navigationController.navigationBar setBackgroundImage:backgroundImage
                       forBarPosition:UIBarPositionAny
                           barMetrics:UIBarMetricsDefault];
+             
         }
         
         
@@ -327,6 +317,17 @@ NSString * const ExtendedLayoutIncludesOpaqueBars = @"tjsExtendedLayoutIncludesO
             [self.navigationController.navigationBar setShadowImage:shadowImage];
         }
         
+        
+        //10. BarBackgroundAlpha
+        CGFloat alpha = 1;
+        if ([self isKindOfClass:[TJSBaseViewController class]]&&
+            [self conformsToProtocol:@protocol(TJSNavigationConfig)] &&
+            [self respondsToSelector:@selector(tjs_navBarBackgroundAlpha)] &&
+            [[self.params allKeys]containsObject:NavBarBackgroundAlpha]) {
+            
+            alpha = [((TJSBaseViewController *)self) tjs_navBarBackgroundAlpha];
+            [self.navigationController.navigationBar tjs_setBackgroundAlpha:alpha];
+        }
         
         
         //10.tjd_extendedLayoutIncludesOpaqueBars

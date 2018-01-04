@@ -130,6 +130,7 @@
 // 侧滑一点，会调用，放开没有返回还在本界面，但界面设置已经是上一个的了
 - (void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated{
     
+
     [((TJSBaseViewController *)viewController) tjs_configViewController];
 
 }
