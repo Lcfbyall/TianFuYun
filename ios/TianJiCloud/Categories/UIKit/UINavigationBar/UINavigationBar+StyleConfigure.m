@@ -78,7 +78,7 @@ NavigationTitleTextAttributes:@{NSForegroundColorAttributeName:ThemeService.orig
       NavigationBarBarTintColor: ThemeService.main_color_00,
       NavBarBackgroundAlpha:@1,
       NavigationBarsShadowImage:[UIImage new],
-      NavigationBarBackgroundImage:[UIImage tjs_imageWithColor:ThemeService.main_color_04],
+      NavigationBarBackgroundImage:[UIImage new],
       
       BackBarButtonItemTintColor:ThemeService.main_color_00, NavigationTitleTextAttributes:@{NSForegroundColorAttributeName:ThemeService.origin_color_01,NSFontAttributeName:[UIFont systemFontOfSize:16.0f]}};
     

@@ -290,7 +290,9 @@ NSString * const ExtendedLayoutIncludesOpaqueBars = @"tjsExtendedLayoutIncludesO
             adjust = [((TJSBaseViewController *)self) tjs_adjustsScrollViewInsets];
             adjust = NO;
             if (@available(iOS 11.0, *)) {
-                if(self.tjs_listView){ 
+                
+                if(self.tjs_listView && [self.tjs_listView isKindOfClass:[UIScrollView class]]){ 
+                    
                     self.tjs_listView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
                     //self.tjs_listView.contentInset
                     //self.tjs_listView.adjustedContentInset

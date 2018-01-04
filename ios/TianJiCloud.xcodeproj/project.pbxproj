@@ -478,6 +478,7 @@
 		2C91165D1F62971F00C315D6 /* UIBarButtonItem+TJSWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C91165C1F62971F00C315D6 /* UIBarButtonItem+TJSWebCache.m */; };
 		2C9116611F66289D00C315D6 /* CALayer+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9116601F66289C00C315D6 /* CALayer+Extensions.m */; };
 		2C9116651F6638BF00C315D6 /* UINavigationController+TZPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9116641F6638BF00C315D6 /* UINavigationController+TZPopGesture.m */; };
+		2C98BE441FFE120B00F8EC83 /* UITabBar+StyleConfigure.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C98BE431FFE120B00F8EC83 /* UITabBar+StyleConfigure.m */; };
 		2CA553081F43E1CB0095ECC1 /* RewardVCConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA553071F43E1CB0095ECC1 /* RewardVCConfig.m */; };
 		2CA5530F1F43EA7B0095ECC1 /* HistoryRewardConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA5530E1F43EA7B0095ECC1 /* HistoryRewardConfig.m */; };
 		2CA638FD1F4AD37700C39562 /* WithDrawDepositController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA638EB1F4AD37700C39562 /* WithDrawDepositController.m */; };
@@ -2394,6 +2395,8 @@
 		2C9116631F6638BF00C315D6 /* UINavigationController+TZPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+TZPopGesture.h"; sourceTree = "<group>"; };
 		2C9116641F6638BF00C315D6 /* UINavigationController+TZPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+TZPopGesture.m"; sourceTree = "<group>"; };
 		2C98BE401FFCD18500F8EC83 /* TianJiCloudDev.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TianJiCloudDev.entitlements; sourceTree = "<group>"; };
+		2C98BE421FFE120B00F8EC83 /* UITabBar+StyleConfigure.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITabBar+StyleConfigure.h"; sourceTree = "<group>"; };
+		2C98BE431FFE120B00F8EC83 /* UITabBar+StyleConfigure.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITabBar+StyleConfigure.m"; sourceTree = "<group>"; };
 		2CA553061F43E1CB0095ECC1 /* RewardVCConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RewardVCConfig.h; sourceTree = "<group>"; };
 		2CA553071F43E1CB0095ECC1 /* RewardVCConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RewardVCConfig.m; sourceTree = "<group>"; };
 		2CA5530C1F43E20A0095ECC1 /* RewardConfigProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RewardConfigProtocol.h; sourceTree = "<group>"; };
@@ -3448,6 +3451,7 @@
 		2C4411E71F219A5300C453EF /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				2C98BE411FFE11E000F8EC83 /* UITabBar */,
 				2C4411EB1F219A5300C453EF /* UIDevice */,
 				2C4C1BD21F38135600002166 /* UIApplication */,
 				2C4412561F21DD8100C453EF /* UIWindow */,
@@ -6021,6 +6025,15 @@
 			path = TZScrollViewPopGesture;
 			sourceTree = "<group>";
 		};
+		2C98BE411FFE11E000F8EC83 /* UITabBar */ = {
+			isa = PBXGroup;
+			children = (
+				2C98BE421FFE120B00F8EC83 /* UITabBar+StyleConfigure.h */,
+				2C98BE431FFE120B00F8EC83 /* UITabBar+StyleConfigure.m */,
+			);
+			path = UITabBar;
+			sourceTree = "<group>";
+		};
 		2CA638E71F4AD37700C39562 /* WithDrawHome */ = {
 			isa = PBXGroup;
 			children = (
@@ -8587,6 +8600,7 @@
 				2C91162F1F61333B00C315D6 /* ProfileMobileController.m in Sources */,
 				2CB4F5761F418FFB00FF98C9 /* CumulateInvestNetworkTool.m in Sources */,
 				2C8DE5B61F2AD8B3009B3AE2 /* DiscoveryRoadShowListCell.m in Sources */,
+				2C98BE441FFE120B00F8EC83 /* UITabBar+StyleConfigure.m in Sources */,
 				2CCC85AB1F3AEE3A0009FC1C /* ProducFilterVCConfig.m in Sources */,
 				2C8BB7A71F30859C00E2D75F /* HomeHeaderContainer.m in Sources */,
 				2C89AD841F2C91DE005C29AC /* UIColor+TJSiOS7Colors.m in Sources */,

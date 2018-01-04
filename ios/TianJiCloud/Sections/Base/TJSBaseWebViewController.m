@@ -27,13 +27,13 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    /*
+    
     [self createWkWebview];
     
     self.titleName = self.params[@"titleName"];
     [self loadWebWithUrl:self.params[@"webUrl"]];
     self.finalUrl  = self.params[@"webUrl"];
-     */
+     
 }
 
 
