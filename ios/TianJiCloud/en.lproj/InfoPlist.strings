@@ -7,7 +7,7 @@
 */
 
 
-"CFBundleDisplayName" = "TianJiCloud";
+//"CFBundleDisplayName" = "TianJiCloudPro";
 
 //Private
 "NFCReaderUsageDescription"      = "允许访问NFC吗？";

@@ -1,0 +1,30 @@
+/* 
+  InfoBeta.strings
+  TianJiCloud
+
+  Created by 朱鹏 on 2018/1/5.
+  Copyright © 2018年 TianJiMoney. All rights reserved.
+*/
+"CFBundleDisplayName" = "TianJiCloudBeta";
+
+//Private
+"NFCReaderUsageDescription"      = "允许访问NFC吗？Beta";
+"NSAppleMusicUsageDescription"   = "允许访问媒体库吗？Beta";
+"NSBluetoothPeripheralUsageDescription" = "允许访问蓝牙吗？Beta";
+"NSCalendarsUsageDescription"    = "允许访问日历吗？Beta";
+"NSCameraUsageDescription"       = "允许访问相机吗？Beta";
+"NSContactsUsageDescription"     = "允许访问通讯录吗？Beta";
+"NSHealthShareUsageDescription"  = "允许访问健康分享吗？Beta";
+"NSHealthUpdateUsageDescription" = "允许访问健康更新吗?Beta";
+"NSHomeKitUsageDescription"      = "允许访问家庭吗?Beta";
+"NSLocationAlwaysUsageDescription"    = "允许一直访问您的位置吗？Beta";
+"NSLocationUsageDescription"     = "允许访问您的位置吗？Beta";
+"NSLocationWhenInUseUsageDescription" = "允许在使用期间访问您的位置吗？Beta";
+"NSMicrophoneUsageDescription"   = "允许访问麦克风吗？Beta";
+"NSMotionUsageDescription"       = "允许访问运动与健身吗？Beta";
+"NSPhotoLibraryAddUsageDescription"   = "允许保存图片到相册吗？Beta";
+"NSPhotoLibraryUsageDescription" = "允许访问相册吗？Beta";
+"NSRemindersUsageDescription"    = "允许访问提醒事项吗？Beta";
+"NSSiriUsageDescription"         = "允许访问Siri吗？Beta";
+"NSSpeechRecognitionUsageDescription" = "允许访问语音识别吗？Beta";
+"NSVideoSubscriberAccountUsageDescription" = "允许访问视频认证吗？Beta";

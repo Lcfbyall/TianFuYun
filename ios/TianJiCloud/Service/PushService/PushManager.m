@@ -185,7 +185,7 @@ TJS_EXPORT_SERVICE(@"PushService")
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    //[[PushManager sharedManager] startGeTuiSDK];
+    [[PushManager sharedManager] startGeTuiSDK];
     
     return YES;
 }

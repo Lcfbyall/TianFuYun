@@ -11,6 +11,24 @@
 
 @implementation UIApplication (TJSInfoDictionary)
 
++ (void)load{
+    
+    [UIApplication tjs_appverison];
+    
+    [UIApplication tjs_abundleVersion];
+    
+    [UIApplication tjs_productName];
+    
+    [UIApplication tjs_bundleExecutable];
+    
+    [UIApplication tjs_bundleName];
+    
+    [UIApplication tjs_bundleDisplayName];
+    
+    //[UIApplication tjs_bundleName];
+    //[UIApplication tjs_bundleName];
+}
+
 + (NSString *)tjs_bundleIdentifier{
     NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];
     NSString *bundleIdentifier  = [infoDictionary objectForKey:@"CFBundleIdentifier"];

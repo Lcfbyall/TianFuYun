@@ -7,7 +7,7 @@
 */
 
 
-"CFBundleDisplayName" = "天富云";
+//"CFBundleDisplayName" = "天富云Pro";
 
 //Private
 "NFCReaderUsageDescription"      = "允许访问NFC吗？";

@@ -1,0 +1,17 @@
+//
+//  ReleaseConfig.xcconfig
+//  TianJiCloud
+//
+//  Created by 朱鹏 on 2018/1/5.
+//  Copyright © 2018年 TianJiMoney. All rights reserved.
+//
+
+
+#include "CommonConfig.xcconfig"
+#include "Pods/Target Support Files/Pods-TianJiCloud/Pods-TianJiCloud.release.xcconfig"
+
+
+
+APP_DISPLAY_NAME = 天富云
+CONFIG_FLAG = RELEASE
+
