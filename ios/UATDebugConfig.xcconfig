@@ -1,0 +1,17 @@
+//
+//  UATDebugConfig.xcconfig
+//  TianJiCloud
+//
+//  Created by 朱鹏 on 2018/1/8.
+//  Copyright © 2018年 TianJiMoney. All rights reserved.
+//
+
+#include "CommonConfig.xcconfig"
+#include "Pods/Target Support Files/Pods-TianJiCloud/Pods-TianJiCloud.uatdebug.xcconfig"
+
+
+APP_DISPLAY_NAME = 天富云UATDebug
+CONFIG_FLAG = UATDEBUG
+
+//网络请求baseurl
+REQUESTBASE_URL = @"http:\\/\\/10.20.100.1_UATDebug"

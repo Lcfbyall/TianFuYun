@@ -1,0 +1,18 @@
+//
+//  TestDebugConfig.xcconfig
+//  TianJiCloud
+//
+//  Created by 朱鹏 on 2018/1/8.
+//  Copyright © 2018年 TianJiMoney. All rights reserved.
+//
+
+
+#include "CommonConfig.xcconfig"
+#include "Pods/Target Support Files/Pods-TianJiCloud/Pods-TianJiCloud.testdebug.xcconfig"
+
+
+APP_DISPLAY_NAME = 天富云TestDebug
+CONFIG_FLAG = TESTDEBUG
+
+//网络请求baseurl
+REQUESTBASE_URL = @"http:\\/\\/10.20.100.1_TestDebug"

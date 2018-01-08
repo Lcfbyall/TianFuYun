@@ -111,12 +111,24 @@ alpha:__a]
 
 //release情况下，从这里进入（正式打包），发布正式服
 
-
 #elif DEBUG
 
+#elif TESTDEBUG
+
+
+#elif TESTRELEASE
+
+
+#elif UATDEBUG
+
+#elif UATRELEASE
 
 
 #elif RELEASE_TEST
+
+
+#elif RELEASE
+
 
 #else
 

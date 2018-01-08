@@ -24,19 +24,7 @@
     [UIApplication tjs_bundleName];
     
     [UIApplication tjs_bundleDisplayName];
-    
-    if(DEBUG){
-        
-        
-        
-    }else if(RELEASE_TEST){
-        
-        
-        
-    }else if (RELEASE){
-        
-        
-    }
+
     
     //[UIApplication tjs_bundleName];
     //[UIApplication tjs_bundleName];

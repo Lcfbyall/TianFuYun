@@ -15,4 +15,4 @@ APP_DISPLAY_NAME = 天富云Debug
 CONFIG_FLAG = DEBUG
 
 //网络请求baseurl
-REQUESTBASE_URL = @"http:\\/\\/10.20.100.1"
+REQUESTBASE_URL = @"http:\\/\\/10.20.100.1_Debug"

@@ -15,4 +15,4 @@ CONFIG_FLAG = RELEASE_TEST
 
 
 //网络请求baseurl
-REQUESTBASE_URL = @"http:\\/\\/10.20.100.1"
+REQUESTBASE_URL = @"http:\\/\\/10.20.100.1_Beta"
