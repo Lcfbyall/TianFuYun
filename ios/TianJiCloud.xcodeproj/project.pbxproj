@@ -581,7 +581,6 @@
 		2CBA811E1FFF4D4F006D9445 /* ReleaseTestConfig.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 2CBA81141FFF4D4F006D9445 /* ReleaseTestConfig.xcconfig */; };
 		2CBA811F1FFF4D4F006D9445 /* ReleaseTestConfig.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 2CBA81141FFF4D4F006D9445 /* ReleaseTestConfig.xcconfig */; };
 		2CBA81201FFF4D4F006D9445 /* ReleaseTestConfig.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 2CBA81141FFF4D4F006D9445 /* ReleaseTestConfig.xcconfig */; };
-		2CBA81221FFF509A006D9445 /* InfoDebug.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2CBA81211FFF509A006D9445 /* InfoDebug.plist */; };
 		2CBA81241FFF50BA006D9445 /* InfoBeta.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2CBA81231FFF50BA006D9445 /* InfoBeta.plist */; };
 		2CBA81271FFF5103006D9445 /* InfoDebug.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2CBA81291FFF5103006D9445 /* InfoDebug.strings */; };
 		2CBA812E1FFF514A006D9445 /* InfoBeta.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2CBA81301FFF514A006D9445 /* InfoBeta.strings */; };
@@ -676,6 +675,7 @@
 		2CD897551F45851A008F7C73 /* ConAddressRightInputContentConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD897541F45851A008F7C73 /* ConAddressRightInputContentConfig.m */; };
 		2CD897581F458537008F7C73 /* ConAddressMiddleLabelContentConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD897571F458537008F7C73 /* ConAddressMiddleLabelContentConfig.m */; };
 		2CD8975B1F45854A008F7C73 /* ConAddressBottomInputContentConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD8975A1F45854A008F7C73 /* ConAddressBottomInputContentConfig.m */; };
+		2CDA28ED1FFF5BAF00202A64 /* InfoDebug.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2CDA28EC1FFF5BAE00202A64 /* InfoDebug.plist */; };
 		2CE542241F4EA4A100205993 /* LogoutNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE542231F4EA4A100205993 /* LogoutNetworkTool.m */; };
 		2CE542281F4EA4E900205993 /* LogoutApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE542271F4EA4E900205993 /* LogoutApi.m */; };
 		2CE5422B1F4EA51500205993 /* LoginApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE5422A1F4EA51500205993 /* LoginApi.m */; };
@@ -1874,7 +1874,6 @@
 		2CBA81121FFF4D4F006D9445 /* DebugConfig.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = DebugConfig.xcconfig; sourceTree = "<group>"; };
 		2CBA81131FFF4D4F006D9445 /* ReleaseConfig.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = ReleaseConfig.xcconfig; sourceTree = "<group>"; };
 		2CBA81141FFF4D4F006D9445 /* ReleaseTestConfig.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = ReleaseTestConfig.xcconfig; sourceTree = "<group>"; };
-		2CBA81211FFF509A006D9445 /* InfoDebug.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = InfoDebug.plist; sourceTree = "<group>"; };
 		2CBA81231FFF50BA006D9445 /* InfoBeta.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = InfoBeta.plist; sourceTree = "<group>"; };
 		2CBA81281FFF5103006D9445 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoDebug.strings; sourceTree = "<group>"; };
 		2CBA812A1FFF5111006D9445 /* zh-Hans-CN */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans-CN"; path = "zh-Hans-CN.lproj/InfoDebug.strings"; sourceTree = "<group>"; };
@@ -2075,6 +2074,7 @@
 		2CD897571F458537008F7C73 /* ConAddressMiddleLabelContentConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConAddressMiddleLabelContentConfig.m; sourceTree = "<group>"; };
 		2CD897591F45854A008F7C73 /* ConAddressBottomInputContentConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConAddressBottomInputContentConfig.h; sourceTree = "<group>"; };
 		2CD8975A1F45854A008F7C73 /* ConAddressBottomInputContentConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConAddressBottomInputContentConfig.m; sourceTree = "<group>"; };
+		2CDA28EC1FFF5BAE00202A64 /* InfoDebug.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = InfoDebug.plist; sourceTree = "<group>"; };
 		2CE542221F4EA4A100205993 /* LogoutNetworkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogoutNetworkTool.h; sourceTree = "<group>"; };
 		2CE542231F4EA4A100205993 /* LogoutNetworkTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogoutNetworkTool.m; sourceTree = "<group>"; };
 		2CE542261F4EA4E900205993 /* LogoutApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogoutApi.h; sourceTree = "<group>"; };
@@ -2664,9 +2664,9 @@
 				2C4411BC1F21981E00C453EF /* LaunchScreen.storyboard */,
 				2C4411B71F21981E00C453EF /* Main.storyboard */,
 				2CEC5A261F50170D006C03F5 /* Localizable.strings */,
-				2CBA81211FFF509A006D9445 /* InfoDebug.plist */,
 				2CCE05A61FFF52B3006EF739 /* Info.plist */,
 				2CBA81231FFF50BA006D9445 /* InfoBeta.plist */,
+				2CDA28EC1FFF5BAE00202A64 /* InfoDebug.plist */,
 				2CEC5A361F501D32006C03F5 /* InfoPlist.strings */,
 				2CBA81291FFF5103006D9445 /* InfoDebug.strings */,
 				2CBA81301FFF514A006D9445 /* InfoBeta.strings */,
@@ -7220,6 +7220,7 @@
 				2C859D021F31EB2E00B86575 /* ZLPhotoLib.bundle in Resources */,
 				2C85E3331F2EC6E500ADD360 /* Oder.storyboard in Resources */,
 				2C300F7C1F2F32BF00DD440E /* Settings.storyboard in Resources */,
+				2CDA28ED1FFF5BAF00202A64 /* InfoDebug.plist in Resources */,
 				2C8CD2121F57A7BD00F9654D /* un_comme_ico_nice_unsel@2x.png in Resources */,
 				2C8CD1E81F57A7BD00F9654D /* common.css in Resources */,
 				2C8CD1F21F57A7BD00F9654D /* banner.jpg in Resources */,
@@ -7290,7 +7291,6 @@
 				2C8CD20C1F57A7BD00F9654D /* news_ico_colle_sel@2x.png in Resources */,
 				2C4411BB1F21981E00C453EF /* Assets.xcassets in Resources */,
 				2C8CD2191F57A7BD00F9654D /* detail.js in Resources */,
-				2CBA81221FFF509A006D9445 /* InfoDebug.plist in Resources */,
 				2CEC59FB1F501380006C03F5 /* WithDrawDepositHomeHeader.xib in Resources */,
 				2CBA81151FFF4D4F006D9445 /* CommonConfig.xcconfig in Resources */,
 				2C8CD1FD1F57A7BD00F9654D /* icn_user_1.png in Resources */,

@@ -107,14 +107,19 @@ alpha:__a]
 // 9.
 /********************************************/
 //在release中才会定义 __OPTIMIZE__ !
-#ifndef __OPTIMIZE__
+#ifdef __OPTIMIZE__
 
-//#define NSLog(...) NSLog(__VA_ARGS__)
-
-#else
 //release情况下，从这里进入（正式打包），发布正式服
 
-//#define NSLog(...){}
+
+#elif DEBUG
+
+
+
+#elif RELEASE_TEST
+
+#else
+
 
 #endif
 

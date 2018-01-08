@@ -15,3 +15,5 @@
 APP_DISPLAY_NAME = 天富云
 CONFIG_FLAG = RELEASE
 
+//网络请求baseurl
+REQUESTBASE_URL = @"http:\\/\\/10.20.100.1"
